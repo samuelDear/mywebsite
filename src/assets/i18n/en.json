@@ -1,5 +1,9 @@
 {
-    "Home": {
-        
-    }
+  "header": {
+    "aboutButton": "ABOUT ME"
+  },
+  "home": {
+    "presentation": "Hello! My name is Samuel Rojas",
+    "description": "I'm a web designer and mobile developer that build responsive websites and building cross-platform Apps."
+  }
 }

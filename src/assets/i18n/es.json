@@ -1,5 +1,9 @@
 {
-    "Home": {
-        
-    }
+  "header": {
+    "aboutButton": "SOBRE MI"
+  },
+  "home": {
+    "presentation": "Hola! Mi nombre es Samuel Rojas",
+    "description": " Soy un diseñador web y desarrollar movil que hace paginas web responsivas y desarrollar aplicaciones moviles multiplataforma."
+  }
 }
