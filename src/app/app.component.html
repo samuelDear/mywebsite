@@ -1,6 +1,6 @@
 <header>
-  <app-header></app-header>
+  <app-header [showAbout]="buttonShow"></app-header>
 </header>
 <main>
-  <router-outlet></router-outlet>
+  <router-outlet (activate)="showButton($event)"></router-outlet>
 </main>
