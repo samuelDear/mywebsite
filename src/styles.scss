@@ -1,5 +1,5 @@
 html {
-  background: #111;
+  background-color: #111;
   font-family: 'Signika', sans-serif;
 }
 
@@ -9,4 +9,21 @@ body, html {
 
 button:focus, select:focus {
   outline: 0;
+}
+
+.codeLine{
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.tag {
+  color: #4ae3cd;
+}
+
+.controlStructure {
+  color: #db2696;
+}
+
+.sentence {
+  color: #38ca13;
 }

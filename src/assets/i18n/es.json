@@ -3,7 +3,10 @@
     "aboutButton": "SOBRE MI"
   },
   "home": {
-    "presentation": "Hola! Mi nombre es Samuel Rojas",
-    "description": " Soy un diseñador web y desarrollar movil que hace paginas web responsivas y desarrollar aplicaciones moviles multiplataforma."
+    "presentation": "Hola! Mi nombre es Samuel Rojas.",
+    "description": " Soy un diseñador web y desarrollador movil que hace paginas web responsivas y desarrolla aplicaciones moviles multiplataforma."
+  },
+  "myWeb": {
+    "resume": "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Asi como tambien usa el poder de los SVG para enriquecer la experiencia del usuario."
   }
 }
