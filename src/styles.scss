@@ -6,3 +6,7 @@ html {
 body, html {
   color: #FFF;
 }
+
+button:focus, select:focus {
+  outline: 0;
+}
