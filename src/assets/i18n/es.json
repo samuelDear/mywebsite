@@ -12,5 +12,8 @@
   },
   "traumApp": {
     "resume": "Es una aplicacion movil multiplataforma. Hecha con React Native, Es una aplicacion capaz de generar documentos PDF. Por otra parte, enriquece la experiencia del usuario con su comoda interfaz."
+  },
+  "knowlegde": {
+    "firstDsc":"Estoy muy familiarizado usando tecnologias web como HTML5, CSS3 y JavaScript. Y tambien he usado frameworks como Angular y React."
   }
 }

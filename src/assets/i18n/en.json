@@ -5,12 +5,15 @@
   "home": {
     "presentation": "Hello! My name is Samuel Rojas.",
     "description": "I'm a web designer and mobile developer that build responsive websites and development cross-platform Apps.",
-    "linkProject": "View `Project"
+    "linkProject": "View Project"
   },
   "myWeb": {
     "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
   },
   "traumApp": {
     "resume": "A cross-platform App, builded with React Native, an application capable of generating PDF documents. Besides, enrich user experience thanks to its comfortable interface."
+  },
+  "knowlegde": {
+    "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3 and JavaScript. and also I have used frameworks such as Angular and React."
   }
 }
