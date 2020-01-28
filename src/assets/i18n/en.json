@@ -14,6 +14,13 @@
     "resume": "A cross-platform App, builded with React Native, an application capable of generating PDF documents. Besides, enrich user experience thanks to its comfortable interface."
   },
   "knowlegde": {
-    "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3 and JavaScript. and also I have used frameworks such as Angular and React."
+    "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3 and JavaScript. and also I have used frameworks such as Angular and React.",
+    "secondDsc":"I have experience using ES6, ES7 and TypeScript, also I have experience building responsive websites with a high-performance.",
+    "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps.",
+    "quarterDsc":"However, In the back-end I have used PHP and Java, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase."
+  },
+  "about":{
+    "resume":"I'm a Venezuelan web designer and a mobile developer<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",
+    "aboutLink":"Read mote about me"
   }
 }

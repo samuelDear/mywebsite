@@ -14,6 +14,13 @@
     "resume": "Es una aplicacion movil multiplataforma. Hecha con React Native, Es una aplicacion capaz de generar documentos PDF. Por otra parte, enriquece la experiencia del usuario con su comoda interfaz."
   },
   "knowlegde": {
-    "firstDsc":"Estoy muy familiarizado usando tecnologias web como HTML5, CSS3 y JavaScript. Y tambien he usado frameworks como Angular y React."
+    "firstDsc":"Estoy muy familiarizado usando tecnologias web como HTML5, CSS3 y JavaScript. Y tambien he usado frameworks como Angular y React.",
+    "secondDsc":"Tengo experiencia usando ES6, ES7 y TypeScript. Ademas, cuento con experiencia creando paginas web responsivas con un alto rendimiento.",
+    "thirdDsc":"Por otra parte, Estoy familiarizado usando el framework React Native para crear aplicaciones moviles multiplataforma.",
+    "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase."
+  },
+  "about":{
+    "resume":"Soy un diseñador web y desarrollador movil Venezolano.<br>Realmente me gusta crear productos utiles e intuitivos con interfaces visuales comodas para todos.",
+    "aboutLink":"Leer mas sobre mi"
   }
 }
