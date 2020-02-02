@@ -21,49 +21,121 @@
     </div>
     <p class="codeLine">&lt;/<span class="tag">projects</span>&gt;</p>
   </section>
+
   <section class="knowlegde mt-24">
     <p class="codeLine">&lt;<span class="tag">knowlegde</span>&gt;</p>
-    <div class="w-100 my-5 flex flex-row ml-16">
+    <div class="w-100 mt-5 flex flex-row ml-16">
       <div class="w-1/2 knowlegdeTxt mr-2 text-justify">
         <p stranslate="knowlegde.firstDsc" class="mb-4"></p>
         <p stranslate="knowlegde.secondDsc" class="mb-4"></p>
         <p stranslate="knowlegde.thirdDsc" class="mb-4"></p>
         <p stranslate="knowlegde.quarterDsc" class="mb-4"></p>
       </div>
-      <div class="w-1/2 border-2 ml-2">
+      <div class="w-1/2 ml-2">
 
         <svg version="1.1"
          baseProfile="full" viewBox="0 0 200 200"
          xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="gradient">
-              <stop offset="0%" stop-color="purple"/>
-              <stop offset="100%" stop-color="green"/>
+            <linearGradient id="grad1" gradientUnits="userSpaceOnUse">
+              <stop offset="5%" style="stop-color:#4ae3cd;"/>
+              <stop offset="25%" style="stop-color:#db2696;"/>
+              <stop offset="45%" style="stop-color:#38ca13;"/>
+              <stop offset="65%" style="stop-color:#4ae3cd;"/>
+              <stop offset="85%" style="stop-color:#db2696;"/>
             </linearGradient>
 
+            <pattern id="reactFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="50" height="50" y="-5" x="7" href="../assets/images/react-icon.svg"/>
+            </pattern>
+            <pattern id="reactSec" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="45" height="45" x="-13" y="-0.5" href="../assets/images/react-icon.svg"/>
+            </pattern>
+            <pattern id="angularFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="30" height="30" x="25" y="3" href="../assets/images/angular-icon.svg"/>
+            </pattern>
+            <pattern id="angularSec" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="32" height="34" x="-14" y="11" href="../assets/images/angular-icon.svg"/>
+            </pattern>
+            <pattern id="htmlFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="35" height="35" x="3" y="30" href="../assets/images/html-icon.svg"/>
+            </pattern>
+            <pattern id="htmlSec" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="43" height="43" x="-7" y="-23" href="../assets/images/html-icon.svg"/>
+            </pattern>
+            <pattern id="firebaseFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="20" height="20" x="17" y="13" href="../assets/images/firebase-icon.svg"/>
+            </pattern>
+            <pattern id="jsFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="25" height="25" x="0" y="22"  href="../assets/images/js-icon.svg"/>
+            </pattern>
+            <pattern id="jsSec" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="25" height="25" x="35.7" y="0.5"  href="../assets/images/js-icon.svg"/>
+            </pattern>
+            <pattern id="cssFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="22" height="22" x="15" y="20" href="../assets/images/css-icon.svg"/>
+            </pattern>
+            <pattern id="postgreFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="30" height="30" x="16" y="35" href="../assets/images/postgresql-icon.svg"/>
+            </pattern>
+            <pattern id="postgreSec" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="30" height="30" x="15.5" y="-14" href="../assets/images/postgresql-icon.svg"/>
+            </pattern>
+            <pattern id="tailFir" height="100%" width="100%" viewBox="0 0 50 50">
+              <image width="30" height="30" href="../assets/images/tailwind-icon.svg"/>
+            </pattern>
           </defs>
-          <polygon points="10, 120 80, 120 40, 50" stroke="green" fill="transparent" stroke-width="2"/>
 
-          <polygon points="20, 125 80, 125 50, 180" stroke="green" fill="transparent" stroke-width="2"/>
+          <polygon points="10, 120 80, 120 40, 50 " stroke="url(#grad1)" stroke-width="2" id="firstPoly"/>
 
-          <polygon points="40, 40 130, 40 85, 120" stroke="green" fill="transparent" stroke-width="2"/>
+          <polygon points="20, 125 82, 125 50, 180" stroke="url(#grad1)" stroke-width="2" id="secondPoly"/>
 
-          <polygon points="68, 160 130, 160 100, 105" stroke="green" fill="transparent" stroke-width="2"/>
+          <polygon points="40, 40 130, 40 85, 120" stroke="url(#grad1)" stroke-width="2" id="thirdPoly"/>
 
-          <polygon points="103, 100 180, 100 141, 30" stroke="green" fill="transparent" stroke-width="2"/>
+          <polygon points="68, 160 130, 160 100, 105" stroke="url(#grad1)" stroke-width="2" id="quarterPoly"/>
+
+          <polygon points="103, 100 180, 100 141, 30" stroke="url(#grad1)" stroke-width="2" id="fifthPoly"/>
+
+          <polygon points="105, 105 180, 105 140, 170" stroke="url(#grad1)" stroke-width="2" id="sixPoly"/>
+
+          <use href="#firstPoly" fill="#111"/>
+          <use href="#firstPoly" fill="url(#reactFir)"/>
+          <use href="#firstPoly" fill="url(#htmlFir)"/>
+
+          <use href="#secondPoly" fill="#111"/>
+          <use href="#secondPoly" fill="url(#htmlSec)"/>
+          <use href="#secondPoly" fill="url(#jsSec)"/>
+          <use href="#secondPoly" fill="url(#cssFir)"/>
+
+          <use href="#thirdPoly" fill="#111"/>
+          <use href="#thirdPoly" fill="url(#reactSec)"/>
+          <use href="#thirdPoly" fill="url(#angularFir)"/>
+
+          <use href="#quarterPoly" fill="#111"/>
+          <use href="#quarterPoly" fill="url(#jsFir)"/>
+
+          <use href="#fifthPoly" fill="#111"/>
+          <use href="#fifthPoly" fill="url(#angularSec)"/>
+          <use href="#fifthPoly" fill="url(#firebaseFir)"/>
+          <use href="#fifthPoly" fill="url(#postgreFir)"/>
+
+          <use href="#sixPoly" fill="#111"/>
+          <use href="#sixPoly" fill="url(#postgreSec)"/>
+          <use href="#sixPoly" fill="url(#tailFir)"/>
+
         </svg>
 
       </div>
     </div>
     <p class="codeLine">&lt;/<span class="tag">knowlegde</span>&gt;</p>
   </section>
+
   <section class="littleAbout mt-12">
     <p class="codeLine">&lt;<span class="tag">about&nbsp;</span><span class="controlStructure">title</span>=<span class="sentence">introduce myself</span>&gt;</p>
     <div class="w-100 my-5 flex flex-col ml-16 aboutResume">
       <p stranslate="about.resume"></p>
       <div class="mt-5 flex row underline font-normal">
         <a href="#" stranslate="about.aboutLink"></a>
-        <p stranslate="about.aboutLink"></p>
       </div>
     </div>
     <p class="codeLine">&lt;<span class="tag">about</span>&gt;</p>
