@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -6,11 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  showFooter: boolean;
-  constructor() { }
+  showFooter: string;
 
-  ngOnInit() {
-
+  constructor(private router: Router) {
+    this.router.events.subscribe(ev => {
+      if (ev instanceof NavigationEnd) {
+        console.log(this.router.url);
+        if (this.router.url == '/about') {
+          this.showFooter = null;
+        } else {
+          this.showFooter = 'show';
+        }
+        console.log(this.showFooter);
+      }
+    });
   }
 
+  ngOnInit() {}
 }
