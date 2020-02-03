@@ -43,3 +43,16 @@
 svg {
   height: auto;
 }
+
+.stick {
+  width: 50px;
+  height: 10px;
+  background-color: white;
+}
+
+.arrow-right {
+  display: block;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #FFF;
+}
