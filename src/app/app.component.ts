@@ -19,9 +19,9 @@ export class AppComponent {
     translate.use(browserLang.match(/en|es/) ? browserLang : 'en');
   }
 
-  showButton(show: boolean){
-    console.log(show);
-    this.buttonShow = show;
+  showButton(show){
+    console.log(show.showButton);
+    this.buttonShow = show.showButton;
   }
 
 }

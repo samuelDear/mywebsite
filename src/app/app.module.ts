@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { StranslateDirective } from './directives/stranslate.directive';
 import { FooterComponent } from './footer/footer.component';
+import { SlideMenuComponent } from './slide-menu/slide-menu.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -21,7 +22,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     HeaderComponent,
     StranslateDirective,
-    FooterComponent
+    FooterComponent,
+    SlideMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ html {
 
 body, html {
   color: #FFF;
+  height: 100%;
 }
 
 button:focus, select:focus {
@@ -26,4 +27,11 @@ button:focus, select:focus {
 
 .sentence {
   color: #38ca13;
+}
+
+.orderFlex {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

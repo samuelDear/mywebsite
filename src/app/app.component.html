@@ -1,7 +1,11 @@
-<header class="fixed w-full inset-x-0 top-0">
-  <app-header [showAbout]="buttonShow"></app-header>
-</header>
-<main>
-  <router-outlet (activate)="showButton($event)"></router-outlet>
-</main>
-<app-footer></app-footer>
+<div class="orderFlex">
+  <header class="fixed w-full inset-x-0 top-0">
+    <app-header [showAbout]="buttonShow"></app-header>
+  </header>
+  <main>
+    <router-outlet (activate)="showButton($event)"></router-outlet>
+  </main>
+  <div>
+    <app-footer></app-footer>
+  </div>
+</div>
