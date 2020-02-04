@@ -8,7 +8,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class SlideMenuComponent implements OnInit {
   showButton: boolean = false;
-  currentLang: boolean;
+  currentLang: string;
   constructor(public translate: TranslateService) {
     console.log(translate.currentLang);
     if(translate.currentLang == "es"){
