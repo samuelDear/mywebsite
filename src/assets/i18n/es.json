@@ -22,5 +22,12 @@
   "about":{
     "resume":"Soy un diseñador web y desarrollador movil Venezolano.<br>Realmente me gusta crear productos utiles e intuitivos con interfaces visuales comodas para todos.",
     "aboutLink":"Leer mas sobre mi"
+  },
+  "slideMenu":{
+    "homeLink": "INICIO",
+    "projectsLink": "PROYECTOS",
+    "knowlegdeLink": "CONOCIMIENTOS",
+    "whoDesigned": "¿QUIEN DISEÑO ESTO?",
+    "aboutLink": "ACERCA DE MI"
   }
 }

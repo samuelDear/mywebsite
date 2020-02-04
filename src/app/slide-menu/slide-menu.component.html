@@ -4,7 +4,7 @@
       <li>
         <a routerLink="/">
           <div class="w-full navItem">
-            HOME
+            <span stranslate="slideMenu.homeLink"></span>
           </div>
         </a>
       </li>
@@ -12,7 +12,7 @@
       <li>
         <a routerLink="/" fragment="projects">
           <div class="w-full navItem" >
-            PROJECTS
+            <span stranslate="slideMenu.projectsLink"></span>
           </div>
         </a>
       </li>
@@ -20,7 +20,7 @@
       <li>
         <a routerLink="/" fragment="knowlegde">
           <div class="w-full navItem">
-            KNOWLEDGE
+            <span stranslate="slideMenu.knowlegdeLink"></span>
           </div>
         </a>
       </li>
@@ -28,7 +28,7 @@
       <li>
         <a href="#">
           <div class="w-full navItem">
-            WHO DESIGNED THIS?
+            <span stranslate="slideMenu.whoDesigned"></span>
           </div>
         </a>
       </li>
@@ -36,17 +36,18 @@
       <li>
         <a href="#">
           <div class="w-full navItem">
-            ABOUT ME
+            <span stranslate="slideMenu.aboutLink"></span>
           </div>
         </a>
       </li>
 
       <li>
-        <a href="#">
-          <div class="w-full navItem">
-            INGLISH
+          <div>
+            <select class="border-white border-2 mr-4 px-3" #langselect (change)="translate.use(langselect.value)" >
+              <option value="es" [selected]="currentLang == 'es' ? true : false">ESP</option>
+              <option value="en" [selected]="currentLang == 'en' ? true : false">ENG</option>
+            </select>
           </div>
-        </a>
       </li>
     </ul>
   </nav>
