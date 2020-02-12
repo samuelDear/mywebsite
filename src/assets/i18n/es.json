@@ -11,7 +11,13 @@
     "resume": "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario."
   },
   "traumApp": {
-    "resume": "Es una aplicacion movil multiplataforma. Hecha con React Native, Es una aplicacion capaz de generar documentos PDF. Por otra parte, enriquece la experiencia del usuario con su comoda interfaz."
+    "resume": "Es una aplicacion movil multiplataforma. Hecha con React Native, Es una aplicacion capaz de generar informes medicos de forma automatizada. Por otra parte, enriquece la experiencia del usuario con su comoda interfaz."
+  },
+  "orm": {
+    "resume": "Es una pagina web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño comodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas Matematicas."
+  },
+  "fjcintranet": {
+    "resume": "Es un sistema interno de pagina unica(SPA). Creado con Angular 8 y Java Spring, para la gestion documental y de hallazgos en la Fundacion Jacinto Convit. Un sitio web que cuenta con estandares internacionales.."
   },
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologias web como HTML5, CSS3 y JavaScript. Y tambien he usado frameworks como Angular y React.",
@@ -21,7 +27,10 @@
   },
   "about":{
     "resume":"Soy un diseñador web y desarrollador movil Venezolano.<br>Realmente me gusta crear productos utiles e intuitivos con interfaces visuales comodas para todos.",
-    "aboutLink":"Leer mas sobre mi"
+    "aboutLink":"Leer mas sobre mi",
+    "welcome": "Hola!",
+    "intro": "Mi nombre es Samuel.<br>Soy un diseñador web y desarrollador movil actualmente estudiando ingenieria en sistemas en Caracas, Venezuela.",
+    "whatILike": "Realmente me gusta hacer productos útiles e intuitivos con interfaces visuales cómodas para cualquier persona. Me gusta analizar el contexto del usuario para crear la mejor solución en cada proyecto. Tengo experiencia haciendo aplicaciones multiplataforma y trabajando como desarrollador front-end en algunos proyectos. también, he construido paginas web responsivas."
   },
   "slideMenu":{
     "homeLink": "INICIO",

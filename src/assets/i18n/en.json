@@ -11,7 +11,13 @@
     "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
   },
   "traumApp": {
-    "resume": "A cross-platform App, builded with React Native, an application capable of generating PDF documents. Besides, enrich user experience thanks to its comfortable interface."
+    "resume": "A cross-platform App, builded with React Native, an application capable of generating informes medicos de forma automatizada. Besides, enrich user experience thanks to its comfortable interface."
+  },
+  "orm": {
+    "resume": "n"
+  },
+  "fjcintranet": {
+    "resume": "n"
   },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3 and JavaScript. and also I have used frameworks such as Angular and React.",
@@ -21,7 +27,10 @@
   },
   "about":{
     "resume":"I'm a Venezuelan web designer and a mobile developer<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",
-    "aboutLink":"Read more about me"
+    "aboutLink":"Read more about me",
+    "welcome": "Hello!",
+    "intro":"My name is Samuel<br>I'm a Venezuelan web designer and a mobile developer currently studying systems engineering in Caracas, Venezuela.",
+    "whatILike": "I really like to make useful and intuitive products with comfortable visual interfaces for anyone. I like to analyze the user context in order to create the best solution on each project. I have experience making cross-platform applications and working as front-end developer in some projects. as well, I have builded responsive websites."
   },
   "slideMenu":{
     "homeLink": "HOME",
