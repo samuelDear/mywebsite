@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   showButton: boolean = false;
-  constructor() { }
+  constructor() {
+    window.scroll(0,0);
+  }
 
   ngOnInit() {
   }

@@ -3,7 +3,7 @@
 }
 
 .dsc {
-  padding: 45px;
+  padding: 45px 75px 45px 45px;
   position: absolute;
   right: 0;
 }
@@ -15,9 +15,9 @@
 
 .photo {
   position: fixed;
-    height: 100%;
-    background-color: #CCC;
-    display: flex;
-    justify-content: center;
-    top: 0
+  height: 100%;
+  background-color: #CCC;
+  display: flex;
+  justify-content: center;
+  top: 0
 }
