@@ -12,6 +12,9 @@ import { StranslateDirective } from './directives/stranslate.directive';
 import { FooterComponent } from './footer/footer.component';
 import { SlideMenuComponent } from './slide-menu/slide-menu.component';
 import { AboutComponent } from './about/about.component';
+import { ColorViewComponent } from './color-view/color-view.component';
+import { PhoneViewComponent } from './phone-view/phone-view.component';
+import { TabletViewComponent } from './tablet-view/tablet-view.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -25,7 +28,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     StranslateDirective,
     FooterComponent,
     SlideMenuComponent,
-    AboutComponent
+    AboutComponent,
+    ColorViewComponent,
+    PhoneViewComponent,
+    TabletViewComponent
   ],
   imports: [
     BrowserModule,
