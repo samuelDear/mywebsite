@@ -1,13 +1,26 @@
-.menu-hamburguer span{
-  height: 2px;
-  width: 100%;
+.lineBurguer {
   display: block;
+  border: 2px solid #fbb6ce;;
+  transition: 1s;
 }
 
-.menu-hamburguer {
-  height: 30px;
-  width: 40px;
-  align-items: normal;
+.hamburguer{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburguerBox{
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+  margin: 30px 30px 10px 20px;
+}
+
+.hamburguer:hover{
+  cursor: pointer;
 }
 
 .boxItems{
@@ -18,4 +31,32 @@
 .aboutMe {
   padding: 0px 10px;
   width: 100px;
+  transition: 1s;
+}
+
+.aboutMe:hover{
+  color: #000;
+  background-color: #999;
+  border-color: #999;
+}
+.hamburguer #bread2,
+.hamburguer #bread1,
+.hamburguer #bistek {
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.hamburguer.bt-menu-open #bread1 {
+	-webkit-transform: translateY(0.425em) translateX(-0.70em) rotate(-45deg) scaleX(0.8);
+	transform: translateY(0.425em) translateX(-0.70em) rotate(-225deg) scaleX(0.8);
+}
+
+.hamburguer.bt-menu-open #bread2 {
+	-webkit-transform: translateY(-0.425em) translateX(-0.70em) rotate(45deg) scaleX(0.8);
+	transform: translateY(-0.425em) translateX(-0.70em) rotate(225deg) scaleX(0.8);
+}
+
+.hamburguer.bt-menu-open #bistek {
+  -webkit-transform: translateY(0em) translateX(-0.05em) rotate(90deg) scaleX(1.15);
+    transform: translateY(0em) translateX(-0.05em) rotate(270deg) scaleX(1.15);
 }

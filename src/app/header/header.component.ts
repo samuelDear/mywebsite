@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +9,31 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   @Input() showAbout: boolean;
-
+  @Input() headerNav: boolean;
   constructor(private router: Router) {
+    this.router.events.subscribe(ev => {
+      if (ev instanceof NavigationEnd) {
+        console.log(this.headerNav);
+        if(this.headerNav){
+          this.animation();
+        }
+      }
+    });
   }
 
   ngOnInit() { }
 
   navigation() {
-    this.router.navigateByUrl('/menu');
+    if(this.router.url != '/menu'){
+      this.animation();
+      this.router.navigateByUrl('/menu');
+    }
+  }
+
+  animation(){
+    var button = document.getElementsByClassName('hamburguer')[0];
+    if(button != undefined){
+      button.classList.toggle('bt-menu-open');
+    }
   }
 }

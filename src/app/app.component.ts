@@ -7,7 +7,7 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
+  nav: boolean;
   buttonShow: boolean;
 
   constructor(public translate: TranslateService) {
@@ -20,8 +20,9 @@ export class AppComponent {
   }
 
   showButton(show){
-    console.log(show.showButton);
+    console.log(show);
     this.buttonShow = show.showButton;
+    this.nav = show.nav;
   }
 
 }
