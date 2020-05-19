@@ -72,6 +72,12 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+
+.colorBox:hover{
+  transform: scale(1.2) perspective(1px);
 }
 
 .colorContent {
@@ -85,6 +91,11 @@
 
 .featureBox {
   border-color: #DB2696;
+  transition: all 1s ease;
+}
+
+.featureBox:hover{
+  transform: scale(1.05) perspective(1px);
 }
 
 .heart{
@@ -95,8 +106,13 @@
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(1);
   background-color: #FF0000;
+  transition: all 1s ease;
+}
+
+.heart:hover{
+  transform: scale(1.1) perspective(1px) rotate(45deg);
 }
 
 .heart:before,
@@ -110,6 +126,8 @@
   -o-border-radius: 50%;
   border-radius: 50%;
   background-color: #FF0000;
+  transition: all 1s ease;
+  transform: scale(1);
 }
 
 .heart:before{
