@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
-import { projects } from '../project_info/project_info.constant';
 import {TranslateService} from '@ngx-translate/core';
+import { ProjectsService } from '../services/projects.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-project',
@@ -13,33 +14,34 @@ export class ProjectComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    public translate: TranslateService
+    public translate: TranslateService,
+    private projectsServicio: ProjectsService
   ) {
     window.scroll(0,0);
   }
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(params => {
-      let nameProject = params.get('id');
+      let nameProject = {
+        code: params.get('id'),
+      }
 
-      for(let i = 0; i < projects.length; i++){
-        if(nameProject == projects[i].id){
-          this.projectSelected = projects[i];
+      this.projectsServicio.getByCode(nameProject).subscribe(res => {
+        this.projectSelected = res;
+        this.projectSelected = this.projectSelected.entry;
+        console.log(this.projectSelected);
+        for(let i = 0; i < this.projectSelected.typographies.length; i++){
+          this.setFont(this.projectSelected.typographies[i].url);
+
+          var style = document.createElement('style');
+          style.type = 'text/css';
+          style.innerHTML = `.${this.projectSelected.typographies[i].name}-s { font-family: '${this.projectSelected.typographies[i].name}'; }`;
+          document.getElementsByTagName('head')[0].appendChild(style);
+          setTimeout(() => {
+            document.getElementById(`font${i}`).classList.toggle(`${this.projectSelected.typographies[i].name}-s`);
+          }, 100);
         }
-      }
-
-      console.log(this.projectSelected);
-      for(let i = 0; i < this.projectSelected.typography.length; i++){
-        this.setFont(this.projectSelected.typography[i].urlFont);
-
-        var style = document.createElement('style');
-        style.type = 'text/css';
-        style.innerHTML = `.${this.projectSelected.typography[i].fontName}-s { font-family: '${this.projectSelected.typography[i].fontName}'; }`;
-        document.getElementsByTagName('head')[0].appendChild(style);
-        setTimeout(() => {
-          document.getElementById(`font${i}`).classList.toggle(`${this.projectSelected.typography[i].fontName}-s`);
-        }, 100);
-      }
+      });
     });
   }
 
