@@ -42,7 +42,26 @@ button:focus, select:focus {
   align-self: center;
 }
 
-
 .boxProject {
   border-color: #4ae3cd;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg,#4ae3cd 0%, #db2696 50%, #38ca13 100%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, rgba(68,176,160,1) 0%, rgba(163,52,121,1) 50%, rgba(69,162,46,1) 100%);
 }
