@@ -17,7 +17,7 @@ button:focus, select:focus {
   font-size: 24px;
 }
 
-.tag, .linkProject {
+.tag, .linkProject, .titleFeature {
   color: #4ae3cd;
 }
 
@@ -40,4 +40,9 @@ button:focus, select:focus {
   height: 50px;
   width: 50px;
   align-self: center;
+}
+
+
+.boxProject {
+  border-color: #4ae3cd;
 }

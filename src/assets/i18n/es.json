@@ -42,5 +42,18 @@
     "knowlegdeLink": "CONOCIMIENTOS",
     "whoDesigned": "¿QUIEN DISEÑO ESTO?",
     "aboutLink": "ACERCA DE MI"
+  },
+  "project": {
+    "role": "Rol:",
+    "agency": "Empresa:",
+    "date": "Fecha:",
+    "introTitle": "Introducción",
+    "visualRes": "Resultado Visual",
+    "typoColor": "Tipografia - Color",
+    "features": "Caracteristicas",
+    "thanks": "Gracias por leer!",
+    "hereMore": "Aqui puede saber mas ",
+    "aboutLink": "acerca de mi",
+    "otherWork": "Puedes ver mis otros trabajos!"
   }
 }
