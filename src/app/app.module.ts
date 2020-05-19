@@ -6,13 +6,13 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { StranslateDirective } from './directives/stranslate.directive';
-import { FooterComponent } from './footer/footer.component';
-import { SlideMenuComponent } from './slide-menu/slide-menu.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectComponent } from './project/project.component';
+import { HomeComponent } from './app/home/home.component';
+import { HeaderComponent } from './app/header/header.component';
+import { StranslateDirective } from './app/directives/stranslate.directive';
+import { FooterComponent } from './app/footer/footer.component';
+import { SlideMenuComponent } from './app/slide-menu/slide-menu.component';
+import { AboutComponent } from './app/about/about.component';
+import { ProjectComponent } from './app/project/project.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);

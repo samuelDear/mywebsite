@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { SlideMenuComponent } from './slide-menu/slide-menu.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectComponent } from './project/project.component';
+import { HomeComponent } from './app/home/home.component';
+import { SlideMenuComponent } from './app/slide-menu/slide-menu.component';
+import { AboutComponent } from './app/about/about.component';
+import { ProjectComponent } from './app/project/project.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
