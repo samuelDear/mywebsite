@@ -52,3 +52,12 @@ svg {
   border-bottom: 20px solid transparent;
   border-left: 20px solid #FFF;
 }
+
+.btn{
+  transition:1s;
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 80vw 0 0 0 #2e8a7c;
+}
