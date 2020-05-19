@@ -11,8 +11,12 @@ li {
   margin: 15px 0px;
 }
 
+.navItem {
+  transition: 2s;
+}
 .navItem:hover {
-  background-color: #F00;
+  background-color: #db2696;
+  color: #999;
 }
 
 select {
