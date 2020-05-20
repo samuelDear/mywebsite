@@ -17,16 +17,4 @@ export class ProjectsService {
   getByCode(code) {
     return this.http.get(`${this.url}projects/specificentry.php?code=${code.code}`);
   }
-
-  /*baja(codigo:number) {
-    return this.http.get(`${this.url}baja.php?codigo=${codigo}`);
-  }
-
-  seleccionar(codigo:number) {
-    return this.http.get(`${this.url}seleccionar.php?codigo=${codigo}`);
-  }
-
-  modificacion(articulo) {
-    return this.http.post(`${this.url}modificacion.php`, JSON.stringify(articulo));
-  }*/
 }
