@@ -42,7 +42,7 @@
               <th class="bg-teal-700 m-2 p-2">Cantidad</th>
             </tr>
             <tr *ngFor="let color of colors;">
-              <td class="font-bold text-left">{{ color.name | uppercase }}</td>
+              <td class="font-bold text-left flex justify-between">{{ color.name | uppercase }}<span [style.background-color]="color.name" class="colorRepre"></span></td>
               <td class="font-bold text-right">{{ color.qty }}</td>
             </tr>
             <tr>
