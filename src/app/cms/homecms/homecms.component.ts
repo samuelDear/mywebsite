@@ -11,6 +11,8 @@ import { LoginService } from '../../services/login.service';
 })
 export class HomecmsComponent implements OnInit {
   projects: any;
+  colors: any;
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -25,6 +27,14 @@ export class HomecmsComponent implements OnInit {
     }
     this.projectsServicio.getProjectQty(user).subscribe((result:any) => {
       this.projects = result.records;
+      console.log(result.records);
+    },
+    (error) => {
+      console.log(error);
+    });
+
+    this.projectsServicio.getColorsQty(user).subscribe((result:any) => {
+      this.colors = result.records;
       console.log(result.records);
     },
     (error) => {

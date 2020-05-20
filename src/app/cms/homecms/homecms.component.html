@@ -41,9 +41,13 @@
               <th class="bg-teal-700 m-2 p-2">ID</th>
               <th class="bg-teal-700 m-2 p-2">Cantidad</th>
             </tr>
+            <tr *ngFor="let color of colors;">
+              <td class="font-bold text-left">{{ color.name | uppercase }}</td>
+              <td class="font-bold text-right">{{ color.qty }}</td>
+            </tr>
             <tr>
               <th class="bg-teal-700 m-2 p-2 text-left font-bold">TOTAL</th>
-              <th class="bg-teal-700 m-2 p-2 text-right font-bold">10000</th>
+              <th class="bg-teal-700 m-2 p-2 text-right font-bold">{{ colors != undefined ? colors.length : '' }}</th>
             </tr>
           </table>
         </div>

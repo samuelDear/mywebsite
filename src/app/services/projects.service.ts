@@ -25,4 +25,8 @@ export class ProjectsService {
   getProjectQty(user){
     return this.http.get(`${this.url}projects/menuprojects.php?sessionid=${user.sessionid}`);
   }
+
+  getColorsQty(user){
+    return this.http.get(`${this.url}projects/menucolors.php?sessionid=${user.sessionid}`);
+  }
 }
