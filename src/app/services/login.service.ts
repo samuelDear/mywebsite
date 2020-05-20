@@ -14,4 +14,8 @@ export class LoginService {
     return this.http.get(`${this.url}login/login.php?email=${encodeURIComponent(user.email)}&pwd=${encodeURIComponent(user.pwd)}`);
   }
 
+  logout(user){
+    return this.http.get(`${this.url}login/logout.php?sessionid=${encodeURIComponent(user.sessionid)}`);
+  }
+
 }

@@ -17,4 +17,8 @@ export class ProjectsService {
   getByCode(code) {
     return this.http.get(`${this.url}projects/specificentry.php?code=${code.code}`);
   }
+
+  getProjectsCms(user) {
+    return this.http.get(`${this.url}projects/entrycms.php?sessionid=${user.sessionid}`);
+  }
 }
