@@ -2,7 +2,7 @@
   <div class="border-2 w-1/6 min-h-screen">
     <div class="mt-10">
       <h1 class="text-2xl m-auto text-center">Menu</h1>
-      <div class="border-2 my-5 cursor-pointer">
+      <div class="border-2 my-5 cursor-pointer" (click)="navigate('home')">
         <p class="text-center">Home</p>
       </div>
       <div class="border-2 my-5 cursor-pointer" (click)="navigate('projects')">
@@ -16,6 +16,61 @@
   <div class="border-2 w-5/6 min-h-screen">
     <div class="m-10">
       <h1 class="text-4xl m-auto text-center">CMS - Portafolio</h1>
+      <div class="w-full flex flex-row justify-around my-8">
+        <div class="w-2/6">
+          <h2 class="text-center text-2xl">PROYECTOS</h2>
+          <table class="w-full" border="1">
+            <tr>
+              <th class="bg-teal-700 m-2 p-2">ID</th>
+              <th class="bg-teal-700 m-2 p-2">Cantidad</th>
+            </tr>
+            <tr>
+              <th class="bg-teal-700 m-2 p-2 text-left font-bold">TOTAL</th>
+              <th class="bg-teal-700 m-2 p-2 text-right font-bold">10000</th>
+            </tr>
+          </table>
+        </div>
+        <div class="w-2/6">
+          <h2 class="text-center text-2xl">COLORES</h2>
+          <table class="w-full" border="1">
+            <tr>
+              <th class="bg-teal-700 m-2 p-2">ID</th>
+              <th class="bg-teal-700 m-2 p-2">Cantidad</th>
+            </tr>
+            <tr>
+              <th class="bg-teal-700 m-2 p-2 text-left font-bold">TOTAL</th>
+              <th class="bg-teal-700 m-2 p-2 text-right font-bold">10000</th>
+            </tr>
+          </table>
+        </div>
     </div>
+    <div class="w-full flex flex-row justify-around my-8">
+      <div class="w-2/6">
+        <h2 class="text-center text-2xl">TIPOGRAFIAS</h2>
+        <table class="w-full" border="1">
+          <tr>
+            <th class="bg-teal-700 m-2 p-2">ID</th>
+            <th class="bg-teal-700 m-2 p-2">Cantidad</th>
+          </tr>
+          <tr>
+            <th class="bg-teal-700 m-2 p-2 text-left font-bold">TOTAL</th>
+            <th class="bg-teal-700 m-2 p-2 text-right font-bold">10000</th>
+          </tr>
+        </table>
+      </div>
+      <div class="w-2/6">
+        <h2 class="text-center text-2xl">CARACTERISTICAS</h2>
+        <table class="w-full" border="1">
+          <tr>
+            <th class="bg-teal-700 m-2 p-2">ID</th>
+            <th class="bg-teal-700 m-2 p-2">Cantidad</th>
+          </tr>
+          <tr>
+            <th class="bg-teal-700 m-2 p-2 text-left font-bold">TOTAL</th>
+            <th class="bg-teal-700 m-2 p-2 text-right font-bold">10000</th>
+          </tr>
+        </table>
+      </div>
+  </div>
   </div>
 </div>

@@ -2,7 +2,7 @@
   <div class="border-2 w-1/6 min-h-screen">
     <div class="mt-10">
       <h1 class="text-2xl m-auto text-center">Menu</h1>
-      <div class="border-2 my-5 cursor-pointer">
+      <div class="border-2 my-5 cursor-pointer" (click)="navigate('home')">
         <p class="text-center">Home</p>
       </div>
       <div class="border-2 my-5 cursor-pointer" (click)="navigate('projects')">
@@ -15,7 +15,7 @@
   </div>
   <div class="border-2 w-5/6 min-h-screen">
     <div class="m-10">
-      <h1 class="text-4xl m-auto text-center">CMS - Portafolio</h1>
+      <h1 class="text-4xl m-auto text-center">CMS - Proyectos</h1>
       <table class="w-full" border="1">
         <tr>
           <th class="bg-teal-700 m-2 p-2">ID</th>
