@@ -31,7 +31,7 @@
           <td class="text-justify font-bold">{{ project.name }}</td>
           <td class="text-justify font-bold">{{ project.es.resume }}</td>
           <td class="text-justify font-bold">{{ project.en.resume }}</td>
-          <td><button type="button" class="cursor-pointer py-2 px-6 border-2">Ver</button></td>
+          <td><button type="button" class="cursor-pointer py-2 px-6 border-2" [routerLink]="['/cms/project-edit', project.id]">Ver</button></td>
         </tr>
       </table>
     </div>
