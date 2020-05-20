@@ -41,9 +41,13 @@
               <th class="bg-teal-700 m-2 p-2">ID</th>
               <th class="bg-teal-700 m-2 p-2">Cantidad</th>
             </tr>
+            <tr *ngFor="let feature of features">
+              <td class="font-bold text-left">{{ feature.name }}</td>
+              <td class="font-bold text-right">{{ feature.qty }}</td>
+            </tr>
             <tr>
               <th class="bg-teal-900 m-2 p-2 text-left font-bold">TOTAL</th>
-              <th class="bg-teal-900 m-2 p-2 text-right font-bold">10000</th>
+              <th class="bg-teal-900 m-2 p-2 text-right font-bold">{{ featuresQty }}</th>
             </tr>
           </table>
         </div>

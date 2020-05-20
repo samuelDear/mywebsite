@@ -33,4 +33,8 @@ export class ProjectsService {
   getTypographyQty(user){
     return this.http.get(`${this.url}projects/menutypography.php?sessionid=${user.sessionid}`);
   }
+
+  getFeaturesQty(user){
+    return this.http.get(`${this.url}projects/menufeatures.php?sessionid=${user.sessionid}`);
+  }
 }

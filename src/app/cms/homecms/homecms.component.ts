@@ -13,6 +13,8 @@ export class HomecmsComponent implements OnInit {
   projects: any;
   colors: any;
   typographies: any;
+  features: any;
+  featuresQty: any = 0;
 
   constructor(
     private router: Router,
@@ -44,6 +46,17 @@ export class HomecmsComponent implements OnInit {
 
     this.projectsServicio.getTypographyQty(user).subscribe((result:any) => {
       this.typographies = result.records;
+      console.log(result.records);
+    },
+    (error) => {
+      console.log(error);
+    });
+
+    this.projectsServicio.getFeaturesQty(user).subscribe((result:any) => {
+      this.features = result.records;
+      this.features.forEach(res => {
+        this.featuresQty += parseInt(res.qty);
+      });
       console.log(result.records);
     },
     (error) => {
