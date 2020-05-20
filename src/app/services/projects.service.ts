@@ -29,4 +29,8 @@ export class ProjectsService {
   getColorsQty(user){
     return this.http.get(`${this.url}projects/menucolors.php?sessionid=${user.sessionid}`);
   }
+
+  getTypographyQty(user){
+    return this.http.get(`${this.url}projects/menutypography.php?sessionid=${user.sessionid}`);
+  }
 }
