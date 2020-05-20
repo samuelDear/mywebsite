@@ -16,24 +16,6 @@
   <div class="border-2 w-5/6 min-h-screen">
     <div class="m-10">
       <h1 class="text-4xl m-auto text-center">CMS - Portafolio</h1>
-      <table class="w-full" border="1">
-        <tr>
-          <th class="bg-teal-700 m-2 p-2">ID</th>
-          <th class="bg-teal-700 m-2 p-2">Codigo</th>
-          <th class="bg-teal-700 m-2 p-2">Nombre</th>
-          <th class="bg-teal-700 m-2 p-2">Resumen ES</th>
-          <th class="bg-teal-700 m-2 p-2">Resumen EN</th>
-          <th class="bg-teal-700 m-2 p-2"></th>
-        </tr>
-        <tr *ngFor="let project of projects; let i = index">
-          <td class="text-justify font-bold">{{ project.id }}</td>
-          <td class="text-justify font-bold">{{ project.code }}</td>
-          <td class="text-justify font-bold">{{ project.name }}</td>
-          <td class="text-justify font-bold">{{ project.es.resume }}</td>
-          <td class="text-justify font-bold">{{ project.en.resume }}</td>
-          <td><button type="button" class="cursor-pointer py-2 px-6 border-2">Ver</button></td>
-        </tr>
-      </table>
     </div>
   </div>
 </div>

@@ -10,7 +10,6 @@ import { LoginService } from '../../services/login.service';
   styleUrls: ['./homecms.component.scss']
 })
 export class HomecmsComponent implements OnInit {
-  projects: any;
 
   constructor(
     private router: Router,
@@ -24,13 +23,13 @@ export class HomecmsComponent implements OnInit {
     let user = {
       sessionid: localStorage.sessionid,
     }
-    this.projectsServicio.getProjectsCms(user).subscribe((result:any) => {
+    /*this.projectsServicio.getProjectsCms(user).subscribe((result:any) => {
       this.projects = result.records;
       console.log(result.records);
     },
     (error) => {
       console.log(error);
-    });
+    });*/
   }
 
   logout(){

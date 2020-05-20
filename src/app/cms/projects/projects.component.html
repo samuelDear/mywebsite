@@ -1,1 +1,39 @@
-<p>projects works!</p>
+<div class="flex flex-row w-screen min-h-screen">
+  <div class="border-2 w-1/6 min-h-screen">
+    <div class="mt-10">
+      <h1 class="text-2xl m-auto text-center">Menu</h1>
+      <div class="border-2 my-5 cursor-pointer">
+        <p class="text-center">Home</p>
+      </div>
+      <div class="border-2 my-5 cursor-pointer" (click)="navigate('projects')">
+        <p class="text-center">Proyectos</p>
+      </div>
+      <div class="border-2 my-5 cursor-pointer" (click)="logout()">
+        <p class="text-center">Cerrar sesi&oacute;n</p>
+      </div>
+    </div>
+  </div>
+  <div class="border-2 w-5/6 min-h-screen">
+    <div class="m-10">
+      <h1 class="text-4xl m-auto text-center">CMS - Portafolio</h1>
+      <table class="w-full" border="1">
+        <tr>
+          <th class="bg-teal-700 m-2 p-2">ID</th>
+          <th class="bg-teal-700 m-2 p-2">Codigo</th>
+          <th class="bg-teal-700 m-2 p-2">Nombre</th>
+          <th class="bg-teal-700 m-2 p-2">Resumen ES</th>
+          <th class="bg-teal-700 m-2 p-2">Resumen EN</th>
+          <th class="bg-teal-700 m-2 p-2"></th>
+        </tr>
+        <tr *ngFor="let project of projects; let i = index">
+          <td class="text-justify font-bold">{{ project.id }}</td>
+          <td class="text-justify font-bold">{{ project.code }}</td>
+          <td class="text-justify font-bold">{{ project.name }}</td>
+          <td class="text-justify font-bold">{{ project.es.resume }}</td>
+          <td class="text-justify font-bold">{{ project.en.resume }}</td>
+          <td><button type="button" class="cursor-pointer py-2 px-6 border-2">Ver</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
