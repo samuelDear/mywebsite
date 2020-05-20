@@ -14,7 +14,8 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
-        if(this.router.url == '/cms' || this.router.url == '/cms/home'){
+        if(this.router.url == '/cms' || this.router.url == '/cms/home' ||
+         this.router.url == '/cms/projects'){
           this.showHeader = false;
         }else{
           this.showHeader  = true;
