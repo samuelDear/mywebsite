@@ -15,7 +15,8 @@ export class HomecmsComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private projectsServicio: ProjectsService
+    private projectsServicio: ProjectsService,
+    private loginService: LoginService
   ) {
   }
 
@@ -33,6 +34,17 @@ export class HomecmsComponent implements OnInit {
   }
 
   logout(){
+    let user = {
+      sessionid: localStorage.sessionid,
+    }
+
+    this.loginService.logout(user).subscribe((res:any) => {
+      localStorage.clear();
+      this.router.navigateByUrl("/cms");
+    },
+    (error) => {
+      console.log(error);
+    })
 
   }
 
