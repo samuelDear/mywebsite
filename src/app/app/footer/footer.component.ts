@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
         console.log(this.router.url);
-        if (this.router.url == '/about') {
+        if (this.router.url == '/about' || this.router.url == '/cms' || this.router.url == '/cms/home') {
           this.showFooter = null;
         } else {
           this.showFooter = 'show';

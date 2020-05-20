@@ -1,4 +1,4 @@
-<div class="flex justify-between">
+<div class="flex justify-between" *ngIf="showHeader">
   <div class="flex boxItems">
     <button type="button" class="mr-2 border-white border-2 aboutMe"
     *ngIf="showAbout" stranslate="header.aboutButton" routerLink="/about">ABOUT ME</button>

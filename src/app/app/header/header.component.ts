@@ -10,9 +10,15 @@ export class HeaderComponent implements OnInit {
 
   @Input() showAbout: boolean;
   @Input() headerNav: boolean;
+  showHeader: boolean;
   constructor(private router: Router) {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
+        if(this.router.url == '/cms' || this.router.url == '/cms/home'){
+          this.showHeader = false;
+        }else{
+          this.showHeader  = true;
+        }
         console.log(this.headerNav);
         if(this.headerNav){
           this.animation();
