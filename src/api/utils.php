@@ -28,7 +28,7 @@ function getValidator($length = 8){
 function isSessionValid($db, $sessionid){
     // Validar sessionid activo
     $sql =  "SELECT id " .
-            "FROM   users " .
+            "FROM   cmsusers " .
             "WHERE  sessionid = '" . $sessionid . "' " .
             "AND    validthru > NOW() ";
     if (!$rs = $db->query($sql)){
