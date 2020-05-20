@@ -21,4 +21,8 @@ export class ProjectsService {
   getProjectsCms(user) {
     return this.http.get(`${this.url}projects/entrycms.php?sessionid=${user.sessionid}`);
   }
+
+  getProjectQty(user){
+    return this.http.get(`${this.url}projects/menuprojects.php?sessionid=${user.sessionid}`);
+  }
 }
