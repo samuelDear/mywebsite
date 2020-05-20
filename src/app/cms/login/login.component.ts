@@ -47,10 +47,10 @@ export class LoginComponent implements OnInit {
         email: this.loginForm.get('email').value,
       }
 
-      this.loginService.login(user).subscribe(res => {
+      this.loginService.login(user).subscribe((res:any) => {
         console.log(res);
         localStorage.setItem('sessionid',res.sessionid);
-        this.router.navigate(['home'], {relativeTo: this.route}); 
+        this.router.navigate(['home'], {relativeTo: this.route});
       },
       (error) => {
         if(error.status == 400){
