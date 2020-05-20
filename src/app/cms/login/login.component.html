@@ -1,2 +1,15 @@
-<p>login works!</p>
-<button type="button" class="mt-10" (click)="navigate()">HOLA sa dsa das d as</button>
+<div class="flex justify-center items-center w-screen h-screen max-h-full max-w-full">
+  <form class="loginBox p-10 border-2 flex flex-col">
+    <h2 class="m-auto text-4xl font-bold">CMS</h2>
+    <div class="flex flex-col my-4">
+      <label for="user">Usuario</label>
+      <input class="ml-2 mt-2" type="text" id="user" placeholder="Usuario...">
+    </div>
+    <div class="flex flex-col my-4">
+      <label for="pwd">Usuario</label>
+      <input class="ml-2 mt-2" type="password" id="pwd" placeholder="Contrase&ntilde;a...">
+    </div>
+    <button type="button" class="mt-5 border-2 w-2/4 mx-auto text-1xl font-bold" (click)="navigate()">Ingresar</button>
+  </form>
+
+</div>

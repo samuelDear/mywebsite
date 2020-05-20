@@ -1,0 +1,23 @@
+.loginBox{
+  border-radius: 20px;
+  width: 35%;
+}
+
+button, input {
+  height: 40px;
+  border-radius: 15px;
+  outline: 0;
+}
+
+input {
+  text-indent: 15px;
+}
+
+button{
+  transition: 1s;
+}
+
+button:hover {
+  color: #111;
+  background-color: #4ae3cd;
+}
