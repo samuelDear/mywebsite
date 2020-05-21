@@ -18,6 +18,10 @@ export class ProjectsService {
     return this.http.get(`${this.url}projects/specificentry.php?code=${code.code}`);
   }
 
+  getById(project) {
+    return this.http.get(`${this.url}projects/specificentrycms.php?id=${project.id}`);
+  }
+
   getProjectsCms(user) {
     return this.http.get(`${this.url}projects/entrycms.php?sessionid=${user.sessionid}`);
   }
