@@ -15,6 +15,7 @@ export class ProjectEditComponent implements OnInit {
   typographies: any;
   colors: any;
   features: any;
+  id: any;
 
   editForm= this.fb.group({
     code: ['', [Validators.required]],
@@ -46,6 +47,8 @@ export class ProjectEditComponent implements OnInit {
       let nameProject = {
         id: params.get('id'),
       }
+      this.id = parseInt(nameProject.id);
+
       console.log(nameProject.id);
       if(parseInt(nameProject.id) != 0){
         this.projectsServicio.getById(nameProject).subscribe((res: any) => {
@@ -188,5 +191,83 @@ export class ProjectEditComponent implements OnInit {
 
   navigate(url){
     this.router.navigateByUrl("cms/" + url);
+  }
+
+  save(){
+    if(this.id != 0){
+      if(this.editForm.valid){
+        let params = {
+          code: this.editForm.get('code').value,
+          name: this.editForm.get('name').value,
+          datecreated: this.editForm.get('datecreated').value,
+          rolss: this.editForm.get('rolEs').value,
+          rolen: this.editForm.get('rolEn').value,
+          agencyes: this.editForm.get('agencyEs').value,
+          agencyen: this.editForm.get('agencyEn').value,
+          resumees: this.editForm.get('resumeEs').value,
+          resumeen: this.editForm.get('resumeEn').value,
+          introductiones: this.editForm.get('introductionEs').value,
+          introductionen: this.editForm.get('introductionEn').value
+        }
+        console.log(params);
+      }else{
+        alert("Nada de campos vacios");
+      }
+    }else{
+      if(this.editForm.valid && this.features.length > 1 &&
+      this.colors.length > 1 && this.typographies.length > 1){
+        let colors = "";
+        for(let i = 0; i < this.colors.length; i++){
+          colors += this.colors[i].colorhex == undefined ? '' : this.colors[i].colorhex + "~";
+        }
+        colors = colors.slice(0,-1);
+        console.log(colors);
+
+        let typographiesName = "";
+        let typographiesUrl = "";
+        for(let i = 0; i < this.typographies.length; i++){
+          typographiesName += this.typographies[i].name == undefined ? '' : this.typographies[i].name + "~";
+          typographiesUrl += this.typographies[i].url == undefined ? '' : this.typographies[i].url + "~";
+        }
+        typographiesName = typographiesName.slice(0,-1);
+        typographiesUrl = typographiesUrl.slice(0,-1);
+        console.log(typographiesName);
+        console.log(typographiesUrl);
+
+        let tituloEs = "";
+        let tituloEn = "";
+        let dscEs = "";
+        let dscEn = "";
+        for(let i = 0; i < this.features.length; i++){
+          tituloEs += this.features[i].tituloEn == undefined ? '' : this.features[i].tituloEn + "~";
+          tituloEn += this.features[i].tituloEs == undefined ? '' : this.features[i].tituloEs + "~";
+          dscEs += this.features[i].dscEs == undefined ? '' : this.features[i].dscEs + "~";
+          dscEn += this.features[i].dscEn == undefined ? '' : this.features[i].dscEn + "~";
+        }
+
+        tituloEs = tituloEs.slice(0, -1);
+        tituloEn = tituloEn.slice(0, -1);
+        dscEs = dscEs.slice(0, -1);
+        dscEn = dscEn.slice(0, -1);
+
+        let params = {
+          code: this.editForm.get('code').value,
+          name: this.editForm.get('name').value,
+          datecreated: this.editForm.get('datecreated').value,
+          rolss: this.editForm.get('rolEs').value,
+          rolen: this.editForm.get('rolEn').value,
+          agencyes: this.editForm.get('agencyEs').value,
+          agencyen: this.editForm.get('agencyEn').value,
+          resumees: this.editForm.get('resumeEs').value,
+          resumeen: this.editForm.get('resumeEn').value,
+          introductiones: this.editForm.get('introductionEs').value,
+          introductionen: this.editForm.get('introductionEn').value
+        }
+        console.log(params);
+
+      }else{
+        alert('Todos los datos son requeridos');
+      }
+    }
   }
 }

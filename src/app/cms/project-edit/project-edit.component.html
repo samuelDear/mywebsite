@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="w-5/6 min-h-screen">
-    <form class="m-10 flex flex-col" autocomplete="off" role="form" [formGroup]="editForm">
+    <form class="m-10 flex flex-col" autocomplete="off" role="form" [formGroup]="editForm" (ngSubmit)="save()">
       <h1 class="text-4xl m-auto text-center underline">Editar o Crear Proyecto</h1>
 
       <div class="flex flex-col w-full">
@@ -68,11 +68,11 @@
         <div class="flex flex-row my-4 justify-between">
           <div class="flex flex-col ml-5 w-2/5">
             <label for="introEs">Introducci&oacute;n ES:</label>
-            <textarea class="ml-2 p-2" rows="8" id="introEs" placeholder="Introducci&oacute;n..."></textarea>
+            <textarea class="ml-2 p-2" rows="8" id="introEs" placeholder="Introducci&oacute;n..." formControlName="introductionEs"></textarea>
           </div>
           <div class="flex flex-col ml-5 w-2/5">
             <label for="introEn">Introducci&oacute;n EN:</label>
-            <textarea class="ml-2 p-2" rows="8" id="introEn" placeholder="Introduction..."></textarea>
+            <textarea class="ml-2 p-2" rows="8" id="introEn" placeholder="Introduction..." formControlName="introductionEn"></textarea>
           </div>
         </div>
 
@@ -89,8 +89,8 @@
             <label for="{{ 'urlTypography' + i }}">URL de la tipografia:</label>
             <input type="text" autocomplete="new-line" [readonly]="typography.url != undefined" value="{{ typography.url != undefined ? typography.url : '' }}" class="ml-2 p-2" id="{{ 'urlTypography' + i }}" placeholder="URL..."/>
           </div>
-          <span class="circlePlus ml-5" (click)="addTypography(i)" *ngIf="i + 1 == typographies.length"></span>
-          <span *ngIf="i != 0 || typography.url != undefined" class="circleLess ml-5" (click)="deleteTypography(i)"></span>
+          <span class="circlePlus ml-5" (click)="addTypography(i)" *ngIf="i + 1 == typographies.length && id == 0"></span>
+          <span *ngIf="(i != 0 || typography.url != undefined) && id == 0" class="circleLess ml-5" (click)="deleteTypography(i)"></span>
         </div>
 
         <div class="titleBox mt-2">
@@ -104,8 +104,8 @@
             <label for="{{ 'colorhex' + 1 }}">Color en Hexadecimal:</label>
             <input type="text" autocomplete="new-line" [readonly]="color.colorhex != undefined" value="{{ color.colorhex != undefined ? color.colorhex : '' }}" class="ml-2 p-2" id="{{ 'colorhex' + i }}" placeholder="Hexadecimal..."/>
           </div>
-          <span class="circlePlus ml-5" (click)="addColor(i)" *ngIf="i + 1 == colors.length"></span>
-          <span *ngIf="i != 0 || color.colorhex != undefined" class="circleLess ml-5" (click)="deleteColors(i)"></span>
+          <span class="circlePlus ml-5" (click)="addColor(i)" *ngIf="i + 1 == colors.length && id == 0"></span>
+          <span *ngIf="(i != 0 || color.colorhex != undefined) && id == 0" class="circleLess ml-5" (click)="deleteColors(i)"></span>
         </div>
 
         <div class="titleBox mt-2">
@@ -134,14 +134,14 @@
             </div>
           </div>
           <div class="flex flex-row justify-center my-5">
-            <span class="circlePlus mx-5" (click)="addFeature(i)" *ngIf="i + 1 == features.length"></span>
-            <span class="circleLess mx-5" (click)="deleteFeatures(i)" *ngIf="i != 0 || feature.tituloEn != undefined"></span>
+            <span class="circlePlus mx-5" (click)="addFeature(i)" *ngIf="i + 1 == features.length && id == 0"></span>
+            <span class="circleLess mx-5" (click)="deleteFeatures(i)" *ngIf="(i != 0 || feature.tituloEn != undefined) && id == 0"></span>
           </div>
         </div>
 
         <div class="flex flex-row mt-5 justify-center font-bold">
           <button type="button" class="border-2 px-5 mx-5" (click)="navigate('projects')">Cancelar</button>
-          <button type="button" class="border-2 px-5 mx-5">Guardar</button>
+          <button type="submit" class="border-2 px-5 mx-5">Guardar</button>
           <button type="button" class="border-2 px-5 mx-5">Borrar</button>
         </div>
 
