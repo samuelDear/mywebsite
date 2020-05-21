@@ -10,7 +10,7 @@ export class FeaturesService {
 
   constructor(private http: HttpClient) { }
 
-  getFeaturesCms(user) {
+  getFeaturesCms(user){
     return this.http.get(`${this.url}features/entrycms.php?sessionid=${user.sessionid}`);
   }
 }
