@@ -51,42 +51,43 @@
             </tr>
           </table>
         </div>
+      </div>
+      <div class="w-full flex flex-row justify-around my-8">
+        <div class="w-2/6 border-2 tableBox p-3 border-white">
+          <h2 class="text-center font-semibold text-2xl">TIPOGRAFIAS</h2>
+          <table class="w-full" border="1">
+            <tr>
+              <th class="bg-teal-700 m-2 p-2">ID</th>
+              <th class="bg-teal-700 m-2 p-2">Cantidad</th>
+            </tr>
+            <tr *ngFor="let typography of typographies">
+              <td class="font-bold text-left">{{ typography.name }}</td>
+              <td class="font-bold text-right">{{ typography.qty }}</td>
+            </tr>
+            <tr>
+              <th class="bg-teal-900 m-2 p-2 text-left font-bold">TOTAL</th>
+              <th class="bg-teal-900 m-2 p-2 text-right font-bold">{{ typographies != undefined ? typographies.length : '' }}</th>
+            </tr>
+          </table>
+        </div>
+        <div class="w-2/6 border-2 tableBox p-3 border-white">
+          <h2 class="text-center font-semibold text-2xl">COLORES</h2>
+          <table class="w-full" border="1">
+            <tr>
+              <th class="bg-teal-700 m-2 p-2">ID</th>
+              <th class="bg-teal-700 m-2 p-2">Cantidad</th>
+            </tr>
+            <tr *ngFor="let color of colors;">
+              <td class="font-bold text-left flex justify-between">{{ color.name | uppercase }}<span [style.background-color]="color.name" class="colorRepre"></span></td>
+              <td class="font-bold text-right">{{ color.qty }}</td>
+            </tr>
+            <tr>
+              <th class="bg-teal-900 m-2 p-2 text-left font-bold">TOTAL</th>
+              <th class="bg-teal-900 m-2 p-2 text-right font-bold">{{ colors != undefined ? colors.length : '' }}</th>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
-    <div class="w-full flex flex-row justify-around my-8">
-      <div class="w-2/6 border-2 tableBox p-3 border-white">
-        <h2 class="text-center font-semibold text-2xl">TIPOGRAFIAS</h2>
-        <table class="w-full" border="1">
-          <tr>
-            <th class="bg-teal-700 m-2 p-2">ID</th>
-            <th class="bg-teal-700 m-2 p-2">Cantidad</th>
-          </tr>
-          <tr *ngFor="let typography of typographies">
-            <td class="font-bold text-left">{{ typography.name }}</td>
-            <td class="font-bold text-right">{{ typography.qty }}</td>
-          </tr>
-          <tr>
-            <th class="bg-teal-900 m-2 p-2 text-left font-bold">TOTAL</th>
-            <th class="bg-teal-900 m-2 p-2 text-right font-bold">{{ typographies != undefined ? typographies.length : '' }}</th>
-          </tr>
-        </table>
-      </div>
-      <div class="w-2/6 border-2 tableBox p-3 border-white">
-        <h2 class="text-center font-semibold text-2xl">COLORES</h2>
-        <table class="w-full" border="1">
-          <tr>
-            <th class="bg-teal-700 m-2 p-2">ID</th>
-            <th class="bg-teal-700 m-2 p-2">Cantidad</th>
-          </tr>
-          <tr *ngFor="let color of colors;">
-            <td class="font-bold text-left flex justify-between">{{ color.name | uppercase }}<span [style.background-color]="color.name" class="colorRepre"></span></td>
-            <td class="font-bold text-right">{{ color.qty }}</td>
-          </tr>
-          <tr>
-            <th class="bg-teal-900 m-2 p-2 text-left font-bold">TOTAL</th>
-            <th class="bg-teal-900 m-2 p-2 text-right font-bold">{{ colors != undefined ? colors.length : '' }}</th>
-          </tr>
-        </table>
-      </div>
-  </div>
   </div>
 </div>
