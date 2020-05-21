@@ -23,5 +23,25 @@
     </div>
   </div>
   <div class="w-5/6 min-h-screen">
+    <div class="m-10">
+      <h1 class="text-4xl m-auto text-center underline">CMS - Colores</h1>
+      <div class="w-full flex justify-end mb-2">
+        <span class="circlePlus"></span>
+      </div>
+      <table class="w-full" border="1">
+        <tr>
+          <th class="bg-teal-700 m-2 p-2">ID</th>
+          <th class="bg-teal-700 m-2 p-2">Color en Hex</th>
+          <th class="bg-teal-700 m-2 p-2">Proyecto</th>
+          <th class="bg-teal-700 m-2 p-2"></th>
+        </tr>
+        <tr *ngFor="let color of colors; let i = index">
+          <td class="font-bold text-center">{{ color.id }}</td>
+          <td class="font-bold text-center flex justify-around">{{ color.colorhex | uppercase }}<span [style.background-color]="color.colorhex" class="colorRepre"></span></td>
+          <td class="font-bold text-center">{{ color.nameproject }}</td>
+          <td class="flex"><button type="button" class="cursor-pointer py-2 px-6 border-2 mx-auto">Ver</button></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>

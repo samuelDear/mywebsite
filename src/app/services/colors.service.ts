@@ -11,6 +11,6 @@ export class ColorsService {
   constructor(private http: HttpClient) { }
 
   getColorsCms(user) {
-    return this.http.get(`${this.url}colorss/entrycms.php?sessionid=${user.sessionid}`);
+    return this.http.get(`${this.url}colors/entrycms.php?sessionid=${user.sessionid}`);
   }
 }
