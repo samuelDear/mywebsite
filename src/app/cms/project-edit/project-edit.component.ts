@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ProjectsService } from '../../services/projects.service';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
-import { LoginService } from '../../services/login.service';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -35,7 +34,6 @@ export class ProjectEditComponent implements OnInit {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private projectsServicio: ProjectsService,
-    private loginService: LoginService,
     private fb: FormBuilder
   ) { }
 
@@ -172,25 +170,6 @@ export class ProjectEditComponent implements OnInit {
     if(index == 0){
       this.features.push("");
     }
-  }
-
-  logout(){
-    let user = {
-      sessionid: localStorage.sessionid,
-    }
-
-    this.loginService.logout(user).subscribe((res:any) => {
-      localStorage.clear();
-      this.router.navigateByUrl("/cms");
-    },
-    (error) => {
-      console.log(error);
-    })
-
-  }
-
-  navigate(url){
-    this.router.navigateByUrl("cms/" + url);
   }
 
   save(){

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { LoginService } from '../../services/login.service';
 import { FeaturesService } from '../../services/features.service';
 
 @Component({
@@ -14,7 +13,6 @@ export class FeaturesComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private loginService: LoginService,
     private featuresService: FeaturesService
   ) { }
 
@@ -29,23 +27,5 @@ export class FeaturesComponent implements OnInit {
     (error) => {
       console.log(error);
     });
-  }
-
-  navigate(url){
-    this.router.navigateByUrl("cms/" + url);
-  }
-
-  logout(){
-    let user = {
-      sessionid: localStorage.sessionid,
-    }
-
-    this.loginService.logout(user).subscribe((res:any) => {
-      localStorage.clear();
-      this.router.navigateByUrl("/cms");
-    },
-    (error) => {
-      console.log(error);
-    })
   }
 }

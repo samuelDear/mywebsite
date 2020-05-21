@@ -1,26 +1,6 @@
 <div class="flex flex-row w-full min-h-screen">
   <div class="w-1/6 min-h-screen">
-    <div class="w-1/6 fixed min-h-screen sideMenu text-gray-900 font-semibold">
-      <h1 class="text-2xl m-auto text-center mt-4">Menu</h1>
-      <div class="py-2 border-gray-700 border-b cursor-pointer buttonHover" (click)="navigate('home')">
-        <p class="text-center">Home</p>
-      </div>
-      <div class="py-2 border-gray-700 border-b cursor-pointer buttonHover" (click)="navigate('projects')">
-        <p class="text-center">Proyectos</p>
-      </div>
-      <div class="py-2 border-gray-700 border-b cursor-pointer buttonHover" (click)="navigate('colors')">
-        <p class="text-center">Colores</p>
-      </div>
-      <div class="py-2 border-gray-700 border-b cursor-pointer buttonHover" (click)="navigate('features')">
-        <p class="text-center">Caracteristicas</p>
-      </div>
-      <div class="py-2 border-gray-700 border-b cursor-pointer buttonHover" (click)="navigate('typographies')">
-        <p class="text-center">Tipograficas</p>
-      </div>
-      <div class="py-2 border-gray-700 border-b cursor-pointer buttonHover" (click)="logout()">
-        <p class="text-center">Cerrar sesi&oacute;n</p>
-      </div>
-    </div>
+    <app-slidemenu></app-slidemenu>
   </div>
   <div class="w-5/6 min-h-screen">
   </div>
