@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { LoginService } from '../../services/login.service';
+import { TypographiesService } from '../../services/typographies.service';
 
 @Component({
   selector: 'app-typographies',
@@ -8,14 +9,27 @@ import { LoginService } from '../../services/login.service';
   styleUrls: ['./typographies.component.scss']
 })
 export class TypographiesComponent implements OnInit {
+  typographies: any;
 
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private loginService: LoginService
+    private loginService: LoginService,
+    private typographiesService: TypographiesService,
   ) { }
 
   ngOnInit() {
+    let user = {
+      sessionid: localStorage.sessionid,
+    }
+
+    this.typographiesService.getTypographiesCms(user).subscribe((result:any) => {
+      this.typographies = result.records;
+      console.log(this.typographies);
+    },
+    (error) => {
+      console.log(error);
+    });
   }
 
   navigate(url){

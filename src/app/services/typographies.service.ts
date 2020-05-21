@@ -10,7 +10,7 @@ export class TypographiesService {
 
   constructor(private http: HttpClient) { }
 
-  getTypographiesCms(user) {
+  getTypographiesCms(user: any) {
     return this.http.get(`${this.url}typographies/entrycms.php?sessionid=${user.sessionid}`);
   }
 }
