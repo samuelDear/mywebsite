@@ -14,7 +14,7 @@ export class FeaturesEditComponent implements OnInit {
   feature: any;
 
   editForm= this.fb.group({
-    id: [null, [Validators.required]],
+    id: [0, [Validators.required]],
     titleEn: [null, [Validators.required]],
     titleEs: [null, [Validators.required]],
     dscEn: [null, [Validators.required]],
@@ -69,6 +69,31 @@ export class FeaturesEditComponent implements OnInit {
       dscEs: feature.dsces,
       projectid: feature.projectid
     });
+  }
+
+  save(){
+    if(this.editForm.valid){
+        let params = {
+          id: this.editForm.get('id').value,
+          projectid: this.editForm.get('projectid').value,
+          sessionid: localStorage.sessionid,
+          titleen: this.editForm.get('titleEn').value,
+          titlees: this.editForm.get('titleEs').value,
+          dscen: this.editForm.get('dscEn').value,
+          dsces: this.editForm.get('dscEs').value
+        }
+        console.log(params);
+
+        this.featureService.saveFeature(params).subscribe(res => {
+          console.log(res);
+          this.router.navigateByUrl("cms/features");
+        },
+        (error) => {
+          console.log(error);
+        });
+    }else{
+      alert('Todos los campos son requeridos');
+    }
   }
 
   navigate(url){
