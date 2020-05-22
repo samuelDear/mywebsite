@@ -1,0 +1,28 @@
+button, input, select {
+  height: 40px;
+  border-radius: 15px;
+  outline: 0;
+}
+
+input, select {
+  text-indent: 15px;
+  background-color: #999;
+}
+
+input:-moz-read-only,
+input:read-only {
+  background-color: #333 !important;
+}
+
+button:hover {
+  color: #111;
+  background-color: #4ae3cd;
+}
+
+::placeholder{
+  color: #FFF;
+}
+
+.titleBox{
+  border-bottom: 2px solid #db2696;
+}

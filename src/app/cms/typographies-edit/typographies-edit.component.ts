@@ -10,14 +10,22 @@ import { ProjectsService } from '../../services/projects.service';
   styleUrls: ['./typographies-edit.component.scss']
 })
 export class TypographiesEditComponent implements OnInit {
-  feature: any;
+  typography: any;
   projects: any;
+
+  editForm= this.fb.group({
+    id: [null, [Validators.required]],
+    fontName: [null, [Validators.required]],
+    fontUrl: [null, [Validators.required]],
+    projectid: [null, [Validators.required]]
+  });
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private typographiesService: TypographiesService,
     private projectsServicio: ProjectsService,
+    private fb: FormBuilder
   ) { }
 
   ngOnInit() {
@@ -26,7 +34,6 @@ export class TypographiesEditComponent implements OnInit {
     }
     this.projectsServicio.getProjectsCms(user).subscribe((result:any) => {
       this.projects = result.records;
-      console.log(result.color);
     },
     (error) => {
       console.log(error);
@@ -41,14 +48,23 @@ export class TypographiesEditComponent implements OnInit {
       console.log(params);
       if(parseInt(params.id) != 0){
         this.typographiesService.getTypographyById(params).subscribe((res: any) => {
-          this.feature = res.entry;
-          console.log(this.feature);
-          //this.updateForm(this.feature);
+          this.typography = res.entry;
+          console.log(this.typography);
+          this.updateForm(this.typography);
         },
         (error) => {
           console.log(error);
         });
       }
+    });
+  }
+
+  updateForm(typography: any){
+    this.editForm.patchValue({
+      id: typography.id,
+      fontName: typography.fontname,
+      fontUrl: typography.urlfont,
+      projectid: typography.projectid
     });
   }
 
