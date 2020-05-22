@@ -19,6 +19,9 @@
             <label for="colorhex">Color en Hexadecimal:</label>
             <input class="ml-2" type="text" id="colorhex" autocomplete="new-line" placeholder="Hexadecimal..." formControlName="colorhex">
           </div>
+          <div class="flex items-end ml-5">
+            <span [style.background-color]="editForm.get('colorhex').value" class="colorRepre"></span>
+          </div>
         </div>
 
         <div class="flex flex-row my-4">
