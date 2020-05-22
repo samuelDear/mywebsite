@@ -1,10 +1,10 @@
-button, input {
+button, input, select {
   height: 40px;
   border-radius: 15px;
   outline: 0;
 }
 
-input {
+input, select {
   text-indent: 15px;
   background-color: #999;
 }

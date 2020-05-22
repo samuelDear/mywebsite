@@ -3,7 +3,7 @@
     <app-slidemenu></app-slidemenu>
   </div>
   <div class="w-5/6 min-h-screen">
-    <form class="m-10 flex flex-col" autocomplete="off">
+    <form class="m-10 flex flex-col" autocomplete="off" role="form" [formGroup]="editForm">
       <h1 class="text-4xl m-auto text-center underline">Editar o Crear Color</h1>
 
       <div class="flex flex-col w-full">
@@ -12,8 +12,22 @@
         </div>
         <div class="flex flex-row my-4">
           <div class="flex flex-col ml-5 w-1/5">
-            <label for="code">ID:</label>
-            <input class="ml-2" type="text" id="code" readonly autocomplete="new-line">
+            <label for="idcolor">ID:</label>
+            <input class="ml-2" type="text" id="idcolor" readonly formControlName="id" autocomplete="new-line">
+          </div>
+          <div class="flex flex-col ml-5 w-1/5">
+            <label for="colorhex">Color en Hexadecimal:</label>
+            <input class="ml-2" type="text" id="colorhex" autocomplete="new-line" formControlName="colorhex">
+          </div>
+        </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-col ml-5 w-2/5">
+            <label for="project">Proyecto:</label>
+            <select class="ml-2" id="project" formControlName="projectid">
+              <option value="null" disabled selected>Seleccione...</option>
+              <option value="{{project.id}}" *ngFor="let project of projects">{{ project.id }} - {{ project.name }}</option>
+            </select>
           </div>
         </div>
 
