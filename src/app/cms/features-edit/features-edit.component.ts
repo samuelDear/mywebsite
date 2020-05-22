@@ -13,6 +13,15 @@ export class FeaturesEditComponent implements OnInit {
   projects: any;
   feature: any;
 
+  editForm= this.fb.group({
+    id: [null, [Validators.required]],
+    titleEn: [null, [Validators.required]],
+    titleEs: [null, [Validators.required]],
+    dscEn: [null, [Validators.required]],
+    dscEs: [null, [Validators.required]],
+    projectid: [null, [Validators.required]]
+  });
+
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -27,7 +36,6 @@ export class FeaturesEditComponent implements OnInit {
     }
     this.projectsServicio.getProjectsCms(user).subscribe((result:any) => {
       this.projects = result.records;
-      console.log(result.color);
     },
     (error) => {
       console.log(error);
@@ -44,12 +52,22 @@ export class FeaturesEditComponent implements OnInit {
         this.featureService.getFeatureById(params).subscribe((res: any) => {
           this.feature = res.entry;
           console.log(this.feature);
-          //this.updateForm(this.feature);
+          this.updateForm(this.feature);
         },
         (error) => {
           console.log(error);
         });
       }
+    });
+  }
+  updateForm(feature: any){
+    this.editForm.patchValue({
+      id: feature.id,
+      titleEn: feature.titleen,
+      titleEs: feature.titlees,
+      dscEn: feature.dscen,
+      dscEs: feature.dsces,
+      projectid: feature.projectid
     });
   }
 
