@@ -91,6 +91,22 @@ export class TypographiesEditComponent implements OnInit {
     }
   }
 
+  deleteTypography(){
+    let params = {
+      id: this.editForm.get('id').value,
+      sessionid: localStorage.sessionid
+    }
+
+    console.log(params);
+    this.typographiesService.deleteTypography(params).subscribe(res => {
+      console.log(res);
+      this.router.navigateByUrl("cms/typographies");
+    },
+    (error) => {
+      console.log(error);
+    });
+  }
+
   navigate(url){
     this.router.navigateByUrl("cms/" + url);
   }
