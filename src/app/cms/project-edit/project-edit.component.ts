@@ -139,6 +139,10 @@ export class ProjectEditComponent implements OnInit {
     }
   }
 
+  navigate(url){
+    this.router.navigateByUrl("cms/" + url);
+  }
+
   addFeature(id){
     let tituloEs = document.getElementById('tituloEs' + id) as HTMLInputElement;
     let tituloEn = document.getElementById('tituloEn' + id) as HTMLInputElement;
