@@ -13,4 +13,8 @@ export class FeaturesService {
   getFeaturesCms(user){
     return this.http.get(`${this.url}features/entrycms.php?sessionid=${user.sessionid}`);
   }
+
+  getFeatureById(params) {
+    return this.http.get(`${this.url}features/specificentrycms.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }
