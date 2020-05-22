@@ -13,4 +13,8 @@ export class ColorsService {
   getColorsCms(user) {
     return this.http.get(`${this.url}colors/entrycms.php?sessionid=${user.sessionid}`);
   }
+
+  getColorById(params) {
+    return this.http.get(`${this.url}colors/specificentrycms.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }
