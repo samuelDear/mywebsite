@@ -13,4 +13,8 @@ export class TypographiesService {
   getTypographiesCms(user: any) {
     return this.http.get(`${this.url}typographies/entrycms.php?sessionid=${user.sessionid}`);
   }
+
+  getTypographyById(params) {
+    return this.http.get(`${this.url}typographies/specificentrycms.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }

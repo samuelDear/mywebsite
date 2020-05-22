@@ -6,7 +6,7 @@
     <div class="m-10">
       <h1 class="text-4xl m-auto text-center underline">CMS - Tipografias</h1>
       <div class="w-full flex justify-end mb-2">
-        <span class="circlePlus"></span>
+        <span class="circlePlus" [routerLink]="['/cms/typographies-edit', 0]"></span>
       </div>
       <table class="w-full" border="1">
         <tr>
@@ -19,7 +19,7 @@
           <td class="font-bold text-center">{{ typography.id }}</td>
           <td class="font-bold text-center">{{ typography.nameproject }}</td>
           <td class="font-bold text-center">{{ typography.fontname }}</td>
-          <td class="flex"><button type="button" class="cursor-pointer py-2 px-6 border-2 mx-auto">Ver</button></td>
+          <td class="flex"><button type="button" class="cursor-pointer py-2 px-6 border-2 mx-auto" [routerLink]="['/cms/typographies-edit', typography.id]">Ver</button></td>
         </tr>
       </table>
     </div>
