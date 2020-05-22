@@ -65,3 +65,7 @@ button:focus, select:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(0deg, rgba(68,176,160,1) 0%, rgba(163,52,121,1) 50%, rgba(69,162,46,1) 100%);
 }
+
+textarea {
+  resize: none;
+}
