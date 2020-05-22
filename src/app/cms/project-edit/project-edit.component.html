@@ -77,6 +77,53 @@
         </div>
 
         <div class="titleBox">
+          <h3 class="text-3xl text-left">Imagenes</h3>
+        </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-row ml-5 w-3/4 items-center">
+            <label for="principalImg">Imagen principal:</label>
+            <input type="file" class="ml-5" id="principalImg">
+          </div>
+        </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-row ml-5 w-4/4 items-center">
+            <label for="laptopImg">Imagen desde laptop:</label>
+            <input type="file" class="ml-5" id="laptopImg" *ngIf="showInputLaptop">
+            <div class="ml-5 flex items-center">
+              <input type="checkbox" id="noShowLaptop" (click)="noShowIt('laptop')">
+              <label class="ml-2" for="noShowLaptop">No mostrar desde laptop</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-row ml-5 w-4/4 items-center">
+            <label for="tabletImg">Imagen desde tablet:</label>
+            <input type="file" class="ml-5" id="tabletImg" *ngIf="showInputTablet">
+            <div class="ml-5 flex items-center">
+              <input type="checkbox" id="noShowTablet" (click)="noShowIt('tablet')">
+              <label class="ml-2" for="noShowTablet">No mostrar desde tablet</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-row ml-5 w-4/4 items-center">
+            <label for="cellphone1Img">Imagen Nro. 1 desde telefono:</label>
+            <input type="file" class="ml-5" id="cellphone1Img">
+          </div>
+        </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-row ml-5 w-4/4 items-center">
+            <label for="cellphone2Img">Imagen Nro. 2 desde telefono:</label>
+            <input type="file" class="ml-5" id="cellphone2Img">
+          </div>
+        </div>
+
+        <div class="titleBox">
           <h3 class="text-3xl text-left">Tipografias</h3>
         </div>
 

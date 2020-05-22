@@ -16,6 +16,9 @@ export class ProjectEditComponent implements OnInit {
   features: any;
   id: any;
 
+  showInputTablet: boolean;
+  showInputLaptop: boolean;
+
   editForm= this.fb.group({
     id: [0, [Validators.required]],
     code: ['', [Validators.required]],
@@ -44,6 +47,10 @@ export class ProjectEditComponent implements OnInit {
     this.typographies = [""];
     this.colors = [""];
     this.features = [""];
+
+    this.showInputLaptop = true;
+    this.showInputTablet = true;
+
     this.activatedRoute.paramMap.subscribe(params => {
       let nameProject = {
         id: params.get('id'),
@@ -287,6 +294,15 @@ export class ProjectEditComponent implements OnInit {
       }else{
         alert('Todos los datos son requeridos');
       }
+    }
+  }
+
+
+  noShowIt(whichInput){
+    if(whichInput == "laptop"){
+      this.showInputLaptop = !this.showInputLaptop;
+    }else if(whichInput == "tablet"){
+      this.showInputTablet = !this.showInputTablet;
     }
   }
 }
