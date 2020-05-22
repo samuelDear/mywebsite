@@ -96,6 +96,22 @@ export class FeaturesEditComponent implements OnInit {
     }
   }
 
+  deleteFeature(){
+    let params = {
+      id: this.editForm.get('id').value,
+      sessionid: localStorage.sessionid
+    }
+
+    console.log(params);
+    this.featureService.deleteFeature(params).subscribe(res => {
+      console.log(res);
+      this.router.navigateByUrl("cms/features");
+    },
+    (error) => {
+      console.log(error);
+    });
+  }
+
   navigate(url){
     this.router.navigateByUrl("cms/" + url);
   }

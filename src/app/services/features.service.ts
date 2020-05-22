@@ -26,4 +26,8 @@ export class FeaturesService {
     return this.http
     .get(`${this.url}features/savefeature.php?${parsedPars}`);
   }
+
+  deleteFeature(params){
+    return this.http.get(`${this.url}features/deletefeature.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }
