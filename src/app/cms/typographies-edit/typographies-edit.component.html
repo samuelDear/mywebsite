@@ -3,7 +3,7 @@
     <app-slidemenu></app-slidemenu>
   </div>
   <div class="w-5/6 min-h-screen">
-    <form class="m-10 flex flex-col" autocomplete="off" role="form" [formGroup]="editForm">
+    <form class="m-10 flex flex-col" autocomplete="off" role="form" [formGroup]="editForm" (ngSubmit)="save()">
       <h1 class="text-4xl m-auto text-center underline">Editar o Crear Tipografia</h1>
 
       <div class="flex flex-col w-full">

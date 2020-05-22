@@ -14,7 +14,7 @@ export class TypographiesEditComponent implements OnInit {
   projects: any;
 
   editForm= this.fb.group({
-    id: [null, [Validators.required]],
+    id: [0, [Validators.required]],
     fontName: [null, [Validators.required]],
     fontUrl: [null, [Validators.required]],
     projectid: [null, [Validators.required]]
@@ -66,6 +66,29 @@ export class TypographiesEditComponent implements OnInit {
       fontUrl: typography.urlfont,
       projectid: typography.projectid
     });
+  }
+
+  save(){
+    if(this.editForm.valid){
+      let params = {
+        id: this.editForm.get('id').value,
+        projectid: this.editForm.get('projectid').value,
+        sessionid: localStorage.sessionid,
+        fontname: this.editForm.get('fontName').value,
+        fonturl: this.editForm.get('fontUrl').value
+      }
+      console.log(params);
+
+      this.typographiesService.saveTypography(params).subscribe(res => {
+        console.log(res);
+        this.router.navigateByUrl("cms/typographies");
+      },
+      (error) => {
+        console.log(error);
+      });
+    }else{
+      alert('Todos los campos son requeridos');
+    }
   }
 
   navigate(url){
