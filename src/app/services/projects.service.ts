@@ -41,4 +41,15 @@ export class ProjectsService {
   getFeaturesQty(user){
     return this.http.get(`${this.url}projects/menufeatures.php?sessionid=${user.sessionid}`);
   }
+
+  saveProject(params){
+    var formdata = new FormData();
+    for(var key in params){
+      formdata.append(key, params[key]);
+      console.log(formdata.get(key));
+    }
+
+    let uploadURL = `${this.url}projects/saveproject.php?`;
+    return this.http.post<any>(uploadURL, formdata);
+  }
 }

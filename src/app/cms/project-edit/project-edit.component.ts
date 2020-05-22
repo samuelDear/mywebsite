@@ -17,6 +17,7 @@ export class ProjectEditComponent implements OnInit {
   id: any;
 
   editForm= this.fb.group({
+    id: [0, [Validators.required]],
     code: ['', [Validators.required]],
     name: ['', [Validators.required]],
     datecreated: ['', [Validators.required]],
@@ -27,7 +28,9 @@ export class ProjectEditComponent implements OnInit {
     resumeEs: ['', [Validators.required]],
     resumeEn: ['', [Validators.required]],
     introductionEs: ['', [Validators.required]],
-    introductionEn: ['', [Validators.required]]
+    introductionEn: ['', [Validators.required]],
+    dscEsProject: ['', [Validators.required]],
+    dscEnProject: ['', [Validators.required]]
   });
 
   constructor(
@@ -77,6 +80,7 @@ export class ProjectEditComponent implements OnInit {
 
   updateForm(project: any){
     this.editForm.patchValue({
+      id: project.id,
       code: project.code,
       name: project.name,
       datecreated: project.datecreated,
@@ -87,7 +91,9 @@ export class ProjectEditComponent implements OnInit {
       resumeEs: project.es.resume,
       resumeEn: project.en.resume,
       introductionEs: project.es.introduction,
-      introductionEn: project.en.introduction
+      introductionEn: project.en.introduction,
+      dscEsProject: project.es.dsc,
+      dscEnProject: project.en.dsc
     });
   }
 
@@ -180,19 +186,31 @@ export class ProjectEditComponent implements OnInit {
     if(this.id != 0){
       if(this.editForm.valid){
         let params = {
+          sessionid: localStorage.sessionid,
+          id: this.editForm.get('id').value,
           code: this.editForm.get('code').value,
           name: this.editForm.get('name').value,
           datecreated: this.editForm.get('datecreated').value,
-          rolss: this.editForm.get('rolEs').value,
+          roles: this.editForm.get('rolEs').value,
           rolen: this.editForm.get('rolEn').value,
           agencyes: this.editForm.get('agencyEs').value,
           agencyen: this.editForm.get('agencyEn').value,
           resumees: this.editForm.get('resumeEs').value,
           resumeen: this.editForm.get('resumeEn').value,
           introductiones: this.editForm.get('introductionEs').value,
-          introductionen: this.editForm.get('introductionEn').value
+          introductionen: this.editForm.get('introductionEn').value,
+          dscesproject: this.editForm.get('dscEsProject').value,
+          dscenproject: this.editForm.get('dscEnProject').value
         }
         console.log(params);
+
+        this.projectsServicio.saveProject(params).subscribe(res =>{
+          console.log(res);
+          this.router.navigateByUrl("cms/projects");
+        },
+        (error) => {
+          console.log(error);
+        });
       }else{
         alert("Nada de campos vacios");
       }
@@ -234,20 +252,38 @@ export class ProjectEditComponent implements OnInit {
         dscEn = dscEn.slice(0, -1);
 
         let params = {
+          sessionid: localStorage.sessionid,
+          id: this.editForm.get('id').value,
           code: this.editForm.get('code').value,
           name: this.editForm.get('name').value,
           datecreated: this.editForm.get('datecreated').value,
-          rolss: this.editForm.get('rolEs').value,
+          roles: this.editForm.get('rolEs').value,
           rolen: this.editForm.get('rolEn').value,
           agencyes: this.editForm.get('agencyEs').value,
           agencyen: this.editForm.get('agencyEn').value,
           resumees: this.editForm.get('resumeEs').value,
           resumeen: this.editForm.get('resumeEn').value,
           introductiones: this.editForm.get('introductionEs').value,
-          introductionen: this.editForm.get('introductionEn').value
+          introductionen: this.editForm.get('introductionEn').value,
+          dscesproject: this.editForm.get('dscEsProject').value,
+          dscenproject: this.editForm.get('dscEnProject').value,
+          tituloes: tituloEs,
+          tituloen: tituloEn,
+          dsces: dscEs,
+          dscen: dscEn,
+          colors: colors,
+          typographiesname: typographiesName,
+          typographiesurl: typographiesUrl
         }
         console.log(params);
 
+        this.projectsServicio.saveProject(params).subscribe(res =>{
+          console.log(res);
+          this.router.navigateByUrl("cms/projects");
+        },
+        (error) => {
+          console.log(error);
+        });
       }else{
         alert('Todos los datos son requeridos');
       }
