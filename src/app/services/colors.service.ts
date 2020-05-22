@@ -22,4 +22,8 @@ export class ColorsService {
     return this.http
     .get(`${this.url}colors/savecolor.php?sessionid=${params.sessionid}&projectid=${params.projectid}&id=${params.id}&colorhex=${encodeURIComponent(params.colorhex)}`);
   }
+
+  deleteColor(params){
+    return this.http.get(`${this.url}colors/deletecolor.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }

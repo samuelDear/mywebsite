@@ -87,11 +87,27 @@ export class ColorsEditComponent implements OnInit {
         },
         (error) => {
           console.log(error);
-        })
+        });
       }
     }else{
       alert('Todos los campos son requeridos');
     }
+  }
+
+  deleteColor(){
+    let params = {
+      id: this.editForm.get('id').value,
+      sessionid: localStorage.sessionid
+    }
+
+    console.log(params);
+    this.colorsService.deleteColor(params).subscribe(res => {
+      console.log(res);
+      this.router.navigateByUrl("cms/colors");
+    },
+    (error) => {
+      console.log(error);
+    });
   }
 
   navigate(url){
