@@ -14,7 +14,7 @@ export class ColorsEditComponent implements OnInit {
   projects: any;
 
   editForm= this.fb.group({
-    id: [null, [Validators.required]],
+    id: [0, [Validators.required]],
     colorhex: [null, [Validators.required]],
     projectid: [null, [Validators.required]]
   });
@@ -65,6 +65,33 @@ export class ColorsEditComponent implements OnInit {
       colorhex: color.colorhex,
       projectid: color.projectid
     });
+  }
+
+  save(){
+    let colorRegx = /^\#?[A-Fa-f0-9]{3}([A-Fa-f0-9]{3})?$/;
+    if(this.editForm.valid){
+      if(!colorRegx.test(this.editForm.get('colorhex').value)){
+        alert('Color debe estar en hexadecimal');
+      }else{
+        let params = {
+          id: this.editForm.get('id').value,
+          projectid: this.editForm.get('projectid').value,
+          colorhex: this.editForm.get('colorhex').value,
+          sessionid: localStorage.sessionid
+        }
+        console.log(params);
+
+        this.colorsService.saveColor(params).subscribe(res => {
+          console.log(res);
+          this.router.navigateByUrl("cms/colors");
+        },
+        (error) => {
+          console.log(error);
+        })
+      }
+    }else{
+      alert('Todos los campos son requeridos');
+    }
   }
 
   navigate(url){

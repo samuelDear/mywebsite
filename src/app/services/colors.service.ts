@@ -17,4 +17,9 @@ export class ColorsService {
   getColorById(params) {
     return this.http.get(`${this.url}colors/specificentrycms.php?sessionid=${params.sessionid}&id=${params.id}`);
   }
+
+  saveColor(params) {
+    return this.http
+    .get(`${this.url}colors/savecolor.php?sessionid=${params.sessionid}&projectid=${params.projectid}&id=${params.id}&colorhex=${encodeURIComponent(params.colorhex)}`);
+  }
 }
