@@ -86,11 +86,16 @@
 
     $urlfolder = "../../assets/images/project-images/".$code;
 
-    delete_directory($urlfolder);
-    mkdir($urlfolder, 0777, true);
+    if(!is_dir($urlfolder)){
+      mkdir($urlfolder, 0777, true);
+    }
 
     if(isset($_FILES["principalimg"])){
       saveimg($_FILES["principalimg"],$urlfolder,"principalimg",$db,$out->id);
+    }
+
+    if(isset($_FILES["secundaryimg"])){
+      saveimg($_FILES["secundaryimg"],$urlfolder,"secundaryimg",$db,$out->id);
     }
 
     if(isset($_FILES["fmobileimg"])){
@@ -135,7 +140,6 @@
     if(!is_dir($urlfolder)){
       mkdir($urlfolder, 0777, true);
     }
-
 
     if(isset($_FILES["principalimg"])){
       saveimg($_FILES["principalimg"],$urlfolder,"principalimg",$db,$out->id);
