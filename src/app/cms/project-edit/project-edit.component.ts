@@ -365,12 +365,27 @@ export class ProjectEditComponent implements OnInit {
     }
   }
 
-
   noShowIt(whichInput){
     if(whichInput == "laptop"){
       this.showInputLaptop = !this.showInputLaptop;
     }else if(whichInput == "tablet"){
       this.showInputTablet = !this.showInputTablet;
     }
+  }
+
+  deleteProject(){
+    let params = {
+      id: this.editForm.get('id').value,
+      sessionid: localStorage.sessionid
+    }
+
+    console.log(params);
+    this.projectsServicio.deleteProject(params).subscribe(res => {
+      console.log(res);
+      this.router.navigateByUrl("cms/projects");
+    },
+    (error) => {
+      console.log(error);
+    });
   }
 }

@@ -52,4 +52,8 @@ export class ProjectsService {
     let uploadURL = `${this.url}projects/saveproject.php?`;
     return this.http.post<any>(uploadURL, formdata);
   }
+
+  deleteProject(params){
+    return this.http.get(`${this.url}projects/deleteproject.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }
