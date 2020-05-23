@@ -27,6 +27,11 @@
     $record->code = $row['code'];
     $record->name = $row['name'];
     $record->datecreated = $row["datecreated"];
+    $record->principalimg = $row["principalimg"];
+    $record->laptopimg = $row["laptopimg"];
+    $record->tabletimg = $row["tabletimg"];
+    $record->fmobileimg = $row["fmobileimg"];
+    $record->smobileimg = $row["smobileimg"];
 
     $record->es = new stdClass();
     $record->es->resume = $row["resumees"];
