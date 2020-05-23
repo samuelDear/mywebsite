@@ -305,10 +305,13 @@ export class ProjectEditComponent implements OnInit {
 
         this.projectsServicio.saveProject(params).subscribe(res =>{
           console.log(res);
-          //this.router.navigateByUrl("cms/projects");
+          this.router.navigateByUrl("cms/projects");
         },
         (error) => {
           console.log(error);
+          if(error.status == 200){
+            this.router.navigateByUrl("cms/projects");
+          }
         });
       }else{
         alert('Todos los datos son requeridos');
