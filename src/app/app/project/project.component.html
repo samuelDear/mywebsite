@@ -7,19 +7,20 @@
   <p><span stranslate="project.agency" *ngIf="projectSelected != undefined"></span> {{ translate.currentLang == "es" ? projectSelected.es.agency : projectSelected.en.agency }}</p>
   <p><span stranslate="project.date" *ngIf="projectSelected != undefined"></span> {{ projectSelected.datecreated }}</p>
 </div>
-<div class="mx-40 boxProject border-2 h-40 my-16">
-
+<div class="heightForPrincipalImg mx-40 my-16 flex justify-center borderedBox">
+  <img *ngIf="projectSelected != undefined" src="{{projectSelected.principalimg}}" class="h-full borderedBox">
 </div>
 <div class="boxProject border-2 mx-40 p-4">
   <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
     <p class="text-justify">{{ translate.currentLang == "es" && projectSelected != undefined ? projectSelected.es.introduction : projectSelected.en.introduction }}</p>
 </div>
 <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
-<div class="mx-40 boxProject border-2 h-40 mb-16">
-
+<div class="heightForPrincipalImg mx-40 mb-16 flex justify-center borderedBox">
+  <img *ngIf="projectSelected != undefined" src="{{projectSelected.secundaryimg}}" class="h-full borderedBox">
 </div>
 
-<div class="mx-40  my-16 flex flex-col items-center">
+
+<div class="mx-40  my-16 flex flex-col items-center" *ngIf="projectSelected.laptopimg != null">
   <div class="border-2 boxLaptopScreen border-b-0 boxProject">
 
   </div>
@@ -30,7 +31,7 @@
   </div>
 </div>
 
-<div class="boxTablet mx-40  my-16 border-2 flex flex-row justify-between p-2">
+<div class="boxTablet mx-40  my-16 border-2 flex flex-row justify-between p-2" *ngIf="projectSelected.tabletimg != null">
 
   <div class="h-full buttonAndCameraTablet flex-col">
     <div class="cameraTablet border-2 my-2"></div>
@@ -51,14 +52,13 @@
   <div class="h-full border-2 w-1/4 mobileBox p-2">
     <div class=" w-full cameraBoxMobile">
       <div class="cameraMobile border-2">
-
       </div>
       <div class="soundMobile border-2">
 
       </div>
     </div>
-    <div class="border-2 w-full screenMobile">
-
+    <div class="w-full screenMobile">
+      <img *ngIf="projectSelected != undefined" src="{{projectSelected.fmobileimg}}" class="h-full w-full screenImg">
     </div>
   </div>
 
@@ -71,8 +71,8 @@
 
       </div>
     </div>
-    <div class="border-2 w-full screenMobile">
-
+    <div class="w-full screenMobile">
+      <img *ngIf="projectSelected != undefined" src="{{projectSelected.smobileimg}}" class="h-full w-full screenImg">
     </div>
   </div>
 
@@ -99,14 +99,14 @@
 
 <div *ngIf="projectSelected != undefined">
   <div class="my-16 mx-40 flex flex-col items-center" *ngIf="translate.currentLang == 'es'">
-    <div class="featureBox my-4 border-2 p-4 w-3/4" *ngFor="let feature of projectSelected.es.features; let i = index">
+    <div class="featureBox my-4 border-2 p-4 w-3/4" *ngFor="let feature of projectSelected.en.features; let i = index">
       <h6 class="text-2xl titleFeature text-center">{{ feature.title }}</h6>
       <p class="text-justify"> {{ feature.dsc }}</p>
     </div>
   </div>
 
   <div class="my-16 mx-40 flex flex-col items-center" *ngIf="translate.currentLang != 'es'">
-    <div class="featureBox my-4 border-2 p-4 w-3/4" *ngFor="let feature of projectSelected.en.features; let i = index">
+    <div class="featureBox my-4 border-2 p-4 w-3/4" *ngFor="let feature of projectSelected.es.features; let i = index">
       <h6 class="text-2xl titleFeature text-center">{{ feature.title }}</h6>
       <p class="text-justify"> {{ feature.dsc }}</p>
     </div>

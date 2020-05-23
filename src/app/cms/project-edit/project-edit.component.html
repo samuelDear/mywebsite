@@ -83,14 +83,33 @@
         <div class="flex flex-row my-4">
           <div class="flex flex-row ml-5 w-3/4 items-center">
             <label for="principalImg">Imagen principal:</label>
-            <input type="file" class="ml-5" id="principalImg">
+            <input type="file" class="ml-5" id="principalImg" accept="image/png">
+            <label class="ml-2" *ngIf="project != undefined">{{project.principalimg != null ? project.principalimg : ""}}</label>
+            <div *ngIf="project != undefined">
+              <button type="button" class="border-2 px-2" *ngIf="project.principalimg != null" (click)="deleteImg('principalimg')">Borrar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-row ml-5 w-3/4 items-center">
+            <label for="secundaryImg">Imagen secundaria:</label>
+            <input type="file" class="ml-5" id="secundaryImg" accept="image/png">
+            <label class="ml-2" *ngIf="project != undefined">{{project.secundaryimg != null ? project.secundaryimg : ""}}</label>
+            <div *ngIf="project != undefined">
+              <button type="button" class="border-2 px-2" *ngIf="project.secundaryimg != null" (click)="deleteImg('secundaryimg')">Borrar</button>
+            </div>
           </div>
         </div>
 
         <div class="flex flex-row my-4">
           <div class="flex flex-row ml-5 w-4/4 items-center">
             <label for="laptopImg">Imagen desde laptop:</label>
-            <input type="file" class="ml-5" id="laptopImg" *ngIf="showInputLaptop">
+            <input type="file" class="ml-5" id="laptopImg" *ngIf="showInputLaptop"  accept="image/png">
+            <label class="ml-2" *ngIf="project != undefined">{{project.laptopimg != null ? project.laptopimg : ""}}</label>
+            <div *ngIf="project != undefined">
+              <button type="button" class="border-2 px-2" *ngIf="project.laptopimg != null" (click)="deleteImg('laptopimg')">Borrar</button>
+            </div>
             <div class="ml-5 flex items-center">
               <input type="checkbox" id="noShowLaptop" (click)="noShowIt('laptop')">
               <label class="ml-2" for="noShowLaptop">No mostrar desde laptop</label>
@@ -101,7 +120,11 @@
         <div class="flex flex-row my-4">
           <div class="flex flex-row ml-5 w-4/4 items-center">
             <label for="tabletImg">Imagen desde tablet:</label>
-            <input type="file" class="ml-5" id="tabletImg" *ngIf="showInputTablet">
+            <input type="file" class="ml-5" id="tabletImg" *ngIf="showInputTablet"  accept="image/png">
+            <label class="ml-2" *ngIf="project != undefined">{{project.tabletimg != null ? project.tabletimg : ""}}</label>
+            <div *ngIf="project != undefined">
+              <button type="button" class="border-2 px-2" *ngIf="project.tabletimg != null" (click)="deleteImg('tabletimg')">Borrar</button>
+            </div>
             <div class="ml-5 flex items-center">
               <input type="checkbox" id="noShowTablet" (click)="noShowIt('tablet')">
               <label class="ml-2" for="noShowTablet">No mostrar desde tablet</label>
@@ -112,14 +135,22 @@
         <div class="flex flex-row my-4">
           <div class="flex flex-row ml-5 w-4/4 items-center">
             <label for="cellphone1Img">Imagen Nro. 1 desde telefono:</label>
-            <input type="file" class="ml-5" id="cellphone1Img">
+            <input type="file" class="ml-5" id="cellphone1Img"  accept="image/png">
+            <label class="ml-2" *ngIf="project != undefined">{{project.fmobileimg != null ? project.fmobileimg : ""}}</label>
+            <div *ngIf="project != undefined">
+              <button type="button" class="border-2 px-2" *ngIf="project.fmobileimg != null" (click)="deleteImg('fmobileimg')">Borrar</button>
+            </div>
           </div>
         </div>
 
         <div class="flex flex-row my-4">
           <div class="flex flex-row ml-5 w-4/4 items-center">
             <label for="cellphone2Img">Imagen Nro. 2 desde telefono:</label>
-            <input type="file" class="ml-5" id="cellphone2Img">
+            <input type="file" class="ml-5" id="cellphone2Img"  accept="image/png">
+            <label class="ml-2" *ngIf="project != undefined">{{project.smobileimg != null ? project.smobileimg : ""}}</label>
+            <div *ngIf="project != undefined">
+              <button type="button" class="border-2 px-2" *ngIf="project.smobileimg != null" (click)="deleteImg('smobileimg')">Borrar</button>
+            </div>
           </div>
         </div>
 

@@ -55,27 +55,35 @@
 }
 
 .cameraBoxMobile {
-  height: 10%;
+  height: 5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .screenMobile{
-  height: 90%;
+  height: 95%;
   border-radius: 30px;
 }
 
+.screenImg, .borderedBox {
+  border-radius: 30px;
+}
+
+.heightForPrincipalImg{
+  height: 90vh;
+}
+
 .soundMobile {
-  height: 20px;
-  border-radius: 10px;
+  height: 10px;
+  border-radius: 5px;
   width: 100px;
 }
 
 .cameraMobile {
-  width: 20px;
+  width: 10px;
   border-radius: 50%;
-  height: 20px;
+  height: 10px;
 }
 
 .colorBox{

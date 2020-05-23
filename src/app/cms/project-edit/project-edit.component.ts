@@ -76,6 +76,19 @@ export class ProjectEditComponent implements OnInit {
           this.features = features;
           this.typographies = this.project.typographies;
           this.updateForm(this.project);
+
+          if(this.project.laptopimg == null){
+            let img = document.getElementById('noShowLaptop') as HTMLInputElement;
+            this.showInputLaptop = false;
+            img.checked = true;
+          }
+
+          if(this.project.tabletimg == null){
+            let img = document.getElementById('noShowTablet') as HTMLInputElement;
+            this.showInputTablet = false;
+            img.checked = true;
+          }
+
           console.log(this.project);
         },
         (error) => {
@@ -189,11 +202,17 @@ export class ProjectEditComponent implements OnInit {
     }
   }
 
+  deleteImg(key){
+    this.project[key] = null;
+    console.log(this.project);
+  }
+
   save(){
     if(this.id != 0){
       if(this.editForm.valid){
 
         let principalimg = document.getElementById('principalImg') as HTMLInputElement;
+        let secundaryimg = document.getElementById('secundaryImg') as HTMLInputElement;
         let fcellphoneimg = document.getElementById('cellphone1Img') as HTMLInputElement;
         let scellphoneimg = document.getElementById('cellphone2Img') as HTMLInputElement;
 
@@ -213,20 +232,25 @@ export class ProjectEditComponent implements OnInit {
           introductionen: this.editForm.get('introductionEn').value,
           dscesproject: this.editForm.get('dscEsProject').value,
           dscenproject: this.editForm.get('dscEnProject').value,
-          principalimg: principalimg.files[0],
-          fmobileimg: fcellphoneimg.files[0],
-          smobileimg: scellphoneimg.files[0],
+          principalimg: this.project.principalimg == null ? principalimg.files[0] : this.project.principalimg,
+          secundaryimg: this.project.secundaryimg == null ? secundaryimg.files[0] : this.project.secundaryimg,
+          fmobileimg: this.project.fmobileimg == null ? fcellphoneimg.files[0] : this.project.fmobileimg,
+          smobileimg: this.project.smobileimg == null ? scellphoneimg.files[0] : this.project.smobileimg,
         }
 
         let laptopimg = document.getElementById('laptopImg') as HTMLInputElement;
         let tabletimg = document.getElementById('tabletImg') as HTMLInputElement;
 
-        if(this.showInputLaptop){
+        if(this.showInputLaptop && this.project.laptopimg == null){
           params['laptopimg'] = laptopimg.files[0];
+        }else if(this.project.laptopimg == null){
+          params['laptopimg'] = null;
         }
 
-        if(this.showInputTablet){
+        if(this.showInputTablet && this.project.tabletimg == null){
           params['tabletimg'] = tabletimg.files[0];
+        }else if(this.project.tabletimg == null){
+          params['tabletimg'] = null;
         }
 
         console.log(params);
@@ -279,6 +303,7 @@ export class ProjectEditComponent implements OnInit {
         dscEn = dscEn.slice(0, -1);
 
         let principalimg = document.getElementById('principalImg') as HTMLInputElement;
+        let secundaryimg = document.getElementById('secundaryImg') as HTMLInputElement;
         let fcellphoneimg = document.getElementById('cellphone1Img') as HTMLInputElement;
         let scellphoneimg = document.getElementById('cellphone2Img') as HTMLInputElement;
 
@@ -306,6 +331,7 @@ export class ProjectEditComponent implements OnInit {
           typographiesname: typographiesName,
           typographiesurl: typographiesUrl,
           principalimg: principalimg.files[0],
+          secundaryimg: secundaryimg.files[0],
           fmobileimg: fcellphoneimg.files[0],
           smobileimg: scellphoneimg.files[0],
         }

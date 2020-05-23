@@ -26,6 +26,7 @@
   $record->name = $row['name'];
   $record->datecreated = $row["datecreated"];
   $record->principalimg = $row["principalimg"];
+  $record->secundaryimg = $row["secundaryimg"];
   $record->laptopimg = $row["laptopimg"];
   $record->tabletimg = $row["tabletimg"];
   $record->fmobileimg = $row["fmobileimg"];

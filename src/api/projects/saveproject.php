@@ -128,11 +128,62 @@
     if (!$db->query($sql))
       badEnd("500", array("msg"=>$db->error));
 
-    if ($db->affected_rows == 0){
-      badEnd("401", array("sql"=>$sql,"msg"=>"No se pudo actualizar"));
-    }
+    $urlfolder = "../../assets/images/project-images/".$code;
 
     $out->id = (int)$id;
+
+    if(!is_dir($urlfolder)){
+      mkdir($urlfolder, 0777, true);
+    }
+
+
+    if(isset($_FILES["principalimg"])){
+      saveimg($_FILES["principalimg"],$urlfolder,"principalimg",$db,$out->id);
+    }
+
+    if(isset($_FILES["secundaryimg"])){
+      saveimg($_FILES["secundaryimg"],$urlfolder,"secundaryimg",$db,$out->id);
+    }
+
+    if(isset($_FILES["fmobileimg"])){
+      saveimg($_FILES["fmobileimg"],$urlfolder,"fmobileimg",$db,$out->id);
+    }
+
+    if(isset($_FILES["smobileimg"])){
+      saveimg($_FILES["smobileimg"],$urlfolder,"smobileimg",$db,$out->id);
+    }
+
+    if(isset($_FILES["laptopimg"])){
+      saveimg($_FILES["laptopimg"],$urlfolder,"laptopimg",$db,$out->id);
+    }
+
+    if(isset($_FILES["tabletimg"])){
+      saveimg($_FILES["tabletimg"],$urlfolder,"tabletimg",$db,$out->id);
+    }
+
+    if(isset($_POST["laptopimg"]) && $_POST["laptopimg"] == "null"){
+      $sql = "UPDATE projects SET".
+      "      laptopimg = null".
+      "      WHERE id = ".$out->id;
+      if (!$db->query($sql))
+        badEnd("500", array("msg"=>$db->error));
+
+      if(file_exists($urlfolder . "/laptopimg.png")){
+        unlink($urlfolder . "/laptopimg.png");
+      }
+    }
+
+    if(isset($_POST["tabletimg"]) && $_POST["tabletimg"] == "null"){
+      $sql = "UPDATE projects SET".
+      "      tabletimg = null".
+      "      WHERE id = ".$out->id;
+      if (!$db->query($sql))
+        badEnd("500", array("msg"=>$db->error));
+
+      if(file_exists($urlfolder . "/tabletimg.png")){
+        unlink($urlfolder . "/tabletimg.png");
+      }
+    }
   }
 
   header("HTTP/1.1 200");
@@ -142,6 +193,10 @@
   function saveimg($file,$url,$field,$db,$projectid){
     //Recibimos el valor por el string que se envio en uploadids
     $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
+
+    if(file_exists($url . "/" . $field . "." . $ext)){
+      unlink($url . "/" . $field . "." . $ext);
+    }
 
     //Movemos el FILE del directorio temporal al del sistema para su uso
     if(move_uploaded_file($file["tmp_name"], $url . "/" . $field . "." . $ext)){
@@ -191,25 +246,5 @@
     }
 
     return substr($str, 0, -1);
-  }
-
-  function delete_directory($dirname) {
-    if (is_dir($dirname))
-      $dir_handle = opendir($dirname);
-
-    if (!$dir_handle)
-      return false;
-
-    while($file = readdir($dir_handle)) {
-      if ($file != "." && $file != "..") {
-        if (!is_dir($dirname."/".$file))
-          unlink($dirname."/".$file);
-        else
-          delete_directory($dirname.'/'.$file);
-        }
-    }
-    closedir($dir_handle);
-    rmdir($dirname);
-    return true;
   }
 ?>
