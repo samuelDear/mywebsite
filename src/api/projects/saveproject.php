@@ -36,6 +36,16 @@
     if (!parametrosValidos($_POST, $parmsob))
         badEnd("400", array("msg"=>"Parametros obligatorios " . implode(", ", $parmsob)));
 
+    $sql = "SELECT count(id) as qty FROM projects WHERE code = '".$code."'";
+    if (!$res=$db->query($sql))
+      badEnd("500", array("msg"=>$db->error));
+
+    $projectresult = $res->fetch_assoc();
+
+    if($projectresult["qty"] > 0){
+      badEnd("401", array("msg"=>"Ya existe un proyecto con este codigo"));
+    }
+
     $sql = "INSERT INTO projects(".
     "       code, name, ".
     "       resumees, resumeen,".
