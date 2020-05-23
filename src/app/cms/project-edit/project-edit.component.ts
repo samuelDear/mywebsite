@@ -192,6 +192,11 @@ export class ProjectEditComponent implements OnInit {
   save(){
     if(this.id != 0){
       if(this.editForm.valid){
+
+        let principalimg = document.getElementById('principalImg') as HTMLInputElement;
+        let fcellphoneimg = document.getElementById('cellphone1Img') as HTMLInputElement;
+        let scellphoneimg = document.getElementById('cellphone2Img') as HTMLInputElement;
+
         let params = {
           sessionid: localStorage.sessionid,
           id: this.editForm.get('id').value,
@@ -207,8 +212,23 @@ export class ProjectEditComponent implements OnInit {
           introductiones: this.editForm.get('introductionEs').value,
           introductionen: this.editForm.get('introductionEn').value,
           dscesproject: this.editForm.get('dscEsProject').value,
-          dscenproject: this.editForm.get('dscEnProject').value
+          dscenproject: this.editForm.get('dscEnProject').value,
+          principalimg: principalimg.files[0],
+          fmobileimg: fcellphoneimg.files[0],
+          smobileimg: scellphoneimg.files[0],
         }
+
+        let laptopimg = document.getElementById('laptopImg') as HTMLInputElement;
+        let tabletimg = document.getElementById('tabletImg') as HTMLInputElement;
+
+        if(this.showInputLaptop){
+          params['laptopimg'] = laptopimg.files[0];
+        }
+
+        if(this.showInputTablet){
+          params['tabletimg'] = tabletimg.files[0];
+        }
+
         console.log(params);
 
         this.projectsServicio.saveProject(params).subscribe(res =>{
@@ -294,11 +314,11 @@ export class ProjectEditComponent implements OnInit {
         let tabletimg = document.getElementById('tabletImg') as HTMLInputElement;
 
         if(this.showInputLaptop){
-          params.laptopimg = laptopimg.files[0];
+          params['laptopimg'] = laptopimg.files[0];
         }
 
         if(this.showInputTablet){
-          params.tabletimg = tabletimg.files[0];
+          params['tabletimg'] = tabletimg.files[0];
         }
 
         console.log(params);
