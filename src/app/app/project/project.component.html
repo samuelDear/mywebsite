@@ -1,8 +1,8 @@
 <div class="mt-32 mx-32 text-center">
-  <h1 class="text-3xl font-bold">{{projectSelected != undefined ? projectSelected.name : '' }}</h1>
-  <p class="text-justify my-5" *ngIf="projectSelected != undefined">{{ translate.currentLang == "es" ? projectSelected.es.dsc : projectSelected.en.dsc }}</p>
+  <h1 class="text-4xl font-bold">{{projectSelected != undefined ? projectSelected.name : '' }}</h1>
+  <p class="text-justify my-5 text-xl" *ngIf="projectSelected != undefined">{{ translate.currentLang == "es" ? projectSelected.es.dsc : projectSelected.en.dsc }}</p>
 </div>
-<div class="mx-40 flex flex-row justify-between">
+<div class="mx-40 flex flex-row justify-between text-lg">
   <p><span stranslate="project.role" *ngIf="projectSelected != undefined"></span> {{ translate.currentLang == "es" ? projectSelected.es.role : projectSelected.en.role }}</p>
   <p><span stranslate="project.agency" *ngIf="projectSelected != undefined"></span> {{ translate.currentLang == "es" ? projectSelected.es.agency : projectSelected.en.agency }}</p>
   <p><span stranslate="project.date" *ngIf="projectSelected != undefined"></span> {{ projectSelected.datecreated }}</p>
@@ -12,7 +12,7 @@
 </div>
 <div class="boxProject border-2 mx-40 p-4">
   <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
-    <p class="text-justify">{{ translate.currentLang == "es" && projectSelected != undefined ? projectSelected.es.introduction : projectSelected.en.introduction }}</p>
+    <p class="text-justify text-xl">{{ translate.currentLang == "es" && projectSelected != undefined ? projectSelected.es.introduction : projectSelected.en.introduction }}</p>
 </div>
 <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
 <div class="heightForPrincipalImg mx-40 mb-16 flex justify-center borderedBox">
