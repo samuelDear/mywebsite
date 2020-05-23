@@ -10,9 +10,6 @@
   "myWeb": {
     "resume": "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario."
   },
-  "traumApp": {
-    "resume": "Es una aplicacion movil multiplataforma. Hecha con React Native, Es una aplicacion capaz de generar informes medicos de forma automatizada. Por otra parte, enriquece la experiencia del usuario con su comoda interfaz."
-  },
   "orm": {
     "resume": "Es una pagina web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño comodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas Matematicas."
   },
