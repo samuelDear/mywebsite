@@ -333,7 +333,7 @@ export class ProjectEditComponent implements OnInit {
           principalimg: principalimg.files[0],
           secundaryimg: secundaryimg.files[0],
           fmobileimg: fcellphoneimg.files[0],
-          smobileimg: scellphoneimg.files[0],
+          smobileimg: scellphoneimg.files[0]
         }
 
         let laptopimg = document.getElementById('laptopImg') as HTMLInputElement;
