@@ -10,31 +10,13 @@
     <p class="codeLine">&lt;<span class="tag">projects&nbsp;<span class="controlStructure">*ngFor</span>="<span class="sentence">let project of portafolio</span>"</span>&gt;</p>
 
     <div class="w-100 my-5" >
-      <div class="border-2 boxProject mr-24 ml-16 p-5 cursor-pointer btn slide">
-        <h1 class="projectTitle">My Portafolio Website</h1>
-        <p class="descProject text-justify leading-none" stranslate="myWeb.resume"></p>
+      <div class="border-2 boxProject {{ project.id % 2 == 0 || project.id == 0 ? 'ml-24 mr-16' : 'mr-24 ml-16' }} mt-6 p-5 cursor-pointer btn slide" *ngFor="let project of projects;let i = index" [routerLink]="['./project',project.code]">
+        <h1 class="projectTitle">{{ project.name }}</h1>
+        <p class="descProject text-justify leading-none">{{ translate.currentLang == "es" ? project.es.resume : project.en.resume }}</p>
         <a class="linkProject flex" stranslate="home.linkProject"></a>
       </div>
-
-      <div class="border-2 boxProject ml-24 mr-16 p-5 mt-6 cursor-pointer btn slide" [routerLink]="['./project','traumapp']">
-        <h1 class="projectTitle">TraumApp</h1>
-        <p class="descProject text-justify leading-none" stranslate="traumApp.resume"></p>
-        <a class="linkProject flex" stranslate="home.linkProject"></a>
-      </div>
-
-      <div class="border-2 boxProject mr-24 ml-16 p-5 mt-6 cursor-pointer btn slide">
-        <h1 class="projectTitle">ORM</h1>
-        <p class="descProject text-justify leading-none" stranslate="orm.resume"></p>
-        <a class="linkProject flex" stranslate="home.linkProject" routerLink="/"></a>
-      </div>
-
-      <div class="border-2 boxProject ml-24 mr-16 p-5 mt-6 cursor-pointer btn slide">
-        <h1 class="projectTitle">FJC Intranet</h1>
-        <p class="descProject text-justify leading-none" stranslate="fjcintranet.resume"></p>
-        <a class="linkProject flex" stranslate="home.linkProject" routerLink="/"></a>
-      </div>
-
     </div>
+    
     <p class="codeLine">&lt;/<span class="tag">projects</span>&gt;</p>
   </section>
 

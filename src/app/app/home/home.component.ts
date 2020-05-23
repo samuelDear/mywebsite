@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { ProjectsService } from '../../services/projects.service';
 import { HttpClient } from '@angular/common/http';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +11,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   showButton: boolean = true;
+  projects: any;
 
   constructor(
     private router: Router,
+    public translate: TranslateService,
     private projectsServicio: ProjectsService
   ) {
     router.events.subscribe(s => {
@@ -27,7 +30,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.projectsServicio.getProjects().subscribe(result => {
+    this.projectsServicio.getProjects().subscribe((result:any) => {
+      this.projects = result.records;
       console.log(result);
     });
   }
