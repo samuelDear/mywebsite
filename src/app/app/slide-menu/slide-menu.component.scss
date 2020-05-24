@@ -4,7 +4,7 @@
 
 .navigationMenu {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 150%;
 }
 
 li {
@@ -21,4 +21,33 @@ li {
 
 select {
   background-color: #111;
+}
+
+@media only screen
+and (max-width : 700px) {
+  .mainBox{
+    margin: 100px 30px 0px 30px;
+  }
+}
+
+@media only screen
+and (max-width : 450px) {
+  .mainBox{
+    margin: 100px 30px 0px 30px;
+  }
+
+  .navigationMenu {
+    font-size: 130%;
+  }
+}
+
+@media only screen
+and (max-width : 350px) {
+  .mainBox{
+    margin: 100px 30px 0px 30px;
+  }
+
+  .navigationMenu {
+    font-size: 120%;
+  }
 }
