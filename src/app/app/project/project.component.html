@@ -2,7 +2,7 @@
   <h1 class="text-4xl font-bold">{{projectSelected != undefined ? projectSelected.name : '' }}</h1>
   <p class="text-justify my-5 text-xl" *ngIf="projectSelected != undefined">{{ translate.currentLang == "es" ? projectSelected.es.dsc : projectSelected.en.dsc }}</p>
 </div>
-<div class="mx-40 flex flex-row justify-between text-lg">
+<div class="mx-40 flex flex-row justify-between text-lg mt-2">
   <p><span stranslate="project.role" *ngIf="projectSelected != undefined"></span> {{ translate.currentLang == "es" ? projectSelected.es.role : projectSelected.en.role }}</p>
   <p><span stranslate="project.agency" *ngIf="projectSelected != undefined"></span> {{ translate.currentLang == "es" ? projectSelected.es.agency : projectSelected.en.agency }}</p>
   <p><span stranslate="project.date" *ngIf="projectSelected != undefined"></span> {{ projectSelected.datecreated }}</p>
@@ -125,20 +125,10 @@
 </div>
 
 <div class="my-16 mx-40">
-  <div class="boxProject border-2 ml-10 mr-40 p-5 flex flex-row justify-between my-4">
+  <div class="boxProject border-2 {{ i % 2 == 0 ? 'ml-10 mr-40' : 'ml-40 mr-10' }} p-5 flex flex-row justify-between my-4" *ngFor="let random of projectSelected.randoms;let i = index">
     <div>
-      <h6 class="text-2xl">titulo</h6>
-      <p class="ml-4">ds ad asd as fsa d sajdsaj fkjasfjksahh fsakjf akjsfh asdk hasjdk askdhjsa jdasj daj sk</p>
-    </div>
-    <div class="flex flex-row items-center">
-      <span class="block stick"></span>
-      <span class="block arrow-right"></span>
-    </div>
-  </div>
-  <div class="boxProject border-2 ml-40 mr-10 p-5 flex flex-row justify-between my-4">
-    <div>
-      <h6 class="text-2xl">titulo</h6>
-      <p class="ml-4">ds ad asd as fsa d sajdsaj fkjasfjksahh fsakjf akjsfh asdk hasjdk askdhjsa jdasj daj sk</p>
+      <h6 class="text-2xl">{{ random.name }}</h6>
+      <p class="ml-4">{{ translate.currentLang == "es" ? random.es.resume : random.en.resume }}</p>
     </div>
     <div class="flex flex-row items-center">
       <span class="block stick"></span>
