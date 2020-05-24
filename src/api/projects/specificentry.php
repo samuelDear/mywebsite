@@ -99,6 +99,30 @@
   $record->en->features = $featureentryen;
   $record->es->features = $featureentryes;
 
+
+  $sql = "SELECT * FROM projects WHERE id != ".$record->id.
+  "       ORDER BY RAND() LIMIT 3";
+  if (!$randomProject=$db->query($sql))
+    badEnd("500", array("msg"=>$db->error));
+
+  $randoms = [];
+  while($randomres = $randomProject->fetch_assoc()){
+    $random = new stdClass();
+    $random->id = $randomres["id"];
+    $random->code = $randomres["code"];
+    $random->name = $randomres["name"];
+
+    $random->es = new stdClass();
+    $random->en = new stdClass();
+
+    $random->es->resume = $randomres["resumees"];
+    $random->en->resume = $randomres["resumeen"];
+
+    $randoms [] = $random;
+  }
+
+  $record->ramdons = $randoms;
+
   $out->entry = $record;
 
   header("HTTP/1.1 200");
