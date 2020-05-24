@@ -13,6 +13,7 @@ export class SlideMenuComponent implements OnInit {
   constructor(
     public translate: TranslateService
   ) {
+    window.scroll(0,0);
     console.log(translate.currentLang);
     if(translate.currentLang == "es"){
       this.currentLang = "es";
@@ -24,6 +25,14 @@ export class SlideMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
+    let links = document.getElementsByClassName('font-link');
+    for(let i = links.length - 1; i >= 0; i--){
+      links[i].remove();
+    }
 
+    let styles = document.getElementsByClassName('font-style');
+    for(let i = styles.length - 1; i >= 0; i--){
+      styles[i].remove();
+    }
+  }
 }

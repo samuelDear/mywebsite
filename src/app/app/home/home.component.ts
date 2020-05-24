@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
     public translate: TranslateService,
     private projectsServicio: ProjectsService
   ) {
+    window.scroll(0,0);
     router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {
         const tree = router.parseUrl(router.url);
@@ -30,6 +31,16 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    let links = document.getElementsByClassName('font-link');
+    for(let i = links.length - 1; i >= 0; i--){
+      links[i].remove();
+    }
+
+    let styles = document.getElementsByClassName('font-style');
+    for(let i = styles.length - 1; i >= 0; i--){
+      styles[i].remove();
+    }
+
     this.projectsServicio.getProjects().subscribe((result:any) => {
       this.projects = result.records;
       console.log(result);
