@@ -49,7 +49,11 @@ export class ProjectComponent implements OnInit {
           var style = document.createElement('style');
           style.type = 'text/css';
           style.setAttribute('class',"font-style");
-          style.innerHTML = `.${this.projectSelected.typographies[i].name}-s { font-family: '${this.projectSelected.typographies[i].name}'; }`;
+          style.innerHTML = `.${this.projectSelected.typographies[i].name}-s
+          {
+            font-family: '${this.projectSelected.typographies[i].name}';
+            font-weight: 500;
+          }`;
           document.getElementsByTagName('head')[0].appendChild(style);
           setTimeout(() => {
             document.getElementById(`font${i}`).classList.toggle(`${this.projectSelected.typographies[i].name}-s`);
