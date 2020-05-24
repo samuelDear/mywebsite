@@ -2,3 +2,74 @@ footer {
   height: 90px;
   background-color: #444;
 }
+
+.iconSep {
+  margin: 0px 1.35rem;
+}
+
+.iconSep p{
+  font-size: 100%;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 1224px) {
+  footer{
+    height: 80px;
+  }
+
+  .iconSep {
+    margin: 0px 1.25rem;
+  }
+
+  .iconSep p{
+    font-size: 100%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 1024px) {
+  footer{
+    height: 70px;
+  }
+
+  .iconSep {
+    margin: 0px 1.10rem;
+  }
+
+  .iconSep p{
+    font-size: 95%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 950px) {
+  footer{
+    height: 65px;
+  }
+
+  .iconSep {
+    margin: 0px 0.90rem;
+  }
+
+  .iconSep p{
+    font-size: 90%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 700px) {
+  footer{
+    height: 55px;
+  }
+  .iconSep {
+    margin: 0px 0.60rem;
+  }
+
+  .iconSep p{
+    font-size: 85%;
+  }
+}
