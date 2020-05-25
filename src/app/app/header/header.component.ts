@@ -26,9 +26,18 @@ export class HeaderComponent implements OnInit {
         }
       }
     });
+
+    setTimeout(() => {
+      if(this.router.url == '/menu'){
+        this.animation();
+        console.log('holaaa');
+      }
+    }, 1);
+
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   navigation() {
     if(this.router.url != '/menu'){
