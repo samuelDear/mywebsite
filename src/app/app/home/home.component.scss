@@ -82,6 +82,7 @@ svg {
   display: flex;
   flex-direction: row;
   margin-left: 4rem;
+  margin-top: 1.25rem;
 }
 
 .knowlegdeIllustration{
@@ -113,6 +114,7 @@ and (max-width : 1085px) {
 and (max-width : 1000px) {
   .knowlegdeBox{
     flex-direction: column-reverse;
+    margin-top: 0rem;
   }
 
   .knowlegdeTxt, .knowlegdeIllustration {
