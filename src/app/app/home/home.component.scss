@@ -1,5 +1,5 @@
 .presentation{
-  font-size: 30px;
+  font-size: 187.5%;
   font-weight: bold;
 }
 
@@ -8,32 +8,42 @@
 }
 
 .descMySelf {
-  font-size: 28px;
+  font-size: 175%;
   font-weight: 700;
 }
 
+.projects, .knowlegde{
+  margin-top: 6rem;
+}
+
 .projectTitle {
-  font-size: 26px;
+  font-size: 162.5%;
   font-weight: 600;
 }
 
 .descProject {
-  font-size: 18px;
+  font-size: 112%;
+  line-height: 25px;
 }
 
 .linkProject {
-  font-size: 20px;
+  font-size: 125%;
   margin-top: 1.0em;
   margin-left: 1.0em;
 }
 
 .knowlegdeTxt, .aboutResume {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 125%;
+}
+
+.knowlegdeTxt {
+  width: 50%;
 }
 
 .aboutResume {
-  font-size: 24px;
+  font-size: 150%;
+  margin-left: 4rem;
 }
 
 svg {
@@ -57,7 +67,151 @@ svg {
   transition:1s;
 }
 
+.slide{
+  background: linear-gradient(to left, #111 50%, #2e8a7c 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+}
+
 .slide:hover,
 .slide:focus {
-  box-shadow: inset 80vw 0 0 0 #2e8a7c;
+  background-position:left bottom;
+}
+
+.knowlegdeBox{
+  display: flex;
+  flex-direction: row;
+  margin-left: 4rem;
+}
+
+.knowlegdeIllustration{
+  width: 50%;
+}
+
+.presentationSonBox {
+  width: 60%;
+}
+
+.marginOdd{
+  margin-left: 6rem;
+  margin-right: 4rem;
+}
+
+.marginPair{
+  margin-right: 6rem;
+  margin-left: 4rem;
+}
+
+@media only screen
+and (max-width : 1085px) {
+  .mainBox{
+    margin: 180px 60px 0px 130px;
+  }
+}
+
+@media only screen
+and (max-width : 1000px) {
+  .knowlegdeBox{
+    flex-direction: column-reverse;
+  }
+
+  .knowlegdeTxt, .knowlegdeIllustration {
+    width: 100%;
+  }
+}
+
+@media only screen
+and (max-width : 950px) {
+  .presentationSonBox {
+    width: 90%;
+  }
+
+  .marginOdd{
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+
+  .marginPair{
+    margin-right: 4rem;
+    margin-left: 2rem;
+  }
+
+  .knowlegdeBox, .aboutResume{
+    margin-left: 2rem;
+  }
+}
+
+@media only screen
+and (max-width : 850px) {
+  .mainBox{
+    margin: 120px 40px 0px 40px;
+  }
+}
+
+@media only screen
+and (max-width : 700px) {
+  .marginOdd{
+    margin-left: 2rem;
+    margin-right: 0rem;
+  }
+
+  .marginPair{
+    margin-right: 2rem;
+    margin-left: 0rem;
+  }
+
+  .knowlegdeBox, .aboutResume{
+    margin-left: 1rem;
+  }
+
+  .presentation{
+    font-size: 150%;
+  }
+
+  .descMySelf {
+    font-size: 140%;
+  }
+
+  .projectTitle {
+    font-size: 145%;
+  }
+
+  .aboutResume {
+    font-size: 130%;
+  }
+}
+
+@media only screen
+and (max-width : 550px) {
+  .marginOdd{
+    margin-left: 0rem;
+  }
+
+  .marginPair{
+    margin-right: 0rem;
+  }
+
+  .aboutResume, .knowlegdeBox {
+    margin-left: 0.5rem;
+  }
+
+  .presentation{
+    font-size: 140%;
+  }
+
+  .descMySelf {
+    font-size: 130%;
+  }
+
+  .projectTitle {
+    font-size: 135%;
+  }
+
+  .aboutResume {
+    font-size: 120%;
+  }
+
+  .projects, .knowlegde{
+    margin-top: 3rem;
+  }
 }

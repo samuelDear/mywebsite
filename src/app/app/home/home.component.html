@@ -1,16 +1,16 @@
 <section class="mainBox" id="home">
   <section class="presentationBox">
-    <div class="w-3/5 text-justify">
+    <div class="presentationSonBox text-justify">
       <h1 stranslate="home.presentation" class="presentation"></h1>
       <p stranslate="home.description" class="descMySelf"></p>
     </div>
   </section>
 
-  <section class="projects mt-24" id="projects">
+  <section class="projects" id="projects">
     <p class="codeLine">&lt;<span class="tag">projects&nbsp;<span class="controlStructure">*ngFor</span>="<span class="sentence">let project of portafolio</span>"</span>&gt;</p>
 
     <div class="w-100 my-5" >
-      <div class="border-2 boxProject {{ i % 2 == 0 || i == 0 ? 'ml-24 mr-16' : 'mr-24 ml-16' }} mt-6 p-5 cursor-pointer btn slide" *ngFor="let project of projects;let i = index" [routerLink]="['./project',project.code]">
+      <div class="border-2 boxProject {{ i % 2 == 0 || i == 0 ? 'marginOdd' : 'marginPair' }} mt-6 p-5 cursor-pointer btn slide" *ngFor="let project of projects;let i = index" [routerLink]="['./project',project.code]">
         <h1 class="projectTitle">{{ project.name }}</h1>
         <p class="descProject text-justify leading-none">{{ translate.currentLang == "es" ? project.es.resume : project.en.resume }}</p>
         <a class="linkProject flex" stranslate="home.linkProject"></a>
@@ -20,16 +20,16 @@
     <p class="codeLine">&lt;/<span class="tag">projects</span>&gt;</p>
   </section>
 
-  <section class="knowlegde mt-24" id="knowlegde">
+  <section class="knowlegde" id="knowlegde">
     <p class="codeLine">&lt;<span class="tag">knowlegde</span>&gt;</p>
-    <div class="w-100 mt-5 flex flex-row ml-16">
+    <div class="mt-5 knowlegdeBox ml-16">
       <div class="w-1/2 knowlegdeTxt mr-2 text-justify">
         <p stranslate="knowlegde.firstDsc" class="mb-4"></p>
         <p stranslate="knowlegde.secondDsc" class="mb-4"></p>
         <p stranslate="knowlegde.thirdDsc" class="mb-4"></p>
         <p stranslate="knowlegde.quarterDsc" class="mb-4"></p>
       </div>
-      <div class="w-1/2 ml-2">
+      <div class="ml-2 knowlegdeIllustration">
 
         <svg version="1.1"
          baseProfile="full" viewBox="0 0 200 200"
@@ -146,7 +146,7 @@
 
   <section class="littleAbout mt-12">
     <p class="codeLine">&lt;<span class="tag">about&nbsp;</span><span class="controlStructure">title</span>=<span class="sentence">introduce myself</span>&gt;</p>
-    <div class="w-100 my-5 flex flex-col ml-16 aboutResume">
+    <div class="w-100 my-5 flex flex-col aboutResume">
       <p stranslate="about.resume"></p>
       <div class="mt-5 flex row underline font-normal">
         <a routerLink="./about" class="flex items-center">
