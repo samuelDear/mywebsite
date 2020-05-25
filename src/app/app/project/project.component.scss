@@ -1,3 +1,21 @@
+.mainBox{
+  margin: 8rem 10rem;
+}
+
+.dscText, .intro{
+  font-size: 1.25rem;
+}
+
+.rolAgencyDate {
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.laptopBox{
+  height: 90vh;
+}
+
 .boxLaptopScreen {
   width: 90%;
   height: 90%;
@@ -13,9 +31,14 @@
   width: 30%;
 }
 
-.boxTablet{
+.boxTablet, .boxMobile{
   height: 80vh;
   border-radius: 30px;
+}
+
+.boxMobile {
+  display: flex;
+  flex-direction: row;
 }
 
 .screenTablet{
@@ -52,6 +75,8 @@
   display:flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 25%;
+  height: 100%;
 }
 
 .cameraBoxMobile {
@@ -115,6 +140,7 @@
 .featureBox {
   border-color: #DB2696;
   transition: all 1s ease;
+  width: 75%;
 }
 
 .featureBox:hover{
@@ -174,4 +200,258 @@
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
   border-left: 30px solid #FFF;
+}
+
+.randomProjectsBoxPair{
+  margin-left: 10rem;
+  margin-right: 2.5rem;
+}
+
+.randomProjectsBoxOdd{
+  margin-left: 2.5rem;
+  margin-right: 10rem;
+}
+
+.slide{
+  background: linear-gradient(to left, #111 50%, #2e8a7c 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition: 1s;
+}
+
+.slide:hover,
+.slide:focus {
+  background-position:left bottom;
+}
+
+.typographyExample {
+  font-size: 1.5rem;
+  margin: 0px 5rem;
+}
+
+@media only screen
+and (max-width : 1085px) {
+  .mainBox{
+    margin: 8rem 5rem;
+  }
+}
+
+@media only screen
+and (max-width : 1040px) {
+  .mobileBox{
+    width: 28%;
+  }
+
+  .laptopBox{
+    height: 85vh;
+  }
+}
+
+@media only screen
+and (max-width : 1000px) {
+  .mainBox{
+    margin: 7rem 4rem;
+  }
+
+  .mobileBox{
+    width: 30%;
+  }
+
+  .laptopBox{
+    height: 80vh;
+  }
+}
+
+@media only screen
+and (max-width : 950px) {
+  .mobileBox{
+    width: 32%;
+  }
+
+  .laptopBox{
+    height: 75vh;
+  }
+
+  .randomProjectsBoxPair{
+    margin-left: 9rem;
+  }
+
+  .randomProjectsBoxOdd{
+    margin-right: 9rem;
+  }
+
+  .colorBox{
+    margin: 10px 12%;
+    width: 25%;
+  }
+}
+
+@media only screen
+and (max-width : 850px) {
+  .mobileBox{
+    width: 32%;
+  }
+
+  .mainBox{
+    margin: 6rem 1.5rem;
+  }
+
+  .randomProjectsBoxPair{
+    margin-left: 5rem;
+  }
+
+  .randomProjectsBoxOdd{
+    margin-right: 5rem;
+  }
+
+  .featureBox {
+    width: 90%;
+  }
+
+  .dscText, .intro{
+    font-size: 1rem;
+  }
+
+  .rolAgencyDate {
+    font-size: 1.1rem;
+  }
+
+  .typographyExample {
+    font-size: 1.4rem;
+    margin: 0px 3rem;
+  }
+}
+
+@media only screen
+and (max-width : 800px) {
+  .mobileBox{
+    width: 35%;
+  }
+
+  .laptopBox{
+    height: 74vh;
+  }
+
+  .randomProjectsBoxPair{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .randomProjectsBoxOdd{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media only screen
+and (max-width : 750px) {
+  .mobileBox{
+    width: 40%;
+    height: 500px;
+    margin: 20px 0px;
+  }
+
+  .boxMobile {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .laptopBox{
+    height: 65vh;
+  }
+
+  .typographyExample {
+    font-size: 1.3rem;
+    margin: 0px 2rem;
+  }
+}
+
+@media only screen
+and (max-width : 650px) {
+  .mobileBox{
+    width: 48%;
+  }
+
+  .laptopBox{
+    height: 60vh;
+  }
+
+  .rolAgencyDate {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen
+and (max-width : 600px) {
+  .mobileBox{
+    width: 52%;
+  }
+
+  .laptopBox{
+    height: 58vh;
+  }
+}
+
+@media only screen
+and (max-width : 550px) {
+  .mobileBox{
+    width: 55%;
+  }
+  .laptopBox{
+    height: 55vh;
+  }
+}
+
+@media only screen
+and (max-width : 500px) {
+  .mobileBox{
+    width: 60%;
+  }
+
+  .laptopBox{
+    height: 52vh;
+  }
+
+  .colorBox{
+    margin: 12px 8%;
+    width: 33%;
+  }
+}
+
+@media only screen
+and (max-width : 450px) {
+  .mobileBox{
+    width: 70%;
+  }
+
+  .laptopBox{
+    height: 50vh;
+  }
+}
+
+@media only screen
+and (max-width : 400px) {
+  .mobileBox{
+    width: 80%;
+  }
+
+  .laptopBox{
+    height: 45vh;
+  }
+}
+
+@media only screen
+and (max-width : 350px) {
+  .mobileBox{
+    width: 85%;
+  }
+
+  .colorBox{
+    margin: 10px 10%;
+    width: 30%;
+    height: 100px;
+    padding: 5px;
+  }
 }
