@@ -1,23 +1,54 @@
 .mainBox {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 .dsc {
   padding: 45px 75px 45px 45px;
   position: absolute;
   right: 0;
+  width: 50%;
 }
 
 .title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 250%;
 }
 
 .photo {
   position: fixed;
   height: 100%;
+  width: 50%;
   background-color: #CCC;
   display: flex;
   justify-content: center;
-  top: 0
+  top: 0;
+}
+
+@media only screen
+and (max-width : 900px) {
+  .mainBox{
+    margin-top: 55px;
+  }
+
+  .photo {
+    position: initial;
+    height: 90vh;
+    width: 100%;
+  }
+
+  .dsc {
+    width: 100%;
+    padding: 40px 55px 40px 40px;
+  }
+}
+
+@media only screen
+and (max-width : 450px) {
+  .photo {
+    height: 60vh;
+  }
+
+  .dsc {
+    padding: 30px 40px 40px 45px;
+  }
 }
