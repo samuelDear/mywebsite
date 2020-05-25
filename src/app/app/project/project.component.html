@@ -2,15 +2,15 @@
   <h1 class="text-4xl font-bold">{{projectSelected != undefined ? projectSelected.name : '' }}</h1>
   <p class="text-justify my-5 text-xl" *ngIf="projectSelected != undefined">{{ translate.currentLang == "es" ? projectSelected.es.dsc : projectSelected.en.dsc }}</p>
 </div>
-<div class="mx-40 flex flex-row justify-between text-lg mt-2">
-  <p><span stranslate="project.role" *ngIf="projectSelected != undefined"></span> {{ translate.currentLang == "es" ? projectSelected.es.role : projectSelected.en.role }}</p>
-  <p><span stranslate="project.agency" *ngIf="projectSelected != undefined"></span> {{ translate.currentLang == "es" ? projectSelected.es.agency : projectSelected.en.agency }}</p>
-  <p><span stranslate="project.date" *ngIf="projectSelected != undefined"></span> {{ projectSelected.datecreated }}</p>
+<div class="mx-40 flex flex-row justify-between text-lg mt-2"*ngIf="projectSelected != undefined">
+  <p><span stranslate="project.role"></span> {{ translate.currentLang == "es" ? projectSelected.es.role : projectSelected.en.role }}</p>
+  <p><span stranslate="project.agency"></span> {{ translate.currentLang == "es" ? projectSelected.es.agency : projectSelected.en.agency }}</p>
+  <p><span stranslate="project.date"></span> {{ projectSelected.datecreated }}</p>
 </div>
 <div class="heightForPrincipalImg mx-40 my-16 flex justify-center borderedBox">
   <img *ngIf="projectSelected != undefined" src="{{projectSelected.principalimg}}" class="h-full borderedBox">
 </div>
-<div class="boxProject border-2 mx-40 p-4">
+<div class="boxProject border-2 mx-40 p-4" *ngIf="projectSelected != undefined">
   <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
     <p class="text-justify text-xl">{{ translate.currentLang == "es" && projectSelected != undefined ? projectSelected.es.introduction : projectSelected.en.introduction }}</p>
 </div>
@@ -19,64 +19,70 @@
   <img *ngIf="projectSelected != undefined" src="{{projectSelected.secundaryimg}}" class="h-full borderedBox">
 </div>
 
+<div *ngIf="projectSelected != undefined">
+  <div class="heightForPrincipalImg mx-40  my-16 flex flex-col items-center" *ngIf="projectSelected.laptopimg != null">
+    <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
+      <img *ngIf="projectSelected != undefined" src="{{projectSelected.laptopimg}}" class="h-full w-full">
+    </div>
+    <div class="border-2 boxLaptopKeyboard boxProject">
+      <div class="mouseTrack border-2 border-t-0 m-auto boxProject">
 
-<div class="heightForPrincipalImg mx-40  my-16 flex flex-col items-center" *ngIf="projectSelected.laptopimg != null">
-  <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
-    <img *ngIf="projectSelected != undefined" src="{{projectSelected.laptopimg}}" class="h-full w-full">
-  </div>
-  <div class="border-2 boxLaptopKeyboard boxProject">
-    <div class="mouseTrack border-2 border-t-0 m-auto boxProject">
-
+      </div>
     </div>
   </div>
 </div>
 
-<div class="boxTablet mx-40  my-16 border-2 flex flex-row justify-between p-2" *ngIf="projectSelected.tabletimg != null">
+<div *ngIf="projectSelected != undefined">
+  <div class="boxTablet mx-40  my-16 border-2 flex flex-row justify-between p-2" *ngIf="projectSelected.tabletimg != null">
 
-  <div class="h-full buttonAndCameraTablet flex-col">
-    <div class="cameraTablet border-2 my-2"></div>
-    <div class="soundTablet border-2 my-2"></div>
-  </div>
-
-  <div class="h-full screenTablet">
-    <img *ngIf="projectSelected != undefined" src="{{projectSelected.tabletimg}}" class="h-full w-full">
-  </div>
-
-  <div class="h-full buttonAndCameraTablet">
-    <div class="buttonTablet border-2">
+    <div class="h-full buttonAndCameraTablet flex-col">
+      <div class="cameraTablet border-2 my-2"></div>
+      <div class="soundTablet border-2 my-2"></div>
     </div>
-  </div>
 
+    <div class="h-full screenTablet">
+      <img *ngIf="projectSelected != undefined" src="{{projectSelected.tabletimg}}" class="h-full w-full">
+    </div>
+
+    <div class="h-full buttonAndCameraTablet">
+      <div class="buttonTablet border-2">
+      </div>
+    </div>
+
+  </div>
 </div>
-<div class="boxTablet mx-40 my-16 flex flex-row justify-around" *ngIf="projectSelected.smobileimg != '' && projectSelected.fmobileimg != ''">
 
-  <div class="h-full border-2 w-1/4 mobileBox p-2">
-    <div class=" w-full cameraBoxMobile">
-      <div class="cameraMobile border-2">
+<div *ngIf="projectSelected != undefined">
+  <div class="boxTablet mx-40 my-16 flex flex-row justify-around" *ngIf="projectSelected.smobileimg != '' && projectSelected.fmobileimg != ''">
+
+    <div class="h-full border-2 w-1/4 mobileBox p-2">
+      <div class=" w-full cameraBoxMobile">
+        <div class="cameraMobile border-2">
+        </div>
+        <div class="soundMobile border-2">
+
+        </div>
       </div>
-      <div class="soundMobile border-2">
-
+      <div class="w-full screenMobile">
+        <img *ngIf="projectSelected != undefined" src="{{projectSelected.fmobileimg}}" class="h-full w-full screenImg">
       </div>
     </div>
-    <div class="w-full screenMobile">
-      <img *ngIf="projectSelected != undefined" src="{{projectSelected.fmobileimg}}" class="h-full w-full screenImg">
+
+    <div class="h-full border-2 w-1/4 mobileBox  p-2">
+      <div class=" w-full cameraBoxMobile">
+        <div class="cameraMobile border-2">
+
+        </div>
+        <div class="soundMobile border-2">
+
+        </div>
+      </div>
+      <div class="w-full screenMobile">
+        <img *ngIf="projectSelected != undefined" src="{{projectSelected.smobileimg}}" class="h-full w-full screenImg">
+      </div>
     </div>
+
   </div>
-
-  <div class="h-full border-2 w-1/4 mobileBox  p-2">
-    <div class=" w-full cameraBoxMobile">
-      <div class="cameraMobile border-2">
-
-      </div>
-      <div class="soundMobile border-2">
-
-      </div>
-    </div>
-    <div class="w-full screenMobile">
-      <img *ngIf="projectSelected != undefined" src="{{projectSelected.smobileimg}}" class="h-full w-full screenImg">
-    </div>
-  </div>
-
 </div>
 
 <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
@@ -125,7 +131,7 @@
   <p class="text-center text-2xl" stranslate="project.otherWork"></p>
 </div>
 
-<div class="my-16 mx-40">
+<div class="my-16 mx-40" *ngIf="projectSelected != undefined">
   <div class="boxProject border-2 {{ i % 2 == 0 ? 'ml-10 mr-40' : 'ml-40 mr-10' }} p-5 flex flex-row justify-between my-4 cursor-pointer" *ngFor="let random of projectSelected.ramdons;let i = index" (click)="navigateUrl(random.code)">
     <div>
       <h6 class="text-2xl">{{ random.name }}</h6>
