@@ -18,7 +18,6 @@ export class StudiesComponent implements OnInit {
         school: 'Instituto' + i + 1,
       });
     }
-    console.log(this.curses);
   }
 
 }
