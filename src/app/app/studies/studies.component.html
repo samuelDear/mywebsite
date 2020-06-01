@@ -1,19 +1,19 @@
-<div class="mainBox justify-between">
-  <div class="slideDates border-2">
-    hehhe
-  </div>
-  <div class="studiesInfo border-2 flex flex-col items-center">
-    <div class="studyDetail {{ i % 2 == 0 || i == 0 ? 'studyPair' : 'studyOdd' }}" *ngFor="let study of curses;let i = index">
+<div class="mainBox justify-center">
+  <div class="studiesInfo flex flex-col items-center">
+    <div class="stickEnd">
+    </div>
+    <div class="studyDetail {{ i % 2 == 0 || i == 0 ? 'studyPair' : 'studyOdd' }}" *ngFor="let study of courses;let i = index">
       <div class="details {{ i % 2 == 0 || i == 0 ? 'detailsPair' : 'detailsOdd' }}">
         <div class="textdetails">
-          hola
+          <span class="textTitle">{{ study.title }}</span>
+          <span class="textDate">{{ study.datecreated | date: 'dd/MM/yyyy' }}</span>
+          <span class="textAcademy">{{ study.school }}</span>
         </div>
         <div class="currentCourse {{ i % 2 == 0 || i == 0 ? 'ballPair' : 'ballOdd'}}">
         </div>
       </div>
     </div>
     <div class="stickBegin">
-
     </div>
   </div>
 </div>

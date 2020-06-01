@@ -1,11 +1,19 @@
 .mainBox{
-  margin: 8rem 10rem;
+  margin: 8rem 10rem 0px 10rem;
   display: flex;
   flex-direction: row;
 }
 
 .slideDates{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  margin-top: 8rem;
   width: 15%;
+  align-items: center;
+  max-height: 70vh;
 }
 
 .studiesInfo{
@@ -14,8 +22,15 @@
 
 .stickBegin {
   width: 10px;
-  height: 50px;
-  background: linear-gradient(0deg, rgb(74, 227, 205) 0%, rgb(219, 38, 150) 80%);
+  height: 80px;
+  background: linear-gradient(0deg, #111  20%, rgb(74, 227, 205) 50%, rgb(219, 38, 150) 80%);
+}
+
+.stickEnd {
+  width: 10px;
+  height: 80px;
+  background: linear-gradient(0deg, rgb(219, 38, 150) 20%,rgb(74, 227, 205) 50%, #111  80%);
+  margin-bottom: -10px;
 }
 
 .studyDetail{
@@ -79,4 +94,46 @@
 .ballPair{
   margin-left: -25px;
   background: linear-gradient(190deg, rgba(219,38,150,1) 20%, rgba(74,227,205,1) 100%);
+}
+
+.textdetails{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textTitle{
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.textDate, .textAcademy{
+  font-size: 110%;
+}
+
+.dates{
+  margin: 10px 0px;
+  font-size: 160%;
+}
+
+.datesSelected{
+  font-size: 200%;
+}
+
+.checkdate{
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkedDate{
+  width: 15px;
+  height: 15px;
+  background: #111;
+  border-radius: 50%;
 }

@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudiesComponent implements OnInit {
   showButton: boolean = true;
-  curses: any = [];
+  courses: any = [];
   constructor() { }
 
   ngOnInit() {
     for(let i = 0; i < 10; i++){
-      this.curses.push({
+      this.courses.push({
         title: 'Curso' + i,
         datecreated: new Date(),
         school: 'Instituto' + i + 1,
