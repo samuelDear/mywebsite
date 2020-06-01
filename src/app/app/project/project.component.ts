@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProjectComponent implements OnInit {
   projectSelected: any;
+  showButton: boolean = true;
 
   constructor(
     private activatedRoute: ActivatedRoute,

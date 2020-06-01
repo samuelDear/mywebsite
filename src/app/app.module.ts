@@ -14,6 +14,7 @@ import { FooterComponent } from './app/footer/footer.component';
 import { SlideMenuComponent } from './app/slide-menu/slide-menu.component';
 import { AboutComponent } from './app/about/about.component';
 import { ProjectComponent } from './app/project/project.component';
+import { StudiesComponent } from './app/studies/studies.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,7 +29,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     SlideMenuComponent,
     AboutComponent,
-    ProjectComponent
+    ProjectComponent,
+    StudiesComponent
   ],
   imports: [
     BrowserModule,

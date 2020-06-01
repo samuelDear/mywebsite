@@ -38,7 +38,8 @@
     "projectsLink": "PROJECTS",
     "knowlegdeLink": "KNOWLEGDE",
     "whoDesigned": "WHO DESIGNED THIS?",
-    "aboutLink": "ABOUT ME"
+    "aboutLink": "ABOUT ME",
+    "studies": "STUDIES"
   },
   "project": {
     "role": "Role:",
