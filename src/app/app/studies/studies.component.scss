@@ -1,0 +1,82 @@
+.mainBox{
+  margin: 8rem 10rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.slideDates{
+  width: 15%;
+}
+
+.studiesInfo{
+  width: 80%;
+}
+
+.stickBegin {
+  width: 10px;
+  height: 50px;
+  background: linear-gradient(0deg, rgb(74, 227, 205) 0%, rgb(219, 38, 150) 80%);
+}
+
+.studyDetail{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-right: 10px solid rgb(74, 227, 205);
+  border-bottom: 10px solid rgb(219, 38, 150);
+  margin-bottom: -10px;
+}
+
+.studyOdd{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.studyOdd .details {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.studyPair{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.studyPair .details {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.details{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailOdd{
+  flex-direction: row;
+}
+
+.detailsPair{
+  flex-direction: row-reverse;
+}
+
+.currentCourse{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.ballOdd{
+  margin-right: -25px;
+  background: linear-gradient(0deg, rgba(219,38,150,1) 20%, rgba(74,227,205,1) 100%);
+}
+
+.ballPair{
+  margin-left: -25px;
+  background: linear-gradient(190deg, rgba(219,38,150,1) 20%, rgba(74,227,205,1) 100%);
+}
