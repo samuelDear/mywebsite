@@ -21,13 +21,23 @@
   if (!$rs=$db->query($sql))
     badEnd("500", array("msg"=>$db->error));
 
-  while($res = $rs->fetch_assoc()){
-    $record = new stdClass();
-    $record->name = "Proyectos";
-    $record->qty = $res["qty"];
+  $res = $rs->fetch_assoc();
+  $record = new stdClass();
+  $record->name = "Proyectos";
+  $record->qty = $res["qty"];
 
-    $records [] = $record;
-  }
+  $records [] = $record;
+
+  $sql = "SELECT count(id) AS qty FROM courses";
+  if (!$rs=$db->query($sql))
+    badEnd("500", array("msg"=>$db->error));
+
+  $res = $rs->fetch_assoc();
+  $record = new stdClass();
+  $record->name = "Cursos/Estudios";
+  $record->qty = $res["qty"];
+
+  $records [] = $record;
 
   $out->records = $records;
 
