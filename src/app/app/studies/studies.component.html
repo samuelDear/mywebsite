@@ -2,12 +2,12 @@
   <div class="studiesInfo flex flex-col items-center">
     <div class="stickEnd">
     </div>
-    <div class="studyDetail {{ i % 2 == 0 || i == 0 ? 'studyPair' : 'studyOdd' }}" *ngFor="let study of courses;let i = index">
+    <div class="studyDetail {{ i % 2 == 0 || i == 0 ? 'studyPair' : 'studyOdd' }}" *ngFor="let study of studies;let i = index">
       <div class="details {{ i % 2 == 0 || i == 0 ? 'detailsPair' : 'detailsOdd' }}">
         <div class="textdetails">
           <span class="textTitle">{{ study.title }}</span>
-          <span class="textDate">{{ study.datecreated | date: 'dd/MM/yyyy' }}</span>
-          <span class="textAcademy">{{ study.school }}</span>
+          <span class="textDate">{{ study.datecreated.day }} {{ this.translate.currentLang == "es" ? 'de' : 'of' }} {{ getMonth(study.datecreated.month) }}, {{ study.datecreated.year }}</span>
+          <span class="textAcademy">{{ study.institute }}</span>
         </div>
         <div class="currentCourse {{ i % 2 == 0 || i == 0 ? 'ballPair' : 'ballOdd'}}">
         </div>

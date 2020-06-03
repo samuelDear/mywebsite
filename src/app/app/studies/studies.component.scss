@@ -34,8 +34,8 @@
 }
 
 .studyDetail{
-  width: 200px;
-  height: 200px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   border: 10px solid transparent;
   border-right: 10px solid rgb(74, 227, 205);
@@ -100,15 +100,17 @@
   display:flex;
   flex-direction: column;
   text-align: center;
+  max-width: 90%;
+  min-width: 90%;
 }
 
 .textTitle{
-  font-size: 150%;
+  font-size: 140%;
   font-weight: bold;
 }
 
 .textDate, .textAcademy{
-  font-size: 110%;
+  font-size: 120%;
 }
 
 .dates{

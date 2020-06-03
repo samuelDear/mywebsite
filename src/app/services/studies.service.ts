@@ -10,6 +10,10 @@ export class StudiesService {
 
   constructor(private http: HttpClient) { }
 
+  getCourses(){
+    return this.http.get(`${this.url}studies/entry.php`);
+  }
+
   getCoursesCms(user) {
     return this.http.get(`${this.url}studies/entrycms.php?sessionid=${user.sessionid}`);
   }
