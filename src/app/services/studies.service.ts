@@ -17,4 +17,13 @@ export class StudiesService {
   getStudyById(params) {
     return this.http.get(`${this.url}studies/specificentrycms.php?sessionid=${params.sessionid}&id=${params.id}`);
   }
+
+  saveStudy(params) {
+    var parsedPars = Object.keys(params).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+    }).join('&');
+
+    return this.http
+    .get(`${this.url}studies/savestudy.php?${parsedPars}`);
+  }
 }

@@ -16,7 +16,7 @@ export class StudiesEditComponent implements OnInit {
     title: [null, [Validators.required]],
     datecreated: [null, [Validators.required]],
     institute: [null, [Validators.required]],
-    instituteurl: [null]
+    urlinstitute: [null]
   });
 
   constructor(
@@ -56,12 +56,32 @@ export class StudiesEditComponent implements OnInit {
       title: study.title,
       datecreated: study.datecreated,
       institute: study.institute,
-      instituteurl: study.instituteurl
+      urlinstitute: study.urlinstitute
     });
   }
 
   save(){
-    console.log('holajeje');
+    if(this.editForm.valid){
+        let params = {
+          sessionid: localStorage.sessionid,
+          id: this.editForm.get('id').value,
+          title: this.editForm.get('title').value,
+          datecreated: this.editForm.get('datecreated').value,
+          institute: this.editForm.get('institute').value,
+          urlinstitute: this.editForm.get('urlinstitute').value
+        }
+        console.log(params);
+
+        this.studiesService.saveStudy(params).subscribe(res => {
+          console.log(res);
+          this.router.navigateByUrl("cms/studies");
+        },
+        (error) => {
+          console.log(error);
+        });
+    }else{
+      alert('Todos los campos son requeridos');
+    }
   }
 
   navigate(url){

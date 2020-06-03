@@ -15,7 +15,30 @@
             <label for="idcolor">ID:</label>
             <input class="ml-2" type="text" id="idcolor" readonly formControlName="id" placeholder="ID...">
           </div>
+
+          <div class="flex flex-col ml-5 w-2/5">
+            <label for="title">Titulo:</label>
+            <input class="ml-2" type="text" id="title" formControlName="title" placeholder="Titulo...">
+          </div>
+
+          <div class="flex flex-col ml-5 w-1/5">
+            <label for="datecreated">Fecha:</label>
+            <input class="ml-2" type="date" id="datecreated" formControlName="datecreated" placeholder="Fecha...">
+          </div>
         </div>
+
+        <div class="flex flex-row my-4">
+          <div class="flex flex-col ml-5 w-1/5">
+            <label for="institute">Instituto:</label>
+            <input class="ml-2" type="text" id="institute" formControlName="institute" placeholder="Instituto...">
+          </div>
+
+          <div class="flex flex-col ml-5 w-3/5">
+            <label for="urlinstitute">URL del instituto:</label>
+            <input class="ml-2" type="text" id="urlinstitute" formControlName="urlinstitute" placeholder="URL...">
+          </div>
+        </div>
+
 
         <div class="flex flex-row mt-5 justify-center font-bold">
           <button type="button" class="border-2 px-5 mx-5" (click)="navigate('studies')">Cancelar</button>
