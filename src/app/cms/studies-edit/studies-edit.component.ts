@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, Validators } from '@angular/forms';
+import { StudiesService } from '../../services/studies.service';
 
 @Component({
   selector: 'app-studies-edit',
@@ -8,17 +9,21 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./studies-edit.component.scss']
 })
 export class StudiesEditComponent implements OnInit {
+  study: any;
 
   editForm= this.fb.group({
     id: [0, [Validators.required]],
-    colorhex: [null, [Validators.required]],
-    projectid: [null, [Validators.required]]
+    title: [null, [Validators.required]],
+    datecreated: [null, [Validators.required]],
+    institute: [null, [Validators.required]],
+    instituteurl: [null]
   });
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private studiesService: StudiesService,
   ) { }
 
   ngOnInit() {
@@ -33,7 +38,25 @@ export class StudiesEditComponent implements OnInit {
       }
 
       if(parseInt(params.id) != 0){
+        this.studiesService.getStudyById(params).subscribe((res: any) => {
+          this.study = res.entry;
+          console.log(this.study);
+          this.updateForm(this.study);
+        },
+        (error) => {
+          console.log(error);
+        });
       }
+    });
+  }
+
+  updateForm(study: any){
+    this.editForm.patchValue({
+      id: study.id,
+      title: study.title,
+      datecreated: study.datecreated,
+      institute: study.institute,
+      instituteurl: study.instituteurl
     });
   }
 

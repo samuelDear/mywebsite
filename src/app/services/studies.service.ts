@@ -13,4 +13,8 @@ export class StudiesService {
   getCoursesCms(user) {
     return this.http.get(`${this.url}studies/entrycms.php?sessionid=${user.sessionid}`);
   }
+
+  getStudyById(params) {
+    return this.http.get(`${this.url}studies/specificentrycms.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }
