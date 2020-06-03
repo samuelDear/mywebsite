@@ -1,0 +1,29 @@
+<div class="flex flex-row w-full min-h-screen">
+  <div class="w-1/6 min-h-screen">
+    <app-slidemenu></app-slidemenu>
+  </div>
+  <div class="w-5/6 min-h-screen">
+    <form class="m-10 flex flex-col" autocomplete="off" role="form" [formGroup]="editForm" (ngSubmit)="save()">
+      <h1 class="text-4xl m-auto text-center underline">Editar o Crear Estudio</h1>
+
+      <div class="flex flex-col w-full">
+        <div class="titleBox">
+          <h3 class="text-3xl text-left">Datos Basicos</h3>
+        </div>
+        <div class="flex flex-row my-4">
+          <div class="flex flex-col ml-5 w-1/5">
+            <label for="idcolor">ID:</label>
+            <input class="ml-2" type="text" id="idcolor" readonly formControlName="id" placeholder="ID...">
+          </div>
+        </div>
+
+        <div class="flex flex-row mt-5 justify-center font-bold">
+          <button type="button" class="border-2 px-5 mx-5" (click)="navigate('studies')">Cancelar</button>
+          <button type="submit" class="border-2 px-5 mx-5">Guardar</button>
+          <button *ngIf="this.editForm.get('id').value != 0" type="button" class="border-2 px-5 mx-5">Borrar</button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>

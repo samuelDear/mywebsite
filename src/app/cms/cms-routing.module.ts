@@ -11,6 +11,8 @@ import { FeaturesComponent } from './features/features.component';
 import { FeaturesEditComponent } from './features-edit/features-edit.component';
 import { TypographiesComponent } from './typographies/typographies.component';
 import { TypographiesEditComponent } from './typographies-edit/typographies-edit.component';
+import { StudiesComponent } from './studies/studies.component';
+import { StudiesEditComponent } from './studies-edit/studies-edit.component';
 
 const  routes:  Routes  = [
   { path: '', component: LoginComponent },
@@ -22,7 +24,9 @@ const  routes:  Routes  = [
   { path: 'features', component: FeaturesComponent },
   { path: 'features-edit/:id', component: FeaturesEditComponent },
   { path: 'typographies', component: TypographiesComponent },
-  { path: 'typographies-edit/:id', component: TypographiesEditComponent }
+  { path: 'typographies-edit/:id', component: TypographiesEditComponent },
+  { path: 'studies', component: StudiesComponent },
+  { path: 'studies-edit/:id', component: StudiesEditComponent }
 ];
 
 @NgModule({

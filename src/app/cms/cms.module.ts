@@ -13,6 +13,8 @@ import { FeaturesEditComponent } from './features-edit/features-edit.component';
 import { TypographiesComponent } from './typographies/typographies.component';
 import { TypographiesEditComponent } from './typographies-edit/typographies-edit.component';
 import { SlidemenuComponent } from './slidemenu/slidemenu.component';
+import { StudiesComponent } from './studies/studies.component';
+import { StudiesEditComponent } from './studies-edit/studies-edit.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SlidemenuComponent } from './slidemenu/slidemenu.component';
     FeaturesEditComponent,
     TypographiesComponent,
     TypographiesEditComponent,
-    SlidemenuComponent
+    SlidemenuComponent,
+    StudiesComponent,
+    StudiesEditComponent
   ],
 imports: [
   CommonModule,
