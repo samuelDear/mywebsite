@@ -26,4 +26,8 @@ export class StudiesService {
     return this.http
     .get(`${this.url}studies/savestudy.php?${parsedPars}`);
   }
+
+  deleteStudy(params){
+    return this.http.get(`${this.url}studies/deletestudy.php?sessionid=${params.sessionid}&id=${params.id}`);
+  }
 }

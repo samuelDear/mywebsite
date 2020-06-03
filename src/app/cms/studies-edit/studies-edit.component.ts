@@ -87,4 +87,20 @@ export class StudiesEditComponent implements OnInit {
   navigate(url){
     this.router.navigateByUrl("cms/" + url);
   }
+
+  deleteStudy(){
+    let params = {
+      id: this.editForm.get('id').value,
+      sessionid: localStorage.sessionid
+    }
+
+    console.log(params);
+    this.studiesService.deleteStudy(params).subscribe(res => {
+      console.log(res);
+      this.router.navigateByUrl("cms/studies");
+    },
+    (error) => {
+      console.log(error);
+    });
+  }
 }
