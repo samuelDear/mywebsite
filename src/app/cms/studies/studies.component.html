@@ -16,6 +16,13 @@
           <th class="bg-teal-700 m-2 p-2">Instituto</th>
           <th class="bg-teal-700 m-2 p-2"></th>
         </tr>
+        <tr *ngFor="let study of studies; let i = index">
+          <td class="text-center font-bold">{{ study.id }}</td>
+          <td class="text-center font-bold">{{ study.title }}</td>
+          <td class="text-center font-bold">{{ study.datecreated }}</td>
+          <td class="text-center font-bold">{{ study.institute }}</td>
+          <td class="flex"><button type="button" class="cursor-pointer py-2 px-6 border-2 mx-auto" [routerLink]="['/cms/studies-edit', study.id]">Ver</button></td>
+        </tr>
       </table>
     </div>
   </div>
