@@ -10,6 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class HomecmsComponent implements OnInit {
   projects: any;
+  projectsTotal: any = 0;
   colors: any;
   typographies: any;
   features: any;
@@ -29,6 +30,9 @@ export class HomecmsComponent implements OnInit {
     this.projectsServicio.getProjectQty(user).subscribe((result:any) => {
       this.projects = result.records;
       console.log(result.records);
+      for(let i = 0; i < this.projects.length; i++){
+        this.projectsTotal += Number(this.projects[i].qty);
+      }
     },
     (error) => {
       console.log(error);
