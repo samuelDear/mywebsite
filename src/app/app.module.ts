@@ -7,14 +7,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './app/home/home.component';
-import { HeaderComponent } from './app/header/header.component';
-import { StranslateDirective } from './app/directives/stranslate.directive';
-import { FooterComponent } from './app/footer/footer.component';
-import { SlideMenuComponent } from './app/slide-menu/slide-menu.component';
-import { AboutComponent } from './app/about/about.component';
-import { ProjectComponent } from './app/project/project.component';
-import { StudiesComponent } from './app/studies/studies.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { StranslateDirective } from './components/directives/stranslate.directive';
+import { FooterComponent } from './components/footer/footer.component';
+import { SlideMenuComponent } from './slide-menu/slide-menu.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectComponent } from './project/project.component';
+import { StudiesComponent } from './studies/studies.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SlideMenuComponent,
     AboutComponent,
     ProjectComponent,
-    StudiesComponent
+    StudiesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
