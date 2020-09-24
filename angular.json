@@ -138,5 +138,8 @@
     "@schematics/angular:component": {
       "inlineStyle": true
     }
+  },
+  "cli": {
+    "analytics": "1b85e6bb-9207-4d7f-a349-f97c8e2d9242"
   }
 }

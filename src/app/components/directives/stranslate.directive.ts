@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, Renderer, OnInit } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -14,7 +14,7 @@ export class StranslateDirective implements OnInit {
 
   constructor(
     public el: ElementRef,
-    public renderer: Renderer,
+    public renderer: Renderer2,
     private translateService: TranslateService
   ) { }
 
