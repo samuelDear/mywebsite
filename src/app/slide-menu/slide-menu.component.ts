@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import { navigationCustom } from '../transition';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-slide-menu',
@@ -11,16 +13,14 @@ export class SlideMenuComponent implements OnInit {
   nav: boolean = true;
   currentLang: string;
   constructor(
-    public translate: TranslateService
+    public translate: TranslateService,
+    public router: Router
   ) {
     window.scroll(0,0);
-    console.log(translate.currentLang);
     if(translate.currentLang == "es"){
       this.currentLang = "es";
-      console.log("españolo");
     }else{
       this.currentLang = "en";
-      console.log("inglish");
     }
   }
 
@@ -34,5 +34,13 @@ export class SlideMenuComponent implements OnInit {
     for(let i = styles.length - 1; i >= 0; i--){
       styles[i].remove();
     }
+  }
+
+  navigation(ruta: string) {
+    navigationCustom( () => this.router.navigateByUrl(ruta) ); 
+  }
+
+  navigationFragment(ruta, fragment) {
+    navigationCustom( () => this.router.navigate([ruta], { fragment: fragment }) ); 
   }
 }

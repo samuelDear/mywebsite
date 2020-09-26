@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { navigationCustom } from '../../transition';
 
 @Component({
   selector: 'app-header',
@@ -14,36 +15,26 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
-        let regex = /cms/;
-        if(regex.test(this.router.url)){
-          this.showHeader = false;
-        }else{
-          this.showHeader  = true;
-        }
-        console.log(this.headerNav);
+        this.showHeader  = true;
         if(this.headerNav){
           this.animation();
         }
       }
     });
-
-    setTimeout(() => {
-      if(this.router.url == '/menu'){
-        this.animation();
-        console.log('holaaa');
-      }
-    }, 1);
-
   }
 
   ngOnInit() {
   }
 
-  navigation() {
+  navigation(ruta) {
     if(this.router.url != '/menu'){
       this.animation();
-      this.router.navigateByUrl('/menu');
+      navigationCustom( () => this.router.navigateByUrl(ruta) ); 
     }
+  }
+
+  navigationAbout(ruta){
+    navigationCustom( () => this.router.navigateByUrl(ruta) ); 
   }
 
   animation(){

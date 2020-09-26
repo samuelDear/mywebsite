@@ -105,3 +105,121 @@ and (max-width : 700px) {
     width: 25px;
   }
 }
+
+.loadScreen {
+  width: 0px;
+  height: 100%;
+  z-index: 9999999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transition: 2s;
+  background-image: url("assets/images/pat-dark.jpg");
+}
+
+.name {
+  font-size: 180%;
+  font-weight: 300;
+  font-family: 'Signika', sans-serif;
+  animation: volcanName 4s ease-out infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+}
+
+@keyframes volcanName{
+  0%{
+    color: #4ae3cd;
+  }
+  25%{
+    color: #db2696;
+  }
+  50%{
+    color: #38ca13;
+  }
+  75%{
+    color: #db2696;
+  }
+  100%{
+    color: #4ae3cd;
+  }
+}
+
+.loadingLine{
+  width: 0%;
+  background-color: #fff;
+  opacity: 0.3;
+  animation: expandLoading 4s ease-out infinite;
+}
+
+
+@keyframes expandLoading{
+  0%{
+    width: 0%;
+  }
+  5%{
+    width: 2%
+  }
+  10%{
+    width: 4%;
+  }
+  15%{
+    width: 6%
+  }
+  20%{
+    witdh: 8%;
+  }
+  25%{
+    width: 10%;
+  }
+  30%{
+    width: 12%;
+  }
+  35%{
+    width: 14%;
+  }
+  40%{
+    width: 16%;
+  }
+  45%{
+    width: 18%;
+  }
+  50%{
+    width: 20%;
+  }
+  55%{
+    width: 18%;
+  }
+  60%{
+    width: 16%;
+  }
+  65%{
+    width: 14%;
+  }
+  70%{
+    width: 12%;
+  }
+  75%{
+    width: 10%;
+  }
+  80%{
+    width: 8%;
+  }
+  85%{
+    width: 6%;
+  }
+  90%{
+    width: 4%;
+  }
+  95%{
+    width: 2%;
+  }
+  100%{
+    width: 0%;
+  }
+}

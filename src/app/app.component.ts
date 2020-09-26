@@ -8,6 +8,7 @@ import {TranslateService} from '@ngx-translate/core';
 export class AppComponent {
   nav: boolean;
   buttonShow: boolean;
+  loading: boolean = false;
 
   constructor(public translate: TranslateService) {
     translate.addLangs(['en','es']);
@@ -19,9 +20,7 @@ export class AppComponent {
   }
 
   showButton(show){
-    console.log(show);
     this.buttonShow = show.showButton;
     this.nav = show.nav;
   }
-
 }

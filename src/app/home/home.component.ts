@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
+import { navigationCustom } from '../transition';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,63 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class HomeComponent implements OnInit {
   showButton: boolean = true;
-  projects: any;
+  projects: any = [
+    {
+      name: 'FJC Intranet',
+      es: {
+        resume: 'RESUMEN WEON'
+      },
+      en: {
+        resume: 'THIS IS A RESUME'
+      }
+    },
+    {
+      name: 'ORM',
+      es: {
+        resume: 'RESUMEN WEON'
+      },
+      en: {
+        resume: 'THIS IS A RESUME'
+      }
+    },
+    {
+      name: 'My Portfolio',
+      es: {
+        resume: 'RESUMEN WEON'
+      },
+      en: {
+        resume: 'THIS IS A RESUME'
+      }
+    },
+    {
+      name: 'Traumapp',
+      es: {
+        resume: 'RESUMEN WEON'
+      },
+      en: {
+        resume: 'THIS IS A RESUME'
+      }
+    },
+    {
+      name: 'Traumapp for Desktop',
+      es: {
+        resume: 'RESUMEN WEON'
+      },
+      en: {
+        resume: 'THIS IS A RESUME'
+      }
+    }
+    ,
+    {
+      name: 'AFX Exchange',
+      es: {
+        resume: 'RESUMEN WEON'
+      },
+      en: {
+        resume: 'THIS IS A RESUME'
+      }
+    }
+  ];
 
   constructor(
     private router: Router,
@@ -37,11 +94,9 @@ export class HomeComponent implements OnInit {
     for(let i = styles.length - 1; i >= 0; i--){
       styles[i].remove();
     }
-/*
-    this.projectsServicio.getProjects().subscribe((result:any) => {
-      this.projects = result.records;
-      console.log(result);
-    });*/
   }
 
+  navigation(ruta) {
+    navigationCustom( () => this.router.navigateByUrl(ruta) ); 
+  }
 }

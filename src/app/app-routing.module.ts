@@ -8,11 +8,11 @@ import { ProjectComponent } from './project/project.component';
 import { StudiesComponent } from './studies/studies.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'menu', component: SlideMenuComponent, pathMatch: 'full' },
-  { path: 'about', component: AboutComponent, pathMatch: 'full' },
-  { path: 'project', component: ProjectComponent, pathMatch: 'full' },
-  { path: 'studies', component: StudiesComponent, pathMatch: 'full' }
+  { path: '', component: HomeComponent, pathMatch: 'full', data: { animationState: 'One' } },
+  { path: 'menu', component: SlideMenuComponent, pathMatch: 'full', data: { animationState: 'Two' } },
+  { path: 'about', component: AboutComponent, pathMatch: 'full', data: { animationState: 'Three' } },
+  { path: 'project', component: ProjectComponent, pathMatch: 'full', data: { animationState: 'Three' } },
+  { path: 'studies', component: StudiesComponent, pathMatch: 'full', data: { animationState: 'Five' } }
 
   //{ path: '**', component: PageNotFoundComponent }
 ];
