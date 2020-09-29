@@ -5,8 +5,8 @@
     <div class="studyDetail {{ i % 2 == 0 || i == 0 ? 'studyPair' : 'studyOdd' }}" *ngFor="let study of studies;let i = index">
       <div class="details {{ i % 2 == 0 || i == 0 ? 'detailsPair' : 'detailsOdd' }}">
         <div class="textdetails">
-          <span class="textTitle">{{ study.title }}</span>
-          <span class="textDate">{{ study.datecreated.day }} {{ this.translate.currentLang == "es" ? 'de' : 'of' }} {{ getMonth(study.datecreated.month) }}, {{ study.datecreated.year }}</span>
+          <span class="textTitle">{{ translate.currentLang == "es" ? study.es.title : study.en.title }}</span>
+          <span class="textDate">{{ getMonth(study.datecreated.month) }} {{ this.translate.currentLang == "es" ? 'de' : 'of' }} {{ study.datecreated.year }}</span>
           <span class="textAcademy">{{ study.institute }}</span>
         </div>
         <div class="currentCourse {{ i % 2 == 0 || i == 0 ? 'ballPair' : 'ballOdd'}}">

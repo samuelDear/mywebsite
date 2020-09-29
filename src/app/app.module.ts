@@ -17,6 +17,9 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { StudiesComponent } from './studies/studies.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
+import { OrmComponent } from './projects/orm/orm.component';
+import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,7 +36,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutComponent,
     ProjectComponent,
     StudiesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FjcintranetComponent,
+    OrmComponent,
+    OwnportfolioComponent
   ],
   imports: [
     BrowserModule,

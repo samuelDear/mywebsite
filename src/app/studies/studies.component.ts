@@ -8,20 +8,203 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class StudiesComponent implements OnInit {
   showButton: boolean = true;
-  studies: any = [];
+  studies: any = [
+    {
+      datecreated: {
+        month: '06',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de Fundamentos de Ingeniería de Software'
+      },
+      en: {
+        title: 'Software Engineering Fundamentals Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '05',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de Pensamiento Lógico'
+      },
+      en: {
+        title: 'Logic Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '05',
+        year: '2020',
+      },
+      institute: 'FreeCodeCamp',
+      es: {
+        title: 'Diseño Web Responsivo'
+      },
+      en: {
+        title: 'Responsive Web Design',
+      }
+    },
+    {
+      datecreated: {
+        month: '11',
+        year: '2019',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de Marca Personal'
+      },
+      en: {
+        title: 'Personal Brand Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '11',
+        year: '2019',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de Marca Personal'
+      },
+      en: {
+        title: 'Personal Brand Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '10',
+        year: '2019',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso Programacion Básica'
+      },
+      en: {
+        title: 'Basic programation Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '02',
+        year: '2019',
+      },
+      institute: 'Centro Venezolano Americano',
+      es: {
+        title: 'Programa de Ingles como Lengua Extranjera'
+      },
+      en: {
+        title: 'English as a Foreign Language Program',
+      }
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2018',
+      },
+      institute: 'Benllisoft',
+      es: {
+        title: 'Curso de HTML 5'
+      },
+      en: {
+        title: 'HTML 5 Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2018',
+      },
+      institute: 'Benllisoft',
+      es: {
+        title: 'Curso de PHP Básico'
+      },
+      en: {
+        title: 'Basic PHP Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2018',
+      },
+      institute: 'Benllisoft',
+      es: {
+        title: 'Curso de HTML 5'
+      },
+      en: {
+        title: 'HTML 5 Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2018',
+      },
+      institute: 'Benllisoft',
+      es: {
+        title: 'Curso de Administrador de Web Hosting'
+      },
+      en: {
+        title: 'Web Hosting Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '08',
+        year: '2018',
+      },
+      institute: 'Benllisoft',
+      es: {
+        title: 'Curso de SQL'
+      },
+      en: {
+        title: 'SQL Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2017',
+      },
+      institute: 'Benllisoft',
+      es: {
+        title: 'Curso de Java SE'
+      },
+      en: {
+        title: 'Java SE Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '03',
+        year: '2017',
+      },
+      institute: 'Benllisoft',
+      es: {
+        title: 'Curso de Programación Estructurada'
+      },
+      en: {
+        title: 'Structured Programming Course',
+      }
+    }
+  ];
   constructor(
     private translate: TranslateService,
   ) { }
 
   ngOnInit() {
 
-    for(let i = 0; i < 10; i++){
+    /*for(let i = 0; i < 10; i++){
       this.studies.push({
         title: 'Curso' + i,
         datecreated: new Date(),
         school: 'Instituto' + i + 1,
       });
-    }
+    }*/
   }
 
   getMonth(month: string){
