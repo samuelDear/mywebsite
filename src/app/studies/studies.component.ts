@@ -11,7 +11,111 @@ export class StudiesComponent implements OnInit {
   studies: any = [
     {
       datecreated: {
+        month: '08',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de API Rest'
+      },
+      en: {
+        title: 'API Rest Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '08',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de Laravel'
+      },
+      en: {
+        title: 'Laravel Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '08',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de PHP'
+      },
+      en: {
+        title: 'PHP Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '07',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de POO'
+      },
+      en: {
+        title: 'OOP Course',
+      }
+    },
+    {
+      datecreated: {
         month: '06',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de C++'
+      },
+      en: {
+        title: 'C++ Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '06',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de Fundamentos de Arquitectura de Software'
+      },
+      en: {
+        title: 'Software Architecture Fundamentals Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '06',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de C'
+      },
+      en: {
+        title: 'C Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '06',
+        year: '2020',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de Redes de Internet'
+      },
+      en: {
+        title: 'Internet networks Course',
+      }
+    },
+    {
+      datecreated: {
+        month: '05',
         year: '2020',
       },
       institute: 'Platzi',
