@@ -18,7 +18,8 @@ export class HomeComponent implements OnInit {
       },
       en: {
         resume: 'THIS IS A RESUME'
-      }
+      },
+      route: './FJCIntranet'
     },
     {
       name: 'ORM',
@@ -27,7 +28,8 @@ export class HomeComponent implements OnInit {
       },
       en: {
         resume: 'THIS IS A RESUME'
-      }
+      },
+      route: ''
     },
     {
       name: 'My Portfolio',
@@ -36,7 +38,8 @@ export class HomeComponent implements OnInit {
       },
       en: {
         resume: 'THIS IS A RESUME'
-      }
+      },
+      route: ''
     },
     {
       name: 'Traumapp',
@@ -45,7 +48,8 @@ export class HomeComponent implements OnInit {
       },
       en: {
         resume: 'THIS IS A RESUME'
-      }
+      },
+      route: ''
     },
     {
       name: 'Traumapp for Desktop',
@@ -54,9 +58,9 @@ export class HomeComponent implements OnInit {
       },
       en: {
         resume: 'THIS IS A RESUME'
-      }
-    }
-    ,
+      },
+      route: ''
+    },
     {
       name: 'AFX Exchange',
       es: {
@@ -64,7 +68,8 @@ export class HomeComponent implements OnInit {
       },
       en: {
         resume: 'THIS IS A RESUME'
-      }
+      },
+      route: ''
     }
   ];
 

@@ -6,13 +6,15 @@ import { SlideMenuComponent } from './slide-menu/slide-menu.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { StudiesComponent } from './studies/studies.component';
+import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full', data: { animationState: 'One' } },
-  { path: 'menu', component: SlideMenuComponent, pathMatch: 'full', data: { animationState: 'Two' } },
-  { path: 'about', component: AboutComponent, pathMatch: 'full', data: { animationState: 'Three' } },
-  { path: 'project', component: ProjectComponent, pathMatch: 'full', data: { animationState: 'Three' } },
-  { path: 'studies', component: StudiesComponent, pathMatch: 'full', data: { animationState: 'Five' } }
+  { path: '', component: HomeComponent, pathMatch: 'full'},
+  { path: 'menu', component: SlideMenuComponent, pathMatch: 'full'},
+  { path: 'about', component: AboutComponent, pathMatch: 'full'},
+  { path: 'project', component: ProjectComponent, pathMatch: 'full'},
+  { path: 'studies', component: StudiesComponent, pathMatch: 'full'},
+  { path: 'FJCIntranet', component: FjcintranetComponent, pathMatch: 'full'}
 
   //{ path: '**', component: PageNotFoundComponent }
 ];

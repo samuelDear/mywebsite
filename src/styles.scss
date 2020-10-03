@@ -223,3 +223,462 @@ and (max-width : 700px) {
     width: 0%;
   }
 }
+
+/* ESTILOS PARA PROYECTOS */
+.mainBox{
+  margin: 8rem 10rem;
+}
+
+.dscText, .intro{
+  font-size: 1.25rem;
+}
+
+.rolAgencyDate {
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.laptopBox{
+  height: 90vh;
+}
+
+.boxLaptopScreen {
+  width: 90%;
+  height: 90%;
+}
+
+.boxLaptopKeyboard {
+  width: 100%;
+  height: 10%;
+}
+
+.mouseTrack {
+  height: 40%;
+  width: 30%;
+}
+
+.boxTablet, .boxMobile{
+  height: 80vh;
+  border-radius: 30px;
+}
+
+.boxMobile {
+  display: flex;
+  flex-direction: row;
+}
+
+.screenTablet{
+  width: 70%;
+}
+
+.buttonAndCameraTablet{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonTablet{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.cameraTablet {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.soundTablet {
+  width: 30px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.mobileBox{
+  border-radius: 30px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+}
+
+.cameraBoxMobile {
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.screenMobile{
+  height: 95%;
+  border-radius: 30px;
+}
+
+.screenImg, .borderedBox {
+  border-radius: 10px;
+}
+
+.heightForPrincipalImg{
+  height: 90vh;
+}
+
+.soundMobile {
+  height: 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.cameraMobile {
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+}
+
+.colorBox{
+  background-color: #FFF;
+  margin: 20px;
+  width: 20%;
+  float: left;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+
+.colorBox:hover{
+  transform: scale(1.2) perspective(1px);
+}
+
+.colorContent {
+  height: 100%;
+  width: 100%;
+}
+
+.colorMain {
+  display: flow-root;
+}
+
+.featureBox {
+  border-color: #DB2696;
+  transition: all 1s ease;
+  width: 75%;
+}
+
+.featureBox:hover{
+  transform: scale(1.05) perspective(0.5px);
+}
+
+.heart{
+  margin: 40px auto;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg) scale(1);
+  background-color: #FF0000;
+  transition: all 1s ease;
+}
+
+.heart:hover{
+  transform: scale(1.1) perspective(1px) rotate(45deg);
+}
+
+.heart:before,
+.heart:after{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FF0000;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+
+.heart:before{
+  bottom: 0px;
+  left: -50px;
+}
+
+.heart:after{
+  top: -50px;
+  right: 0px;
+}
+
+.stick {
+  width: 50px;
+  height: 10px;
+  background-color: white;
+}
+
+.arrow-right {
+  display: block;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #FFF;
+}
+
+.randomProjectsBoxPair{
+  margin-left: 10rem;
+  margin-right: 2.5rem;
+}
+
+.randomProjectsBoxOdd{
+  margin-left: 2.5rem;
+  margin-right: 10rem;
+}
+
+.slide{
+  background: linear-gradient(to left, #111 50%, #2e8a7c 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition: 1s;
+}
+
+.slide:hover,
+.slide:focus {
+  background-position:left bottom;
+}
+
+.typographyExample {
+  font-size: 1.5rem;
+  margin: 0px 5rem;
+}
+
+@media only screen
+and (max-width : 1085px) {
+  .mainBox{
+    margin: 8rem 5rem;
+  }
+}
+
+@media only screen
+and (max-width : 1040px) {
+  .mobileBox{
+    width: 28%;
+  }
+
+  .laptopBox{
+    height: 85vh;
+  }
+}
+
+@media only screen
+and (max-width : 1000px) {
+  .mainBox{
+    margin: 7rem 4rem;
+  }
+
+  .mobileBox{
+    width: 30%;
+  }
+
+  .laptopBox{
+    height: 80vh;
+  }
+}
+
+@media only screen
+and (max-width : 950px) {
+  .mobileBox{
+    width: 32%;
+  }
+
+  .laptopBox{
+    height: 75vh;
+  }
+
+  .randomProjectsBoxPair{
+    margin-left: 9rem;
+  }
+
+  .randomProjectsBoxOdd{
+    margin-right: 9rem;
+  }
+
+  .colorBox{
+    margin: 10px 12%;
+    width: 25%;
+  }
+}
+
+@media only screen
+and (max-width : 850px) {
+  .mobileBox{
+    width: 32%;
+  }
+
+  .mainBox{
+    margin: 6rem 1.5rem;
+  }
+
+  .randomProjectsBoxPair{
+    margin-left: 5rem;
+  }
+
+  .randomProjectsBoxOdd{
+    margin-right: 5rem;
+  }
+
+  .featureBox {
+    width: 90%;
+  }
+
+  .dscText, .intro{
+    font-size: 1rem;
+  }
+
+  .rolAgencyDate {
+    font-size: 1.1rem;
+  }
+
+  .typographyExample {
+    font-size: 1.4rem;
+    margin: 0px 3rem;
+  }
+}
+
+@media only screen
+and (max-width : 800px) {
+  .mobileBox{
+    width: 35%;
+  }
+
+  .laptopBox{
+    height: 74vh;
+  }
+
+  .randomProjectsBoxPair{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .randomProjectsBoxOdd{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media only screen
+and (max-width : 750px) {
+  .mobileBox{
+    width: 40%;
+    height: 500px;
+    margin: 20px 0px;
+  }
+
+  .boxMobile {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .laptopBox{
+    height: 65vh;
+  }
+
+  .typographyExample {
+    font-size: 1.3rem;
+    margin: 0px 2rem;
+  }
+}
+
+@media only screen
+and (max-width : 650px) {
+  .mobileBox{
+    width: 48%;
+  }
+
+  .laptopBox{
+    height: 60vh;
+  }
+
+  .rolAgencyDate {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen
+and (max-width : 600px) {
+  .mobileBox{
+    width: 52%;
+  }
+
+  .laptopBox{
+    height: 58vh;
+  }
+}
+
+@media only screen
+and (max-width : 550px) {
+  .mobileBox{
+    width: 55%;
+  }
+  .laptopBox{
+    height: 55vh;
+  }
+}
+
+@media only screen
+and (max-width : 500px) {
+  .mobileBox{
+    width: 60%;
+  }
+
+  .laptopBox{
+    height: 52vh;
+  }
+
+  .colorBox{
+    margin: 12px 8%;
+    width: 33%;
+  }
+}
+
+@media only screen
+and (max-width : 450px) {
+  .mobileBox{
+    width: 70%;
+  }
+
+  .laptopBox{
+    height: 50vh;
+  }
+}
+
+@media only screen
+and (max-width : 400px) {
+  .mobileBox{
+    width: 80%;
+  }
+
+  .laptopBox{
+    height: 45vh;
+  }
+}
+
+@media only screen
+and (max-width : 350px) {
+  .mobileBox{
+    width: 85%;
+  }
+
+  .colorBox{
+    margin: 10px 10%;
+    width: 30%;
+    height: 100px;
+    padding: 5px;
+  }
+}
