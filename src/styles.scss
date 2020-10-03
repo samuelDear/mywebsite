@@ -3,6 +3,10 @@ html {
   font-family: 'Signika', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
   color: #FFF;
   height: 100%;

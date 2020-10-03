@@ -140,6 +140,7 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
+      reference: '2020',
       datecreated: {
         month: '05',
         year: '2020',
@@ -150,19 +151,6 @@ export class StudiesComponent implements OnInit {
       },
       en: {
         title: 'Responsive Web Design',
-      }
-    },
-    {
-      datecreated: {
-        month: '11',
-        year: '2019',
-      },
-      institute: 'Platzi',
-      es: {
-        title: 'Curso de Marca Personal'
-      },
-      en: {
-        title: 'Personal Brand Course',
       }
     },
     {
@@ -192,16 +180,17 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
+      reference: '2019',
       datecreated: {
         month: '02',
         year: '2019',
       },
       institute: 'Centro Venezolano Americano',
       es: {
-        title: 'Programa de Ingles como Lengua Extranjera'
+        title: 'Ingles como Lengua Extranjera'
       },
       en: {
-        title: 'English as a Foreign Language Program',
+        title: 'English as a Foreign Language',
       }
     },
     {
@@ -257,6 +246,7 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
+      reference: '2018',
       datecreated: {
         month: '08',
         year: '2018',
@@ -283,6 +273,7 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
+      reference: '2017',
       datecreated: {
         month: '03',
         year: '2017',
@@ -301,14 +292,54 @@ export class StudiesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.addEventListener('scroll', (e) => this.selectDot(e));
+    let dot = document.getElementById('date2020');
+    dot.classList.add('dotActive');
+  }
 
-    /*for(let i = 0; i < 10; i++){
-      this.studies.push({
-        title: 'Curso' + i,
-        datecreated: new Date(),
-        school: 'Instituto' + i + 1,
-      });
-    }*/
+  selectDot(e){
+      if(document.getElementById('2017').offsetTop > window.scrollY && document.getElementById('2018').offsetTop < window.scrollY){
+        this.resetDots('2017');
+        let dot = document.getElementById('date2017');
+        dot.classList.add('dotActive');
+      }else if(document.getElementById('2018').offsetTop > window.scrollY && document.getElementById('2019').offsetTop < window.scrollY){
+        this.resetDots('2018');
+        let dot = document.getElementById('date2018');
+        dot.classList.add('dotActive');
+      }else if(document.getElementById('2019').offsetTop > window.scrollY && document.getElementById('2020').offsetTop < window.scrollY){
+        this.resetDots('2019');
+        let dot = document.getElementById('date2019');
+        dot.classList.add('dotActive');
+      }else if(document.getElementById('2020').offsetTop > window.scrollY){
+        this.resetDots('2020');
+        let dot = document.getElementById('date2020');
+        dot.classList.add('dotActive');
+      }
+  }
+
+  resetDots(currentView: string){
+    switch(currentView){
+      case '2020':
+        document.getElementById('date2019').classList.remove('dotActive');
+        document.getElementById('date2018').classList.remove('dotActive');
+        document.getElementById('date2017').classList.remove('dotActive');
+        break;
+      case '2019':
+        document.getElementById('date2020').classList.remove('dotActive');
+        document.getElementById('date2018').classList.remove('dotActive');
+        document.getElementById('date2017').classList.remove('dotActive');
+        break;
+      case '2018':
+        document.getElementById('date2020').classList.remove('dotActive');
+        document.getElementById('date2019').classList.remove('dotActive');
+        document.getElementById('date2017').classList.remove('dotActive');
+        break;
+      case '2017':
+        document.getElementById('date2020').classList.remove('dotActive');
+        document.getElementById('date2019').classList.remove('dotActive');
+        document.getElementById('date2018').classList.remove('dotActive');
+        break;
+    }
   }
 
   getMonth(month: string){

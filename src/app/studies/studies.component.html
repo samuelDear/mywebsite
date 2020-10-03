@@ -2,7 +2,7 @@
   <div class="studiesInfo flex flex-col items-center">
     <div class="stickEnd">
     </div>
-    <div class="studyDetail {{ i % 2 == 0 || i == 0 ? 'studyPair' : 'studyOdd' }}" *ngFor="let study of studies;let i = index">
+    <div class="studyDetail {{ i % 2 == 0 || i == 0 ? 'studyPair' : 'studyOdd' }}" *ngFor="let study of studies;let i = index" id="{{ study.reference != null && study.reference != undefined ? study.reference : ''}}">
       <div class="details {{ i % 2 == 0 || i == 0 ? 'detailsPair' : 'detailsOdd' }}">
         <div class="textdetails">
           <span class="textTitle">{{ translate.currentLang == "es" ? study.es.title : study.en.title }}</span>
@@ -16,4 +16,32 @@
     <div class="stickBegin">
     </div>
   </div>
+</div>
+
+<!-- Fechas para navegacion sencilla -->
+<div class="fixed left-0 dateReferences">
+  <a class="my-2" [routerLink]="['/studies']" fragment="2020">
+    <div class="circleDates">
+      <div id="date2020"></div>
+    </div>
+    <label class="labelDate">2020</label>
+  </a>
+  <a class="my-2" [routerLink]="['/studies']" fragment="2019">
+    <div class="circleDates">
+      <div id="date2019"></div>
+    </div>
+    <label class="labelDate">2019</label>
+  </a>
+  <a class="my-2" [routerLink]="['/studies']" fragment="2018">
+    <div class="circleDates">
+      <div id="date2018"></div>
+    </div>
+    <label class="labelDate">2018</label>
+  </a>
+  <a class="my-2" [routerLink]="['/studies']" fragment="2017">
+    <div class="circleDates">
+      <div id="date2017"></div>
+    </div>
+    <label class="labelDate">2017</label>
+  </a>
 </div>
