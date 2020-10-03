@@ -78,15 +78,6 @@ export class HomeComponent implements OnInit {
     public translate: TranslateService
   ) {
     window.scroll(0,0);
-    router.events.subscribe(s => {
-      if (s instanceof NavigationEnd) {
-        const tree = router.parseUrl(router.url);
-        if (tree.fragment) {
-          const element = document.querySelector("#" + tree.fragment);
-          if (element) { element.scrollIntoView(true); }
-        }
-      }
-    });
   }
 
   ngOnInit() {
@@ -99,6 +90,15 @@ export class HomeComponent implements OnInit {
     for(let i = styles.length - 1; i >= 0; i--){
       styles[i].remove();
     }
+    setTimeout(() => {
+      const tree = this.router.parseUrl(this.router.url);
+    if (tree.fragment) {
+      const element = document.getElementById(tree.fragment);
+      console.log(element.offsetTop);
+      if (element) { window.scrollTo(0, (element.offsetTop )); }
+    }
+    },100)
+    
   }
 
   navigation(ruta) {
