@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
       en: {
         resume: 'THIS IS A RESUME'
       },
-      route: './FJCIntranet'
+      route: '/FJCIntranet'
     },
     {
       name: 'ORM',
@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
       en: {
         resume: 'THIS IS A RESUME'
       },
-      route: ''
+      route: '/ormv'
     },
     {
       name: 'My Portfolio',

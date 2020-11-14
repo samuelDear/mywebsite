@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { StudiesComponent } from './studies/studies.component';
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
+import { OrmComponent } from './projects/orm/orm.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, pathMatch: 'full'},
   { path: 'project', component: ProjectComponent, pathMatch: 'full'},
   { path: 'studies', component: StudiesComponent, pathMatch: 'full'},
-  { path: 'FJCIntranet', component: FjcintranetComponent, pathMatch: 'full'}
+  { path: 'FJCIntranet', component: FjcintranetComponent, pathMatch: 'full'},
+  { path: 'ormv', component: OrmComponent, pathMatch: 'full'}
 
   //{ path: '**', component: PageNotFoundComponent }
 ];

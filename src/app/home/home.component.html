@@ -10,7 +10,7 @@
     <p class="codeLine">&lt;<span class="tag">projects&nbsp;<span class="controlStructure">*ngFor</span>="<span class="sentence">let project of portafolio</span>"</span>&gt;</p>
 
     <div class="w-100 my-5" >
-      <div class="border-2 boxProject {{ i % 2 == 0 || i == 0 ? 'marginOdd' : 'marginPair' }} mt-6 p-5 cursor-pointer btn slide" *ngFor="let project of projects;let i = index" routerLink="{{project.route}}">
+      <div class="border-2 boxProject {{ i % 2 == 0 || i == 0 ? 'marginOdd' : 'marginPair' }} mt-6 p-5 cursor-pointer btn slide" *ngFor="let project of projects;let i = index" (click)="navigation(project.route)">
         <h1 class="projectTitle">{{ project.name }}</h1>
         <p class="descProject text-justify leading-none">{{ translate.currentLang == "es" ? project.es.resume : project.en.resume }}</p>
         <a class="linkProject flex" stranslate="home.linkProject"></a>
