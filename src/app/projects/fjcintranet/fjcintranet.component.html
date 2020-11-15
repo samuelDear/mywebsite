@@ -1,136 +1,129 @@
 <div class="mainBox">
     <div class="text-center">
-      <h1 class="text-4xl font-bold"> FJCIntranet </h1>
-      <p class="text-justify my-5 dsc" *ngIf="projectSelected != undefined">DESCRIPCION</p>
+      <h1 class="text-4xl font-bold"> FJC Intranet </h1>
+      <p class="text-center my-5 dsc" stranslate="fjcintranet.dsc">  </p>
     </div>
 
     <div class="justify-between rolAgencyDate mt-2">
-      <p class="my-1"><span stranslate="project.role"></span> Lider de Desarrollo </p>
+      <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="fjcintranet.role"></span> </p>
       <p class="my-1"><span stranslate="project.agency"></span> Fundaci&oacute;n Jacinto Convit </p>
       <p class="my-1"><span stranslate="project.date"></span> 09-2019 </p>
     </div>
 
     <!-- Imagen principal del proyecto -->
     <div class="heightForPrincipalImg my-16 flex justify-center borderedBox">
-      <img *ngIf="projectSelected != undefined" src="{{projectSelected.principalimg}}" class="h-full borderedBox">
+      <img src="../../../assets/images/project-images/fjcintranet/principalimg.png" class="h-full borderedBox img-height">
     </div>
-    <div class="boxProject border-2 p-4" *ngIf="projectSelected != undefined">
+    <div class="boxProject border-2 p-4">
       <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
-        <p class="text-justify intro">INTRODUCCION</p>
+        <p class="text-justify intro" stranslate="fjcintranet.intro"></p>
+        <p class="text-justify intro" stranslate="fjcintranet.intro2"></p>
     </div>
     <!-- Imagen secundaria del proyecto-->
     <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
     <div class="heightForPrincipalImg mb-16 flex justify-center borderedBox">
-      <img *ngIf="projectSelected != undefined" src="{{projectSelected.secundaryimg}}" class="h-full borderedBox">
+      <img src="../../../assets/images/project-images/fjcintranet/secundaryimg.png" class="h-full borderedBox img-height">
+    </div>
+
+    <!-- Imagen secundaria del proyecto 2-->
+    <div class="heightForPrincipalImg mb-16 flex justify-center borderedBox">
+      <img src="../../../assets/images/project-images/fjcintranet/calendar.png" class="h-full borderedBox img-height">
     </div>
 
     <!-- Vista desde laptop -->
-    <div *ngIf="projectSelected != undefined">
-      <div class="laptopBox my-16 flex flex-col items-center" *ngIf="projectSelected.laptopimg != null">
+    <div>
+      <div class="laptopBox my-16 flex flex-col items-center">
         <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
-          <img *ngIf="projectSelected != undefined" src="{{projectSelected.laptopimg}}" class="h-full w-full">
+          <img src="../../../assets/images/project-images/fjcintranet/laptopimg.png" class="h-full w-full">
         </div>
         <div class="border-2 boxLaptopKeyboard boxProject">
           <div class="mouseTrack border-2 border-t-0 m-auto boxProject">
-  
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Vista desde Tablet -->
-    <div *ngIf="projectSelected != undefined">
-      <div class="boxTablet my-16 border-2 flex flex-row justify-between p-2" *ngIf="projectSelected.tabletimg != null">
-  
-        <div class="h-full buttonAndCameraTablet flex-col">
-          <div class="cameraTablet border-2 my-2"></div>
-          <div class="soundTablet border-2 my-2"></div>
-        </div>
-  
-        <div class="h-full screenTablet">
-          <img *ngIf="projectSelected != undefined" src="{{projectSelected.tabletimg}}" class="h-full w-full">
-        </div>
-  
-        <div class="h-full buttonAndCameraTablet">
-          <div class="buttonTablet border-2">
-          </div>
-        </div>
-  
-      </div>
-    </div>
-
-    <!-- Vista desde doble telefono-->
-    <div *ngIf="projectSelected != undefined">
-      <div class="boxMobile my-16 justify-around" *ngIf="projectSelected.smobileimg != '' && projectSelected.fmobileimg != ''">
-
-        <!-- Telefono uno -->
-        <div class="border-2 mobileBox p-2">
-          <div class=" w-full cameraBoxMobile">
-            <div class="cameraMobile border-2">
-            </div>
-            <div class="soundMobile border-2">
-  
-            </div>
-          </div>
-          <div class="w-full screenMobile">
-            <img *ngIf="projectSelected != undefined" src="{{projectSelected.fmobileimg}}" class="h-full w-full screenImg">
-          </div>
-        </div>
-
-        <!-- Telefono dos -->
-        <div class="h-full border-2 mobileBox  p-2">
-          <div class=" w-full cameraBoxMobile">
-            <div class="cameraMobile border-2">
-  
-            </div>
-            <div class="soundMobile border-2">
-  
-            </div>
-          </div>
-          <div class="w-full screenMobile">
-            <img *ngIf="projectSelected != undefined" src="{{projectSelected.smobileimg}}" class="h-full w-full screenImg">
-          </div>
-        </div>
-  
       </div>
     </div>
   
     <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
 
     <!-- Tipografia de la pagina-->
-    <div *ngIf="projectSelected != undefined">
-      <div class="my-6" *ngFor="let typography of projectSelected.typographies; let i = index">
-        <h3 class="text-3xl mb-2">NOMBRE DE LA TIPOGRAFIA</h3>
-        <p class="typographyExample" id="{{ 'font' + i }}">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
+    <div>
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExample1">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
+      </div>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
       </div>
     </div>
 
     <!-- Colores de la pagina -->
-    <div class="colorMain" *ngIf="projectSelected != undefined">
-      <div class="colorBox" *ngFor="let color of projectSelected.colors; let i = index">
-        <div class="colorContent" [style.background-color]="color.colorhex">
+    <div class="colorMain">
+      <div class="colorBox">
+        <div class="colorContent" style="background-color: #3F5486;">
         </div>
-        <p class="text-black text-center mt-2 font-bold">{{ color.colorhex | uppercase }}</p>
+        <p class="text-black text-center mt-2 font-bold">#3F5486</p>
+      </div>
+
+      <div class="colorBox">
+        <div class="colorContent" style="background-color: #00AE89;">
+        </div>
+        <p class="text-black text-center mt-2 font-bold">#00AE89</p>
+      </div>
+
+      <div class="colorBox">
+        <div class="colorContent" style="background-color: #BC0202;">
+        </div>
+        <p class="text-black text-center mt-2 font-bold">#BC0202</p>
+      </div>
+
+      <div class="colorBox">
+        <div class="colorContent" style="background-color: #FFD439;">
+        </div>
+        <p class="text-black text-center mt-2 font-bold">#FFD439</p>
       </div>
     </div>
   
     <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
 
     <!-- Caracteristicas del proyecto -->
-    <div *ngIf="projectSelected != undefined">
-      <div class="my-16 flex flex-col items-center" *ngIf="translate.currentLang == 'es'">
-        <div class="featureBox my-4 border-2 p-4 w-3/4" *ngFor="let feature of projectSelected.es.features; let i = index">
-          <h6 class="text-2xl titleFeature text-center">titulo</h6>
-          <p class="text-justify">Caracteristica</p>
+    <div>
+      <div class="my-12 flex flex-col items-center">
+        <div class="featureBox my-4 border-2 p-4">
+          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature1title"></h6>
+          <p class="text-justify" stranslate="fjcintranet.feature1"></p>
         </div>
       </div>
-  
-      <div class="my-16 flex flex-col items-center" *ngIf="translate.currentLang != 'es'">
-        <div class="featureBox my-4 border-2 p-4" *ngFor="let feature of projectSelected.en.features; let i = index">
-          <h6 class="text-2xl titleFeature text-center">Titulos</h6>
-          <p class="text-justify">Caracteristica</p>
+
+      <div class="my-12 flex flex-col items-center">
+        <div class="featureBox my-4 border-2 p-4">
+          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature2title"></h6>
+          <p class="text-justify" stranslate="fjcintranet.feature2"></p>
         </div>
       </div>
+
+      <div class="my-12 flex flex-col items-center">
+        <div class="featureBox my-4 border-2 p-4">
+          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature3title"></h6>
+          <p class="text-justify" stranslate="fjcintranet.feature3"></p>
+        </div>
+      </div>
+
+      <div class="my-12 flex flex-col items-center">
+        <div class="featureBox my-4 border-2 p-4">
+          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature4title"></h6>
+          <p class="text-justify" stranslate="fjcintranet.feature4"></p>
+        </div>
+      </div>
+
+      <div class="my-12 flex flex-col items-center">
+        <div class="featureBox my-4 border-2 p-4">
+          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature5title"></h6>
+          <p class="text-justify" stranslate="fjcintranet.feature5"></p>
+        </div>
+      </div>
+
     </div>
 
     <!-- Agradecimientos -->

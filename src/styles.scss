@@ -250,16 +250,19 @@ and (max-width : 700px) {
 .boxLaptopScreen {
   width: 90%;
   height: 90%;
+  background-color: #222;
 }
 
 .boxLaptopKeyboard {
   width: 100%;
   height: 10%;
+  background-color: #222;
 }
 
 .mouseTrack {
   height: 40%;
   width: 30%;
+  background-color: #000;
 }
 
 .boxTablet, .boxMobile{
@@ -458,6 +461,11 @@ and (max-width : 700px) {
 .typographyExample {
   font-size: 1.5rem;
   margin: 0px 5rem;
+  text-align: justify;
+}
+
+.dsc {
+  font-size: 1.1rem;
 }
 
 @media only screen
@@ -519,6 +527,14 @@ and (max-width : 950px) {
 
 @media only screen
 and (max-width : 850px) {
+  .img-height{
+    //height: 100px;
+  }
+
+  .heightForPrincipalImg {
+    height: 70vh;
+  }
+
   .mobileBox{
     width: 32%;
   }
@@ -547,6 +563,10 @@ and (max-width : 850px) {
     font-size: 1.1rem;
   }
 
+  .dsc {
+    font-size: 1.2rem;
+  }
+
   .typographyExample {
     font-size: 1.4rem;
     margin: 0px 3rem;
@@ -555,6 +575,10 @@ and (max-width : 850px) {
 
 @media only screen
 and (max-width : 800px) {
+  .heightForPrincipalImg {
+    height: 65vh;
+  }
+
   .mobileBox{
     width: 35%;
   }
@@ -576,6 +600,10 @@ and (max-width : 800px) {
 
 @media only screen
 and (max-width : 750px) {
+  .heightForPrincipalImg {
+    height: 60vh;
+  }
+
   .mobileBox{
     width: 40%;
     height: 500px;
@@ -600,6 +628,10 @@ and (max-width : 750px) {
 
 @media only screen
 and (max-width : 650px) {
+  .heightForPrincipalImg {
+    height: 50vh;
+  }
+
   .mobileBox{
     width: 48%;
   }
@@ -633,6 +665,10 @@ and (max-width : 550px) {
   .laptopBox{
     height: 55vh;
   }
+
+  .heightForPrincipalImg {
+    height: 45vh;
+  }
 }
 
 @media only screen
@@ -649,6 +685,10 @@ and (max-width : 500px) {
     margin: 12px 8%;
     width: 33%;
   }
+
+  .heightForPrincipalImg {
+    height: 40vh;
+  }
 }
 
 @media only screen
@@ -660,6 +700,10 @@ and (max-width : 450px) {
   .laptopBox{
     height: 50vh;
   }
+
+  .heightForPrincipalImg {
+    height: 35vh;
+  }
 }
 
 @media only screen
@@ -669,7 +713,7 @@ and (max-width : 400px) {
   }
 
   .laptopBox{
-    height: 45vh;
+    height: 35vh;
   }
 }
 
@@ -684,5 +728,9 @@ and (max-width : 350px) {
     width: 30%;
     height: 100px;
     padding: 5px;
+  }
+
+  .heightForPrincipalImg {
+    height: 25vh;
   }
 }
