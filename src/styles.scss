@@ -527,9 +527,6 @@ and (max-width : 950px) {
 
 @media only screen
 and (max-width : 850px) {
-  .img-height{
-    //height: 100px;
-  }
 
   .heightForPrincipalImg {
     height: 70vh;
@@ -668,6 +665,17 @@ and (max-width : 550px) {
 
   .heightForPrincipalImg {
     height: 45vh;
+  }
+
+  .stick {
+    width: 30px;
+    height: 5px;
+  }
+
+  .arrow-right {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #FFF;
   }
 }
 
