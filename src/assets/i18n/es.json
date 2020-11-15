@@ -30,6 +30,9 @@
     "feature5title": "Multi-idioma",
     "feature5": "El sistema se encuentra tanto en ingles como en español, debido a que la institucion cuenta con diferentes sedes en el mundo, es por ello que esta informacion debe contrarse en ambos idiomas para un mejor uso y una mejor experiencia de usuario."
   },
+  "traumapp": {
+    "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
+  },
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologias web como HTML5, CSS3 y JavaScript. Y tambien he usado frameworks como Angular y React.",
     "secondDsc":"Tengo experiencia usando ES6, ES7 y TypeScript. Ademas, cuento con experiencia creando paginas web responsivas con un alto rendimiento.",

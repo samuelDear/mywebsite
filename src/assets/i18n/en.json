@@ -36,6 +36,9 @@
     "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps.",
     "quarterDsc":"However, In the back-end I have used PHP and Java, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase."
   },
+  "traumapp": {
+    "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
+  },
   "about":{
     "resume":"I'm a Venezuelan web designer and a mobile developer<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",
     "aboutLink":"Read more about me",

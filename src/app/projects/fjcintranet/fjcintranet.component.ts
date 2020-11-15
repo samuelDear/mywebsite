@@ -35,11 +35,11 @@ export class FjcintranetComponent implements OnInit {
     {
       code: '',
       name: 'Traumapp',
-      en: {
-        resume: 'It is a web page created.'
-      },
       es: {
-        resume: 'Es una pagina web creada.'
+        resume: 'Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario para un uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes.'
+      },
+      en: {
+        resume: 'It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user for a daily use. Created to optimize a medical consultation and the management of patient information.'
       }
     }
   ];

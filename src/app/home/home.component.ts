@@ -44,20 +44,20 @@ export class HomeComponent implements OnInit {
     {
       name: 'Traumapp',
       es: {
-        resume: 'RESUMEN WEON'
+        resume: 'Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario para un uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes.'
       },
       en: {
-        resume: 'THIS IS A RESUME'
+        resume: 'It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user for a daily use. Created to optimize a medical consultation and the management of patient information.'
       },
       route: ''
     },
     {
       name: 'Traumapp for Desktop',
       es: {
-        resume: 'RESUMEN WEON'
+        resume: 'Es una aplicacion de escritorio multiplataforma creada con Angular y Electron. Esta fue creada para que los usuarios de Traumapp, pudieran tener accesso a ella desde una PC.'
       },
       en: {
-        resume: 'THIS IS A RESUME'
+        resume: 'It is a cross-platform desktop application created with Angular and Electron. This was created so that Traumapp users could access it from a PC.'
       },
       route: ''
     },
