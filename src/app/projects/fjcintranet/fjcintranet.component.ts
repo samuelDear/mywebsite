@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import { ActivatedRoute, Router} from '@angular/router';
+import { Router} from '@angular/router';
+import { navigationCustom } from '../../transition';
 
 @Component({
   selector: 'app-fjcintranet',
@@ -79,6 +80,6 @@ export class FjcintranetComponent implements OnInit {
 
   navigateUrl(code: string){
     console.log(code);
-    this.router.navigate([code]);
+    navigationCustom( () => this.router.navigate([code]) ); 
   }
 }
