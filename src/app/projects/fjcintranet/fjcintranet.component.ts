@@ -34,6 +34,7 @@ export class FjcintranetComponent implements OnInit {
     var link = document.createElement('link');
     link.type = 'text/css';
     link.rel = 'stylesheet';
+    link.id = "link" + param.name;
 
     headID.appendChild(link);
 

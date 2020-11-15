@@ -16,6 +16,22 @@ export class HeaderComponent implements OnInit {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
         this.showHeader  = true;
+        
+        let links = document.getElementsByTagName('link');
+        let isOkey = false;
+
+        // FUncion para eliminar tipografias de proyectos
+        do{
+          isOkey = true;
+          for(let i = 0; i < links.length; i++){
+            if(links[i].id != ''){
+              console.log(links[i]);
+              isOkey = false;
+              links[i].remove();
+            }
+          }
+        }while(!isOkey);
+
         if(this.headerNav){
           this.animation();
         }
