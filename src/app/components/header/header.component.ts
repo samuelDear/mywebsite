@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
         let links = document.getElementsByTagName('link');
         let isOkey = false;
 
-        // FUncion para eliminar tipografias de proyectos
+        // Funcion para eliminar tipografias de proyectos
         do{
           isOkey = true;
           for(let i = 0; i < links.length; i++){
