@@ -287,19 +287,19 @@ and (max-width : 700px) {
 }
 
 .buttonTablet{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
 .cameraTablet {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
 
 .soundTablet {
-  width: 30px;
+  width: 25px;
   height: 200px;
   border-radius: 20px;
 }
@@ -519,6 +519,10 @@ and (max-width : 950px) {
     margin-right: 9rem;
   }
 
+  .boxTablet {
+    height: 75vh;
+  }
+
   .colorBox{
     margin: 10px 12%;
     width: 25%;
@@ -546,6 +550,10 @@ and (max-width : 850px) {
 
   .randomProjectsBoxOdd{
     margin-right: 5rem;
+  }
+
+  .boxTablet {
+    height: 65vh;
   }
 
   .featureBox {
@@ -621,6 +629,10 @@ and (max-width : 750px) {
     font-size: 1.3rem;
     margin: 0px 2rem;
   }
+
+  .boxTablet {
+    height: 60vh;
+  }
 }
 
 @media only screen
@@ -641,6 +653,10 @@ and (max-width : 650px) {
     flex-direction: column;
     align-items: center;
   }
+
+  .boxTablet {
+    height: 55vh;
+  }
 }
 
 @media only screen
@@ -651,6 +667,10 @@ and (max-width : 600px) {
 
   .laptopBox{
     height: 58vh;
+  }
+
+  .boxTablet {
+    height: 50vh;
   }
 }
 
@@ -677,6 +697,10 @@ and (max-width : 550px) {
     border-bottom: 20px solid transparent;
     border-left: 20px solid #FFF;
   }
+
+  .boxTablet {
+    height: 45vh;
+  }
 }
 
 @media only screen
@@ -697,6 +721,10 @@ and (max-width : 500px) {
   .heightForPrincipalImg {
     height: 40vh;
   }
+
+  .boxTablet {
+    height: 40vh;
+  }
 }
 
 @media only screen
@@ -710,6 +738,10 @@ and (max-width : 450px) {
   }
 
   .heightForPrincipalImg {
+    height: 35vh;
+  }
+
+  .boxTablet {
     height: 35vh;
   }
 }

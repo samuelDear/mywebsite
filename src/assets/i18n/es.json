@@ -11,7 +11,23 @@
     "resume": "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario."
   },
   "orm": {
-    "resume": "Es una pagina web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño comodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas Matematicas."
+    "resume": "Es una pagina web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño comodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas de Matematicas.",
+    "dsc": "Pagina Web para la administración de las Olimpiadas Recreativas de Matematicas de Venezuela",
+    "role": "Frontend/Backend",
+    "intro": "Las Olimpíadas Recreativas de Matemáticas de Venezuela es un evento con el objetivo de Desarrollar estrategias para la enseñanza de La Matemática, mejorar el nivel académico y estimular en los niños el uso de sus capacidades intelectuales: comprensión, capacidad de síntesis y juicio crítico.",
+    "intro2": "En las Olimpiadas Recreativas de Matematicas se inscriben una gran cantidad de colegios los cuales inscriben una gran cantidad de alumnos, el objetivo principal del sitio web, es el de permitirle a los colegios registrar y administrar sus participantes, tambien permite que los organizadores de las olimpiadas puedan tener una administracion optima de toda la informacion de el evento, como los datos de los colegios, alumnos y examenes.",
+    "feature1title": "Diseño Web Responsivo",
+    "feature1": "La pagina web puede ser visualizada en cualquier dispositivo y seguir comportandose de manera eficiente en dispositivos moviles.",
+    "feature2title": "CMS",
+    "feature2": "Para administrar la informacion de los colegios, alumnos y examenes, se desarrollo un Content Managment System, con la finalidad de que la informacion se pueda visualizar, crear, editar o borrar la informacion. Tambien cuenta con un sistema de privilegios para que existan diversos roles dentro de la administracion. Tambien, este permite hacer correcciones manuales de los examenes en caso de que el sistema no haya podido identificar a que participante pertenece.",
+    "feature3title": "Uso de SVGs",
+    "feature3": "Para las imagenes dentro de la pagina web se usaron SVGs para mejorar los tiempos de carga, asi como tambien diversos elementos fueron hechos con CSS puro.",
+    "feature4title": "Exportacion a Excel",
+    "feature4": "Tanto la pagina web como el CMS permiten exportar datos a Excel, en el caso de el sitio web, los colegios pueden exportar listas con sus participantes, igual que en el CMS pueden ser exportados las respuestas de los examenes.",
+    "feature5title": "Solicitudes HTTP reducidas",
+    "feature5": "Las solicitudes al servidor se encuentran reducidas para mejorar los tiempos de carga en los casos de las listas largas de informacion como pueden ser las listas de participantes.",
+    "feature6title": "Exportaciones de gran tamaño con Zip",
+    "feature6": "En el caso de descargar una gran cantidad de informacion, como puede ser la lista de participantes en total, estos pueden ser mas de 10.000, para mejorar los tiempos de descarga de los paquetes."
   },
   "fjcintranet": {
     "resume": "Es un sistema interno de pagina unica(SPA). Creado con Angular 8 y Java Spring, para la gestion documental y de hallazgos en la Fundacion Jacinto Convit. Un sitio web que cuenta con estandares internacionales y bajo el estandar ISO 9001.",

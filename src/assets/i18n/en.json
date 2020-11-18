@@ -11,7 +11,23 @@
     "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
   },
   "orm": {
-    "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for schools in Venezuela to register for the Mathematical Recreation Olympics."
+    "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics.",
+    "dsc": "Web page for the administration of the Recreational Mathematics Olympics of Venezuela",
+    "role": "Frontend/Backend",
+    "intro": "The Recreational Mathematics Olympics of Venezuela is an event with the objective of developing strategies for the teaching of Mathematics, improve the academic level and stimulate in children the use of their intellectual capacities: comprehension, synthesis capacity and critical judgment.",
+    "intro2": "In the Recreational Mathematics Olympics, a lot of schools enroll which enroll a lot of students, the main objective of the website is to allow schools to register and manage their participants, it also allows the organizers of the Olympics can have an optimal administration of all the information of the event, such as data from schools, students and exams.",
+    "feature1title": "Responsive Web Design",
+    "feature1": "The website can be viewed on any device and continue to behave efficiently on mobile devices.",
+    "feature2title": "CMS",
+    "feature2": "To manage the information of the schools, students and exams, a content management system was developed, in order that the information can be viewed, created, edited or deleted. It also has a privilege system so that there are different roles within the administration. Also, this allows manual corrections of the exams in case the system has not been able to identify which participant it belongs to.",
+    "feature3title": "Use of SVG's",
+    "feature3": "For the images within the web page, SVGs were used to improve loading times, as well as various elements were made with pure CSS.",
+    "feature4title": "Exportation to Excel",
+    "feature4": "Both the website and the CMS allow data to be exported to Excel, in the case of the website, schools can export lists with their participants, just as in the CMS the answers of the exams can be exported.",
+    "feature5title": "Reduced HTTP requests",
+    "feature5": "Requests to the server are reduced to improve loading times in cases of long information lists such as participant lists.",
+    "feature6title": "Big exports with Zip",
+    "feature6": "In the case of downloading a large amount of information, such as the list of participants in total, these can be more than 10,000, to improve the download times of the packages."
   },
   "fjcintranet": {
     "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard.",
