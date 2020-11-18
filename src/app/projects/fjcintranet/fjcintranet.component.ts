@@ -17,10 +17,10 @@ export class FjcintranetComponent implements OnInit {
       code: '/ormv',
       name: 'ORM',
       en: {
-        resume: 'It is a web page created with HTML5, CSS3, JS and PHP. Created to make it easier for schools in Venezuela to register for the Mathematical Recreation Olympics.'
+        resume: 'It is a web page created with HTML5, CSS3, JS and PHP. Created to make it easier for schools in Venezuela to register for the Recreational Mathematics Olympics.'
       },
       es: {
-        resume: 'Es una pagina web creada con HTML5, CSS3, JS y PHP. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas Matematicas.'
+        resume: 'Es una pagina web creada con HTML5, CSS3, JS y PHP. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas de Matematicas.'
       }
     },
     {
