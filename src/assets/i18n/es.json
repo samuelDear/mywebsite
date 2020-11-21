@@ -8,7 +8,10 @@
     "linkProject": "Mirar Proyecto"
   },
   "myWeb": {
-    "resume": "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario."
+    "resume": "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario.",
+    "dsc": "Mi propio sitio web donde enseño las cosas que hago",
+    "agency": "Proyecto Personal",
+    "role": "Dueño/Desarrollador"
   },
   "orm": {
     "resume": "Es una pagina web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño comodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas de Matematicas.",

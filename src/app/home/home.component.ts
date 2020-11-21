@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
       en: {
         resume: "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
       },
-      route: ''
+      route: '/portfolio'
     },
     {
       name: 'Traumapp',
