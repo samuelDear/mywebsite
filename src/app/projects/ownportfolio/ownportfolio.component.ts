@@ -6,8 +6,7 @@ import { navigationCustom } from '../../transition';
 @Component({
   selector: 'app-ownportfolio',
   templateUrl: './ownportfolio.component.html',
-  styles: [
-  ]
+  styles: ['.boxUnique{ border: 2px solid #db2696}']
 })
 export class OwnportfolioComponent implements OnInit {
   families = [{name: "Signika", link: `https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap`},
