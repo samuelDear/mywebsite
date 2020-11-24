@@ -298,11 +298,12 @@ export class StudiesComponent implements OnInit {
   }
 
   selectDot(e){
+
       if(document.getElementById('2017').offsetTop > window.scrollY && document.getElementById('2018').offsetTop < window.scrollY){
         this.resetDots('2017');
         let dot = document.getElementById('date2017');
         dot.classList.add('dotActive');
-      }else if(document.getElementById('2018').offsetTop > window.scrollY && document.getElementById('2019').offsetTop < window.scrollY){
+      }else if(document.getElementById('2018').offsetTop  > window.scrollY && document.getElementById('2019').offsetTop < window.scrollY){
         this.resetDots('2018');
         let dot = document.getElementById('date2018');
         dot.classList.add('dotActive');

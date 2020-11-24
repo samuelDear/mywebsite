@@ -31,7 +31,7 @@ export class OrmComponent implements OnInit {
       es: {
         resume: "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario."
       }
-    },
+    }/*,
     {
       code: '',
       name: 'Traumapp',
@@ -41,7 +41,7 @@ export class OrmComponent implements OnInit {
       en: {
         resume: 'It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user for a daily use. Created to optimize a medical consultation and the management of patient information.'
       }
-    }
+    }*/
   ];
 
   constructor(
