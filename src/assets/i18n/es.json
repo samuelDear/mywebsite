@@ -71,8 +71,8 @@
   },
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologias web como HTML5, CSS3 y JavaScript. Y tambien he usado frameworks como Angular y React.",
-    "secondDsc":"Tengo experiencia usando ES6, ES7 y TypeScript. Ademas, cuento con experiencia creando paginas web responsivas con un alto rendimiento.",
-    "thirdDsc":"Por otra parte, Estoy familiarizado usando el framework React Native para crear aplicaciones moviles multiplataforma.",
+    "secondDsc":"Tengo experiencia usando ES6, ES7, ES8, ES9 y TypeScript. Ademas, cuento con experiencia creando paginas web responsivas con un alto rendimiento.",
+    "thirdDsc":"Por otra parte, Estoy familiarizado usando el framework React Native para crear aplicaciones moviles multiplataforma. y Tambien, Electron en el caso de aplicaciones para escritorio multiplataforma.",
     "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase."
   },
   "about":{

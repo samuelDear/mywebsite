@@ -40,6 +40,6 @@ export const endTx = () => {
         document.body.style.overflow = 'auto';
         document.body.style.pointerEvents = 'auto';
         document.body.removeChild(document.getElementById("waitScreen"));
-    }, 2000);
+    }, 1200);
     
 }

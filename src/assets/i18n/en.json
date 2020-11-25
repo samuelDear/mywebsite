@@ -68,8 +68,8 @@
   },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3 and JavaScript. and also I have used frameworks such as Angular and React.",
-    "secondDsc":"I have experience using ES6, ES7 and TypeScript, also I have experience building responsive websites with a high-performance.",
-    "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps.",
+    "secondDsc":"I have experience using ES6, ES7, ES8, ES9 and TypeScript, also I have experience building responsive websites with a high-performance.",
+    "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps. and Also, Electron in the case of cross-platform desktop applications",
     "quarterDsc":"However, In the back-end I have used PHP and Java, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase."
   },
   "traumapp": {
