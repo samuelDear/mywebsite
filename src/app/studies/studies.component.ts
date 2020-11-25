@@ -288,7 +288,7 @@ export class StudiesComponent implements OnInit, OnDestroy {
     }
   ];
   constructor(
-    private translate: TranslateService,
+    public translate: TranslateService,
   ) { }
 
   ngOnInit() {
