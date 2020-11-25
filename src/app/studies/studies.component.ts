@@ -10,6 +10,7 @@ export class StudiesComponent implements OnInit {
   showButton: boolean = true;
   studies: any = [
     {
+      reference: '2020',
       datecreated: {
         month: '08',
         year: '2020',
@@ -140,7 +141,6 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
-      reference: '2020',
       datecreated: {
         month: '05',
         year: '2020',
@@ -154,6 +154,7 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
+      reference: '2019',
       datecreated: {
         month: '11',
         year: '2019',
@@ -180,7 +181,6 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
-      reference: '2019',
       datecreated: {
         month: '02',
         year: '2019',
@@ -194,6 +194,7 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
+      reference: '2018',
       datecreated: {
         month: '09',
         year: '2018',
@@ -246,7 +247,6 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
-      reference: '2018',
       datecreated: {
         month: '08',
         year: '2018',
@@ -260,6 +260,7 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
+      reference: '2017',
       datecreated: {
         month: '09',
         year: '2017',
@@ -273,7 +274,6 @@ export class StudiesComponent implements OnInit {
       }
     },
     {
-      reference: '2017',
       datecreated: {
         month: '03',
         year: '2017',
@@ -298,24 +298,23 @@ export class StudiesComponent implements OnInit {
   }
 
   selectDot(e){
-
-      if(document.getElementById('2017').offsetTop > window.scrollY && document.getElementById('2018').offsetTop < window.scrollY){
-        this.resetDots('2017');
-        let dot = document.getElementById('date2017');
-        dot.classList.add('dotActive');
-      }else if(document.getElementById('2018').offsetTop  > window.scrollY && document.getElementById('2019').offsetTop < window.scrollY){
-        this.resetDots('2018');
-        let dot = document.getElementById('date2018');
-        dot.classList.add('dotActive');
-      }else if(document.getElementById('2019').offsetTop > window.scrollY && document.getElementById('2020').offsetTop < window.scrollY){
-        this.resetDots('2019');
-        let dot = document.getElementById('date2019');
-        dot.classList.add('dotActive');
-      }else if(document.getElementById('2020').offsetTop > window.scrollY){
-        this.resetDots('2020');
-        let dot = document.getElementById('date2020');
-        dot.classList.add('dotActive');
-      }
+    if(document.getElementById('2017').offsetTop > window.scrollY && document.getElementById('2018').offsetTop < window.scrollY){
+      this.resetDots('2017');
+      let dot = document.getElementById('date2017');
+      dot.classList.add('dotActive');
+    }else if(document.getElementById('2018').offsetTop  > window.scrollY && document.getElementById('2019').offsetTop < window.scrollY){
+      this.resetDots('2018');
+      let dot = document.getElementById('date2018');
+      dot.classList.add('dotActive');
+    }else if(document.getElementById('2019').offsetTop > window.scrollY && document.getElementById('2020').offsetTop < window.scrollY){
+      this.resetDots('2019');
+      let dot = document.getElementById('date2019');
+      dot.classList.add('dotActive');
+    }else if(document.getElementById('2020').offsetTop > window.scrollY){
+      this.resetDots('2020');
+      let dot = document.getElementById('date2020');
+      dot.classList.add('dotActive');
+    }
   }
 
   resetDots(currentView: string){
