@@ -13,7 +13,7 @@ export class OrmComponent implements OnInit {
     {name: 'Roboto', link: `https://fonts.googleapis.com/css2?family=Roboto&display=swap`}];
   ramdons = [
     {
-      code: '/FJCintranet',
+      code: '/FJCIntranet',
       name: 'FJC Intranet',
       en: {
         resume: 'It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard.'

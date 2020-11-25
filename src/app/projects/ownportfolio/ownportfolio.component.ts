@@ -13,7 +13,7 @@ export class OwnportfolioComponent implements OnInit {
     { name: "monospace", link: "" }];
   ramdons = [
     {
-      code: '/FJCintranet',
+      code: '/FJCIntranet',
       name: 'FJC Intranet',
       en: {
         resume: 'It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard.'
@@ -23,25 +23,15 @@ export class OwnportfolioComponent implements OnInit {
       }
     },
     {
-      code: '',
-      name: 'My Portafolio',
+      code: '/ormv',
+      name: 'ORM',
       en: {
-        resume: "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
+        resume: 'It is a web page created with HTML5, CSS3, JS and PHP. Created to make it easier for schools in Venezuela to register for the Recreational Mathematics Olympics.'
       },
       es: {
-        resume: "Es un sitio web de pagina unica(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario."
+        resume: 'Es una pagina web creada con HTML5, CSS3, JS y PHP. Creado para facilitar a los colegios de Venezuela la inscripcion a las Olimpiadas Recreativas de Matematicas.'
       }
-    }/*,
-    {
-      code: '',
-      name: 'Traumapp',
-      es: {
-        resume: 'Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario para un uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes.'
-      },
-      en: {
-        resume: 'It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user for a daily use. Created to optimize a medical consultation and the management of patient information.'
-      }
-    }*/
+    },
   ];
 
   constructor(

@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: 'studies', component: StudiesComponent, pathMatch: 'full'},
   { path: 'FJCIntranet', component: FjcintranetComponent, pathMatch: 'full'},
   { path: 'portfolio', component: OwnportfolioComponent, pathMatch: 'full'},
-  { path: 'ormv', component: OrmComponent, pathMatch: 'full'}
+  { path: 'ormv', component: OrmComponent, pathMatch: 'full'},
+  { path: '**', redirectTo: ''}
 
   //{ path: '**', component: PageNotFoundComponent }
 ];

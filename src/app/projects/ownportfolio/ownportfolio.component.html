@@ -126,7 +126,6 @@
       <p class="text-center text-2xl" stranslate="project.otherWork"></p>
     </div>
 
-    <!--
     <div class="my-16">
       <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of ramdons;let i = index" (click)="navigateUrl(random.code)">
         <div>
@@ -135,9 +134,12 @@
         </div>
         <div class="flex flex-row items-center">
           <span class="block stick"></span>
-          <span class="block arrow-right"></span>
+          <div>
+            <span class="block stick-arrow stick-top"></span>
+            <span class="block stick-arrow stick-bottom"></span>
+          </div>
         </div>
       </div>
-    </div>-->
+    </div>
   
   </div>
