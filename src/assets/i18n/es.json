@@ -51,6 +51,7 @@
   "fjcintranet": {
     "resume": "Es un sistema interno de pagina unica(SPA). Creado con Angular 8 y Java Spring, para la gestion documental y de hallazgos en la Fundacion Jacinto Convit. Un sitio web que cuenta con estandares internacionales y bajo el estandar ISO 9001.",
     "role": "Lider/Frontend/Backend",
+    "cmsresult": "Resultado Visual CMS",
     "dsc": "Sistema interno para procesos de gestion documental y de hallazgos",
     "intro": "La Fundación Jacinto Convit (FJC) es una institución sin fines de lucro, que preserva, protege y continúa la obra, proyectos, valores y filosofía del médico, científico y humanista Dr. Jacinto Convit.",
     "intro2": "Debido a la gran cantidad de documentos que maneja la fundacion, el objetivo principal del sistema interno que logramos fue mejorar la gestion de grandes cantidades de documentos. Tambien, la fundacion al contar con la licencia de ISO 9001 debe cumplir con ciertos criterios de calidad, es por ello que el sistema interno cuenta con la gestion de estos procesos tanto para resolucion de problemas como para auditorias de los mismos. La Fundacion Jacinto Convit cuenta con sedes en Venezuela y en Estados Unidos, es por ellos que el sistema fue desarrollado en dos lenguajes, ingles y español.",
