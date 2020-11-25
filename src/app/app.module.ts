@@ -14,7 +14,6 @@ import { StranslateDirective } from './components/directives/stranslate.directiv
 import { FooterComponent } from './components/footer/footer.component';
 import { SlideMenuComponent } from './slide-menu/slide-menu.component';
 import { AboutComponent } from './about/about.component';
-import { ProjectComponent } from './project/project.component';
 import { StudiesComponent } from './studies/studies.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
@@ -34,7 +33,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     SlideMenuComponent,
     AboutComponent,
-    ProjectComponent,
     StudiesComponent,
     PageNotFoundComponent,
     FjcintranetComponent,
