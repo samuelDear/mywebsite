@@ -156,6 +156,7 @@ and (max-width : 700px) {
 
 .loadingLine{
   width: 0%;
+  height: 1px;
   background-color: #fff;
   opacity: 0.3;
   animation: expandLoading 4s ease-out infinite;

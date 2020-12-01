@@ -13,7 +13,7 @@ export const startTx = () => {
     document.body.style.pointerEvents = 'none';
     var div = document.createElement('div');
     var name = document.createElement('p');
-    var hr = document.createElement('hr');
+    var hr = document.createElement('div');
 
     div.classList.add("loadScreen");
     div.classList.add('curtain');
