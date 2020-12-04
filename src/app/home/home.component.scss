@@ -90,6 +90,15 @@ svg {
   margin-left: 4rem;
 }
 
+#arrowKnowMore {
+  padding-left: 0px;
+  transition: 1s;
+}
+
+#boxKownMore:hover > #arrowKnowMore {
+  padding-left: 40px;
+}
+
 @media only screen
 and (max-width : 1085px) {
   .mainBox{
