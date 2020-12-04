@@ -35,6 +35,18 @@ export class HeaderComponent implements OnInit {
         if(this.headerNav){
           this.animation();
         }
+        
+        setTimeout(() => {
+          var button = document.getElementsByClassName('hamburguer')[0];
+          if(button != undefined){
+            if(!button.classList.contains('bt-menu-open') && this.router.url == '/menu'){
+              button.classList.toggle('bt-menu-open');
+            }
+            console.log(button.classList.contains('bt-menu-open'));
+          }
+        }, 10);
+        
+        
       }
     });
   }
