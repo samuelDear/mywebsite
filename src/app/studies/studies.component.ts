@@ -174,7 +174,7 @@ export class StudiesComponent implements OnInit, OnDestroy {
       },
       institute: 'Platzi',
       es: {
-        title: 'Curso Programacion Básica'
+        title: 'Curso Programación Básica'
       },
       en: {
         title: 'Basic programation Course',
@@ -187,7 +187,7 @@ export class StudiesComponent implements OnInit, OnDestroy {
       },
       institute: 'Centro Venezolano Americano',
       es: {
-        title: 'Ingles como Lengua Extranjera'
+        title: 'Inglés como Lengua Extranjera'
       },
       en: {
         title: 'English as a Foreign Language',
