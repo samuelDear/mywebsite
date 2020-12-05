@@ -25,6 +25,67 @@
   top: 0;
 }
 
+.cvBox {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 1rem;
+  border: 1px solid #4ae3cd;
+  transition: 2s;
+}
+
+.cvBox:hover {
+  background: linear-gradient(59deg, #111111,rgba(219, 38, 150, 0.5), rgba(74, 227, 205, 0.5));
+  background-size: 800% 800%;
+  border: 1px solid #38ca13;
+
+  -webkit-animation: Raimbow 4s ease infinite;
+  -moz-animation: Raimbow 4s ease infinite;
+  -o-animation: Raimbow 4s ease infinite;
+  animation: Raimbow 4s ease infinite;
+}
+
+@-webkit-keyframes Raimbow {
+  0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Raimbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes Raimbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@keyframes Raimbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+
+.cvText{
+  font-family: monospace;
+  color: #4ae3cd;
+  font-size: 120%;
+}
+
+.cvBox:hover > .cvText{
+  color:#38ca13;
+}
+
+@media only screen
+and (max-width : 1100px) {
+  .cvBox{
+    width: 80%;
+  }
+
+  .cvText {
+    font-size: 110%;
+  }
+}
+  
 @media only screen
 and (max-width : 900px) {
   .mainBox{
@@ -45,6 +106,18 @@ and (max-width : 900px) {
 }
 
 @media only screen
+and (max-width : 550px) {
+  .cvBox{
+    width: 85%;
+    padding: 1rem;
+  }
+
+  .cvText {
+    font-size: 90%;
+  }
+}
+
+@media only screen
 and (max-width : 450px) {
   .photo {
     height: 60vh;
@@ -52,5 +125,14 @@ and (max-width : 450px) {
 
   .dsc {
     padding: 30px 40px 40px 45px;
+  }
+
+  .cvBox{
+    width: 90%;
+    padding: 0.75rem;
+  }
+
+  .cvText {
+    font-size: 85%;
   }
 }

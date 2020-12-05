@@ -23,4 +23,7 @@ export class AboutComponent implements OnInit {
     }
   }
 
+  downloadCv(){
+    window.open('assets/cv/SamuelRojas.pdf', '_blank');
+  }
 }
