@@ -12,9 +12,14 @@
   font-weight: 700;
 }
 
-.projects, .knowlegde{
+.projects{
   margin-top: 6rem;
 }
+
+#personalIcon, .knowlegde{
+  margin-top: 2rem;
+}
+
 
 .projectTitle {
   font-size: 162.5%;
@@ -80,6 +85,10 @@ svg {
   width: 60%;
 }
 
+#personalIcon {
+  width: 40%;
+}
+
 .marginOdd{
   margin-left: 6rem;
   margin-right: 4rem;
@@ -99,6 +108,20 @@ svg {
   padding-left: 40px;
 }
 
+.logoSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#personalIconSvg {
+  transition: 1s;
+}
+
+.polygons {
+  transition: 0.8s;
+}
+
 @media only screen
 and (max-width : 1085px) {
   .mainBox{
@@ -115,6 +138,10 @@ and (max-width : 1000px) {
 
   .knowlegdeTxt, .knowlegdeIllustration {
     width: 100%;
+  }
+
+  #personalIcon {
+    width: 45%;
   }
 }
 
@@ -136,6 +163,10 @@ and (max-width : 950px) {
 
   .knowlegdeBox, .aboutResume{
     margin-left: 2rem;
+  }
+
+  #personalIcon {
+    width: 50%;
   }
 }
 
@@ -177,6 +208,10 @@ and (max-width : 700px) {
   .aboutResume {
     font-size: 130%;
   }
+
+  #personalIcon {
+    width: 55%;
+  }
 }
 
 @media only screen
@@ -209,7 +244,15 @@ and (max-width : 550px) {
     font-size: 120%;
   }
 
-  .projects, .knowlegde{
+  .projects{
     margin-top: 3rem;
+  }
+
+  #personalIcon, .knowlegde {
+    margin-top: 1rem;
+  }
+
+  #personalIcon {
+    width: 65%;
   }
 }

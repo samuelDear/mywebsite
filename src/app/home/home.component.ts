@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     {
       name: 'My Portfolio',
       es: {
-        resume: 'Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. Tambien, usa el poder de los SVG para enriquecer la experiencia del usuario.'
+        resume: 'Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario.'
       },
       en: {
         resume: "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
@@ -78,6 +78,37 @@ export class HomeComponent implements OnInit {
     public translate: TranslateService
   ) {
     window.scroll(0,0);
+    window.addEventListener('scroll', (e) => {
+
+      console.log(window.scrollY + window.innerHeight);
+      console.log(document.getElementById('personalIcon').offsetTop);
+
+      let svgBox = document.getElementById('personalIconSvg');
+      let polygon1 = document.getElementById('polygonMain');
+      let slogo = document.getElementById('slogo');
+      let screenPos = (window.scrollY + window.innerHeight);
+      let elOffset = document.getElementById('personalIcon').offsetTop;
+
+      svgBox.style.transition = '3s';
+
+      if(screenPos > (elOffset)){
+        let definitiveHeight = ((screenPos - elOffset) * 0.003);
+        polygon1.setAttribute("transform",`matrix(${definitiveHeight > 1 ? 1 : definitiveHeight}, 0, 0, ${definitiveHeight > 1 ? 1 : definitiveHeight}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)})`);
+        slogo.setAttribute("transform",`matrix(${definitiveHeight > 1 ? 1 : definitiveHeight}, 0, 0, ${definitiveHeight > 1 ? 1 : definitiveHeight}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)})`);
+        
+        setTimeout(() => {
+          svgBox.style.opacity = '1';
+        }, 500);
+
+      }else{
+        polygon1.setAttribute("transform",`matrix(0.0000000001, 0, 0, 0.0000000001, 100, 100)`);
+        slogo.setAttribute("transform",`matrix(0.0000000001, 0, 0, 0.0000000001, 100, 100)`);
+        setTimeout(() => {
+          svgBox.style.opacity = '0';
+        }, 500);
+      }
+      
+    }, true);
   }
 
   ngOnInit() {
