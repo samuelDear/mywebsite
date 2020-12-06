@@ -5,7 +5,7 @@ export const navigationCustom = ( goto ) => {
     setTimeout(() => {
         endTx();
         goto();
-    }, 3000);
+    }, 2500);
 }
 
 export const startTx = () => {
@@ -41,6 +41,6 @@ export const endTx = () => {
         document.body.style.overflow = 'auto';
         document.body.style.pointerEvents = 'auto';
         document.body.removeChild(document.getElementById("waitScreen"));
-    }, 1200);
+    }, 1800);
     
 }
