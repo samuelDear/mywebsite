@@ -76,10 +76,10 @@
     "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase."
   },
   "about":{
-    "resume":"Soy un diseñador web y desarrollador móvil venezolano.<br>Realmente me gusta crear productos útiles e intuitivos con interfaces visuales cómodas para todos.",
+    "resume":"Soy un desarrollador web y móvil venezolano.<br>Realmente me gusta crear productos útiles e intuitivos con interfaces visuales cómodas para todos.",
     "aboutLink":"Leer más sobre mí",
     "welcome": "Hola!",
-    "intro": "Mi nombre es Samuel.<br>Soy un diseñador web y desarrollador móvil actualmente trabajo como programador independiente, me encuentro en Caracas, Venezuela.",
+    "intro": "Mi nombre es Samuel.<br>Soy un desarrollador web y móvil actualmente trabajo como programador independiente, me encuentro en Caracas, Venezuela.",
     "whatILike": "Realmente me gusta hacer productos útiles e intuitivos con interfaces visuales cómodas para cualquier persona. Me gusta analizar el contexto del usuario para crear la mejor solución en cada proyecto. Tengo experiencia haciendo aplicaciones multiplataforma y trabajando como desarrollador front-end en algunos proyectos. También, he construido paginas web responsivas.",
     "tec": "Aunque estoy muy familiarizado con los marcos de trabajo como React Native, React y Angular para el desarrollo de aplicaciones, la mayoría de los sitios web que he desarrollado fueron codificados principalmente a mano con HTML5, CCS3, JavaScript y PHP.",
     "keepingUp": "Para mantenerme siempre actualizado, leo libros, leo documentación actualizada, veo conferencias y veo videos de Youtube para aprender sobre nuevas tecnologías.",
