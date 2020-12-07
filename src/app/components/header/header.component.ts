@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
           isOkey = true;
           for(let i = 0; i < links.length; i++){
             if(links[i].id != ''){
-              console.log(links[i]);
+              //console.log(links[i]);
               isOkey = false;
               links[i].remove();
             }
@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
             if(!button.classList.contains('bt-menu-open') && this.router.url == '/menu'){
               button.classList.toggle('bt-menu-open');
             }
-            console.log(button.classList.contains('bt-menu-open'));
+            //console.log(button.classList.contains('bt-menu-open'));
           }
         }, 10);
         

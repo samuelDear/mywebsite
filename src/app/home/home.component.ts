@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import { navigationCustom } from '../transition';
@@ -8,7 +8,7 @@ import { navigationCustom } from '../transition';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   showButton: boolean = true;
   projects: any = [
     {
@@ -78,15 +78,19 @@ export class HomeComponent implements OnInit {
     public translate: TranslateService
   ) {
     window.scroll(0,0);
-    window.addEventListener('scroll', (e) => {
+    window.addEventListener('scroll', (e) => this.animatePolygon(e), true);
+  }
 
-      //console.log(window.scrollY + window.innerHeight);
-      //console.log(document.getElementById('personalIcon').offsetTop);
+  animatePolygon = (e) => {
+    //console.log(window.scrollY + window.innerHeight);
+    //console.log(document.getElementById('personalIcon'));
 
+    if(document.getElementById('personalIcon') != null && document.getElementById('personalIcon') != undefined){
       let svgBox = document.getElementById('personalIconSvg');
       let polygon1 = document.getElementById('polygonMain');
       let slogo = document.getElementById('slogo');
       let screenPos = (window.scrollY + window.innerHeight);
+
       let elOffset = document.getElementById('personalIcon').offsetTop;
 
       svgBox.style.transition = '3s';
@@ -107,8 +111,7 @@ export class HomeComponent implements OnInit {
           svgBox.style.opacity = '0';
         }, 500);
       }
-      
-    }, true);
+    }
   }
 
   ngOnInit() {
@@ -125,7 +128,7 @@ export class HomeComponent implements OnInit {
       const tree = this.router.parseUrl(this.router.url);
     if (tree.fragment) {
       const element = document.getElementById(tree.fragment);
-      console.log(element.offsetTop);
+      //console.log(element.offsetTop);
       if (element) { window.scrollTo(0, (element.offsetTop )); }
     }
     },100);
@@ -135,6 +138,10 @@ export class HomeComponent implements OnInit {
       //console.log("ya me cargue");
       this.remove();
     })
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('scroll', (e) => this.animatePolygon(e), true);
   }
 
   navigation(ruta) {

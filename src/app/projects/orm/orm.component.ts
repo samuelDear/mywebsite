@@ -51,7 +51,7 @@ export class OrmComponent implements OnInit {
 
   ngOnInit(): void {
     this.families.forEach((element, index) => {
-      console.log(element, index);
+      //console.log(element, index);
       this.fontLoader(element);
 
       if(document.getElementById(`typographyName${index+1}`) != undefined){
@@ -78,7 +78,7 @@ export class OrmComponent implements OnInit {
   }
 
   navigateUrl(code: string){
-    console.log(code);
+    //console.log(code);
     navigationCustom( () => this.router.navigate([code]) ); 
   }
 }
