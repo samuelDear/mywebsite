@@ -80,8 +80,8 @@ export class HomeComponent implements OnInit {
     window.scroll(0,0);
     window.addEventListener('scroll', (e) => {
 
-      console.log(window.scrollY + window.innerHeight);
-      console.log(document.getElementById('personalIcon').offsetTop);
+      //console.log(window.scrollY + window.innerHeight);
+      //console.log(document.getElementById('personalIcon').offsetTop);
 
       let svgBox = document.getElementById('personalIconSvg');
       let polygon1 = document.getElementById('polygonMain');
@@ -128,8 +128,13 @@ export class HomeComponent implements OnInit {
       console.log(element.offsetTop);
       if (element) { window.scrollTo(0, (element.offsetTop )); }
     }
-    },100)
-    
+    },100);
+
+    let imgTramp = document.getElementById('imgTrap');
+    imgTramp.addEventListener("load",function(){
+      //console.log("ya me cargue");
+      this.remove();
+    })
   }
 
   navigation(ruta) {

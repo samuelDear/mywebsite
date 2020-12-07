@@ -37,12 +37,12 @@ export class AppComponent {
 			.subscribe(
 				( event: NavigationStart ) => {
 
-					console.group( "NavigationStart Event" );
+					//console.group( "NavigationStart Event" );
 					// Every navigation sequence is given a unique ID. Even "popstate"
 					// navigations are really just "roll forward" navigations that get
 					// a new, unique ID.
-					console.log( "navigation id:", event.id );
-					console.log( "route:", event.url );
+					//console.log( "navigation id:", event.id );
+					//console.log( "route:", event.url );
 					// The "navigationTrigger" will be one of:
 					// --
 					// - imperative (ie, user clicked a link).
@@ -50,7 +50,7 @@ export class AppComponent {
 					// - hashchange
 					// --
 					// NOTE: I am not sure what triggers the "hashchange" type.
-          console.log( "trigger:", event.navigationTrigger );
+          //console.log( "trigger:", event.navigationTrigger );
           
           if(event.navigationTrigger == "popstate"){
             navigationCustom( () => router.navigateByUrl(event.url) ); 
@@ -64,15 +64,15 @@ export class AppComponent {
 					// This value is pulled out of the browser; and, may exist across
 					// page refreshes.
 					if ( event.restoredState ) {
-
+/*
 						console.warn(
 							"restoring navigation id:",
 							event.restoredState.navigationId
 						);
-
+*/
 					}
 
-					console.groupEnd();
+					//console.groupEnd();
 
 				}
 			);
