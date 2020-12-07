@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   showButton: boolean = false;
-  constructor() {
+  constructor(public translate: TranslateService) {
     window.scroll(0,0);
   }
 
@@ -24,6 +25,10 @@ export class AboutComponent implements OnInit {
   }
 
   downloadCv(){
-    window.open('assets/cv/SamuelRojas.pdf', '_blank');
+    if(this.translate.currentLang == "es"){
+      window.open('assets/cv/SamuelRojasEsp.pdf', '_blank');
+    }else{
+      window.open('assets/cv/SamuelRojasEng.pdf', '_blank');
+    }
   }
 }
