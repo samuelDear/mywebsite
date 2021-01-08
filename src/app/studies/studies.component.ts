@@ -194,20 +194,6 @@ export class StudiesComponent implements OnInit, OnDestroy {
       }
     },
     {
-      reference: '2018',
-      datecreated: {
-        month: '09',
-        year: '2018',
-      },
-      institute: 'Benllisoft',
-      es: {
-        title: 'Curso de HTML 5'
-      },
-      en: {
-        title: 'HTML 5 Course',
-      }
-    },
-    {
       datecreated: {
         month: '09',
         year: '2018',
