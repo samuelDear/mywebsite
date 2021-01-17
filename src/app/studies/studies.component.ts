@@ -10,6 +10,20 @@ export class StudiesComponent implements OnInit, OnDestroy {
   showButton: boolean = true;
   studies: any = [
     {
+      reference: '2021',
+      datecreated: {
+        month: '01',
+        year: '2021',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso de ReactJs'
+      },
+      en: {
+        title: 'ReactJs Course',
+      }
+    },
+    {
       reference: '2020',
       datecreated: {
         month: '08',
@@ -194,6 +208,7 @@ export class StudiesComponent implements OnInit, OnDestroy {
       }
     },
     {
+      reference: '2018',
       datecreated: {
         month: '09',
         year: '2018',
@@ -279,7 +294,7 @@ export class StudiesComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     window.addEventListener('scroll', (e) => this.selectDot(e), true);
-    let dot = document.getElementById('date2020');
+    let dot = document.getElementById('date2021');
     dot.classList.add('dotActive');
   }
 
@@ -288,12 +303,12 @@ export class StudiesComponent implements OnInit, OnDestroy {
   }
 
   selectDot(e){
-    if(document.getElementById('2017') != undefined && document.getElementById('2018') != undefined && document.getElementById('2019') != undefined && document.getElementById('2020') != undefined){
+    if(document.getElementById('2017') != undefined && document.getElementById('2018') != undefined && document.getElementById('2019') != undefined && document.getElementById('2020') != undefined && document.getElementById('2021') != undefined){
       if(document.getElementById('2017').offsetTop > window.scrollY && document.getElementById('2018').offsetTop < window.scrollY){
         this.resetDots('2017');
         let dot = document.getElementById('date2017');
         dot.classList.add('dotActive');
-      }else if(document.getElementById('2018').offsetTop  > window.scrollY && document.getElementById('2019').offsetTop < window.scrollY){
+      }else if(document.getElementById('2018').offsetTop > window.scrollY && document.getElementById('2019').offsetTop < window.scrollY){
         this.resetDots('2018');
         let dot = document.getElementById('date2018');
         dot.classList.add('dotActive');
@@ -301,9 +316,13 @@ export class StudiesComponent implements OnInit, OnDestroy {
         this.resetDots('2019');
         let dot = document.getElementById('date2019');
         dot.classList.add('dotActive');
-      }else if(document.getElementById('2020').offsetTop > window.scrollY){
+      }else if(document.getElementById('2020').offsetTop > window.scrollY && document.getElementById('2021').offsetTop < window.scrollY){
         this.resetDots('2020');
         let dot = document.getElementById('date2020');
+        dot.classList.add('dotActive');
+      }else if(document.getElementById('2021').offsetTop > window.scrollY){
+        this.resetDots('2021');
+        let dot = document.getElementById('date2021');
         dot.classList.add('dotActive');
       }
     }
@@ -311,22 +330,32 @@ export class StudiesComponent implements OnInit, OnDestroy {
 
   resetDots(currentView: string){
     switch(currentView){
+      case '2021':
+        document.getElementById('date2020').classList.remove('dotActive');
+        document.getElementById('date2019').classList.remove('dotActive');
+        document.getElementById('date2018').classList.remove('dotActive');
+        document.getElementById('date2017').classList.remove('dotActive');
+        break;
       case '2020':
+        document.getElementById('date2021').classList.remove('dotActive');
         document.getElementById('date2019').classList.remove('dotActive');
         document.getElementById('date2018').classList.remove('dotActive');
         document.getElementById('date2017').classList.remove('dotActive');
         break;
       case '2019':
+        document.getElementById('date2021').classList.remove('dotActive');
         document.getElementById('date2020').classList.remove('dotActive');
         document.getElementById('date2018').classList.remove('dotActive');
         document.getElementById('date2017').classList.remove('dotActive');
         break;
       case '2018':
+        document.getElementById('date2021').classList.remove('dotActive');
         document.getElementById('date2020').classList.remove('dotActive');
         document.getElementById('date2019').classList.remove('dotActive');
         document.getElementById('date2017').classList.remove('dotActive');
         break;
       case '2017':
+        document.getElementById('date2021').classList.remove('dotActive');
         document.getElementById('date2020').classList.remove('dotActive');
         document.getElementById('date2019').classList.remove('dotActive');
         document.getElementById('date2018').classList.remove('dotActive');
