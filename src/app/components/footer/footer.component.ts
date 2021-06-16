@@ -7,13 +7,13 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  showFooter: string;
+  showFooter: string = '';
 
   constructor(private router: Router) {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
         if(this.router.url == '/about'){
-          this.showFooter = null;
+          this.showFooter = '';
         } else {
           this.showFooter = 'show';
         }

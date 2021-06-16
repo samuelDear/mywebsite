@@ -40,7 +40,7 @@ export class SlideMenuComponent implements OnInit {
     navigationCustom( () => this.router.navigateByUrl(ruta) ); 
   }
 
-  navigationFragment(ruta, fragment) {
+  navigationFragment(ruta: string, fragment: string) {
     navigationCustom( () => this.router.navigate([ruta], { fragment: fragment }) ); 
   }
 }

@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 
-export const navigationCustom = ( goto ) => {
+export const navigationCustom = ( goto: any ) => {
     startTx();
     setTimeout(() => {
         endTx();
@@ -20,15 +20,16 @@ export const startTx = () => {
     div.style.opacity = '1';
     div.setAttribute("id", "waitScreen");
 
-    document.body.appendChild(div);
-    document.getElementById("waitScreen").style.width = '100%';
+    const waitScreen: any = document.getElementById("waitScreen");
+    waitScreen.style.width = '100%';
 }
 
 export const endTx = () => {
-    document.getElementById("waitScreen").style.opacity = '0';
+    const waitScreen: any = document.getElementById("waitScreen");
+    waitScreen.style.width = '0%';
     setTimeout(() => {
         document.body.style.overflow = 'auto';
         document.body.style.pointerEvents = 'auto';
-        document.body.removeChild(document.getElementById("waitScreen"));
+        document.body.removeChild(waitScreen);
     }, 1200);   
 }

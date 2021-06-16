@@ -43,19 +43,19 @@ export class OwnportfolioComponent implements OnInit {
     this.families.forEach((element, index) => {
       //console.log(element, index);
       this.fontLoader(element);
-
-      if(document.getElementById(`typographyName${index+1}`) != undefined){
-        document.getElementById(`typographyName${index+1}`).innerHTML = element.name;
-        document.getElementById(`typographyName${index+1}`).style.fontFamily = element.name;
+      let div = document.getElementById(`typographyName${index+1}`);
+      if(div != undefined){
+        div.innerHTML = element.name;
+        div.style.fontFamily = element.name;
       };
 
-      if(document.getElementById(`typographyExample${index+1}`) != undefined){
-        document.getElementById(`typographyExample${index+1}`).style.fontFamily = element.name;
+      if(div != undefined){
+        div.style.fontFamily = element.name;
       };
     });
   }
 
-  fontLoader = (param) => {
+  fontLoader = (param: any) => {
     var headID = document.getElementsByTagName('head')[0];
     var link = document.createElement('link');
     link.type = 'text/css';

@@ -81,17 +81,17 @@ export class HomeComponent implements OnInit, OnDestroy {
     window.addEventListener('scroll', (e) => this.animatePolygon(e), true);
   }
 
-  animatePolygon = (e) => {
+  animatePolygon = (e: any) => {
     //console.log(window.scrollY + window.innerHeight);
     //console.log(document.getElementById('personalIcon'));
-
-    if(document.getElementById('personalIcon') != null && document.getElementById('personalIcon') != undefined){
-      let svgBox = document.getElementById('personalIconSvg');
-      let polygon1 = document.getElementById('polygonMain');
-      let slogo = document.getElementById('slogo');
+    const personalIcon = document.getElementById('personalIcon');
+    const svgBox = document.getElementById('personalIconSvg');
+    const polygon1 = document.getElementById('polygonMain');
+    const slogo = document.getElementById('slogo');
+    if(personalIcon != null && personalIcon != undefined && svgBox != null && polygon1 != null && slogo != null){
       let screenPos = (window.scrollY + window.innerHeight);
 
-      let elOffset = document.getElementById('personalIcon').offsetTop;
+      let elOffset = personalIcon.offsetTop;
 
       svgBox.style.transition = '3s';
 
@@ -134,17 +134,19 @@ export class HomeComponent implements OnInit, OnDestroy {
     },100);
 
     let imgTramp = document.getElementById('imgTrap');
-    imgTramp.addEventListener("load",function(){
-      //console.log("ya me cargue");
-      this.remove();
-    })
+    if (imgTramp != null) {
+      imgTramp.addEventListener("load",function(){
+        //console.log("ya me cargue");
+        this.remove();
+      });
+    }
   }
 
   ngOnDestroy() {
     window.removeEventListener('scroll', (e) => this.animatePolygon(e), true);
   }
 
-  navigation(ruta) {
+  navigation(ruta: string) {
     navigationCustom( () => this.router.navigateByUrl(ruta) ); 
   }
 }

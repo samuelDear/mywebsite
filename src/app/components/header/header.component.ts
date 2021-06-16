@@ -9,9 +9,9 @@ import { navigationCustom } from '../../transition';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() showAbout: boolean;
-  @Input() headerNav: boolean;
-  showHeader: boolean;
+  @Input() showAbout: boolean = false;
+  @Input() headerNav: boolean = false;
+  showHeader: boolean = false;
   constructor(private router: Router) {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
@@ -54,14 +54,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  navigation(ruta) {
+  navigation(ruta: string) {
     if(this.router.url != '/menu'){
       this.animation();
       navigationCustom( () => this.router.navigateByUrl(ruta) ); 
     }
   }
 
-  navigationAbout(ruta){
+  navigationAbout(ruta: string){
     navigationCustom( () => this.router.navigateByUrl(ruta) ); 
   }
 

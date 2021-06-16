@@ -7,7 +7,7 @@ import { takeUntil } from 'rxjs/operators';
   selector: '[stranslate]'
 })
 export class StranslateDirective implements OnInit {
-  @Input() stranslate: string;
+  @Input() stranslate: any;
   @Input() translateValues: any;
 
   private readonly directiveDestroyed = new Subject<never>();
