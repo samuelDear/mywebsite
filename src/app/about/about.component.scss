@@ -20,9 +20,17 @@
   height: 100%;
   width: 50%;
   background-color: #CCC;
-  display: flex;
-  justify-content: center;
+  display: block;
   top: 0;
+}
+
+.myself {
+  width: 80%;
+  height: auto;
+  bottom: 0;
+  left: 10%;
+  max-height: 100vh;
+  position: absolute;
 }
 
 .cvBox {
@@ -92,9 +100,9 @@ and (max-width : 1100px) {
     font-size: 110%;
   }
 }
-  
+
 @media only screen
-and (max-width : 900px) {
+and (max-width : 1000px) {
   .mainBox{
     margin: 0;
     margin-top: 55px;
@@ -102,8 +110,14 @@ and (max-width : 900px) {
 
   .photo {
     position: initial;
-    height: 90vh;
+    height: auto;
     width: 100%;
+  }
+
+  .myself {
+    position: initial;
+    margin: auto;
+    max-height: 9999vh;
   }
 
   .dsc {
@@ -126,9 +140,6 @@ and (max-width : 550px) {
 
 @media only screen
 and (max-width : 450px) {
-  .photo {
-    height: 60vh;
-  }
 
   .dsc {
     padding: 30px 40px 40px 45px;
