@@ -490,7 +490,20 @@ html {
   .dsc {
     font-size: 1.1rem;
   }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active
+  {
+  box-shadow: 0 0 0 30px #111 inset !important;
+  }
   
+  input:-webkit-autofill
+  {
+    -webkit-text-fill-color: #FFF !important;
+  }
+
   @media only screen
   and (max-width : 1085px) {
     .mainBox{

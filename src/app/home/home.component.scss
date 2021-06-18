@@ -51,6 +51,20 @@
   margin-left: 4rem;
 }
 
+.contactBox {
+  margin-left: 4rem;
+}
+
+.msgContact {
+  font-size: 160%;
+  margin: 8px 0px
+}
+
+.submsgContact {
+  font-size: 140%;
+  margin: 8px 0px
+}
+
 svg {
   height: auto;
 }
@@ -129,6 +143,49 @@ svg {
   font-size: 10px;
 }
 
+.contactEmail {
+  color: #db2696;
+}
+
+.contactFormBox {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.btnSendEmail {
+  border: 2px solid #FFF;
+  border-radius: 3px;
+  width: 50%;
+  min-width: 100px;
+  max-width: 150px;
+  font-size: 18px;
+  margin: auto;
+}
+
+.labelForm {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 17px;
+}
+.mat-focused .labelForm {
+  color: #db2696;
+}
+
+.textareaContact {
+  resize: none;
+  height: 100px;
+}
+
+::ng-deep .mat-form-field-underline {
+  background-color: #38CA13 !important;
+}
+
+::ng-deep .mat-form-field-ripple {
+  background-color: #db2696 !important;
+}
+
 @media only screen
 and (max-width : 1085px) {
   .mainBox{
@@ -150,6 +207,14 @@ and (max-width : 1000px) {
   #personalIcon {
     width: 45%;
   }
+
+  .msgContact {
+    font-size: 140%;
+  }
+  
+  .submsgContact {
+    font-size: 110%;
+  }
 }
 
 @media only screen
@@ -168,7 +233,7 @@ and (max-width : 950px) {
     margin-left: 2rem;
   }
 
-  .knowlegdeBox, .aboutResume{
+  .knowlegdeBox, .aboutResume, .contactBox{
     margin-left: 2rem;
   }
 
@@ -181,6 +246,18 @@ and (max-width : 950px) {
 and (max-width : 850px) {
   .mainBox{
     margin: 120px 40px 0px 40px;
+  }
+
+  .msgContact {
+    font-size: 150%;
+  }
+  
+  .submsgContact {
+    font-size: 120%;
+  }
+
+  .contactFormBox {
+    margin-left: 0px;
   }
 }
 
@@ -196,7 +273,7 @@ and (max-width : 700px) {
     margin-left: 0rem;
   }
 
-  .knowlegdeBox, .aboutResume{
+  .knowlegdeBox, .aboutResume, .contactBox{
     margin-left: 1rem;
   }
 
@@ -231,7 +308,7 @@ and (max-width : 550px) {
     margin-right: 0rem;
   }
 
-  .aboutResume, .knowlegdeBox {
+  .aboutResume, .knowlegdeBox, .contactBox {
     margin-left: 0.5rem;
   }
 
@@ -261,5 +338,13 @@ and (max-width : 550px) {
 
   #personalIcon {
     width: 65%;
+  }
+
+  .msgContact {
+    font-size: 120%;
+  }
+  
+  .submsgContact {
+    font-size: 100%;
   }
 }

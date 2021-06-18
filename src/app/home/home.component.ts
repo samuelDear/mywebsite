@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import { navigationCustom } from '../transition';
 
@@ -73,8 +74,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     }*/
   ];
 
+  contactForm = this.formBuilder.group({
+    name: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
+    msg: ['',Validators.required]
+  });
+
+
   constructor(
     private router: Router,
+    private formBuilder: FormBuilder,
     public translate: TranslateService
   ) {
     window.scroll(0,0);
@@ -148,5 +157,9 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   navigation(ruta: string) {
     navigationCustom( () => this.router.navigateByUrl(ruta) ); 
+  }
+
+  onSubmit(): void {
+    console.log(this.contactForm.controls.name);
   }
 }

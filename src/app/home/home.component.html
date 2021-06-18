@@ -176,7 +176,7 @@
   </section>
 
   <section class="littleAbout mt-12">
-    <p class="codeLine">&lt;<span class="tag">about&nbsp;</span><span class="controlStructure">title</span>=<span class="sentence">introduce myself</span>&gt;</p>
+    <p class="codeLine">&lt;<span class="tag">about&nbsp;<span class="controlStructure">title</span>="<span class="sentence">introduce myself</span>"</span>&gt;</p>
     <div class="w-100 my-5 flex flex-col aboutResume">
       <p stranslate="about.resume"></p>
       <div class="mt-5 flex row underline font-normal">
@@ -193,6 +193,40 @@
       </div>
     </div>
     <p class="codeLine">&lt;<span class="tag">about</span>&gt;</p>
+  </section>
+
+  <section class="littleAbout mt-12">
+    <p class="codeLine">&lt;<span class="tag">contact&nbsp;<span class="controlStructure">class</span>="<span class="sentence">send me an email</span>"</span>&gt;</p>
+    <div class="w-100 my-5 flex flex-col contactBox">
+      <p class="msgContact"><span stranslate="home.msgContact"></span>&nbsp;<span class="contactEmail">contact@samueldear.com</span></p>
+      <p class="submsgContact" stranslate="home.submsgContact"></p>
+      <form class="flex flex-col contactFormBox" [formGroup]="contactForm" (submit)="onSubmit()">
+        <mat-form-field class="my-1">
+          <mat-label stranslate="home.labelName" class="labelForm"></mat-label>
+          <input matInput value="" type="text" autocomplete="new-password" maxlength="60" name="name" id="name" formControlName="name">
+          <mat-error *ngIf="contactForm.controls.name.invalid && contactForm.controls.name.touched">
+            <span class="matError" *ngIf="contactForm.controls.name.errors?.required">Este campo es obligatorio.</span>
+         </mat-error>
+        </mat-form-field>
+        <mat-form-field class="my-1">
+          <mat-label stranslate="home.labelEmail" class="labelForm"></mat-label>
+          <input matInput value="" type="text" autocomplete="new-password" maxlength="60" name="email" id="email" formControlName="email">
+          <mat-error *ngIf="contactForm.controls.email.invalid && contactForm.controls.email.touched">
+            <span class="matError" *ngIf="contactForm.controls.email.errors?.required">Este campo es obligatorio.</span>
+            <span class="matError" *ngIf="contactForm.controls.email.errors?.email">Correo invalido.</span>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="my-1">
+          <mat-label stranslate="home.labelDscEmail" class="labelForm"></mat-label>
+          <textarea matInput class="textareaContact" name="msg" id="msg" maxlength="2000" formControlName="msg"></textarea>
+          <mat-error *ngIf="contactForm.controls.msg.invalid && contactForm.controls.msg.touched">
+            <span class="matError" *ngIf="contactForm.controls.msg.errors?.required">Este campo es obligatorio.</span>
+          </mat-error>
+        </mat-form-field>
+        <button mat-button type="submit"  class="btnSendEmail"><span stranslate="home.btnText"></span></button>
+      </form>
+    </div>
+    <p class="codeLine">&lt;<span class="tag">contact</span>&gt;</p>
   </section>
 
   <div class="mt-12">

@@ -6,7 +6,13 @@
   "home": {
     "presentation": "Hello! My name is Samuel Rojas.",
     "description": "I'm a web and mobile developer that build responsive websites and development cross-platform Apps.",
-    "linkProject": "View Project"
+    "linkProject": "View Project",
+    "msgContact": "Feel free to contact me on",
+    "submsgContact": "Or you can send me an email from here!",
+    "labelName": "Name",
+    "labelEmail": "Email",
+    "labelDscEmail": "Message",
+    "btnText": "Send"
   },
   "myWeb": {
     "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience.",
