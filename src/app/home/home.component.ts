@@ -3,6 +3,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import { navigationCustom } from '../transition';
+import { EmailService } from '../services/email/email.service';
+import { emailForm, responseEmail } from '../services/common/email';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +13,8 @@ import { navigationCustom } from '../transition';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   showButton: boolean = true;
+  emailSended: boolean = false;
+  isLoadingBtn: boolean = false;
   projects: any = [
     {
       name: 'FJC Intranet',
@@ -84,6 +88,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(
     private router: Router,
     private formBuilder: FormBuilder,
+    public emailService: EmailService,
     public translate: TranslateService
   ) {
     window.scroll(0,0);
@@ -91,8 +96,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   animatePolygon = (e: any) => {
-    //console.log(window.scrollY + window.innerHeight);
-    //console.log(document.getElementById('personalIcon'));
     const personalIcon = document.getElementById('personalIcon');
     const svgBox = document.getElementById('personalIconSvg');
     const polygon1 = document.getElementById('polygonMain');
@@ -151,15 +154,36 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     window.removeEventListener('scroll', (e) => this.animatePolygon(e), true);
   }
 
-  navigation(ruta: string) {
+  navigation(ruta: string): void {
     navigationCustom( () => this.router.navigateByUrl(ruta) ); 
   }
 
   onSubmit(): void {
-    console.log(this.contactForm.controls.name);
+    if (this.contactForm.valid && !this.emailSended && !this.isLoadingBtn) {
+      console.log(this.contactForm.value);
+      this.isLoadingBtn = true;
+      const values = this.contactForm.value;
+      const params: emailForm = {
+        name: values.name,
+        email: values.email,
+        dsc: values.msg,
+      };
+
+      this.emailService.sendContact(params).subscribe(
+        (rsp: responseEmail) => {
+          console.log(rsp);
+          this.emailSended = true;
+          this.isLoadingBtn = false;
+        },
+        (error: any) => {
+          console.log(error);
+          this.isLoadingBtn = false;
+        }
+      )
+    }
   }
 }

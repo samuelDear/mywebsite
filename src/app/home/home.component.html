@@ -223,7 +223,10 @@
             <span class="matError" *ngIf="contactForm.controls.msg.errors?.required">Este campo es obligatorio.</span>
           </mat-error>
         </mat-form-field>
-        <button mat-button type="submit"  class="btnSendEmail"><span stranslate="home.btnText"></span></button>
+        <button mat-button type="submit"  class="btnSendEmail">
+          <mat-spinner *ngIf="isLoadingBtn" diameter="30"></mat-spinner>
+          <span stranslate="home.btnText" *ngIf="!isLoadingBtn"></span>
+        </button>
       </form>
     </div>
     <p class="codeLine">&lt;<span class="tag">contact</span>&gt;</p>

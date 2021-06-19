@@ -158,10 +158,13 @@ svg {
   border: 2px solid #FFF;
   border-radius: 3px;
   width: 50%;
+  padding: 5px;
   min-width: 100px;
   max-width: 150px;
   font-size: 18px;
+  display: flex;
   margin: auto;
+  justify-content: center;
 }
 
 .labelForm {
