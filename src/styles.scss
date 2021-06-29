@@ -249,10 +249,6 @@ html {
     flex-direction: row;
   }
   
-  .laptopBox{
-    height: 90vh;
-  }
-  
   .boxLaptopScreen {
     width: 90%;
     height: 90%;
@@ -261,7 +257,7 @@ html {
   
   .boxLaptopKeyboard {
     width: 100%;
-    height: 10%;
+    height: 50px;
     background-color: #222;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -275,8 +271,12 @@ html {
     border-bottom-left-radius: 10px;
   }
   
+  .boxTablet {
+    display: flex;
+    align-items: center;
+  }
+
   .boxTablet, .boxMobile{
-    height: 80vh;
     margin: 30px 0px;
     border-radius: 30px;
   }
@@ -329,6 +329,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 10px;
   }
   
   .screenMobile{
@@ -339,10 +340,7 @@ html {
   .screenImg, .borderedBox {
     border-radius: 10px;
   }
-  
-  .heightForPrincipalImg{
-    height: 90vh;
-  }
+
   
   .soundMobile {
     height: 10px;
@@ -516,10 +514,6 @@ html {
     .mobileBox{
       width: 28%;
     }
-  
-    .laptopBox{
-      height: 85vh;
-    }
   }
   
   @media only screen
@@ -531,20 +525,12 @@ html {
     .mobileBox{
       width: 30%;
     }
-  
-    .laptopBox{
-      height: 80vh;
-    }
   }
   
   @media only screen
   and (max-width : 950px) {
     .mobileBox{
       width: 32%;
-    }
-  
-    .laptopBox{
-      height: 75vh;
     }
   
     .randomProjectsBoxPair{
@@ -555,10 +541,6 @@ html {
       margin-right: 9rem;
     }
   
-    .boxTablet {
-      height: 75vh;
-    }
-  
     .colorBox{
       margin: 10px 12%;
       width: 25%;
@@ -567,10 +549,6 @@ html {
   
   @media only screen
   and (max-width : 850px) {
-  
-    .heightForPrincipalImg {
-      height: 70vh;
-    }
   
     .mobileBox{
       width: 32%;
@@ -586,10 +564,6 @@ html {
   
     .randomProjectsBoxOdd{
       margin-right: 5rem;
-    }
-  
-    .boxTablet {
-      height: 65vh;
     }
   
     .featureBox {
@@ -616,16 +590,9 @@ html {
   
   @media only screen
   and (max-width : 800px) {
-    .heightForPrincipalImg {
-      height: 65vh;
-    }
   
     .mobileBox{
       width: 35%;
-    }
-  
-    .laptopBox{
-      height: 74vh;
     }
   
     .randomProjectsBoxPair{
@@ -641,9 +608,6 @@ html {
   
   @media only screen
   and (max-width : 750px) {
-    .heightForPrincipalImg {
-      height: 60vh;
-    }
   
     .mobileBox{
       width: 40%;
@@ -658,41 +622,21 @@ html {
       margin: 0px;
     }
   
-    .laptopBox{
-      height: 65vh;
-    }
-  
     .typographyExample {
       font-size: 1.3rem;
       margin: 0px 2rem;
-    }
-  
-    .boxTablet {
-      height: 60vh;
     }
   }
   
   @media only screen
   and (max-width : 650px) {
-    .heightForPrincipalImg {
-      height: 50vh;
-    }
-  
     .mobileBox{
       width: 48%;
-    }
-  
-    .laptopBox{
-      height: 60vh;
     }
   
     .rolAgencyDate {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .boxTablet {
-      height: 55vh;
     }
   }
   
@@ -701,27 +645,12 @@ html {
     .mobileBox{
       width: 52%;
     }
-  
-    .laptopBox{
-      height: 58vh;
-    }
-  
-    .boxTablet {
-      height: 50vh;
-    }
   }
   
   @media only screen
   and (max-width : 550px) {
     .mobileBox{
       width: 55%;
-    }
-    .laptopBox{
-      height: 55vh;
-    }
-  
-    .heightForPrincipalImg {
-      height: 45vh;
     }
   
     .stick {
@@ -734,10 +663,6 @@ html {
       border-bottom: 20px solid transparent;
       border-left: 20px solid #FFF;
     }
-  
-    .boxTablet {
-      height: 45vh;
-    }
   }
   
   @media only screen
@@ -745,22 +670,10 @@ html {
     .mobileBox{
       width: 60%;
     }
-  
-    .laptopBox{
-      height: 52vh;
-    }
-  
+
     .colorBox{
       margin: 12px 8%;
       width: 33%;
-    }
-  
-    .heightForPrincipalImg {
-      height: 40vh;
-    }
-  
-    .boxTablet {
-      height: 40vh;
     }
   }
   
@@ -769,28 +682,12 @@ html {
     .mobileBox{
       width: 70%;
     }
-  
-    .laptopBox{
-      height: 50vh;
-    }
-  
-    .heightForPrincipalImg {
-      height: 35vh;
-    }
-  
-    .boxTablet {
-      height: 35vh;
-    }
   }
   
   @media only screen
   and (max-width : 400px) {
     .mobileBox{
       width: 80%;
-    }
-  
-    .laptopBox{
-      height: 35vh;
     }
   }
   
@@ -805,10 +702,6 @@ html {
       width: 30%;
       height: 100px;
       padding: 5px;
-    }
-  
-    .heightForPrincipalImg {
-      height: 25vh;
     }
   }
   
