@@ -88,9 +88,9 @@
     "aboutLink":"Read more about me",
     "welcome": "Hello!",
     "intro":"My name is Samuel<br>I am a web designer and mobile developer currently working as freelance programmer, I am in Caracas, Venezuela.",
-    "whatILike": "I really like to make useful and intuitive products with comfortable visual interfaces for anyone. I like to analyze the user context in order to create the best solution on each project. I have experience making cross-platform applications and working as front-end developer in some projects. as well, I have builded responsive websites.",
-    "tec": "Although I am very familiar with frameworks such as React Native, React and Angular for application development, most of the websites I have developed were coded primarily by hand with HTML5, CCS3, JavaScript and PHP.",
-    "keepingUp": "For always keeping me updated, I read books, read updated documentation, watch lectures and watch YouTube videos to learn about new technologies.",
+    "whatILike": "I really like to make useful and intuitive products with comfortable visual interfaces for anyone. I like to analyze the user context in order to create the best solution on each project. I have experience making cross-platform applications and working as fullstack developer on various projects. Building responsive websites and creating REST API.",
+    "tec": "I'm very familiar using HTML5, CSS3, TypeScript and JavaScript. On the Front-end side I have used frameworks such as Angular and React for websites, React Native for mobile applications and Electron for Desktop applications. On the other hand, in the Back-end I have worked mostly using PHP to create REST API web services, although I also have exprience using Java. I have worked with relational databases and non-relational databases. Being MySQL and Firebase the engines which I have worked the most. Also, I have worked with Realm, PostgreSQL and MongoDB.",
+    "keepingUp": "For always keeping me updated, I take courses, read updated documentation, watch lectures and watch YouTube videos to learn about new technologies.",
     "contact": "If you have a project, you are interested in a collaboration or just want to say hello, don't hesitate to send me an email to contact@samueldear.com.",
     "spam": "You can also know more about me here:"
   },

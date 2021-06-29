@@ -88,9 +88,9 @@
     "aboutLink":"Leer más sobre mí",
     "welcome": "Hola!",
     "intro": "Mi nombre es Samuel.<br>Soy un desarrollador web y móvil actualmente trabajo como programador independiente, me encuentro en Caracas, Venezuela.",
-    "whatILike": "Realmente me gusta hacer productos útiles e intuitivos con interfaces visuales cómodas para cualquier persona. Me gusta analizar el contexto del usuario para crear la mejor solución en cada proyecto. Tengo experiencia haciendo aplicaciones multiplataforma y trabajando como desarrollador front-end en algunos proyectos. También, he construido paginas web responsivas.",
-    "tec": "Aunque estoy muy familiarizado con los marcos de trabajo como React Native, React y Angular para el desarrollo de aplicaciones, la mayoría de los sitios web que he desarrollado fueron codificados principalmente a mano con HTML5, CCS3, JavaScript y PHP.",
-    "keepingUp": "Para mantenerme siempre actualizado, leo libros, leo documentación actualizada, veo conferencias y veo videos de Youtube para aprender sobre nuevas tecnologías.",
+    "whatILike": "Realmente me gusta hacer productos útiles e intuitivos con interfaces visuales cómodas para cualquier persona. Me gusta analizar el contexto del usuario para crear la mejor solución en cada proyecto. Tengo experiencia haciendo aplicaciones multiplataforma y trabajando como desarrollador fullstack en diversos proyectos. Construyendo paginas web responsivas y creando REST API.",
+    "tec": "Estoy muy familiarizado utilizando HTML5, CSS3, TypeScript y JavaScript. Del lado del Front-end he utilizado frameworks como Angular y React para paginas web, React Native para aplicaciones móviles y Electron para aplicaciones de escritorio. Por otra parte, en el Backend he trabajado mayormente utilizando PHP para la creación de servicios web REST API, aunque tambien tengo experiencia usando Java. He trabajado con bases de datos relacionales y bases de datos no relacionales. Siendo MySQL y Firebase los motores con los que mas he trabajado. Tambien, he trabajado con Realm, PostgreSQL y MongoDB.",
+    "keepingUp": "Para mantenerme siempre actualizado, realizo cursos, leo documentación actualizada, veo conferencias y veo videos de Youtube para aprender sobre nuevas tecnologías.",
     "contact": "Si tienes un proyecto, si estás interesado en una colaboración o simplemente quieres saludar, no dudes en enviarme un correo electrónico a contact@samueldear.com.",
     "spam": "También puedes saber más sobre mí aquí:"
   },
