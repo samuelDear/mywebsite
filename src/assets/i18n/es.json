@@ -77,10 +77,11 @@
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
   "knowlegde": {
-    "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3 y JavaScript. Y también he usado frameworks como Angular y React.",
-    "secondDsc":"Tengo experiencia usando ES6, ES7, ES8, ES9 y TypeScript. Además, cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
+    "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estandar ECMAScript desde la versión 6 hasta las versión 11.",
+    "secondDsc":"Ademas, he trabajado en el Front-end con frameworks como Angular y React con sus librerias como Material UI y Angular Material. Cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
     "thirdDsc":"Por otra parte, estoy familiarizado usando el framework React Native para crear aplicaciones móviles multiplataforma. También, Electron en el caso de aplicaciones para escritorio multiplataforma.",
-    "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase."
+    "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java para la creación de REST API, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase.",
+    "fiftDsc":"Adicionalmente, he trabajo bajo metodologías SCRUM y Kanban con herramientas como Trello, Jira, Slack y Confluence. Ademas, tengo conocimiento en herramientas visuales como Figma, Zeplin, MarvelApp y Mockflow."
   },
   "about":{
     "resume":"Soy un desarrollador web y móvil venezolano.<br>Realmente me gusta crear productos útiles e intuitivos con interfaces visuales cómodas para todos.",

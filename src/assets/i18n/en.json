@@ -74,10 +74,11 @@
     "feature5": "The system is in both English and Spanish, because the institution has different offices around the world, that is why this information must be contracted in both languages ​​for better use and a better user experience."
   },
   "knowlegde": {
-    "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3 and JavaScript. and also I have used frameworks such as Angular and React.",
-    "secondDsc":"I have experience using ES6, ES7, ES8, ES9 and TypeScript, also I have experience building responsive websites with a high-performance.",
+    "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
+    "secondDsc":"I have worked on the Front-end with frameworks like Angular and React with their libraries like Material UI and Angular Material, also I have experience building responsive websites with a high-performance.",
     "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps. and Also, Electron in the case of cross-platform desktop applications",
-    "quarterDsc":"However, In the back-end I have used PHP and Java, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase."
+    "quarterDsc":"However, In the back-end I have used PHP and Java for the creation of REST API, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase.",
+    "fiftDsc":"Additionally, I have worked under SCRUM and Kanban methodologies with tools such as Trello, Jira, Slack and Confluence. Also, I have knowledge of visual tools like Figma, Zeplin, MarvelApp and Mockflow."
   },
   "traumapp": {
     "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
