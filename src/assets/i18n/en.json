@@ -58,10 +58,12 @@
   "fjcintranet": {
     "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard.",
     "role": "Manager/Frontend/Backend",
-    "cmsresult": "Visual CMS Result",
+    "cmsresult": "CMS",
     "dsc": "Internal system for document management and findings processes",
     "intro": "The Fundación Jacinto Convit (FJC) is a non-profit institution that preserves, protects and continues the work, projects, values ​​and philosophy of the doctor, scientist and humanist Dr. Jacinto Convit.",
     "intro2": "Due to the large number of documents handled by the foundation, the main objective of the internal system that we achieved was to improve the management of large amounts of documents. Also, the foundation having the ISO 9001 license, must meet certain quality criteria, which is why the internal system has the management of these processes both for problem solving and for auditing them. The Fundacion Jacinto Convit has offices in Venezuela and the US, which is why the system was developed in two languages, English and Spanish.",
+    "intro3": "For the CMS, an administration was created for each existing module in the application, as well as managing the users of the system and their activity in it. In this system controller all the data found in the modules can be monitored. As well as having a controller for the calls made to the database if necessary.",
+    "intro4": "For the development of this CMS, a general template was used to visualize each module. While, for user management, there is a privilege system so that only predefined users can interact with specific modules.",
     "feature1title": "CMS",
     "feature1": "The system has a Content Management System to monitor the internal system, this has the possibility of viewing, creating, editing or deleting any type of information that the entered system has. Having in turn set aside to monitor user activities and limit them.",
     "feature2title": "High Performance",

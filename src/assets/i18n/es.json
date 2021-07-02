@@ -58,10 +58,12 @@
   "fjcintranet": {
     "resume": "Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001.",
     "role": "Lider/Frontend/Backend",
-    "cmsresult": "Resultado Visual CMS",
+    "cmsresult": "CMS",
     "dsc": "Sistema interno para procesos de gestión documental y de hallazgos",
     "intro": "La Fundación Jacinto Convit (FJC) es una institución sin fines de lucro, que preserva, protege y continúa la obra, proyectos, valores y filosofía del médico, científico y humanista Dr. Jacinto Convit.",
     "intro2": "Debido a la gran cantidad de documentos que maneja la fundación, el objetivo principal del sistema interno que logramos fue mejorar la gestión de grandes cantidades de documentos. También, la fundación al contar con la licencia de ISO 9001 debe cumplir con ciertos criterios de calidad, es por ello que el sistema interno cuenta con la gestión de estos procesos tanto para resolución de problemas como para auditorias de los mismos. La Fundación Jacinto Convit cuenta con sedes en Venezuela y en Estados Unidos, es por ello que el sistema fue desarrollado en dos lenguajes, inglés y español.",
+    "intro3": "Para el CMS se creó una administración para cada módulo existente en la aplicación, así como también administrar los usuarios del sistema y su actividad en ella. En este controlador del sistema puede monitorearse toda la data que se encuentra en los módulos. Así como también tener un controlador de las llamadas que se hacen a la base de datos en caso de ser necesario.",
+    "intro4": "Para el desarrollo de este CMS se usó una plantilla general para visualizar cada módulo. Mientras que, para el manejo de los usuarios, se cuenta con un sistema de privilegios para que solo usuarios predefinidos puedan interactuar con módulos específicos.",
     "feature1title": "CMS",
     "feature1": "El sistema cuenta con un Content Managment System para monitorear el sistema interno, este cuenta con la posibilidad de visualizar, crear, editar o eliminar cualquier tipo de información que tenga el sistema ingresado. Teniendo a su vez apartado para monitorear las actividades de los usuarios y limitarlas.",
     "feature2title": "Alto Rendimiento",
