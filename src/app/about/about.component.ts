@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 
+import { cleanFonts } from '../../main';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -13,15 +15,7 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit() {
-    let links = document.getElementsByClassName('font-link');
-    for(let i = links.length - 1; i >= 0; i--){
-      links[i].remove();
-    }
-
-    let styles = document.getElementsByClassName('font-style');
-    for(let i = styles.length - 1; i >= 0; i--){
-      styles[i].remove();
-    }
+    cleanFonts();
   }
 
   downloadCv(){

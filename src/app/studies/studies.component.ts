@@ -1,6 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 
+import { cleanFonts } from '../../main';
+
 @Component({
   selector: 'app-studies',
   templateUrl: './studies.component.html',
@@ -293,6 +295,7 @@ export class StudiesComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
+    cleanFonts();
     window.addEventListener('scroll', (e) => this.selectDot(e), true);
     let dot = document.getElementById('date2021');
     if (dot !== null) {

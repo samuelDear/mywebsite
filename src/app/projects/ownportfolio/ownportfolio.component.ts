@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { Router} from '@angular/router';
+
 import { navigationCustom } from '../../transition';
+import { fontLoader } from '../../../main';
 
 @Component({
   selector: 'app-ownportfolio',
@@ -42,7 +44,7 @@ export class OwnportfolioComponent implements OnInit {
   ngOnInit(): void {
     this.families.forEach((element, index) => {
       //console.log(element, index);
-      this.fontLoader(element);
+      fontLoader(element);
       let div = document.getElementById(`typographyName${index+1}`);
       if(div != undefined){
         div.innerHTML = element.name;
@@ -55,17 +57,7 @@ export class OwnportfolioComponent implements OnInit {
     });
   }
 
-  fontLoader = (param: any) => {
-    var headID = document.getElementsByTagName('head')[0];
-    var link = document.createElement('link');
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.id = "link" + param.name;
-
-    headID.appendChild(link);
-
-    link.href = param.link;
-  }
+  
 
   navigateUrl(code: string){
     //console.log(code);

@@ -5,6 +5,7 @@ import {TranslateService} from '@ngx-translate/core';
 import { navigationCustom } from '../transition';
 import { EmailService } from '../services/email/email.service';
 import { emailForm, responseEmail } from '../services/common/email';
+import { cleanFonts } from '../../main';
 
 @Component({
   selector: 'app-home',
@@ -127,15 +128,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    let links = document.getElementsByClassName('font-link');
-    for(let i = links.length - 1; i >= 0; i--){
-      links[i].remove();
-    }
-
-    let styles = document.getElementsByClassName('font-style');
-    for(let i = styles.length - 1; i >= 0; i--){
-      styles[i].remove();
-    }
+    cleanFonts();
     setTimeout(() => {
       const tree = this.router.parseUrl(this.router.url);
     if (tree.fragment) {

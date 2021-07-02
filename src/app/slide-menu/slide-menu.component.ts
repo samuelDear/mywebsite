@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import { navigationCustom } from '../transition';
 import { Router } from '@angular/router';
+
+import { cleanFonts } from '../../main';
+import { navigationCustom } from '../transition';
 
 @Component({
   selector: 'app-slide-menu',
@@ -25,15 +27,7 @@ export class SlideMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    let links = document.getElementsByClassName('font-link');
-    for(let i = links.length - 1; i >= 0; i--){
-      links[i].remove();
-    }
-
-    let styles = document.getElementsByClassName('font-style');
-    for(let i = styles.length - 1; i >= 0; i--){
-      styles[i].remove();
-    }
+    cleanFonts();
   }
 
   navigation(ruta: string) {

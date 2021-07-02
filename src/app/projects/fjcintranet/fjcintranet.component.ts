@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { Router} from '@angular/router';
+
 import { navigationCustom } from '../../transition';
+import { fontLoader } from '../../../main';
 
 @Component({
   selector: 'app-fjcintranet',
@@ -32,17 +34,7 @@ export class FjcintranetComponent implements OnInit {
       en: {
         resume: "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
       },
-    }/*,
-    {
-      code: '',
-      name: 'Traumapp',
-      es: {
-        resume: 'Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario para un uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes.'
-      },
-      en: {
-        resume: 'It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user for a daily use. Created to optimize a medical consultation and the management of patient information.'
-      }
-    }*/
+    }
   ];
 
   constructor(
@@ -53,7 +45,7 @@ export class FjcintranetComponent implements OnInit {
   ngOnInit(): void {
     this.families.forEach((element, index) => {
       //console.log(element, index);
-      this.fontLoader(element);
+      fontLoader(element);
       let div = document.getElementById(`typographyName${index+1}`);
       if(div != undefined){
         div.innerHTML = element.name;
@@ -64,18 +56,6 @@ export class FjcintranetComponent implements OnInit {
         div.style.fontFamily = element.name;
       };
     });
-  }
-
-  fontLoader = (param: any) => {
-    var headID = document.getElementsByTagName('head')[0];
-    var link = document.createElement('link');
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.id = "link" + param.name;
-
-    headID.appendChild(link);
-
-    link.href = param.link;
   }
 
   navigateUrl(code: string){
