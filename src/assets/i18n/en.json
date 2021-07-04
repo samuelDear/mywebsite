@@ -44,8 +44,6 @@
     "intro2": "In the Recreational Mathematics Olympics, a lot of schools enroll which enroll a lot of students, the main objective of the website is to allow schools to register and manage their participants, it also allows the organizers of the Olympics can have an optimal administration of all the information of the event, such as data from schools, students and exams.",
     "feature1title": "Responsive Web Design",
     "feature1": "The website can be viewed on any device and continue to behave efficiently on mobile devices.",
-    "feature2title": "CMS",
-    "feature2": "To manage the information of the schools, students and exams, a content management system was developed, in order that the information can be viewed, created, edited or deleted. It also has a privilege system so that there are different roles within the administration. Also, this allows manual corrections of the exams in case the system has not been able to identify which participant it belongs to.",
     "feature3title": "Use of SVG's",
     "feature3": "For the images within the web page, SVGs were used to improve loading times, as well as various elements were made with pure CSS.",
     "feature4title": "Exportation to Excel",

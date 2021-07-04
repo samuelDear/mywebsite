@@ -44,8 +44,6 @@
     "intro2": "En las Olimpiadas Recreativas de Matemáticas se inscriben una gran cantidad de colegios los cuales inscriben una gran cantidad de alumnos, el objetivo principal del sitio web, es el de permitirle a los colegios registrar y administrar sus participantes, también permite que los organizadores de las olimpiadas puedan tener una administración óptima de toda la información de el evento, como los datos de los colegios, alumnos y exámenes.",
     "feature1title": "Diseño Web Responsivo",
     "feature1": "La página web puede ser visualizada en cualquier dispositivo y seguir comportándose de manera eficiente en dispositivos móviles.",
-    "feature2title": "CMS",
-    "feature2": "Para administrar la información de los colegios, alumnos y exámenes, se desarrollo un Content Managment System, con la finalidad de que la información se pueda visualizar, crear, editar o borrar la información. También, cuenta con un sistema de privilegios para que existan diversos roles dentro de la administración. También, este permite hacer correcciones manuales de los exámenes en caso de que el sistema no haya podido identificar a que participante pertenece.",
     "feature3title": "Uso de SVGs",
     "feature3": "Para las imágenes dentro de la página web se usaron SVGs para mejorar los tiempos de carga, asi como también diversos elementos fueron hechos con CSS puro.",
     "feature4title": "Exportación a Excel",
