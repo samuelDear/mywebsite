@@ -24,6 +24,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
+import { PhoneScreenComponent } from './components/phone-screen/phone-screen.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -42,7 +43,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PageNotFoundComponent,
     FjcintranetComponent,
     OrmComponent,
-    OwnportfolioComponent
+    OwnportfolioComponent,
+    PhoneScreenComponent
   ],
   imports: [
     BrowserModule,
