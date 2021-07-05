@@ -331,7 +331,7 @@ html {
     display:flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
   
@@ -505,6 +505,16 @@ html {
     font-size: 1.1rem;
   }
 
+  .listDetails {
+    list-style: disc;
+    margin: 1em;
+  }
+  
+  .listDetails li {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
   input:-webkit-autofill,
   input:-webkit-autofill:hover, 
   input:-webkit-autofill:focus, 
@@ -527,9 +537,6 @@ html {
   
   @media only screen
   and (max-width : 1040px) {
-    .mobileBox{
-      width: 28%;
-    }
   }
   
   @media only screen
@@ -537,17 +544,10 @@ html {
     .mainBox{
       margin: 7rem 4rem;
     }
-  
-    .mobileBox{
-      width: 30%;
-    }
   }
   
   @media only screen
   and (max-width : 950px) {
-    .mobileBox{
-      width: 32%;
-    }
   
     .randomProjectsBoxPair{
       margin-left: 9rem;
@@ -569,7 +569,7 @@ html {
   and (max-width : 850px) {
   
     .mobileBox{
-      width: 32%;
+      width: 65%;
     }
   
     .mainBox{
@@ -608,11 +608,6 @@ html {
   
   @media only screen
   and (max-width : 800px) {
-  
-    .mobileBox{
-      width: 35%;
-    }
-  
     .randomProjectsBoxPair{
       margin-left: 0.5rem;
       margin-right: 0.5rem;
@@ -629,8 +624,7 @@ html {
   
     .mobileBox{
       width: 40%;
-      height: 500px;
-      margin: 20px 0px;
+      margin: 20px auto;
     }
   
     .boxMobile {
@@ -648,13 +642,14 @@ html {
   
   @media only screen
   and (max-width : 650px) {
-    .mobileBox{
-      width: 48%;
-    }
-  
     .rolAgencyDate {
       flex-direction: column;
       align-items: center;
+    }
+
+    .listDetails li {
+      margin-bottom: 5px;
+      font-size: 16px;
     }
   }
   
@@ -685,8 +680,27 @@ html {
   
   @media only screen
   and (max-width : 500px) {
+    .buttonTablet{
+      width: 20px;
+      height: 20px;
+    }
+
+    .soundTablet {
+      width: 15px;
+      height: 100px;
+    }
+
+    .cameraTablet {
+      width: 15px;
+      height: 15px;
+    }
+
     .mobileBox{
       width: 60%;
+    }
+
+    .screenTablet{
+      width: 100%;
     }
 
     .colorBox{
@@ -701,6 +715,10 @@ html {
   and (max-width : 450px) {
     .mobileBox{
       width: 70%;
+    }
+    .listDetails li {
+      margin-bottom: 5px;
+      font-size: 14px;
     }
   }
   
