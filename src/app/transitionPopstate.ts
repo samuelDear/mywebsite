@@ -21,15 +21,21 @@ export const startTx = () => {
     div.setAttribute("id", "waitScreen");
 
     const waitScreen: any = document.getElementById("waitScreen");
-    waitScreen.style.width = '100%';
+    if (waitScreen !== null) {
+        waitScreen.style.width = '100%';
+    }
 }
 
 export const endTx = () => {
     const waitScreen: any = document.getElementById("waitScreen");
-    waitScreen.style.width = '0%';
+    if (waitScreen !== null) {
+        waitScreen.style.width = '0%';
+    }
     setTimeout(() => {
         document.body.style.overflow = 'auto';
         document.body.style.pointerEvents = 'auto';
-        document.body.removeChild(waitScreen);
+        if (waitScreen !== null) {
+            document.body.removeChild(waitScreen);
+        }
     }, 1200);   
 }
