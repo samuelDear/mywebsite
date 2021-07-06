@@ -80,6 +80,11 @@
     "feature5title": "Multi-language",
     "feature5": "The system is in both English and Spanish, because the institution has different offices around the world, that is why this information must be contracted in both languages ​​for better use and a better user experience."
   },
+  "afxtrade": {
+    "dsc": "Venezuelan cryptocurrency exchange platform",
+    "role": "Fullstack",
+    "integrationsTitle": "Integrations"
+  },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
     "secondDsc":"I have worked on the Front-end with frameworks like Angular and React with their libraries like Material UI and Angular Material, also I have experience building responsive websites with a high-performance.",

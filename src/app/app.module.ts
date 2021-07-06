@@ -25,6 +25,7 @@ import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.compone
 import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
 import { PhoneScreenComponent } from './components/phone-screen/phone-screen.component';
+import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -44,7 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FjcintranetComponent,
     OrmComponent,
     OwnportfolioComponent,
-    PhoneScreenComponent
+    PhoneScreenComponent,
+    AfxtradeComponent
   ],
   imports: [
     BrowserModule,

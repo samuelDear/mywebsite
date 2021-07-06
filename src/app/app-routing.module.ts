@@ -8,6 +8,7 @@ import { StudiesComponent } from './studies/studies.component';
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
+import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'FJCIntranet', component: FjcintranetComponent, pathMatch: 'full'},
   { path: 'portfolio', component: OwnportfolioComponent, pathMatch: 'full'},
   { path: 'ormv', component: OrmComponent, pathMatch: 'full'},
+  { path: 'afxtrade', component: AfxtradeComponent, pathMatch: 'full'},
   { path: '**', redirectTo: ''}
 
   //{ path: '**', component: PageNotFoundComponent }

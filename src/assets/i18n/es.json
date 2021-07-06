@@ -80,6 +80,15 @@
     "feature5title": "Multi-idioma",
     "feature5": "El sistema se encuentra tanto en inglés como en español, debido a que la institución cuenta con diferentes sedes en el mundo, es por ello que esta información debe contrarse en ambos idiomas para un mejor uso y una mejor experiencia de usuario."
   },
+  "afxtrade": {
+    "dsc": "Plataforma Venezolana de intercambio de criptomonedas",
+    "role": "Fullstack",
+    "intro1": "AFX es una plataforma para intercambios de activos digitales en Venezuela, con el objetivo de aportar soluciones innovadoras, apoyados de una plataforma tecnológica moderna, robusta y fácil de usar, integrando el mundo financiero y digital bajo los más altos estándares de calidad, transparencia y seguridad.",
+    "intro2": "AFX Trade nace de la necesidad de un Exchange de criptomonedas, en el cual se puedan usar las criptomonedas con más demanda como lo es el Bitcoin, Tether, Dash, Ethereum y muchas más. Tambiénm teniendo integración con monedas FIAT como el Dolar, Bolívares y Euros. Con una interfaz moderna y cómoda. Así como también con todas las funcionalidades que implican manejar activos monetarios como realizar depósitos, transferencias, retiros e intercambios.",
+    "integrationsTitle": "Integraciones",
+    "integrationsDsc": "Las criptomonedas y monedas FIAT utilizadas en AFX Trade tienen un manejo único, ya que, en el caso de las criptomonedas se integraron con las blockchains de cada una de manera directa, para ello se crearon los nodos requeridos para cada criptomoneda. Ademas, cada usuario cuenta con una dirección única a la cual puede realizar fondeos o retiros en cualquier momento sin necesidad de terceros. Así como también, cada una de estas integración tiene un manejo diferente ya que cada una interactúa con un nodo distinto. Por otra parte, en el caso de las monedas FIAT como el Bolivar puedes realizar depósitos y retiros de manera tradicional. Es decir, que tu reportes el deposito o retiro y un operador se encargue de realizar la acción y validarla. Aunque, puedes hacer movimientos de manera rápida utilizando pago móvil. Esta integración permite que puedas realizar movimientos sin necesidad de terceros. AFX Trade también cuenta con mensajería por interna, SMS y correo. Así como también con doble autentificación.",
+    "i": ""
+  },
   "traumapp": {
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
