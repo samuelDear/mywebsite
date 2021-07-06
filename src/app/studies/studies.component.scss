@@ -1,7 +1,6 @@
-.mainBox{
-  margin: 8rem 10rem 0px 10rem;
+.mainBoxStudies{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .slideDates{
@@ -17,7 +16,7 @@
 }
 
 .studiesInfo{
-  width: 80%;
+  margin: 8rem 10rem 0px 10rem;
 }
 
 .stickBegin {
@@ -266,6 +265,10 @@ and (max-width : 500px) {
 
   .ballOdd {
     margin-right: -22px;
+  }
+
+  .studiesInfo{
+    margin: 8rem 6rem 0px 6rem;
   }
 
 }
