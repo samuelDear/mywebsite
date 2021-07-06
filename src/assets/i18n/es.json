@@ -39,7 +39,7 @@
   "orm": {
     "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas.",
     "dsc": "Pagina Web para la administración de las Olimpiadas Recreativas de Matemáticas de Venezuela",
-    "role": "Frontend/Backend",
+    "role": "Fullstack",
     "intro": "Las Olimpíadas Recreativas de Matemáticas de Venezuela es un evento con el objetivo de Desarrollar estrategias para la enseñanza de las matemáticas, mejorar el nivel académico y estimular en los niños el uso de sus capacidades intelectuales: comprensión, capacidad de síntesis y juicio crítico.",
     "intro2": "En las Olimpiadas Recreativas de Matemáticas se inscriben una gran cantidad de colegios los cuales inscriben una gran cantidad de alumnos, el objetivo principal del sitio web, es el de permitirle a los colegios registrar y administrar sus participantes, también permite que los organizadores de las olimpiadas puedan tener una administración óptima de toda la información de el evento, como los datos de los colegios, alumnos y exámenes.",
     "cmstitle": "CMS",
@@ -62,7 +62,7 @@
   },
   "fjcintranet": {
     "resume": "Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001.",
-    "role": "Lider/Frontend/Backend",
+    "role": "Lider/Fullstack",
     "cmsresult": "CMS",
     "dsc": "Sistema interno para procesos de gestión documental y de hallazgos",
     "intro": "La Fundación Jacinto Convit (FJC) es una institución sin fines de lucro, que preserva, protege y continúa la obra, proyectos, valores y filosofía del médico, científico y humanista Dr. Jacinto Convit.",

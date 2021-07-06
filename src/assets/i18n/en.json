@@ -39,7 +39,7 @@
   "orm": {
     "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics.",
     "dsc": "Web page for the administration of the Recreational Mathematics Olympics of Venezuela",
-    "role": "Frontend/Backend",
+    "role": "Fullstack",
     "intro": "The Recreational Mathematics Olympics of Venezuela is an event with the objective of developing strategies for the teaching of Mathematics, improve the academic level and stimulate in children the use of their intellectual capacities: comprehension, synthesis capacity and critical judgment.",
     "intro2": "In the Recreational Mathematics Olympics, a lot of schools enroll which enroll a lot of students, the main objective of the website is to allow schools to register and manage their participants, it also allows the organizers of the Olympics can have an optimal administration of all the information of the event, such as data from schools, students and exams.",
     "cmstitle": "CMS",
@@ -62,7 +62,7 @@
   },
   "fjcintranet": {
     "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard.",
-    "role": "Manager/Frontend/Backend",
+    "role": "Manager/Fullstack",
     "cmsresult": "CMS",
     "dsc": "Internal system for document management and findings processes",
     "intro": "The Fundación Jacinto Convit (FJC) is a non-profit institution that preserves, protects and continues the work, projects, values ​​and philosophy of the doctor, scientist and humanist Dr. Jacinto Convit.",
