@@ -378,57 +378,6 @@ html {
     max-width: 20%;
     flex-basis: 20%;
   }
-
-  .criptoIconBox {
-    margin: 20px;
-    display: flex;
-    align-items: center; 
-    flex-direction: column;
-    transition: all 0.5s ease;
-    transform: scale(1);
-    flex-grow: 0;
-    max-width: 20%;
-    flex-basis: 20%;
-  }
-
-  .tooltipBox {
-    position: relative;
-    width: 100%;
-  }
-
-  .tooltiptx {
-    visibility: hidden;
-    background-color: #CCC;
-    color: #333;
-    text-align: center;
-    border-radius: 18px;
-    padding: 10px;
-    left: -5%;
-    bottom: 105%;
-    position: absolute;
-    z-index: 15;
-    width: 115%;
-  }
-
-  .tooltipBox:hover .tooltiptx {
-    visibility: visible;
-  }
-
-  .criptoIcon {
-    max-height: 150px;
-    margin-bottom: 20px;
-  }
-
-  .criptoIconDisabled {
-    opacity: 0.5;
-  }
-
-  .criptoName {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-  }
   
   .colorBox:hover{
     transform: scale(1.2) perspective(1px);
@@ -439,7 +388,7 @@ html {
     width: 100%;
   }
   
-  .colorMain, .criptoMain {
+  .colorMain {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -614,13 +563,6 @@ html {
       max-width: 40%;
       flex-basis: 40%;
     }
-
-    .criptoIconBox {
-      margin: 10px 20px;
-      flex-grow: 0;
-      max-width: 25%;
-      flex-basis: 25%;
-    }
   }
   
   @media only screen
@@ -733,14 +675,6 @@ html {
       border-top: 20px solid transparent;
       border-bottom: 20px solid transparent;
       border-left: 20px solid #FFF;
-    }
-
-    .criptoIconBox{
-      margin: 12px 4%;
-    }
-
-    .criptoName {
-      font-size: 16px;
     }
   }
   
