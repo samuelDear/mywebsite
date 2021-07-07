@@ -48,11 +48,11 @@ export class AfxtradeComponent implements OnInit {
     createObserver(element: HTMLElement): void {
         let options = {
             threshold: threshold,
-          }
+        }
       
-          const observer = new IntersectionObserver(this.handleIntersection, options);
+        const observer = new IntersectionObserver(this.handleIntersection, options);
       
-          observer.observe(element);
+        observer.observe(element);
     }
 
     handleIntersection(entries: any): void{

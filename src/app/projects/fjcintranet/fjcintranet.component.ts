@@ -5,11 +5,11 @@ import { Router} from '@angular/router';
 import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 
+const threshold = 0.1;
 @Component({
   selector: 'app-fjcintranet',
   templateUrl: './fjcintranet.component.html',
-  styles: [
-  ]
+  styleUrls: ['./fjcintranet.component.scss']
 })
 export class FjcintranetComponent implements OnInit {
   families = [{name: 'Oswald', link: `https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap`},
@@ -43,20 +43,44 @@ export class FjcintranetComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.families.forEach((element, index) => {
-      //console.log(element, index);
-      fontLoader(element);
-      let div = document.getElementById(`typographyName${index+1}`);
-      if(div != undefined){
-        div.innerHTML = element.name;
-        div.style.fontFamily = element.name;
-      };
+        const logoJacintoConvit = document.getElementById('logoJacintoConvit');
+        logoJacintoConvit !== null && this.createObserver(logoJacintoConvit);
 
-      if(div != undefined){
-        div.style.fontFamily = element.name;
-      };
-    });
-  }
+        this.families.forEach((element, index) => {
+        //console.log(element, index);
+        fontLoader(element);
+        let div = document.getElementById(`typographyName${index+1}`);
+        if(div != undefined){
+            div.innerHTML = element.name;
+            div.style.fontFamily = element.name;
+        };
+
+        if(div != undefined){
+            div.style.fontFamily = element.name;
+        };
+        });
+    }
+
+    createObserver(element: HTMLElement): void {
+        let options = {
+            threshold: threshold,
+        }
+    
+        const observer = new IntersectionObserver(this.handleIntersection, options);
+    
+        observer.observe(element);
+    }
+
+  handleIntersection(entries: any): void{
+    const entry = entries[0];
+    console.log(entries);
+    const isVisible = entry.intersectionRatio >= threshold;
+    if (isVisible) {
+        entry.target.classList.remove('showLogo');
+    } else if(entry.target.offsetTop > window.scrollY){
+        entry.target.classList.add('showLogo');
+    }
+}
 
   navigateUrl(code: string){
     //console.log(code);
