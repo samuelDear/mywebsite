@@ -1,3 +1,7 @@
+.featureMainBox {
+    overflow-x: hidden;
+}
+
 .featureMainBoxRight {
     display: flex;
     flex-direction: row;
@@ -6,6 +10,10 @@
 .featureMainBoxLeft {
     display: flex;
     flex-direction: row;
+}
+
+.featureMainBoxLeft, .featureMainBoxRight {
+    transition: 1s;
 }
 
 .featureItem {
@@ -115,6 +123,16 @@
 
 .borderImages {
     border: 1.5px solid #333;
+}
+
+.featureShowRight {
+    opacity: 0;
+    transform: translateX(60vw);
+}
+
+.featureShowLeft {
+    opacity: 0;
+    transform: translateX(-60vw);
 }
 
 @media only screen
