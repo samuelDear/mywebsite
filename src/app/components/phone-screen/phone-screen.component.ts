@@ -6,6 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PhoneScreenComponent implements OnInit {
   @Input() urlimg = '';
+  @Input() alt = '';
+  @Input() title = '';
 
   constructor() { }
 
