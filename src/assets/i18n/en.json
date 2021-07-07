@@ -105,7 +105,19 @@
     "exchangeDsc": "When making an exchange we have two options, through a limit or market order. Limit orders allow you to place buy and sell orders the amount you want at the price you want under the market standard. Whereas, market orders are executed immediately by buying the amount you want at the market price. Both orders can be partially completed, in the case of the market if there is no liquidity the order is completed up to the maximum liquidity, while the limit can be partially completed depending on the amount that the market orders buy or sell. The exchanges generate exit and entry movements for the market order, limit orders and generated commissions, these movements are saved in detail allowing users to know exactly how an exchange is executed.",
     "cmstitle": "CMS",
     "cmsintro1": "The CMS created for AFX Trade contains everything you need for autonomous site administration, as well as adding FIAT coins with traditional deposit and withdrawal methods. Creation of exchange pairs, as well as the commissions and limits of each user. This CMS has a system of roles and privileges for the operators who use it, either to validate user information, validate operations, monitor exchanges, customer service, and also has an audit for both the client and the client side. CMS to be aware of the actions that are carried out in the client and in the CMS.",
-    "cmsintro2": "It has report generation in both Excel and PDF generated with PHP. These reports can be generated whenever they are needed."
+    "cmsintro2": "It has report generation in both Excel and PDF generated with PHP. These reports can be generated whenever they are needed.",
+    "featuretitle1": "Export to Excel and PDF",
+    "feature1": "From the CMS, automatic reports can be generated in PDF and Excel lists of the required data can also be generated. These documents are generated from the backend with PHP.",
+    "featuretitle2": "Optimized endpoints",
+    "feature2": "The endpoints created for AFX Trade have Queries optimization, so that heavy data queries such as graphs, orders, movements and exchanges will be executed quickly so that the user experience is fluid and pleasant.",
+    "featuretitle3": "Secure data insertion",
+    "feature3": "In PHP there are transactions, which allow you to activate a series of processes where, if any process fails, no process of the series is executed. These transactions allow there to be no discrepancies in the data or incomplete insertions.",
+    "featuretitle4": "Roles and privileges system",
+    "feature4": "In the CMS, there are roles and privileges that allow actions within it, differing with modules and with different actions in each one. While on the client side, there is a system of levels and roles that make the commissions and limits of the user different.",
+    "featuretitle5": "Unique integrations",
+    "feature5": "As explained in the integrations section, each cryptocurrency was integrated in a unique way, no global libraries or global nodes were used for cryptocurrencies, but each one is treated individually. As with transaction processes such as Mobile Payment.",
+    "featuretitle6": "CRON's creation",
+    "feature6": "To maintain a clean database and to validate movements and exchanges. Different processes were created to validate incoming transactions, expired wallet addresses, incomplete transactions, and many more. They are all parts of different CRONs that run for a certain time."
   },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
