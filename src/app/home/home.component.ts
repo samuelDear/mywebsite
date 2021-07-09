@@ -47,6 +47,16 @@ export class HomeComponent implements OnInit, OnDestroy {
         resume: "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
       },
       route: '/portfolio'
+    },
+    {
+      name: 'AFX Trade',
+      es: {
+        resume: 'Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda.'
+      },
+      en: {
+        resume: 'It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency.'
+      },
+      route: '/afxtrade'
     }
   ];
 
