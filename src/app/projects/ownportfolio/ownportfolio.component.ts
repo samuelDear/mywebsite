@@ -53,22 +53,18 @@ export class OwnportfolioComponent implements OnInit {
 
   ngOnInit(): void {
     window.scroll(0,0);
-    this.families.forEach((element, index) => {
-      //console.log(element, index);
-      fontLoader(element);
-      let div = document.getElementById(`typographyName${index+1}`);
-      if(div != undefined){
-        div.innerHTML = element.name;
-        div.style.fontFamily = element.name;
-      };
-
-      if(div != undefined){
-        div.style.fontFamily = element.name;
-      };
-    });
+    setTimeout(() => {
+      this.families.forEach((element, index) => {
+        //console.log(element, index);
+        fontLoader(element);
+        let div = document.getElementById(`typographyName${index+1}`);
+        if(div !== null){
+          div.innerHTML = element.name;
+          div.style.fontFamily = element.name;
+        };
+      });
+    }, 100);
   }
-
-  
 
   navigateUrl(code: string){
     navigationCustom( () => this.router.navigate([code]) ); 

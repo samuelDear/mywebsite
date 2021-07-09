@@ -67,19 +67,18 @@ export class AfxtradeComponent implements OnInit {
         exchangeBox !== null && this.createObserver(exchangeBox);
         
 
-        this.families.forEach((element, index) => {
-        //console.log(element, index);
-        fontLoader(element);
-        let div = document.getElementById(`typographyName${index+1}`);
-        if(div != undefined){
-            div.innerHTML = element.name;
-            div.style.fontFamily = element.name;
-        };
-
-        if(div != undefined){
-            div.style.fontFamily = element.name;
-        };
-        });
+        setTimeout(() => {
+          this.families.forEach((element, index) => {
+            //console.log(element, index);
+            fontLoader(element);
+            let div = document.getElementById(`typographyName${index+1}`);
+            if(div !== null){
+              div.innerHTML = element.name;
+              div.style.fontFamily = element.name;
+            };
+          });
+        }, 100);
+        
     }
 
     createObserver(element: HTMLElement): void {
@@ -94,7 +93,6 @@ export class AfxtradeComponent implements OnInit {
 
     handleIntersection(entries: any): void{
         const entry = entries[0];
-        console.log(entries);
         const isVisible = entry.intersectionRatio >= threshold;
         if (isVisible) {
             entry.target.classList.remove(

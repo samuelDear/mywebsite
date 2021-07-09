@@ -54,22 +54,21 @@ export class FjcintranetComponent implements OnInit {
 
   ngOnInit(): void {
     window.scroll(0,0);
-        const logoJacintoConvit = document.getElementById('logoJacintoConvit');
-        logoJacintoConvit !== null && this.createObserver(logoJacintoConvit);
+    const logoJacintoConvit = document.getElementById('logoJacintoConvit');
+    logoJacintoConvit !== null && this.createObserver(logoJacintoConvit);
 
-        this.families.forEach((element, index) => {
+    setTimeout(() => {
+      this.families.forEach((element, index) => {
+        //console.log(element, index);
         fontLoader(element);
         let div = document.getElementById(`typographyName${index+1}`);
-        if(div != undefined){
-            div.innerHTML = element.name;
-            div.style.fontFamily = element.name;
+        if(div !== null){
+          div.innerHTML = element.name;
+          div.style.fontFamily = element.name;
         };
-
-        if(div != undefined){
-            div.style.fontFamily = element.name;
-        };
-        });
-    }
+      });
+    }, 100);
+  }
 
     createObserver(element: HTMLElement): void {
         let options = {
@@ -83,7 +82,6 @@ export class FjcintranetComponent implements OnInit {
 
   handleIntersection(entries: any): void{
     const entry = entries[0];
-    console.log(entries);
     const isVisible = entry.intersectionRatio >= threshold;
     if (isVisible) {
         entry.target.classList.remove('showLogo');

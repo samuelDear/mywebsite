@@ -14,10 +14,9 @@ export const fontLoader = (param: any) => {
   link.type = 'text/css';
   link.rel = 'stylesheet';
   link.id = "link" + param.name;
+  link.href = param.link;
 
   headID.appendChild(link);
-
-  link.href = param.link;
 };
 
 export const cleanFonts = () => {
