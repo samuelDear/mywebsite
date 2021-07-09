@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
+
 import { navigationCustom } from '../transition';
 import { EmailService } from '../services/email/email.service';
 import { emailForm, responseEmail } from '../services/common/email';
@@ -46,37 +47,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         resume: "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
       },
       route: '/portfolio'
-    }/*,
-    {
-      name: 'Traumapp',
-      es: {
-        resume: 'Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario para un uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes.'
-      },
-      en: {
-        resume: 'It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user for a daily use. Created to optimize a medical consultation and the management of patient information.'
-      },
-      route: ''
-    },
-    {
-      name: 'Traumapp for Desktop',
-      es: {
-        resume: 'Es una aplicacion de escritorio multiplataforma creada con Angular y Electron. Esta fue creada para que los usuarios de Traumapp, pudieran tener accesso a ella desde una PC.'
-      },
-      en: {
-        resume: 'It is a cross-platform desktop application created with Angular and Electron. This was created so that Traumapp users could access it from a PC.'
-      },
-      route: ''
-    },
-    {
-      name: 'AFX Exchange',
-      es: {
-        resume: 'RESUMEN WEON'
-      },
-      en: {
-        resume: 'THIS IS A RESUME'
-      },
-      route: ''
-    }*/
+    }
   ];
 
   contactForm = this.formBuilder.group({
@@ -84,7 +55,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     email: ['', [Validators.required, Validators.email]],
     msg: ['',Validators.required]
   });
-
 
   constructor(
     private router: Router,
@@ -96,20 +66,39 @@ export class HomeComponent implements OnInit, OnDestroy {
     window.addEventListener('scroll', (e) => this.animatePolygon(e), true);
   }
 
+  ngOnInit() {
+    cleanFonts();
+    setTimeout(() => {
+      const tree = this.router.parseUrl(this.router.url);
+      if (tree.fragment) {
+        const element = document.getElementById(tree.fragment);
+        if (element) { window.scrollTo(0, (element.offsetTop )); }
+      }
+    },100);
+
+    let imgTramp = document.getElementById('imgTrap');
+    if (imgTramp != null) {
+      imgTramp.addEventListener("load",function(){
+        this.remove();
+      });
+    }
+  }
+
+  ngOnDestroy(): void {
+    window.removeEventListener('scroll', (e) => this.animatePolygon(e), true);
+  }
+
   animatePolygon = (e: any) => {
     const personalIcon = document.getElementById('personalIcon');
     const svgBox = document.getElementById('personalIconSvg');
     const polygon1 = document.getElementById('polygonMain');
     const slogo = document.getElementById('slogo');
     if(personalIcon != null && personalIcon != undefined && svgBox != null && polygon1 != null && slogo != null){
-      let screenPos = (window.scrollY + window.innerHeight);
-
-      let elOffset = personalIcon.offsetTop;
-
+      let screenPos = window.scrollY + window.innerHeight;
       svgBox.style.transition = '3s';
 
-      if(screenPos > (elOffset)){
-        let definitiveHeight = ((screenPos - elOffset) * 0.003);
+      if(screenPos > personalIcon.offsetTop){
+        let definitiveHeight = ((screenPos - personalIcon.offsetTop) * 0.003);
         polygon1.setAttribute("transform",`matrix(${definitiveHeight > 1 ? 1 : definitiveHeight}, 0, 0, ${definitiveHeight > 1 ? 1 : definitiveHeight}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)})`);
         slogo.setAttribute("transform",`matrix(${definitiveHeight > 1 ? 1 : definitiveHeight}, 0, 0, ${definitiveHeight > 1 ? 1 : definitiveHeight}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)}, ${definitiveHeight > 1 ? 0 : 100 -((definitiveHeight * 100) / 1)})`);
         
@@ -127,37 +116,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
-  ngOnInit() {
-    cleanFonts();
-    setTimeout(() => {
-      const tree = this.router.parseUrl(this.router.url);
-    if (tree.fragment) {
-      const element = document.getElementById(tree.fragment);
-      //console.log(element.offsetTop);
-      if (element) { window.scrollTo(0, (element.offsetTop )); }
-    }
-    },100);
-
-    let imgTramp = document.getElementById('imgTrap');
-    if (imgTramp != null) {
-      imgTramp.addEventListener("load",function(){
-        //console.log("ya me cargue");
-        this.remove();
-      });
-    }
-  }
-
-  ngOnDestroy(): void {
-    window.removeEventListener('scroll', (e) => this.animatePolygon(e), true);
-  }
-
   navigation(ruta: string): void {
     navigationCustom( () => this.router.navigateByUrl(ruta) ); 
   }
 
   onSubmit(): void {
     if (this.contactForm.valid && !this.emailSended && !this.isLoadingBtn) {
-      console.log(this.contactForm.value);
       this.isLoadingBtn = true;
       const values = this.contactForm.value;
       const params: emailForm = {
@@ -168,12 +132,10 @@ export class HomeComponent implements OnInit, OnDestroy {
 
       this.emailService.sendContact(params).subscribe(
         (rsp: responseEmail) => {
-          console.log(rsp);
           this.emailSended = true;
           this.isLoadingBtn = false;
         },
         (error: any) => {
-          console.log(error);
           this.isLoadingBtn = false;
         }
       )

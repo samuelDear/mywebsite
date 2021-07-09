@@ -42,6 +42,7 @@ export class OwnportfolioComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    window.scroll(0,0);
     this.families.forEach((element, index) => {
       //console.log(element, index);
       fontLoader(element);
@@ -60,7 +61,6 @@ export class OwnportfolioComponent implements OnInit {
   
 
   navigateUrl(code: string){
-    //console.log(code);
     navigationCustom( () => this.router.navigate([code]) ); 
   }
 

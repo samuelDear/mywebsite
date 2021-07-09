@@ -42,7 +42,6 @@ export class HeaderComponent implements OnInit {
             if(!button.classList.contains('bt-menu-open') && this.router.url == '/menu'){
               button.classList.toggle('bt-menu-open');
             }
-            //console.log(button.classList.contains('bt-menu-open'));
           }
         }, 10);
         

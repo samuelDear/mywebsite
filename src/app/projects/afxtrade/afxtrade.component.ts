@@ -19,6 +19,7 @@ export class AfxtradeComponent implements OnInit {
   ) { }
 
     ngOnInit(): void {
+        window.scroll(0,0);
         const segurityBox = document.getElementById('segurityBox');
         const comBox = document.getElementById('comBox');
         const movementsBox = document.getElementById('movementsBox');

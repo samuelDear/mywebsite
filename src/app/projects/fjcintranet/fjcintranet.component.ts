@@ -43,11 +43,11 @@ export class FjcintranetComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    window.scroll(0,0);
         const logoJacintoConvit = document.getElementById('logoJacintoConvit');
         logoJacintoConvit !== null && this.createObserver(logoJacintoConvit);
 
         this.families.forEach((element, index) => {
-        //console.log(element, index);
         fontLoader(element);
         let div = document.getElementById(`typographyName${index+1}`);
         if(div != undefined){
@@ -83,7 +83,6 @@ export class FjcintranetComponent implements OnInit {
 }
 
   navigateUrl(code: string){
-    //console.log(code);
     navigationCustom( () => this.router.navigate([code]) ); 
   }
 }
