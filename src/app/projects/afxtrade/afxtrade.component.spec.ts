@@ -8,9 +8,8 @@ describe('AfxtradeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AfxtradeComponent ]
-    })
-    .compileComponents();
+      declarations: [AfxtradeComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

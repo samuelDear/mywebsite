@@ -4,745 +4,713 @@
 @import 'tailwindcss/utilities';
 
 html {
-    background-color: #111;
-    font-family: 'Signika', sans-serif;
-  }
+  background-color: #111;
+  font-family: 'Signika', sans-serif;
+}
   
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
   
-  body, html {
-    color: #FFF;
-    height: 100%;
-  }
+body, html {
+  color: #FFF;
+  height: 100%;
+}
   
-  button:focus, select:focus {
-    outline: 0;
-  }
+button:focus, select:focus {
+  outline: 0;
+}
+
+.codeLine{
+  font-family: monospace;
+  font-size: 150%;
+}
   
-  .codeLine{
-    font-family: monospace;
-    font-size: 150%;
-  }
+.tag, .linkProject, .titleFeature {
+  color: #4ae3cd;
+}
   
-  .tag, .linkProject, .titleFeature {
+.controlStructure {
+  color: #db2696;
+}
+  
+.sentence {
+  color: #38ca13;
+}
+  
+.orderFlex {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.socialMedia {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+}
+  
+.boxProject {
+  border-color: #4ae3cd;
+}
+  
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg,#4ae3cd 0%, #db2696 50%, #38ca13 100%);
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, rgba(68,176,160,1) 0%, rgba(163,52,121,1) 50%, rgba(69,162,46,1) 100%);
+}
+  
+textarea {
+  resize: none;
+}
+
+@media only screen and (max-width : 1224px) {
+  .socialMedia {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+@media only screen and (max-width : 1024px) {
+  .socialMedia {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width : 950px) {
+  .socialMedia {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width : 700px) {
+  .socialMedia {
+    height: 25px;
+    width: 25px;
+  }
+}
+  
+.loadScreen {
+  width: 0px;
+  height: 100%;
+  z-index: 9999999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transition: 1.8s;
+}
+  
+.name {
+  font-size: 180%;
+  font-weight: 300;
+  font-family: 'Signika', sans-serif;
+  animation: volcanName 4s ease-out infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+}
+
+@keyframes volcanName{
+  0%{
     color: #4ae3cd;
   }
-  
-  .controlStructure {
+  25%{
     color: #db2696;
   }
-  
-  .sentence {
+  50%{
     color: #38ca13;
   }
-  
-  .orderFlex {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  75%{
+    color: #db2696;
   }
-  
-  .socialMedia {
-    height: 50px;
-    width: 50px;
-    align-self: center;
+  100%{
+    color: #4ae3cd;
   }
+}
   
-  .boxProject {
-    border-color: #4ae3cd;
-  }
+.loadingLine{
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.3;
+  animation: expandLoading 4s ease-out infinite;
+}
   
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #555;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg,#4ae3cd 0%, #db2696 50%, #38ca13 100%);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(0deg, rgba(68,176,160,1) 0%, rgba(163,52,121,1) 50%, rgba(69,162,46,1) 100%);
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  /* Desktops and laptops ----------- */
-  @media only screen
-  and (max-width : 1224px) {
-    .socialMedia {
-      height: 45px;
-      width: 45px;
-    }
-  }
-  
-  /* Desktops and laptops ----------- */
-  @media only screen
-  and (max-width : 1024px) {
-    .socialMedia {
-      height: 40px;
-      width: 40px;
-    }
-  }
-  
-  /* Desktops and laptops ----------- */
-  @media only screen
-  and (max-width : 950px) {
-    .socialMedia {
-      height: 30px;
-      width: 30px;
-    }
-  }
-  
-  /* Desktops and laptops ----------- */
-  @media only screen
-  and (max-width : 700px) {
-    .socialMedia {
-      height: 25px;
-      width: 25px;
-    }
-  }
-  
-  .loadScreen {
-    width: 0px;
-    height: 100%;
-    z-index: 9999999;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    transition: 1.8s;
-    /*background-image: url("assets/images/pat-dark.jpg");*/
-  }
-  
-  .name {
-    font-size: 180%;
-    font-weight: 300;
-    font-family: 'Signika', sans-serif;
-    animation: volcanName 4s ease-out infinite;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 50%;
-    text-align: center;
-  }
-  
-  @keyframes volcanName{
-    0%{
-      color: #4ae3cd;
-    }
-    25%{
-      color: #db2696;
-    }
-    50%{
-      color: #38ca13;
-    }
-    75%{
-      color: #db2696;
-    }
-    100%{
-      color: #4ae3cd;
-    }
-  }
-  
-  .loadingLine{
+@keyframes expandLoading{
+  0%{
     width: 0%;
-    height: 1px;
-    background-color: #fff;
-    opacity: 0.3;
-    animation: expandLoading 4s ease-out infinite;
   }
-  
-  
-  @keyframes expandLoading{
-    0%{
-      width: 0%;
-    }
-    5%{
-      width: 2%
-    }
-    10%{
-      width: 4%;
-    }
-    15%{
-      width: 6%
-    }
-    20%{
-      witdh: 8%;
-    }
-    25%{
-      width: 10%;
-    }
-    30%{
-      width: 12%;
-    }
-    35%{
-      width: 14%;
-    }
-    40%{
-      width: 16%;
-    }
-    45%{
-      width: 18%;
-    }
-    50%{
-      width: 20%;
-    }
-    55%{
-      width: 18%;
-    }
-    60%{
-      width: 16%;
-    }
-    65%{
-      width: 14%;
-    }
-    70%{
-      width: 12%;
-    }
-    75%{
-      width: 10%;
-    }
-    80%{
-      width: 8%;
-    }
-    85%{
-      width: 6%;
-    }
-    90%{
-      width: 4%;
-    }
-    95%{
-      width: 2%;
-    }
-    100%{
-      width: 0%;
-    }
+  5%{
+    width: 2%
   }
+  10%{
+    width: 4%;
+  }
+  15%{
+    width: 6%
+  }
+  20%{
+    width: 8%;
+  }
+  25%{
+    width: 10%;
+  }
+  30%{
+    width: 12%;
+  }
+  35%{
+    width: 14%;
+  }
+  40%{
+    width: 16%;
+  }
+  45%{
+    width: 18%;
+  }
+  50%{
+    width: 20%;
+  }
+  55%{
+    width: 18%;
+  }
+  60%{
+    width: 16%;
+  }
+  65%{
+    width: 14%;
+  }
+  70%{
+    width: 12%;
+  }
+  75%{
+    width: 10%;
+  }
+  80%{
+    width: 8%;
+  }
+  85%{
+    width: 6%;
+  }
+  90%{
+    width: 4%;
+  }
+  95%{
+    width: 2%;
+  }
+  100%{
+    width: 0%;
+  }
+}
   
-  /* ESTILOS PARA PROYECTOS */
+/* ESTILOS PARA PROYECTOS */
+.mainBox{
+  margin: 8rem 10rem;
+}
+  
+.dscText, .intro{
+  font-size: 1.25rem;
+}
+  
+.rolAgencyDate {
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+}
+  
+.boxLaptopScreen {
+  width: 90%;
+  height: 90%;
+  background-color: #222;
+}
+  
+.boxLaptopKeyboard {
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+  
+.mouseTrack {
+  height: 40%;
+  width: 30%;
+  background-color: #000;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+  
+.boxTablet {
+  display: flex;
+  align-items: center;
+}
+
+.boxTablet, .boxMobile{
+  margin: 30px 0px;
+  border-radius: 30px;
+}
+  
+.boxMobile {
+  display: flex;
+  flex-direction: row;
+}
+  
+.screenTablet{
+  width: 70%;
+}
+  
+.buttonAndCameraTablet{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.buttonTablet{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+  
+.cameraTablet {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+  
+.soundTablet {
+  width: 25px;
+  height: 200px;
+  border-radius: 20px;
+}
+  
+.mobileBox{
+  border-radius: 30px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+  
+.cameraBoxMobile {
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+  
+.screenMobile{
+  height: 95%;
+  border-radius: 30px;
+}
+
+.screenImg, .borderedBox {
+  border-radius: 10px;
+}
+  
+.soundMobile {
+  height: 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+  
+.cameraMobile {
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+}
+  
+.colorBox {
+  background-color: #FFF;
+  margin: 20px;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  transform: scale(1);
+  flex-grow: 0;
+  max-width: 20%;
+  flex-basis: 20%;
+}
+  
+.colorBox:hover{
+  transform: scale(1.2) perspective(1px);
+}
+  
+.colorContent {
+  height: 100%;
+  width: 100%;
+}
+  
+.colorMain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+  
+.featureBox {
+  border-color: #DB2696;
+  transition: all 1s ease;
+  width: 75%;
+}
+  
+.featureBox:hover{
+  transform: scale(1.05) perspective(0.5px);
+}
+  
+.heart{
+  margin: 40px auto;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg) scale(1);
+  background-color: #FF0000;
+  transition: all 1s ease;
+}
+  
+.heart:hover{
+  transform: scale(1.1) perspective(1px) rotate(45deg);
+}
+  
+.heart:before,
+.heart:after{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FF0000;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+  
+.heart:before{
+  bottom: 0px;
+  left: -50px;
+}
+  
+.heart:after{
+  top: -50px;
+  right: 0px;
+}
+  
+.stick {
+  width: 50px;
+  margin-right: -15px;
+  height: 5px;
+  background-color: white;
+}
+  
+.stick-arrow{
+  width: 20px;
+  height: 4px;
+  background: white;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+  
+.stick-top{
+  margin-bottom: 7px;
+  transform: rotate(45deg);
+}
+  
+.stick-bottom{
+  margin-top: 7px;
+  transform: rotate(-45deg);
+}
+  
+.randomProjectsBoxPair{
+  margin-left: 10rem;
+  margin-right: 2.5rem;
+}
+  
+.randomProjectsBoxOdd{
+  margin-left: 2.5rem;
+  margin-right: 10rem;
+}
+  
+.slide{
+  background: linear-gradient(to left, #111 50%, #2e8a7c 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition: 1s;
+}
+  
+.slide:hover,
+.slide:focus {
+  background-position:left bottom;
+}
+  
+.typographyExample {
+  font-size: 1.5rem;
+  margin: 0px 5rem;
+  text-align: justify;
+}
+  
+.dsc {
+  font-size: 1.1rem;
+}
+
+.listDetails {
+  list-style: disc;
+  margin: 1em;
+}
+  
+.listDetails li {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px #111 inset !important;
+}
+  
+input:-webkit-autofill {
+  -webkit-text-fill-color: #FFF !important;
+}
+
+@media only screen and (max-width : 1085px) {
   .mainBox{
-    margin: 8rem 10rem;
+    margin: 8rem 5rem;
   }
+}
   
-  .dscText, .intro{
-    font-size: 1.25rem;
+@media only screen and (max-width : 1000px) {
+  .mainBox{
+    margin: 7rem 4rem;
   }
+}
   
-  .rolAgencyDate {
-    font-size: 1.125rem;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .boxLaptopScreen {
-    width: 90%;
-    height: 90%;
-    background-color: #222;
-  }
-  
-  .boxLaptopKeyboard {
-    width: 100%;
-    height: 50px;
-    background-color: #222;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
-  
-  .mouseTrack {
-    height: 40%;
-    width: 30%;
-    background-color: #000;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  
-  .boxTablet {
-    display: flex;
-    align-items: center;
-  }
-
-  .boxTablet, .boxMobile{
-    margin: 30px 0px;
-    border-radius: 30px;
-  }
-  
-  .boxMobile {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .screenTablet{
-    width: 70%;
-  }
-  
-  .buttonAndCameraTablet{
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .buttonTablet{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .cameraTablet {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-  }
-  
-  .soundTablet {
-    width: 25px;
-    height: 200px;
-    border-radius: 20px;
-  }
-  
-  .mobileBox{
-    border-radius: 30px;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 60%;
-    margin: auto;
-  }
-  
-  .cameraBoxMobile {
-    height: 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .screenMobile{
-    height: 95%;
-    border-radius: 30px;
-  }
-  
-  .screenImg, .borderedBox {
-    border-radius: 10px;
-  }
-
-  
-  .soundMobile {
-    height: 10px;
-    border-radius: 5px;
-    width: 100px;
-  }
-  
-  .cameraMobile {
-    width: 10px;
-    border-radius: 50%;
-    height: 10px;
-  }
-  
-  .colorBox {
-    background-color: #FFF;
-    margin: 20px;
-    height: 150px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    transition: all 1s ease;
-    transform: scale(1);
-    flex-grow: 0;
-    max-width: 20%;
-    flex-basis: 20%;
-  }
-  
-  .colorBox:hover{
-    transform: scale(1.2) perspective(1px);
-  }
-  
-  .colorContent {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .colorMain {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  
-  .featureBox {
-    border-color: #DB2696;
-    transition: all 1s ease;
-    width: 75%;
-  }
-  
-  .featureBox:hover{
-    transform: scale(1.05) perspective(0.5px);
-  }
-  
-  .heart{
-    margin: 40px auto;
-    width: 100px;
-    height: 100px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg) scale(1);
-    background-color: #FF0000;
-    transition: all 1s ease;
-  }
-  
-  .heart:hover{
-    transform: scale(1.1) perspective(1px) rotate(45deg);
-  }
-  
-  .heart:before,
-  .heart:after{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    content: '';
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    background-color: #FF0000;
-    transition: all 1s ease;
-    transform: scale(1);
-  }
-  
-  .heart:before{
-    bottom: 0px;
-    left: -50px;
-  }
-  
-  .heart:after{
-    top: -50px;
-    right: 0px;
-  }
-  
-  .stick {
-    width: 50px;
-    margin-right: -15px;
-    height: 5px;
-    background-color: white;
-  }
-  
-  .stick-arrow{
-    width: 20px;
-    height: 4px;
-    background: white;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-  }
-  
-  .stick-top{
-    margin-bottom: 7px;
-    transform: rotate(45deg);
-  }
-  
-  .stick-bottom{
-    margin-top: 7px;
-    transform: rotate(-45deg);
-  }
-  
+@media only screen and (max-width : 950px) {
   .randomProjectsBoxPair{
-    margin-left: 10rem;
-    margin-right: 2.5rem;
+    margin-left: 9rem;
   }
   
   .randomProjectsBoxOdd{
-    margin-left: 2.5rem;
-    margin-right: 10rem;
+    margin-right: 9rem;
   }
   
-  .slide{
-    background: linear-gradient(to left, #111 50%, #2e8a7c 50%);
-    background-size: 200% 100%;
-    background-position:right bottom;
-    transition: 1s;
+  .colorBox{
+    margin: 10px 20px;
+    flex-grow: 0;
+    max-width: 40%;
+    flex-basis: 40%;
+  }
+}
+  
+@media only screen and (max-width : 850px) {
+  .mobileBox{
+    width: 65%;
+  }
+
+  .mainBox{
+    margin: 6rem 1.5rem;
   }
   
-  .slide:hover,
-  .slide:focus {
-    background-position:left bottom;
+  .randomProjectsBoxPair{
+    margin-left: 5rem;
   }
   
-  .typographyExample {
-    font-size: 1.5rem;
-    margin: 0px 5rem;
-    text-align: justify;
+  .randomProjectsBoxOdd{
+    margin-right: 5rem;
+  }
+  
+  .featureBox {
+    width: 90%;
+  }
+  
+  .dscText, .intro{
+    font-size: 1rem;
+  }
+  
+  .rolAgencyDate {
+    font-size: 1.1rem;
   }
   
   .dsc {
-    font-size: 1.1rem;
-  }
-
-  .listDetails {
-    list-style: disc;
-    margin: 1em;
+    font-size: 1.2rem;
   }
   
+  .typographyExample {
+    font-size: 1.4rem;
+    margin: 0px 3rem;
+  }
+}
+  
+@media only screen and (max-width : 800px) {
+  .randomProjectsBoxPair{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .randomProjectsBoxOdd{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+  
+@media only screen and (max-width : 750px) {
+  .mobileBox{
+    width: 40%;
+    margin: 20px auto;
+  }
+  
+  .boxMobile {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+  }
+  
+  .typographyExample {
+    font-size: 1.3rem;
+    margin: 0px 2rem;
+  }
+}
+  
+@media only screen and (max-width : 650px) {
+  .rolAgencyDate {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .listDetails li {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+  
+@media only screen and (max-width : 600px) {
+  .mobileBox{
+    width: 52%;
+  }
+}
+  
+@media only screen and (max-width : 550px) {
+  .mobileBox{
+    width: 55%;
+  }
+  
+  .stick {
+    width: 30px;
+    height: 5px;
+  }
+  
+  .arrow-right {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #FFF;
   }
 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
-  input:-webkit-autofill:focus, 
-  input:-webkit-autofill:active
-  {
-  box-shadow: 0 0 0 30px #111 inset !important;
+  .boxLaptopKeyboard {
+    width: 100%;
+    height: 30px;
   }
+}
   
-  input:-webkit-autofill
-  {
-    -webkit-text-fill-color: #FFF !important;
+@media only screen and (max-width : 500px) {
+  .buttonTablet{
+    width: 20px;
+    height: 20px;
   }
 
-  @media only screen
-  and (max-width : 1085px) {
-    .mainBox{
-      margin: 8rem 5rem;
-    }
+  .soundTablet {
+    width: 15px;
+    height: 100px;
   }
-  
-  @media only screen
-  and (max-width : 1040px) {
-  }
-  
-  @media only screen
-  and (max-width : 1000px) {
-    .mainBox{
-      margin: 7rem 4rem;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 950px) {
-  
-    .randomProjectsBoxPair{
-      margin-left: 9rem;
-    }
-  
-    .randomProjectsBoxOdd{
-      margin-right: 9rem;
-    }
-  
-    .colorBox{
-      margin: 10px 20px;
-      flex-grow: 0;
-      max-width: 40%;
-      flex-basis: 40%;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 850px) {
-  
-    .mobileBox{
-      width: 65%;
-    }
-  
-    .mainBox{
-      margin: 6rem 1.5rem;
-    }
-  
-    .randomProjectsBoxPair{
-      margin-left: 5rem;
-    }
-  
-    .randomProjectsBoxOdd{
-      margin-right: 5rem;
-    }
-  
-    .featureBox {
-      width: 90%;
-    }
-  
-    .dscText, .intro{
-      font-size: 1rem;
-    }
-  
-    .rolAgencyDate {
-      font-size: 1.1rem;
-    }
-  
-    .dsc {
-      font-size: 1.2rem;
-    }
-  
-    .typographyExample {
-      font-size: 1.4rem;
-      margin: 0px 3rem;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 800px) {
-    .randomProjectsBoxPair{
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
-  
-    .randomProjectsBoxOdd{
-      margin-right: 0.5rem;
-      margin-left: 0.5rem;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 750px) {
-  
-    .mobileBox{
-      width: 40%;
-      margin: 20px auto;
-    }
-  
-    .boxMobile {
-      height: auto;
-      align-items: center;
-      flex-direction: column;
-      margin: 0px;
-    }
-  
-    .typographyExample {
-      font-size: 1.3rem;
-      margin: 0px 2rem;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 650px) {
-    .rolAgencyDate {
-      flex-direction: column;
-      align-items: center;
-    }
 
-    .listDetails li {
-      margin-bottom: 5px;
-      font-size: 16px;
-    }
+  .cameraTablet {
+    width: 15px;
+    height: 15px;
+  }
+
+  .mobileBox{
+    width: 60%;
+  }
+
+  .screenTablet{
+    width: 100%;
+  }
+
+  .colorBox {
+    margin: 12px 4%;
+    flex-grow: 0;
+    max-width: 35%;
+    flex-basis: 35%;
+  }
+
+  .criptoIconBox{
+    margin: 10px 10%;
+    flex-grow: 0;
+    max-width: 30%;
+    flex-basis: 30%;
+  }
+}
+  
+@media only screen and (max-width : 450px) {
+  .mobileBox{
+    width: 70%;
+  }
+  .listDetails li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
+  
+@media only screen and (max-width : 400px) {
+  .mobileBox{
+    width: 80%;
+  }
+}
+  
+@media only screen and (max-width : 350px) {
+  .mobileBox{
+    width: 85%;
   }
   
-  @media only screen
-  and (max-width : 600px) {
-    .mobileBox{
-      width: 52%;
-    }
+  .colorBox {
+    margin: 10px 10%;
+    height: 140px;
+    padding: 5px;
+    flex-grow: 0;
+    max-width: 60%;
+    flex-basis: 60%;
   }
-  
-  @media only screen
-  and (max-width : 550px) {
-    .mobileBox{
-      width: 55%;
-    }
-  
-    .stick {
-      width: 30px;
-      height: 5px;
-    }
-  
-    .arrow-right {
-      border-top: 20px solid transparent;
-      border-bottom: 20px solid transparent;
-      border-left: 20px solid #FFF;
-    }
-
-    .boxLaptopKeyboard {
-      width: 100%;
-      height: 30px;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 500px) {
-    .buttonTablet{
-      width: 20px;
-      height: 20px;
-    }
-
-    .soundTablet {
-      width: 15px;
-      height: 100px;
-    }
-
-    .cameraTablet {
-      width: 15px;
-      height: 15px;
-    }
-
-    .mobileBox{
-      width: 60%;
-    }
-
-    .screenTablet{
-      width: 100%;
-    }
-
-    .colorBox {
-      margin: 12px 4%;
-      flex-grow: 0;
-      max-width: 35%;
-      flex-basis: 35%;
-    }
-
-    .criptoIconBox{
-      margin: 10px 10%;
-      flex-grow: 0;
-      max-width: 30%;
-      flex-basis: 30%;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 450px) {
-    .mobileBox{
-      width: 70%;
-    }
-    .listDetails li {
-      margin-bottom: 5px;
-      font-size: 14px;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 400px) {
-    .mobileBox{
-      width: 80%;
-    }
-  }
-  
-  @media only screen
-  and (max-width : 350px) {
-    .mobileBox{
-      width: 85%;
-    }
-  
-    .colorBox {
-      margin: 10px 10%;
-      height: 140px;
-      padding: 5px;
-      flex-grow: 0;
-      max-width: 60%;
-      flex-basis: 60%;
-    }
-  }
+}
   

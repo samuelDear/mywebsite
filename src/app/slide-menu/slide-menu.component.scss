@@ -27,8 +27,7 @@ select {
   font-size: 29px;
 }
 
-@media only screen
-and (max-width : 850px) {
+@media only screen and (max-width : 850px) {
   .navItem, .whodesignthisbro {
     text-align: center;
   }
@@ -39,15 +38,13 @@ and (max-width : 850px) {
   }
 }
 
-@media only screen
-and (max-width : 700px) {
+@media only screen and (max-width : 700px) {
   .mainBox{
     margin: 100px 30px 0px 30px;
   }
 }
 
-@media only screen
-and (max-width : 450px) {
+@media only screen and (max-width : 450px) {
   .mainBox{
     margin: 100px 30px 0px 30px;
   }
@@ -57,8 +54,7 @@ and (max-width : 450px) {
   }
 }
 
-@media only screen
-and (max-width : 350px) {
+@media only screen and (max-width : 350px) {
   .mainBox{
     margin: 100px 30px 0px 30px;
   }

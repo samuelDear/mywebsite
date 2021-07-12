@@ -192,15 +192,13 @@ svg {
   background-color: #db2696 !important;
 }
 
-@media only screen
-and (max-width : 1085px) {
+@media only screen and (max-width : 1085px) {
   .mainBox{
     margin: 180px 60px 0px 130px;
   }
 }
 
-@media only screen
-and (max-width : 1000px) {
+@media only screen and (max-width : 1000px) {
   .knowlegdeBox{
     flex-direction: column-reverse;
     margin-top: 0rem;
@@ -223,8 +221,7 @@ and (max-width : 1000px) {
   }
 }
 
-@media only screen
-and (max-width : 950px) {
+@media only screen and (max-width : 950px) {
   .presentationSonBox {
     width: 90%;
   }
@@ -248,8 +245,7 @@ and (max-width : 950px) {
   }
 }
 
-@media only screen
-and (max-width : 850px) {
+@media only screen and (max-width : 850px) {
   .mainBox{
     margin: 120px 40px 0px 40px;
   }
@@ -267,8 +263,7 @@ and (max-width : 850px) {
   }
 }
 
-@media only screen
-and (max-width : 700px) {
+@media only screen and (max-width : 700px) {
   .marginOdd{
     margin-left: 2rem;
     margin-right: 0rem;
@@ -304,8 +299,7 @@ and (max-width : 700px) {
   }
 }
 
-@media only screen
-and (max-width : 550px) {
+@media only screen and (max-width : 550px) {
   .marginOdd{
     margin-left: 0rem;
   }

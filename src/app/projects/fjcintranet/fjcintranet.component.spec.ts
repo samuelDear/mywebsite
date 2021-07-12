@@ -8,9 +8,8 @@ describe('FjcintranetComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FjcintranetComponent ]
-    })
-    .compileComponents();
+      declarations: [FjcintranetComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

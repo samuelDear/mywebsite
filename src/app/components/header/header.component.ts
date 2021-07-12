@@ -5,68 +5,67 @@ import { navigationCustom } from '../../transition';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  @Input() showAbout = false;
+  @Input() headerNav = false;
+  showHeader = false;
 
-  @Input() showAbout: boolean = false;
-  @Input() headerNav: boolean = false;
-  showHeader: boolean = false;
+  // eslint-disable-next-line no-unused-vars
   constructor(private router: Router) {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
-        this.showHeader  = true;
-        
-        let links = document.getElementsByTagName('link');
+        this.showHeader = true;
+
+        const links = document.getElementsByTagName('link');
         let isOkey = false;
 
         // Funcion para eliminar tipografias de proyectos
-        do{
+        do {
           isOkey = true;
-          for(let i = 0; i < links.length; i++){
-            if(links[i].id != ''){
+          for (let i = 0; i < links.length; i++) {
+            if (links[i].id != '') {
               //console.log(links[i]);
               isOkey = false;
               links[i].remove();
             }
           }
-        }while(!isOkey);
+        } while (!isOkey);
 
-        if(this.headerNav){
+        if (this.headerNav) {
           this.animation();
         }
-        
+
         setTimeout(() => {
-          var button = document.getElementsByClassName('hamburguer')[0];
-          if(button != undefined){
-            if(!button.classList.contains('bt-menu-open') && this.router.url == '/menu'){
+          const button = document.getElementsByClassName('hamburguer')[0];
+          if (button != undefined) {
+            if (!button.classList.contains('bt-menu-open') && this.router.url == '/menu') {
               button.classList.toggle('bt-menu-open');
             }
           }
         }, 10);
-        
-        
       }
     });
   }
 
-  ngOnInit() {
-  }
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  ngOnInit(): void {}
 
-  navigation(ruta: string) {
-    if(this.router.url != '/menu'){
+  navigation(ruta: string): void {
+    if (this.router.url != '/menu') {
       this.animation();
-      navigationCustom( () => this.router.navigateByUrl(ruta) ); 
+      navigationCustom(() => this.router.navigateByUrl(ruta));
     }
   }
 
-  navigationAbout(ruta: string){
-    navigationCustom( () => this.router.navigateByUrl(ruta) ); 
+  navigationAbout(ruta: string): void {
+    navigationCustom(() => this.router.navigateByUrl(ruta));
   }
 
-  animation(){
-    var button = document.getElementsByClassName('hamburguer')[0];
-    if(button != undefined){
+  animation(): void {
+    const button = document.getElementsByClassName('hamburguer')[0];
+    if (button != undefined) {
       button.classList.toggle('bt-menu-open');
     }
   }

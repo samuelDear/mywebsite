@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -27,7 +27,7 @@ import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.comp
 import { PhoneScreenComponent } from './components/phone-screen/phone-screen.component';
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 
-export function HttpLoaderFactory(http: HttpClient) {
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
 }
 
@@ -46,7 +46,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     OrmComponent,
     OwnportfolioComponent,
     PhoneScreenComponent,
-    AfxtradeComponent
+    AfxtradeComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,13 +60,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-      }
-  })
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

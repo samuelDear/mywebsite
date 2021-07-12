@@ -4,7 +4,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Directive({
-  selector: '[stranslate]'
+  selector: '[stranslate]',
 })
 export class StranslateDirective implements OnInit {
   @Input() stranslate: any;
@@ -12,19 +12,17 @@ export class StranslateDirective implements OnInit {
 
   private readonly directiveDestroyed = new Subject<never>();
 
-  constructor(
-    public el: ElementRef,
-    public renderer: Renderer2,
-    private translateService: TranslateService
-  ) { }
+  // eslint-disable-next-line no-unused-vars
+  constructor(public el: ElementRef, public renderer: Renderer2, private translateService: TranslateService) {}
 
-  ngOnInit(){
+  ngOnInit(): void {
+    console.log(this.translateValues);
     this.translateService.onLangChange.pipe(takeUntil(this.directiveDestroyed)).subscribe(() => {
       this.getTranslation();
     });
   }
 
-  ngOnChanges() {
+  ngOnChanges(): void {
     this.getTranslation();
   }
 
@@ -38,7 +36,7 @@ export class StranslateDirective implements OnInit {
         },
         () => {
           return `error`;
-        }
+        },
       );
   }
 }

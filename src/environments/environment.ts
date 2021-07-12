@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'https://samueldear.com/~api'
+  url: 'https://samueldear.com/~api',
 };
 
 /*

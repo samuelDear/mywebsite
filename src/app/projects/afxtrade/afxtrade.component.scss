@@ -1,221 +1,216 @@
 .featureMainBox {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .featureMainBoxRight {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .featureMainBoxLeft {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .featureMainBoxLeft, .featureMainBoxRight {
-    transition: 1s;
+  transition: 1s;
 }
 
 .featureItem {
-    width: 50%;
+  width: 50%;
 }
 
 .segurityIc {
-    width: 40%;
+  width: 40%;
 }
 
 .comunicationsIc {
-    width: 50%;
+  width: 50%;
 }
 
 .movementsIc {
-    width: 70%;
+  width: 70%;
 }
 
 .exchangesIc {
-    width: 55%;
+  width: 55%;
 }
 
 .mainFeatureText {
-    width: 100%;
+  width: 100%;
 }
 
 .mainFeatureTitle {
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .mainFeatureDsc {
-    font-size: 20px;
-    font-weight: 400;
-    text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
 }
 
 .mainFeatureLeft {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .mainFeatureRight {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .criptoIconBox {
-    margin: 20px;
-    display: flex;
-    align-items: center; 
-    flex-direction: column;
-    transition: all 0.5s ease;
-    transform: scale(1);
-    flex-grow: 0;
-    max-width: 20%;
-    flex-basis: 20%;
+  margin: 20px;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  transition: all 0.5s ease;
+  transform: scale(1);
+  flex-grow: 0;
+  max-width: 20%;
+  flex-basis: 20%;
 }
 
 .criptoIcon {
-    max-height: 150px;
-    margin-bottom: 20px;
+  max-height: 150px;
+  margin-bottom: 20px;
 }
 
 .criptoIconDisabled {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .criptoName {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .criptoMain {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .tooltipBox {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .tooltiptx {
-    visibility: hidden;
-    background-color: #CCC;
-    color: #333;
-    text-align: center;
-    border-radius: 18px;
-    padding: 10px;
-    left: -5%;
-    bottom: 105%;
-    position: absolute;
-    z-index: 15;
-    width: 115%;
-    word-break: break-word;
+  visibility: hidden;
+  background-color: #CCC;
+  color: #333;
+  text-align: center;
+  border-radius: 18px;
+  padding: 10px;
+  left: -5%;
+  bottom: 105%;
+  position: absolute;
+  z-index: 15;
+  width: 115%;
+  word-break: break-word;
 }
 
 .tooltipBox:hover .tooltiptx {
-    visibility: visible;
+  visibility: visible;
 }
 
 .borderImages {
-    border: 1.5px solid #333;
+  border: 1.5px solid #333;
 }
 
 .featureShowRight {
-    opacity: 0;
-    transform: translateX(60vw);
+  opacity: 0;
+  transform: translateX(60vw);
 }
 
 .featureShowLeft {
-    opacity: 0;
-    transform: translateX(-60vw);
+  opacity: 0;
+  transform: translateX(-60vw);
 }
 
-@media only screen
-  and (max-width : 950px) {
-    .criptoIconBox {
-      margin: 10px 20px;
-      flex-grow: 0;
-      max-width: 25%;
-      flex-basis: 25%;
-    }
+@media only screen and (max-width : 950px) {
+  .criptoIconBox {
+    margin: 10px 20px;
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
 }
 
-@media only screen
-  and (max-width : 800px) {
-    .featureMainBoxRight {
-        flex-direction: column;
-    }
+@media only screen and (max-width : 800px) {
+  .featureMainBoxRight {
+    flex-direction: column;
+  }
 
-    .featureMainBoxLeft {
-        flex-direction: column-reverse;
-    }
+  .featureMainBoxLeft {
+    flex-direction: column-reverse;
+  }
 
-    .featureItem{
-        width: 100%;
-    }
+  .featureItem{
+    width: 100%;
+  }
 
-    .mainFeatureLeft, .mainFeatureRight {
-        margin: 0px;
-        margin-top: 40px;
-    }
+  .mainFeatureLeft, .mainFeatureRight {
+    margin: 0px;
+    margin-top: 40px;
+  }
     
-    .segurityIc {
-        width: 40%;
-    }
+  .segurityIc {
+    width: 40%;
+  }
     
-    .comunicationsIc {
-        width: 50%;
-    }
+  .comunicationsIc {
+    width: 50%;
+  }
     
-    .movementsIc {
-        width: 60%;
-    }
+  .movementsIc {
+    width: 60%;
+  }
     
-    .exchangesIc {
-        width: 50%;
-    }
+  .exchangesIc {
+    width: 50%;
+  }
 }
 
-@media only screen
-  and (max-width : 550px) {
-    .criptoIconBox{
-      margin: 12px 4%;
-    }
+@media only screen and (max-width : 550px) {
+  .criptoIconBox{
+    margin: 12px 4%;
+  }
 
-    .criptoName {
-      font-size: 16px;
-    }
+  .criptoName {
+    font-size: 16px;
+  }
 }
 
-@media only screen
-  and (max-width : 500px) {
-    .criptoIconBox{
-      margin: 10px 5%;
-      flex-grow: 0;
-      max-width: 35%;
-      flex-basis: 35%;
-    }
+@media only screen and (max-width : 500px) {
+  .criptoIconBox{
+    margin: 10px 5%;
+    flex-grow: 0;
+    max-width: 35%;
+    flex-basis: 35%;
+  }
 
-    .mainFeatureDsc {
-        font-size: 18px;
-    }
+  .mainFeatureDsc {
+    font-size: 18px;
+  }
 
-    .mainFeatureTitle {
-        font-size: 24px;
-    }
+  .mainFeatureTitle {
+    font-size: 24px;
+  }
 }
 
-@media only screen
-  and (max-width : 370px) {
-    .criptoIconBox{
-        margin: 10px 5%;
-        flex-grow: 0;
-        max-width: 40%;
-        flex-basis: 40%;
-    }
+@media only screen and (max-width : 370px) {
+  .criptoIconBox{
+    margin: 10px 5%;
+    flex-grow: 0;
+    max-width: 40%;
+    flex-basis: 40%;
+  }
 }

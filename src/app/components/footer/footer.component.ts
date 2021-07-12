@@ -4,15 +4,16 @@ import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  showFooter: string = '';
+  showFooter = '';
 
+  // eslint-disable-next-line no-unused-vars
   constructor(private router: Router) {
     this.router.events.subscribe(ev => {
       if (ev instanceof NavigationEnd) {
-        if(this.router.url == '/about'){
+        if (this.router.url == '/about') {
           this.showFooter = '';
         } else {
           this.showFooter = 'show';
@@ -21,5 +22,6 @@ export class FooterComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  ngOnInit(): void {}
 }
