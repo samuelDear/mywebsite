@@ -3,6 +3,10 @@
   margin-top: 90px;
 }
 
+.boxSocialMedias {
+  flex-direction: row;
+}
+
 .dsc {
   padding: 45px 75px 45px 45px;
   position: absolute;
@@ -135,6 +139,12 @@ and (max-width : 550px) {
 
   .cvText {
     font-size: 90%;
+  }
+
+  .boxSocialMedias {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
   }
 }
 
