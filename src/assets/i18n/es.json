@@ -5,10 +5,10 @@
   },
   "home": {
     "presentation": "Hola! Mi nombre es Samuel Rojas.",
-    "description": " Soy un desarrollador web y móvil que hace páginas web responsivas y desarrolla aplicaciones móviles multiplataforma.",
+    "description": "Soy un desarrollador web y móvil que hace páginas web responsivas y desarrolla aplicaciones móviles multiplataforma.",
     "linkProject": "Mirar Proyecto",
-    "msgContact": "Sientete libre de enviarme un correo a",
-    "submsgContact": "O puedes enviarme un correo desde aqui!",
+    "msgContact": "Siéntete libre de enviarme un correo a",
+    "submsgContact": "O puedes enviarme un correo desde aquí!",
     "labelName": "Nombre",
     "labelEmail": "Correo",
     "labelDscEmail": "Mensaje",
@@ -20,25 +20,25 @@
     "agency": "Proyecto Personal",
     "role": "Dueño/Desarrollador",
     "intro": "El diseño de mi portafolio fue hecho por mi mismo, desde el inicio quería que fuera un sitio web en modo oscuro, ya que no soy muy fanático del modo claro. También, que contara con animaciones sencillas para no saturar la experiencia del usuario.",
-    "intro2": "Durante el desarrollo se fueron agregando detalles que no estaban en el punto inicial para hacer una experiencia mas fluida. Un sitio web que aprovecha el uso de SVGs para un mejor renderizado y de una navegación sencilla para un mejor flujo en la página web.",
+    "intro2": "Durante el desarrollo se fueron agregando detalles que no estaban en el punto inicial para hacer una experiencia más fluida. Un sitio web que aprovecha el uso de SVGs para un mejor renderizado y de una navegación sencilla para un mejor flujo en la página web.",
     "feature1title": "Diseño Web Responsivo",
     "feature1": "El diseño de la página es escalable a dispositivos móviles y a cualquier resolución, comportándose de manera eficiente en cualquier dispositivo y permitiendo que cualquier usuario pueda disfrutar de la página web.",
     "feature2title": "Uso de SVGs",
-    "feature2": "La página web cuenta con imágenes SVG para mejorar los tiempos de cargas y que la descarga sea mas eficiente. También, para que la calidad de las imágenes sea la misma en cualquier pantalla.",
+    "feature2": "La página web cuenta con imágenes SVG para mejorar los tiempos de cargas y que la descarga sea más eficiente. También, para que la calidad de las imágenes sea la misma en cualquier pantalla.",
     "feature3title": "Animaciones Sencillas",
     "feature3": "Cada detalle de la página cuenta con una animación sencilla para no sobrecargar el sitio con animaciones. Es por ello que cuenta con animaciones sencillas estilo fade-out, fade-in y slide.",
     "feature4title": "Transición interactiva",
-    "feature4": "Para la navegación entre pantallas, se creo una transición sencilla para una mejor experiencia a la hora de navegar entre las pantallas. También, a la hora de navegar puedes determinar donde te encuentras por la forma del hamburguer-menu.",
+    "feature4": "Para la navegación entre pantallas, se desarrollo una transición sencilla para una mejor experiencia a la hora de navegar entre las pantallas. También, a la hora de navegar puedes determinar donde te encuentras por la forma del hamburguer-menu.",
     "feature5title": "Diseño Web Amigable",
     "feature5": "La paleta de colores es bastante sencilla, ya que el tema principal es modo oscuro. Cuenta con colores sencillos y elementos sencillos para que sea un sitio amigable.",
     "feature6title": "Acerca de la página",
-    "feature6": "Para mostrar las redes sociales, decidí colocar un pie de pagina en el que se pudieran visualizar de mejor manera, igual al momento de ver mas sobre mi, puedes encontrar mi redes sociales.",
+    "feature6": "Para mostrar las redes sociales, decidí colocar un pie de página en el que se pudieran visualizar de mejor manera, igual al momento de ver más sobre mí, puedes encontrar mi redes sociales.",
     "feature7title": "Diseño Personalizado Para Cada Proyecto",
     "feature7": "Cada página de un proyecto, tiene elementos personalizados para que los detalles de los proyectos puedan ser mejor apreciados."
   },
   "orm": {
-    "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas.",
-    "dsc": "Pagina Web para la administración de las Olimpiadas Recreativas de Matemáticas de Venezuela",
+    "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. Un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas.",
+    "dsc": "Página Web para la administración de las Olimpiadas Recreativas de Matemáticas de Venezuela",
     "role": "Fullstack",
     "intro": "Las Olimpíadas Recreativas de Matemáticas de Venezuela es un evento con el objetivo de Desarrollar estrategias para la enseñanza de las matemáticas, mejorar el nivel académico y estimular en los niños el uso de sus capacidades intelectuales: comprensión, capacidad de síntesis y juicio crítico.",
     "intro2": "En las Olimpiadas Recreativas de Matemáticas se inscriben una gran cantidad de colegios los cuales inscriben una gran cantidad de alumnos, el objetivo principal del sitio web, es el de permitirle a los colegios registrar y administrar sus participantes, también permite que los organizadores de las olimpiadas puedan tener una administración óptima de toda la información de el evento, como los datos de los colegios, alumnos y exámenes.",
@@ -52,13 +52,13 @@
     "feature1title": "Diseño Web Responsivo",
     "feature1": "La página web puede ser visualizada en cualquier dispositivo y seguir comportándose de manera eficiente en dispositivos móviles.",
     "feature3title": "Uso de SVGs",
-    "feature3": "Para las imágenes dentro de la página web se usaron SVGs para mejorar los tiempos de carga, asi como también diversos elementos fueron hechos con CSS puro.",
+    "feature3": "Para las imágenes dentro de la página web se usaron SVGs para mejorar los tiempos de carga, así como también diversos elementos fueron hechos con CSS puro.",
     "feature4title": "Exportación a Excel",
     "feature4": "Tanto la página web como el CMS permiten exportar datos a Excel, en el caso de el sitio web, los colegios pueden exportar listas con sus participantes, igual que en el CMS pueden ser exportados las respuestas de los exámenes.",
     "feature5title": "Solicitudes HTTP reducidas",
     "feature5": "Las solicitudes al servidor se encuentran reducidas para mejorar los tiempos de carga en los casos de las listas largas de información como pueden ser las listas de participantes.",
     "feature6title": "Exportaciones de gran tamaño con Zip",
-    "feature6": "En el caso de descargar una gran cantidad de información, como puede ser la lista de participantes en total, estos pueden ser mas de 10.000, para mejorar los tiempos de descarga de los paquetes."
+    "feature6": "En el caso de descargar una gran cantidad de información, como puede ser la lista de participantes en total, estos pueden ser más de 10.000, para mejorar los tiempos de descarga de los paquetes."
   },
   "fjcintranet": {
     "resume": "Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001.",
@@ -78,7 +78,7 @@
     "feature4title": "Calendario con Notificaciones",
     "feature4": "El calendario fue creado para organizar las actividades dentro de la fundación, como reuniones o eventos, permiten llevar también un control con las tareas que deben hacer en los hallazgos para la resolución de estos.",
     "feature5title": "Multi-idioma",
-    "feature5": "El sistema se encuentra tanto en inglés como en español, debido a que la institución cuenta con diferentes sedes en el mundo, es por ello que esta información debe contrarse en ambos idiomas para un mejor uso y una mejor experiencia de usuario."
+    "feature5": "El sistema se encuentra tanto en inglés como en español, debido a que la institución cuenta con diferentes sedes en el mundo, es por ello que esta información debe encontrarse en ambos idiomas para un mejor uso y una mejor experiencia de usuario."
   },
   "afxtrade": {
     "dsc": "Plataforma Venezolana de intercambio de criptomonedas",
@@ -133,8 +133,8 @@
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
   "knowlegde": {
-    "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estandar ECMAScript desde la versión 6 hasta las versión 11.",
-    "secondDsc":"Ademas, he trabajado en el Front-end con frameworks como Angular y React con sus librerias como Material UI y Angular Material. Cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
+    "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estándar ECMAScript desde la versión 6 hasta la versión 11.",
+    "secondDsc":"Ademas, he trabajado en el Front-end con frameworks como Angular y React con sus librería como Material UI y Angular Material. Cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
     "thirdDsc":"Por otra parte, estoy familiarizado usando el framework React Native para crear aplicaciones móviles multiplataforma. También, Electron en el caso de aplicaciones para escritorio multiplataforma.",
     "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java para la creación de REST API, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase.",
     "fiftDsc":"Adicionalmente, he trabajo bajo metodologías SCRUM y Kanban con herramientas como Trello, Jira, Slack y Confluence. Ademas, tengo conocimiento en herramientas visuales como Figma, Zeplin, MarvelApp y Mockflow."
@@ -144,8 +144,8 @@
     "aboutLink":"Leer más sobre mí",
     "welcome": "Hola!",
     "intro": "Mi nombre es Samuel.<br>Soy un desarrollador web y móvil actualmente trabajo como programador independiente, me encuentro en Caracas, Venezuela.",
-    "whatILike": "Realmente me gusta hacer productos útiles e intuitivos con interfaces visuales cómodas para cualquier persona. Me gusta analizar el contexto del usuario para crear la mejor solución en cada proyecto. Tengo experiencia haciendo aplicaciones multiplataforma y trabajando como desarrollador fullstack en diversos proyectos. Construyendo paginas web responsivas y creando REST API.",
-    "tec": "Estoy muy familiarizado utilizando HTML5, CSS3, TypeScript y JavaScript. Del lado del Front-end he utilizado frameworks como Angular y React para paginas web, React Native para aplicaciones móviles y Electron para aplicaciones de escritorio. Por otra parte, en el Backend he trabajado mayormente utilizando PHP para la creación de servicios web REST API, aunque también tengo experiencia usando Java. He trabajado con bases de datos relacionales y bases de datos no relacionales. Siendo MySQL y Firebase los motores con los que mas he trabajado. También, he trabajado con Realm, PostgreSQL y MongoDB.",
+    "whatILike": "Realmente me gusta hacer productos útiles e intuitivos con interfaces visuales cómodas para cualquier persona. Me gusta analizar el contexto del usuario para crear la mejor solución en cada proyecto. Tengo experiencia haciendo aplicaciones multiplataforma y trabajando como desarrollador fullstack en diversos proyectos. Construyendo páginas web responsivas y creando REST API.",
+    "tec": "Estoy muy familiarizado utilizando HTML5, CSS3, TypeScript y JavaScript. Del lado del Front-end he utilizado frameworks como Angular y React para páginas web, React Native para aplicaciones móviles y Electron para aplicaciones de escritorio. Por otra parte, en el Backend he trabajado mayormente utilizando PHP para la creación de servicios web REST API, aunque también tengo experiencia usando Java. He trabajado con bases de datos relacionales y bases de datos no relacionales. Siendo MySQL y Firebase los motores con los que más he trabajado. También, he trabajado con Realm, PostgreSQL y MongoDB.",
     "keepingUp": "Para mantenerme siempre actualizado, realizo cursos, leo documentación actualizada, veo conferencias y veo videos de Youtube para aprender sobre nuevas tecnologías.",
     "contact": "Si tienes un proyecto, si estás interesado en una colaboración o simplemente quieres saludar, no dudes en enviarme un correo electrónico a contact@samueldear.com.",
     "spam": "También puedes saber más sobre mí aquí:"
