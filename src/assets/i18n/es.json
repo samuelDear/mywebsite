@@ -120,6 +120,16 @@
     "feature6": "Para mantener una base de datos limpia y hacer validaciones de movimientos e intercambios. Se crearon diferentes procesos para validar transacciones entrantes, direcciones de wallets expiradas, transacciones incompletas y muchos más. Todos forman partes de distintos CRONs que se ejecutan durante un tiempo determinado."
   },
   "traumapp": {
+    "dsc": "Aplicación móvil para administrar consultas médicas e historias clínicas",
+    "role": "Creador/Fullstack",
+    "intro1": "TraumApp es una aplicación móvil creada para agilizar consultas medicas. Permitiéndote administrar la información de pacientes, agendar citas medicas, crear informes automatizados, crear recipes con los medicamentos de tu preferencia, exportación a PDF y mucho más.",
+    "intro2": "TraumApp es una aplicación que llevo trabajando de manera independiente junto con la diseñadora Magrey Touissainte.",
+    "intro3": "Esta aplicación te permite gestionar tus pacientes de manera fácil y cómoda, permitiendo tener un historial clínico y una ficha medica en un solo lugar. Ademas, te permite programar tus consultas medicas, agendando pacientes a determinadas horas y marcar su hora de entrada y salida. Cuenta con un Modo Registro en el cual un administrador o los mismos pacientes pueden registrarse o marcar que asistieron a la consulta medica. También, el usuario puede asignar seguros médicos a los pacientes y medicamentos a los recipes, teniendo sus propias listas con los seguros y medicamentos con los que trabaja a menudo. Cabe destacar, el apartado de informes te permite generar de manera automatizada la historia medica de la consulta del paciente. Permitiéndole al usuario la creación de la historia de manera rápida y evitar dejarse detalles de la consulta. Así como también, esta historia medica puede ser exportada PDF o impresa por medio de Bluetooth.",
+    "titlePatients": "Pacientes",
+    "titleForms": "Informes",
+    "titleCalendar": "Calendario",
+    "titleConfig": "Configuración",
+    "principalFeatures": "Características principales",
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
   "knowlegde": {

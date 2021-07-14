@@ -119,15 +119,25 @@
     "featuretitle6": "CRON's creation",
     "feature6": "To maintain a clean database and to validate movements and exchanges. Different processes were created to validate incoming transactions, expired wallet addresses, incomplete transactions, and many more. They are all parts of different CRONs that run for a certain time."
   },
+  "traumapp": {
+    "dsc": "",
+    "role": "",
+    "intro1": "",
+    "intro2": "",
+    "intro3": "",
+    "titlePatients": "",
+    "titleForms": "",
+    "titleCalendar": "",
+    "titleConfig": "",
+    "principalFeatures": "",
+    "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
+  },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
     "secondDsc":"I have worked on the Front-end with frameworks like Angular and React with their libraries like Material UI and Angular Material, also I have experience building responsive websites with a high-performance.",
     "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps. and Also, Electron in the case of cross-platform desktop applications",
     "quarterDsc":"However, In the back-end I have used PHP and Java for the creation of REST API, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase.",
     "fiftDsc":"Additionally, I have worked under SCRUM and Kanban methodologies with tools such as Trello, Jira, Slack and Confluence. Also, I have knowledge of visual tools like Figma, Zeplin, MarvelApp and Mockflow."
-  },
-  "traumapp": {
-    "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
   },
   "about":{
     "resume":"I'm a Venezuelan web designer and a mobile developer<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",

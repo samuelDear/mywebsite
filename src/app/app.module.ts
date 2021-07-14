@@ -26,6 +26,7 @@ import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
 import { PhoneScreenComponent } from './components/phone-screen/phone-screen.component';
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
+import { TraumappComponent } from './projects/traumapp/traumapp.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -47,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     OwnportfolioComponent,
     PhoneScreenComponent,
     AfxtradeComponent,
+    TraumappComponent,
   ],
   imports: [
     BrowserModule,
