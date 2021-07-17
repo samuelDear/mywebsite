@@ -2,6 +2,14 @@
   padding: 5rem 10rem;
 }
 
+.entryPage {
+  background: transparent !important;
+}
+
+.resumeSection, .introductionSection, .introductionBox, .visualResult, .patientsSection, .patientsSection, .formsSection, .calendarSection, .configSection, .principalFeatures {
+  transition: 1s;
+}
+
 .resumeSection {
   background-color: #002854;
   padding: 8rem 10rem;
@@ -12,17 +20,247 @@
 }
 
 .titleSection {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
-.introductionBox{ 
-  border-color: #DB2696;
+.introductionBox { 
+  border: 5px solid #DB2696;
 }
 
 .visualResult {
   background: linear-gradient(180deg, #2C023E, #B100FF);
+  overflow-x: hidden;
 }
 
 .patientsSection {
   background: linear-gradient(180deg, #20A5FF, #002854);
+}
+
+.formsSection {
+  background: linear-gradient(180deg,#002854, #3D3D3D);
+}
+
+.calendarSection {
+  background-color: #3D3D3D;
+}
+
+.configSection {
+  background: linear-gradient(180deg,#003E82, #8825B2);
+}
+
+.principalFeatures {
+  background: linear-gradient(180deg,#2C023E, #111);
+}
+
+.patientsBox {
+  border: 5px solid #3D3D3D;
+}
+
+.formsBox, .calendarBox, .configBox {
+  border: 5px solid #4AE3CD;
+}
+
+.imgScreen, .imgPatients {
+  height: 75vh;
+}
+
+.imgVisualResult {
+  height: 50vw;
+}
+
+.visualResultItems {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+  margin-top: 6rem;
+  transition: 1s;
+  padding: 0px 20px;
+}
+
+.visualResultItemsRight {
+  flex-direction: row-reverse;
+}
+
+.imgLeft {
+  transform: rotate(-10deg);
+}
+
+.imgRight {
+  transform: rotate(10deg);
+}
+
+.arrowCurve {
+  align-self: flex-start;
+  padding-top: 100px;
+  width: 15vw;
+}
+
+.arrowCurveRight {
+  transform: rotateY(180deg);
+}
+
+.arrowCurveLeft {
+  transform: rotateY(0deg);
+}
+
+.visualResultDsc {
+  padding-top: 200px;
+  font-size: 22px;
+}
+
+.featureShowRight {
+  opacity: 0;
+  transform: translateX(60vw);
+}
+
+.featureShowLeft {
+  opacity: 0;
+  transform: translateX(-60vw);
+}
+
+.borderImages {
+  border: 1.5px solid #333;
+}
+
+.patientsImagesBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .mainBoxTraumApp {
+    padding: 8rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .visualResultItems {
+    padding: 0px 10px;
+  }
+
+  .mainBoxTraumApp {
+    padding: 8rem 6rem;
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  .mainBoxTraumApp, .resumeSection{
+    padding: 8rem 5rem;
+  }
+
+  .titleSection {
+    margin-bottom: 5rem;
+  }
+}
+  
+@media only screen and (max-width: 1000px) {
+  .mainBoxTraumApp, .resumeSection{
+    padding: 7rem 4rem;
+  }
+
+  .visualResultDsc {
+    padding-top: 150px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .mainBoxTraumApp, .resumeSection{
+    padding: 5rem 1.5rem;
+  }
+
+  .titleSection {
+    margin-bottom: 4rem;
+  }
+
+  .visualResultDsc {
+    padding-top: 140px;
+    font-size: 18px;
+  }
+
+  .imgPatients {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .titleSection {
+    margin-bottom: 2rem;
+  }
+
+  .imgPatients {
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .visualResultItems {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgVisualResult {
+    height: auto;
+    width: 50vw;
+  }
+
+  .imgLeft {
+    transform: rotate(-5deg);
+  }
+  
+  .imgRight {
+    transform: rotate(5deg);
+  }
+
+  .visualResultDsc {
+    padding-top: 70px;
+  }
+
+  .arrowCurveRight {
+    align-self: flex-end;
+    transform: rotateY(0deg) rotate(90deg);
+  }
+  
+  .arrowCurveLeft {
+    align-self: flex-start;
+    transform: rotateY(180deg) rotate(90deg);
+  }
+
+  .arrowCurve {
+    padding: 0;
+    width: 20vw;
+  }
+
+  .patientsImagesBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .patientsImagesBox > img {
+    margin: 20px 0px;
+  }
+
+  .imgPatients {
+    height: 75vh;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .imgScreen {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .imgPatients {
+    height: auto;
+    width: 100%;
+  }
 }
