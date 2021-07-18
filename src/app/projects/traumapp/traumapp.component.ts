@@ -11,6 +11,9 @@ const threshold = 0.1;
   styleUrls: ['./traumapp.component.scss'],
 })
 export class TraumappComponent implements OnInit {
+  currentSliderPatient = 1;
+  isDarkMode = false;
+
   // eslint-disable-next-line no-unused-vars
   constructor(public translate: TranslateService, private router: Router) {}
 
@@ -76,5 +79,34 @@ export class TraumappComponent implements OnInit {
 
   navigateUrl(code: string): void {
     navigationCustom(() => this.router.navigate([code]));
+  }
+
+  scrollToRegisterPatient(direction: number): void {
+    const sliderBox: HTMLElement = <HTMLElement>document.getElementById('registerPatientsSlider');
+    let position = 0;
+    if (this.currentSliderPatient >= 3 && direction > 0) {
+      this.currentSliderPatient = 1;
+      position = 0;
+    } else if (direction > 0) {
+      if (this.currentSliderPatient < 3) {
+        position = sliderBox.offsetWidth * this.currentSliderPatient;
+      }
+      this.currentSliderPatient += direction;
+    } else {
+      if (this.currentSliderPatient - 1 <= 0) {
+        this.currentSliderPatient = 3;
+        position = sliderBox.offsetWidth * 2;
+      } else {
+        this.currentSliderPatient += direction;
+        position = sliderBox.offsetWidth * (this.currentSliderPatient - 1);
+      }
+    }
+    sliderBox.scrollTo({
+      left: position,
+      behavior: 'smooth',
+    });
+  }
+  setDarksMode(): void {
+    this.isDarkMode = !this.isDarkMode;
   }
 }

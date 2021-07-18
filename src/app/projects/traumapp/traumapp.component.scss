@@ -123,11 +123,149 @@
   border: 1.5px solid #333;
 }
 
-.patientsImagesBox {
+.patientsImagesBox, .formImagesBox, .configImagesBox {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  align-items: center;
+}
+
+.formImagesBox, .configImagesBox {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.sliderImagesMainBox {
+  max-width: 30%;
+  position: relative;
+}
+
+.sliderImages {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.sliderImages > img {
+  border: 1px solid #333;
+  transition: 1.5s;
+  width: 100%;
+  height: auto;
+}
+
+.sliderPatientsDsc {
+  width: 50%;
+}
+
+.hideRegisterPatientSlider {
+  opacity: 0;
+}
+
+.dotBox {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dotPosition {
+  height: 10px;
+  width: 10px;
+  margin: 0px 10px;
+  transition: 0.5s;
+  border-radius: 9999px;
+  background-color: rgba(101, 101, 101, 0.5);
+}
+
+.dotActive {
+  background: #656565 !important;
+}
+
+.arrowBox {
+  position: absolute;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  border-radius: 9999px;
+  background-color: #2B2B2B;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.arrowBox:hover {
+  opacity: 0.8;
+}
+
+.arrowBoxLeft {
+  left: -50px;
+}
+
+.arrowBoxRight {
+  right: -50px;
+}
+
+.darkModeButton {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  padding: 15px;
+  border-radius: 9999px;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.6s;
+}
+
+.backgroundLightMode {
+  background: #EEE;
+  color: #111;
+}
+
+.backgroundDarkMode {
+  background: #333;
+  border: 1.5px solid #FFF;
+  color: #FFF;
+}
+
+.configRowBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3.5rem;
+}
+
+.configRowBoxLeft {
+  flex-direction: row;
+}
+
+.configRowBoxRight {
+  flex-direction: row-reverse;
+}
+
+.configColumnDsc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.configImages { 
+  height: auto;
+  width: 30%;
+}
+
+.configTitle {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.configText {
+  width: 55%;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -234,11 +372,20 @@
     width: 20vw;
   }
 
-  .patientsImagesBox {
+  .patientsImagesBox, .formImagesBox, .configImagesBox {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .formImagesBox, .configImagesBox {
+    margin: 0;
+  }
+
+  .formImagesBox > img, .configImagesBox > img {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .patientsImagesBox > img {
@@ -248,8 +395,16 @@
   .imgPatients {
     height: 75vh;
   }
-}
 
+  .sliderImagesMainBox {
+    max-width: 50%;
+  }
+
+  .sliderPatientsDsc {
+    width: 80%;
+    margin-top: 40px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .imgScreen {
@@ -262,5 +417,13 @@
   .imgPatients {
     height: auto;
     width: 100%;
+  }
+
+  .sliderImagesMainBox {
+    max-width: 60%;
+  }
+
+  .sliderPatientsDsc {
+    width: 90%;
   }
 }

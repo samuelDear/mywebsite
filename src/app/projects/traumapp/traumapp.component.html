@@ -16,7 +16,7 @@
   <div class="my-16 flex justify-center borderedBox boxUnique">
     <img
       src="../../../assets/images/project-images/traumapp/principalimg.png"
-      class="imgScreen borderedBox"
+      class="imgScreen borderedBox borderImages"
       title="Menu Principal"
       alt="Menu principal"
     />
@@ -44,7 +44,7 @@
   <div class="visualResultItems" id="visualResult1">
     <img
       src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgLeft"
+      class="imgVisualResult borderedBox imgLeft borderImages"
       title=""
       alt=""
     />
@@ -61,7 +61,7 @@
   <div class="visualResultItems visualResultItemsRight" id="visualResult2">
     <img
       src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgRight"
+      class="imgVisualResult borderedBox imgRight borderImages"
       title=""
       alt=""
     />
@@ -78,7 +78,7 @@
   <div class="visualResultItems" id="visualResult3">
     <img
       src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgLeft"
+      class="imgVisualResult borderedBox imgLeft borderImages"
       title=""
       alt=""
     />
@@ -95,7 +95,7 @@
   <div class="visualResultItems visualResultItemsRight" id="visualResult4">
     <img
       src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgRight"
+      class="imgVisualResult borderedBox imgRight borderImages"
       title=""
       alt=""
     />
@@ -121,14 +121,14 @@
   <div class="patientsImagesBox my-16">
     <img
       src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox"
+      class="imgPatients borderedBox borderImages"
       title=""
       alt=""
     />
 
     <img
       src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox"
+      class="imgPatients borderedBox borderImages"
       title=""
       alt=""
     />
@@ -136,14 +136,45 @@
 
   <!-- Registro de pacientes -->
   <div class="patientsImagesBox my-16">
-    <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox"
-      title=""
-      alt=""
-    />
+    <div class="sliderImagesMainBox">
+      <div class="arrowBox arrowBoxLeft" (click)="scrollToRegisterPatient(-1)">
+        <mat-icon aria-hidden="false" aria-label="arrow">keyboard_arrow_left</mat-icon>
+      </div>
+      <div class="sliderImages" id="registerPatientsSlider">
+        <img
+          id="registerPatients1"
+          src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+          [ngClass]="(currentSliderPatient == 1 ? '' : 'hideRegisterPatientSlider') + ' imgPatients borderedBox'"
+          title=""
+          alt=""
+        />
+        <img
+          id="registerPatients2"
+          src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+          [ngClass]="(currentSliderPatient == 2 ? '' : 'hideRegisterPatientSlider') + ' imgPatients borderedBox'"
+          title=""
+          alt=""
+        />
+        <img
+          id="registerPatients3"
+          src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+          [ngClass]="(currentSliderPatient == 3 ? '' : 'hideRegisterPatientSlider') + ' imgPatients borderedBox'"
+          title=""
+          alt=""
+        />
+      </div>
+      <div class="arrowBox arrowBoxRight" (click)="scrollToRegisterPatient(1)">
+        <mat-icon aria-hidden="false" aria-label="arrow">keyboard_arrow_right</mat-icon>
+      </div>
+      <div class="dotBox">
+        <div [ngClass]="(currentSliderPatient == 1 ? 'dotActive' : '') + ' dotPosition'"></div>
+        <div [ngClass]="(currentSliderPatient == 2 ? 'dotActive' : '') + ' dotPosition'"></div>
+        <div [ngClass]="(currentSliderPatient == 3 ? 'dotActive' : '') + ' dotPosition'"></div>
+      </div>
+    </div>
     
-    <p class="text-justify intro" stranslate="traumapp.registerPatients"></p>
+    
+    <p class="text-justify intro sliderPatientsDsc" stranslate="traumapp.registerPatients"></p>
   </div>
 </section>
 
@@ -154,6 +185,38 @@
   <div class="formsBox p-4">
     <p class="text-justify intro" stranslate="traumapp.dscForms"></p>
   </div>
+
+  <div class="formImagesBox">
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
+
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
+  </div>
+
+  <div class="formImagesBox">
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
+
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
+  </div>
 </section>
 
 <!-- Calendario -->
@@ -162,6 +225,46 @@
 
   <div class="calendarBox p-4">
     <p class="text-justify intro" stranslate="traumapp.dscCalendar"></p>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <img
+      src="../../../assets/images/project-images/traumapp/principalimg.png"
+      class="imgScreen borderedBox borderImages"
+      title="Menu Principal"
+      alt="Menu principal"
+    />
+  </div>
+  <div class="configImagesBox">
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
+
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
+  </div>
+
+  <div class="configImagesBox">
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
+
+    <img
+      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title=""
+      alt=""
+    />
   </div>
 </section>
 
@@ -172,9 +275,67 @@
   <div class="configBox p-4">
     <p class="text-justify intro" stranslate="traumapp.dscConfig"></p>
   </div>
+
+  <!-- Imagen principal de configuacion -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <img
+      src="../../../assets/images/project-images/traumapp/principalimg.png"
+      class="imgPatients borderedBox borderImages"
+      title="Menu Principal"
+      alt="Menu principal"
+    />
+  </div>
+
+  <!-- Usuarios -->
+  <div class="configRowBox configRowBoxLeft">
+    <img
+      src="../../../assets/images/project-images/traumapp/principalimg.png"
+      class="configImages borderedBox borderImages"
+      title=""
+      alt=""
+    />
+    <div class="configColumnDsc configText">
+      <h1 class="configTitle" stranslate="traumapp.userTitleConfig"></h1>
+      <p class="text-justify intro" stranslate="traumapp.userDscConfig"></p>
+    </div>
+  </div>
+
+  <!-- Medicamentos y Seguros -->
+  <div class="configRowBox configRowBoxRight">
+    <img
+      src="../../../assets/images/project-images/traumapp/principalimg.png"
+      class="configImages borderedBox borderImages"
+      title=""
+      alt=""
+    />
+    <div class="configColumnDsc configText">
+      <h1 class="configTitle" stranslate="traumapp.medicineTitleConfig"></h1>
+      <p class="text-justify intro" stranslate="traumapp.medicineDscConfig"></p>
+    </div>
+  </div>
+
+  <!-- Usuarios -->
+  <div class="configRowBox configRowBoxLeft">
+    <img
+      src="../../../assets/images/project-images/traumapp/principalimg.png"
+      class="configImages borderedBox borderImages"
+      title=""
+      alt=""
+    />
+    <div class="configColumnDsc configText">
+      <h1 class="configTitle" stranslate="traumapp.registerModeTitleConfig"></h1>
+      <p class="text-justify intro" stranslate="traumapp.registerModeDscConfig"></p>
+    </div>
+  </div>
+
 </section>
 
 <!-- Caracteristicas Principales -->
 <section class="principalFeatures mainBoxTraumApp entryPage" id="principalFeatures">
   <h2 class="text-3xl text-center titleSection font-bold" stranslate="traumapp.principalFeatures"></h2>
 </section>
+
+<div [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')" (click)="setDarksMode()">
+  <mat-icon *ngIf="!isDarkMode" aria-hidden="false" aria-label="arrow">light_mode</mat-icon>
+  <mat-icon *ngIf="isDarkMode" aria-hidden="false" aria-label="arrow">dark_mode</mat-icon>
+</div>

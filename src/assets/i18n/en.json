@@ -138,6 +138,12 @@
     "dscCalendar": "",
     "titleConfig": "",
     "dscConfig": "",
+    "userTitleConfig": "",
+    "userDscConfig": "",
+    "medicineTitleConfig": "",
+    "medicineDscConfig": "",
+    "registerModeTitleConfig": "",
+    "registerModeDscConfig": "",
     "principalFeatures": "",
     "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
   },

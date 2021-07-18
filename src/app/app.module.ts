@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /* Material UI components */
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -60,6 +61,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     MatButtonModule,
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
+    MatIconModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
