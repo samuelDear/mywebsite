@@ -24,10 +24,18 @@ export class TraumappComponent implements OnInit {
     const visualResult3 = document.getElementById('visualResult3');
     const visualResult4 = document.getElementById('visualResult4');
 
-    visualResult1 !== null && this.createObserver(visualResult1);
-    visualResult2 !== null && this.createObserver(visualResult2);
-    visualResult3 !== null && this.createObserver(visualResult3);
-    visualResult4 !== null && this.createObserver(visualResult4);
+    visualResult1 !== null && this.createObserver(visualResult1, this.handleIntersectionVisualResult);
+    visualResult2 !== null && this.createObserver(visualResult2, this.handleIntersectionVisualResult);
+    visualResult3 !== null && this.createObserver(visualResult3, this.handleIntersectionVisualResult);
+    visualResult4 !== null && this.createObserver(visualResult4, this.handleIntersectionVisualResult);
+
+    const userConfig = document.getElementById('userConfig');
+    const medicineConfig = document.getElementById('medicineConfig');
+    const registerModeConfig = document.getElementById('registerModeConfig');
+
+    userConfig !== null && this.createObserver(userConfig, this.handleIntersectionConfig);
+    medicineConfig !== null && this.createObserver(medicineConfig, this.handleIntersectionConfig);
+    registerModeConfig !== null && this.createObserver(registerModeConfig, this.handleIntersectionConfig);
 
     const boxAnimation: string[] = [
       'resumeSection',
@@ -48,18 +56,19 @@ export class TraumappComponent implements OnInit {
     }, 1000);
   }
 
-  createObserver(element: HTMLElement): void {
+  // eslint-disable-next-line
+  createObserver(element: HTMLElement, intersector: (entries: any) => void): void {
     const options = {
       threshold: threshold,
     };
 
-    const observer = new IntersectionObserver(this.handleIntersection, options);
+    const observer = new IntersectionObserver(intersector, options);
 
     observer.observe(element);
   }
 
   // eslint-disable-next-line
-  handleIntersection(entries: any): void {
+  handleIntersectionVisualResult(entries: any): void {
     const entry = entries[0];
     const isVisible = entry.intersectionRatio >= threshold;
     if (isVisible) {
@@ -74,6 +83,17 @@ export class TraumappComponent implements OnInit {
           ? 'featureShowRight'
           : 'featureShowLeft',
       );
+    }
+  }
+
+  // eslint-disable-next-line
+  handleIntersectionConfig(entries: any): void {
+    const entry = entries[0];
+    const isVisible = entry.intersectionRatio >= threshold;
+    if (isVisible) {
+      entry.target.classList.remove('configHideBox');
+    } else if (entry.target.offsetTop > window.scrollY) {
+      entry.target.classList.add('configHideBox');
     }
   }
 

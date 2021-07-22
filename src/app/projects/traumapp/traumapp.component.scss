@@ -64,6 +64,10 @@
   height: 75vh;
 }
 
+.imgScreen, .imgPatients, .imgVisualResult {
+  max-height: 800px;
+}
+
 .imgVisualResult {
   height: 50vw;
 }
@@ -152,6 +156,8 @@
   transition: 1.5s;
   width: 100%;
   height: auto;
+  max-height: none;
+  max-width: 700px;
 }
 
 .sliderPatientsDsc {
@@ -225,6 +231,7 @@
 .backgroundLightMode {
   background: #EEE;
   color: #111;
+  border: 1.5px solid #FFF;
 }
 
 .backgroundDarkMode {
@@ -238,6 +245,7 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: 3.5rem;
+  transition: 1.5s;
 }
 
 .configRowBoxLeft {
@@ -257,16 +265,23 @@
 .configImages { 
   height: auto;
   width: 30%;
+  max-width: 430px;
 }
 
 .configTitle {
   font-size: 2rem;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .configText {
   width: 55%;
 }
+
+.configHideBox {
+  transform: scale(0);
+}
+
 
 @media only screen and (max-width: 1250px) {
   .mainBoxTraumApp {
@@ -404,12 +419,38 @@
     width: 80%;
     margin-top: 40px;
   }
+
+  .configRowBoxLeft,  .configRowBoxRight {
+    flex-direction: column;
+  }
+
+  .configImages {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .configText {
+    width: 90%;
+  }
+
+  .configRowBox {
+    margin-bottom: 4rem;
+  }
+
+  .configTitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .imgScreen {
     height: auto;
     width: 100%;
+  }
+
+  .imgScreen, .imgPatients, .imgVisualResult {
+    max-height: none;
   }
 }
 
@@ -425,5 +466,10 @@
 
   .sliderPatientsDsc {
     width: 90%;
+  }
+
+  .configTitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
   }
 }
