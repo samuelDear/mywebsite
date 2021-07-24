@@ -151,6 +151,16 @@
     "principalFeatureDsc2": "In the reports section, there are multiple forms, each of which is different. This allows the generation of medical reports to be more detailed. Each form is centered on a body part, allowing you to enter details of the body part you are evaluating.",
     "principalFeatureTitle3": "Digitization",
     "principalFeatureDsc3": "Notebooks, sheets and folders are still used in many medical offices to carry personal files and medical records of patients. With TraumApp, the records and processes that a medical office needs are digitized.",
+    "featureTitle1": "Multiplatform technology",
+    "featureDsc1": "Although it is currently only available in the Play Store. React Native allows you to compile applications also for iOS, therefore, it could be published in the iOS App Store.",
+    "featureTitle2": "Report automation",
+    "featureDsc2": "The forms were created in detail so that their creation was automatic and efficient. This allows for a standard in medical reports and greater agility when creating a report.",
+    "featureTitle3": "Users and privileges",
+    "featureDsc3": "There are different levels of users who can perform different actions between them, from exporting data to Excel to automating the sending of reports",
+    "featureTitle4": "Report notification by mail",
+    "featureDsc4": "After having completed a report, it can be automatically sent to the patient who was made, thus allowing the patient to have their own medical report if necessary.",
+    "featureTitle5": "Dark Mode",
+    "featureDsc5": "If you got this far, you could realize that TraumApp has a light design and a dark design, which can be activated whenever the user wants. Both designs are carefully created to maintain a good color harmony.",
     "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
   },
   "knowlegde": {

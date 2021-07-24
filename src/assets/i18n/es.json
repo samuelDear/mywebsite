@@ -151,6 +151,16 @@
     "principalFeatureDsc2": "En el apartado de informes, existen múltiples formularios los cuales son distintos cada uno de ellos. Esto permite que la generación de informes médicos sea más detallada. Cada formulario está centrado en una parte del cuerpo, permitiéndole ingresar detalles de la parte del cuerpo que este evaluando.",
     "principalFeatureTitle3": "Digitalización",
     "principalFeatureDsc3": "En muchos consultorios médicos se siguen usando libretas, hojas y carpetas para llevar las fichas personales e historias medicas de los pacientes. Con TraumApp se digitalizan los registros y procesos que necesita un consultorio medico.",
+    "featureTitle1": "Tecnología multiplataforma",
+    "featureDsc1": "A pesar de que actualmente solo se encuentra disponible en la Play Store. React Native permite compilar aplicaciones tambien para iOS, por lo tanto, podria ser publicada en la App Store de iOS.",
+    "featureTitle2": "Automatización de informes",
+    "featureDsc2": "Los formularios fueron creados detalladamente para que la creación de estos fuera automática y eficiente. Esto permite que se tenga un estándar en los informes médicos y una mayor agilidad al momento de crear un informe.",
+    "featureTitle3": "Usuarios y privilegios",
+    "featureDsc3": "Existen diferentes niveles de usuarios que pueden realizar acciones distintas entre ellos, desde exportar datos a Excel hasta automatizar envió de informes.",
+    "featureTitle4": "Notificación de informe por correo",
+    "featureDsc4": "Luego de haber finalizado un informe, este puede ser enviado de manera automática hacia el paciente que se le realizo, permitiéndole así al paciente tener su propio informe medico en caso de que sea necesario.",
+    "featureTitle5": "Modo Oscuro",
+    "featureDsc5": "Si llegaste hasta aquí pudiste darte cuenta de que, TraumApp cuenta con diseño claro y un diseño oscuro, el cual puede activarse cuando el usuario quiera. Ambos diseños se encuentran detalladamente creados para mantener una buena armonía de colores.",
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
   "knowlegde": {

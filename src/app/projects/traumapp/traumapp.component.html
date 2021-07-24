@@ -437,8 +437,54 @@
 </section>
 
 <!-- Caracteristicas-->
-<section>
+<section class="mainBoxTraumApp">
   <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
+
+  <div class="my-12 flex flex-col items-center">
+    <div class="featureBox my-4 border-2 p-4">
+      <h6 class="text-2xl titleFeature text-center" stranslate="traumapp.featureTitle1"></h6>
+      <p class="text-justify" stranslate="traumapp.featureDsc1"></p>
+    </div>
+  </div>
+
+  <div class="my-12 flex flex-col items-center">
+    <div class="featureBox my-4 border-2 p-4">
+      <h6 class="text-2xl titleFeature text-center" stranslate="traumapp.featureTitle2"></h6>
+      <p class="text-justify" stranslate="traumapp.featureDsc2"></p>
+    </div>
+  </div>
+
+  <div class="my-12 flex flex-col items-center">
+    <div class="featureBox my-4 border-2 p-4">
+      <h6 class="text-2xl titleFeature text-center" stranslate="traumapp.featureTitle3"></h6>
+      <p class="text-justify" stranslate="traumapp.featureDsc3"></p>
+    </div>
+  </div>
+
+  <div class="my-12 flex flex-col items-center">
+    <div class="featureBox my-4 border-2 p-4">
+      <h6 class="text-2xl titleFeature text-center" stranslate="traumapp.featureTitle4"></h6>
+      <p class="text-justify" stranslate="traumapp.featureDsc4"></p>
+    </div>
+  </div>
+
+  <div class="my-12 flex flex-col items-center">
+    <div class="featureBox my-4 border-2 p-4">
+      <h6 class="text-2xl titleFeature text-center" stranslate="traumapp.featureTitle5"></h6>
+      <p class="text-justify" stranslate="traumapp.featureDsc5"></p>
+    </div>
+  </div>
+
+  <div class="my-8 mx-auto w-3/4">
+    <p class="text-center text-3xl" stranslate="project.thanks"></p>
+    <div class="heart"></div>
+    <p class="text-center"><span stranslate="project.hereMore"></span><span class="underline cursor-pointer" stranslate="project.aboutLink" routerLink="/about"></span></p>
+  </div>
+  
+  <div class="my-8 mx-auto w-3/4">
+    <p class="text-center text-2xl" stranslate="project.otherWork"></p>
+  </div>
+
 </section>
 
 <div [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')" (click)="setDarksMode()">
