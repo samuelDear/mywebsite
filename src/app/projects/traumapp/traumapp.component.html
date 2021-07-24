@@ -487,6 +487,23 @@
 
 </section>
 
+<!-- Proyectos randoms -->
+<section>
+  <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of ramdons;let i = index" (click)="navigateUrl(random.code)">
+    <div>
+      <h6 class="text-2xl"> {{ random.name }}</h6>
+      <p class="ml-4">{{ translate.currentLang == "es" ? random.es.resume : random.en.resume }}</p>
+    </div>
+    <div class="flex flex-row items-center">
+      <span class="block stick"></span>
+      <div>
+        <span class="block stick-arrow stick-top"></span>
+        <span class="block stick-arrow stick-bottom"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')" (click)="setDarksMode()">
   <mat-icon *ngIf="!isDarkMode" aria-hidden="false" aria-label="arrow">light_mode</mat-icon>
   <mat-icon *ngIf="isDarkMode" aria-hidden="false" aria-label="arrow">dark_mode</mat-icon>

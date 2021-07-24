@@ -19,18 +19,6 @@ export class AfxtradeComponent implements OnInit {
   ];
   ramdons: Project[] = [
     {
-      code: '/FJCIntranet',
-      name: 'FJC Intranet',
-      es: {
-        resume:
-          'Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001.',
-      },
-      en: {
-        resume:
-          'It is an internal single page system (SPA). Created with Angular 8 and Java Spring Boot, for document and discovery management at the Fundacion Jacinto Convit. A website that has international standards and under the ISO 9001 standard.',
-      },
-    },
-    {
       code: '/ormv',
       name: 'ORM',
       es: {
@@ -52,6 +40,18 @@ export class AfxtradeComponent implements OnInit {
       en: {
         resume:
           "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience.",
+      },
+    },
+    {
+      name: 'TraumApp',
+      code: '/traumapp',
+      es: {
+        resume:
+          'Es una aplicación móvil multiplataforma desarrollada con React Native, PHP y MySQL. Una aplicación para gestionar consultas medicas en el cual podemos realizar diversas acciones como programar citas, gestionar fichas de pacientes y crear informes médicos automatizados de las consultas.',
+      },
+      en: {
+        resume:
+          'It is a multiplatform mobile application developed with React Native, PHP and MySQL. An application to manage medical consultations in which we can perform various actions such as scheduling appointments, managing patient files and creating automated medical reports of consultations.',
       },
     },
   ];
