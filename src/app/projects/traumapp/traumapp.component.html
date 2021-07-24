@@ -13,10 +13,10 @@
   </div>
 
   <!-- Imagen principal del proyecto -->
-  <div class="my-16 flex justify-center borderedBox boxUnique">
+  <div class="my-16 flex justify-center  boxUnique">
     <img
-      src="../../../assets/images/project-images/traumapp/principalimg.png"
-      class="imgScreen borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/principalimg.png' : '../../../assets/images/project-images/traumapp/light/principalimg.png'"
+      class="imgScreen  borderImages"
       title="Menu Principal"
       alt="Menu principal"
     />
@@ -43,8 +43,8 @@
   <!-- pantalla 1 -->
   <div class="visualResultItems" id="visualResult1">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgLeft borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/loginimg.png' : '../../../assets/images/project-images/traumapp/light/loginimg.png'"
+      class="imgVisualResult imgLeft"
       title=""
       alt=""
     />
@@ -60,8 +60,8 @@
   <!-- pantalla 2 -->
   <div class="visualResultItems visualResultItemsRight" id="visualResult2">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgRight borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/homemenu.png' : '../../../assets/images/project-images/traumapp/light/homemenu.png'"
+      class="imgVisualResult imgRight"
       title=""
       alt=""
     />
@@ -77,8 +77,8 @@
   <!-- pantalla 3 -->
   <div class="visualResultItems" id="visualResult3">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgLeft borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/calendarimg.png' : '../../../assets/images/project-images/traumapp/light/calendarimg.png'"
+      class="imgVisualResult imgLeft"
       title=""
       alt=""
     />
@@ -94,8 +94,8 @@
   <!-- pantalla 4 -->
   <div class="visualResultItems visualResultItemsRight" id="visualResult4">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgVisualResult borderedBox imgRight borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerModeImg.png' : '../../../assets/images/project-images/traumapp/light/registerModeImg.png'"
+      class="imgVisualResult  imgRight borderImages"
       title=""
       alt=""
     />
@@ -120,15 +120,15 @@
   <!-- Pantalla de pacientes -->
   <div class="patientsImagesBox my-16">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/patientList.png' : '../../../assets/images/project-images/traumapp/light/patientList.png'"
+      class="imgPatients"
       title=""
       alt=""
     />
 
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/patientData.png' : '../../../assets/images/project-images/traumapp/light/patientData.png'"
+      class="imgPatients"
       title=""
       alt=""
     />
@@ -143,22 +143,22 @@
       <div class="sliderImages" id="registerPatientsSlider">
         <img
           id="registerPatients1"
-          src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-          [ngClass]="(currentSliderPatient == 1 ? '' : 'hideRegisterPatientSlider') + ' imgPatients borderedBox'"
+          [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerStep1.png' : '../../../assets/images/project-images/traumapp/light/registerStep1.png'"
+          [ngClass]="(currentSliderPatient == 1 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
           title=""
           alt=""
         />
         <img
           id="registerPatients2"
-          src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-          [ngClass]="(currentSliderPatient == 2 ? '' : 'hideRegisterPatientSlider') + ' imgPatients borderedBox'"
+          [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerStep2.png' : '../../../assets/images/project-images/traumapp/light/registerStep2.png'"
+          [ngClass]="(currentSliderPatient == 2 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
           title=""
           alt=""
         />
         <img
           id="registerPatients3"
-          src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-          [ngClass]="(currentSliderPatient == 3 ? '' : 'hideRegisterPatientSlider') + ' imgPatients borderedBox'"
+          [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerStep3.png' : '../../../assets/images/project-images/traumapp/light/registerStep3.png'"
+          [ngClass]="(currentSliderPatient == 3 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
           title=""
           alt=""
         />
@@ -188,15 +188,15 @@
 
   <div class="formImagesBox">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/formMenu.png' : '../../../assets/images/project-images/traumapp/light/formMenu.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
 
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/formMotive.png' : '../../../assets/images/project-images/traumapp/light/formMotive.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
@@ -204,15 +204,15 @@
 
   <div class="formImagesBox">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/formSick.png' : '../../../assets/images/project-images/traumapp/light/formSick.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
 
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/finalForm.png' : '../../../assets/images/project-images/traumapp/light/finalForm.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
@@ -227,25 +227,25 @@
     <p class="text-justify intro" stranslate="traumapp.dscCalendar"></p>
   </div>
 
-  <div class="my-16 flex justify-center borderedBox boxUnique">
+  <div class="my-16 flex justify-center  boxUnique">
     <img
-      src="../../../assets/images/project-images/traumapp/principalimg.png"
-      class="imgScreen borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/calendarprincipalimg.png' : '../../../assets/images/project-images/traumapp/light/calendarprincipalimg.png'"
+      class="imgScreen  borderImages"
       title="Menu Principal"
       alt="Menu principal"
     />
   </div>
   <div class="configImagesBox">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/createdate.png' : '../../../assets/images/project-images/traumapp/light/createdate.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
 
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/searchPatient.png' : '../../../assets/images/project-images/traumapp/light/searchPatient.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
@@ -253,15 +253,15 @@
 
   <div class="configImagesBox">
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/dateinfo.png' : '../../../assets/images/project-images/traumapp/light/dateinfo.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
 
     <img
-      src="../../../assets/images/project-images/traumapp/menuprincipalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/deletedate.png' : '../../../assets/images/project-images/traumapp/light/deletedate.png'"
+      class="imgPatients  borderImages"
       title=""
       alt=""
     />
@@ -277,10 +277,10 @@
   </div>
 
   <!-- Imagen principal de configuacion -->
-  <div class="my-16 flex justify-center borderedBox boxUnique">
+  <div class="my-16 flex justify-center  boxUnique">
     <img
-      src="../../../assets/images/project-images/traumapp/principalimg.png"
-      class="imgPatients borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/configprincipalimg.png' : '../../../assets/images/project-images/traumapp/light/configprincipalimg.png'"
+      class="imgPatients"
       title="Menu Principal"
       alt="Menu principal"
     />
@@ -289,8 +289,8 @@
   <!-- Usuarios -->
   <div class="configRowBox configRowBoxLeft configHideBox" id="userConfig">
     <img
-      src="../../../assets/images/project-images/traumapp/principalimg.png"
-      class="configImages borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/userimg.png' : '../../../assets/images/project-images/traumapp/light/userimg.png'"
+      class="configImages"
       title=""
       alt=""
     />
@@ -303,8 +303,8 @@
   <!-- Medicamentos y Seguros -->
   <div class="configRowBox configRowBoxRight configHideBox" id="medicineConfig">
     <img
-      src="../../../assets/images/project-images/traumapp/principalimg.png"
-      class="configImages borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/medicineList.png' : '../../../assets/images/project-images/traumapp/light/medicineList.png'"
+      class="configImages"
       title=""
       alt=""
     />
@@ -317,8 +317,8 @@
   <!-- Register Mode -->
   <div class="configRowBox configRowBoxLeft configHideBox" id="registerModeConfig">
     <img
-      src="../../../assets/images/project-images/traumapp/principalimg.png"
-      class="configImages borderedBox borderImages"
+      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registermodeconfig.png' : '../../../assets/images/project-images/traumapp/light/registermodeconfig.png'"
+      class="configImages"
       title=""
       alt=""
     />
@@ -333,6 +333,112 @@
 <!-- Caracteristicas Principales -->
 <section class="principalFeatures mainBoxTraumApp entryPage" id="principalFeatures">
   <h2 class="text-3xl text-center titleSection font-bold" stranslate="traumapp.principalFeatures"></h2>
+
+  <!-- Exportacion de datos -->
+  <div class="principalFeatureRow principalFeatureRowLeft" id="">
+    <div class="imageBoxFeature">
+      <img
+        src="../../../assets/images/project-images/traumapp/exportDataIc.svg"
+        class="principalFeaturesImage"
+        title=""
+        alt=""
+      />
+    </div>
+    <div class="principalFeatureDsc principalFeatureText">
+      <h1 class="principalFeatureTitle" stranslate="traumapp.principalFeatureTitle1"></h1>
+      <p class="text-justify intro" stranslate="traumapp.principalFeatureDsc1"></p>
+    </div>
+  </div>
+
+  <!-- Exportacion de datos -->
+  <div class="principalFeatureRow principalFeatureRowRight" id="">
+    <div class="imageBoxFeature">
+      <img
+        src="../../../assets/images/project-images/traumapp/formIc.svg"
+        class="principalFeaturesImage"
+        title=""
+        alt=""
+      />
+    </div>
+    <div class="principalFeatureDsc principalFeatureText">
+      <h1 class="principalFeatureTitle" stranslate="traumapp.principalFeatureTitle2"></h1>
+      <p class="text-justify intro" stranslate="traumapp.principalFeatureDsc2"></p>
+    </div>
+  </div>
+
+  <!-- Exportacion de datos -->
+  <div class="principalFeatureRow principalFeatureRowLeft" id="">
+    <div class="imageBoxFeature">
+      <img
+        src="../../../assets/images/project-images/traumapp/digitalizeIc.svg"
+        class="principalFeaturesImage"
+        title=""
+        alt=""
+      />
+    </div>
+    <div class="principalFeatureDsc principalFeatureText">
+      <h1 class="principalFeatureTitle" stranslate="traumapp.principalFeatureTitle3"></h1>
+      <p class="text-justify intro" stranslate="traumapp.principalFeatureDsc3"></p>
+    </div>
+  </div>
+</section>
+
+<!-- Logo de Aplicacion -->
+<section class="logoSection mainBoxTraumApp">
+  <img
+    id="logoApp"
+    src="../../../assets/images/project-images/traumapp/logoTraumApp.png"
+    alt=""
+    title=""
+    class="logoTraumapp"
+  />
+</section>
+
+<!-- Tipografia y color -->
+<section class="mainBoxTraumApp">
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+  <div class="my-6">
+    <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
+    <p class="typographyExample" id="typographyExample1">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
+  </div>
+
+  <div class="my-6">
+    <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
+    <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
+  </div>
+
+  <div class="colorMain">
+    <div class="colorBox">
+        <div class="colorContent" style="background-color: #49ABED;">
+        </div>
+        <p class="text-black text-center mt-2 font-bold">#49ABED</p>
+    </div>
+
+    <div class="colorBox">
+        <div class="colorContent" style="background-color: #D168FF;">
+        </div>
+        <p class="text-black text-center mt-2 font-bold">#D168FF</p>
+    </div>
+
+    <div class="colorBox">
+        <div class="colorContent" style="background-color: #2A4D75;">
+        </div>
+        <p class="text-black text-center mt-2 font-bold">#2A4D75</p>
+    </div>
+
+    <div class="colorBox">
+        <div class="colorContent" style="background-color: #51136C;">
+        </div>
+        <p class="text-black text-center mt-2 font-bold">#51136C</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Caracteristicas-->
+<section>
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
 </section>
 
 <div [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')" (click)="setDarksMode()">

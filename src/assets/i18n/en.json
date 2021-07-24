@@ -145,6 +145,12 @@
     "registerModeTitleConfig": "Reguster Mode",
     "registerModeDscConfig": "The register mode allows the user to give their device so that the patient or an administrator can perform basic actions such as registering patients or confirming attendance at the day's medical appointment.",
     "principalFeatures": "Principal Features",
+    "principalFeatureTitle1": "Data export",
+    "principalFeatureDsc1": "The PDFs that are generated in the creation of medical reports are generated in a unique and fast way. allowing the user to manipulate them without any problem. As well as the printing of these. Moreover, the export of patient or appointment data to Excel. Allowing the user to monitor the data that is necessary.",
+    "principalFeatureTitle2": "Multiple forms",
+    "principalFeatureDsc2": "In the reports section, there are multiple forms, each of which is different. This allows the generation of medical reports to be more detailed. Each form is centered on a body part, allowing you to enter details of the body part you are evaluating.",
+    "principalFeatureTitle3": "Digitization",
+    "principalFeatureDsc3": "Notebooks, sheets and folders are still used in many medical offices to carry personal files and medical records of patients. With TraumApp, the records and processes that a medical office needs are digitized.",
     "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
   },
   "knowlegde": {

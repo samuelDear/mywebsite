@@ -3,6 +3,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 import { navigationCustom } from '../../transition';
+import { Font } from '../../services/common';
+import { fontLoader } from 'src/main';
 
 const threshold = 0.1;
 @Component({
@@ -11,6 +13,11 @@ const threshold = 0.1;
   styleUrls: ['./traumapp.component.scss'],
 })
 export class TraumappComponent implements OnInit {
+  families: Font[] = [
+    { name: 'Monserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
+    { name: 'Open Sans', link: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap` },
+  ];
+
   currentSliderPatient = 1;
   isDarkMode = false;
 
@@ -37,6 +44,9 @@ export class TraumappComponent implements OnInit {
     medicineConfig !== null && this.createObserver(medicineConfig, this.handleIntersectionConfig);
     registerModeConfig !== null && this.createObserver(registerModeConfig, this.handleIntersectionConfig);
 
+    const logoBox = document.getElementById('logoApp');
+    logoBox !== null && this.createObserver(logoBox, this.handleIntersectionLogo);
+
     const boxAnimation: string[] = [
       'resumeSection',
       'introSection',
@@ -54,6 +64,18 @@ export class TraumappComponent implements OnInit {
         boxAnimated.classList.remove('entryPage');
       });
     }, 1000);
+
+    setTimeout(() => {
+      this.families.forEach((element, index) => {
+        //console.log(element, index);
+        fontLoader(element);
+        const div = document.getElementById(`typographyName${index + 1}`);
+        if (div !== null) {
+          div.innerHTML = element.name;
+          div.style.fontFamily = element.name;
+        }
+      });
+    }, 100);
   }
 
   // eslint-disable-next-line
@@ -94,6 +116,17 @@ export class TraumappComponent implements OnInit {
       entry.target.classList.remove('configHideBox');
     } else if (entry.target.offsetTop > window.scrollY) {
       entry.target.classList.add('configHideBox');
+    }
+  }
+
+  // eslint-disable-next-line
+  handleIntersectionLogo(entries: any): void {
+    const entry = entries[0];
+    const isVisible = entry.intersectionRatio >= threshold;
+    if (isVisible) {
+      entry.target.classList.remove('logoTraumappHide');
+    } else if (entry.target.offsetTop > window.scrollY) {
+      entry.target.classList.add('logoTraumappHide');
     }
   }
 

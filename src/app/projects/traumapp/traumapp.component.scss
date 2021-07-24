@@ -37,11 +37,11 @@
 }
 
 .formsSection {
-  background: linear-gradient(180deg,#002854, #3D3D3D);
+  background: linear-gradient(180deg,#002854, #20A5FF);
 }
 
 .calendarSection {
-  background-color: #3D3D3D;
+  background-color: #20A5FF;
 }
 
 .configSection {
@@ -50,6 +50,12 @@
 
 .principalFeatures {
   background: linear-gradient(180deg,#2C023E, #111);
+}
+
+.logoSection {
+  background: #111;
+  display: flex;
+  justify-content: center;
 }
 
 .patientsBox {
@@ -240,7 +246,7 @@
   color: #FFF;
 }
 
-.configRowBox {
+.configRowBox, .principalFeatureRow {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -248,15 +254,20 @@
   transition: 1.5s;
 }
 
-.configRowBoxLeft {
+.principalFeatureRow {
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.configRowBoxLeft, .principalFeatureRowLeft {
   flex-direction: row;
 }
 
-.configRowBoxRight {
+.configRowBoxRight, .principalFeatureRowRight {
   flex-direction: row-reverse;
 }
 
-.configColumnDsc {
+.configColumnDsc, .principalFeatureDsc {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,13 +279,13 @@
   max-width: 430px;
 }
 
-.configTitle {
+.configTitle, .principalFeatureTitle {
   font-size: 2rem;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.configText {
+.configText, .principalFeatureText {
   width: 55%;
 }
 
@@ -282,6 +293,31 @@
   transform: scale(0);
 }
 
+.principalFeatureHide {
+  transform: scale(1);
+}
+
+.imageBoxFeature {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.principalFeaturesImage {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.logoTraumapp {
+  width: 250px;
+  transition: 1.5s;
+  opacity: 1;
+}
+
+.logoTraumappHide {
+  opacity: 0;
+}
 
 @media only screen and (max-width: 1250px) {
   .mainBoxTraumApp {
@@ -420,7 +456,7 @@
     margin-top: 40px;
   }
 
-  .configRowBoxLeft,  .configRowBoxRight {
+  .configRowBoxLeft,  .configRowBoxRight, .principalFeatureRowRight, .principalFeatureRowLeft {
     flex-direction: column;
   }
 
@@ -429,18 +465,23 @@
     margin-bottom: 30px;
   }
 
-  .configText {
+  .configText, .imageBoxFeature, .principalFeatureDsc {
     width: 90%;
+  }
+
+  .imageBoxFeature {
+    margin-bottom: 20px;
   }
 
   .configRowBox {
     margin-bottom: 4rem;
   }
 
-  .configTitle {
+  .configTitle, .principalFeatureTitle {
     font-size: 1.8rem;
     margin-bottom: 20px;
   }
+
 }
 
 @media only screen and (max-width: 500px) {
