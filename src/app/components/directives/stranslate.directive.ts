@@ -16,7 +16,6 @@ export class StranslateDirective implements OnInit {
   constructor(public el: ElementRef, public renderer: Renderer2, private translateService: TranslateService) {}
 
   ngOnInit(): void {
-    console.log(this.translateValues);
     this.translateService.onLangChange.pipe(takeUntil(this.directiveDestroyed)).subscribe(() => {
       this.getTranslation();
     });
