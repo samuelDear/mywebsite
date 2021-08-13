@@ -38,7 +38,6 @@ export class AppComponent {
   }
 
   showButton(show: ShowHeader): void {
-    console.log(show);
     this.buttonShow = show.showButton;
     this.nav = show.nav;
   }
