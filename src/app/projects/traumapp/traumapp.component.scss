@@ -78,6 +78,7 @@
 
 .imgScreen, .imgPatients, .imgVisualResult {
   max-height: 800px;
+  border-radius: 20px;
 }
 
 .imgVisualResult {
@@ -282,6 +283,7 @@
 .configImages { 
   height: auto;
   width: 30%;
+  border-radius: 20px;
   max-width: 400px;
 }
 
