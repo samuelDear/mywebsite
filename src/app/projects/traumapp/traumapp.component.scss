@@ -72,19 +72,6 @@
   border: 5px solid #4AE3CD;
 }
 
-.imgScreen, .imgPatients {
-  height: 75vh;
-}
-
-.imgScreen, .imgPatients, .imgVisualResult {
-  max-height: 800px;
-  border-radius: 20px;
-}
-
-.imgVisualResult {
-  height: 50vw;
-}
-
 .visualResultItems {
   display: flex;
   flex-direction: row;
@@ -97,14 +84,6 @@
 
 .visualResultItemsRight {
   flex-direction: row-reverse;
-}
-
-.imgLeft {
-  transform: rotate(-10deg);
-}
-
-.imgRight {
-  transform: rotate(10deg);
 }
 
 .arrowCurve {
@@ -399,19 +378,6 @@
     align-items: center;
   }
 
-  .imgVisualResult {
-    height: auto;
-    width: 50vw;
-  }
-
-  .imgLeft {
-    transform: rotate(-5deg);
-  }
-  
-  .imgRight {
-    transform: rotate(5deg);
-  }
-
   .visualResultDsc {
     padding-top: 70px;
   }
@@ -490,17 +456,6 @@
     margin-bottom: 20px;
   }
 
-}
-
-@media only screen and (max-width: 500px) {
-  .imgScreen {
-    height: auto;
-    width: 100%;
-  }
-
-  .imgScreen, .imgPatients, .imgVisualResult {
-    max-height: none;
-  }
 }
 
 @media only screen and (max-width: 450px) {

@@ -79,32 +79,38 @@ textarea {
   resize: none;
 }
 
-@media only screen and (max-width : 1224px) {
-  .socialMedia {
-    height: 45px;
-    width: 45px;
-  }
+.segurityIc {
+  width: 40%;
 }
 
-@media only screen and (max-width : 1024px) {
-  .socialMedia {
-    height: 40px;
-    width: 40px;
-  }
+.comunicationsIc {
+  width: 50%;
 }
 
-@media only screen and (max-width : 950px) {
-  .socialMedia {
-    height: 30px;
-    width: 30px;
-  }
+.movementsIc {
+  width: 70%;
 }
 
-@media only screen and (max-width : 700px) {
-  .socialMedia {
-    height: 25px;
-    width: 25px;
-  }
+.exchangesIc {
+  width: 55%;
+}
+
+/*Logo Jacinto Convit*/
+.JClogo {
+  transition: 1s;
+  width: 20vw;
+  min-width: 50px;
+  max-width: 100px;
+}
+
+
+.imgScreen, .imgPatients {
+  height: 75vh;
+}
+
+.imgScreen, .imgPatients, .imgVisualResult {
+  max-height: 800px;
+  border-radius: 20px;
 }
   
 .loadScreen {
@@ -505,6 +511,42 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #FFF !important;
 }
 
+.criptoIcon {
+  max-height: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.criptoIconDisabled {
+  opacity: 0.5;
+}
+
+.imgLeft {
+  transform: rotate(-10deg);
+}
+
+.imgRight {
+  transform: rotate(10deg);
+}
+
+.imgVisualResult {
+  height: 50vw;
+}
+
+@media only screen and (max-width : 1224px) {
+  .socialMedia {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+@media only screen and (max-width : 1024px) {
+  .socialMedia {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 @media only screen and (max-width : 1085px) {
   .mainBox{
     margin: 8rem 5rem;
@@ -531,6 +573,11 @@ input:-webkit-autofill {
     flex-grow: 0;
     max-width: 40%;
     flex-basis: 40%;
+  }
+
+  .socialMedia {
+    height: 30px;
+    width: 30px;
   }
 }
   
@@ -583,6 +630,22 @@ input:-webkit-autofill {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
+
+  .segurityIc {
+    width: 40%;
+  }
+
+  .comunicationsIc {
+    width: 50%;
+  }
+
+  .movementsIc {
+    width: 60%;
+  }
+
+  .exchangesIc {
+    width: 50%;
+  }
 }
   
 @media only screen and (max-width : 750px) {
@@ -603,7 +666,14 @@ input:-webkit-autofill {
     margin: 0px 2rem;
   }
 }
-  
+
+@media only screen and (max-width : 700px) {
+  .socialMedia {
+    height: 25px;
+    width: 25px;
+  }
+}
+
 @media only screen and (max-width : 650px) {
   .rolAgencyDate {
     flex-direction: column;
@@ -613,6 +683,19 @@ input:-webkit-autofill {
   .listDetails li {
     margin-bottom: 5px;
     font-size: 16px;
+  }
+
+  .imgLeft {
+    transform: rotate(-5deg);
+  }
+  
+  .imgRight {
+    transform: rotate(5deg);
+  }
+
+  .imgVisualResult {
+    height: auto;
+    width: 50vw;
   }
 }
   
@@ -643,8 +726,18 @@ input:-webkit-autofill {
     height: 30px;
   }
 }
-  
+
 @media only screen and (max-width : 500px) {
+
+  .imgScreen {
+    height: auto;
+    width: 100%;
+  }
+
+  .imgScreen, .imgPatients, .imgVisualResult {
+    max-height: none;
+  }
+
   .buttonTablet{
     width: 20px;
     height: 20px;

@@ -11,12 +11,15 @@
 
     <!-- Imagen principal del proyecto -->
     <div class="my-16 flex justify-center borderedBox boxUnique">
-      <img
-        src="../../../assets/images/project-images/portfolio/principalimg.png"
-        class="h-full borderedBox"
-        title="Imagen de mi portafolio!"
-        alt="Portafolio Web"
-      />
+      <app-img-loader
+        [src]="'../../../assets/images/project-images/portfolio/principalimg.png'"
+        [title]="'Imagen de mi portafolio!'"
+        [alt]="'Portafolio Web'"
+        [id]="'documentList'"
+        [classes]="'h-full borderedBox'"
+        [height]="'400px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
 
     <div class="boxProject border-2 p-4">

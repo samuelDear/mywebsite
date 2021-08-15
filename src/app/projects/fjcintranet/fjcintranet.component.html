@@ -13,12 +13,15 @@
 
     <!-- Imagen principal del proyecto -->
     <div class="my-16 flex justify-center borderedBox">
-        <img
-            src="../../../assets/images/project-images/fjcintranet/principalimg.png"
-            class="h-full borderedBox img-height"
-            title="Login Intranet Fundacion Jacinto Convit"
-            alt="Login Intranet Fundacion Jacinto Convit"
-        >
+      <app-img-loader
+        [src]="'../../../assets/images/project-images/fjcintranet/principalimg.png'"
+        [title]="'Login Intranet Fundacion Jacinto Convit'"
+        [alt]="'Login Intranet Fundacion Jacinto Convit'"
+        [id]="'LoginIntranet'"
+        [classes]="'h-full borderedBox img-height'"
+        [height]="'400px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
 
     <!-- Descripcion del proyecto general -->
@@ -31,34 +34,43 @@
     <!-- Imagen secundaria del proyecto-->
     <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
     <div class="mb-16 flex justify-center borderedBox">
-        <img
-            src="../../../assets/images/project-images/fjcintranet/secundaryimg.png"
-            class="h-full borderedBox img-height"
-            title="Menú principal Intranet"
-            alt="Menú principal Intranet"
-        >
+      <app-img-loader
+        [src]="'../../../assets/images/project-images/fjcintranet/secundaryimg.png'"
+        [title]="'Menú principal Intranet'"
+        [alt]="'Menú principal Intranet'"
+        [id]="'principalMenu'"
+        [classes]="'h-full borderedBox img-height'"
+        [height]="'400px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
 
     <!-- Imagen secundaria del proyecto 2-->
     <div class="mb-16 flex justify-center borderedBox">
-        <img
-            src="../../../assets/images/project-images/fjcintranet/calendar.png"
-            class="h-full borderedBox img-height"
-            title="Calendario de actividades"
-            alt="Calendario de actividades"
-        >
+      <app-img-loader
+        [src]="'../../../assets/images/project-images/fjcintranet/calendar.png'"
+        [title]="'Calendario de actividades'"
+        [alt]="'Calendario de actividades'"
+        [id]="'calendarActivities'"
+        [classes]="'h-full borderedBox img-height'"
+        [height]="'400px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
 
     <!-- Vista desde laptop -->
     <div>
       <div class="my-16 flex flex-col items-center">
         <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
-            <img
-                src="../../../assets/images/project-images/fjcintranet/laptopimg.png"
-                class="h-full w-full"
-                title="Auditoría de documentos"
-                alt="Auditoría de documentos"
-            >
+          <app-img-loader
+            [src]="'../../../assets/images/project-images/fjcintranet/laptopimg.png'"
+            [title]="'Auditoría de documentos'"
+            [alt]="'Auditoría de documentos'"
+            [id]="'documentAudit'"
+            [classes]="'h-full w-full'"
+            [height]="'250px'"
+            class="w-full"
+          ></app-img-loader>
         </div>
         <div class="border-2 boxLaptopKeyboard boxProject">
           <div class="mouseTrack border-2 border-t-0 m-auto boxProject">
@@ -78,32 +90,40 @@
 
     <!-- Imagen secundaria del proyecto cms-->
     <div class="mb-16 flex justify-center borderedBox">
-        <img
-            src="../../../assets/images/project-images/fjcintranet/cms1.png"
-            class="h-full borderedBox img-height"
-            title="Control de usuarios desde el CMS"
-            alt="Control de usuarios"
-        />
+      <app-img-loader
+        [src]="'../../../assets/images/project-images/fjcintranet/cms1.png'"
+        [title]="'Control de usuarios desde el CMS'"
+        [alt]="'Control de usuarios'"
+        [id]="'userAdmin'"
+        [classes]="'h-full borderedBox img-height'"
+        [height]="'400px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
 
     <!-- Imagen secundaria del proyecto cms-->
     <div class="mb-16 flex justify-center borderedBox">
-        <img
-            src="../../../assets/images/project-images/fjcintranet/cms2.png"
-            class="h-full borderedBox img-height"
-            title="Lista de departamentos"
-            alt="Lista de departamentos"
-        />
+      <app-img-loader
+        [src]="'../../../assets/images/project-images/fjcintranet/cms2.png'"
+        [title]="'Lista de departamentos'"
+        [alt]="'Lista de departamentos'"
+        [id]="'documentList'"
+        [classes]="'h-full borderedBox img-height'"
+        [height]="'400px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
 
     <div class="mb-16 flex justify-center">
-        <img
-            src="../../../assets/images/project-images//fjcintranet//jcLogo.svg"
-            id="logoJacintoConvit"
-            class="JClogo"
-            title="Logo Fundacion Jacinto Convit"
-            alt="Logo Fundacion Jacinto Convit"
-        />
+      <app-img-loader
+        [src]="'../../../assets/images/project-images//fjcintranet//jcLogo.svg'"
+        [title]="'Logo Fundacion Jacinto Convit'"
+        [alt]="'Logo Fundacion Jacinto Convit'"
+        [id]="'logoJacintoConvit'"
+        [classes]="'JClogo'"
+        [height]="'200px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
   
     <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>

@@ -7,11 +7,14 @@
       </div>
     </div>
     <div class="w-full screenMobile">
-      <img
+      <app-img-loader
         [src]="urlimg"
-        class="h-full w-full screenImg"
-        [alt]="alt"
         [title]="title"
-      />
+        [alt]="alt"
+        [id]="alt"
+        [classes]="'h-full w-full screenImg'"
+        [height]="'400px'"
+        class="w-full"
+      ></app-img-loader>
     </div>
 </div>

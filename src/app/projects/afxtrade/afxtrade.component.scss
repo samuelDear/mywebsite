@@ -20,22 +20,6 @@
   width: 50%;
 }
 
-.segurityIc {
-  width: 40%;
-}
-
-.comunicationsIc {
-  width: 50%;
-}
-
-.movementsIc {
-  width: 70%;
-}
-
-.exchangesIc {
-  width: 55%;
-}
-
 .mainFeatureText {
   width: 100%;
 }
@@ -71,15 +55,6 @@
   flex-grow: 0;
   max-width: 20%;
   flex-basis: 20%;
-}
-
-.criptoIcon {
-  max-height: 150px;
-  margin-bottom: 20px;
-}
-
-.criptoIconDisabled {
-  opacity: 0.5;
 }
 
 .criptoName {
@@ -160,22 +135,6 @@
   .mainFeatureLeft, .mainFeatureRight {
     margin: 0px;
     margin-top: 40px;
-  }
-    
-  .segurityIc {
-    width: 40%;
-  }
-    
-  .comunicationsIc {
-    width: 50%;
-  }
-    
-  .movementsIc {
-    width: 60%;
-  }
-    
-  .exchangesIc {
-    width: 50%;
   }
 }
 

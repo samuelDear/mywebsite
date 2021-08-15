@@ -17,13 +17,16 @@
   </div>
 
   <!-- Imagen principal del proyecto -->
-  <div class="my-16 flex justify-center  boxUnique">
-    <img
+  <div class="my-16 flex justify-center boxUnique">
+    <app-img-loader
       [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/principalimg.png' : '../../../assets/images/project-images/traumapp/light/principalimg.png'"
-      class="imgScreen borderImages"
-      title="Imagen Principal"
-      alt="Imagen principal"
-    />
+      [title]="'Imagen Principal'"
+      [alt]="'Imagen Principal'"
+      [id]="'principalPage'"
+      [classes]="'imgScreen borderImages'"
+      [height]="'400px'"
+      class="w-full flex justify-center"
+    ></app-img-loader>
   </div>
 </section>
 

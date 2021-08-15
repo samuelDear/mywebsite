@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.comp
 import { PhoneScreenComponent } from './components/phone-screen/phone-screen.component';
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 import { TraumappComponent } from './projects/traumapp/traumapp.component';
+import { ImgLoaderComponent } from './components/img-loader/img-loader.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -50,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     PhoneScreenComponent,
     AfxtradeComponent,
     TraumappComponent,
+    ImgLoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     MatButtonModule,
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
+    MatProgressBarModule,
     MatIconModule,
     TranslateModule.forRoot({
       loader: {
