@@ -28,15 +28,6 @@
   top: 0;
 }
 
-.myself {
-  width: 82%;
-  height: auto;
-  bottom: 0;
-  left: 8%;
-  max-height: 100vh;
-  position: absolute;
-}
-
 .cvBox {
   width: 70%;
   margin: auto;
@@ -116,12 +107,6 @@ and (max-width : 1000px) {
     position: initial;
     height: auto;
     width: 100%;
-  }
-
-  .myself {
-    position: initial;
-    margin: auto;
-    max-height: 9999vh;
   }
 
   .dsc {

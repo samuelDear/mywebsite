@@ -101,6 +101,7 @@ textarea {
   width: 20vw;
   min-width: 50px;
   max-width: 100px;
+  margin: auto;
 }
 
 
@@ -529,6 +530,15 @@ input:-webkit-autofill {
   transform: rotate(10deg);
 }
 
+.myself {
+  width: 82%;
+  height: auto;
+  bottom: 0;
+  left: 8%;
+  max-height: 100vh;
+  position: absolute;
+}
+
 .imgVisualResult {
   height: 50vw;
 }
@@ -556,6 +566,12 @@ input:-webkit-autofill {
 @media only screen and (max-width : 1000px) {
   .mainBox{
     margin: 7rem 4rem;
+  }
+
+  .myself {
+    position: initial;
+    margin: auto;
+    max-height: 9999vh;
   }
 }
   
