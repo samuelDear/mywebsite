@@ -1,0 +1,7 @@
+<div class="colorMain">
+  <div class="colorBox" *ngFor="let color of colors">
+      <div class="colorContent" [style.background-color]="color.dsc">
+      </div>
+      <p class="text-black text-center mt-2 font-bold">{{ color.dsc }}</p>
+  </div>
+</div>

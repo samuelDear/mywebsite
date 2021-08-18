@@ -402,31 +402,7 @@
     </div>
 
     <!-- PALETA DE COLORES -->
-    <div class="colorMain">
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #4287CE;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#4287CE</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #85BB4F;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#85BB4F</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #C04F5D;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#C04F5D</p>
-        </div>
-        
-        <div class="colorBox">
-          <div class="colorContent" style="background-color: #D5DCE5;">
-          </div>
-          <p class="text-black text-center mt-2 font-bold">#D5DCE5</p>
-      </div>
-    </div>
+    <app-color-palette [colors]="colors"></app-color-palette>
 
     <!-- CARACTERISTICAS -->
     <app-features-box [features]="features"></app-features-box>

@@ -5,6 +5,7 @@ import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project } from '../../services/common';
 import { FeatureType } from 'src/app/services/common/features';
+import { ColorType } from 'src/app/services/common/colors';
 
 @Component({
   selector: 'app-ownportfolio',
@@ -67,6 +68,21 @@ export class OwnportfolioComponent implements OnInit {
       code: '/afxtrade',
       name: 'AFX Trade',
       resume: 'afxtrade.resume',
+    },
+  ];
+
+  colors: ColorType[] = [
+    {
+      dsc: '#4ae3cd',
+    },
+    {
+      dsc: '#db2696',
+    },
+    {
+      dsc: '#38ca13',
+    },
+    {
+      dsc: '#fbb6ce',
     },
   ];
 

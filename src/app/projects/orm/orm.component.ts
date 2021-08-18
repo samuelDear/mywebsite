@@ -5,6 +5,7 @@ import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project } from '../../services/common';
 import { FeatureType } from 'src/app/services/common/features';
+import { ColorType } from 'src/app/services/common/colors';
 
 @Component({
   selector: 'app-orm',
@@ -54,6 +55,21 @@ export class OrmComponent implements OnInit {
       code: '/afxtrade',
       name: 'AFX Trade',
       resume: 'afxtrade.resume',
+    },
+  ];
+
+  colors: ColorType[] = [
+    {
+      dsc: '#1A2454',
+    },
+    {
+      dsc: '#FF7355',
+    },
+    {
+      dsc: '#7AC8D3',
+    },
+    {
+      dsc: '#EAF5FA',
     },
   ];
 

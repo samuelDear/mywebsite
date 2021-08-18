@@ -5,6 +5,7 @@ import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project } from '../../services/common';
 import { FeatureType } from 'src/app/services/common/features';
+import { ColorType } from 'src/app/services/common/colors';
 
 const threshold = 0.1;
 @Component({
@@ -60,6 +61,21 @@ export class AfxtradeComponent implements OnInit {
       name: 'TraumApp',
       code: '/traumapp',
       resume: 'traumapp.resume',
+    },
+  ];
+
+  colors: ColorType[] = [
+    {
+      dsc: '#4287CE',
+    },
+    {
+      dsc: '#85BB4F',
+    },
+    {
+      dsc: '#C04F5D',
+    },
+    {
+      dsc: '#D5DCE5',
     },
   ];
 

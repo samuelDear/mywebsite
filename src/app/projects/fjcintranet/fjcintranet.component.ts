@@ -5,6 +5,7 @@ import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project } from '../../services/common';
 import { FeatureType } from 'src/app/services/common/features';
+import { ColorType } from 'src/app/services/common/colors';
 
 const threshold = 0.1;
 @Component({
@@ -56,6 +57,21 @@ export class FjcintranetComponent implements OnInit {
       code: '/afxtrade',
       name: 'AFX Trade',
       resume: 'afxtrade.resume',
+    },
+  ];
+
+  colors: ColorType[] = [
+    {
+      dsc: '#3F5486',
+    },
+    {
+      dsc: '#00AE89',
+    },
+    {
+      dsc: '#BC0202',
+    },
+    {
+      dsc: '#FFD439',
     },
   ];
 
