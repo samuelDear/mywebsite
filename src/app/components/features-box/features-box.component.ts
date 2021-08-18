@@ -4,7 +4,6 @@ import { FeatureType } from 'src/app/services/common/features';
 @Component({
   selector: 'app-features-box',
   templateUrl: './features-box.component.html',
-  styleUrls: ['./features-box.component.scss'],
 })
 export class FeaturesBoxComponent implements OnInit {
   @Input() features: FeatureType[] = [];
