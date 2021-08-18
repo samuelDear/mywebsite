@@ -7,7 +7,7 @@ on:
 
 jobs:
   prepare:
-    name: Landing Deploy
+    name: Portfolio Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Get latest code
