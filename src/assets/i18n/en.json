@@ -83,6 +83,7 @@
     "feature5": "The system is in both English and Spanish, because the institution has different offices around the world, that is why this information must be contracted in both languages ​​for better use and a better user experience."
   },
   "afxtrade": {
+    "resume": "It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency.",
     "dsc": "Venezuelan cryptocurrency exchange platform",
     "role": "Fullstack",
     "intro1": "AFX is a platform for digital asset exchanges in Venezuela, with the aim of providing innovative solutions, supported by a modern, robust and easy-to-use technological platform, integrating the financial and digital world under the highest standards of quality, transparency and security.",

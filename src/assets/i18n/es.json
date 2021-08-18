@@ -83,6 +83,7 @@
     "feature5": "El sistema se encuentra tanto en inglés como en español, debido a que la institución cuenta con diferentes sedes en el mundo, es por ello que esta información debe encontrarse en ambos idiomas para un mejor uso y una mejor experiencia de usuario."
   },
   "afxtrade": {
+    "resume": "Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda.",
     "dsc": "Plataforma Venezolana de intercambio de criptomonedas",
     "role": "Fullstack",
     "intro1": "AFX es una plataforma para intercambios de activos digitales en Venezuela, con el objetivo de aportar soluciones innovadoras, apoyados de una plataforma tecnológica moderna, robusta y fácil de usar, integrando el mundo financiero y digital bajo los más altos estándares de calidad, transparencia y seguridad.",

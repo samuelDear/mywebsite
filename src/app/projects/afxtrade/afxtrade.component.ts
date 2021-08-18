@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 import { navigationCustom } from '../../transition';
@@ -50,43 +49,22 @@ export class AfxtradeComponent implements OnInit {
     {
       code: '/ormv',
       name: 'ORM',
-      es: {
-        resume:
-          'Es una página web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas.',
-      },
-      en: {
-        resume:
-          'It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for schools in Venezuela to register for the Mathematical Recreation Olympics.',
-      },
+      resume: 'orm.resume',
     },
     {
       code: '',
       name: 'My Portafolio',
-      es: {
-        resume:
-          'Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario.',
-      },
-      en: {
-        resume:
-          "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience.",
-      },
+      resume: 'myWeb.resume',
     },
     {
       name: 'TraumApp',
       code: '/traumapp',
-      es: {
-        resume:
-          'Es una aplicación móvil multiplataforma desarrollada con React Native, PHP y MySQL. Una aplicación para gestionar consultas medicas en el cual podemos realizar diversas acciones como programar citas, gestionar fichas de pacientes y crear informes médicos automatizados de las consultas.',
-      },
-      en: {
-        resume:
-          'It is a multiplatform mobile application developed with React Native, PHP and MySQL. An application to manage medical consultations in which we can perform various actions such as scheduling appointments, managing patient files and creating automated medical reports of consultations.',
-      },
+      resume: 'traumapp.resume',
     },
   ];
 
   // eslint-disable-next-line no-unused-vars
-  constructor(public translate: TranslateService, private router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     window.scroll(0, 0);
