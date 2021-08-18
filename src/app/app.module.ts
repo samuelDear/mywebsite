@@ -32,6 +32,7 @@ import { ImgLoaderComponent } from './components/img-loader/img-loader.component
 import { FeaturesBoxComponent } from './components/features-box/features-box.component';
 import { ThanksReadingComponent } from './components/thanks-reading/thanks-reading.component';
 import { ColorPaletteComponent } from './components/color-palette/color-palette.component';
+import { MoreProjectsComponent } from './components/more-projects/more-projects.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -57,6 +58,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     FeaturesBoxComponent,
     ThanksReadingComponent,
     ColorPaletteComponent,
+    MoreProjectsComponent,
   ],
   imports: [
     BrowserModule,

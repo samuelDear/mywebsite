@@ -422,28 +422,12 @@
 
   <!-- Agradecimientos -->
   <app-thanks-reading></app-thanks-reading>
-  
-  <div class="my-8 mx-auto w-3/4">
-    <p class="text-center text-2xl" stranslate="project.otherWork"></p>
-  </div>
 
 </section>
 
 <!-- Proyectos randoms -->
 <section class="mainBoxTraumApp">
-  <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of ramdons;let i = index" (click)="navigateUrl(random.code)">
-    <div>
-      <h6 class="text-2xl"> {{ random.name }}</h6>
-      <p class="ml-4" [stranslate]="random.resume"></p>
-    </div>
-    <div class="flex flex-row items-center">
-      <span class="block stick"></span>
-      <div>
-        <span class="block stick-arrow stick-top"></span>
-        <span class="block stick-arrow stick-bottom"></span>
-      </div>
-    </div>
-  </div>
+  <app-more-projects [projects]="ramdons"></app-more-projects>
 </section>
 
 <div [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')" (click)="setDarksMode()">

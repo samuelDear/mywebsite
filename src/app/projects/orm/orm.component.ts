@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
-import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
 
@@ -71,8 +69,8 @@ export class OrmComponent implements OnInit {
     },
   ];
 
-  // eslint-disable-next-line no-unused-vars
-  constructor(private router: Router) {}
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  constructor() {}
 
   ngOnInit(): void {
     window.scroll(0, 0);
@@ -87,9 +85,5 @@ export class OrmComponent implements OnInit {
         }
       });
     }, 100);
-  }
-
-  navigateUrl(code: string): void {
-    navigationCustom(() => this.router.navigate([code]));
   }
 }

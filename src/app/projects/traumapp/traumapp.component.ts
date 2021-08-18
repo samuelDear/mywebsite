@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
-import { navigationCustom } from '../../transition';
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
 import { fontLoader } from 'src/main';
 
@@ -76,8 +74,8 @@ export class TraumappComponent implements OnInit {
   currentSliderPatient = 1;
   isDarkMode = false;
 
-  // eslint-disable-next-line no-unused-vars
-  constructor(private router: Router) {}
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  constructor() {}
 
   ngOnInit(): void {
     window.scroll(0, 0);
@@ -183,10 +181,6 @@ export class TraumappComponent implements OnInit {
     } else if (entry.target.offsetTop > window.scrollY) {
       entry.target.classList.add('logoTraumappHide');
     }
-  }
-
-  navigateUrl(code: string): void {
-    navigationCustom(() => this.router.navigate([code]));
   }
 
   scrollToRegisterPatient(direction: number): void {
