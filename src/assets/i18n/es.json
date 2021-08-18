@@ -34,7 +34,9 @@
     "feature6title": "Acerca de la página",
     "feature6": "Para mostrar las redes sociales, decidí colocar un pie de página en el que se pudieran visualizar de mejor manera, igual al momento de ver más sobre mí, puedes encontrar mi redes sociales.",
     "feature7title": "Diseño Personalizado Para Cada Proyecto",
-    "feature7": "Cada página de un proyecto, tiene elementos personalizados para que los detalles de los proyectos puedan ser mejor apreciados."
+    "feature7": "Cada página de un proyecto, tiene elementos personalizados para que los detalles de los proyectos puedan ser mejor apreciados.",
+    "feature8title": "CI/CD",
+    "feature8": "Para los despliegues automáticos se utiliza GitHub Actions para hacer el paquete del proyecto y luego se transfieren los archivos por medio de FTP hacia el servidor para el despliegue de la página web."
   },
   "orm": {
     "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. Un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas.",
