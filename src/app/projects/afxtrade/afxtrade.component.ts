@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project } from '../../services/common';
+import { FeatureType } from 'src/app/services/common/features';
 
 const threshold = 0.1;
 @Component({
@@ -17,6 +18,34 @@ export class AfxtradeComponent implements OnInit {
     { name: 'Poppins', link: `https://fonts.googleapis.com/css2?family=Poppins&display=swap` },
     { name: 'Roboto', link: `https://fonts.googleapis.com/css2?family=Roboto&display=swap` },
   ];
+
+  features: FeatureType[] = [
+    {
+      title: 'afxtrade.featuretitle1',
+      dsc: 'afxtrade.feature1',
+    },
+    {
+      title: 'afxtrade.featuretitle2',
+      dsc: 'afxtrade.feature2',
+    },
+    {
+      title: 'afxtrade.featuretitle3',
+      dsc: 'afxtrade.feature3',
+    },
+    {
+      title: 'afxtrade.featuretitle4',
+      dsc: 'afxtrade.feature4',
+    },
+    {
+      title: 'afxtrade.featuretitle5',
+      dsc: 'afxtrade.feature5',
+    },
+    {
+      title: 'afxtrade.featuretitle6',
+      dsc: 'afxtrade.feature6',
+    },
+  ];
+
   ramdons: Project[] = [
     {
       code: '/ormv',

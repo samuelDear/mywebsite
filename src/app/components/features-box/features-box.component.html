@@ -1,0 +1,8 @@
+<h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
+
+<div class="my-12 flex flex-col items-center" *ngFor="let feature of features">
+  <div class="featureBox my-4 border-2 p-4">
+    <h6 class="text-2xl titleFeature text-center" [stranslate]="feature.title"></h6>
+    <p class="text-justify" [stranslate]="feature.dsc"></p>
+  </div>
+</div>

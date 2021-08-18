@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { navigationCustom } from '../../transition';
 import { Font, Project } from '../../services/common';
 import { fontLoader } from 'src/main';
+import { FeatureType } from 'src/app/services/common/features';
 
 const threshold = 0.1;
 @Component({
@@ -17,6 +18,30 @@ export class TraumappComponent implements OnInit {
     { name: 'Monserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
     { name: 'Open Sans', link: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap` },
   ];
+
+  features: FeatureType[] = [
+    {
+      title: 'traumapp.featureTitle1',
+      dsc: 'traumapp.featureDsc1',
+    },
+    {
+      title: 'traumapp.featureTitle2',
+      dsc: 'traumapp.featureDsc2',
+    },
+    {
+      title: 'traumapp.featureTitle3',
+      dsc: 'traumapp.featureDsc3',
+    },
+    {
+      title: 'traumapp.featureTitle4',
+      dsc: 'traumapp.featureDsc4',
+    },
+    {
+      title: 'traumapp.featureTitle5',
+      dsc: 'traumapp.featureDsc5',
+    },
+  ];
+
   ramdons: Project[] = [
     {
       code: '/ormv',

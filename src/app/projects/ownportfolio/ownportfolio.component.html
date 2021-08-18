@@ -16,7 +16,7 @@
         [title]="'Imagen de mi portafolio!'"
         [alt]="'Portafolio Web'"
         [id]="'documentList'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -67,68 +67,8 @@
             <p class="text-black text-center mt-2 font-bold">#fbb6ce</p>
         </div>
     </div>
-  
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
 
-    <div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature1title"></h6>
-              <p class="text-justify" stranslate="myWeb.feature1"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-          <div class="featureBox my-4 border-2 p-4">
-            <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature2title"></h6>
-            <p class="text-justify" stranslate="myWeb.feature2"></p>
-          </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature3title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature3"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature4title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature4"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature5title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature5"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature6title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature6"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature7title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature7"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature8title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature8"></p>
-        </div>
-      </div>
-
-    </div>
+    <app-features-box [features]="features"></app-features-box>
   
     <div class="my-8 mx-auto w-3/4">
       <p class="text-center text-3xl" stranslate="project.thanks"></p>

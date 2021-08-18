@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project } from '../../services/common';
+import { FeatureType } from 'src/app/services/common/features';
 
 const threshold = 0.1;
 @Component({
@@ -17,6 +18,30 @@ export class FjcintranetComponent implements OnInit {
     { name: 'Oswald', link: `https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap` },
     { name: 'Poppins', link: `https://fonts.googleapis.com/css2?family=Poppins&display=swap` },
   ];
+
+  features: FeatureType[] = [
+    {
+      title: 'fjcintranet.feature1title',
+      dsc: 'fjcintranet.feature1',
+    },
+    {
+      title: 'fjcintranet.feature2title',
+      dsc: 'fjcintranet.feature2',
+    },
+    {
+      title: 'fjcintranet.feature3title',
+      dsc: 'fjcintranet.feature3',
+    },
+    {
+      title: 'fjcintranet.feature4title',
+      dsc: 'fjcintranet.feature4',
+    },
+    {
+      title: 'fjcintranet.feature5title',
+      dsc: 'fjcintranet.feature5',
+    },
+  ];
+
   ramdons: Project[] = [
     {
       code: '/ormv',

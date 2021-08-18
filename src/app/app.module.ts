@@ -29,6 +29,7 @@ import { PhoneScreenComponent } from './components/phone-screen/phone-screen.com
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 import { TraumappComponent } from './projects/traumapp/traumapp.component';
 import { ImgLoaderComponent } from './components/img-loader/img-loader.component';
+import { FeaturesBoxComponent } from './components/features-box/features-box.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -51,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AfxtradeComponent,
     TraumappComponent,
     ImgLoaderComponent,
+    FeaturesBoxComponent,
   ],
   imports: [
     BrowserModule,

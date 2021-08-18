@@ -19,7 +19,7 @@
         [title]="'Home AFX TRADE'"
         [alt]="'Home AFX TRADE'"
         [id]="'homeAfxTrade'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -42,7 +42,7 @@
         [title]="'Login AFX'"
         [alt]="'Login AFX'"
         [id]="'loginAfxTrade'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -55,7 +55,7 @@
         [title]="'Balance del usuario'"
         [alt]="'Balance del usuario'"
         [id]="'userBalance'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -68,7 +68,7 @@
         [title]="'Deposito FIAT'"
         [alt]="'Deposito FIAT'"
         [id]="'depositFiat'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -81,7 +81,7 @@
         [title]="'Deposito de criptomoneda'"
         [alt]="'Deposito de criptomoneda'"
         [id]="'depositCripto'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -94,7 +94,7 @@
         [title]="'Movimientos de cuenta interna'"
         [alt]="'Movimientos de cuenta interna'"
         [id]="'accountsMovements'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -107,7 +107,7 @@
         [title]="'Mensajes internos'"
         [alt]="'Mensajes internos'"
         [id]="'communicationId'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -120,7 +120,7 @@
         [title]="'Enviar mensaje a AFX'"
         [alt]="'Enviar mensaje a AFX'"
         [id]="'SendMessage'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -133,7 +133,7 @@
         [title]="'Perfil de usuario de AFX'"
         [alt]="'Perfil de usuario de AFX'"
         [id]="'userProfile'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -380,7 +380,7 @@
         [title]="'Correo de recuperar contraseña'"
         [alt]="'Correo de recuperar contraseña'"
         [id]="'recoverPwd'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -429,52 +429,7 @@
     </div>
 
     <!-- CARACTERISTICAS -->
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
-
-    <div>
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle1"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature1"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle2"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature2"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle3"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature3"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle4"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature4"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle5"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature5"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle6"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature6"></p>
-            </div>
-        </div>
-
-    </div>
+    <app-features-box [features]="features"></app-features-box>
 
     <div class="my-8 mx-auto w-3/4">
         <p class="text-center text-3xl" stranslate="project.thanks"></p>

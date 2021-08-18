@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
 import { Font, Project } from '../../services/common';
+import { FeatureType } from 'src/app/services/common/features';
 
 @Component({
   selector: 'app-ownportfolio',
@@ -15,6 +16,41 @@ export class OwnportfolioComponent implements OnInit {
   families: Font[] = [
     { name: 'Signika', link: `https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap` },
     { name: 'monospace', link: '' },
+  ];
+
+  features: FeatureType[] = [
+    {
+      title: 'myWeb.feature1title',
+      dsc: 'myWeb.feature1',
+    },
+    {
+      title: 'myWeb.feature2title',
+      dsc: 'myWeb.feature2',
+    },
+    {
+      title: 'myWeb.feature3title',
+      dsc: 'myWeb.feature3',
+    },
+    {
+      title: 'myWeb.feature4title',
+      dsc: 'myWeb.feature4',
+    },
+    {
+      title: 'myWeb.feature5title',
+      dsc: 'myWeb.feature5',
+    },
+    {
+      title: 'myWeb.feature6title',
+      dsc: 'myWeb.feature6',
+    },
+    {
+      title: 'myWeb.feature7title',
+      dsc: 'myWeb.feature7',
+    },
+    {
+      title: 'myWeb.feature8title',
+      dsc: 'myWeb.feature8',
+    },
   ];
 
   ramdons: Project[] = [

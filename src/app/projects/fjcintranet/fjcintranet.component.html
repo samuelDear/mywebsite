@@ -18,7 +18,7 @@
         [title]="'Login Intranet Fundacion Jacinto Convit'"
         [alt]="'Login Intranet Fundacion Jacinto Convit'"
         [id]="'LoginIntranet'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -39,7 +39,7 @@
         [title]="'Menú principal Intranet'"
         [alt]="'Menú principal Intranet'"
         [id]="'principalMenu'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -52,7 +52,7 @@
         [title]="'Calendario de actividades'"
         [alt]="'Calendario de actividades'"
         [id]="'calendarActivities'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -67,7 +67,7 @@
             [title]="'Auditoría de documentos'"
             [alt]="'Auditoría de documentos'"
             [id]="'documentAudit'"
-            [classes]="'h-full w-full'"
+            [classes]="'w-full'"
             [height]="'250px'"
             class="w-full"
           ></app-img-loader>
@@ -95,7 +95,7 @@
         [title]="'Control de usuarios desde el CMS'"
         [alt]="'Control de usuarios'"
         [id]="'userAdmin'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -108,7 +108,7 @@
         [title]="'Lista de departamentos'"
         [alt]="'Lista de departamentos'"
         [id]="'documentList'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -167,47 +167,8 @@
         <p class="text-black text-center mt-2 font-bold">#FFD439</p>
       </div>
     </div>
-  
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
-
-    <!-- Caracteristicas del proyecto -->
-    <div>
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature1title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature1"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature2title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature2"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature3title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature3"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature4title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature4"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature5title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature5"></p>
-        </div>
-      </div>
-
-    </div>
+    
+    <app-features-box [features]="features"></app-features-box>
 
     <!-- Agradecimientos -->
     <div class="my-8 mx-auto w-3/4">
