@@ -4,9 +4,8 @@ import { Router } from '@angular/router';
 
 import { navigationCustom } from '../transition';
 import { EmailService } from '../services/email/email.service';
-import { emailForm, responseEmail } from '../services/common/email';
 import { cleanFonts } from '../../main';
-import { ProjectHome } from '../services/common';
+import { ProjectHome, emailForm, responseEmail } from '../services/common';
 
 @Component({
   selector: 'app-home',
