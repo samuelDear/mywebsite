@@ -16,7 +16,7 @@
         [title]="'Menú Principal de la ORMV'"
         [alt]="'Menú Principal de la ORMV'"
         [id]="'homePrincipal'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -36,7 +36,7 @@
         [title]="'Registro de alumnos manual'"
         [alt]="'Registro de alumnos'"
         [id]="'pupilsRegister'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -50,7 +50,7 @@
             [title]="'Login ORMV'"
             [alt]="'Login ORMV'"
             [id]="'pupilsRegister'"
-            [classes]="'h-full w-full'"
+            [classes]="'w-full'"
             [height]="'300px'"
             class="w-full"
           ></app-img-loader>
@@ -66,24 +66,24 @@
     <div>
       <div class="boxTablet my-16 border-2 flex flex-row justify-between p-2">
   
-        <div class="h-full buttonAndCameraTablet flex-col">
+        <div class="buttonAndCameraTablet flex-col">
           <div class="cameraTablet border-2 my-2"></div>
           <div class="soundTablet border-2 my-2"></div>
         </div>
   
-        <div class="h-full screenTablet">
+        <div class="screenTablet">
           <app-img-loader
             [src]="'../../../assets/images/project-images/orm/tabletimg.png'"
             [title]="'Lista de alumnos'"
             [alt]="'Lista de alumnos'"
             [id]="'pupilList'"
-            [classes]="'h-full w-full'"
+            [classes]="'w-full'"
             [height]="'300px'"
             class="w-full"
           ></app-img-loader>
         </div>
   
-        <div class="h-full buttonAndCameraTablet">
+        <div class="buttonAndCameraTablet">
           <div class="buttonTablet border-2">
           </div>
         </div>
@@ -139,7 +139,7 @@
         [title]="'Home CMS ORMV'"
         [alt]="'Home CMS ORMV'"
         [id]="'homeCMS'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -151,7 +151,7 @@
         [title]="'Lista de colegios participantes'"
         [alt]="'Lista de colegios participantes'"
         [id]="'collegeList'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -163,7 +163,7 @@
         [title]="'Información del colegio'"
         [alt]="'Información del colegio'"
         [id]="'collegeInfo'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -175,7 +175,7 @@
         [title]="'Roles y privilegios de usuarios'"
         [alt]="'Roles y privilegios de usuarios'"
         [id]="'privileges'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -198,7 +198,7 @@
         [title]="'Home pruebas ORMV'"
         [alt]="'Home pruebas ORMV'"
         [id]="'HomeExams'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -210,7 +210,7 @@
         [title]="'Configuración de preferencias de pruebas preeliminares'"
         [alt]="'Configuración de preferencias de pruebas preeliminares'"
         [id]="'preferencesExams'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -222,7 +222,7 @@
         [title]="'Correción manual de exámenes'"
         [alt]="'Correción manual de exámenes'"
         [id]="'ExamsCorrector'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -234,7 +234,7 @@
         [title]="'Lista de alumnos con sus pruebas'"
         [alt]="'Lista de alumnos con sus pruebas'"
         [id]="'pupilsList'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -253,100 +253,15 @@
             <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
         </div>
     </div>
+
+    <app-color-palette [colors]="colors"></app-color-palette>
   
-    <div class="colorMain">
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #1A2454;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#1A2454</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #FF7355;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#FF7355</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #7AC8D3;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#7AC8D3</p>
-        </div>
-        
-        <div class="colorBox">
-          <div class="colorContent" style="background-color: #EAF5FA;">
-          </div>
-          <p class="text-black text-center mt-2 font-bold">#EAF5FA</p>
-      </div>
-    </div>
+    <app-features-box [features]="features"></app-features-box>
   
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
-  
-    <div>
+    <!-- Agradecimientos -->
+    <app-thanks-reading></app-thanks-reading>
 
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="orm.feature1title"></h6>
-              <p class="text-justify" stranslate="orm.feature1"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="orm.feature3title"></h6>
-              <p class="text-justify" stranslate="orm.feature3"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="orm.feature4title"></h6>
-              <p class="text-justify" stranslate="orm.feature4"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="orm.feature5title"></h6>
-              <p class="text-justify" stranslate="orm.feature5"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="orm.feature6title"></h6>
-              <p class="text-justify" stranslate="orm.feature6"></p>
-            </div>
-        </div>
-
-    </div>
-  
-  
-    <div class="my-8 mx-auto w-3/4">
-      <p class="text-center text-3xl" stranslate="project.thanks"></p>
-      <div class="heart"></div>
-      <p class="text-center"><span stranslate="project.hereMore"></span><span class="underline cursor-pointer" stranslate="project.aboutLink" routerLink="/about"></span></p>
-    </div>
-  
-    <div class="my-8 mx-auto w-3/4">
-      <p class="text-center text-2xl" stranslate="project.otherWork"></p>
-    </div>
-
-    <div class="my-16">
-      <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of ramdons;let i = index" (click)="navigateUrl(random.code)">
-        <div>
-          <h6 class="text-2xl">{{ random.name }}</h6>
-          <p class="ml-4">{{ translate.currentLang == "es" ? random.es.resume : random.en.resume }}</p>
-        </div>
-        <div class="flex flex-row items-center">
-          <span class="block stick"></span>
-          <div>
-            <span class="block stick-arrow stick-top"></span>
-            <span class="block stick-arrow stick-bottom"></span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-more-projects [projects]="ramdons"></app-more-projects>
   
   </div>
   

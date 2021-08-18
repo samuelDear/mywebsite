@@ -1,13 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 
 import { navigationCustom } from '../transition';
 import { EmailService } from '../services/email/email.service';
-import { emailForm, responseEmail } from '../services/common/email';
 import { cleanFonts } from '../../main';
-import { ProjectHome } from '../services/common';
+import { ProjectHome, emailForm, responseEmail } from '../services/common';
 
 @Component({
   selector: 'app-home',
@@ -21,62 +19,27 @@ export class HomeComponent implements OnInit, OnDestroy {
   projects: ProjectHome[] = [
     {
       name: 'FJC Intranet',
-      es: {
-        resume:
-          'Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001.',
-      },
-      en: {
-        resume:
-          'It is an internal single page system (SPA). Created with Angular 8 and Java Spring Boot, for document and discovery management at the Fundacion Jacinto Convit. A website that has international standards and under the ISO 9001 standard.',
-      },
+      resume: 'fjcintranet.resume',
       route: '/FJCIntranet',
     },
     {
       name: 'ORM',
-      es: {
-        resume:
-          'Es una página web creada con HTML5, CSS3, JS y PHP. un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas.',
-      },
-      en: {
-        resume:
-          'It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for schools in Venezuela to register for the Mathematical Recreation Olympics.',
-      },
+      resume: 'orm.resume',
       route: '/ormv',
     },
     {
       name: 'My Portfolio',
-      es: {
-        resume:
-          'Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario.',
-      },
-      en: {
-        resume:
-          "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience.",
-      },
+      resume: 'myWeb.resume',
       route: '/portfolio',
     },
     {
       name: 'AFX Trade',
-      es: {
-        resume:
-          'Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda.',
-      },
-      en: {
-        resume:
-          'It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency.',
-      },
+      resume: 'afxtrade.resume',
       route: '/afxtrade',
     },
     {
       name: 'TraumApp',
-      es: {
-        resume:
-          'Es una aplicación móvil multiplataforma desarrollada con React Native, PHP y MySQL. Una aplicación para gestionar consultas medicas en el cual podemos realizar diversas acciones como programar citas, gestionar fichas de pacientes y crear informes médicos automatizados de las consultas.',
-      },
-      en: {
-        resume:
-          'It is a multiplatform mobile application developed with React Native, PHP and MySQL. An application to manage medical consultations in which we can perform various actions such as scheduling appointments, managing patient files and creating automated medical reports of consultations.',
-      },
+      resume: 'traumapp.resume',
       route: '/traumapp',
     },
   ];
@@ -94,8 +57,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     // eslint-disable-next-line no-unused-vars
     public emailService: EmailService,
-    // eslint-disable-next-line no-unused-vars
-    public translate: TranslateService,
   ) {
     window.scroll(0, 0);
     window.addEventListener('scroll', () => this.animatePolygon(), true);

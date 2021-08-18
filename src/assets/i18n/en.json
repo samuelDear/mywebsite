@@ -34,7 +34,9 @@
     "feature6title": "About Page",
     "feature6": "To show the social networks, I decided to place a footer in which they could be viewed in a better way, just as when you see more about me, you can find my social networks.",
     "feature7title": "Custom Design for Each Project",
-    "feature7": "Each page of a project has personalized elements so that the details of the projects can be better appreciated."
+    "feature7": "Each page of a project has personalized elements so that the details of the projects can be better appreciated.",
+    "feature8title": "CI/CD",
+    "feature8": "For automatic deployments, GitHub Actions is used to build the project and then the files are transferred via FTP to the server for the deployment of the web page."
   },
   "orm": {
     "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics.",
@@ -81,6 +83,7 @@
     "feature5": "The system is in both English and Spanish, because the institution has different offices around the world, that is why this information must be contracted in both languages ​​for better use and a better user experience."
   },
   "afxtrade": {
+    "resume": "It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency.",
     "dsc": "Venezuelan cryptocurrency exchange platform",
     "role": "Fullstack",
     "intro1": "AFX is a platform for digital asset exchanges in Venezuela, with the aim of providing innovative solutions, supported by a modern, robust and easy-to-use technological platform, integrating the financial and digital world under the highest standards of quality, transparency and security.",

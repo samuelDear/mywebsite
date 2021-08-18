@@ -16,7 +16,7 @@
         [title]="'Imagen de mi portafolio!'"
         [alt]="'Portafolio Web'"
         [id]="'documentList'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -41,113 +41,13 @@
             <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
         </div>
     </div>
+
+    <app-color-palette [colors]="colors"></app-color-palette>
+
+    <app-features-box [features]="features"></app-features-box>
   
-    <div class="colorMain">
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #4ae3cd;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#4ae3cd</p>
-        </div>
+    <app-thanks-reading></app-thanks-reading>
 
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #db2696;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#db2696</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #38ca13;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#38ca13</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #fbb6ce;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#fbb6ce</p>
-        </div>
-    </div>
-  
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
-
-    <div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature1title"></h6>
-              <p class="text-justify" stranslate="myWeb.feature1"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-          <div class="featureBox my-4 border-2 p-4">
-            <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature2title"></h6>
-            <p class="text-justify" stranslate="myWeb.feature2"></p>
-          </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature3title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature3"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature4title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature4"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature5title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature5"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature6title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature6"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="myWeb.feature7title"></h6>
-          <p class="text-justify" stranslate="myWeb.feature7"></p>
-        </div>
-      </div>
-
-    </div>
-  
-  
-    <div class="my-8 mx-auto w-3/4">
-      <p class="text-center text-3xl" stranslate="project.thanks"></p>
-      <div class="heart"></div>
-      <p class="text-center"><span stranslate="project.hereMore"></span><span class="underline cursor-pointer" stranslate="project.aboutLink" routerLink="/about"></span></p>
-    </div>
-  
-    <div class="my-8 mx-auto w-3/4">
-      <p class="text-center text-2xl" stranslate="project.otherWork"></p>
-    </div>
-
-    <div class="my-16">
-      <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of ramdons;let i = index" (click)="navigateUrl(random.code)">
-        <div>
-          <h6 class="text-2xl">{{ random.name }}</h6>
-          <p class="ml-4">{{ translate.currentLang == "es" ? random.es.resume : random.en.resume }}</p>
-        </div>
-        <div class="flex flex-row items-center">
-          <span class="block stick"></span>
-          <div>
-            <span class="block stick-arrow stick-top"></span>
-            <span class="block stick-arrow stick-bottom"></span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-more-projects [projects]="ramdons"></app-more-projects>
   
   </div>

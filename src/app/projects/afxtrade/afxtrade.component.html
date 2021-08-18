@@ -19,7 +19,7 @@
         [title]="'Home AFX TRADE'"
         [alt]="'Home AFX TRADE'"
         [id]="'homeAfxTrade'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -42,7 +42,7 @@
         [title]="'Login AFX'"
         [alt]="'Login AFX'"
         [id]="'loginAfxTrade'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -55,7 +55,7 @@
         [title]="'Balance del usuario'"
         [alt]="'Balance del usuario'"
         [id]="'userBalance'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -68,7 +68,7 @@
         [title]="'Deposito FIAT'"
         [alt]="'Deposito FIAT'"
         [id]="'depositFiat'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -81,7 +81,7 @@
         [title]="'Deposito de criptomoneda'"
         [alt]="'Deposito de criptomoneda'"
         [id]="'depositCripto'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -94,7 +94,7 @@
         [title]="'Movimientos de cuenta interna'"
         [alt]="'Movimientos de cuenta interna'"
         [id]="'accountsMovements'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -107,7 +107,7 @@
         [title]="'Mensajes internos'"
         [alt]="'Mensajes internos'"
         [id]="'communicationId'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -120,7 +120,7 @@
         [title]="'Enviar mensaje a AFX'"
         [alt]="'Enviar mensaje a AFX'"
         [id]="'SendMessage'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -133,7 +133,7 @@
         [title]="'Perfil de usuario de AFX'"
         [alt]="'Perfil de usuario de AFX'"
         [id]="'userProfile'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -380,7 +380,7 @@
         [title]="'Correo de recuperar contraseña'"
         [alt]="'Correo de recuperar contraseña'"
         [id]="'recoverPwd'"
-        [classes]="'h-full borderedBox'"
+        [classes]="'borderedBox'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -402,105 +402,14 @@
     </div>
 
     <!-- PALETA DE COLORES -->
-    <div class="colorMain">
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #4287CE;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#4287CE</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #85BB4F;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#85BB4F</p>
-        </div>
-
-        <div class="colorBox">
-            <div class="colorContent" style="background-color: #C04F5D;">
-            </div>
-            <p class="text-black text-center mt-2 font-bold">#C04F5D</p>
-        </div>
-        
-        <div class="colorBox">
-          <div class="colorContent" style="background-color: #D5DCE5;">
-          </div>
-          <p class="text-black text-center mt-2 font-bold">#D5DCE5</p>
-      </div>
-    </div>
+    <app-color-palette [colors]="colors"></app-color-palette>
 
     <!-- CARACTERISTICAS -->
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
+    <app-features-box [features]="features"></app-features-box>
 
-    <div>
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle1"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature1"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle2"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature2"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle3"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature3"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle4"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature4"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle5"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature5"></p>
-            </div>
-        </div>
-
-        <div class="my-12 flex flex-col items-center">
-            <div class="featureBox my-4 border-2 p-4">
-              <h6 class="text-2xl titleFeature text-center" stranslate="afxtrade.featuretitle6"></h6>
-              <p class="text-justify" stranslate="afxtrade.feature6"></p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="my-8 mx-auto w-3/4">
-        <p class="text-center text-3xl" stranslate="project.thanks"></p>
-        <div class="heart"></div>
-        <p class="text-center"><span stranslate="project.hereMore"></span><span class="underline cursor-pointer" stranslate="project.aboutLink" routerLink="/about"></span></p>
-    </div>
-
-    <div class="my-8 mx-auto w-3/4">
-        <p class="text-center text-2xl" stranslate="project.otherWork"></p>
-      </div>
+    <app-thanks-reading></app-thanks-reading>
   
-      <!-- Proyectos randoms -->
-      <div class="my-16">
-        <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of ramdons;let i = index" (click)="navigateUrl(random.code)">
-          <div>
-            <h6 class="text-2xl"> {{ random.name }}</h6>
-            <p class="ml-4">{{ translate.currentLang == "es" ? random.es.resume : random.en.resume }}</p>
-          </div>
-          <div class="flex flex-row items-center">
-            <span class="block stick"></span>
-            <div>
-              <span class="block stick-arrow stick-top"></span>
-              <span class="block stick-arrow stick-bottom"></span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Proyectos randoms -->
+    <app-more-projects [projects]="ramdons"></app-more-projects>
 </div>
   

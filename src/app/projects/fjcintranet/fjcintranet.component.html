@@ -18,7 +18,7 @@
         [title]="'Login Intranet Fundacion Jacinto Convit'"
         [alt]="'Login Intranet Fundacion Jacinto Convit'"
         [id]="'LoginIntranet'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -39,7 +39,7 @@
         [title]="'Menú principal Intranet'"
         [alt]="'Menú principal Intranet'"
         [id]="'principalMenu'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -52,7 +52,7 @@
         [title]="'Calendario de actividades'"
         [alt]="'Calendario de actividades'"
         [id]="'calendarActivities'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -67,7 +67,7 @@
             [title]="'Auditoría de documentos'"
             [alt]="'Auditoría de documentos'"
             [id]="'documentAudit'"
-            [classes]="'h-full w-full'"
+            [classes]="'w-full'"
             [height]="'250px'"
             class="w-full"
           ></app-img-loader>
@@ -95,7 +95,7 @@
         [title]="'Control de usuarios desde el CMS'"
         [alt]="'Control de usuarios'"
         [id]="'userAdmin'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -108,7 +108,7 @@
         [title]="'Lista de departamentos'"
         [alt]="'Lista de departamentos'"
         [id]="'documentList'"
-        [classes]="'h-full borderedBox img-height'"
+        [classes]="'borderedBox img-height'"
         [height]="'400px'"
         class="w-full"
       ></app-img-loader>
@@ -142,100 +142,15 @@
     </div>
 
     <!-- Colores de la pagina -->
-    <div class="colorMain">
-      <div class="colorBox">
-        <div class="colorContent" style="background-color: #3F5486;">
-        </div>
-        <p class="text-black text-center mt-2 font-bold">#3F5486</p>
-      </div>
-
-      <div class="colorBox">
-        <div class="colorContent" style="background-color: #00AE89;">
-        </div>
-        <p class="text-black text-center mt-2 font-bold">#00AE89</p>
-      </div>
-
-      <div class="colorBox">
-        <div class="colorContent" style="background-color: #BC0202;">
-        </div>
-        <p class="text-black text-center mt-2 font-bold">#BC0202</p>
-      </div>
-
-      <div class="colorBox">
-        <div class="colorContent" style="background-color: #FFD439;">
-        </div>
-        <p class="text-black text-center mt-2 font-bold">#FFD439</p>
-      </div>
-    </div>
-  
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.features"></h2>
-
-    <!-- Caracteristicas del proyecto -->
-    <div>
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature1title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature1"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature2title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature2"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature3title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature3"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature4title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature4"></p>
-        </div>
-      </div>
-
-      <div class="my-12 flex flex-col items-center">
-        <div class="featureBox my-4 border-2 p-4">
-          <h6 class="text-2xl titleFeature text-center" stranslate="fjcintranet.feature5title"></h6>
-          <p class="text-justify" stranslate="fjcintranet.feature5"></p>
-        </div>
-      </div>
-
-    </div>
+    <app-color-palette [colors]="colors"></app-color-palette>
+    
+    <app-features-box [features]="features"></app-features-box>
 
     <!-- Agradecimientos -->
-    <div class="my-8 mx-auto w-3/4">
-      <p class="text-center text-3xl" stranslate="project.thanks"></p>
-      <div class="heart"></div>
-      <p class="text-center"><span stranslate="project.hereMore"></span><span class="underline cursor-pointer" stranslate="project.aboutLink" routerLink="/about"></span></p>
-    </div>
-  
-    <div class="my-8 mx-auto w-3/4">
-      <p class="text-center text-2xl" stranslate="project.otherWork"></p>
-    </div>
+    <app-thanks-reading></app-thanks-reading>
 
     <!-- Proyectos randoms -->
-    <div class="my-16">
-      <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of ramdons;let i = index" (click)="navigateUrl(random.code)">
-        <div>
-          <h6 class="text-2xl"> {{ random.name }}</h6>
-          <p class="ml-4">{{ translate.currentLang == "es" ? random.es.resume : random.en.resume }}</p>
-        </div>
-        <div class="flex flex-row items-center">
-          <span class="block stick"></span>
-          <div>
-            <span class="block stick-arrow stick-top"></span>
-            <span class="block stick-arrow stick-bottom"></span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-more-projects [projects]="ramdons"></app-more-projects>
   
   </div>
   

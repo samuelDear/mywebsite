@@ -22,7 +22,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SlideMenuComponent } from './slide-menu/slide-menu.component';
 import { AboutComponent } from './about/about.component';
 import { StudiesComponent } from './studies/studies.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
@@ -30,6 +29,10 @@ import { PhoneScreenComponent } from './components/phone-screen/phone-screen.com
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 import { TraumappComponent } from './projects/traumapp/traumapp.component';
 import { ImgLoaderComponent } from './components/img-loader/img-loader.component';
+import { FeaturesBoxComponent } from './components/features-box/features-box.component';
+import { ThanksReadingComponent } from './components/thanks-reading/thanks-reading.component';
+import { ColorPaletteComponent } from './components/color-palette/color-palette.component';
+import { MoreProjectsComponent } from './components/more-projects/more-projects.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -45,7 +48,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     SlideMenuComponent,
     AboutComponent,
     StudiesComponent,
-    PageNotFoundComponent,
     FjcintranetComponent,
     OrmComponent,
     OwnportfolioComponent,
@@ -53,6 +55,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AfxtradeComponent,
     TraumappComponent,
     ImgLoaderComponent,
+    FeaturesBoxComponent,
+    ThanksReadingComponent,
+    ColorPaletteComponent,
+    MoreProjectsComponent,
   ],
   imports: [
     BrowserModule,

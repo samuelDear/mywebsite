@@ -1,10 +1,5 @@
 export interface ProjectHome {
   name: string;
-  es: {
-    resume: string;
-  };
-  en: {
-    resume: string;
-  };
+  resume: string;
   route: string;
 }

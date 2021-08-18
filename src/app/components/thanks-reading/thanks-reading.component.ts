@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-page-not-found',
-  templateUrl: './page-not-found.component.html',
+  selector: 'app-thanks-reading',
+  templateUrl: './thanks-reading.component.html',
 })
-export class PageNotFoundComponent implements OnInit {
+export class ThanksReadingComponent implements OnInit {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
 
