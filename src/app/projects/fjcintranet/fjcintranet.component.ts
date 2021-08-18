@@ -3,9 +3,7 @@ import { Router } from '@angular/router';
 
 import { navigationCustom } from '../../transition';
 import { fontLoader } from '../../../main';
-import { Font, Project } from '../../services/common';
-import { FeatureType } from 'src/app/services/common/features';
-import { ColorType } from 'src/app/services/common/colors';
+import { Font, Project, FeatureType, ColorType } from '../../services/common';
 
 const threshold = 0.1;
 @Component({
