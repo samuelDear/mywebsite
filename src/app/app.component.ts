@@ -13,7 +13,6 @@ import { ShowHeader } from './services/common';
 export class AppComponent {
   nav = true;
   buttonShow = true;
-  loading = false;
 
   constructor(public translate: TranslateService, router: Router) {
     translate.addLangs(['en', 'es']);
