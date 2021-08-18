@@ -22,7 +22,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SlideMenuComponent } from './slide-menu/slide-menu.component';
 import { AboutComponent } from './about/about.component';
 import { StudiesComponent } from './studies/studies.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
@@ -45,7 +44,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     SlideMenuComponent,
     AboutComponent,
     StudiesComponent,
-    PageNotFoundComponent,
     FjcintranetComponent,
     OrmComponent,
     OwnportfolioComponent,

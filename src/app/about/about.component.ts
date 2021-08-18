@@ -20,10 +20,6 @@ export class AboutComponent implements OnInit {
   }
 
   downloadCv(): void {
-    if (this.translate.currentLang == 'es') {
-      window.open('assets/cv/SamuelRojasEsp.pdf', '_blank');
-    } else {
-      window.open('assets/cv/SamuelRojasEng.pdf', '_blank');
-    }
+    window.open(`assets/cv/SamuelRojas${this.translate.currentLang == 'es' ? 'Esp' : 'Eng'}.pdf`, '_blank');
   }
 }
