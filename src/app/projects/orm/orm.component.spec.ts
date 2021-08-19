@@ -8,9 +8,8 @@ describe('OrmComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OrmComponent ]
-    })
-    .compileComponents();
+      declarations: [OrmComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

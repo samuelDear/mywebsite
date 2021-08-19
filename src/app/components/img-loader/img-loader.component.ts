@@ -15,7 +15,9 @@ export class ImgLoaderComponent implements OnInit {
 
   imgLoading = true;
 
+  // eslint-disable-next-line
   constructor() {}
 
+  // eslint-disable-next-line
   ngOnInit(): void {}
 }

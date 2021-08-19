@@ -1,267 +1,260 @@
 <div class="mainBox">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold"> ORM </h1>
-      <p class="text-center my-5 dsc" stranslate="orm.dsc"></p>
-    </div>
-    <div class="justify-between rolAgencyDate mt-2">
-      <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="orm.role"></span></p>
-      <p class="my-1"><span stranslate="project.agency"></span><span> Totalsoftware </span></p>
-      <p class="my-1"><span stranslate="project.date"></span> 10/2019 </p>
-    </div>
-
-    <!-- Imagen principal del proyecto -->
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/principalimg.png'"
-        [title]="'Menú Principal de la ORMV'"
-        [alt]="'Menú Principal de la ORMV'"
-        [id]="'homePrincipal'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="boxProject border-2 p-4">
-        <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
-        <p class="text-justify intro" stranslate="orm.intro"></p>
-        <p class="text-justify intro" stranslate="orm.intro2"></p>
-    </div>
-
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
-
-    <div class="mb-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/secundaryimg.png'"
-        [title]="'Registro de alumnos manual'"
-        [alt]="'Registro de alumnos'"
-        [id]="'pupilsRegister'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-  
-    <div>
-      <div class="my-16 flex flex-col items-center">
-        <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
-          <app-img-loader
-            [src]="'../../../assets/images/project-images/orm/laptopimg.png'"
-            [title]="'Login ORMV'"
-            [alt]="'Login ORMV'"
-            [id]="'pupilsRegister'"
-            [classes]="'w-full'"
-            [height]="'300px'"
-            class="w-full"
-          ></app-img-loader>
-        </div>
-        <div class="border-2 boxLaptopKeyboard boxProject">
-          <div class="mouseTrack border-2 border-t-0 m-auto boxProject">
-  
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div>
-      <div class="boxTablet my-16 border-2 flex flex-row justify-between p-2">
-  
-        <div class="buttonAndCameraTablet flex-col">
-          <div class="cameraTablet border-2 my-2"></div>
-          <div class="soundTablet border-2 my-2"></div>
-        </div>
-  
-        <div class="screenTablet">
-          <app-img-loader
-            [src]="'../../../assets/images/project-images/orm/tabletimg.png'"
-            [title]="'Lista de alumnos'"
-            [alt]="'Lista de alumnos'"
-            [id]="'pupilList'"
-            [classes]="'w-full'"
-            [height]="'300px'"
-            class="w-full"
-          ></app-img-loader>
-        </div>
-  
-        <div class="buttonAndCameraTablet">
-          <div class="buttonTablet border-2">
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  
-    <div>
-      <div class="boxMobile mt-16 justify-around">
-
-        <app-phone-screen
-            urlimg="../../../assets/images/project-images/orm/fmobileimg.png"
-            title="Login mobile"
-            alt="Login mobile"
-        ></app-phone-screen>
-
-        <app-phone-screen
-            urlimg="../../../assets/images/project-images/orm/smobileimg.png"
-            title="Recuperar contraseña mobile"
-            alt="Recuperar contraseña mobile"
-        ></app-phone-screen>
-
-      </div>
-    </div>
-
-    <div>
-      <div class="boxMobile mb-16 justify-around">
-
-        <app-phone-screen
-            urlimg="../../../assets/images/project-images/orm/tmobileimg.png"
-            title="Home mobile"
-            alt="Home mobile"
-        ></app-phone-screen>
-
-        <app-phone-screen
-            urlimg="../../../assets/images/project-images/orm/fomobileimg.png"
-            title="Información del colegio"
-            alt="Información del colegio"
-        ></app-phone-screen>
-  
-      </div>
-    </div>
-
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="orm.cmstitle"></h2>
-
-    <div class="boxProject border-2 p-4">
-        <p class="text-justify intro" stranslate="orm.cmsintro"></p>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/fscreencms.png'"
-        [title]="'Home CMS ORMV'"
-        [alt]="'Home CMS ORMV'"
-        [id]="'homeCMS'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/sscreencms.png'"
-        [title]="'Lista de colegios participantes'"
-        [alt]="'Lista de colegios participantes'"
-        [id]="'collegeList'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/tscreencms.png'"
-        [title]="'Información del colegio'"
-        [alt]="'Información del colegio'"
-        [id]="'collegeInfo'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/foscreencms.png'"
-        [title]="'Roles y privilegios de usuarios'"
-        [alt]="'Roles y privilegios de usuarios'"
-        [id]="'privileges'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="orm.examtitle"></h2>
-
-    <div class="boxProject border-2 p-4">
-        <p class="text-justify intro" stranslate="orm.examdsc"></p>
-        <ul class="listDetails">
-            <li stranslate="orm.exampre"></li>
-            <li stranslate="orm.examRegional"></li>
-            <li stranslate="orm.examNational"></li>
-        </ul>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/fscreenexam.png'"
-        [title]="'Home pruebas ORMV'"
-        [alt]="'Home pruebas ORMV'"
-        [id]="'HomeExams'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/sscreenexam.png'"
-        [title]="'Configuración de preferencias de pruebas preeliminares'"
-        [alt]="'Configuración de preferencias de pruebas preeliminares'"
-        [id]="'preferencesExams'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/tscreenexam.png'"
-        [title]="'Correción manual de exámenes'"
-        [alt]="'Correción manual de exámenes'"
-        [id]="'ExamsCorrector'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="my-16 flex justify-center borderedBox">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/orm/foscreenexam.png'"
-        [title]="'Lista de alumnos con sus pruebas'"
-        [alt]="'Lista de alumnos con sus pruebas'"
-        [id]="'pupilsList'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-  
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
-  
-    <div>
-        <div class="my-6">
-            <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
-            <p class="typographyExample" id="typographyExample1">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
-        </div>
-
-        <div class="my-6">
-            <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
-            <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
-        </div>
-    </div>
-
-    <app-color-palette [colors]="colors"></app-color-palette>
-  
-    <app-features-box [features]="features"></app-features-box>
-  
-    <!-- Agradecimientos -->
-    <app-thanks-reading></app-thanks-reading>
-
-    <app-more-projects [projects]="ramdons"></app-more-projects>
-  
+  <div class="text-center">
+    <h1 class="text-4xl font-bold">ORM</h1>
+    <p class="text-center my-5 dsc" stranslate="orm.dsc"></p>
   </div>
-  
+  <div class="justify-between rolAgencyDate mt-2">
+    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="orm.role"></span></p>
+    <p class="my-1"><span stranslate="project.agency"></span><span> Totalsoftware </span></p>
+    <p class="my-1"><span stranslate="project.date"></span> 10/2019</p>
+  </div>
+
+  <!-- Imagen principal del proyecto -->
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/principalimg.png'"
+      [title]="'Menú Principal de la ORMV'"
+      [alt]="'Menú Principal de la ORMV'"
+      [id]="'homePrincipal'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
+    <p class="text-justify intro" stranslate="orm.intro"></p>
+    <p class="text-justify intro" stranslate="orm.intro2"></p>
+  </div>
+
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
+
+  <div class="mb-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/secundaryimg.png'"
+      [title]="'Registro de alumnos manual'"
+      [alt]="'Registro de alumnos'"
+      [id]="'pupilsRegister'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div>
+    <div class="my-16 flex flex-col items-center">
+      <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/orm/laptopimg.png'"
+          [title]="'Login ORMV'"
+          [alt]="'Login ORMV'"
+          [id]="'pupilsRegister'"
+          [classes]="'w-full'"
+          [height]="'300px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <div class="border-2 boxLaptopKeyboard boxProject">
+        <div class="mouseTrack border-2 border-t-0 m-auto boxProject"></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="boxTablet my-16 border-2 flex flex-row justify-between p-2">
+      <div class="buttonAndCameraTablet flex-col">
+        <div class="cameraTablet border-2 my-2"></div>
+        <div class="soundTablet border-2 my-2"></div>
+      </div>
+
+      <div class="screenTablet">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/orm/tabletimg.png'"
+          [title]="'Lista de alumnos'"
+          [alt]="'Lista de alumnos'"
+          [id]="'pupilList'"
+          [classes]="'w-full'"
+          [height]="'300px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="buttonAndCameraTablet">
+        <div class="buttonTablet border-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="boxMobile mt-16 justify-around">
+      <app-phone-screen
+        urlimg="../../../assets/images/project-images/orm/fmobileimg.png"
+        title="Login mobile"
+        alt="Login mobile"
+      ></app-phone-screen>
+
+      <app-phone-screen
+        urlimg="../../../assets/images/project-images/orm/smobileimg.png"
+        title="Recuperar contraseña mobile"
+        alt="Recuperar contraseña mobile"
+      ></app-phone-screen>
+    </div>
+  </div>
+
+  <div>
+    <div class="boxMobile mb-16 justify-around">
+      <app-phone-screen
+        urlimg="../../../assets/images/project-images/orm/tmobileimg.png"
+        title="Home mobile"
+        alt="Home mobile"
+      ></app-phone-screen>
+
+      <app-phone-screen
+        urlimg="../../../assets/images/project-images/orm/fomobileimg.png"
+        title="Información del colegio"
+        alt="Información del colegio"
+      ></app-phone-screen>
+    </div>
+  </div>
+
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="orm.cmstitle"></h2>
+
+  <div class="boxProject border-2 p-4">
+    <p class="text-justify intro" stranslate="orm.cmsintro"></p>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/fscreencms.png'"
+      [title]="'Home CMS ORMV'"
+      [alt]="'Home CMS ORMV'"
+      [id]="'homeCMS'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/sscreencms.png'"
+      [title]="'Lista de colegios participantes'"
+      [alt]="'Lista de colegios participantes'"
+      [id]="'collegeList'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/tscreencms.png'"
+      [title]="'Información del colegio'"
+      [alt]="'Información del colegio'"
+      [id]="'collegeInfo'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/foscreencms.png'"
+      [title]="'Roles y privilegios de usuarios'"
+      [alt]="'Roles y privilegios de usuarios'"
+      [id]="'privileges'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="orm.examtitle"></h2>
+
+  <div class="boxProject border-2 p-4">
+    <p class="text-justify intro" stranslate="orm.examdsc"></p>
+    <ul class="listDetails">
+      <li stranslate="orm.exampre"></li>
+      <li stranslate="orm.examRegional"></li>
+      <li stranslate="orm.examNational"></li>
+    </ul>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/fscreenexam.png'"
+      [title]="'Home pruebas ORMV'"
+      [alt]="'Home pruebas ORMV'"
+      [id]="'HomeExams'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/sscreenexam.png'"
+      [title]="'Configuración de preferencias de pruebas preeliminares'"
+      [alt]="'Configuración de preferencias de pruebas preeliminares'"
+      [id]="'preferencesExams'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/tscreenexam.png'"
+      [title]="'Correción manual de exámenes'"
+      [alt]="'Correción manual de exámenes'"
+      [id]="'ExamsCorrector'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/orm/foscreenexam.png'"
+      [title]="'Lista de alumnos con sus pruebas'"
+      [alt]="'Lista de alumnos con sus pruebas'"
+      [id]="'pupilsList'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+  <div>
+    <div class="my-6">
+      <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
+      <p class="typographyExample" id="typographyExample1">
+        A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+      </p>
+    </div>
+
+    <div class="my-6">
+      <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
+      <p class="typographyExample" id="typographyExample2">
+        A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+      </p>
+    </div>
+  </div>
+
+  <app-color-palette [colors]="colors"></app-color-palette>
+
+  <app-features-box [features]="features"></app-features-box>
+
+  <!-- Agradecimientos -->
+  <app-thanks-reading></app-thanks-reading>
+
+  <app-more-projects [projects]="ramdons"></app-more-projects>
+</div>

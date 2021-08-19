@@ -6,20 +6,24 @@
         TraumApp <mat-icon aria-hidden="false" aria-label="link">mobile_friendly</mat-icon>
       </a>
     </h1>
-    <p class="text-center my-5 dsc" stranslate="traumapp.dsc">  </p>
+    <p class="text-center my-5 dsc" stranslate="traumapp.dsc"></p>
   </div>
 
   <!-- Subtitulo del proyecto -->
   <div class="justify-between rolAgencyDate mt-2">
-    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="traumapp.role"></span> </p>
-    <p class="my-1"><span stranslate="project.agency"></span> DearSoft Studios </p>
-    <p class="my-1"><span stranslate="project.date"></span> 06-2021 </p>
+    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="traumapp.role"></span></p>
+    <p class="my-1"><span stranslate="project.agency"></span> DearSoft Studios</p>
+    <p class="my-1"><span stranslate="project.date"></span> 06-2021</p>
   </div>
 
   <!-- Imagen principal del proyecto -->
   <div class="my-16 flex justify-center boxUnique">
     <app-img-loader
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/principalimg.png' : '../../../assets/images/project-images/traumapp/light/principalimg.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/principalimg.png'
+          : '../../../assets/images/project-images/traumapp/light/principalimg.png'
+      "
       [title]="'Imagen Principal'"
       [alt]="'Imagen Principal'"
       [id]="'principalPage'"
@@ -36,13 +40,13 @@
 
   <div class="introductionBox p-4">
     <p class="text-justify intro" stranslate="traumapp.intro1"></p>
-    <br>
+    <br />
     <p class="text-justify intro" stranslate="traumapp.intro2"></p>
-    <br>
+    <br />
     <p class="text-justify intro" stranslate="traumapp.intro3"></p>
   </div>
 </section>
-  
+
 <!-- Resultado visual -->
 <section class="visualResult mainBoxTraumApp entryPage" id="visualResultSecion">
   <h2 class="text-3xl text-center titleSection font-bold" stranslate="project.visualRes"></h2>
@@ -50,7 +54,11 @@
   <!-- pantalla 1 -->
   <div class="visualResultItems" id="visualResult1">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/loginimg.png' : '../../../assets/images/project-images/traumapp/light/loginimg.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/loginimg.png'
+          : '../../../assets/images/project-images/traumapp/light/loginimg.png'
+      "
       class="imgVisualResult imgLeft"
       title="Login"
       alt="Login TraumApp"
@@ -66,7 +74,11 @@
   <!-- pantalla 2 -->
   <div class="visualResultItems visualResultItemsRight" id="visualResult2">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/homemenu.png' : '../../../assets/images/project-images/traumapp/light/homemenu.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/homemenu.png'
+          : '../../../assets/images/project-images/traumapp/light/homemenu.png'
+      "
       class="imgVisualResult imgRight"
       title="Home principal"
       alt="Home principal"
@@ -82,7 +94,11 @@
   <!-- pantalla 3 -->
   <div class="visualResultItems" id="visualResult3">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/calendarimg.png' : '../../../assets/images/project-images/traumapp/light/calendarimg.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/calendarimg.png'
+          : '../../../assets/images/project-images/traumapp/light/calendarimg.png'
+      "
       class="imgVisualResult imgLeft"
       title="Calendario de Citas"
       alt="Calendario de Citas"
@@ -98,8 +114,12 @@
   <!-- pantalla 4 -->
   <div class="visualResultItems visualResultItemsRight" id="visualResult4">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerModeImg.png' : '../../../assets/images/project-images/traumapp/light/registerModeImg.png'"
-      class="imgVisualResult  imgRight borderImages"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/registerModeImg.png'
+          : '../../../assets/images/project-images/traumapp/light/registerModeImg.png'
+      "
+      class="imgVisualResult imgRight borderImages"
       title="Modo Registro"
       alt="Modo Registro"
     />
@@ -123,14 +143,22 @@
   <!-- Pantalla de pacientes -->
   <div class="patientsImagesBox my-16">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/patientList.png' : '../../../assets/images/project-images/traumapp/light/patientList.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/patientList.png'
+          : '../../../assets/images/project-images/traumapp/light/patientList.png'
+      "
       class="imgPatients"
       title="Lista de pacientes"
       alt="Lista de pacientes"
     />
 
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/patientData.png' : '../../../assets/images/project-images/traumapp/light/patientData.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/patientData.png'
+          : '../../../assets/images/project-images/traumapp/light/patientData.png'
+      "
       class="imgPatients"
       title="Información del Paciente"
       alt="Información del Paciente"
@@ -146,22 +174,34 @@
       <div class="sliderImages" id="registerPatientsSlider">
         <img
           id="registerPatients1"
-          [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerStep1.png' : '../../../assets/images/project-images/traumapp/light/registerStep1.png'"
-          [ngClass]="(currentSliderPatient == 1 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
+          [src]="
+            isDarkMode
+              ? '../../../assets/images/project-images/traumapp/dark/registerStep1.png'
+              : '../../../assets/images/project-images/traumapp/light/registerStep1.png'
+          "
+          [ngClass]="(currentSliderPatient === 1 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
           title="Registro Paciente Paso 1"
           alt="Registro Paciente Paso 1"
         />
         <img
           id="registerPatients2"
-          [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerStep2.png' : '../../../assets/images/project-images/traumapp/light/registerStep2.png'"
-          [ngClass]="(currentSliderPatient == 2 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
+          [src]="
+            isDarkMode
+              ? '../../../assets/images/project-images/traumapp/dark/registerStep2.png'
+              : '../../../assets/images/project-images/traumapp/light/registerStep2.png'
+          "
+          [ngClass]="(currentSliderPatient === 2 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
           title="Registro Paciente Paso 2"
           alt="Registro Paciente Paso 2"
         />
         <img
           id="registerPatients3"
-          [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registerStep3.png' : '../../../assets/images/project-images/traumapp/light/registerStep3.png'"
-          [ngClass]="(currentSliderPatient == 3 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
+          [src]="
+            isDarkMode
+              ? '../../../assets/images/project-images/traumapp/dark/registerStep3.png'
+              : '../../../assets/images/project-images/traumapp/light/registerStep3.png'
+          "
+          [ngClass]="(currentSliderPatient === 3 ? '' : 'hideRegisterPatientSlider') + ' imgPatients '"
           title="Registro Paciente Paso 3"
           alt="Registro Paciente Paso 3"
         />
@@ -170,13 +210,12 @@
         <mat-icon aria-hidden="false" aria-label="arrow">keyboard_arrow_right</mat-icon>
       </div>
       <div class="dotBox">
-        <div [ngClass]="(currentSliderPatient == 1 ? 'dotActive' : '') + ' dotPosition'"></div>
-        <div [ngClass]="(currentSliderPatient == 2 ? 'dotActive' : '') + ' dotPosition'"></div>
-        <div [ngClass]="(currentSliderPatient == 3 ? 'dotActive' : '') + ' dotPosition'"></div>
+        <div [ngClass]="(currentSliderPatient === 1 ? 'dotActive' : '') + ' dotPosition'"></div>
+        <div [ngClass]="(currentSliderPatient === 2 ? 'dotActive' : '') + ' dotPosition'"></div>
+        <div [ngClass]="(currentSliderPatient === 3 ? 'dotActive' : '') + ' dotPosition'"></div>
       </div>
     </div>
-    
-    
+
     <p class="text-justify intro sliderPatientsDsc" stranslate="traumapp.registerPatients"></p>
   </div>
 </section>
@@ -191,14 +230,22 @@
 
   <div class="formImagesBox">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/formMenu.png' : '../../../assets/images/project-images/traumapp/light/formMenu.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/formMenu.png'
+          : '../../../assets/images/project-images/traumapp/light/formMenu.png'
+      "
       class="imgPatients borderImages"
       title="Formularios"
       alt="Formularios"
     />
 
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/formMotive.png' : '../../../assets/images/project-images/traumapp/light/formMotive.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/formMotive.png'
+          : '../../../assets/images/project-images/traumapp/light/formMotive.png'
+      "
       class="imgPatients borderImages"
       title="Formulario del Informe"
       alt="Formulario del Informe"
@@ -207,14 +254,22 @@
 
   <div class="formImagesBox">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/formSick.png' : '../../../assets/images/project-images/traumapp/light/formSick.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/formSick.png'
+          : '../../../assets/images/project-images/traumapp/light/formSick.png'
+      "
       class="imgPatients borderImages"
       title="Formulario del Informe"
       alt="Formulario del Informe"
     />
 
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/finalForm.png' : '../../../assets/images/project-images/traumapp/light/finalForm.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/finalForm.png'
+          : '../../../assets/images/project-images/traumapp/light/finalForm.png'
+      "
       class="imgPatients borderImages"
       title="Informe Final"
       alt="Informe Final"
@@ -230,9 +285,13 @@
     <p class="text-justify intro" stranslate="traumapp.dscCalendar"></p>
   </div>
 
-  <div class="my-16 flex justify-center  boxUnique">
+  <div class="my-16 flex justify-center boxUnique">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/calendarprincipalimg.png' : '../../../assets/images/project-images/traumapp/light/calendarprincipalimg.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/calendarprincipalimg.png'
+          : '../../../assets/images/project-images/traumapp/light/calendarprincipalimg.png'
+      "
       class="imgScreen borderImages"
       title="Calendario de citas"
       alt="Calendario de citas"
@@ -240,14 +299,22 @@
   </div>
   <div class="configImagesBox">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/createdate.png' : '../../../assets/images/project-images/traumapp/light/createdate.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/createdate.png'
+          : '../../../assets/images/project-images/traumapp/light/createdate.png'
+      "
       class="imgPatients borderImages"
       title="Crear cita"
       alt="Crear cita"
     />
 
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/searchPatient.png' : '../../../assets/images/project-images/traumapp/light/searchPatient.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/searchPatient.png'
+          : '../../../assets/images/project-images/traumapp/light/searchPatient.png'
+      "
       class="imgPatients borderImages"
       title="Lista de Pacientes"
       alt="Lista de Pacientes"
@@ -256,14 +323,22 @@
 
   <div class="configImagesBox">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/dateinfo.png' : '../../../assets/images/project-images/traumapp/light/dateinfo.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/dateinfo.png'
+          : '../../../assets/images/project-images/traumapp/light/dateinfo.png'
+      "
       class="imgPatients borderImages"
       title="Información de Cita"
       alt="Información de Cita"
     />
 
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/deletedate.png' : '../../../assets/images/project-images/traumapp/light/deletedate.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/deletedate.png'
+          : '../../../assets/images/project-images/traumapp/light/deletedate.png'
+      "
       class="imgPatients borderImages"
       title="Eliminar Cita"
       alt="Eliminar Cita"
@@ -280,9 +355,13 @@
   </div>
 
   <!-- Imagen principal de configuacion -->
-  <div class="my-16 flex justify-center  boxUnique">
+  <div class="my-16 flex justify-center boxUnique">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/configprincipalimg.png' : '../../../assets/images/project-images/traumapp/light/configprincipalimg.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/configprincipalimg.png'
+          : '../../../assets/images/project-images/traumapp/light/configprincipalimg.png'
+      "
       class="imgPatients"
       title="Menu de Configuración"
       alt="Menu de Configuración"
@@ -292,7 +371,11 @@
   <!-- Usuarios -->
   <div class="configRowBox configRowBoxLeft configHideBox" id="userConfig">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/userimg.png' : '../../../assets/images/project-images/traumapp/light/userimg.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/userimg.png'
+          : '../../../assets/images/project-images/traumapp/light/userimg.png'
+      "
       class="configImages"
       title="Información Del Usuario"
       alt="Información Del Usuario"
@@ -306,7 +389,11 @@
   <!-- Medicamentos y Seguros -->
   <div class="configRowBox configRowBoxRight configHideBox" id="medicineConfig">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/medicineList.png' : '../../../assets/images/project-images/traumapp/light/medicineList.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/medicineList.png'
+          : '../../../assets/images/project-images/traumapp/light/medicineList.png'
+      "
       class="configImages"
       title="Lista de Medicamentos"
       alt="Lista de Medicamentos"
@@ -320,7 +407,11 @@
   <!-- Register Mode -->
   <div class="configRowBox configRowBoxLeft configHideBox" id="registerModeConfig">
     <img
-      [src]="isDarkMode ? '../../../assets/images/project-images/traumapp/dark/registermodeconfig.png' : '../../../assets/images/project-images/traumapp/light/registermodeconfig.png'"
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp/dark/registermodeconfig.png'
+          : '../../../assets/images/project-images/traumapp/light/registermodeconfig.png'
+      "
       class="configImages"
       title="Modo Registro"
       alt="Modo Registro"
@@ -330,7 +421,6 @@
       <p class="text-justify intro" stranslate="traumapp.registerModeDscConfig"></p>
     </div>
   </div>
-
 </section>
 
 <!-- Caracteristicas Principales -->
@@ -403,26 +493,27 @@
 
   <div class="my-6">
     <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
-    <p class="typographyExample" id="typographyExample1">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
+    <p class="typographyExample" id="typographyExample1">
+      A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+    </p>
   </div>
 
   <div class="my-6">
     <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
-    <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
+    <p class="typographyExample" id="typographyExample2">
+      A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+    </p>
   </div>
 
   <app-color-palette [colors]="colors"></app-color-palette>
-
 </section>
 
 <!-- Caracteristicas-->
 <section class="mainBoxTraumApp">
-
   <app-features-box [features]="features"></app-features-box>
 
   <!-- Agradecimientos -->
   <app-thanks-reading></app-thanks-reading>
-
 </section>
 
 <!-- Proyectos randoms -->
@@ -430,7 +521,10 @@
   <app-more-projects [projects]="ramdons"></app-more-projects>
 </section>
 
-<div [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')" (click)="setDarksMode()">
+<div
+  [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')"
+  (click)="setDarksMode()"
+>
   <mat-icon *ngIf="!isDarkMode" aria-hidden="false" aria-label="arrow">light_mode</mat-icon>
   <mat-icon *ngIf="isDarkMode" aria-hidden="false" aria-label="arrow">dark_mode</mat-icon>
 </div>

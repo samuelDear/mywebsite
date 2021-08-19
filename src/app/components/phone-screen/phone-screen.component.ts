@@ -12,6 +12,6 @@ export class PhoneScreenComponent implements OnInit {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  // eslint-disable-next-line
   ngOnInit(): void {}
 }

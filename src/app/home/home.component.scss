@@ -1,9 +1,9 @@
-.presentation{
+.presentation {
   font-size: 187.5%;
   font-weight: bold;
 }
 
-.mainBox{
+.mainBox {
   margin: 180px 150px 0px 150px;
 }
 
@@ -12,14 +12,14 @@
   font-weight: 700;
 }
 
-.projects{
+.projects {
   margin-top: 6rem;
 }
 
-#personalIcon, .knowlegde{
+#personalIcon,
+.knowlegde {
   margin-top: 2rem;
 }
-
 
 .projectTitle {
   font-size: 162.5%;
@@ -33,11 +33,12 @@
 
 .linkProject {
   font-size: 125%;
-  margin-top: 1.0em;
-  margin-left: 1.0em;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 
-.knowlegdeTxt, .aboutResume {
+.knowlegdeTxt,
+.aboutResume {
   font-weight: 600;
   font-size: 125%;
 }
@@ -60,41 +61,37 @@
 
 .msgContact {
   font-size: 160%;
-  margin: 8px 0px
+  margin: 8px 0px;
 }
 
 .submsgContact {
   font-size: 140%;
-  margin: 8px 0px
+  margin: 8px 0px;
 }
 
 svg {
   height: auto;
 }
 
-.btn{
-  transition:1s;
-}
-
-.slide{
+.slide {
   background: linear-gradient(to left, #111 50%, #2e8a7c 50%);
   background-size: 200% 100%;
-  background-position:right bottom;
+  background-position: right bottom;
 }
 
 .slide:hover,
 .slide:focus {
-  background-position:left bottom;
+  background-position: left bottom;
 }
 
-.knowlegdeBox{
+.knowlegdeBox {
   display: flex;
   flex-direction: row;
   margin-left: 4rem;
   margin-top: 1.25rem;
 }
 
-.knowlegdeIllustration{
+.knowlegdeIllustration {
   width: 50%;
 }
 
@@ -106,12 +103,12 @@ svg {
   width: 40%;
 }
 
-.marginOdd{
+.marginOdd {
   margin-left: 6rem;
   margin-right: 4rem;
 }
 
-.marginPair{
+.marginPair {
   margin-right: 6rem;
   margin-left: 4rem;
 }
@@ -131,7 +128,8 @@ svg {
   width: 100%;
 }
 
-#personalIconSvg {
+#personalIconSvg,
+.btn {
   transition: 1s;
 }
 
@@ -139,7 +137,7 @@ svg {
   transition: 0.8s;
 }
 
-.copyri{
+.copyri {
   display: flex;
   justify-content: center;
   font-family: monospace;
@@ -158,7 +156,7 @@ svg {
 }
 
 .btnSendEmail {
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   border-radius: 3px;
   width: 50%;
   padding: 5px;
@@ -171,7 +169,7 @@ svg {
 }
 
 .labelForm {
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
   font-size: 17px;
 }
@@ -185,26 +183,27 @@ svg {
 }
 
 ::ng-deep .mat-form-field-underline {
-  background-color: #38CA13 !important;
+  background-color: #38ca13 !important;
 }
 
 ::ng-deep .mat-form-field-ripple {
   background-color: #db2696 !important;
 }
 
-@media only screen and (max-width : 1085px) {
-  .mainBox{
+@media only screen and (max-width: 1085px) {
+  .mainBox {
     margin: 180px 60px 0px 130px;
   }
 }
 
-@media only screen and (max-width : 1000px) {
-  .knowlegdeBox{
+@media only screen and (max-width: 1000px) {
+  .knowlegdeBox {
     flex-direction: column-reverse;
     margin-top: 0rem;
   }
 
-  .knowlegdeTxt, .knowlegdeIllustration {
+  .knowlegdeTxt,
+  .knowlegdeIllustration {
     width: 100%;
   }
 
@@ -215,28 +214,30 @@ svg {
   .msgContact {
     font-size: 140%;
   }
-  
+
   .submsgContact {
     font-size: 110%;
   }
 }
 
-@media only screen and (max-width : 950px) {
+@media only screen and (max-width: 950px) {
   .presentationSonBox {
     width: 90%;
   }
 
-  .marginOdd{
+  .marginOdd {
     margin-left: 4rem;
     margin-right: 2rem;
   }
 
-  .marginPair{
+  .marginPair {
     margin-right: 4rem;
     margin-left: 2rem;
   }
 
-  .knowlegdeBox, .aboutResume, .contactBox{
+  .knowlegdeBox,
+  .aboutResume,
+  .contactBox {
     margin-left: 2rem;
   }
 
@@ -245,15 +246,15 @@ svg {
   }
 }
 
-@media only screen and (max-width : 850px) {
-  .mainBox{
+@media only screen and (max-width: 850px) {
+  .mainBox {
     margin: 120px 40px 0px 40px;
   }
 
   .msgContact {
     font-size: 150%;
   }
-  
+
   .submsgContact {
     font-size: 120%;
   }
@@ -263,22 +264,24 @@ svg {
   }
 }
 
-@media only screen and (max-width : 700px) {
-  .marginOdd{
+@media only screen and (max-width: 700px) {
+  .marginOdd {
     margin-left: 2rem;
     margin-right: 0rem;
   }
 
-  .marginPair{
+  .marginPair {
     margin-right: 2rem;
     margin-left: 0rem;
   }
 
-  .knowlegdeBox, .aboutResume, .contactBox{
+  .knowlegdeBox,
+  .aboutResume,
+  .contactBox {
     margin-left: 1rem;
   }
 
-  .presentation{
+  .presentation {
     font-size: 150%;
   }
 
@@ -299,20 +302,22 @@ svg {
   }
 }
 
-@media only screen and (max-width : 550px) {
-  .marginOdd{
+@media only screen and (max-width: 550px) {
+  .marginOdd {
     margin-left: 0rem;
   }
 
-  .marginPair{
+  .marginPair {
     margin-right: 0rem;
   }
 
-  .aboutResume, .knowlegdeBox, .contactBox {
+  .aboutResume,
+  .knowlegdeBox,
+  .contactBox {
     margin-left: 0.5rem;
   }
 
-  .presentation{
+  .presentation {
     font-size: 140%;
   }
 
@@ -328,11 +333,12 @@ svg {
     font-size: 120%;
   }
 
-  .projects{
+  .projects {
     margin-top: 3rem;
   }
 
-  #personalIcon, .knowlegde {
+  #personalIcon,
+  .knowlegde {
     margin-top: 1rem;
   }
 
@@ -343,7 +349,7 @@ svg {
   .msgContact {
     font-size: 120%;
   }
-  
+
   .submsgContact {
     font-size: 100%;
   }

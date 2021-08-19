@@ -10,8 +10,8 @@
       </li>
 
       <li>
-        <a class="cursor-pointer" (click)="navigationFragment('/','projects')">
-          <div class="w-full navItem" >
+        <a class="cursor-pointer" (click)="navigationFragment('/', 'projects')">
+          <div class="w-full navItem">
             <span stranslate="slideMenu.projectsLink"></span>
           </div>
         </a>
@@ -26,7 +26,7 @@
       </li>
 
       <li>
-        <a class="cursor-pointer" (click)="navigationFragment('/','knowlegde')">
+        <a class="cursor-pointer" (click)="navigationFragment('/', 'knowlegde')">
           <div class="w-full navItem">
             <span stranslate="slideMenu.knowlegdeLink"></span>
           </div>
@@ -48,12 +48,12 @@
       </li>
 
       <li>
-          <div class="selectBoxLang">
-            <select class="border-white border-2 mr-4 px-3" #langselect (change)="translate.use(langselect.value)" >
-              <option value="es" [selected]="currentLang == 'es' ? true : false">ESP</option>
-              <option value="en" [selected]="currentLang == 'en' ? true : false">ENG</option>
-            </select>
-          </div>
+        <div class="selectBoxLang">
+          <select class="border-white border-2 mr-4 px-3" #langselect (change)="translate.use(langselect.value)">
+            <option value="es" [selected]="currentLang === 'es' ? true : false">ESP</option>
+            <option value="en" [selected]="currentLang === 'en' ? true : false">ENG</option>
+          </select>
+        </div>
       </li>
     </ul>
   </nav>
