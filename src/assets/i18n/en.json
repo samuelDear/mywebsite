@@ -12,7 +12,9 @@
     "labelName": "Name",
     "labelEmail": "Email",
     "labelDscEmail": "Message",
-    "btnText": "Send"
+    "btnText": "Send",
+    "requiredInput": "This field is required.",
+    "invalidEmail": "Invalid email."
   },
   "myWeb": {
     "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience.",
