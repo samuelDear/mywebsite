@@ -7,74 +7,78 @@ html {
   background-color: #111;
   font-family: 'Signika', sans-serif;
 }
-  
+
 html {
   scroll-behavior: smooth;
 }
-  
-body, html {
-  color: #FFF;
+
+body,
+html {
+  color: #fff;
   height: 100vh;
 }
-  
-button:focus, select:focus {
+
+button:focus,
+select:focus {
   outline: 0;
 }
 
-.codeLine{
+.codeLine {
   font-family: monospace;
   font-size: 150%;
 }
-  
-.tag, .linkProject, .titleFeature {
+
+.tag,
+.linkProject,
+.titleFeature {
   color: #4ae3cd;
 }
-  
+
 .controlStructure {
   color: #db2696;
 }
-  
+
 .sentence {
   color: #38ca13;
 }
-  
+
 .orderFlex {
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-  
+
 .socialMedia {
   height: 50px;
   width: 50px;
   align-self: center;
 }
-  
+
 .boxProject {
   border-color: #4ae3cd;
 }
-  
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #555;
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(0deg,#4ae3cd 0%, #db2696 50%, #38ca13 100%);
+  background: linear-gradient(0deg, #4ae3cd 0%, #db2696 50%, #38ca13 100%);
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(0deg, rgba(68,176,160,1) 0%, rgba(163,52,121,1) 50%, rgba(69,162,46,1) 100%);
+  background: linear-gradient(0deg, rgba(68, 176, 160, 1) 0%, rgba(163, 52, 121, 1) 50%, rgba(69, 162, 46, 1) 100%);
 }
-  
+
 textarea {
   resize: none;
 }
@@ -104,16 +108,24 @@ textarea {
   margin: auto;
 }
 
-
-.imgScreen, .imgPatients {
+.imgScreen,
+.imgPatients {
   height: 75vh;
 }
 
-.imgScreen, .imgPatients, .imgVisualResult {
+.imgScreen,
+.imgPatients,
+.imgVisualResult {
   max-height: 800px;
   border-radius: 20px;
 }
-  
+
+.loadScreenInitial {
+  width: 100% !important;
+  background-color: rgba(32, 32, 32, 1) !important;
+  transition: 1s !important;
+}
+
 .loadScreen {
   width: 0px;
   height: 100%;
@@ -127,7 +139,7 @@ textarea {
   left: 0;
   transition: 1.8s;
 }
-  
+
 .name {
   font-size: 180%;
   font-weight: 300;
@@ -139,120 +151,120 @@ textarea {
   text-align: center;
 }
 
-@keyframes volcanName{
-  0%{
+@keyframes volcanName {
+  0% {
     color: #4ae3cd;
   }
-  25%{
+  25% {
     color: #db2696;
   }
-  50%{
+  50% {
     color: #38ca13;
   }
-  75%{
+  75% {
     color: #db2696;
   }
-  100%{
+  100% {
     color: #4ae3cd;
   }
 }
-  
-.loadingLine{
+
+.loadingLine {
   width: 0%;
   height: 1px;
   background-color: #fff;
   opacity: 0.3;
   animation: expandLoading 4s ease-out infinite;
 }
-  
-  
-@keyframes expandLoading{
-  0%{
+
+@keyframes expandLoading {
+  0% {
     width: 0%;
   }
-  5%{
-    width: 2%
-  }
-  10%{
-    width: 4%;
-  }
-  15%{
-    width: 6%
-  }
-  20%{
-    width: 8%;
-  }
-  25%{
-    width: 10%;
-  }
-  30%{
-    width: 12%;
-  }
-  35%{
-    width: 14%;
-  }
-  40%{
-    width: 16%;
-  }
-  45%{
-    width: 18%;
-  }
-  50%{
-    width: 20%;
-  }
-  55%{
-    width: 18%;
-  }
-  60%{
-    width: 16%;
-  }
-  65%{
-    width: 14%;
-  }
-  70%{
-    width: 12%;
-  }
-  75%{
-    width: 10%;
-  }
-  80%{
-    width: 8%;
-  }
-  85%{
-    width: 6%;
-  }
-  90%{
-    width: 4%;
-  }
-  95%{
+  5% {
     width: 2%;
   }
-  100%{
+  10% {
+    width: 4%;
+  }
+  15% {
+    width: 6%;
+  }
+  20% {
+    width: 8%;
+  }
+  25% {
+    width: 10%;
+  }
+  30% {
+    width: 12%;
+  }
+  35% {
+    width: 14%;
+  }
+  40% {
+    width: 16%;
+  }
+  45% {
+    width: 18%;
+  }
+  50% {
+    width: 20%;
+  }
+  55% {
+    width: 18%;
+  }
+  60% {
+    width: 16%;
+  }
+  65% {
+    width: 14%;
+  }
+  70% {
+    width: 12%;
+  }
+  75% {
+    width: 10%;
+  }
+  80% {
+    width: 8%;
+  }
+  85% {
+    width: 6%;
+  }
+  90% {
+    width: 4%;
+  }
+  95% {
+    width: 2%;
+  }
+  100% {
     width: 0%;
   }
 }
-  
+
 /* ESTILOS PARA PROYECTOS */
-.mainBox{
+.mainBox {
   margin: 8rem 10rem;
 }
-  
-.dscText, .intro{
+
+.dscText,
+.intro {
   font-size: 1.25rem;
 }
-  
+
 .rolAgencyDate {
   font-size: 1.125rem;
   display: flex;
   flex-direction: row;
 }
-  
+
 .boxLaptopScreen {
   width: 90%;
   height: 90%;
   background-color: #222;
 }
-  
+
 .boxLaptopKeyboard {
   width: 100%;
   height: 50px;
@@ -260,7 +272,7 @@ textarea {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
-  
+
 .mouseTrack {
   height: 40%;
   width: 30%;
@@ -268,60 +280,61 @@ textarea {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-  
+
 .boxTablet {
   display: flex;
   align-items: center;
 }
 
-.boxTablet, .boxMobile{
+.boxTablet,
+.boxMobile {
   margin: 30px 0px;
   border-radius: 30px;
 }
-  
+
 .boxMobile {
   display: flex;
   flex-direction: row;
 }
-  
-.screenTablet{
+
+.screenTablet {
   width: 70%;
 }
-  
-.buttonAndCameraTablet{
+
+.buttonAndCameraTablet {
   width: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-  
-.buttonTablet{
+
+.buttonTablet {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-  
+
 .cameraTablet {
   width: 25px;
   height: 25px;
   border-radius: 50%;
 }
-  
+
 .soundTablet {
   width: 25px;
   height: 200px;
   border-radius: 20px;
 }
-  
-.mobileBox{
+
+.mobileBox {
   border-radius: 30px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 60%;
   margin: auto;
 }
-  
+
 .cameraBoxMobile {
   height: 5%;
   display: flex;
@@ -329,30 +342,31 @@ textarea {
   align-items: center;
   margin-bottom: 10px;
 }
-  
-.screenMobile{
+
+.screenMobile {
   height: 95%;
   border-radius: 30px;
 }
 
-.screenImg, .borderedBox {
+.screenImg,
+.borderedBox {
   border-radius: 10px;
 }
-  
+
 .soundMobile {
   height: 10px;
   border-radius: 5px;
   width: 100px;
 }
-  
+
 .cameraMobile {
   width: 10px;
   border-radius: 50%;
   height: 10px;
 }
-  
+
 .colorBox {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 20px;
   height: 150px;
   padding: 10px;
@@ -364,16 +378,16 @@ textarea {
   max-width: 20%;
   flex-basis: 20%;
 }
-  
-.colorBox:hover{
+
+.colorBox:hover {
   transform: scale(1.2) perspective(1px);
 }
-  
+
 .colorContent {
   height: 100%;
   width: 100%;
 }
-  
+
 .colorMain {
   display: flex;
   flex-wrap: wrap;
@@ -381,18 +395,18 @@ textarea {
   justify-content: center;
   box-sizing: border-box;
 }
-  
+
 .featureBox {
-  border-color: #DB2696;
+  border-color: #db2696;
   transition: all 1s ease;
   width: 75%;
 }
-  
-.featureBox:hover{
+
+.featureBox:hover {
   transform: scale(1.05) perspective(0.5px);
 }
-  
-.heart{
+
+.heart {
   margin: 40px auto;
   width: 100px;
   height: 100px;
@@ -401,16 +415,16 @@ textarea {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg) scale(1);
-  background-color: #FF0000;
+  background-color: #ff0000;
   transition: all 1s ease;
 }
-  
-.heart:hover{
+
+.heart:hover {
   transform: scale(1.1) perspective(1px) rotate(45deg);
 }
-  
+
 .heart:before,
-.heart:after{
+.heart:after {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -419,74 +433,74 @@ textarea {
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background-color: #FF0000;
+  background-color: #ff0000;
   transition: all 1s ease;
   transform: scale(1);
 }
-  
-.heart:before{
+
+.heart:before {
   bottom: 0px;
   left: -50px;
 }
-  
-.heart:after{
+
+.heart:after {
   top: -50px;
   right: 0px;
 }
-  
+
 .stick {
   width: 50px;
   margin-right: -15px;
   height: 5px;
   background-color: white;
 }
-  
-.stick-arrow{
+
+.stick-arrow {
   width: 20px;
   height: 4px;
   background: white;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
 }
-  
-.stick-top{
+
+.stick-top {
   margin-bottom: 7px;
   transform: rotate(45deg);
 }
-  
-.stick-bottom{
+
+.stick-bottom {
   margin-top: 7px;
   transform: rotate(-45deg);
 }
-  
-.randomProjectsBoxPair{
+
+.randomProjectsBoxPair {
   margin-left: 10rem;
   margin-right: 2.5rem;
 }
-  
-.randomProjectsBoxOdd{
+
+.randomProjectsBoxOdd {
   margin-left: 2.5rem;
   margin-right: 10rem;
 }
-  
-.slide{
+
+.slide {
   background: linear-gradient(to left, #111 50%, #2e8a7c 50%);
   background-size: 200% 100%;
-  background-position:right bottom;
+  background-position: right bottom;
   transition: 1s;
 }
-  
+
 .slide:hover,
 .slide:focus {
-  background-position:left bottom;
+  background-position: left bottom;
 }
-  
+
 .typographyExample {
   font-size: 1.5rem;
   margin: 0px 5rem;
   text-align: justify;
 }
-  
+
 .dsc {
   font-size: 1.1rem;
 }
@@ -495,21 +509,21 @@ textarea {
   list-style: disc;
   margin: 1em;
 }
-  
+
 .listDetails li {
   margin-bottom: 5px;
   font-size: 18px;
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px #111 inset !important;
 }
-  
+
 input:-webkit-autofill {
-  -webkit-text-fill-color: #FFF !important;
+  -webkit-text-fill-color: #fff !important;
 }
 
 .criptoIcon {
@@ -543,28 +557,28 @@ input:-webkit-autofill {
   height: 50vw;
 }
 
-@media only screen and (max-width : 1224px) {
+@media only screen and (max-width: 1224px) {
   .socialMedia {
     height: 45px;
     width: 45px;
   }
 }
 
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width: 1024px) {
   .socialMedia {
     height: 40px;
     width: 40px;
   }
 }
 
-@media only screen and (max-width : 1085px) {
-  .mainBox{
+@media only screen and (max-width: 1085px) {
+  .mainBox {
     margin: 8rem 5rem;
   }
 }
-  
-@media only screen and (max-width : 1000px) {
-  .mainBox{
+
+@media only screen and (max-width: 1000px) {
+  .mainBox {
     margin: 7rem 4rem;
   }
 
@@ -574,17 +588,17 @@ input:-webkit-autofill {
     max-height: 9999vh;
   }
 }
-  
-@media only screen and (max-width : 950px) {
-  .randomProjectsBoxPair{
+
+@media only screen and (max-width: 950px) {
+  .randomProjectsBoxPair {
     margin-left: 9rem;
   }
-  
-  .randomProjectsBoxOdd{
+
+  .randomProjectsBoxOdd {
     margin-right: 9rem;
   }
-  
-  .colorBox{
+
+  .colorBox {
     margin: 10px 20px;
     flex-grow: 0;
     max-width: 40%;
@@ -596,53 +610,54 @@ input:-webkit-autofill {
     width: 30px;
   }
 }
-  
-@media only screen and (max-width : 850px) {
-  .mobileBox{
+
+@media only screen and (max-width: 850px) {
+  .mobileBox {
     width: 65%;
   }
 
-  .mainBox{
+  .mainBox {
     margin: 6rem 1.5rem;
   }
-  
-  .randomProjectsBoxPair{
+
+  .randomProjectsBoxPair {
     margin-left: 5rem;
   }
-  
-  .randomProjectsBoxOdd{
+
+  .randomProjectsBoxOdd {
     margin-right: 5rem;
   }
-  
+
   .featureBox {
     width: 90%;
   }
-  
-  .dscText, .intro{
+
+  .dscText,
+  .intro {
     font-size: 1rem;
   }
-  
+
   .rolAgencyDate {
     font-size: 1.1rem;
   }
-  
+
   .dsc {
     font-size: 1.2rem;
   }
-  
+
   .typographyExample {
     font-size: 1.4rem;
     margin: 0px 3rem;
   }
 }
-  
-@media only screen and (max-width : 800px) {
-  .randomProjectsBoxPair{
+
+@media only screen and (max-width: 800px) {
+  .randomProjectsBoxPair {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  
-  .randomProjectsBoxOdd{
+
+  .randomProjectsBoxOdd {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
@@ -663,34 +678,34 @@ input:-webkit-autofill {
     width: 50%;
   }
 }
-  
-@media only screen and (max-width : 750px) {
-  .mobileBox{
+
+@media only screen and (max-width: 750px) {
+  .mobileBox {
     width: 40%;
     margin: 20px auto;
   }
-  
+
   .boxMobile {
     height: auto;
     align-items: center;
     flex-direction: column;
     margin: 0px;
   }
-  
+
   .typographyExample {
     font-size: 1.3rem;
     margin: 0px 2rem;
   }
 }
 
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width: 700px) {
   .socialMedia {
     height: 25px;
     width: 25px;
   }
 }
 
-@media only screen and (max-width : 650px) {
+@media only screen and (max-width: 650px) {
   .rolAgencyDate {
     flex-direction: column;
     align-items: center;
@@ -704,7 +719,7 @@ input:-webkit-autofill {
   .imgLeft {
     transform: rotate(-5deg);
   }
-  
+
   .imgRight {
     transform: rotate(5deg);
   }
@@ -714,27 +729,27 @@ input:-webkit-autofill {
     width: 50vw;
   }
 }
-  
-@media only screen and (max-width : 600px) {
-  .mobileBox{
+
+@media only screen and (max-width: 600px) {
+  .mobileBox {
     width: 52%;
   }
 }
-  
-@media only screen and (max-width : 550px) {
-  .mobileBox{
+
+@media only screen and (max-width: 550px) {
+  .mobileBox {
     width: 55%;
   }
-  
+
   .stick {
     width: 30px;
     height: 5px;
   }
-  
+
   .arrow-right {
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px solid #FFF;
+    border-left: 20px solid #fff;
   }
 
   .boxLaptopKeyboard {
@@ -743,18 +758,19 @@ input:-webkit-autofill {
   }
 }
 
-@media only screen and (max-width : 500px) {
-
+@media only screen and (max-width: 500px) {
   .imgScreen {
     height: auto;
     width: 100%;
   }
 
-  .imgScreen, .imgPatients, .imgVisualResult {
+  .imgScreen,
+  .imgPatients,
+  .imgVisualResult {
     max-height: none;
   }
 
-  .buttonTablet{
+  .buttonTablet {
     width: 20px;
     height: 20px;
   }
@@ -769,11 +785,11 @@ input:-webkit-autofill {
     height: 15px;
   }
 
-  .mobileBox{
+  .mobileBox {
     width: 60%;
   }
 
-  .screenTablet{
+  .screenTablet {
     width: 100%;
   }
 
@@ -784,16 +800,16 @@ input:-webkit-autofill {
     flex-basis: 35%;
   }
 
-  .criptoIconBox{
+  .criptoIconBox {
     margin: 10px 10%;
     flex-grow: 0;
     max-width: 30%;
     flex-basis: 30%;
   }
 }
-  
-@media only screen and (max-width : 450px) {
-  .mobileBox{
+
+@media only screen and (max-width: 450px) {
+  .mobileBox {
     width: 70%;
   }
   .listDetails li {
@@ -801,18 +817,18 @@ input:-webkit-autofill {
     font-size: 14px;
   }
 }
-  
-@media only screen and (max-width : 400px) {
-  .mobileBox{
+
+@media only screen and (max-width: 400px) {
+  .mobileBox {
     width: 80%;
   }
 }
-  
-@media only screen and (max-width : 350px) {
-  .mobileBox{
+
+@media only screen and (max-width: 350px) {
+  .mobileBox {
     width: 85%;
   }
-  
+
   .colorBox {
     margin: 10px 10%;
     height: 140px;
@@ -822,4 +838,3 @@ input:-webkit-autofill {
     flex-basis: 60%;
   }
 }
-  
