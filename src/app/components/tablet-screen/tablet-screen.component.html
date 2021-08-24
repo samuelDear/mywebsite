@@ -1,0 +1,22 @@
+<div class="boxTablet my-16 border-2 flex flex-row justify-between p-2">
+  <div class="buttonAndCameraTablet flex-col">
+    <div class="cameraTablet border-2 my-2"></div>
+    <div class="soundTablet border-2 my-2"></div>
+  </div>
+
+  <div class="screenTablet">
+    <app-img-loader
+      [src]="urlimg"
+      [title]="title"
+      [alt]="alt"
+      [id]="alt"
+      [classes]="'w-full'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="buttonAndCameraTablet">
+    <div class="buttonTablet border-2"></div>
+  </div>
+</div>

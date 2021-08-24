@@ -62,28 +62,11 @@
   </div>
 
   <div>
-    <div class="boxTablet my-16 border-2 flex flex-row justify-between p-2">
-      <div class="buttonAndCameraTablet flex-col">
-        <div class="cameraTablet border-2 my-2"></div>
-        <div class="soundTablet border-2 my-2"></div>
-      </div>
-
-      <div class="screenTablet">
-        <app-img-loader
-          [src]="'../../../assets/images/project-images/orm/tabletimg.png'"
-          [title]="'Lista de alumnos'"
-          [alt]="'Lista de alumnos'"
-          [id]="'pupilList'"
-          [classes]="'w-full'"
-          [height]="'300px'"
-          class="w-full"
-        ></app-img-loader>
-      </div>
-
-      <div class="buttonAndCameraTablet">
-        <div class="buttonTablet border-2"></div>
-      </div>
-    </div>
+    <app-tablet-screen
+      urlimg="../../../assets/images/project-images/orm/tabletimg.png"
+      title="Lista de alumnos"
+      alt="Lista de alumnos"
+    ></app-tablet-screen>
   </div>
 
   <div>

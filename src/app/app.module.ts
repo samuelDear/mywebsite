@@ -34,6 +34,7 @@ import { ThanksReadingComponent } from './components/thanks-reading/thanks-readi
 import { ColorPaletteComponent } from './components/color-palette/color-palette.component';
 import { MoreProjectsComponent } from './components/more-projects/more-projects.component';
 import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-landing.component';
+import { TabletScreenComponent } from './components/tablet-screen/tablet-screen.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -61,6 +62,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ColorPaletteComponent,
     MoreProjectsComponent,
     TraumappLandingComponent,
+    TabletScreenComponent,
   ],
   imports: [
     BrowserModule,
