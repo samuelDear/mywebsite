@@ -42,6 +42,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       resume: 'traumapp.resume',
       route: '/traumapp',
     },
+    {
+      name: 'TraumApp Landing',
+      resume: 'traumappLanding.resume',
+      route: '/traumappLanding',
+    },
   ];
 
   contactForm = this.formBuilder.group({

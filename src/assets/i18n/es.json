@@ -168,6 +168,11 @@
     "featureDsc5": "Si llegaste hasta aquí pudiste darte cuenta de que, TraumApp cuenta con diseño claro y un diseño oscuro, el cual puede activarse cuando el usuario quiera. Ambos diseños se encuentran detalladamente creados para mantener una buena armonía de colores.",
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
+  "traumappLanding": {
+    "resume": "",
+    "dsc": "",
+    "role": ""
+  },
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estándar ECMAScript desde la versión 6 hasta la versión 11.",
     "secondDsc":"Ademas, he trabajado en el Front-end con frameworks como Angular y React con sus librería como Material UI y Angular Material. Cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
