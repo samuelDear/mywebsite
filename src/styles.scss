@@ -565,6 +565,11 @@ input:-webkit-autofill {
   height: 50vw;
 }
 
+.loaderImgBox {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1224px) {
   .socialMedia {
     height: 45px;
