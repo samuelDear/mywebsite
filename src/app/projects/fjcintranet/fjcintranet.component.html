@@ -60,22 +60,11 @@
 
   <!-- Vista desde laptop -->
   <div>
-    <div class="my-16 flex flex-col items-center">
-      <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
-        <app-img-loader
-          [src]="'../../../assets/images/project-images/fjcintranet/laptopimg.png'"
-          [title]="'Auditoría de documentos'"
-          [alt]="'Auditoría de documentos'"
-          [id]="'documentAudit'"
-          [classes]="'w-full'"
-          [height]="'250px'"
-          class="w-full"
-        ></app-img-loader>
-      </div>
-      <div class="border-2 boxLaptopKeyboard boxProject">
-        <div class="mouseTrack border-2 border-t-0 m-auto boxProject"></div>
-      </div>
-    </div>
+    <app-laptop-screen
+      urlimg="../../../assets/images/project-images/fjcintranet/laptopimg.png"
+      title="Auditoría de documentos"
+      alt="Auditoría de documentos"
+    ></app-laptop-screen>
   </div>
 
   <!-- CMS VISTAS -->

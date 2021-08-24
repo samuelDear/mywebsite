@@ -42,24 +42,11 @@
     ></app-img-loader>
   </div>
 
-  <div>
-    <div class="my-16 flex flex-col items-center">
-      <div class="border-2 p-2 boxLaptopScreen border-b-0 borderedBox boxProject">
-        <app-img-loader
-          [src]="'../../../assets/images/project-images/orm/laptopimg.png'"
-          [title]="'Login ORMV'"
-          [alt]="'Login ORMV'"
-          [id]="'pupilsRegister'"
-          [classes]="'w-full'"
-          [height]="'300px'"
-          class="w-full"
-        ></app-img-loader>
-      </div>
-      <div class="border-2 boxLaptopKeyboard boxProject">
-        <div class="mouseTrack border-2 border-t-0 m-auto boxProject"></div>
-      </div>
-    </div>
-  </div>
+  <app-laptop-screen
+    urlimg="../../../assets/images/project-images/orm/laptopimg.png"
+    title="Login ORMV"
+    alt="Login ORMV"
+  ></app-laptop-screen>
 
   <div>
     <app-tablet-screen
