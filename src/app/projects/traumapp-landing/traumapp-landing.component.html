@@ -1,1 +1,105 @@
-<p>traumapp-landing works!</p>
+<!-- Ficha resumen -->
+<section class="mainBoxPadding">
+  <div class="text-center">
+    <h1 class="text-4xl font-bold">TraumApp Landing</h1>
+    <p class="text-center my-5 dsc" stranslate="traumappLanding.dsc"></p>
+  </div>
+
+  <!-- Subtitulo del proyecto -->
+  <div class="justify-between rolAgencyDate mt-2">
+    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="traumappLanding.role"></span></p>
+    <p class="my-1"><span stranslate="project.agency"></span> DearSoft Studios</p>
+    <p class="my-1"><span stranslate="project.date"></span> 06-2021</p>
+  </div>
+
+  <!-- Imagen principal del proyecto -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/principalImg.png'"
+      [title]="'Home'"
+      [alt]="'Home TraumApp'"
+      [id]="'homeTraumApp'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+</section>
+
+<!-- Introduccion -->
+<section class="mainBoxPadding backgroundIntro">
+  <h5 class="text-center text-3xl font-bold mb-16" stranslate="project.introTitle"></h5>
+
+  <div class="boxProject border-2 p-4 mb-16">
+    <p class="text-justify intro" stranslate="traumappLanding.intro1"></p>
+    <br />
+    <p class="text-justify intro" stranslate="traumappLanding.intro2"></p>
+    <br />
+    <p class="text-justify intro" stranslate="traumappLanding.intro3"></p>
+  </div>
+
+  <h2 class="text-3xl text-center titleSection font-bold" stranslate="project.visualRes"></h2>
+
+  <!-- Resultado visual -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/secundaryImg.png'"
+      [title]="'Características TraumApp'"
+      [alt]="'Features TraumApp'"
+      [id]="'traumappFeatures'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Resultado visual -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/loginImg.png'"
+      [title]="'Inicio de sesión TraumApp'"
+      [alt]="'Login TraumApp'"
+      [id]="'traumappLogin'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Resultado visual -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/pricesImg.png'"
+      [title]="'Inicio de sesión TraumApp'"
+      [alt]="'Login TraumApp'"
+      [id]="'traumappLogin'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Tablet -->
+  <div class="boxTablet my-16 border-2 flex flex-row justify-between p-2">
+    <div class="buttonAndCameraTablet flex-col">
+      <div class="cameraTablet border-2 my-2"></div>
+      <div class="soundTablet border-2 my-2"></div>
+    </div>
+
+    <div class="screenTablet">
+      <app-img-loader
+        [src]="'../../../assets/images/project-images/traumapp-landing/tabletImg.png'"
+        [title]="'Mini características TraumApp'"
+        [alt]="'Mini características TraumApp'"
+        [id]="'miniFeatures'"
+        [classes]="'w-full'"
+        [height]="'300px'"
+        class="w-full"
+      ></app-img-loader>
+    </div>
+
+    <div class="buttonAndCameraTablet">
+      <div class="buttonTablet border-2"></div>
+    </div>
+  </div>
+</section>

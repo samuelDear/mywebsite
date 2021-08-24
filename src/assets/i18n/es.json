@@ -169,9 +169,12 @@
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
   "traumappLanding": {
-    "resume": "",
-    "dsc": "",
-    "role": ""
+    "resume": "Es una página web desarrollada con React. Con un diseño web responsivo para cualquier dispositivo y animaciones sencillas para una mejor experiencia visual. Creada como página informativa de la aplicación TraumApp con una documentación detallada, compra de membresías y dashboard para el usuario.",
+    "dsc": "Landing page para aplicación TraumApp y adquisición de membresías",
+    "role": "Creador/Fullstack",
+    "intro1": "TraumApp Landing es una página web para la aplicación TraumApp en la cual se encuentra más información acerca de la aplicación móvil como sus características, membresías, limites y una documentación detallada en caso de dudas acerca del uso del sistema. La página fue diseñada de manera responsiva, permitiendo que pueda ser vista desde cualquier dispositivo. Así como también, cuenta con diferentes animaciones durante la navegación, que permite que el usuario tenga una experiencia más agradable en su recorrido por el landing page.",
+    "intro2": "Este landing al igual que el diseño de la aplicación fue hecho por la diseñadora <b><a href='https://www.linkedin.com/in/magreyt/' target='_blank'>Magrey Tousaintte</a></b>.",
+    "intro3": "Dentro de este landing los usuarios de TraumApp pueden ver detalles de su cuenta así como también adquirir una membresía por medio de Paypal o Bitcoin. Además, pueden contactar al equipo de soporte por medio de un formulario en caso de ser requerirlo."
   },
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estándar ECMAScript desde la versión 6 hasta la versión 11.",
