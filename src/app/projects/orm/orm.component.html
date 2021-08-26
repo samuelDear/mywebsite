@@ -42,50 +42,56 @@
     ></app-img-loader>
   </div>
 
-  <app-laptop-screen
+  <app-image-screen
     urlimg="../../../assets/images/project-images/orm/laptopimg.png"
     title="Login ORMV"
     alt="Login ORMV"
-  ></app-laptop-screen>
+    type="laptop"
+    id="loginOrmv"
+  ></app-image-screen>
 
-  <div>
-    <app-tablet-screen
-      urlimg="../../../assets/images/project-images/orm/tabletimg.png"
-      title="Lista de alumnos"
-      alt="Lista de alumnos"
-    ></app-tablet-screen>
+  <app-image-screen
+    urlimg="../../../assets/images/project-images/orm/tabletimg.png"
+    title="Lista de alumnos"
+    alt="Lista de alumnos"
+    type="tablet"
+    id="pupilList"
+  ></app-image-screen>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-image-screen
+      urlimg="../../../assets/images/project-images/orm/fmobileimg.png"
+      title="Login mobile"
+      alt="Login mobile"
+      type="phone"
+      id="loginMobile"
+    ></app-image-screen>
+
+    <app-image-screen
+      urlimg="../../../assets/images/project-images/orm/smobileimg.png"
+      title="Recuperar contraseña mobile"
+      alt="Recuperar contraseña mobile"
+      type="phone"
+      id="recoverPwdMobile"
+    ></app-image-screen>
   </div>
 
-  <div>
-    <div class="boxMobile mt-16 justify-around">
-      <app-phone-screen
-        urlimg="../../../assets/images/project-images/orm/fmobileimg.png"
-        title="Login mobile"
-        alt="Login mobile"
-      ></app-phone-screen>
+  <div class="boxMobile mb-16 justify-around">
+    <app-image-screen
+      urlimg="../../../assets/images/project-images/orm/tmobileimg.png"
+      title="Home mobile"
+      alt="Home mobile"
+      type="phone"
+      id="homeMobile"
+    ></app-image-screen>
 
-      <app-phone-screen
-        urlimg="../../../assets/images/project-images/orm/smobileimg.png"
-        title="Recuperar contraseña mobile"
-        alt="Recuperar contraseña mobile"
-      ></app-phone-screen>
-    </div>
-  </div>
-
-  <div>
-    <div class="boxMobile mb-16 justify-around">
-      <app-phone-screen
-        urlimg="../../../assets/images/project-images/orm/tmobileimg.png"
-        title="Home mobile"
-        alt="Home mobile"
-      ></app-phone-screen>
-
-      <app-phone-screen
-        urlimg="../../../assets/images/project-images/orm/fomobileimg.png"
-        title="Información del colegio"
-        alt="Información del colegio"
-      ></app-phone-screen>
-    </div>
+    <app-image-screen
+      urlimg="../../../assets/images/project-images/orm/fomobileimg.png"
+      title="Información del colegio"
+      alt="Información del colegio"
+      type="phone"
+      id="collegeInfo"
+    ></app-image-screen>
   </div>
 
   <h2 class="text-3xl text-center my-16 font-bold" stranslate="orm.cmstitle"></h2>

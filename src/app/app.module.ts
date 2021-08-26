@@ -25,7 +25,6 @@ import { StudiesComponent } from './studies/studies.component';
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
-import { PhoneScreenComponent } from './components/phone-screen/phone-screen.component';
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 import { TraumappComponent } from './projects/traumapp/traumapp.component';
 import { ImgLoaderComponent } from './components/img-loader/img-loader.component';
@@ -34,8 +33,7 @@ import { ThanksReadingComponent } from './components/thanks-reading/thanks-readi
 import { ColorPaletteComponent } from './components/color-palette/color-palette.component';
 import { MoreProjectsComponent } from './components/more-projects/more-projects.component';
 import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-landing.component';
-import { TabletScreenComponent } from './components/tablet-screen/tablet-screen.component';
-import { LaptopScreenComponent } from './components/laptop-screen/laptop-screen.component';
+import { ImageScreenComponent } from './components/image-screen/image-screen.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -54,7 +52,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     FjcintranetComponent,
     OrmComponent,
     OwnportfolioComponent,
-    PhoneScreenComponent,
     AfxtradeComponent,
     TraumappComponent,
     ImgLoaderComponent,
@@ -63,8 +60,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ColorPaletteComponent,
     MoreProjectsComponent,
     TraumappLandingComponent,
-    TabletScreenComponent,
-    LaptopScreenComponent,
+    ImageScreenComponent,
   ],
   imports: [
     BrowserModule,
