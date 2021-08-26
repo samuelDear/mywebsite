@@ -1,5 +1,5 @@
-<!-- Ficha resumen -->
-<section class="mainBoxPadding">
+<section class="mainBoxPadding backgroundIntro">
+  <!-- Ficha resumen -->
   <div class="text-center">
     <h1 class="text-4xl font-bold">TraumApp Landing</h1>
     <p class="text-center my-5 dsc" stranslate="traumappLanding.dsc"></p>
@@ -24,10 +24,8 @@
       class="w-full"
     ></app-img-loader>
   </div>
-</section>
 
-<!-- Introduccion -->
-<section class="mainBoxPadding backgroundIntro">
+  <!-- Introduccion -->
   <h5 class="text-center text-3xl font-bold mb-16" stranslate="project.introTitle"></h5>
 
   <div class="boxProject border-2 p-4 mb-16">
@@ -85,4 +83,133 @@
     title="Mini características TraumApp"
     alt="miniFeatures"
   ></app-tablet-screen>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/homeMobileImg.png"
+      title="Home TraumApp"
+      alt="Home TraumApp"
+    ></app-phone-screen>
+
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/pricesMobileImg.png"
+      title="Carta de precio"
+      alt="Carta de precio"
+    ></app-phone-screen>
+  </div>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/documentationSectionImg.png"
+      title="Documentación"
+      alt="Documentación"
+    ></app-phone-screen>
+
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/contactFormImg.png"
+      title="Formulario de contacto"
+      alt="Formulario de contacto"
+    ></app-phone-screen>
+  </div>
+</section>
+
+<!-- Documentacion -->
+<section class="mainBoxPadding backgroundDoc">
+  <h5 class="text-center text-3xl font-bold mb-16" stranslate="traumappLanding.titleDoc"></h5>
+
+  <div class="boxProject border-2 p-4 mb-16">
+    <p class="text-justify intro" stranslate="traumappLanding.dscDoc1"></p>
+    <br />
+    <p class="text-justify intro" stranslate="traumappLanding.dscDoc2"></p>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/documentationImg1.png'"
+      [title]="'Introducción de Documentación'"
+      [alt]="'Introducción de Documentación'"
+      [id]="'introDocumentation'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/documentationImg2.png'"
+      [title]="'Crear informes'"
+      [alt]="'Crear informes'"
+      [id]="'createForm'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/documentationMobileHome.png"
+      title="Home Documentación móvil"
+      alt="Home Documentación móvil"
+    ></app-phone-screen>
+
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/documentationMobilePatient.png"
+      title="Crear Paciente"
+      alt="Crear Paciente"
+    ></app-phone-screen>
+  </div>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/documentationMobileForm.png"
+      title="Crear Informe móvil"
+      alt="Crear Informe móvil"
+    ></app-phone-screen>
+
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/documentationMobileCalendar.png"
+      title="Calendario"
+      alt="Calendario"
+    ></app-phone-screen>
+  </div>
+</section>
+
+<section class="mainBoxPadding backgroundMembership">
+  <h5 class="text-center text-3xl font-bold mb-16" stranslate="traumappLanding.titleMembership"></h5>
+
+  <div class="boxProject border-2 p-4 mb-16">
+    <p class="text-justify intro" stranslate="traumappLanding.membershipDsc1"></p>
+    <br />
+    <p class="text-justify intro" stranslate="traumappLanding.membershipDsc2"></p>
+    <br />
+    <p class="text-justify intro" stranslate="traumappLanding.membershipDsc3"></p>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/dashboardImg.png'"
+      [title]="'Dashboard del Usuario'"
+      [alt]="'Dashboard del Usuario'"
+      [id]="'dashboardUser'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/dashboardMobile.png"
+      title="Dasboard del Usuario Móvil"
+      alt="Dasboard del Usuario Móvil"
+    ></app-phone-screen>
+
+    <app-phone-screen
+      urlimg="../../../assets/images/project-images/traumapp-landing/membershipBasic.png"
+      title="Membresía basica"
+      alt="Membresía basica"
+    ></app-phone-screen>
+  </div>
 </section>

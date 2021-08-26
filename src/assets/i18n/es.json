@@ -174,7 +174,14 @@
     "role": "Creador/Fullstack",
     "intro1": "TraumApp Landing es una página web para la aplicación TraumApp en la cual se encuentra más información acerca de la aplicación móvil como sus características, membresías, limites y una documentación detallada en caso de dudas acerca del uso del sistema. La página fue diseñada de manera responsiva, permitiendo que pueda ser vista desde cualquier dispositivo. Así como también, cuenta con diferentes animaciones durante la navegación, que permite que el usuario tenga una experiencia más agradable en su recorrido por el landing page.",
     "intro2": "Este landing al igual que el diseño de la aplicación fue hecho por la diseñadora <b><a href='https://www.linkedin.com/in/magreyt/' target='_blank'>Magrey Tousaintte</a></b>.",
-    "intro3": "Dentro de este landing los usuarios de TraumApp pueden ver detalles de su cuenta así como también adquirir una membresía por medio de Paypal o Bitcoin. Además, pueden contactar al equipo de soporte por medio de un formulario en caso de ser requerirlo."
+    "intro3": "Dentro de este landing los usuarios de TraumApp pueden ver detalles de su cuenta así como también adquirir una membresía por medio de Paypal o Bitcoin. Además, pueden contactar al equipo de soporte por medio de un formulario en caso de ser requerirlo.",
+    "titleDoc": "Documentación",
+    "dscDoc1": "Dentro del sitio web encontraras una documentación completa de como usar la aplicación de TraumApp y cada una de sus funciones detalladamente.",
+    "dscDoc2": "Esta documentación esta diseñada para conocer de manera detallada cada uno de los módulos dentro de TraumApp desde como gestionar los pacientes, agendar citas, crear informes, Modo Registro y muchas más funciones.",
+    "titleMembership": "Membresías",
+    "membershipDsc1": "TraumApp cuenta con diferentes membresías, las cuales el usuario puede adquirir una desde al Landing por medio de Paypal o Bitcoin. Así como también, ver el estado de su membresía actual y descargar la factura de esta membresía o de cualquier otra que haya adquirido anteriormente.",
+    "membershipDsc2": "En el caso de Paypal, TraumApp Landing cuenta con una integración tanto por parte de Frontend como del lado de Backend para mayor seguridad.",
+    "membershipDsc3": "En el caso de Bitcoin, Se debe reportar el pago por medio de correo junto con un capture para activar la membresía."
   },
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estándar ECMAScript desde la versión 6 hasta la versión 11.",

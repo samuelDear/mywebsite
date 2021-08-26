@@ -174,7 +174,14 @@
     "role": "Creator/Fullstack",
     "intro1": "TraumApp Landing is a web page for the TraumApp application in which you can find more information about the mobile application such as its characteristics, memberships, limits and detailed documentation in case of doubts about the use of the system. The page was designed in a responsive way, allowing it to be viewed from any device. As well as, it has different animations during navigation, which allows the user to have a more pleasant experience on their journey through the landing page.",
     "intro2": "This landing as well as the design of the application was made by the designer <b><a href='https://www.linkedin.com/in/magreyt/' target='_blank'> Magrey Tousaintte </a></b>.",
-    "intro3": "Within this landing, TraumApp users can see their account details as well as acquire a membership through Paypal or Bitcoin. In addition, they can contact the support team through a form if required."
+    "intro3": "Within this landing, TraumApp users can see their account details as well as acquire a membership through Paypal or Bitcoin. In addition, they can contact the support team through a form if required.",
+    "titleDoc": "Documentation",
+    "dscDoc1": "In the website you will find complete documentation on how to use the TraumApp application and each of its functions in detail.",
+    "dscDoc2": "This documentation is designed to know in detail each of the modules within TraumApp from how to manage patients, schedule appointments, create reports, Record Mode and many more functions.",
+    "titleMembership": "Memberships",
+    "membershipDsc1": "TraumApp has different memberships, which the user can acquire one from the Landing through Paypal or Bitcoin. As well as, see the status of your current membership and download the invoice for this membership or any other that you have previously acquired.",
+    "membershipDsc2": "In the case of Paypal, TraumApp Landing has an integration by both the Frontend and the Backend side for greater security.",
+    "membershipDsc3": "In the case of Bitcoin, the payment by mail must be reported along with a capture to activate the membership."
   },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
