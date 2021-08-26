@@ -298,15 +298,12 @@ export class StudiesComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     window.scroll(0, 0);
     cleanFonts();
-    window.addEventListener('scroll', () => this.selectDot, true);
-    const dot = document.getElementById('date2021');
-    if (dot !== null) {
-      dot.classList.add('dotActive');
-    }
+    window.addEventListener('scroll', () => this.selectDot(), true);
+    this.activeDot('date2021');
   }
 
   ngOnDestroy(): void {
-    window.removeEventListener('scroll', () => this.selectDot, true);
+    window.removeEventListener('scroll', () => this.selectDot(), true);
   }
 
   selectDot(): void {
@@ -324,34 +321,19 @@ export class StudiesComponent implements OnInit, OnDestroy {
     ) {
       if (div2017.offsetTop > window.scrollY && div2018.offsetTop < window.scrollY) {
         this.resetDots('2017');
-        const dot: HTMLElement = <HTMLElement>document.getElementById('date2017');
-        if (dot != null) {
-          dot.classList.add('dotActive');
-        }
+        this.activeDot('date2017');
       } else if (div2018.offsetTop > window.scrollY && div2019.offsetTop < window.scrollY) {
         this.resetDots('2018');
-        const dot: HTMLElement = <HTMLElement>document.getElementById('date2018');
-        if (dot != null) {
-          dot.classList.add('dotActive');
-        }
+        this.activeDot('date2018');
       } else if (div2019.offsetTop > window.scrollY && div2020.offsetTop < window.scrollY) {
         this.resetDots('2019');
-        const dot: HTMLElement = <HTMLElement>document.getElementById('date2019');
-        if (dot != null) {
-          dot.classList.add('dotActive');
-        }
+        this.activeDot('date2019');
       } else if (div2020.offsetTop > window.scrollY && div2021.offsetTop < window.scrollY) {
         this.resetDots('2020');
-        const dot: HTMLElement = <HTMLElement>document.getElementById('date2020');
-        if (dot != null) {
-          dot.classList.add('dotActive');
-        }
+        this.activeDot('date2020');
       } else if (div2021.offsetTop > window.scrollY) {
         this.resetDots('2021');
-        const dot: HTMLElement = <HTMLElement>document.getElementById('date2021');
-        if (dot != null) {
-          dot.classList.add('dotActive');
-        }
+        this.activeDot('date2021');
       }
     }
   }
@@ -364,35 +346,46 @@ export class StudiesComponent implements OnInit, OnDestroy {
     const div2021: HTMLElement = <HTMLElement>document.getElementById('date2021');
     switch (currentView) {
       case '2021':
-        div2020.classList.remove('dotActive');
-        div2019.classList.remove('dotActive');
-        div2018.classList.remove('dotActive');
-        div2017.classList.remove('dotActive');
+        this.removeDotActive(div2020);
+        this.removeDotActive(div2019);
+        this.removeDotActive(div2018);
+        this.removeDotActive(div2017);
         break;
       case '2020':
-        div2021.classList.remove('dotActive');
-        div2019.classList.remove('dotActive');
-        div2018.classList.remove('dotActive');
-        div2017.classList.remove('dotActive');
+        this.removeDotActive(div2021);
+        this.removeDotActive(div2019);
+        this.removeDotActive(div2018);
+        this.removeDotActive(div2017);
         break;
       case '2019':
-        div2021.classList.remove('dotActive');
-        div2020.classList.remove('dotActive');
-        div2018.classList.remove('dotActive');
-        div2017.classList.remove('dotActive');
+        this.removeDotActive(div2021);
+        this.removeDotActive(div2020);
+        this.removeDotActive(div2018);
+        this.removeDotActive(div2017);
         break;
       case '2018':
-        div2021.classList.remove('dotActive');
-        div2020.classList.remove('dotActive');
-        div2019.classList.remove('dotActive');
-        div2017.classList.remove('dotActive');
+        this.removeDotActive(div2021);
+        this.removeDotActive(div2020);
+        this.removeDotActive(div2019);
+        this.removeDotActive(div2017);
         break;
       case '2017':
-        div2021.classList.remove('dotActive');
-        div2020.classList.remove('dotActive');
-        div2019.classList.remove('dotActive');
-        div2018.classList.remove('dotActive');
+        this.removeDotActive(div2021);
+        this.removeDotActive(div2020);
+        this.removeDotActive(div2019);
+        this.removeDotActive(div2018);
         break;
+    }
+  }
+
+  removeDotActive(div: HTMLElement): void {
+    div.classList.remove('dotActive');
+  }
+
+  activeDot(divId: string): void {
+    const dot: HTMLElement = <HTMLElement>document.getElementById(divId);
+    if (dot != null) {
+      dot.classList.add('dotActive');
     }
   }
 
