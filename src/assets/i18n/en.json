@@ -78,7 +78,7 @@
     "feature2title": "High Performance",
     "feature2": "The system has great performance thanks to the use of Java Spring Boot, which allows managing cached information to improve loads. Also, its great speed is due to the simplicity of the information that is required for each process.",
     "feature3title": "Document Creation",
-    "feature3": "The document management module allows users to create both Word and Excel documents, it also allows to save other types of files that are necessary. Templates can be uploaded from the CMS",
+    "feature3": "The document management module allows users to create both Word and Excel documents, it also allows to save other types of files that are necessary. Templates can be uploaded from the CMS.",
     "feature4title": "Calendar with Alerts",
     "feature4": "The calendar was created to organize activities within the foundation, such as meetings or events, they also allow you to keep track of the tasks that must be done in the findings for their resolution.",
     "feature5title": "Multi-language",
@@ -169,7 +169,7 @@
     "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
   },
   "traumappLanding": {
-    "resume": "It is a web page developed with React. With a responsive web design for any device and simple animations for a better visual experience. Created as an information page for the TraumApp application with detailed documentation, membership purchase and user dashboard",
+    "resume": "It is a web page developed with React. With a responsive web design for any device and simple animations for a better visual experience. Created as an information page for the TraumApp application with detailed documentation, membership purchase and user dashboard.",
     "dsc": "Landing page for TraumApp application and membership acquisition",
     "role": "Creator/Fullstack",
     "intro1": "TraumApp Landing is a web page for the TraumApp application in which you can find more information about the mobile application such as its characteristics, memberships, limits and detailed documentation in case of doubts about the use of the system. The page was designed in a responsive way, allowing it to be viewed from any device. As well as, it has different animations during navigation, which allows the user to have a more pleasant experience on their journey through the landing page.",
@@ -186,12 +186,12 @@
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
     "secondDsc":"I have worked on the Front-end with frameworks like Angular and React with their libraries like Material UI and Angular Material, also I have experience building responsive websites with a high-performance.",
-    "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps. and Also, Electron in the case of cross-platform desktop applications",
+    "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps. and Also, Electron in the case of cross-platform desktop applications.",
     "quarterDsc":"However, In the back-end I have used PHP and Java for the creation of REST API, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase.",
     "fiftDsc":"Additionally, I have worked under SCRUM and Kanban methodologies with tools such as Trello, Jira, Slack and Confluence. Also, I have knowledge of visual tools like Figma, Zeplin, MarvelApp and Mockflow."
   },
   "about":{
-    "resume":"I'm a Venezuelan web designer and a mobile developer<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",
+    "resume":"I'm a Venezuelan web designer and a mobile developer.<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",
     "aboutLink":"Read more about me",
     "welcome": "Hello!",
     "intro":"My name is Samuel<br>I am a web designer and mobile developer currently working as freelance programmer, I am in Caracas, Venezuela.",
