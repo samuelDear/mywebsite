@@ -181,7 +181,19 @@
     "titleMembership": "Memberships",
     "membershipDsc1": "TraumApp has different memberships, which the user can acquire one from the Landing through Paypal or Bitcoin. As well as, see the status of your current membership and download the invoice for this membership or any other that you have previously acquired.",
     "membershipDsc2": "In the case of Paypal, TraumApp Landing has an integration by both the Frontend and the Backend side for greater security.",
-    "membershipDsc3": "In the case of Bitcoin, the payment by mail must be reported along with a capture to activate the membership."
+    "membershipDsc3": "In the case of Bitcoin, the payment by mail must be reported along with a capture to activate the membership.",
+    "featureTitle1": "Responsive Design",
+    "featureDsc1": "The design of TraumApp was made in detail for use on various devices but especially in the mobile environment, due to the nature of the application. That is why for its development a complete design of both versions of the page was made so that it was responsive on any screen",
+    "featureTitle2": "High Performance",
+    "featureDsc2": "In order for the page to perform well under any situation, various standards were used in development to keep the code clean and readable. In addition, different compression methods both at the time of compiling the project, as well as on the server side",
+    "featureTitle3": "Material UI",
+    "featureDsc3": "For the development of some sections, the Material UI library was used to improve the visual experience and development, used more than anything else for the forms within the landing. As well as the sidebar that the documentation has.",
+    "featureTitle4": "Membership payment",
+    "featureDsc4": "TraumApp Landing is where users can purchase their memberships through Paypal or Bitcoin. Where the integration through Paypal has server-side validation. Whereas, with Bitcoin, a manual process must be carried out for the payment notification.",
+    "featureTitle5": "SVG",
+    "featureDsc5": "There are different illustrations throughout the page that help make the experience pleasant, so that these illustrations were not too heavy and would retain their quality at any size, they were defined in SVG for better performance.",
+    "featureTitle6": "CI/CD",
+    "featureDsc6": "To improve development, CI / CD was implemented through Github Actions so as not to spend time deploying the changes on the server and automating this task."
   },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",

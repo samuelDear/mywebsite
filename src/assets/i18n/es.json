@@ -181,7 +181,19 @@
     "titleMembership": "Membresías",
     "membershipDsc1": "TraumApp cuenta con diferentes membresías, las cuales el usuario puede adquirir una desde al Landing por medio de Paypal o Bitcoin. Así como también, ver el estado de su membresía actual y descargar la factura de esta membresía o de cualquier otra que haya adquirido anteriormente.",
     "membershipDsc2": "En el caso de Paypal, TraumApp Landing cuenta con una integración tanto por parte de Frontend como del lado de Backend para mayor seguridad.",
-    "membershipDsc3": "En el caso de Bitcoin, Se debe reportar el pago por medio de correo junto con un capture para activar la membresía."
+    "membershipDsc3": "En el caso de Bitcoin, Se debe reportar el pago por medio de correo junto con un capture para activar la membresía.",
+    "featureTitle1": "Responsive Design",
+    "featureDsc1": "El diseño de TraumApp fue hecho detalladamente para su uso en varios dispositivos pero sobre todo en el ambiente móvil, debido a la naturaleza de la aplicación. Es por ello que para su desarrollo se hizo un diseñado completo de ambas versiones de la página para que este fuera responsivo en cualquier pantalla.",
+    "featureTitle2": "Alto Rendimiento",
+    "featureDsc2": "Para que la página contara con un buen rendimiento bajo cualquier situación, se usaron varios estándares en el desarrollo para mantener un código limpio y legible. Ademas, de diferentes métodos de compresión tanto al momento de compilar el proyecto, así como también del lado del servidor.",
+    "featureTitle3": "Material UI",
+    "featureDsc3": "Para el desarrollo de algunas secciones se utilizo la librería Material UI para mejorar la experiencia visual y el desarrollo, Utilizado más que nada para los formularios dentro del landing. Así como también el sidebar con el que cuenta la documentación.",
+    "featureTitle4": "Pago de Membresías",
+    "featureDsc4": "TraumApp Landing es donde los usuarios pueden adquirir sus membresías por medio de Paypal o Bitcoin. En donde la integración por medio de Paypal cuenta con validación del lado del servidor. Mientras que, con Bitcoin se debe realizar un proceso manual para la notificación de pago.",
+    "featureTitle5": "SVG",
+    "featureDsc5": "Se cuentan con diferentes ilustraciones en toda la página que ayudan a que la experiencia sea agradable, para que estas ilustraciones no fueran muy pesadas y conservaran su calidad en cualquier tamaño, se definieron en SVG para un mejor rendimiento.",
+    "featureTitle6": "CI/CD",
+    "featureDsc6": "Para mejorar el desarrollo se implemento CI/CD por medio de Github Actions para no pasar tiempo haciendo deployment de los cambios en el servidor y automatizar esta tarea."
   },
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estándar ECMAScript desde la versión 6 hasta la versión 11.",

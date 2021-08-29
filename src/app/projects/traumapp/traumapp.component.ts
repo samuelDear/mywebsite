@@ -50,9 +50,9 @@ export class TraumappComponent implements OnInit {
       resume: 'myWeb.resume',
     },
     {
-      code: '/afxtrade',
-      name: 'AFX Trade',
-      resume: 'afxtrade.resume',
+      code: '/traumappLanding',
+      name: 'TraymApp Landing',
+      resume: 'traumappLanding.resume',
     },
   ];
 

@@ -49,8 +49,28 @@ export class TraumappLandingComponent implements OnInit {
 
   features: FeatureType[] = [
     {
-      title: 'afxtrade.featuretitle1',
-      dsc: 'afxtrade.feature1',
+      title: 'traumappLanding.featureTitle1',
+      dsc: 'traumappLanding.featureDsc1',
+    },
+    {
+      title: 'traumappLanding.featureTitle2',
+      dsc: 'traumappLanding.featureDsc2',
+    },
+    {
+      title: 'traumappLanding.featureTitle3',
+      dsc: 'traumappLanding.featureDsc3',
+    },
+    {
+      title: 'traumappLanding.featureTitle4',
+      dsc: 'traumappLanding.featureDsc4',
+    },
+    {
+      title: 'traumappLanding.featureTitle5',
+      dsc: 'traumappLanding.featureDsc5',
+    },
+    {
+      title: 'traumappLanding.featureTitle6',
+      dsc: 'traumappLanding.featureDsc6',
     },
   ];
 
