@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { fontLoader } from '../../../main';
+import { setProjectFont } from '../../../main';
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
 
 const threshold = 0.1;
@@ -78,18 +78,7 @@ export class FjcintranetComponent implements OnInit {
     window.scroll(0, 0);
     const logoJacintoConvit = document.getElementById('logoJacintoConvit');
     logoJacintoConvit !== null && this.createObserver(logoJacintoConvit);
-
-    setTimeout(() => {
-      this.families.forEach((element, index) => {
-        //console.log(element, index);
-        fontLoader(element);
-        const div = document.getElementById(`typographyName${index + 1}`);
-        if (div !== null) {
-          div.innerHTML = element.name;
-          div.style.fontFamily = element.name;
-        }
-      });
-    }, 100);
+    setProjectFont(this.families);
   }
 
   createObserver(element: HTMLElement): void {

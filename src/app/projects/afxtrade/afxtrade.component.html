@@ -1,415 +1,418 @@
 <div class="mainBox">
-    <!-- Titulo de AFX trade y mini descripcion-->
-    <div class="text-center">
-      <h1 class="text-4xl font-bold"> AFX TRADE </h1>
-      <p class="text-center my-5 dsc" stranslate="afxtrade.dsc"></p>
+  <!-- Titulo de AFX trade y mini descripcion-->
+  <div class="text-center">
+    <h1 class="text-4xl font-bold">AFX TRADE</h1>
+    <p class="text-center my-5 dsc" stranslate="afxtrade.dsc"></p>
+  </div>
+
+  <!-- Detalles del proyecto -->
+  <div class="justify-between rolAgencyDate mt-2">
+    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="afxtrade.role"></span></p>
+    <p class="my-1"><span stranslate="project.agency"></span><span> Totalsoftware </span></p>
+    <p class="my-1"><span stranslate="project.date"></span> 12/2020</p>
+  </div>
+
+  <!-- Imagen principal -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/principalimg.png'"
+      [title]="'Home AFX TRADE'"
+      [alt]="'Home AFX TRADE'"
+      [id]="'homeAfxTrade'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Introduccion al proyecto -->
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold mb-2" stranslate="project.introTitle"></h5>
+    <p class="text-justify intro" stranslate="afxtrade.intro1"></p>
+    <p class="text-justify intro" stranslate="afxtrade.intro2"></p>
+  </div>
+
+  <!-- Titulo resultado visual -->
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
+
+  <!-- Login del sistema -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'./../../assets/images/project-images/afxtrade/loginimg.png'"
+      [title]="'Login AFX'"
+      [alt]="'Login AFX'"
+      [id]="'loginAfxTrade'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Balances -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/secundaryimg.png'"
+      [title]="'Balance del usuario'"
+      [alt]="'Balance del usuario'"
+      [id]="'userBalance'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Deposito fiat -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/depositfiat.png'"
+      [title]="'Deposito FIAT'"
+      [alt]="'Deposito FIAT'"
+      [id]="'depositFiat'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Deposito crypto -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/depositcrypto.png'"
+      [title]="'Deposito de criptomoneda'"
+      [alt]="'Deposito de criptomoneda'"
+      [id]="'depositCripto'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Movimientos -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/transactionsimg.png'"
+      [title]="'Movimientos de cuenta interna'"
+      [alt]="'Movimientos de cuenta interna'"
+      [id]="'accountsMovements'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Mensajeria -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/comunicationsimg.png'"
+      [title]="'Mensajes internos'"
+      [alt]="'Mensajes internos'"
+      [id]="'communicationId'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Enviar mensaje -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/sendmsgimg.png'"
+      [title]="'Enviar mensaje a AFX'"
+      [alt]="'Enviar mensaje a AFX'"
+      [id]="'SendMessage'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Imagen del perfil -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/profileimg.png'"
+      [title]="'Perfil de usuario de AFX'"
+      [alt]="'Perfil de usuario de AFX'"
+      [id]="'userProfile'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Integraciones -->
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold mb-2" stranslate="afxtrade.integrationsTitle"></h5>
+    <p class="text-justify intro" stranslate="afxtrade.integrationsDsc"></p>
+  </div>
+
+  <!-- Icono de monedas -->
+  <div class="criptoMain mt-16">
+    <!-- Bs -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.bsIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/Bolivares.svg'"
+          [title]="'Bolivares'"
+          [alt]="'Bolivares'"
+          [id]="'Bolivares'"
+          [classes]="'criptoIcon'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName">Bolívares</h1>
     </div>
 
-    <!-- Detalles del proyecto -->
-    <div class="justify-between rolAgencyDate mt-2">
-      <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="afxtrade.role"></span></p>
-      <p class="my-1"><span stranslate="project.agency"></span><span> Totalsoftware </span></p>
-      <p class="my-1"><span stranslate="project.date"></span> 12/2020 </p>
+    <!-- BTC -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.bitcoinIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/Bitcoin.svg'"
+          [title]="'Bitcoin'"
+          [alt]="'Bitcoin'"
+          [id]="'Bitcoin'"
+          [classes]="'criptoIcon'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName">Bitcoin</h1>
     </div>
 
-    <!-- Imagen principal -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/principalimg.png'"
-        [title]="'Home AFX TRADE'"
-        [alt]="'Home AFX TRADE'"
-        [id]="'homeAfxTrade'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- PTR -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.petroIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/Petro.svg'"
+          [title]="'Petro'"
+          [alt]="'Petro'"
+          [id]="'Petro'"
+          [classes]="'criptoIcon'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName">Petro</h1>
     </div>
 
-    <!-- Introduccion al proyecto -->
-    <div class="boxProject border-2 p-4">
-        <h5 class="text-center text-3xl font-bold mb-2" stranslate="project.introTitle"></h5>
-        <p class="text-justify intro" stranslate="afxtrade.intro1"></p>
-        <p class="text-justify intro" stranslate="afxtrade.intro2"></p>
+    <!-- USD -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.dolarIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/Dolar.svg'"
+          [title]="'Dolares'"
+          [alt]="'Dolares'"
+          [id]="'Dolares'"
+          [classes]="'criptoIcon'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName">Dolar</h1>
     </div>
 
-    <!-- Titulo resultado visual -->
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
-
-    <!-- Login del sistema -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'./../../assets/images/project-images/afxtrade/loginimg.png'"
-        [title]="'Login AFX'"
-        [alt]="'Login AFX'"
-        [id]="'loginAfxTrade'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- PM BP -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.pagoMovilIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/pago-movil.svg'"
+          [title]="'Pago móvil'"
+          [alt]="'Pago móvil'"
+          [id]="'PagoMóvil'"
+          [classes]="'criptoIcon'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName">Pago móvil</h1>
     </div>
 
-    <!-- Balances -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/secundaryimg.png'"
-        [title]="'Balance del usuario'"
-        [alt]="'Balance del usuario'"
-        [id]="'userBalance'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- USDT -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.usdtIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/USDT.svg'"
+          [title]="'USDT'"
+          [alt]="'USDT'"
+          [id]="'USDT'"
+          [classes]="'criptoIcon'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName">Tether</h1>
     </div>
 
-    <!-- Deposito fiat -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/depositfiat.png'"
-        [title]="'Deposito FIAT'"
-        [alt]="'Deposito FIAT'"
-        [id]="'depositFiat'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- DASH -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.dashIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/Dash.svg'"
+          [title]="'Dash'"
+          [alt]="'Dash'"
+          [id]="'Dash'"
+          [classes]="'criptoIcon criptoIconDisabled'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName criptoIconDisabled">Dash</h1>
     </div>
 
-    <!-- Deposito crypto -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/depositcrypto.png'"
-        [title]="'Deposito de criptomoneda'"
-        [alt]="'Deposito de criptomoneda'"
-        [id]="'depositCripto'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- ETH -->
+    <div class="criptoIconBox">
+      <div class="tooltipBox">
+        <span class="tooltiptx" stranslate="afxtrade.etherumIntegration"></span>
+        <app-img-loader
+          [src]="'../../../assets/images//project-images/afxtrade/Ethereum.svg'"
+          [title]="'Ethereum'"
+          [alt]="'Ethereum'"
+          [id]="'Ethereum'"
+          [classes]="'criptoIcon criptoIconDisabled'"
+          [height]="'100px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+      <h1 class="criptoName criptoIconDisabled">Ethereum</h1>
+    </div>
+  </div>
+
+  <!-- Caracteristicas principales -->
+  <div class="flex flex-col my-16 featureMainBox">
+    <!-- SEGURIDAD -->
+    <div id="segurityBox" class="featureMainBoxRight my-16">
+      <div class="featureItem flex justify-center">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/afxtrade/segurityIc.svg'"
+          [title]="'Segurity icon'"
+          [alt]="'Segurity icon'"
+          [id]="'segurityIcon'"
+          [classes]="'segurityIc'"
+          [height]="'300px'"
+          class="w-full flex justify-center"
+        ></app-img-loader>
+      </div>
+      <div class="featureItem mainFeatureRight">
+        <h1 class="mainFeatureTitle" stranslate="afxtrade.segurityTitle"></h1>
+        <p class="mainFeatureDsc" stranslate="afxtrade.segurityDsc"></p>
+      </div>
     </div>
 
-    <!-- Movimientos -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/transactionsimg.png'"
-        [title]="'Movimientos de cuenta interna'"
-        [alt]="'Movimientos de cuenta interna'"
-        [id]="'accountsMovements'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- COMUNICACION -->
+    <div id="comBox" class="featureMainBoxLeft my-16">
+      <div class="featureItem mainFeatureLeft">
+        <h1 class="mainFeatureTitle" stranslate="afxtrade.comTitle"></h1>
+        <p class="mainFeatureDsc" stranslate="afxtrade.comDsc"></p>
+      </div>
+      <div class="featureItem flex justify-center">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/afxtrade/comunicationsIc.svg'"
+          [title]="'Communications icon'"
+          [alt]="'Communications icon'"
+          [id]="'commIcon'"
+          [classes]="'comunicationsIc'"
+          [height]="'300px'"
+          class="w-full flex justify-center"
+        ></app-img-loader>
+      </div>
     </div>
 
-    <!-- Mensajeria -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/comunicationsimg.png'"
-        [title]="'Mensajes internos'"
-        [alt]="'Mensajes internos'"
-        [id]="'communicationId'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- MOVIMIENTOS -->
+    <div id="movementsBox" class="featureMainBoxRight my-16">
+      <div class="featureItem flex justify-center">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/afxtrade/transactionsIc.svg'"
+          [title]="'Movements icon'"
+          [alt]="'Movements icon'"
+          [id]="'movemIcon'"
+          [classes]="'movementsIc'"
+          [height]="'300px'"
+          class="w-full flex justify-center"
+        ></app-img-loader>
+      </div>
+      <div class="featureItem mainFeatureRight">
+        <h1 class="mainFeatureTitle" stranslate="afxtrade.movementTitle"></h1>
+        <p class="mainFeatureDsc" stranslate="afxtrade.movementDsc"></p>
+      </div>
     </div>
 
-    <!-- Enviar mensaje -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/sendmsgimg.png'"
-        [title]="'Enviar mensaje a AFX'"
-        [alt]="'Enviar mensaje a AFX'"
-        [id]="'SendMessage'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <!-- INTERCAMBIOS -->
+    <div id="exchangeBox" class="featureMainBoxLeft my-16">
+      <div class="featureItem mainFeatureLeft">
+        <h1 class="mainFeatureTitle" stranslate="afxtrade.exchangeTitle"></h1>
+        <p class="mainFeatureDsc" stranslate="afxtrade.exchangeDsc"></p>
+      </div>
+      <div class="featureItem flex justify-center">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/afxtrade/exchangeIc.svg'"
+          [title]="'Exchange icon'"
+          [alt]="'Exchange icon'"
+          [id]="'exchangeIcon'"
+          [classes]="'exchangesIc'"
+          [height]="'300px'"
+          class="w-full flex justify-center"
+        ></app-img-loader>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMIENZO CMS -->
+  <h5 class="text-center text-3xl font-bold my-16" stranslate="afxtrade.cmstitle"></h5>
+
+  <div class="boxProject border-2 p-4 my-16">
+    <p class="text-justify intro" stranslate="afxtrade.cmsintro1"></p>
+    <br />
+    <p class="text-justify intro" stranslate="afxtrade.cmsintro2"></p>
+  </div>
+  <!-- FIN CMS-->
+
+  <!-- Correo recuperar password -->
+  <div class="my-16 flex justify-center borderedBox borderImages">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/afxtrade/emailimg.png'"
+      [title]="'Correo de recuperar contraseña'"
+      [alt]="'Correo de recuperar contraseña'"
+      [id]="'recoverPwd'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+  <!-- TIPOGRAFIAS -->
+  <div>
+    <div class="my-6">
+      <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
+      <p class="typographyExample" id="typographyExample1">
+        A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+      </p>
     </div>
 
-    <!-- Imagen del perfil -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/profileimg.png'"
-        [title]="'Perfil de usuario de AFX'"
-        [alt]="'Perfil de usuario de AFX'"
-        [id]="'userProfile'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
+    <div class="my-6">
+      <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
+      <p class="typographyExample" id="typographyExample2">
+        A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+      </p>
     </div>
+  </div>
 
-    <!-- Integraciones -->
-    <div class="boxProject border-2 p-4">
-        <h5 class="text-center text-3xl font-bold mb-2" stranslate="afxtrade.integrationsTitle"></h5>
-        <p class="text-justify intro" stranslate="afxtrade.integrationsDsc"></p>
-    </div>
+  <!-- PALETA DE COLORES -->
+  <app-color-palette [colors]="colors"></app-color-palette>
 
-    <!-- Icono de monedas -->
-    <div class="criptoMain mt-16">
-        <!-- Bs -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.bsIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/Bolivares.svg'"
-                  [title]="'Bolivares'"
-                  [alt]="'Bolivares'"
-                  [id]="'Bolivares'"
-                  [classes]="'criptoIcon'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName">Bolívares</h1>
-        </div>
+  <!-- CARACTERISTICAS -->
+  <app-features-box [features]="features"></app-features-box>
 
-        <!-- BTC -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.bitcoinIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/Bitcoin.svg'"
-                  [title]="'Bitcoin'"
-                  [alt]="'Bitcoin'"
-                  [id]="'Bitcoin'"
-                  [classes]="'criptoIcon'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName">Bitcoin</h1>
-        </div>
+  <app-thanks-reading></app-thanks-reading>
 
-        <!-- PTR -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.petroIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/Petro.svg'"
-                  [title]="'Petro'"
-                  [alt]="'Petro'"
-                  [id]="'Petro'"
-                  [classes]="'criptoIcon'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName">Petro</h1>
-        </div>
-
-        <!-- USD -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.dolarIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/Dolar.svg'"
-                  [title]="'Dolares'"
-                  [alt]="'Dolares'"
-                  [id]="'Dolares'"
-                  [classes]="'criptoIcon'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName">Dolar</h1>
-        </div>
-
-        <!-- PM BP -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.pagoMovilIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/pago-movil.svg'"
-                  [title]="'Pago móvil'"
-                  [alt]="'Pago móvil'"
-                  [id]="'PagoMóvil'"
-                  [classes]="'criptoIcon'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName">Pago móvil</h1>
-        </div>
-
-        <!-- USDT -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.usdtIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/USDT.svg'"
-                  [title]="'USDT'"
-                  [alt]="'USDT'"
-                  [id]="'USDT'"
-                  [classes]="'criptoIcon'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName">Tether</h1>
-        </div>
-
-        <!-- DASH -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.dashIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/Dash.svg'"
-                  [title]="'Dash'"
-                  [alt]="'Dash'"
-                  [id]="'Dash'"
-                  [classes]="'criptoIcon criptoIconDisabled'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName criptoIconDisabled">Dash</h1>
-        </div>
-        
-        <!-- ETH -->
-        <div class="criptoIconBox">
-            <div class="tooltipBox">
-                <span class="tooltiptx" stranslate="afxtrade.etherumIntegration"></span>
-                <app-img-loader
-                  [src]="'../../../assets/images//project-images/afxtrade/Ethereum.svg'"
-                  [title]="'Ethereum'"
-                  [alt]="'Ethereum'"
-                  [id]="'Ethereum'"
-                  [classes]="'criptoIcon criptoIconDisabled'"
-                  [height]="'100px'"
-                  class="w-full"
-                ></app-img-loader>
-            </div>
-            <h1 class="criptoName criptoIconDisabled">Ethereum</h1>
-        </div>
-    </div>
-
-    <!-- Caracteristicas principales -->
-    <div class="flex flex-col my-16 featureMainBox">
-        <!-- SEGURIDAD -->
-        <div id="segurityBox" class="featureMainBoxRight my-16">
-            <div class="featureItem flex justify-center">
-              <app-img-loader
-                  [src]="'../../../assets/images/project-images/afxtrade/segurityIc.svg'"
-                  [title]="'Segurity icon'"
-                  [alt]="'Segurity icon'"
-                  [id]="'segurityIcon'"
-                  [classes]="'segurityIc'"
-                  [height]="'300px'"
-                  class="w-full flex justify-center"
-                ></app-img-loader>
-            </div>
-            <div class="featureItem mainFeatureRight">
-                <h1 class="mainFeatureTitle" stranslate="afxtrade.segurityTitle"></h1>
-                <p class="mainFeatureDsc" stranslate="afxtrade.segurityDsc"></p>
-            </div>
-        </div>
-
-        <!-- COMUNICACION -->
-        <div id="comBox" class="featureMainBoxLeft my-16">
-            <div class="featureItem mainFeatureLeft">
-                <h1 class="mainFeatureTitle" stranslate="afxtrade.comTitle"></h1>
-                <p class="mainFeatureDsc" stranslate="afxtrade.comDsc"></p>
-            </div>
-            <div class="featureItem flex justify-center">
-              <app-img-loader
-                  [src]="'../../../assets/images/project-images/afxtrade/comunicationsIc.svg'"
-                  [title]="'Communications icon'"
-                  [alt]="'Communications icon'"
-                  [id]="'commIcon'"
-                  [classes]="'comunicationsIc'"
-                  [height]="'300px'"
-                  class="w-full flex justify-center"
-                ></app-img-loader>
-            </div>
-        </div>
-
-        <!-- MOVIMIENTOS -->
-        <div id="movementsBox" class="featureMainBoxRight my-16">
-            <div class="featureItem flex justify-center">
-              <app-img-loader
-                  [src]="'../../../assets/images/project-images/afxtrade/transactionsIc.svg'"
-                  [title]="'Movements icon'"
-                  [alt]="'Movements icon'"
-                  [id]="'movemIcon'"
-                  [classes]="'movementsIc'"
-                  [height]="'300px'"
-                  class="w-full flex justify-center"
-                ></app-img-loader>
-            </div>
-            <div class="featureItem mainFeatureRight">
-                <h1 class="mainFeatureTitle" stranslate="afxtrade.movementTitle"></h1>
-                <p class="mainFeatureDsc" stranslate="afxtrade.movementDsc"></p>
-            </div>
-        </div>
-
-        <!-- INTERCAMBIOS -->
-        <div id="exchangeBox" class="featureMainBoxLeft my-16">
-            <div class="featureItem mainFeatureLeft">
-                <h1 class="mainFeatureTitle" stranslate="afxtrade.exchangeTitle"></h1>
-                <p class="mainFeatureDsc" stranslate="afxtrade.exchangeDsc"></p>
-            </div>
-            <div class="featureItem flex justify-center">
-              <app-img-loader
-                  [src]="'../../../assets/images/project-images/afxtrade/exchangeIc.svg'"
-                  [title]="'Exchange icon'"
-                  [alt]="'Exchange icon'"
-                  [id]="'exchangeIcon'"
-                  [classes]="'exchangesIc'"
-                  [height]="'300px'"
-                  class="w-full flex justify-center"
-                ></app-img-loader>
-            </div>
-        </div>
-    </div>
-
-    <!-- COMIENZO CMS -->
-    <h5 class="text-center text-3xl font-bold my-16" stranslate="afxtrade.cmstitle"></h5>
-
-    <div class="boxProject border-2 p-4 my-16">
-        <p class="text-justify intro" stranslate="afxtrade.cmsintro1"></p>
-        <br />
-        <p class="text-justify intro" stranslate="afxtrade.cmsintro2"></p>
-    </div>
-    <!-- FIN CMS-->
-
-    <!-- Correo recuperar password -->
-    <div class="my-16 flex justify-center borderedBox borderImages">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/afxtrade/emailimg.png'"
-        [title]="'Correo de recuperar contraseña'"
-        [alt]="'Correo de recuperar contraseña'"
-        [id]="'recoverPwd'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
-    
-    <!-- TIPOGRAFIAS -->
-    <div>
-        <div class="my-6">
-            <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
-            <p class="typographyExample" id="typographyExample1">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
-        </div>
-
-        <div class="my-6">
-            <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
-            <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
-        </div>
-    </div>
-
-    <!-- PALETA DE COLORES -->
-    <app-color-palette [colors]="colors"></app-color-palette>
-
-    <!-- CARACTERISTICAS -->
-    <app-features-box [features]="features"></app-features-box>
-
-    <app-thanks-reading></app-thanks-reading>
-  
-    <!-- Proyectos randoms -->
-    <app-more-projects [projects]="ramdons"></app-more-projects>
+  <!-- Proyectos randoms -->
+  <app-more-projects [projects]="ramdons"></app-more-projects>
 </div>
-  

@@ -1,53 +1,56 @@
 <div class="mainBox">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold"> My Portfolio </h1>
-      <p class="text-center my-5 dsc" stranslate="myWeb.dsc"></p>
-    </div>
-    <div class="justify-between rolAgencyDate mt-2">
-      <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="myWeb.role"></span></p>
-      <p class="my-1"><span stranslate="project.agency"></span>&nbsp;<span stranslate="myWeb.agency"></span></p>
-      <p class="my-1"><span stranslate="project.date"></span> 11/2020 </p>
-    </div>
-
-    <!-- Imagen principal del proyecto -->
-    <div class="my-16 flex justify-center borderedBox boxUnique">
-      <app-img-loader
-        [src]="'../../../assets/images/project-images/portfolio/principalimg.png'"
-        [title]="'Imagen de mi portafolio!'"
-        [alt]="'Portafolio Web'"
-        [id]="'documentList'"
-        [classes]="'borderedBox'"
-        [height]="'400px'"
-        class="w-full"
-      ></app-img-loader>
-    </div>
-
-    <div class="boxProject border-2 p-4">
-      <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
-      <p class="text-justify intro" stranslate="myWeb.intro"></p>
-      <p class="text-justify intro" stranslate="myWeb.intro2"></p>
-    </div>
-  
-    <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
-  
-    <div>
-        <div class="my-6">
-            <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
-            <p class="typographyExample" id="typographyExample1">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
-        </div>
-
-        <div class="my-6">
-            <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
-            <p class="typographyExample" id="typographyExample2">A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9</p>
-        </div>
-    </div>
-
-    <app-color-palette [colors]="colors"></app-color-palette>
-
-    <app-features-box [features]="features"></app-features-box>
-  
-    <app-thanks-reading></app-thanks-reading>
-
-    <app-more-projects [projects]="ramdons"></app-more-projects>
-  
+  <div class="text-center">
+    <h1 class="text-4xl font-bold">My Portfolio</h1>
+    <p class="text-center my-5 dsc" stranslate="myWeb.dsc"></p>
   </div>
+  <div class="justify-between rolAgencyDate mt-2">
+    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="myWeb.role"></span></p>
+    <p class="my-1"><span stranslate="project.agency"></span>&nbsp;<span stranslate="myWeb.agency"></span></p>
+    <p class="my-1"><span stranslate="project.date"></span> 11/2020</p>
+  </div>
+
+  <!-- Imagen principal del proyecto -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/portfolio/principalimg.png'"
+      [title]="'Imagen de mi portafolio!'"
+      [alt]="'Portafolio Web'"
+      [id]="'documentList'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold" stranslate="project.introTitle"></h5>
+    <p class="text-justify intro" stranslate="myWeb.intro"></p>
+    <p class="text-justify intro" stranslate="myWeb.intro2"></p>
+  </div>
+
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+  <div>
+    <div class="my-6">
+      <h3 class="text-3xl mb-2" id="typographyName1">NOMBRE DE LA TIPOGRAFIA</h3>
+      <p class="typographyExample" id="typographyExample1">
+        A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+      </p>
+    </div>
+
+    <div class="my-6">
+      <h3 class="text-3xl mb-2" id="typographyName2">NOMBRE DE LA TIPOGRAFIA</h3>
+      <p class="typographyExample" id="typographyExample2">
+        A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+      </p>
+    </div>
+  </div>
+
+  <app-color-palette [colors]="colors"></app-color-palette>
+
+  <app-features-box [features]="features"></app-features-box>
+
+  <app-thanks-reading></app-thanks-reading>
+
+  <app-more-projects [projects]="ramdons"></app-more-projects>
+</div>

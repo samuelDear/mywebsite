@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Input, OnChanges, OnInit, Renderer2 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -6,8 +6,9 @@ import { takeUntil } from 'rxjs/operators';
 @Directive({
   selector: '[stranslate]',
 })
-export class StranslateDirective implements OnInit {
-  @Input() stranslate: any;
+export class StranslateDirective implements OnInit, OnChanges {
+  @Input() stranslate = '';
+  // eslint-disable-next-line
   @Input() translateValues: any;
 
   private readonly directiveDestroyed = new Subject<never>();

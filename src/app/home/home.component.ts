@@ -42,6 +42,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       resume: 'traumapp.resume',
       route: '/traumapp',
     },
+    {
+      name: 'TraumApp Landing',
+      resume: 'traumappLanding.resume',
+      route: '/traumappLanding',
+    },
   ];
 
   contactForm = this.formBuilder.group({
@@ -152,6 +157,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         },
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (error: any) => {
+          // eslint-disable-next-line no-console
           error !== null && console.log(error);
           this.isLoadingBtn = false;
         },

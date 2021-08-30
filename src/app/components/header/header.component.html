@@ -1,11 +1,18 @@
 <div class="flex justify-between header" *ngIf="showHeader">
   <div class="flex boxItems">
-    <button type="button" class="mr-2 border-white border-2 aboutMe"
-    *ngIf="showAbout" stranslate="header.aboutButton" (click)="navigationAbout('/about')">ABOUT ME</button>
+    <button
+      type="button"
+      class="mr-2 border-white border-2 aboutMe"
+      *ngIf="showAbout"
+      stranslate="header.aboutButton"
+      (click)="navigationAbout('/about')"
+    >
+      ABOUT ME
+    </button>
   </div>
 
   <div class="hamburguerBox">
-    <div class="hamburguer"(click)="navigation('/menu')">
+    <div class="hamburguer" (click)="navigation('/menu')">
       <span class="lineBurguer" id="bread1"></span>
       <span class="lineBurguer" id="bistek"></span>
       <span class="lineBurguer" id="bread2"></span>

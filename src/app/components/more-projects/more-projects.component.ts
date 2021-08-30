@@ -14,7 +14,7 @@ export class MoreProjectsComponent implements OnInit {
   // eslint-disable-next-line
   constructor(public router: Router) {}
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  // eslint-disable-next-line
   ngOnInit(): void {}
 
   navigateUrl(code: string): void {

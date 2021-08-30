@@ -7,10 +7,18 @@
   </section>
 
   <section class="projects" id="projects">
-    <p class="codeLine">&lt;<span class="tag">projects&nbsp;<span class="controlStructure">*ngFor</span>="<span class="sentence">let project of portafolio</span>"</span>&gt;</p>
+    <p class="codeLine">
+      &lt;<span class="tag">projects&nbsp;<span class="controlStructure">*ngFor</span>="<span class="sentence">let project of portafolio</span>"</span>&gt;
+    </p>
 
-    <div class="w-100 my-5" >
-      <div class="border-2 boxProject {{ i % 2 == 0 || i == 0 ? 'marginOdd' : 'marginPair' }} mt-6 p-5 cursor-pointer btn slide" *ngFor="let project of projects;let i = index" (click)="navigation(project.route)">
+    <div class="w-100 my-5">
+      <div
+        class="border-2 boxProject {{
+          i % 2 === 0 || i === 0 ? 'marginOdd' : 'marginPair'
+        }} mt-6 p-5 cursor-pointer btn slide"
+        *ngFor="let project of projects; let i = index"
+        (click)="navigation(project.route)"
+      >
         <h1 class="projectTitle">{{ project.name }}</h1>
         <p class="descProject text-justify leading-none" [stranslate]="project.resume"></p>
         <a class="linkProject flex" stranslate="home.linkProject"></a>
@@ -20,35 +28,49 @@
     <p class="codeLine">&lt;/<span class="tag">projects</span>&gt;</p>
   </section>
 
-  <div class="logoSection" style="margin:auto;">
+  <div class="logoSection" style="margin: auto">
     <div id="personalIcon">
-    <svg version="1.1" id="personalIconSvg"
-     baseProfile="full" viewBox="0 0 200 200"
-     xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="grad1" gradientUnits="userSpaceOnUse">
-          <stop offset="10%" style="stop-color:#4ae3cd;"/>
-          <stop offset="50%" style="stop-color:#db2696;"/>
-          <stop offset="90%" style="stop-color:#4ae3cd;"/>
-        </linearGradient>
-      </defs>
+      <svg
+        version="1.1"
+        id="personalIconSvg"
+        baseProfile="full"
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="grad1" gradientUnits="userSpaceOnUse">
+            <stop offset="10%" style="stop-color: #4ae3cd" />
+            <stop offset="50%" style="stop-color: #db2696" />
+            <stop offset="90%" style="stop-color: #4ae3cd" />
+          </linearGradient>
+        </defs>
 
-      <polygon id="polygonMain" class="polygons" points="185.73651497465943,149.5 100,199 14.263485025340586,149.50000000000003 14.263485025340557,50.50000000000003 99.99999999999999,1 185.73651497465943,50.500000000000036"  
-        fill="#111" stroke="url(#grad1)" stroke-width="2" transform="matrix(0,0,0,0,0,0)"/>
-      
-      <g id="slogo" transform="matrix(0,0,0,0,0,0)" class="polygons">
-        <polygon stroke="#4ae3cd" stroke-width="2" points="100, 10 150,40 100, 70, 50 40" fill="#111"
-          style="stroke-dashoffset: 0px;"></polygon>
-        <polygon stroke="#4ae3cd" stroke-width="2" points="100, 70 150, 100 100, 130, 50 100" fill="#111"></polygon>
-        <polygon stroke="#4ae3cd" stroke-width="2" points="100, 130 150, 160 100, 190, 50 160" fill="#111"></polygon>
-        <line x1="100" x2="100" y1="10" y2="190" stroke="#4ae3cd" stroke-width="2"/>
-        <line x1="49" x2="49" y1="40" y2="100" stroke="#4ae3cd" stroke-width="2"/>
-        <line x1="151" x2="151" y1="100" y2="160" stroke="#4ae3cd" stroke-width="2"/>
-      </g>
+        <polygon
+          id="polygonMain"
+          class="polygons"
+          points="185.73651497465943,149.5 100,199 14.263485025340586,149.50000000000003 14.263485025340557,50.50000000000003 99.99999999999999,1 185.73651497465943,50.500000000000036"
+          fill="#111"
+          stroke="url(#grad1)"
+          stroke-width="2"
+          transform="matrix(0,0,0,0,0,0)"
+        />
 
-    </svg>
-  </div>
-
+        <g id="slogo" transform="matrix(0,0,0,0,0,0)" class="polygons">
+          <polygon
+            stroke="#4ae3cd"
+            stroke-width="2"
+            points="100, 10 150,40 100, 70, 50 40"
+            fill="#111"
+            style="stroke-dashoffset: 0px"
+          ></polygon>
+          <polygon stroke="#4ae3cd" stroke-width="2" points="100, 70 150, 100 100, 130, 50 100" fill="#111"></polygon>
+          <polygon stroke="#4ae3cd" stroke-width="2" points="100, 130 150, 160 100, 190, 50 160" fill="#111"></polygon>
+          <line x1="100" x2="100" y1="10" y2="190" stroke="#4ae3cd" stroke-width="2" />
+          <line x1="49" x2="49" y1="40" y2="100" stroke="#4ae3cd" stroke-width="2" />
+          <line x1="151" x2="151" y1="100" y2="160" stroke="#4ae3cd" stroke-width="2" />
+        </g>
+      </svg>
+    </div>
   </div>
 
   <section class="knowlegde" id="knowlegde">
@@ -62,126 +84,125 @@
         <p stranslate="knowlegde.fiftDsc" class="mb-4"></p>
       </div>
       <div class="ml-2 knowlegdeIllustration">
-
-        <svg version="1.1"
-         baseProfile="full" viewBox="0 0 200 200"
-         xmlns="http://www.w3.org/2000/svg">
+        <svg version="1.1" baseProfile="full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="grad1" gradientUnits="userSpaceOnUse">
-              <stop offset="5%" style="stop-color:#4ae3cd;"/>
-              <stop offset="25%" style="stop-color:#db2696;"/>
-              <stop offset="45%" style="stop-color:#38ca13;"/>
-              <stop offset="65%" style="stop-color:#4ae3cd;"/>
-              <stop offset="85%" style="stop-color:#db2696;"/>
+              <stop offset="5%" style="stop-color: #4ae3cd" />
+              <stop offset="25%" style="stop-color: #db2696" />
+              <stop offset="45%" style="stop-color: #38ca13" />
+              <stop offset="65%" style="stop-color: #4ae3cd" />
+              <stop offset="85%" style="stop-color: #db2696" />
             </linearGradient>
 
             <pattern id="reactFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="50" height="50" y="-7" x="7" href="../assets/images/triangle/react-icon.svg"/>
+              <image width="50" height="50" y="-7" x="7" href="../assets/images/triangle/react-icon.svg" />
             </pattern>
             <pattern id="reactSec" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="45" height="45" x="-15" y="-0.5" href="../assets/images/triangle/react-icon.svg"/>
+              <image width="45" height="45" x="-15" y="-0.5" href="../assets/images/triangle/react-icon.svg" />
             </pattern>
             <pattern id="angularFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="30" height="30" x="25" y="3" href="../assets/images/triangle/angular-icon.svg"/>
+              <image width="30" height="30" x="25" y="3" href="../assets/images/triangle/angular-icon.svg" />
             </pattern>
             <pattern id="angularSec" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="32" height="34" x="-14" y="10" href="../assets/images/triangle/angular-icon.svg"/>
+              <image width="32" height="34" x="-14" y="10" href="../assets/images/triangle/angular-icon.svg" />
             </pattern>
             <pattern id="htmlFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="30" height="30" x="3" y="31" href="../assets/images/triangle/html-icon.svg"/>
+              <image width="30" height="30" x="3" y="31" href="../assets/images/triangle/html-icon.svg" />
             </pattern>
             <pattern id="htmlSec" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="37" height="37" x="-7.5" y="-22" href="../assets/images/triangle/html-icon.svg"/>
+              <image width="37" height="37" x="-7.5" y="-22" href="../assets/images/triangle/html-icon.svg" />
             </pattern>
             <pattern id="firebaseFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="20" height="20" x="17" y="9" href="../assets/images/triangle/firebase-icon.svg"/>
+              <image width="20" height="20" x="17" y="9" href="../assets/images/triangle/firebase-icon.svg" />
             </pattern>
             <pattern id="jsFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="25" height="25" x="-6" y="24"  href="../assets/images/triangle/js-icon.svg"/>
+              <image width="25" height="25" x="-6" y="24" href="../assets/images/triangle/js-icon.svg" />
             </pattern>
             <pattern id="jsSec" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="25" height="25" x="32" y="3.5"  href="../assets/images/triangle/js-icon.svg"/>
+              <image width="25" height="25" x="32" y="3.5" href="../assets/images/triangle/js-icon.svg" />
             </pattern>
             <pattern id="cssFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="22" height="22" x="10" y="15" href="../assets/images/triangle/css-icon.svg"/>
+              <image width="22" height="22" x="10" y="15" href="../assets/images/triangle/css-icon.svg" />
             </pattern>
             <pattern id="postgreFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="30" height="30" x="20" y="35" href="../assets/images/triangle/postgresql-icon.svg"/>
+              <image width="30" height="30" x="20" y="35" href="../assets/images/triangle/postgresql-icon.svg" />
             </pattern>
             <pattern id="postgreSec" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="28" height="28" x="16.5" y="-13" href="../assets/images/triangle/postgresql-icon.svg"/>
+              <image width="28" height="28" x="16.5" y="-13" href="../assets/images/triangle/postgresql-icon.svg" />
             </pattern>
             <pattern id="tailFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="28" height="28" x="-12" y="-6" href="../assets/images/triangle/tailwind-icon.svg"/>
+              <image width="28" height="28" x="-12" y="-6" href="../assets/images/triangle/tailwind-icon.svg" />
             </pattern>
             <pattern id="tailSec" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="35" height="35" x="15" y="-5" href="../assets/images/triangle/tailwind-icon.svg"/>
+              <image width="35" height="35" x="15" y="-5" href="../assets/images/triangle/tailwind-icon.svg" />
             </pattern>
             <pattern id="tailThi" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="35" height="35" x="-14.5" y="41.5" href="../assets/images/triangle/tailwind-icon.svg"/>
+              <image width="35" height="35" x="-14.5" y="41.5" href="../assets/images/triangle/tailwind-icon.svg" />
             </pattern>
             <pattern id="realmFir" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="70" height="70" x="5" y="-3" href="../assets/images/triangle/realm-icon.svg"/>
+              <image width="70" height="70" x="5" y="-3" href="../assets/images/triangle/realm-icon.svg" />
             </pattern>
             <pattern id="realmSec" height="100%" width="100%" viewBox="0 0 50 50">
-              <image width="100" height="100" x="40" y="-6" href="../assets/images/triangle/realm-icon.svg"/>
+              <image width="100" height="100" x="40" y="-6" href="../assets/images/triangle/realm-icon.svg" />
             </pattern>
           </defs>
 
-          <polygon points="10, 120 80, 120 40, 50 " stroke="url(#grad1)" stroke-width="2" id="firstPoly"/>
+          <polygon points="10, 120 80, 120 40, 50 " stroke="url(#grad1)" stroke-width="2" id="firstPoly" />
 
-          <polygon points="20, 124 81, 124 50, 180" stroke="url(#grad1)" stroke-width="2" id="secondPoly"/>
+          <polygon points="20, 124 81, 124 50, 180" stroke="url(#grad1)" stroke-width="2" id="secondPoly" />
 
-          <polygon points="38, 39 132, 39 84, 119" stroke="url(#grad1)" stroke-width="2" id="thirdPoly"/>
+          <polygon points="38, 39 132, 39 84, 119" stroke="url(#grad1)" stroke-width="2" id="thirdPoly" />
 
-          <polygon points="65.5, 160 130, 160 97.5, 104" stroke="url(#grad1)" stroke-width="2" id="quarterPoly"/>
+          <polygon points="65.5, 160 130, 160 97.5, 104" stroke="url(#grad1)" stroke-width="2" id="quarterPoly" />
 
-          <polygon points="100, 100 180, 100 141, 30" stroke="url(#grad1)" stroke-width="2" id="fifthPoly"/>
+          <polygon points="100, 100 180, 100 141, 30" stroke="url(#grad1)" stroke-width="2" id="fifthPoly" />
 
-          <polygon points="101.5, 103.5 190, 103.5 146, 180" stroke="url(#grad1)" stroke-width="2" id="sixPoly"/>
+          <polygon points="101.5, 103.5 190, 103.5 146, 180" stroke="url(#grad1)" stroke-width="2" id="sixPoly" />
 
-          <use href="#firstPoly" fill="#111"/>
-          <use href="#firstPoly" fill="url(#reactFir)"/>
-          <use href="#firstPoly" fill="url(#htmlFir)"/>
+          <use href="#firstPoly" fill="#111" />
+          <use href="#firstPoly" fill="url(#reactFir)" />
+          <use href="#firstPoly" fill="url(#htmlFir)" />
 
-          <use href="#secondPoly" fill="#111"/>
-          <use href="#secondPoly" fill="url(#htmlSec)"/>
-          <use href="#secondPoly" fill="url(#jsSec)"/>
-          <use href="#secondPoly" fill="url(#cssFir)"/>
+          <use href="#secondPoly" fill="#111" />
+          <use href="#secondPoly" fill="url(#htmlSec)" />
+          <use href="#secondPoly" fill="url(#jsSec)" />
+          <use href="#secondPoly" fill="url(#cssFir)" />
 
-          <use href="#thirdPoly" fill="#111"/>
-          <use href="#thirdPoly" fill="url(#reactSec)"/>
-          <use href="#thirdPoly" fill="url(#angularFir)"/>
+          <use href="#thirdPoly" fill="#111" />
+          <use href="#thirdPoly" fill="url(#reactSec)" />
+          <use href="#thirdPoly" fill="url(#angularFir)" />
 
-          <use href="#quarterPoly" fill="#111"/>
-          <use href="#quarterPoly" fill="url(#jsFir)"/>
-          <use href="#quarterPoly" fill="url(#tailSec)"/>
-          <use href="#quarterPoly" fill="url(#realmSec)"/>
+          <use href="#quarterPoly" fill="#111" />
+          <use href="#quarterPoly" fill="url(#jsFir)" />
+          <use href="#quarterPoly" fill="url(#tailSec)" />
+          <use href="#quarterPoly" fill="url(#realmSec)" />
 
-          <use href="#fifthPoly" fill="#111"/>
-          <use href="#fifthPoly" fill="url(#angularSec)"/>
-          <use href="#fifthPoly" fill="url(#firebaseFir)"/>
-          <use href="#fifthPoly" fill="url(#postgreFir)"/>
-          <use href="#fifthPoly" fill="url(#tailThi)"/>
+          <use href="#fifthPoly" fill="#111" />
+          <use href="#fifthPoly" fill="url(#angularSec)" />
+          <use href="#fifthPoly" fill="url(#firebaseFir)" />
+          <use href="#fifthPoly" fill="url(#postgreFir)" />
+          <use href="#fifthPoly" fill="url(#tailThi)" />
 
-          <use href="#sixPoly" fill="#111"/>
-          <use href="#sixPoly" fill="url(#postgreSec)"/>
-          <use href="#sixPoly" fill="url(#tailFir)"/>
-          <use href="#sixPoly" fill="url(#realmFir)"/>
-
+          <use href="#sixPoly" fill="#111" />
+          <use href="#sixPoly" fill="url(#postgreSec)" />
+          <use href="#sixPoly" fill="url(#tailFir)" />
+          <use href="#sixPoly" fill="url(#realmFir)" />
         </svg>
-
       </div>
     </div>
     <p class="codeLine">&lt;/<span class="tag">knowlegde</span>&gt;</p>
   </section>
 
   <section class="littleAbout mt-12">
-    <p class="codeLine">&lt;<span class="tag">about&nbsp;<span class="controlStructure">title</span>="<span class="sentence">introduce myself</span>"</span>&gt;</p>
+    <p class="codeLine">
+      &lt;<span class="tag"
+        >about&nbsp;<span class="controlStructure">title</span>="<span class="sentence">introduce myself</span>"</span
+      >&gt;
+    </p>
     <div class="w-100 my-5 flex flex-col aboutResume">
       <p stranslate="about.resume"></p>
       <div class="mt-5 flex row underline font-normal">
-        <a (click)="navigation('/about')" class="flex items-center" style="cursor:pointer;" id="boxKownMore">
+        <a (click)="navigation('/about')" class="flex items-center" style="cursor: pointer" id="boxKownMore">
           <span stranslate="about.aboutLink" class="mr-8"></span>
           <div class="flex flex-row items-center" id="arrowKnowMore">
             <span class="block stick"></span>
@@ -197,34 +218,81 @@
   </section>
 
   <section class="littleAbout mt-12">
-    <p class="codeLine">&lt;<span class="tag">contact&nbsp;<span class="controlStructure">class</span>="<span class="sentence">send me an email</span>"</span>&gt;</p>
+    <p class="codeLine">
+      &lt;<span class="tag"
+        >contact&nbsp;<span class="controlStructure">class</span>="<span class="sentence">send me an email</span>"</span
+      >&gt;
+    </p>
     <div class="w-100 my-5 flex flex-col contactBox">
-      <p class="msgContact"><span stranslate="home.msgContact"></span>&nbsp;<span class="contactEmail">contact@samueldear.com</span></p>
+      <p class="msgContact">
+        <span stranslate="home.msgContact"></span>&nbsp;<span class="contactEmail">contact@samueldear.com</span>
+      </p>
       <p class="submsgContact" stranslate="home.submsgContact"></p>
       <form class="flex flex-col contactFormBox" [formGroup]="contactForm" (submit)="onSubmit()">
         <mat-form-field class="my-1">
           <mat-label stranslate="home.labelName" class="labelForm"></mat-label>
-          <input matInput value="" type="text" autocomplete="new-password" maxlength="60" name="name" id="name" formControlName="name">
+          <input
+            matInput
+            value=""
+            type="text"
+            autocomplete="new-password"
+            maxlength="60"
+            name="name"
+            id="name"
+            formControlName="name"
+          />
           <mat-error *ngIf="contactForm.controls.name.invalid && contactForm.controls.name.touched">
-            <span class="matError" *ngIf="contactForm.controls.name.errors?.required">Este campo es obligatorio.</span>
-         </mat-error>
+            <span
+              class="matError"
+              *ngIf="contactForm.controls.name.errors?.required"
+              stranslate="home.requiredInput"
+            ></span>
+          </mat-error>
         </mat-form-field>
         <mat-form-field class="my-1">
           <mat-label stranslate="home.labelEmail" class="labelForm"></mat-label>
-          <input matInput value="" type="text" autocomplete="new-password" maxlength="60" name="email" id="email" formControlName="email">
+          <input
+            matInput
+            value=""
+            type="text"
+            autocomplete="new-password"
+            maxlength="60"
+            name="email"
+            id="email"
+            formControlName="email"
+          />
           <mat-error *ngIf="contactForm.controls.email.invalid && contactForm.controls.email.touched">
-            <span class="matError" *ngIf="contactForm.controls.email.errors?.required">Este campo es obligatorio.</span>
-            <span class="matError" *ngIf="contactForm.controls.email.errors?.email">Correo invalido.</span>
+            <span
+              class="matError"
+              *ngIf="contactForm.controls.email.errors?.required"
+              stranslate="home.requiredInput"
+            ></span>
+            <span
+              class="matError"
+              *ngIf="contactForm.controls.email.errors?.email"
+              stranslate="home.invalidEmail"
+            ></span>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="my-1">
           <mat-label stranslate="home.labelDscEmail" class="labelForm"></mat-label>
-          <textarea matInput class="textareaContact" name="msg" id="msg" maxlength="2000" formControlName="msg"></textarea>
+          <textarea
+            matInput
+            class="textareaContact"
+            name="msg"
+            id="msg"
+            maxlength="2000"
+            formControlName="msg"
+          ></textarea>
           <mat-error *ngIf="contactForm.controls.msg.invalid && contactForm.controls.msg.touched">
-            <span class="matError" *ngIf="contactForm.controls.msg.errors?.required">Este campo es obligatorio.</span>
+            <span
+              class="matError"
+              *ngIf="contactForm.controls.msg.errors?.required"
+              stranslate="home.requiredInput"
+            ></span>
           </mat-error>
         </mat-form-field>
-        <button mat-button type="submit"  class="btnSendEmail">
+        <button mat-button type="submit" class="btnSendEmail" [disabled]="!contactForm.valid">
           <mat-spinner *ngIf="isLoadingBtn" diameter="30"></mat-spinner>
           <span stranslate="home.btnText" *ngIf="!isLoadingBtn"></span>
         </button>
@@ -236,7 +304,6 @@
   <div class="mt-12">
     <span stranslate="copy" class="copyri"></span>
   </div>
-  
-  <img src="../assets/images/pat-dark.jpg" width="0" height="0" id="imgTrap"/>
 
+  <img src="../assets/images/pat-dark.jpg" width="0" height="0" id="imgTrap" />
 </section>

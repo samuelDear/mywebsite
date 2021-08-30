@@ -1,13 +1,15 @@
-<img
-  [id]="id"
-  [style.display]="imgLoading ? 'none' : 'block'"
-  [src]="src"
-  [alt]="alt"
-  (load)="imgLoading = false"
-  [title]="title"
-  [class]="classes"
-/>
+<div class="loaderImgBox">
+  <img
+    [id]="id"
+    [style.display]="imgLoading ? 'none' : 'block'"
+    [src]="src"
+    [alt]="alt"
+    (load)="imgLoading = false"
+    [title]="title"
+    [class]="classes"
+  />
 
-<div *ngIf="imgLoading" [style.height]="height" class="loaderBox">
-  <mat-progress-bar mode="indeterminate" class="loaderBar"></mat-progress-bar>
+  <div *ngIf="imgLoading" [style.height]="height" class="loaderBox">
+    <mat-progress-bar mode="indeterminate" class="loaderBar"></mat-progress-bar>
+  </div>
 </div>

@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  // eslint-disable-next-line
   ngOnInit(): void {}
 
   navigation(ruta: string): void {

@@ -1,23 +1,65 @@
 {
   "root": true,
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "jest": true
-  },
+  "ignorePatterns": ["projects/**/*"],
+  "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "eslint:recommended", "prettier"],
   "parser": "@typescript-eslint/parser",
-  "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "eslint:recommended",
-    "prettier"
-  ],
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint", "@angular-eslint"],
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
-  }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "rules": {
+    "no-console": "warn"
+  },
+  "overrides": [
+    {
+      "env": {
+        "browser": true,
+        "node": true,
+        "jasmine": true
+      },
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "eslint:recommended",
+        "prettier"
+      ],
+      "rules": {
+        "no-console": "warn",
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    }
+  ]
 }

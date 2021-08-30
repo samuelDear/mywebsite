@@ -1,9 +1,9 @@
-.mainBoxStudies{
+.mainBoxStudies {
   display: flex;
   flex-direction: column;
 }
 
-.slideDates{
+.slideDates {
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -15,24 +15,24 @@
   max-height: 70vh;
 }
 
-.studiesInfo{
+.studiesInfo {
   margin: 8rem 10rem 0px 10rem;
 }
 
 .stickBegin {
   width: 10px;
   height: 80px;
-  background: linear-gradient(0deg, #111  20%, rgb(219, 38, 150) 50%, rgb(74, 227, 205) 80%);
+  background: linear-gradient(0deg, #111 20%, rgb(219, 38, 150) 50%, rgb(74, 227, 205) 80%);
 }
 
 .stickEnd {
   width: 10px;
   height: 80px;
-  background: linear-gradient(0deg, rgb(219, 38, 150) 20%,rgb(74, 227, 205) 50%, #111  80%);
+  background: linear-gradient(0deg, rgb(219, 38, 150) 20%, rgb(74, 227, 205) 50%, #111 80%);
   margin-bottom: -10px;
 }
 
-.studyDetail{
+.studyDetail {
   width: 270px;
   height: 270px;
   border-radius: 50%;
@@ -42,7 +42,7 @@
   margin-bottom: -10px;
 }
 
-.studyOdd{
+.studyOdd {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
@@ -52,7 +52,7 @@
   -webkit-transform: rotate(45deg);
 }
 
-.studyPair{
+.studyPair {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
@@ -62,7 +62,7 @@
   -webkit-transform: rotate(-135deg);
 }
 
-.details{
+.details {
   width: 100%;
   height: 100%;
   display: flex;
@@ -70,58 +70,55 @@
   align-items: center;
 }
 
-.detailOdd{
-  flex-direction: row;
-}
-
-.detailsPair{
+.detailsPair {
   flex-direction: row-reverse;
 }
 
-.currentCourse{
+.currentCourse {
   width: 40px;
   height: 40px;
   background-color: red;
   border-radius: 50%;
 }
 
-.ballOdd{
+.ballOdd {
   margin-right: -25px;
-  background: linear-gradient(0deg, rgba(219,38,150,1) 20%, rgba(74,227,205,1) 100%);
+  background: linear-gradient(0deg, rgba(219, 38, 150, 1) 20%, rgba(74, 227, 205, 1) 100%);
 }
 
-.ballPair{
+.ballPair {
   margin-left: -25px;
-  background: linear-gradient(190deg, rgba(219,38,150,1) 20%, rgba(74,227,205,1) 100%);
+  background: linear-gradient(190deg, rgba(219, 38, 150, 1) 20%, rgba(74, 227, 205, 1) 100%);
 }
 
-.textdetails{
-  display:flex;
+.textdetails {
+  display: flex;
   flex-direction: column;
   text-align: center;
   max-width: 90%;
   min-width: 90%;
 }
 
-.textTitle{
+.textTitle {
   font-size: 140%;
   font-weight: bold;
 }
 
-.textDate, .textAcademy{
+.textDate,
+.textAcademy {
   font-size: 120%;
 }
 
-.dates{
+.dates {
   margin: 10px 0px;
   font-size: 160%;
 }
 
-.datesSelected{
+.datesSelected {
   font-size: 200%;
 }
 
-.checkdate{
+.checkdate {
   height: 30px;
   width: 30px;
   background: #fff;
@@ -132,7 +129,7 @@
   justify-content: center;
 }
 
-.checkedDate{
+.checkedDate {
   width: 15px;
   height: 15px;
   background: #111;
@@ -150,14 +147,14 @@
   padding-top: 25px;
 }
 
-.labelDate{
+.labelDate {
   font-family: 'Signika', sans-serif;
   font-weight: 500;
   font-size: 140%;
   margin-top: 3px;
 }
 
-.circleDates{
+.circleDates {
   height: 20px;
   background-color: white;
   width: 20px;
@@ -174,7 +171,7 @@
   margin: auto;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   .studyDetail {
     width: 250px;
     height: 250px;
@@ -184,12 +181,13 @@
     font-size: 130%;
   }
 
-  .textAcademy, .textDate {
+  .textAcademy,
+  .textDate {
     font-size: 115%;
   }
 }
 
-@media only screen and (max-width : 550px) {
+@media only screen and (max-width: 550px) {
   .studyDetail {
     width: 240px;
     height: 240px;
@@ -199,12 +197,13 @@
     font-size: 120%;
   }
 
-  .textAcademy, .textDate {
+  .textAcademy,
+  .textDate {
     font-size: 110%;
   }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width: 500px) {
   .studyDetail {
     width: 190px;
     height: 190px;
@@ -215,7 +214,8 @@
     font-size: 80%;
   }
 
-  .textAcademy, .textDate {
+  .textAcademy,
+  .textDate {
     font-size: 75%;
   }
 
@@ -232,13 +232,12 @@
     margin-right: -22px;
   }
 
-  .studiesInfo{
+  .studiesInfo {
     margin: 8rem 6rem 0px 6rem;
   }
-
 }
 
-@media only screen and (max-width : 450px) {
+@media only screen and (max-width: 450px) {
   .studyDetail {
     width: 160px;
     height: 160px;
@@ -259,7 +258,7 @@
   }
 }
 
-@media only screen and (max-width : 350px) {
+@media only screen and (max-width: 350px) {
   .studyDetail {
     width: 150px;
     height: 150px;

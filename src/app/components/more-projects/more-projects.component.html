@@ -3,7 +3,13 @@
 </div>
 
 <div class="my-16">
-  <div class="boxProject border-2 {{ i % 2 == 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair' }} slide p-5 flex flex-row justify-between my-5 cursor-pointer" *ngFor="let random of projects;let i = index" (click)="navigateUrl(random.code)">
+  <div
+    class="boxProject border-2 {{
+      i % 2 === 0 ? 'randomProjectsBoxOdd' : 'randomProjectsBoxPair'
+    }} slide p-5 flex flex-row justify-between my-5 cursor-pointer"
+    *ngFor="let random of projects; let i = index"
+    (click)="navigateUrl(random.code)"
+  >
     <div>
       <h6 class="text-2xl">{{ random.name }}</h6>
       <p class="ml-4" [stranslate]="random.resume"></p>
