@@ -292,7 +292,7 @@
             ></span>
           </mat-error>
         </mat-form-field>
-        <button mat-button type="submit" class="btnSendEmail">
+        <button mat-button type="submit" class="btnSendEmail" [disabled]="!contactForm.valid">
           <mat-spinner *ngIf="isLoadingBtn" diameter="30"></mat-spinner>
           <span stranslate="home.btnText" *ngIf="!isLoadingBtn"></span>
         </button>
