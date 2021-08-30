@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
-import { fontLoader } from 'src/main';
+import { setProjectFont } from 'src/main';
 
 const threshold = 0.1;
 @Component({
@@ -118,17 +118,7 @@ export class TraumappComponent implements OnInit {
       });
     }, 1000);
 
-    setTimeout(() => {
-      this.families.forEach((element, index) => {
-        //console.log(element, index);
-        fontLoader(element);
-        const div = document.getElementById(`typographyName${index + 1}`);
-        if (div !== null) {
-          div.innerHTML = element.name;
-          div.style.fontFamily = element.name;
-        }
-      });
-    }, 100);
+    setProjectFont(this.families);
   }
 
   // eslint-disable-next-line

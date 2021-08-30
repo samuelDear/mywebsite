@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { fontLoader } from '../../../main';
+import { setProjectFont } from '../../../main';
 import { ColorType, FeatureType, Font, Project } from '../../services/common';
 
 @Component({
@@ -79,15 +79,6 @@ export class TraumappLandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.families.forEach((element, index) => {
-        fontLoader(element);
-        const div = document.getElementById(`typographyName${index + 1}`);
-        if (div !== null) {
-          div.innerHTML = element.name;
-          div.style.fontFamily = element.name;
-        }
-      });
-    }, 100);
+    setProjectFont(this.families);
   }
 }

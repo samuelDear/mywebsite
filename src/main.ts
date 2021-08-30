@@ -32,6 +32,21 @@ export const cleanFonts = (): void => {
   }
 };
 
+export const setProjectFont = (families: Font[]): void => {
+  setTimeout(() => {
+    families.forEach((element: Font, index: number) => {
+      fontLoader(element);
+      const div = document.getElementById(`typographyName${index + 1}`);
+      const divExample = document.getElementById(`typographyExample${index + 1}`);
+      if (div !== null && divExample !== null) {
+        div.innerHTML = element.name;
+        div.style.fontFamily = element.name;
+        divExample.style.fontFamily = element.name;
+      }
+    });
+  }, 100);
+};
+
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   // eslint-disable-next-line no-console
