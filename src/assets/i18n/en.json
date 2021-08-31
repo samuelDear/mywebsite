@@ -195,6 +195,11 @@
     "featureTitle6": "CI/CD",
     "featureDsc6": "To improve development, CI / CD was implemented through Github Actions so as not to spend time deploying the changes on the server and automating this task."
   },
+  "quipus": {
+    "resume": "",
+    "dsc": "Thematic event pools page",
+    "role": "Frontend"
+  },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
     "secondDsc":"I have worked on the Front-end with frameworks like Angular and React with their libraries like Material UI and Angular Material, also I have experience building responsive websites with a high-performance.",

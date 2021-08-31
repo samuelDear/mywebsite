@@ -1,0 +1,76 @@
+<section class="mainBoxPadding">
+  <!-- Ficha resumen -->
+  <div class="text-center">
+    <h1 class="text-4xl font-bold">Quipus Events</h1>
+    <p class="text-center my-5 dsc" stranslate="quipus.dsc"></p>
+  </div>
+
+  <!-- Subtitulo del proyecto -->
+  <div class="justify-between rolAgencyDate mt-2">
+    <p class="my-1 dscTags"><span stranslate="project.role"></span>&nbsp;<span stranslate="quipus.role"></span></p>
+    <p class="my-1 dscTags text-center"><span stranslate="project.agency"></span> 3DLink</p>
+    <p class="my-1 dscTags textRight"><span stranslate="project.date"></span> 01-2021 / 06-2021</p>
+  </div>
+
+  <!-- Imagen principal del proyecto -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      [src]="'../../../assets/images/project-images/traumapp-landing/principalImg.png'"
+      [title]="'Home'"
+      [alt]="'Home TraumApp'"
+      [id]="'homeTraumApp'"
+      [classes]="'borderedBox'"
+      [height]="'400px'"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Introduccion -->
+  <h5 class="text-center text-3xl font-bold mb-16" stranslate="project.introTitle"></h5>
+
+  <div class="boxProject border-2 p-4 mb-16">
+    <p class="text-justify intro" stranslate="traumappLanding.intro1"></p>
+  </div>
+</section>
+
+<!-- Evento -->
+<section class="mainBoxPadding">
+  <mat-tab-group mat-align-tabs="center" color="accent">
+    <mat-tab label="JGH">
+      <!-- JGH -->
+      <h5 class="text-center text-3xl font-bold my-16">Jose Gregorio Hernandez</h5>
+
+      <div class="boxJgh border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="traumappLanding.intro1"></p>
+      </div>
+    </mat-tab>
+    <mat-tab label="Oscars">
+      <!-- Oscars -->
+      <h5 class="text-center text-3xl font-bold my-16">Oscars</h5>
+      <div class="boxOscars border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="traumappLanding.intro1"></p>
+      </div>
+    </mat-tab>
+    <mat-tab label="Miss">
+      <!-- Miss universe -->
+      <h5 class="text-center text-3xl font-bold my-16">Miss Universe</h5>
+      <div class="boxMiss border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="traumappLanding.intro1"></p>
+      </div>
+    </mat-tab>
+    <mat-tab label="Copas">
+      <!-- Las Copas -->
+      <h5 class="text-center text-3xl font-bold my-16">Las Copas</h5>
+      <div class="boxCopas border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="traumappLanding.intro1"></p>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</section>
+
+<!-- Proyectos varios -->
+<section class="mainBoxPadding">
+  <app-thanks-reading></app-thanks-reading>
+
+  <app-more-projects [projects]="ramdons"></app-more-projects>
+</section>
