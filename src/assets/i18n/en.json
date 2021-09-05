@@ -198,7 +198,19 @@
   "quipus": {
     "resume": "",
     "dsc": "Thematic event pools page",
-    "role": "Frontend"
+    "role": "Frontend",
+    "intro": "Quipus starts from the idea of ​​connecting people through events in which users can choose their favorite winners depending on the theme, which can be very varied. Going through contests of Works on Jose Gregorio Hernández, The Oscars, The Miss Universe and sporting events such as the Copa América and the Eurocopa. Allowing users to see the choices of others, and having different rooms in which you can create a Quipu (Quiniela). Each of these events was carried out as a unique project, thus allowing users to have new ways of playing and participating.",
+    "dscJgh1": "The Jose Gregorio Hernández event was a poster or illustration contest, where the illustrations were anonymously, and users had to choose their favorite through a Versus system, in which two illustrations were shown and the user chose which one. her favourite. The scores for these illustrations were calculated with an ELO rating system.",
+    "dscJgh2": "There were two categories, one for youth and the other for adults. Where the youth you had to choose your favorite within several groups. While in the adult one, you had to choose your favorite in a Versus, allowing you to perform a maximum of 23 rounds.",
+    "dscJgh3": "At the end of the event, the illustrations would go to a ranking where their position and the name of the work would appear.",
+    "dscOscars1": "The Oscars event is based on the Academy Awards. In which people could see the different nominees and their categories. As well as news of the event's news. In the gallery of the nominees you could see the trailer of the films.",
+    "dscOscars2": "In this event, people could select the winners of each category. In this system, there were two types of selections, the normal ones and the bonuses, where the normal ones scored 1 point and the bonuses 3 for hit. After finishing your selections, you could see a list with the participants and you could edit your selection before the event started.",
+    "dscOscars3": "After the event ended, users could see their position in the ranking, as well as see the details of all users. In addition, they had a section with the results of the academy awards where they could see which were the winners of each category.",
+    "dscMiss1": "The Miss Universe event allowed people to choose their favorite candidates for the beauty pageant. Where they could also view the candidates in a gallery by region.",
+    "dscMiss2": "The betting process ran from round 1 where the 32 best candidates are selected to the final round where the winner is voted on. Users could participate in different salaries and place different bets. Also as long as the event was not in progress or finished, they could edit their forecast. As well as, they could see the forecasts of other people after the participation closed.",
+    "dscCopas1": "The cup event included what was the America's Cup and the European Championship. From their group stage to their final stage. For this event different modes were made for each event. Each event had a group stage and final stage mode, and a mode for only the final stage with the actual results already obtained. In this case, the points system varied from the event, as well as an auto-completion system for the results forecast, which allowed users with little knowledge to complete the pool with the help of an automated forecast.",
+    "dscCopas2": "Each event had a group stage and final stage mode, and a mode for only the final stage with the actual results already obtained.",
+    "dscCopas3": "In this case, the points system varied from the event, as well as an auto-completion system for the results forecast, which allowed users with little knowledge to complete the pool with the help of an automated forecast."
   },
   "knowlegde": {
     "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",

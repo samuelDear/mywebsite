@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Project } from '../../services/common';
+import { ColorType, Font, Project } from '../../services/common';
 
 @Component({
   selector: 'app-quipus',
@@ -23,6 +23,86 @@ export class QuipusComponent implements OnInit {
       code: '/traumapp-landing',
       name: 'TraumApp Landing',
       resume: 'traumappLanding.resume',
+    },
+  ];
+
+  familiesJgh: Font[] = [
+    { name: 'Monserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
+    { name: 'Open Sans', link: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap` },
+  ];
+
+  familiesOscars: Font[] = [
+    { name: 'Open Sans', link: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap` },
+    { name: 'Roboto', link: `https://fonts.googleapis.com/css2?family=Roboto&display=swap` },
+  ];
+
+  familiesMiss: Font[] = [
+    { name: 'Monserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
+    { name: 'Roboto', link: `https://fonts.googleapis.com/css2?family=Roboto&display=swap` },
+  ];
+
+  familiesCopas: Font[] = [
+    { name: 'Monserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
+    { name: 'Roboto', link: `https://fonts.googleapis.com/css2?family=Roboto&display=swap` },
+  ];
+
+  colorsJgh: ColorType[] = [
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+  ];
+
+  colorsOscars: ColorType[] = [
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+  ];
+
+  colorsMiss: ColorType[] = [
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+  ];
+
+  colorsCopas: ColorType[] = [
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
+    },
+    {
+      dsc: '',
     },
   ];
 
