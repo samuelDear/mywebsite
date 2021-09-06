@@ -41,24 +41,118 @@
       <h5 class="text-center text-3xl font-bold my-16">Jose Gregorio Hernandez</h5>
 
       <div class="boxJgh border-2 p-4 mb-16">
-        <p class="text-justify intro" stranslate="quipus.dscJgh1"></p>
+        <p class="text-justify intro" stranslate="quipus.jgh.dsc1"></p>
         <br />
-        <p class="text-justify intro" stranslate="quipus.dscJgh2"></p>
+        <p class="text-justify intro" stranslate="quipus.jgh.dsc2"></p>
         <br />
-        <p class="text-justify intro" stranslate="quipus.dscJgh3"></p>
+        <p class="text-justify intro" stranslate="quipus.jgh.dsc3"></p>
         <br />
       </div>
+
+      <!-- Imagenes de JGH -->
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/quipus/jgh/jgh-principalimg.png'"
+          [title]="'Landing JGH'"
+          [alt]="'Landing Jose Gregorio Hernandez'"
+          [id]="'landingJgh'"
+          [classes]="'borderedBox'"
+          [height]="'400px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/quipus/jgh/jgh-menuImg.png'"
+          [title]="'Concursos Por Edad'"
+          [alt]="'Concursos Por Edad'"
+          [id]="'pollsJgh'"
+          [classes]="'borderedBox'"
+          [height]="'400px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/quipus/jgh/jgh-roundImg.png'"
+          [title]="'Grupos de ilustraciones'"
+          [alt]="'Grupos de ilustraciones'"
+          [id]="'ilustrationGroups'"
+          [classes]="'borderedBox'"
+          [height]="'400px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-principalImgMobile.png"
+          title="Landing JGH Mobile"
+          alt="Landing JGH Mobile"
+          type="phone"
+          id="landingMobile"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-groupMobileImg.png"
+          title="Grupos de ilustraciones móvil"
+          alt="Grupos de ilustraciones móvil"
+          type="phone"
+          id="illustrationGroupMobile"
+        ></app-image-screen>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-galleryImgMobile.png"
+          title="Galeria de ilustraciones"
+          alt="Galeria de ilustraciones"
+          type="phone"
+          id="imageGallery"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-galleryImgMobile2.png"
+          title="Galeria de ilustraciones"
+          alt="Galeria de ilustraciones"
+          type="phone"
+          id="imageGallery2"
+        ></app-image-screen>
+      </div>
+
+      <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameJgh1">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleJgh1">
+          A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+        </p>
+      </div>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameJgh2">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleJgh2">
+          A&emsp;B&emsp;C&emsp;D&emsp;E&emsp;F&emsp;J&emsp;G&emsp;I&emsp;J&emsp;K&emsp;L&emsp;M&emsp;N&emsp;O&emsp;P&emsp;Q&emsp;R&emsp;S&emsp;T&emsp;U&emsp;V&emsp;W&emsp;X&emsp;Y&emsp;Z&emsp;1&emsp;2&emsp;3&emsp;4&emsp;5&emsp;6&emsp;7&emsp;8&emsp;9
+        </p>
+      </div>
+
+      <app-color-palette [colors]="colorsJgh"></app-color-palette>
+
+      <!-- CARACTERISTICAS -->
+      <app-features-box [features]="jghFeatures"></app-features-box>
     </mat-tab>
     <mat-tab label="Oscars">
       <!-- Oscars -->
       <h5 class="text-center text-3xl font-bold my-16">Oscars</h5>
 
       <div class="boxOscars border-2 p-4 mb-16">
-        <p class="text-justify intro" stranslate="quipus.dscOscars1"></p>
+        <p class="text-justify intro" stranslate="quipus.oscars.dsc1"></p>
         <br />
-        <p class="text-justify intro" stranslate="quipus.dscOscars2"></p>
+        <p class="text-justify intro" stranslate="quipus.oscars.dsc2"></p>
         <br />
-        <p class="text-justify intro" stranslate="quipus.dscOscars3"></p>
+        <p class="text-justify intro" stranslate="quipus.oscars.dsc3"></p>
         <br />
       </div>
     </mat-tab>
@@ -66,20 +160,20 @@
       <!-- Miss universe -->
       <h5 class="text-center text-3xl font-bold my-16">Miss Universe</h5>
       <div class="boxMiss border-2 p-4 mb-16">
-        <p class="text-justify intro" stranslate="quipus.dscMiss1"></p>
+        <p class="text-justify intro" stranslate="quipus.miss.dsc1"></p>
         <br />
-        <p class="text-justify intro" stranslate="quipus.dscMiss2"></p>
+        <p class="text-justify intro" stranslate="quipus.miss.dsc2"></p>
       </div>
     </mat-tab>
     <mat-tab label="Copas">
       <!-- Las Copas -->
       <h5 class="text-center text-3xl font-bold my-16">Las Copas</h5>
       <div class="boxCopas border-2 p-4 mb-16">
-        <p class="text-justify intro" stranslate="quipus.dscCopas1"></p>
+        <p class="text-justify intro" stranslate="quipus.copas.dsc1"></p>
         <br />
-        <p class="text-justify intro" stranslate="quipus.dscCopas2"></p>
+        <p class="text-justify intro" stranslate="quipus.copas.dsc2"></p>
         <br />
-        <p class="text-justify intro" stranslate="quipus.dscCopas2"></p>
+        <p class="text-justify intro" stranslate="quipus.copas.dsc3"></p>
       </div>
     </mat-tab>
   </mat-tab-group>

@@ -10,7 +10,7 @@ import { ColorType, FeatureType, Font, Project } from '../../services/common';
 })
 export class TraumappLandingComponent implements OnInit {
   families: Font[] = [
-    { name: 'Monserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
+    { name: 'Montserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
     { name: 'Open Sans', link: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap` },
   ];
 
