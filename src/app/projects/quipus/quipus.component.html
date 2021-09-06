@@ -155,6 +155,71 @@
         <p class="text-justify intro" stranslate="quipus.oscars.dsc3"></p>
         <br />
       </div>
+
+      <!-- Imagenes de los Oscars -->
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/quipus/oscars/oscars-principalImg.png'"
+          [title]="'Home Oscars'"
+          [alt]="'Home Oscars'"
+          [id]="'homeOscars'"
+          [classes]="'borderedBox'"
+          [height]="'400px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/quipus/oscars/oscars-nominatesImg.png'"
+          [title]="'Nominados a los Oscars'"
+          [alt]="'Nominados a los Oscars'"
+          [id]="'oscarsNominates'"
+          [classes]="'borderedBox'"
+          [height]="'400px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/quipus/oscars/oscars-listUserImg.png'"
+          [title]="'Lista de participantes'"
+          [alt]="'Lista de participantes'"
+          [id]="'listUser'"
+          [classes]="'borderedBox'"
+          [height]="'400px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          [src]="'../../../assets/images/project-images/quipus/oscars/oscars-avatar.png'"
+          [title]="'Selección de avatar'"
+          [alt]="'Selección de avatar'"
+          [id]="'avatarSelection'"
+          [classes]="'borderedBox'"
+          [height]="'400px'"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <app-image-screen
+        urlimg="../../../assets/images/project-images/quipus/oscars/oscars-tabletWinnersImg.png"
+        title="Ganadores de los Oscars"
+        alt="Ganadores de los Oscars"
+        type="tablet"
+        id="oscarsWinners"
+      ></app-image-screen>
+
+      <app-image-screen
+        urlimg="../../../assets/images/project-images/quipus/oscars/oscars-loginImg.png"
+        title="Login evento Los Oscars"
+        alt="Login evento Los Oscars"
+        type="tablet"
+        id="loginOscars"
+      ></app-image-screen>
     </mat-tab>
     <mat-tab label="Miss">
       <!-- Miss universe -->
