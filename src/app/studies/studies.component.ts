@@ -20,6 +20,20 @@ export class StudiesComponent implements OnInit, OnDestroy {
       },
       institute: 'Platzi',
       es: {
+        title: 'Curso Profesional de JavaScript',
+      },
+      en: {
+        title: 'JavaScript Professional Course',
+      },
+    },
+    {
+      reference: '2021',
+      datecreated: {
+        month: '01',
+        year: '2021',
+      },
+      institute: 'Platzi',
+      es: {
         title: 'Curso de ReactJs',
       },
       en: {
