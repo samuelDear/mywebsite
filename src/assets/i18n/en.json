@@ -210,7 +210,9 @@
     "oscars": {
       "dsc1": "The Oscars event is based on the Academy Awards. In which people could see the different nominees and their categories. As well as news of the event's news. In the gallery of the nominees you could see the trailer of the films.",
       "dsc2": "In this event, people could select the winners of each category. In this system, there were two types of selections, the normal ones and the bonuses, where the normal ones scored 1 point and the bonuses 3 for hit. After finishing your selections, you could see a list with the participants and you could edit your selection before the event started.",
-      "dsc3": "After the event ended, users could see their position in the ranking, as well as see the details of all users. In addition, they had a section with the results of the academy awards where they could see which were the winners of each category."  
+      "dsc3": "After the event ended, users could see their position in the ranking, as well as see the details of all users. In addition, they had a section with the results of the academy awards where they could see which were the winners of each category.",
+      "featureTitle1": "Results",
+      "featureDsc1": "There is a screen with the results of the event so that users can enter after the event is over and can see what the real results were."
     },
     "miss": {
       "dsc1": "The Miss Universe event allowed people to choose their favorite candidates for the beauty pageant. Where they could also view the candidates in a gallery by region.",

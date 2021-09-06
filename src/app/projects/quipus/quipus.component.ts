@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { fontLoader } from 'src/main';
+import { MatTabChangeEvent } from '@angular/material/tabs';
+import { cleanFonts, fontLoader } from 'src/main';
 
 import { ColorType, FeatureType, Font, Project } from '../../services/common';
+
+interface FontsArr {
+  name: string;
+  font: Font[];
+}
 
 @Component({
   selector: 'app-quipus',
@@ -47,6 +53,25 @@ export class QuipusComponent implements OnInit {
     { name: 'Roboto', link: `https://fonts.googleapis.com/css2?family=Roboto&display=swap` },
   ];
 
+  fontsFamilies: FontsArr[] = [
+    {
+      name: 'Jgh',
+      font: [...this.familiesJgh],
+    },
+    {
+      name: 'Oscars',
+      font: [...this.familiesOscars],
+    },
+    {
+      name: 'Miss',
+      font: [...this.familiesMiss],
+    },
+    {
+      name: 'Copas',
+      font: [...this.familiesCopas],
+    },
+  ];
+
   colorsJgh: ColorType[] = [
     {
       dsc: '#673AB7',
@@ -64,16 +89,16 @@ export class QuipusComponent implements OnInit {
 
   colorsOscars: ColorType[] = [
     {
-      dsc: '',
+      dsc: '#FFC107',
     },
     {
-      dsc: '',
+      dsc: '#303030',
     },
     {
-      dsc: '',
+      dsc: '#EFB810',
     },
     {
-      dsc: '',
+      dsc: '#9D9D9D',
     },
   ];
 
@@ -134,6 +159,14 @@ export class QuipusComponent implements OnInit {
     },
   ];
 
+  oscarsFeatures: FeatureType[] = [
+    ...this.commonFeatures,
+    {
+      title: 'quipus.oscars.featureTitle1',
+      dsc: 'quipus.oscars.featureDsc1',
+    },
+  ];
+
   constructor() {
     window.scroll(0, 0);
   }
@@ -156,4 +189,13 @@ export class QuipusComponent implements OnInit {
       });
     }, 100);
   }
+
+  tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
+    cleanFonts();
+    this.setTypoDinamyc(
+      this.fontsFamilies[tabChangeEvent.index].font,
+      `typographyName${this.fontsFamilies[tabChangeEvent.index].name}`,
+      `typographyExample${this.fontsFamilies[tabChangeEvent.index].name}`,
+    );
+  };
 }

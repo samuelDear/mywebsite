@@ -35,7 +35,7 @@
 
 <!-- Evento -->
 <section class="mainBoxPadding">
-  <mat-tab-group mat-align-tabs="center" color="accent">
+  <mat-tab-group mat-align-tabs="center" color="accent" (selectedTabChange)="tabChanged($event)">
     <mat-tab label="JGH">
       <!-- JGH -->
       <h5 class="text-center text-3xl font-bold my-16">Jose Gregorio Hernandez</h5>
@@ -220,6 +220,63 @@
         type="tablet"
         id="loginOscars"
       ></app-image-screen>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-homeMobileImg.png"
+          title="Home oscars Mobile"
+          alt="Home oscars Mobile"
+          type="phone"
+          id="homeOscarsMobile"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-loginMobileImg.png"
+          title="Login Oscars Mobile"
+          alt="Login Oscars Mobile"
+          type="phone"
+          id="loginOscarsMobile"
+        ></app-image-screen>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-selectionMobileImg.png"
+          title="Selección de Ganadores"
+          alt="Selección de Ganadores"
+          type="phone"
+          id="selectionWinners"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-winnerMobileImg.png"
+          title="Ganadores de los Oscars"
+          alt="Ganadores de los Oscars"
+          type="phone"
+          id="oscarsWinners"
+        ></app-image-screen>
+      </div>
+
+      <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameOscars1">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleOscars1">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameOscars2">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleOscars2">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <app-color-palette [colors]="colorsOscars"></app-color-palette>
+
+      <!-- CARACTERISTICAS -->
+      <app-features-box [features]="oscarsFeatures"></app-features-box>
     </mat-tab>
     <mat-tab label="Miss">
       <!-- Miss universe -->

@@ -210,7 +210,9 @@
     "oscars": {
       "dsc1": "El evento de los oscars está basado en los premios de la academia. En el cual las personas podía ver los diferentes nominados y sus categorías. Así como también noticias de las novedades del evento. En la galería de los nominados podías ver el trailer de las películas.",
       "dsc2": "En este evento los personas podían seleccionar a los ganadores de cada categoría. En este sistema, habían dos tipos de selecciones, las normales y las bonus, donde las normales puntuaban 1 punto y las bonus 3 por acierto. Luego de terminar tus selecciones, podías ver una lista con los participantes y podías editar tu selección antes de que comenzara el evento.",
-      "dsc3": "Luego de que el evento finalizara, los usuarios podrían ver su posición en el ranking, así como también ver el detalles de todos los usuarios. Ademas, tenían una sección con los resultados de los premios de la academia donde podían ver cuales fueron los ganadores de cada categoría."
+      "dsc3": "Luego de que el evento finalizara, los usuarios podrían ver su posición en el ranking, así como también ver el detalles de todos los usuarios. Ademas, tenían una sección con los resultados de los premios de la academia donde podían ver cuales fueron los ganadores de cada categoría.",
+      "featureTitle1": "Resultados",
+      "featureDsc1": "Se tiene una pantalla con los resultados del evento para que los usuarios puedan entrar luego de finalizado el evento y puedan ver cuales fueron los resultados reales."
     },
     "miss": {
       "dsc1": "El evento de Miss Universe permitia a las personas elegir sus candidatas favoritas para el certamen de belleza. En donde podían también visualizar a las candidatas en galería por regiones.",
