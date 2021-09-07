@@ -47,6 +47,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       resume: 'traumappLanding.resume',
       route: '/traumappLanding',
     },
+    {
+      name: 'Quipus Events',
+      resume: 'quipus.resume',
+      route: '/quipus',
+    },
   ];
 
   contactForm = this.formBuilder.group({

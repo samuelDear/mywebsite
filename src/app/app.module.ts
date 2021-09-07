@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,8 @@ import { ColorPaletteComponent } from './components/color-palette/color-palette.
 import { MoreProjectsComponent } from './components/more-projects/more-projects.component';
 import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-landing.component';
 import { ImageScreenComponent } from './components/image-screen/image-screen.component';
+import { TypographyLettersComponent } from './components/typographyLetters/typography-letters.component';
+import { QuipusComponent } from './projects/quipus/quipus.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -61,6 +64,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     MoreProjectsComponent,
     TraumappLandingComponent,
     ImageScreenComponent,
+    QuipusComponent,
+    TypographyLettersComponent,
   ],
   imports: [
     BrowserModule,
@@ -74,6 +79,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     BrowserAnimationsModule,
     MatProgressBarModule,
     MatIconModule,
+    MatTabsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

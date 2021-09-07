@@ -10,6 +10,7 @@ import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.comp
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 import { TraumappComponent } from './projects/traumapp/traumapp.component';
 import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-landing.component';
+import { QuipusComponent } from './projects/quipus/quipus.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'afxtrade', component: AfxtradeComponent, pathMatch: 'full' },
   { path: 'traumapp', component: TraumappComponent, pathMatch: 'full' },
   { path: 'traumappLanding', component: TraumappLandingComponent, pathMatch: 'full' },
+  { path: 'quipus', component: QuipusComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '' },
 ];
 

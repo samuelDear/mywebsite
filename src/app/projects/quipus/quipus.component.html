@@ -1,0 +1,568 @@
+<section class="mainBoxPadding">
+  <!-- Ficha resumen -->
+  <div class="text-center">
+    <h1 class="text-4xl font-bold">Quipus Events</h1>
+    <p class="text-center my-5 dsc" stranslate="quipus.dsc"></p>
+  </div>
+
+  <!-- Subtitulo del proyecto -->
+  <div class="justify-between rolAgencyDate mt-2">
+    <p class="my-1 dscTags"><span stranslate="project.role"></span>&nbsp;<span stranslate="quipus.role"></span></p>
+    <p class="my-1 dscTags text-center"><span stranslate="project.agency"></span> 3DLink</p>
+    <p class="my-1 dscTags textRight"><span stranslate="project.date"></span> 01-2021 / 06-2021</p>
+  </div>
+
+  <!-- Imagen principal del proyecto -->
+  <div class="my-16 flex justify-center borderedBox boxUnique">
+    <app-img-loader
+      src="../../../assets/images/project-images/quipus/principalImg.png"
+      title="Quipus Landing"
+      alt="Landing Quipus"
+      id="quipusLanding"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <!-- Introduccion -->
+  <h5 class="text-center text-3xl font-bold mb-16" stranslate="project.introTitle"></h5>
+
+  <div class="boxProject border-2 p-4 mb-16">
+    <p class="text-justify intro" stranslate="quipus.intro"></p>
+  </div>
+</section>
+
+<!-- Evento -->
+<section class="mainBoxPadding">
+  <mat-tab-group mat-align-tabs="center" color="accent" (selectedTabChange)="tabChanged($event)">
+    <mat-tab label="JGH">
+      <!-- JGH -->
+      <h5 class="text-center text-3xl font-bold my-16">Jose Gregorio Hernandez</h5>
+
+      <div class="boxJgh border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="quipus.jgh.dsc1"></p>
+        <br />
+        <p class="text-justify intro" stranslate="quipus.jgh.dsc2"></p>
+        <br />
+        <p class="text-justify intro" stranslate="quipus.jgh.dsc3"></p>
+        <br />
+      </div>
+
+      <!-- Imagenes de JGH -->
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/jgh/jgh-principalimg.png"
+          title="Landing JGH"
+          alt="Landing Jose Gregorio Hernandez"
+          id="landingJgh"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/jgh/jgh-menuImg.png"
+          title="Concursos Por Edad"
+          alt="Concursos Por Edad"
+          id="pollsJgh"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/jgh/jgh-roundImg.png"
+          title="Grupos de ilustraciones"
+          alt="Grupos de ilustraciones"
+          id="ilustrationGroups"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-principalImgMobile.png"
+          title="Landing JGH Mobile"
+          alt="Landing JGH Mobile"
+          type="phone"
+          id="landingMobile"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-groupMobileImg.png"
+          title="Grupos de ilustraciones móvil"
+          alt="Grupos de ilustraciones móvil"
+          type="phone"
+          id="illustrationGroupMobile"
+        ></app-image-screen>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-galleryImgMobile.png"
+          title="Galeria de ilustraciones"
+          alt="Galeria de ilustraciones"
+          type="phone"
+          id="imageGallery"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/jgh/jgh-galleryImgMobile2.png"
+          title="Galeria de ilustraciones"
+          alt="Galeria de ilustraciones"
+          type="phone"
+          id="imageGallery2"
+        ></app-image-screen>
+      </div>
+
+      <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameJgh1">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleJgh1">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameJgh2">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleJgh2">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <app-color-palette [colors]="colorsJgh"></app-color-palette>
+
+      <!-- CARACTERISTICAS -->
+      <app-features-box [features]="jghFeatures"></app-features-box>
+    </mat-tab>
+    <mat-tab label="Oscars">
+      <!-- Oscars -->
+      <h5 class="text-center text-3xl font-bold my-16">Oscars</h5>
+
+      <div class="boxOscars border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="quipus.oscars.dsc1"></p>
+        <br />
+        <p class="text-justify intro" stranslate="quipus.oscars.dsc2"></p>
+        <br />
+        <p class="text-justify intro" stranslate="quipus.oscars.dsc3"></p>
+        <br />
+      </div>
+
+      <!-- Imagenes de los Oscars -->
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/oscars/oscars-principalImg.png"
+          title="Home Oscars"
+          alt="Home Oscars"
+          id="homeOscars"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/oscars/oscars-nominatesImg.png"
+          title="Nominados a los Oscars"
+          alt="Nominados a los Oscars"
+          id="oscarsNominates"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/oscars/oscars-listUserImg.png"
+          title="Lista de participantes"
+          alt="Lista de participantes"
+          id="listUser"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/oscars/oscars-avatar.png"
+          title="Selección de avatar"
+          alt="Selección de avatar"
+          id="avatarSelection"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <app-image-screen
+        urlimg="../../../assets/images/project-images/quipus/oscars/oscars-tabletWinnersImg.png"
+        title="Ganadores de los Oscars"
+        alt="Ganadores de los Oscars"
+        type="tablet"
+        id="oscarsWinners"
+      ></app-image-screen>
+
+      <app-image-screen
+        urlimg="../../../assets/images/project-images/quipus/oscars/oscars-loginImg.png"
+        title="Login evento Los Oscars"
+        alt="Login evento Los Oscars"
+        type="tablet"
+        id="loginOscars"
+      ></app-image-screen>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-homeMobileImg.png"
+          title="Home oscars Mobile"
+          alt="Home oscars Mobile"
+          type="phone"
+          id="homeOscarsMobile"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-loginMobileImg.png"
+          title="Login Oscars Mobile"
+          alt="Login Oscars Mobile"
+          type="phone"
+          id="loginOscarsMobile"
+        ></app-image-screen>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-selectionMobileImg.png"
+          title="Selección de Ganadores"
+          alt="Selección de Ganadores"
+          type="phone"
+          id="selectionWinners"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/oscars/oscars-winnerMobileImg.png"
+          title="Ganadores de los Oscars"
+          alt="Ganadores de los Oscars"
+          type="phone"
+          id="oscarsWinners"
+        ></app-image-screen>
+      </div>
+
+      <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameOscars1">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleOscars1">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameOscars2">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleOscars2">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <app-color-palette [colors]="colorsOscars"></app-color-palette>
+
+      <!-- CARACTERISTICAS -->
+      <app-features-box [features]="oscarsFeatures"></app-features-box>
+    </mat-tab>
+    <mat-tab label="Miss">
+      <!-- Miss universe -->
+      <h5 class="text-center text-3xl font-bold my-16">Miss Universe</h5>
+      <div class="boxMiss border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="quipus.miss.dsc1"></p>
+        <br />
+        <p class="text-justify intro" stranslate="quipus.miss.dsc2"></p>
+      </div>
+
+      <!-- Imagenes del Miss -->
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/miss/miss-principalImg.png"
+          title="Candidatas por Región"
+          alt="Candidatas por Región"
+          id="regionCandidates"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/miss/miss-secundaryImg.png"
+          title="Quipus Rooms"
+          alt="Quipus Rooms"
+          id="quipusRooms"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/miss/miss-principalMobileImg.png"
+          title="Quipus Rooms Mobile"
+          alt="Quipus Rooms Mobile"
+          type="phone"
+          id="responsiveQuipusRoom"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/miss/miss-mobileMenuGallery.png"
+          title="Candidatas por Región Mobile"
+          alt="Candidatas por Región Mobile"
+          type="phone"
+          id="regionCandidatesMobile"
+        ></app-image-screen>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/miss/miss-galleryMobile.png"
+          title="Candidatas"
+          alt="Candidatas"
+          type="phone"
+          id="candidates"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/miss/miss-galleryModalMobile.png"
+          title="Información candidata móvil"
+          alt="Información candidata móvil"
+          type="phone"
+          id="candidateInfo"
+        ></app-image-screen>
+      </div>
+
+      <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameMiss1">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleMiss1">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameMiss2">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleMiss2">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <app-color-palette [colors]="colorsMiss"></app-color-palette>
+
+      <!-- CARACTERISTICAS -->
+      <app-features-box [features]="missFeatures"></app-features-box>
+    </mat-tab>
+    <mat-tab label="Copas">
+      <!-- Las Copas -->
+      <h5 class="text-center text-3xl font-bold my-16">Las Copas</h5>
+      <div class="boxCopas border-2 p-4 mb-16">
+        <p class="text-justify intro" stranslate="quipus.copas.dsc1"></p>
+        <br />
+        <p class="text-justify intro" stranslate="quipus.copas.dsc2"></p>
+        <br />
+        <p class="text-justify intro" stranslate="quipus.copas.dsc3"></p>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-principalImg.png"
+          title="Home Las Copas"
+          alt="Home Las Copas"
+          id="copasHome"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-homeImg.png"
+          title="Botones de Eventos"
+          alt="Botones de Eventos"
+          id="buttonEvents"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-quipusList.png"
+          title="Lista Quipus Rooms"
+          alt="Lista Quipus Rooms"
+          id="quipusRoomList"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-pollsImg.png"
+          title="Lista participantes"
+          alt="Lista participantes"
+          id="userList"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-resultsImg.png"
+          title="Calendario con resultados Eurocopa"
+          alt="Calendario con resultados Eurocopa"
+          id="europeCalendar"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-results2Img.png"
+          title="Calendario con resultados Copa América"
+          alt="Calendario con resultados Copa América"
+          id="americaCalendar"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-matchesImg.png"
+          title="Puntos por Partidos"
+          alt="Puntos por Partidos"
+          id="matchesPointed"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-finalPhaseImg.png"
+          title="Puntos por partidos en la fase final"
+          alt="Puntos por partidos en la fase final"
+          id="finalPhaseMatches"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-homeMix.png"
+          title="Home brackets Mixto"
+          alt="Home brackets Mixto"
+          id="homeMixBrackets"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="my-16 flex justify-center borderedBox boxUnique">
+        <app-img-loader
+          src="../../../assets/images/project-images/quipus/copas/copas-brackets.png"
+          title="Brackets"
+          alt="Brackets"
+          id="brackets"
+          classes="borderedBox"
+          height="400px"
+          class="w-full"
+        ></app-img-loader>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/copas/copas-homeMobile.png"
+          title="Home Mobile"
+          alt="Home Mobile"
+          type="phone"
+          id="gomeMobileEvents"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/copas/copas-mobileResultsImg.png"
+          title="Calendario en móvil"
+          alt="Calendario en móvil"
+          type="phone"
+          id="calendarMobile"
+        ></app-image-screen>
+      </div>
+
+      <div class="boxMobile mb-16 justify-around">
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/copas/copas-homeMixMobile.png"
+          title="Home Mix Bracket móvil"
+          alt="Home Mix Bracket móvil"
+          type="phone"
+          id="bracketsHomeMobile"
+        ></app-image-screen>
+
+        <app-image-screen
+          urlimg="../../../assets/images/project-images/quipus/copas/copas-bracketsMobile.png"
+          title="Llenado de Brackets Móvil"
+          alt="Llenado de Brackets Móvil"
+          type="phone"
+          id="bracketsMobile"
+        ></app-image-screen>
+      </div>
+
+      <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.typoColor"></h2>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameCopas1">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleCopas1">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <div class="my-6">
+        <h3 class="text-3xl mb-2" id="typographyNameCopas2">NOMBRE DE LA TIPOGRAFIA</h3>
+        <p class="typographyExample" id="typographyExampleCopas2">
+          <app-letters></app-letters>
+        </p>
+      </div>
+
+      <app-color-palette [colors]="colorsCopas"></app-color-palette>
+
+      <!-- CARACTERISTICAS -->
+      <app-features-box [features]="copasFeatures"></app-features-box>
+    </mat-tab>
+  </mat-tab-group>
+</section>
+
+<!-- Proyectos varios -->
+<section class="mainBoxPadding">
+  <app-thanks-reading></app-thanks-reading>
+
+  <app-more-projects [projects]="ramdons"></app-more-projects>
+</section>

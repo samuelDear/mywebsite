@@ -10,14 +10,18 @@ if (environment.production) {
 }
 
 export const fontLoader = (param: Font): void => {
-  const headID = document.getElementsByTagName('head')[0];
-  const link = document.createElement('link');
-  link.type = 'text/css';
-  link.rel = 'stylesheet';
-  link.id = 'link' + param.name;
-  link.href = param.link;
+  // Validamos que no exista otra igual
+  const divExist = document.getElementById(`link${param.name}`);
+  if (!divExist) {
+    const headID = document.getElementsByTagName('head')[0];
+    const link = document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.id = `link${param.name}`;
+    link.href = param.link;
 
-  headID.appendChild(link);
+    headID.appendChild(link);
+  }
 };
 
 export const cleanFonts = (): void => {
@@ -45,6 +49,23 @@ export const setProjectFont = (families: Font[]): void => {
       }
     });
   }, 100);
+};
+
+export const deleteTypo = (): void => {
+  const links = document.getElementsByTagName('link');
+  let isOkey = false;
+
+  // Funcion para eliminar tipografias de proyectos
+  do {
+    isOkey = true;
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].id != '') {
+        //console.log(links[i]);
+        isOkey = false;
+        links[i].remove();
+      }
+    }
+  } while (!isOkey);
 };
 
 platformBrowserDynamic()

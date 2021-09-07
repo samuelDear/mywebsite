@@ -9,7 +9,7 @@ import { Font, Project, FeatureType, ColorType } from '../../services/common';
 })
 export class OrmComponent implements OnInit {
   families: Font[] = [
-    { name: 'Monserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
+    { name: 'Montserrat', link: `https://fonts.googleapis.com/css2?family=Montserrat&display=swap` },
     { name: 'Roboto', link: `https://fonts.googleapis.com/css2?family=Roboto&display=swap` },
   ];
 

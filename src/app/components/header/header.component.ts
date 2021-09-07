@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { deleteTypo } from 'src/main';
 import { navigationCustom } from '../../transition';
 
 @Component({
@@ -18,20 +19,7 @@ export class HeaderComponent implements OnInit {
       if (ev instanceof NavigationEnd) {
         this.showHeader = true;
 
-        const links = document.getElementsByTagName('link');
-        let isOkey = false;
-
-        // Funcion para eliminar tipografias de proyectos
-        do {
-          isOkey = true;
-          for (let i = 0; i < links.length; i++) {
-            if (links[i].id != '') {
-              //console.log(links[i]);
-              isOkey = false;
-              links[i].remove();
-            }
-          }
-        } while (!isOkey);
+        deleteTypo();
 
         if (this.headerNav) {
           this.animation();
