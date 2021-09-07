@@ -16,11 +16,6 @@ export class TraumappLandingComponent implements OnInit {
 
   ramdons: Project[] = [
     {
-      code: '',
-      name: 'My Portafolio',
-      resume: 'myWeb.resume',
-    },
-    {
       code: '/afxtrade',
       name: 'AFX Trade',
       resume: 'afxtrade.resume',
@@ -29,6 +24,11 @@ export class TraumappLandingComponent implements OnInit {
       name: 'TraumApp',
       code: '/traumapp',
       resume: 'traumapp.resume',
+    },
+    {
+      name: 'Quipus Events',
+      resume: 'quipus.resume',
+      code: '/quipus',
     },
   ];
 
