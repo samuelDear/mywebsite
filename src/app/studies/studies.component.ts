@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { cleanFonts } from '../../main';
@@ -9,8 +9,11 @@ import { Course } from '../services/common';
   templateUrl: './studies.component.html',
   styleUrls: ['./studies.component.scss'],
 })
-export class StudiesComponent implements OnInit, OnDestroy {
+export class StudiesComponent implements OnInit, OnDestroy, AfterViewInit {
   showButton = true;
+
+  dates: string[] = ['2017', '2018', '2019', '2020', '2021'];
+
   studies: Course[] = [
     {
       reference: '2021',
@@ -313,6 +316,9 @@ export class StudiesComponent implements OnInit, OnDestroy {
     window.scroll(0, 0);
     cleanFonts();
     window.addEventListener('scroll', () => this.selectDot(), true);
+  }
+
+  ngAfterViewInit(): void {
     this.activeDot('date2021');
   }
 
