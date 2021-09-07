@@ -104,31 +104,31 @@ export class QuipusComponent implements OnInit {
 
   colorsMiss: ColorType[] = [
     {
-      dsc: '',
+      dsc: '#1ECDF6',
     },
     {
-      dsc: '',
+      dsc: '#003F66',
     },
     {
-      dsc: '',
+      dsc: '#CDCDCD',
     },
     {
-      dsc: '',
+      dsc: '#006997',
     },
   ];
 
   colorsCopas: ColorType[] = [
     {
-      dsc: '',
+      dsc: '#7EAF00',
     },
     {
-      dsc: '',
+      dsc: '#006997',
     },
     {
-      dsc: '',
+      dsc: '#FFCE47',
     },
     {
-      dsc: '',
+      dsc: '#883B73',
     },
   ];
 
@@ -136,10 +136,6 @@ export class QuipusComponent implements OnInit {
     {
       title: 'quipus.commonFeatures.featureTitle1',
       dsc: 'quipus.commonFeatures.featureDsc1',
-    },
-    {
-      title: 'quipus.commonFeatures.featureTitle2',
-      dsc: 'quipus.commonFeatures.featureDsc2',
     },
     {
       title: 'quipus.commonFeatures.featureTitle3',
@@ -151,8 +147,17 @@ export class QuipusComponent implements OnInit {
     },
   ];
 
+  twitterFeature: FeatureType = {
+    title: 'quipus.commonFeatures.featureTitleTwitter',
+    dsc: 'quipus.commonFeatures.featureDscTwitter',
+  };
+
   jghFeatures: FeatureType[] = [
     ...this.commonFeatures,
+    {
+      title: 'quipus.commonFeatures.featureTitle2',
+      dsc: 'quipus.commonFeatures.featureDsc2',
+    },
     {
       title: 'quipus.jgh.featureTitle1',
       dsc: 'quipus.jgh.featureDsc1',
@@ -161,9 +166,25 @@ export class QuipusComponent implements OnInit {
 
   oscarsFeatures: FeatureType[] = [
     ...this.commonFeatures,
+    this.twitterFeature,
     {
       title: 'quipus.oscars.featureTitle1',
       dsc: 'quipus.oscars.featureDsc1',
+    },
+  ];
+
+  missFeatures: FeatureType[] = [...this.commonFeatures, this.twitterFeature];
+
+  copasFeatures: FeatureType[] = [
+    ...this.commonFeatures,
+    this.twitterFeature,
+    {
+      title: 'quipus.copas.featureTitle1',
+      dsc: 'quipus.copas.featureDsc1',
+    },
+    {
+      title: 'quipus.copas.featureTitle2',
+      dsc: 'quipus.copas.featureDsc2',
     },
   ];
 

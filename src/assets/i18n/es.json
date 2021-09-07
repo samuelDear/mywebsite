@@ -221,7 +221,13 @@
     "copas": {
       "dsc1": "El evento de las copas englobaba lo que era la Copa América y la Eurocopa. Desde su fase de grupos hasta su fase final. Para este evento se hicieron diferentes modos para cada evento.Cada evento contaba con un modo de fase de grupos y fase final, y un modo para solamente la fase final con los resultados reales ya obtenidos.En este caso el sistema de puntos variaba del evento, así como también se contó con un sistema de auto completado del pronóstico de resultados, el cual permitía que los usuarios con poco conocimiento pudieran completar la quiniela con ayuda de un pronóstico automatizado.",
       "dsc2": "Cada evento contaba con un modo de fase de grupos y fase final, y un modo para solamente la fase final con los resultados reales ya obtenidos.",
-      "dsc3": "En este caso el sistema de puntos variaba del evento, así como también se contó con un sistema de auto completado del pronóstico de resultados, el cual permitía que los usuarios con poco conocimiento pudieran completar la quiniela con ayuda de un pronóstico automatizado."
+      "dsc3": "En este caso el sistema de puntos variaba del evento, así como también se contó con un sistema de auto completado del pronóstico de resultados, el cual permitía que los usuarios con poco conocimiento pudieran completar la quiniela con ayuda de un pronóstico automatizado.",
+      "featureTitle1": "Brackets",
+      "featureDsc1": "Para la fase final se desarrollaron unos brackets para que la experiencia de llenado fuera más agradable. Estos brackets fueron desarrollados para soportar cualquier partido y resultado.",
+      "featureTitle2": "Predictor",
+      "featureDsc2": "Para la fase de grupos, el usuario tenia que ir partido por partido llenando el resultado, esto a algunos les gusta y a otros no, es por ello que se decidió por un llenado automático el cual estaba basado en datos estadísticos para su llenado.",
+      "featureTitleTwitter": "Twitter Timeline",
+      "featureDscTwitter": "Para estar al tanto de las novedades del evento, se cuenta con Timeline de twitter donde puedes ver los tweets referentes al evento."
     },
     "commonFeatures": {
       "featureTitle1": "Responsive Design",

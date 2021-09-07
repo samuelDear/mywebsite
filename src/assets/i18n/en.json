@@ -221,7 +221,11 @@
     "copas": {
       "dsc1": "The cup event included what was the America's Cup and the European Championship. From their group stage to their final stage. For this event different modes were made for each event. Each event had a group stage and final stage mode, and a mode for only the final stage with the actual results already obtained. In this case, the points system varied from the event, as well as an auto-completion system for the results forecast, which allowed users with little knowledge to complete the pool with the help of an automated forecast.",
       "dsc2": "Each event had a group stage and final stage mode, and a mode for only the final stage with the actual results already obtained.",
-      "dsc3": "In this case, the points system varied from the event, as well as an auto-completion system for the results forecast, which allowed users with little knowledge to complete the pool with the help of an automated forecast."  
+      "dsc3": "In this case, the points system varied from the event, as well as an auto-completion system for the results forecast, which allowed users with little knowledge to complete the pool with the help of an automated forecast.",
+      "featureTitle1": "Brackets",
+      "featureDsc1": "For the final phase, brackets were developed to make the filling experience more pleasant. These brackets were developed to withstand any match and result.",
+      "featureTitle2": "Predictor",
+      "featureDsc2": "For the group stage, the user had to go game by game filling in the result, some like this and others not, that is why he decided on an automatic filling which was based on statistical data for filling."
     },
     "commonFeatures": {
       "featureTitle1": "Responsive Design",
@@ -231,7 +235,9 @@
       "featureTitle3": "Firebase",
       "featureDsc3": "To enter with Gmail, it was done through Firebase for its integration.",
       "featureTitle4": "CMS",
-      "featureDsc4": "The event goes through different stages, from when people participate until the results of the event are seen as such. That is why these stages must be managed from a CMS, as well as monitoring the results and selections."
+      "featureDsc4": "The event goes through different stages, from when people participate until the results of the event are seen as such. That is why these stages must be managed from a CMS, as well as monitoring the results and selections.",
+      "featureTitleTwitter": "Twitter Timeline",
+      "featureDscTwitter": "To keep up with the news of the event, there is a Twitter Timeline where you can see the tweets related to the event."
     }
   },
   "knowlegde": {
