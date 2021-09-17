@@ -1,18 +1,13 @@
 <div class="mainBox">
-  <div class="text-center">
-    <h1 class="text-4xl font-bold">ORM</h1>
-    <a href="http://totalsoftware.la/~ormv/prd/customer" target="_blank">
-      <button mat-button class="btnVisitProject">
-        <span stranslate="project.visitProject"></span>
-      </button>
-    </a>
-    <p class="text-center my-5 dsc" stranslate="orm.dsc"></p>
-  </div>
-  <div class="justify-between rolAgencyDate mt-2">
-    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="orm.role"></span></p>
-    <p class="my-1"><span stranslate="project.agency"></span><span> Totalsoftware </span></p>
-    <p class="my-1"><span stranslate="project.date"></span> 10/2019</p>
-  </div>
+  <app-title-projects
+    projectName="ORM"
+    dsc="orm.dsc"
+    role="orm.role"
+    agency="Totalsoftware"
+    date="10-2019"
+    buttonType="otherProject"
+    projectLink="http://totalsoftware.la/~ormv/prd/customer"
+  ></app-title-projects>
 
   <!-- Imagen principal del proyecto -->
   <div class="my-16 flex justify-center borderedBox">

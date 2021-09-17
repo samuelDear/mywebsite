@@ -1,25 +1,14 @@
 <!-- Ficha resumen -->
 <section class="resumeSection entryPage" id="resumeSection">
-  <div class="text-center">
-    <h1 class="text-4xl font-bold">
-      <a href="https://play.google.com/store/apps/details?id=com.traumapp" target="_blank" class="titleLinkPlayStore">
-        TraumApp <mat-icon aria-hidden="false" aria-label="link">mobile_friendly</mat-icon>
-      </a>
-    </h1>
-    <a href="https://play.google.com/store/apps/details?id=com.traumapp" target="_blank">
-      <button mat-button class="btnVisitProject">
-        <span stranslate="project.visitProject"></span>
-      </button>
-    </a>
-    <p class="text-center my-5 dsc" stranslate="traumapp.dsc"></p>
-  </div>
-
-  <!-- Subtitulo del proyecto -->
-  <div class="justify-between rolAgencyDate mt-2">
-    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="traumapp.role"></span></p>
-    <p class="my-1"><span stranslate="project.agency"></span> DearSoft Studios</p>
-    <p class="my-1"><span stranslate="project.date"></span> 06-2021</p>
-  </div>
+  <app-title-projects
+    projectName="TraumApp"
+    dsc="traumapp.dsc"
+    role="traumapp.role"
+    agency="DearSoft Studios"
+    date="06-2021"
+    buttonType="otherProject"
+    projectLink="https://play.google.com/store/apps/details?id=com.traumapp"
+  ></app-title-projects>
 
   <!-- Imagen principal del proyecto -->
   <div class="my-16 flex justify-center boxUnique">

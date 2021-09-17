@@ -1,0 +1,20 @@
+<div class="text-center">
+  <h1 class="text-4xl font-bold">{{ projectName }}</h1>
+  <ng-container [ngSwitch]="buttonType">
+    <a *ngSwitchCase="'otherProject'" [href]="projectLink" target="_blank">
+      <button mat-button class="btnVisitProject">
+        <span stranslate="project.visitProject"></span>
+      </button>
+    </a>
+
+    <button *ngSwitchCase="'portfolio'" mat-button class="btnVisitProject" (click)="navigateToHome()">?</button>
+  </ng-container>
+  <p class="text-center my-5 dsc" [stranslate]="dsc"></p>
+</div>
+
+<!-- Subtitulo del proyecto -->
+<div class="justify-between rolAgencyDate mt-2">
+  <p class="my-1 dscTags"><span stranslate="project.role"></span>&nbsp;<span [stranslate]="role"></span></p>
+  <p class="my-1 dscTags text-center"><span stranslate="project.agency"></span> {{ agency }}</p>
+  <p class="my-1 dscTags textRight"><span stranslate="project.date"></span> {{ date }}</p>
+</div>

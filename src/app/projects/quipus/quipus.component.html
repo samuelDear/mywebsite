@@ -1,21 +1,14 @@
 <section class="mainBoxPadding">
   <!-- Ficha resumen -->
-  <div class="text-center">
-    <h1 class="text-4xl font-bold">Quipus Events</h1>
-    <a href="https://quipus.app" target="_blank">
-      <button mat-button class="btnVisitProject">
-        <span stranslate="project.visitProject"></span>
-      </button>
-    </a>
-    <p class="text-center my-5 dsc" stranslate="quipus.dsc"></p>
-  </div>
-
-  <!-- Subtitulo del proyecto -->
-  <div class="justify-between rolAgencyDate mt-2">
-    <p class="my-1 dscTags"><span stranslate="project.role"></span>&nbsp;<span stranslate="quipus.role"></span></p>
-    <p class="my-1 dscTags text-center"><span stranslate="project.agency"></span> 3DLink</p>
-    <p class="my-1 dscTags textRight"><span stranslate="project.date"></span> 01-2021 / 06-2021</p>
-  </div>
+  <app-title-projects
+    projectName="Quipus Events"
+    dsc="quipus.dsc"
+    role="quipus.role"
+    agency="3DLink"
+    date="01-2021 / 06-2021"
+    buttonType="otherProject"
+    projectLink="https://quipus.app"
+  ></app-title-projects>
 
   <!-- Imagen principal del proyecto -->
   <div class="my-16 flex justify-center borderedBox boxUnique">

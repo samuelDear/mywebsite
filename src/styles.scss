@@ -580,6 +580,14 @@ input:-webkit-autofill {
   min-width: 130px !important;
 }
 
+.dscTags {
+  width: 33%;
+}
+
+.textRight {
+  text-align: right;
+}
+
 @media only screen and (max-width: 1224px) {
   .socialMedia {
     height: 45px;
@@ -744,6 +752,15 @@ input:-webkit-autofill {
   .rolAgencyDate {
     flex-direction: column;
     align-items: center;
+  }
+
+  .textRight {
+    text-align: center;
+  }
+
+  .dscTags {
+    width: 100%;
+    text-align: center;
   }
 
   .listDetails li {
