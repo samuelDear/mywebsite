@@ -37,6 +37,7 @@ import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-l
 import { ImageScreenComponent } from './components/image-screen/image-screen.component';
 import { TypographyLettersComponent } from './components/typographyLetters/typography-letters.component';
 import { QuipusComponent } from './projects/quipus/quipus.component';
+import { TitleProjectsComponent } from './components/title-projects/title-projects.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -66,6 +67,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ImageScreenComponent,
     QuipusComponent,
     TypographyLettersComponent,
+    TitleProjectsComponent,
   ],
   imports: [
     BrowserModule,

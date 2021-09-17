@@ -1,16 +1,14 @@
 <div class="mainBox">
   <!-- Titulo de AFX trade y mini descripcion-->
-  <div class="text-center">
-    <h1 class="text-4xl font-bold">AFX TRADE</h1>
-    <p class="text-center my-5 dsc" stranslate="afxtrade.dsc"></p>
-  </div>
-
-  <!-- Detalles del proyecto -->
-  <div class="justify-between rolAgencyDate mt-2">
-    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="afxtrade.role"></span></p>
-    <p class="my-1"><span stranslate="project.agency"></span><span> Totalsoftware </span></p>
-    <p class="my-1"><span stranslate="project.date"></span> 12/2020</p>
-  </div>
+  <app-title-projects
+    projectName="AFX TRADE"
+    dsc="afxtrade.dsc"
+    role="afxtrade.role"
+    agency="Totalsoftware"
+    date="12-2020"
+    buttonType="otherProject"
+    projectLink="https://afx.trade/ts/app/"
+  ></app-title-projects>
 
   <!-- Imagen principal -->
   <div class="my-16 flex justify-center borderedBox borderImages">

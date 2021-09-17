@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { navigationCustom } from 'src/app/transition';
 
 import { setProjectFont } from '../../../main';
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
@@ -82,11 +84,15 @@ export class OwnportfolioComponent implements OnInit {
     },
   ];
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  // eslint-disable-next-line
+  constructor(public router: Router) {}
 
   ngOnInit(): void {
     window.scroll(0, 0);
     setProjectFont(this.families);
+  }
+
+  navigateToHome(): void {
+    navigationCustom(() => this.router.navigate(['/']));
   }
 }

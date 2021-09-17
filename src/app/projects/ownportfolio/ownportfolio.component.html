@@ -1,13 +1,12 @@
 <div class="mainBox">
-  <div class="text-center">
-    <h1 class="text-4xl font-bold">My Portfolio</h1>
-    <p class="text-center my-5 dsc" stranslate="myWeb.dsc"></p>
-  </div>
-  <div class="justify-between rolAgencyDate mt-2">
-    <p class="my-1"><span stranslate="project.role"></span>&nbsp;<span stranslate="myWeb.role"></span></p>
-    <p class="my-1"><span stranslate="project.agency"></span>&nbsp;<span stranslate="myWeb.agency"></span></p>
-    <p class="my-1"><span stranslate="project.date"></span> 11/2020</p>
-  </div>
+  <app-title-projects
+    projectName="My Portfolio"
+    dsc="myWeb.dsc"
+    role="myWeb.role"
+    agency="Personal Project"
+    date="11-2020"
+    buttonType="portfolio"
+  ></app-title-projects>
 
   <!-- Imagen principal del proyecto -->
   <div class="my-16 flex justify-center borderedBox boxUnique">
