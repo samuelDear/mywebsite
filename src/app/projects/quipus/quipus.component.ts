@@ -27,7 +27,7 @@ export class QuipusComponent implements OnInit {
       resume: 'traumapp.resume',
     },
     {
-      code: '/traumapp-landing',
+      code: '/traumappLanding',
       name: 'TraumApp Landing',
       resume: 'traumappLanding.resume',
     },
