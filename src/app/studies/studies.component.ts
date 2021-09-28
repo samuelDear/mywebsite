@@ -18,6 +18,71 @@ export class StudiesComponent implements OnInit, OnDestroy, AfterViewInit {
     {
       reference: '2021',
       datecreated: {
+        month: '09',
+        year: '2021',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso React: Patrones de Rendes y Composición',
+      },
+      en: {
+        title: 'React: Render Patterns and Composition Course',
+      },
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2021',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso Introdución React Native',
+      },
+      en: {
+        title: 'React Native Introduction Course',
+      },
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2021',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso React 2021',
+      },
+      en: {
+        title: '2021 React Course',
+      },
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2021',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso Asincronismo con JavaScript',
+      },
+      en: {
+        title: 'Asynchrony with JavaScript Course',
+      },
+    },
+    {
+      datecreated: {
+        month: '09',
+        year: '2021',
+      },
+      institute: 'Platzi',
+      es: {
+        title: 'Curso Closures y Scope en JavaScript',
+      },
+      en: {
+        title: 'Closures And Scope in JavaScript Course',
+      },
+    },
+    {
+      datecreated: {
         month: '01',
         year: '2021',
       },
@@ -30,17 +95,16 @@ export class StudiesComponent implements OnInit, OnDestroy, AfterViewInit {
       },
     },
     {
-      reference: '2021',
       datecreated: {
         month: '01',
         year: '2021',
       },
       institute: 'Platzi',
       es: {
-        title: 'Curso de ReactJs',
+        title: 'Curso de ReactJs 2019',
       },
       en: {
-        title: 'ReactJs Course',
+        title: '2019 ReactJs Course',
       },
     },
     {
