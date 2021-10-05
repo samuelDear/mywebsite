@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { navigationCustom } from '../transition';
 import { EmailService } from '../services/email/email.service';
 import { cleanFonts } from '../../main';
-import { ProjectHome, emailForm, responseEmail } from '../services/common';
+import { ProjectHome, emailForm, responseEmail, ExperimentType } from '../services/common';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   showButton = true;
   emailSended = false;
   isLoadingBtn = false;
+  showArrowLeft = false;
+  showArrowRight = false;
   projects: ProjectHome[] = [
     {
       name: 'FJC Intranet',
@@ -54,6 +56,19 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
   ];
 
+  experiments: ExperimentType[] = [
+    {
+      name: 'Todo List App With React + TS',
+      img: 'assets/images/experiments/todoListReactTs.png',
+      url: 'https://samueldear.github.io/react-course/',
+    },
+    {
+      name: 'TraumApp Initial Loading for Mobile',
+      img: 'assets/images/experiments/traumappLoader.png',
+      url: 'https://samueldear.github.io/traumapp-loader/',
+    },
+  ];
+
   contactForm = this.formBuilder.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
@@ -89,6 +104,23 @@ export class HomeComponent implements OnInit, OnDestroy {
       imgTramp.addEventListener('load', function () {
         this.remove();
       });
+    }
+
+    const expBox: HTMLElement = <HTMLElement>document.getElementById('expBox');
+    if (expBox !== undefined) {
+      setTimeout(() => {
+        if (expBox.scrollLeft === 0) {
+          this.showArrowLeft = false;
+        } else {
+          this.showArrowLeft = true;
+        }
+
+        if (expBox.scrollLeft + expBox.offsetWidth == expBox.scrollWidth) {
+          this.showArrowRight = false;
+        } else {
+          this.showArrowRight = true;
+        }
+      }, 500);
     }
   }
 
@@ -141,6 +173,30 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   navigation(ruta: string): void {
     navigationCustom(() => this.router.navigateByUrl(ruta));
+  }
+
+  experimentScroll(dir: string): void {
+    const expBox: HTMLElement = <HTMLElement>document.getElementById('expBox');
+
+    if (dir === 'right') {
+      expBox.scrollTo({ left: expBox.offsetWidth + expBox.scrollLeft, behavior: 'smooth' });
+    } else {
+      expBox.scrollTo({ left: expBox.scrollLeft - expBox.offsetWidth, behavior: 'smooth' });
+    }
+
+    setTimeout(() => {
+      if (expBox.scrollLeft === 0) {
+        this.showArrowLeft = false;
+      } else {
+        this.showArrowLeft = true;
+      }
+
+      if (expBox.scrollLeft + expBox.offsetWidth == expBox.scrollWidth) {
+        this.showArrowRight = false;
+      } else {
+        this.showArrowRight = true;
+      }
+    }, 500);
   }
 
   onSubmit(): void {
