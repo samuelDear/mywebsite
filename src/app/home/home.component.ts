@@ -62,6 +62,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       img: 'assets/images/experiments/todoListReactTs.png',
       url: 'https://samueldear.github.io/react-course/',
     },
+    {
+      name: 'TraumApp Initial Loading for Mobile',
+      img: 'assets/images/experiments/traumappLoader.png',
+      url: 'https://samueldear.github.io/traumapp-loader/',
+    },
   ];
 
   contactForm = this.formBuilder.group({
