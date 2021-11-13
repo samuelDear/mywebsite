@@ -25,7 +25,7 @@
       >
         <h1 class="projectTitle">{{ project.name }}</h1>
         <p class="descProject text-justify leading-none" [stranslate]="project.resume"></p>
-        <a class="linkProject flex" stranslate="home.linkProject"></a>
+        <span class="linkProject flex" stranslate="home.linkProject"></span>
       </div>
     </div>
 
@@ -209,9 +209,18 @@
           *ngFor="let exp of experiments; let i = index"
           [href]="exp.url"
           target="_blank"
+          rel="noopener"
           [ngClass]="'expBox' + (i > 0 ? ' nextFirstExp' : '')"
         >
-          <img [src]="exp.img" [alt]="exp.name" [title]="exp.name" />
+          <app-img-loader
+            [src]="exp.img"
+            [title]="exp.name"
+            [alt]="exp.name"
+            [alt]="exp.name"
+            classes="imgExperiment"
+            height="auto"
+            class="w-full"
+          ></app-img-loader>
         </a>
       </div>
       <div class="arrowBox arrowBoxRight" *ngIf="showArrowRight" (click)="experimentScroll('right')">
