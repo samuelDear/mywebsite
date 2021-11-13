@@ -38,6 +38,8 @@ import { ImageScreenComponent } from './components/image-screen/image-screen.com
 import { TypographyLettersComponent } from './components/typographyLetters/typography-letters.component';
 import { QuipusComponent } from './projects/quipus/quipus.component';
 import { TitleProjectsComponent } from './components/title-projects/title-projects.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -88,6 +90,12 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
       },
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
   providers: [],
