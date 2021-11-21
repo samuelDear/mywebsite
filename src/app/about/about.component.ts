@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { cleanFonts } from '../../main';
+import { I18Service } from '../services/i18n-service/i18n-service.service';
 
 @Component({
   selector: 'app-about',
@@ -11,11 +12,15 @@ import { cleanFonts } from '../../main';
 export class AboutComponent implements OnInit {
   showButton = false;
   // eslint-disable-next-line no-unused-vars
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, private i18Service: I18Service) {
     window.scroll(0, 0);
+    translate.use(this.i18Service.getLanguage());
   }
 
   ngOnInit(): void {
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
     cleanFonts();
   }
 

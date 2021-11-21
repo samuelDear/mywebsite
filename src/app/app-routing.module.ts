@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { SlideMenuComponent } from './slide-menu/slide-menu.component';
-import { AboutComponent } from './about/about.component';
 import { StudiesComponent } from './studies/studies.component';
 import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 import { OrmComponent } from './projects/orm/orm.component';
@@ -14,8 +12,7 @@ import { QuipusComponent } from './projects/quipus/quipus.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'menu', component: SlideMenuComponent, pathMatch: 'full' },
-  { path: 'about', component: AboutComponent, pathMatch: 'full' },
+  { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule), pathMatch: 'full' },
   { path: 'studies', component: StudiesComponent, pathMatch: 'full' },
   { path: 'FJCIntranet', component: FjcintranetComponent, pathMatch: 'full' },
   { path: 'portfolio', component: OwnportfolioComponent, pathMatch: 'full' },
@@ -24,6 +21,11 @@ const routes: Routes = [
   { path: 'traumapp', component: TraumappComponent, pathMatch: 'full' },
   { path: 'traumappLanding', component: TraumappLandingComponent, pathMatch: 'full' },
   { path: 'quipus', component: QuipusComponent, pathMatch: 'full' },
+  {
+    path: 'menu',
+    loadChildren: () => import('./slide-menu/slide-menu.module').then(m => m.SlideMenuModule),
+    pathMatch: 'full',
+  },
   { path: '**', redirectTo: '' },
 ];
 

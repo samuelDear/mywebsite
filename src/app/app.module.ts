@@ -9,8 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { SlideMenuComponent } from './slide-menu/slide-menu.component';
-import { AboutComponent } from './about/about.component';
 import { StudiesComponent } from './studies/studies.component';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -21,11 +19,11 @@ import { ComponentsModule } from './components/components.module';
 import { ProjectsModule } from './projects/projects.module';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SlideMenuComponent, AboutComponent, StudiesComponent],
+  declarations: [AppComponent, HomeComponent, StudiesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -41,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
       },
+      isolate: true,
     }),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,

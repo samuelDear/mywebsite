@@ -11,13 +11,13 @@
     ></app-img-loader>
   </div>
   <div class="dsc">
-    <h2 class="tag title" stranslate="about.welcome"></h2>
-    <p class="mb-4" stranslate="about.intro"></p>
-    <p class="mb-4" stranslate="about.whatILike"></p>
-    <p class="mb-4" stranslate="about.tec"></p>
-    <p class="mb-4" stranslate="about.keepingUp"></p>
-    <p class="mb-4" stranslate="about.contact"></p>
-    <p class="mb-4" stranslate="about.spam"></p>
+    <h2 class="tag title">{{ 'welcome' | translate }}</h2>
+    <p class="mb-4">{{ 'presentation' | translate }}<br />{{ 'intro' | translate }}</p>
+    <p class="mb-4">{{ 'whatILike' | translate }}</p>
+    <p class="mb-4">{{ 'tec' | translate }}</p>
+    <p class="mb-4">{{ 'keepingUp' | translate }}</p>
+    <p class="mb-4">{{ 'contact' | translate }}</p>
+    <p class="mb-4">{{ 'spam' | translate }}</p>
 
     <div class="cvBox text-center p-6 cursor-pointer" (click)="downloadCv()">
       <p class="cvText">Curriculum Vitae (PDF)</p>
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="mt-12 text-center">
-      <span stranslate="copy" class="copyri"></span>
+      <span class="copyri">{{ 'copy' | translate }}</span>
     </div>
   </div>
 </div>

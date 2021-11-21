@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 
 import { cleanFonts } from '../../main';
 import { navigationCustom } from '../transition';
+import { I18Service } from '../services/i18n-service/i18n-service.service';
 
 @Component({
   selector: 'app-slide-menu',
@@ -14,17 +15,19 @@ export class SlideMenuComponent implements OnInit {
   showButton = false;
   nav = true;
   currentLang: string;
+
   // eslint-disable-next-line no-unused-vars
-  constructor(public translate: TranslateService, public router: Router) {
+  constructor(public translate: TranslateService, public router: Router, private i18Service: I18Service) {
     window.scroll(0, 0);
-    if (translate.currentLang == 'es') {
-      this.currentLang = 'es';
-    } else {
-      this.currentLang = 'en';
-    }
+    this.currentLang = this.i18Service.getLanguage();
+    translate.use(this.i18Service.getLanguage());
   }
 
   ngOnInit(): void {
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+      this.currentLang = locale;
+    });
     cleanFonts();
   }
 
@@ -34,5 +37,9 @@ export class SlideMenuComponent implements OnInit {
 
   navigationFragment(ruta: string, fragment: string): void {
     navigationCustom(() => this.router.navigate([ruta], { fragment: fragment }));
+  }
+
+  changeLocale(locale: string): void {
+    this.i18Service.changeLocale(locale);
   }
 }

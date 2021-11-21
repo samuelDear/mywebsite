@@ -258,14 +258,6 @@
     "contact": "Si tienes un proyecto, si estás interesado en una colaboración o simplemente quieres saludar, no dudes en enviarme un correo electrónico a contact@samueldear.com.",
     "spam": "También puedes saber más sobre mí aquí:"
   },
-  "slideMenu":{
-    "homeLink": "INICIO",
-    "projectsLink": "PROYECTOS",
-    "knowlegdeLink": "CONOCIMIENTOS",
-    "whoDesigned": "¿QUIÉN DISEÑO ESTO?",
-    "aboutLink": "ACERCA DE MÍ",
-    "studies": "ESTUDIOS"
-  },
   "project": {
     "role": "Rol:",
     "agency": "Empresa:",
