@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
 
 import { setProjectFont } from '../../../main';
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
@@ -15,24 +17,24 @@ export class OrmComponent implements OnInit {
 
   features: FeatureType[] = [
     {
-      title: 'orm.feature1title',
-      dsc: 'orm.feature1',
+      title: 'feature1title',
+      dsc: 'feature1',
     },
     {
-      title: 'orm.feature3title',
-      dsc: 'orm.feature3',
+      title: 'feature3title',
+      dsc: 'feature3',
     },
     {
-      title: 'orm.feature4title',
-      dsc: 'orm.feature4',
+      title: 'feature4title',
+      dsc: 'feature4',
     },
     {
-      title: 'orm.feature5title',
-      dsc: 'orm.feature5',
+      title: 'feature5title',
+      dsc: 'feature5',
     },
     {
-      title: 'orm.feature6title',
-      dsc: 'orm.feature6',
+      title: 'feature6title',
+      dsc: 'feature6',
     },
   ];
 
@@ -69,11 +71,16 @@ export class OrmComponent implements OnInit {
     },
   ];
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  constructor(public translate: TranslateService, private i18Service: I18Service) {
+    translate.use(i18Service.getLanguage());
+  }
 
   ngOnInit(): void {
     window.scroll(0, 0);
     setProjectFont(this.families);
+
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
   }
 }
