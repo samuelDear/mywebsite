@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { cleanFonts } from '../../main';
 import { Course } from '../services/common';
+import { I18Service } from '../services/i18n-service/i18n-service.service';
 
 @Component({
   selector: 'app-studies',
@@ -374,12 +375,18 @@ export class StudiesComponent implements OnInit, OnDestroy, AfterViewInit {
   ];
 
   // eslint-disable-next-line no-unused-vars
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService, private i18Service: I18Service) {
+    translate.use(this.i18Service.getLanguage());
+  }
 
   ngOnInit(): void {
     window.scroll(0, 0);
     cleanFonts();
     window.addEventListener('scroll', () => this.selectDot(), true);
+
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
   }
 
   ngAfterViewInit(): void {
