@@ -11,10 +11,10 @@ import { I18Service } from '../services/i18n-service/i18n-service.service';
 })
 export class AboutComponent implements OnInit {
   showButton = false;
-  // eslint-disable-next-line no-unused-vars
+
   constructor(public translate: TranslateService, private i18Service: I18Service) {
     window.scroll(0, 0);
-    translate.use(this.i18Service.getLanguage());
+    translate.use(i18Service.getLanguage());
   }
 
   ngOnInit(): void {

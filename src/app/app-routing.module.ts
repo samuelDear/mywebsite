@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { FjcintranetComponent } from './projects/fjcintranet/fjcintranet.component';
 import { OrmComponent } from './projects/orm/orm.component';
 import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
@@ -17,7 +16,11 @@ const routes: Routes = [
     loadChildren: () => import('./studies/studies.module').then(m => m.StudiesModule),
     pathMatch: 'full',
   },
-  { path: 'FJCIntranet', component: FjcintranetComponent, pathMatch: 'full' },
+  {
+    path: 'FJCIntranet',
+    loadChildren: () => import('./projects/fjcintranet/fjcintranet.module').then(m => m.FjcintranetModule),
+    pathMatch: 'full',
+  },
   { path: 'portfolio', component: OwnportfolioComponent, pathMatch: 'full' },
   { path: 'ormv', component: OrmComponent, pathMatch: 'full' },
   { path: 'afxtrade', component: AfxtradeComponent, pathMatch: 'full' },
