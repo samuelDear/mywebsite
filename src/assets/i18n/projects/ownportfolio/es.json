@@ -1,0 +1,48 @@
+{
+  "resume": "Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario.",
+  "dsc": "Mi propio sitio web donde enseño las cosas que hago",
+  "agency": "Proyecto Personal",
+  "role": "Dueño/Desarrollador",
+  "intro": "El diseño de mi portafolio fue hecho por mi mismo, desde el inicio quería que fuera un sitio web en modo oscuro, ya que no soy muy fanático del modo claro. También, que contara con animaciones sencillas para no saturar la experiencia del usuario.",
+  "intro2": "Durante el desarrollo se fueron agregando detalles que no estaban en el punto inicial para hacer una experiencia más fluida. Un sitio web que aprovecha el uso de SVGs para un mejor renderizado y de una navegación sencilla para un mejor flujo en la página web.",
+  "feature1title": "Diseño Web Responsivo",
+  "feature1": "El diseño de la página es escalable a dispositivos móviles y a cualquier resolución, comportándose de manera eficiente en cualquier dispositivo y permitiendo que cualquier usuario pueda disfrutar de la página web.",
+  "feature2title": "Uso de SVGs",
+  "feature2": "La página web cuenta con imágenes SVG para mejorar los tiempos de cargas y que la descarga sea más eficiente. También, para que la calidad de las imágenes sea la misma en cualquier pantalla.",
+  "feature3title": "Animaciones Sencillas",
+  "feature3": "Cada detalle de la página cuenta con una animación sencilla para no sobrecargar el sitio con animaciones. Es por ello que cuenta con animaciones sencillas estilo fade-out, fade-in y slide.",
+  "feature4title": "Transición interactiva",
+  "feature4": "Para la navegación entre pantallas, se desarrollo una transición sencilla para una mejor experiencia a la hora de navegar entre las pantallas. También, a la hora de navegar puedes determinar donde te encuentras por la forma del hamburguer-menu.",
+  "feature5title": "Diseño Web Amigable",
+  "feature5": "La paleta de colores es bastante sencilla, ya que el tema principal es modo oscuro. Cuenta con colores sencillos y elementos sencillos para que sea un sitio amigable.",
+  "feature6title": "Acerca de la página",
+  "feature6": "Para mostrar las redes sociales, decidí colocar un pie de página en el que se pudieran visualizar de mejor manera, igual al momento de ver más sobre mí, puedes encontrar mi redes sociales.",
+  "feature7title": "Diseño Personalizado Para Cada Proyecto",
+  "feature7": "Cada página de un proyecto, tiene elementos personalizados para que los detalles de los proyectos puedan ser mejor apreciados.",
+  "feature8title": "CI/CD",
+  "feature8": "Para los despliegues automáticos se utiliza GitHub Actions para hacer el paquete del proyecto y luego se transfieren los archivos por medio de FTP hacia el servidor para el despliegue de la página web.",
+  "project": {
+    "role": "Rol:",
+    "agency": "Empresa:",
+    "date": "Fecha:",
+    "introTitle": "Introducción",
+    "visualRes": "Resultado Visual",
+    "typoColor": "Tipografía - Color",
+    "features": "Características",
+    "thanks": "Gracias por leer!",
+    "hereMore": "Aquí puede saber más ",
+    "aboutLink": "acerca de mí",
+    "otherWork": "Puedes ver mis otros trabajos!",
+    "visitProject": "Visitar"
+  },
+  "orm": {
+    "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. Un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas."
+  },
+  "fjcintranet": {
+    "resume": "Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001."
+  },
+  "afxtrade": {
+    "resume": "Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda."
+  },
+  "copy": "© 2021, Todos los derechos reservados."
+}

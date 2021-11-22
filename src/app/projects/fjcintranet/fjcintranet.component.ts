@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
 
 import { setProjectFont } from '../../../main';
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
@@ -17,24 +19,24 @@ export class FjcintranetComponent implements OnInit {
 
   features: FeatureType[] = [
     {
-      title: 'fjcintranet.feature1title',
-      dsc: 'fjcintranet.feature1',
+      title: 'feature1title',
+      dsc: 'feature1',
     },
     {
-      title: 'fjcintranet.feature2title',
-      dsc: 'fjcintranet.feature2',
+      title: 'feature2title',
+      dsc: 'feature2',
     },
     {
-      title: 'fjcintranet.feature3title',
-      dsc: 'fjcintranet.feature3',
+      title: 'feature3title',
+      dsc: 'feature3',
     },
     {
-      title: 'fjcintranet.feature4title',
-      dsc: 'fjcintranet.feature4',
+      title: 'feature4title',
+      dsc: 'feature4',
     },
     {
-      title: 'fjcintranet.feature5title',
-      dsc: 'fjcintranet.feature5',
+      title: 'feature5title',
+      dsc: 'feature5',
     },
   ];
 
@@ -71,14 +73,19 @@ export class FjcintranetComponent implements OnInit {
     },
   ];
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  constructor(public translate: TranslateService, private i18Service: I18Service) {
+    translate.use(i18Service.getLanguage());
+  }
 
   ngOnInit(): void {
     window.scroll(0, 0);
     const logoJacintoConvit = document.getElementById('logoJacintoConvit');
     logoJacintoConvit !== null && this.createObserver(logoJacintoConvit);
     setProjectFont(this.families);
+
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
   }
 
   createObserver(element: HTMLElement): void {

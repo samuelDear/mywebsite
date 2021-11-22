@@ -1,0 +1,48 @@
+{
+  "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience.",
+  "dsc": "My own website where I show the things what I do",
+  "agency": "Own project",
+  "role": "Owner/Dev",
+  "intro": "The design of my portfolio was made by myself, from the beginning I wanted it to be a website in dark mode, since I am not a fan of light mode. Also, that it will have simple animations so as not to saturate the user experience.",
+  "intro2": "During development, details that were not at the initial point were added to make a more fluid experience. A website that takes advantage of the use of SVGs for better rendering and easy navigation for a better flow on the web page.",
+  "feature1title": "Responsive Web Design",
+  "feature1": "The design of the page is scalable to mobile devices and any resolution, behaving efficiently on any device and allowing any user to enjoy the web page.",
+  "feature2title": "Use of SVG's",
+  "feature2": "The website has SVG images to improve loading times and make downloading more efficient. Also, so that the quality of the images is the same on any screen.",
+  "feature3title": "Simple Animations",
+  "feature3": "Every detail of the page has a simple animation so as not to overload the site with animations. That is why it has simple fade-out, fade-in and slide style animations.",
+  "feature4title": "Interactive transition",
+  "feature4": "For navigation between screens, a simple transition was created for a better experience when navigating between screens. Also, when browsing you can determine where you are by the shape of the hamburger-menu.",
+  "feature5title": "Friendly Website",
+  "feature5": "The color palette is pretty straightforward, as the main theme is dark mode. It has simple colors and simple elements to make it a friendly site.",
+  "feature6title": "About Page",
+  "feature6": "To show the social networks, I decided to place a footer in which they could be viewed in a better way, just as when you see more about me, you can find my social networks.",
+  "feature7title": "Custom Design for Each Project",
+  "feature7": "Each page of a project has personalized elements so that the details of the projects can be better appreciated.",
+  "feature8title": "CI/CD",
+  "feature8": "For automatic deployments, GitHub Actions is used to build the project and then the files are transferred via FTP to the server for the deployment of the web page.",
+  "project": {
+    "role": "Role:",
+    "agency": "Agency:",
+    "date": "Date:",
+    "introTitle": "Introduction",
+    "visualRes": "Visual Result",
+    "typoColor": "Typography - Color",
+    "features": "Features",
+    "thanks": "Thanks for Watching!",
+    "hereMore": "Here you can know more ",
+    "aboutLink": "about me",
+    "otherWork": "You can see my other works!",
+    "visitProject": "Visit"
+  },
+  "afxtrade": {
+    "resume": "It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency."
+  },
+  "fjcintranet": {
+    "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard."
+  },
+  "orm": {
+    "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics."
+  },
+  "copy": "© 2021, All rights reserved."
+}

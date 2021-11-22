@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTabChangeEvent } from '@angular/material/tabs';
+import { TranslateService } from '@ngx-translate/core';
+import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
 import { cleanFonts, fontLoader } from 'src/main';
 
 import { ColorType, FeatureType, Font, Project } from '../../services/common';
@@ -188,11 +190,16 @@ export class QuipusComponent implements OnInit {
     },
   ];
 
-  constructor() {
-    window.scroll(0, 0);
+  constructor(public translate: TranslateService, private i18Service: I18Service) {
+    translate.use(i18Service.getLanguage());
   }
 
   ngOnInit(): void {
+    window.scroll(0, 0);
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
+
     this.setTypoDinamyc(this.familiesJgh, 'typographyNameJgh', 'typographyExampleJgh');
   }
 

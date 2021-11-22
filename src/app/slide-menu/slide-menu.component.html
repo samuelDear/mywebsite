@@ -4,7 +4,7 @@
       <li>
         <a class="cursor-pointer" (click)="navigation('/')">
           <div class="w-full navItem">
-            <span stranslate="slideMenu.homeLink"></span>
+            <span>{{ 'homeLink' | translate }}</span>
           </div>
         </a>
       </li>
@@ -12,7 +12,7 @@
       <li>
         <a class="cursor-pointer" (click)="navigationFragment('/', 'projects')">
           <div class="w-full navItem">
-            <span stranslate="slideMenu.projectsLink"></span>
+            <span>{{ 'projectsLink' | translate }}</span>
           </div>
         </a>
       </li>
@@ -20,7 +20,7 @@
       <li>
         <a class="cursor-pointer" (click)="navigation('/studies')">
           <div class="w-full navItem">
-            <span stranslate="slideMenu.studies"></span>
+            <span>{{ 'studies' | translate }}</span>
           </div>
         </a>
       </li>
@@ -28,28 +28,28 @@
       <li>
         <a class="cursor-pointer" (click)="navigationFragment('/', 'knowlegde')">
           <div class="w-full navItem">
-            <span stranslate="slideMenu.knowlegdeLink"></span>
+            <span>{{ 'knowlegdeLink' | translate }}</span>
           </div>
         </a>
       </li>
 
       <li>
         <div class="w-full whodesignthisbro">
-          <span stranslate="slideMenu.whoDesigned"></span>
+          <span>{{ 'whoDesigned' | translate }}</span>
         </div>
       </li>
 
       <li>
         <a class="cursor-pointer" (click)="navigation('/about')">
           <div class="w-full navItem">
-            <span stranslate="slideMenu.aboutLink"></span>
+            <span>{{ 'aboutLink' | translate }}</span>
           </div>
         </a>
       </li>
 
       <li>
         <div class="selectBoxLang">
-          <select class="border-white border-2 mr-4 px-3" #langselect (change)="translate.use(langselect.value)">
+          <select class="border-white border-2 mr-4 px-3" #langselect (change)="changeLocale(langselect.value)">
             <option value="es" [selected]="currentLang === 'es' ? true : false">ESP</option>
             <option value="en" [selected]="currentLang === 'en' ? true : false">ENG</option>
           </select>

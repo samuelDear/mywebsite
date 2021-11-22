@@ -1,0 +1,48 @@
+{
+  "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. Un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas.",
+  "dsc": "Página Web para la administración de las Olimpiadas Recreativas de Matemáticas de Venezuela",
+  "role": "Fullstack",
+  "intro": "Las Olimpíadas Recreativas de Matemáticas de Venezuela es un evento con el objetivo de Desarrollar estrategias para la enseñanza de las matemáticas, mejorar el nivel académico y estimular en los niños el uso de sus capacidades intelectuales: comprensión, capacidad de síntesis y juicio crítico.",
+  "intro2": "En las Olimpiadas Recreativas de Matemáticas se inscriben una gran cantidad de colegios los cuales inscriben una gran cantidad de alumnos, el objetivo principal del sitio web, es el de permitirle a los colegios registrar y administrar sus participantes, también permite que los organizadores de las olimpiadas puedan tener una administración óptima de toda la información de el evento, como los datos de los colegios, alumnos y exámenes.",
+  "cmstitle": "CMS",
+  "cmsintro": "Para administrar la información de los colegios, alumnos y exámenes, se desarrollo un Content Managment System con la finalidad de que la información se pueda visualizar, crear, editar o borrar. También, cuenta con un sistema de privilegios para que existan diversos roles dentro de la administración. Es decir, que para realizar diversas acciones debes tener privilegios para hacerlo. Cuenta con un sistema de auditoria en el que cual se monitorean las acciones que se han realizado dentro del CMS. Ademas, cuenta con exportación a Excel de los datos que sean necesarios, ya sea una lista de alumnos, de colegios o de exámenes. Incluso, este permite hacer correcciones manuales a los exámenes que fueron presentados de manera presencial en caso de que el sistema no haya podido identificar a que participante pertenece.",
+  "examtitle": "EXÁMENES",
+  "examdsc": "La Olimpiada Recreativa de Matemáticas de Venezuela, cuenta con tres pruebas que se desarrollan por fases. Las pruebas varían dependiendo del grado en el que se encuentre el estudiante. Cada una de estas pruebas cuenta con una estructuración, sistema de puntaje y dificultad único:",
+  "exampre": "Prueba Preliminar: Esta prueba es realizada previamente a las pruebas regionales, donde se realizan unicamente preguntas de selección simple las cuales son configuradas desde el CMS, colocando la respuesta correcta, el puntaje, área y dificultad. Ademas, estas pruebas son calculadas automáticamente. Un operador puede realizar correcciones manuales en caso de que el sistema no encuentre el alumno que realizo un examen(Físico). Como también, pueden hacer ediciones de las respuestas, siempre y cuando cuente con los privilegios correspondientes.",
+  "examRegional": "Prueba Regional: Esta prueba es realizada por los alumnos que aprobaron la prueba preliminar. La prueba cuenta con un sistema para realizarla de manera online, y también puede ser realizada de manera presencial. Las preguntas de este examen son compuestas. Pueden ser de selección simple, explicación de respuestas e incluso puedes adjuntar imágenes a las respuestas en caso de que lo hagas online. La corrección de las respuestas son realizadas por profesores asignados desde el CMS. Donde ellos colocan el puntaje y una observación a la respuesta del alumno y explicación del puntaje. Las correcciones de los exámenes son anónimas, esto quiere decir que los profesores no saben de quien es la prueba que están corrigiendo.",
+  "examNational": "Prueba Nacional: Esta prueba es presentada por los alumnos que aprobaron la prueba regional. Al igual que la Regional puede ser realizada de manera online o presencial, las preguntas son similares a las de la prueba regional así como también su corrección por los profesores. Aunque, su sistema de puntaje es diferente.",
+  "feature1title": "Diseño Web Responsivo",
+  "feature1": "La página web puede ser visualizada en cualquier dispositivo y seguir comportándose de manera eficiente en dispositivos móviles.",
+  "feature3title": "Uso de SVGs",
+  "feature3": "Para las imágenes dentro de la página web se usaron SVGs para mejorar los tiempos de carga, así como también diversos elementos fueron hechos con CSS puro.",
+  "feature4title": "Exportación a Excel",
+  "feature4": "Tanto la página web como el CMS permiten exportar datos a Excel, en el caso de el sitio web, los colegios pueden exportar listas con sus participantes, igual que en el CMS pueden ser exportados las respuestas de los exámenes.",
+  "feature5title": "Solicitudes HTTP reducidas",
+  "feature5": "Las solicitudes al servidor se encuentran reducidas para mejorar los tiempos de carga en los casos de las listas largas de información como pueden ser las listas de participantes.",
+  "feature6title": "Exportaciones de gran tamaño con Zip",
+  "feature6": "En el caso de descargar una gran cantidad de información, como puede ser la lista de participantes en total, estos pueden ser más de 10.000, para mejorar los tiempos de descarga de los paquetes.",
+  "project": {
+    "role": "Rol:",
+    "agency": "Empresa:",
+    "date": "Fecha:",
+    "introTitle": "Introducción",
+    "visualRes": "Resultado Visual",
+    "typoColor": "Tipografía - Color",
+    "features": "Características",
+    "thanks": "Gracias por leer!",
+    "hereMore": "Aquí puede saber más ",
+    "aboutLink": "acerca de mí",
+    "otherWork": "Puedes ver mis otros trabajos!",
+    "visitProject": "Visitar"
+  },
+  "fjcintranet": {
+    "resume": "Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001."
+  },
+  "myWeb": {
+    "resume": "Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario."
+  },
+  "afxtrade": {
+    "resume": "Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda."
+  },
+  "copy": "© 2021, Todos los derechos reservados."
+}

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
 import { setProjectFont } from 'src/main';
+import { TranslateService } from '@ngx-translate/core';
+import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
 
 const threshold = 0.1;
 @Component({
@@ -51,7 +53,7 @@ export class TraumappComponent implements OnInit {
     },
     {
       code: '/traumappLanding',
-      name: 'TraymApp Landing',
+      name: 'TraumApp Landing',
       resume: 'traumappLanding.resume',
     },
   ];
@@ -74,10 +76,15 @@ export class TraumappComponent implements OnInit {
   currentSliderPatient = 1;
   isDarkMode = false;
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  constructor(public translate: TranslateService, private i18Service: I18Service) {
+    translate.use(i18Service.getLanguage());
+  }
 
   ngOnInit(): void {
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
+
     window.scroll(0, 0);
     const visualResult1 = document.getElementById('visualResult1');
     const visualResult2 = document.getElementById('visualResult2');
