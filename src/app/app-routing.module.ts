@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { QuipusComponent } from './projects/quipus/quipus.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -38,7 +37,11 @@ const routes: Routes = [
       import('./projects/traumapp-landing/traumapp-landing.module').then(m => m.TraumappLandingModule),
     pathMatch: 'full',
   },
-  { path: 'quipus', component: QuipusComponent, pathMatch: 'full' },
+  {
+    path: 'quipus',
+    loadChildren: () => import('./projects/quipus/quipus.module').then(m => m.QuipusModule),
+    pathMatch: 'full',
+  },
   {
     path: 'menu',
     loadChildren: () => import('./slide-menu/slide-menu.module').then(m => m.SlideMenuModule),

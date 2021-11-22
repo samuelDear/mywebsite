@@ -15,8 +15,6 @@ import { environment } from '../environments/environment';
 
 import { ComponentsModule } from './components/components.module';
 
-import { ProjectsModule } from './projects/projects.module';
-
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -31,7 +29,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     HttpClientModule,
     BrowserAnimationsModule,
     ComponentsModule,
-    ProjectsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

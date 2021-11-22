@@ -1,0 +1,71 @@
+{
+  "quipus": {
+    "resume": "Eventos de quinielas tematicas donde cada evento era unico y tenian tecnologias diferentes como Angular, React y Node del lado del backend. Espacialmente diseñado para ser visitado desde dispositivos moviles con una navegabilidad pensada para entretener.",
+    "dsc": "Página de quinielas de eventos temáticos",
+    "role": "Frontend",
+    "intro": "Quipus parte de la idea de conectar a la gente por medio de eventos en los cuales los usuarios pueden elegir a sus favoritos ganadores dependiendo de la temática, las cuales pueden ser muy variadas. Pasando por concursos de Obras sobre Jose Gregorio Hernández, Los Oscars, El Miss Universo y eventos deportivos como la Copa América y la Eurocopa. Permitiendo que los usuarios puedan ver las elecciones de otros, y teniendo diversas salas en las cuales puede crear un Quipu (Quiniela). Cada uno de estos eventos fue llevado como un proyecto único, permitiendo así, que los usuarios tuvieran nuevas formas de jugar y participar.",
+    "jgh": {
+      "dsc1": "El evento de Jose Gregorio Hernández fue un concurso de afiches o ilustraciones, donde las ilustraciones eran de manera anónima, y los usuarios debían elegir su favorita por medio de un sistema de Versus, en el cual se mostraban dos ilustraciones y el usuario elegía cual era su favorita. Las puntuaciones de estas ilustraciones eran calculadas con un sistema de ELO rating.",
+      "dsc2": "Existían dos categorías, una de jóvenes y otra de adultos. Donde la de jóvenes debías elegir tu favorita dentro de varios grupos. Mientras que en la de adultos, debías elegir tu favorita en un Versus, permitiéndote realizar un máximo de 23 rondas.",
+      "dsc3": "Al finalizar el evento las ilustraciones pasarían a un ranking donde saldría su posición y el nombre de la obra.",
+      "featureTitle1": "Galería",
+      "featureDsc1": "Cuenta con una Galería para que la gente pueda ver todas las ilustraciones que estas participando con mayor detalle."
+    },
+    "oscars": {
+      "dsc1": "El evento de los oscars está basado en los premios de la academia. En el cual las personas podía ver los diferentes nominados y sus categorías. Así como también noticias de las novedades del evento. En la galería de los nominados podías ver el trailer de las películas.",
+      "dsc2": "En este evento los personas podían seleccionar a los ganadores de cada categoría. En este sistema, habían dos tipos de selecciones, las normales y las bonus, donde las normales puntuaban 1 punto y las bonus 3 por acierto. Luego de terminar tus selecciones, podías ver una lista con los participantes y podías editar tu selección antes de que comenzara el evento.",
+      "dsc3": "Luego de que el evento finalizara, los usuarios podrían ver su posición en el ranking, así como también ver el detalles de todos los usuarios. Ademas, tenían una sección con los resultados de los premios de la academia donde podían ver cuales fueron los ganadores de cada categoría.",
+      "featureTitle1": "Resultados",
+      "featureDsc1": "Se tiene una pantalla con los resultados del evento para que los usuarios puedan entrar luego de finalizado el evento y puedan ver cuales fueron los resultados reales."
+    },
+    "miss": {
+      "dsc1": "El evento de Miss Universe permitia a las personas elegir sus candidatas favoritas para el certamen de belleza. En donde podían también visualizar a las candidatas en galería por regiones.",
+      "dsc2": "El proceso de la apuesta iba desde la ronda 1 donde se seleccionan a las 32 mejores candidatas hasta la ronda final que se vota por la ganadora. Los usuarios podían participar en diferentes salar y realizar diferentes apuestas. Ademas siempre y cuando el evento no estuviera en progreso o terminado, podían editar su pronostico. Así como también, podían ver los pronósticos de otras personas luego de cerrada la participación."
+    },
+    "copas": {
+      "dsc1": "El evento de las copas englobaba lo que era la Copa América y la Eurocopa. Desde su fase de grupos hasta su fase final. Para este evento se hicieron diferentes modos para cada evento.Cada evento contaba con un modo de fase de grupos y fase final, y un modo para solamente la fase final con los resultados reales ya obtenidos.En este caso el sistema de puntos variaba del evento, así como también se contó con un sistema de auto completado del pronóstico de resultados, el cual permitía que los usuarios con poco conocimiento pudieran completar la quiniela con ayuda de un pronóstico automatizado.",
+      "dsc2": "Cada evento contaba con un modo de fase de grupos y fase final, y un modo para solamente la fase final con los resultados reales ya obtenidos.",
+      "dsc3": "En este caso el sistema de puntos variaba del evento, así como también se contó con un sistema de auto completado del pronóstico de resultados, el cual permitía que los usuarios con poco conocimiento pudieran completar la quiniela con ayuda de un pronóstico automatizado.",
+      "featureTitle1": "Brackets",
+      "featureDsc1": "Para la fase final se desarrollaron unos brackets para que la experiencia de llenado fuera más agradable. Estos brackets fueron desarrollados para soportar cualquier partido y resultado.",
+      "featureTitle2": "Predictor",
+      "featureDsc2": "Para la fase de grupos, el usuario tenia que ir partido por partido llenando el resultado, esto a algunos les gusta y a otros no, es por ello que se decidió por un llenado automático el cual estaba basado en datos estadísticos para su llenado.",
+      "featureTitleTwitter": "Twitter Timeline",
+      "featureDscTwitter": "Para estar al tanto de las novedades del evento, se cuenta con Timeline de twitter donde puedes ver los tweets referentes al evento."
+    },
+    "commonFeatures": {
+      "featureTitle1": "Responsive Design",
+      "featureDsc1": "El evento tiene un diseño responsivo debido a que está orientado más a dispositivos moviles. Permitiendo que cualquier persona pueda participar en cualquier dispositivo.",
+      "featureTitle2": "HTTP Reducidas",
+      "featureDsc2": "Las peticiones en este evento son reducidas, debido a que solo se usan en determinados sitios, ya que la sencillez está en que solo se muestran datos y solo se guarda la votación del usuario.",
+      "featureTitle3": "Firebase",
+      "featureDsc3": "Para el ingreso con Gmail se hizo por medio de Firebase para su integración.",
+      "featureTitle4": "CMS",
+      "featureDsc4": "El evento pasa por diferentes etapas, desde que la gente participa hasta que se ven los resultados como tal del evento. Es por ello que estas etapas deben ser manejadas desde un CMS, así como también un monitoreo de los resultados y selecciones."
+    }
+  },
+  "project": {
+    "role": "Rol:",
+    "agency": "Empresa:",
+    "date": "Fecha:",
+    "introTitle": "Introducción",
+    "visualRes": "Resultado Visual",
+    "typoColor": "Tipografía - Color",
+    "features": "Características",
+    "thanks": "Gracias por leer!",
+    "hereMore": "Aquí puede saber más ",
+    "aboutLink": "acerca de mí",
+    "otherWork": "Puedes ver mis otros trabajos!",
+    "visitProject": "Visitar"
+  },
+  "afxtrade": {
+    "resume": "Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda."
+  },
+  "traumappLanding": {
+    "resume": "Es una página web desarrollada con React. Con un diseño web responsivo para cualquier dispositivo y animaciones sencillas para una mejor experiencia visual. Creada como página informativa de la aplicación TraumApp con una documentación detallada, compra de membresías y dashboard para el usuario."
+  },
+  "traumapp": {
+    "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
+  },
+  "copy": "© 2021, Todos los derechos reservados."
+}
