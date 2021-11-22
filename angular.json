@@ -24,6 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/mywebsite",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -54,6 +55,14 @@
                 "scripts": true,
                 "styles": true
               },
+              "optimization": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "buildOptimizer": true,
+              "serviceWorker": true,
+              "deleteOutputPath": true,
               "budgets": [
                 {
                   "type": "initial",
