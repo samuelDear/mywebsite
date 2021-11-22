@@ -53,7 +53,7 @@ export class TraumappComponent implements OnInit {
     },
     {
       code: '/traumappLanding',
-      name: 'TraymApp Landing',
+      name: 'TraumApp Landing',
       resume: 'traumappLanding.resume',
     },
   ];

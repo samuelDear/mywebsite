@@ -23,6 +23,10 @@
     "quarterDsc":"However, In the back-end I have used PHP and Java for the creation of REST API, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase.",
     "fiftDsc":"Additionally, I have worked under SCRUM and Kanban methodologies with tools such as Trello, Jira, Slack and Confluence. Also, I have knowledge of visual tools like Figma, Zeplin, MarvelApp and Mockflow."
   },
+  "about": {
+    "resume":"I'm a Venezuelan web designer and a mobile developer.<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",
+    "aboutLink":"Read more about me"
+  },
   "orm": {
     "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics."
   },
