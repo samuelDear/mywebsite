@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
 import { navigationCustom } from 'src/app/transition';
 
 import { setProjectFont } from '../../../main';
@@ -18,36 +20,36 @@ export class OwnportfolioComponent implements OnInit {
 
   features: FeatureType[] = [
     {
-      title: 'myWeb.feature1title',
-      dsc: 'myWeb.feature1',
+      title: 'feature1title',
+      dsc: 'feature1',
     },
     {
-      title: 'myWeb.feature2title',
-      dsc: 'myWeb.feature2',
+      title: 'feature2title',
+      dsc: 'feature2',
     },
     {
-      title: 'myWeb.feature3title',
-      dsc: 'myWeb.feature3',
+      title: 'feature3title',
+      dsc: 'feature3',
     },
     {
-      title: 'myWeb.feature4title',
-      dsc: 'myWeb.feature4',
+      title: 'feature4title',
+      dsc: 'feature4',
     },
     {
-      title: 'myWeb.feature5title',
-      dsc: 'myWeb.feature5',
+      title: 'feature5title',
+      dsc: 'feature5',
     },
     {
-      title: 'myWeb.feature6title',
-      dsc: 'myWeb.feature6',
+      title: 'feature6title',
+      dsc: 'feature6',
     },
     {
-      title: 'myWeb.feature7title',
-      dsc: 'myWeb.feature7',
+      title: 'feature7title',
+      dsc: 'feature7',
     },
     {
-      title: 'myWeb.feature8title',
-      dsc: 'myWeb.feature8',
+      title: 'feature8title',
+      dsc: 'feature8',
     },
   ];
 
@@ -85,11 +87,17 @@ export class OwnportfolioComponent implements OnInit {
   ];
 
   // eslint-disable-next-line
-  constructor(public router: Router) {}
+  constructor(public router: Router, public translate: TranslateService, private i18Service: I18Service) {
+    translate.use(i18Service.getLanguage());
+  }
 
   ngOnInit(): void {
     window.scroll(0, 0);
     setProjectFont(this.families);
+
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
   }
 
   navigateToHome(): void {

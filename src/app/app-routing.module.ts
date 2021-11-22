@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { OwnportfolioComponent } from './projects/ownportfolio/ownportfolio.component';
 import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 import { TraumappComponent } from './projects/traumapp/traumapp.component';
 import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-landing.component';
@@ -20,7 +19,11 @@ const routes: Routes = [
     loadChildren: () => import('./projects/fjcintranet/fjcintranet.module').then(m => m.FjcintranetModule),
     pathMatch: 'full',
   },
-  { path: 'portfolio', component: OwnportfolioComponent, pathMatch: 'full' },
+  {
+    path: 'portfolio',
+    loadChildren: () => import('./projects/ownportfolio/ownportfolio.module').then(m => m.OwnportfolioModule),
+    pathMatch: 'full',
+  },
   { path: 'ormv', loadChildren: () => import('./projects/orm/orm.module').then(m => m.OrmModule), pathMatch: 'full' },
   { path: 'afxtrade', component: AfxtradeComponent, pathMatch: 'full' },
   { path: 'traumapp', component: TraumappComponent, pathMatch: 'full' },

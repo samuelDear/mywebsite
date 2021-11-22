@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { OwnportfolioComponent } from './ownportfolio/ownportfolio.component';
 import { AfxtradeComponent } from './afxtrade/afxtrade.component';
 import { TraumappComponent } from './traumapp/traumapp.component';
 import { TraumappLandingComponent } from './traumapp-landing/traumapp-landing.component';
@@ -11,13 +10,7 @@ import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [CommonModule, ComponentsModule],
-  declarations: [
-    OwnportfolioComponent,
-    AfxtradeComponent,
-    TraumappComponent,
-    TraumappLandingComponent,
-    QuipusComponent,
-  ],
-  exports: [OwnportfolioComponent, AfxtradeComponent, TraumappComponent, TraumappLandingComponent, QuipusComponent],
+  declarations: [AfxtradeComponent, TraumappComponent, TraumappLandingComponent, QuipusComponent],
+  exports: [AfxtradeComponent, TraumappComponent, TraumappLandingComponent, QuipusComponent],
 })
 export class ProjectsModule {}
