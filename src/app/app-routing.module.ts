@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { TraumappComponent } from './projects/traumapp/traumapp.component';
 import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-landing.component';
 import { QuipusComponent } from './projects/quipus/quipus.component';
 
@@ -29,7 +28,11 @@ const routes: Routes = [
     loadChildren: () => import('./projects/afxtrade/afxtrade.module').then(m => m.AfxtradeModule),
     pathMatch: 'full',
   },
-  { path: 'traumapp', component: TraumappComponent, pathMatch: 'full' },
+  {
+    path: 'traumapp',
+    loadChildren: () => import('./projects/traumapp/traumapp.module').then(m => m.TraumappModule),
+    pathMatch: 'full',
+  },
   { path: 'traumappLanding', component: TraumappLandingComponent, pathMatch: 'full' },
   { path: 'quipus', component: QuipusComponent, pathMatch: 'full' },
   {
