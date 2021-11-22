@@ -556,6 +556,20 @@ input:-webkit-autofill {
   border-radius: 18px;
 }
 
+.myself {
+  width: 82%;
+  height: auto;
+  bottom: 0;
+  left: 8%;
+  max-width: 700px;
+  position: absolute;
+}
+
+.randomProjectsBoxPair {
+  margin-left: 10rem;
+  margin-right: 2.5rem;
+}
+
 @media only screen and (max-width: 1224px) {
   .socialMedia {
     height: 45px;
@@ -588,6 +602,12 @@ input:-webkit-autofill {
   .mainBoxPadding {
     padding: 7rem 4rem;
   }
+
+  .myself {
+    position: initial;
+    margin: auto;
+    max-height: 9999vh;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -606,6 +626,10 @@ input:-webkit-autofill {
     height: 30px;
     width: 30px;
   }
+
+  .randomProjectsBoxPair {
+    margin-left: 9rem;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -623,6 +647,10 @@ input:-webkit-autofill {
 
   .randomProjectsBoxOdd {
     margin-right: 5rem;
+  }
+
+  .randomProjectsBoxPair {
+    margin-left: 5rem;
   }
 
   .featureBox {
@@ -649,7 +677,8 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 800px) {
-  .randomProjectsBoxOdd {
+  .randomProjectsBoxOdd,
+  .randomProjectsBoxPair {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
