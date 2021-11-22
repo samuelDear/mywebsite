@@ -1,4 +1,4 @@
-.titleLinkPlayStore{
+.titleLinkPlayStore {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,16 @@
   background: transparent !important;
 }
 
-.resumeSection, .introductionSection, .introductionBox, .visualResult, .patientsSection, .patientsSection, .formsSection, .calendarSection, .configSection, .principalFeatures {
+.resumeSection,
+.introductionSection,
+.introductionBox,
+.visualResult,
+.patientsSection,
+.patientsSection,
+.formsSection,
+.calendarSection,
+.configSection,
+.principalFeatures {
   transition: 1s;
 }
 
@@ -29,33 +38,33 @@
   margin-bottom: 8rem;
 }
 
-.introductionBox { 
-  border: 5px solid #DB2696;
+.introductionBox {
+  border: 5px solid #db2696;
 }
 
 .visualResult {
-  background: linear-gradient(180deg, #2C023E, #B100FF);
+  background: linear-gradient(180deg, #2c023e, #b100ff);
   overflow-x: hidden;
 }
 
 .patientsSection {
-  background: linear-gradient(180deg, #20A5FF, #002854);
+  background: linear-gradient(180deg, #20a5ff, #002854);
 }
 
 .formsSection {
-  background: linear-gradient(180deg,#002854, #20A5FF);
+  background: linear-gradient(180deg, #002854, #20a5ff);
 }
 
 .calendarSection {
-  background-color: #20A5FF;
+  background-color: #20a5ff;
 }
 
 .configSection {
-  background: linear-gradient(180deg,#003E82, #8825B2);
+  background: linear-gradient(180deg, #003e82, #8825b2);
 }
 
 .principalFeatures {
-  background: linear-gradient(180deg,#2C023E, #111);
+  background: linear-gradient(180deg, #2c023e, #111);
 }
 
 .logoSection {
@@ -65,11 +74,13 @@
 }
 
 .patientsBox {
-  border: 5px solid #3D3D3D;
+  border: 5px solid #3d3d3d;
 }
 
-.formsBox, .calendarBox, .configBox {
-  border: 5px solid #4AE3CD;
+.formsBox,
+.calendarBox,
+.configBox {
+  border: 5px solid #4ae3cd;
 }
 
 .visualResultItems {
@@ -119,7 +130,9 @@
   border: 1.5px solid #333;
 }
 
-.patientsImagesBox, .formImagesBox, .configImagesBox {
+.patientsImagesBox,
+.formImagesBox,
+.configImagesBox {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -127,7 +140,8 @@
   align-items: center;
 }
 
-.formImagesBox, .configImagesBox {
+.formImagesBox,
+.configImagesBox {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -188,7 +202,7 @@
   height: 40px;
   width: 40px;
   border-radius: 9999px;
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -221,18 +235,19 @@
 }
 
 .backgroundLightMode {
-  background: #EEE;
+  background: #eee;
   color: #111;
-  border: 1.5px solid #FFF;
+  border: 1.5px solid #fff;
 }
 
 .backgroundDarkMode {
   background: #333;
-  border: 1.5px solid #FFF;
-  color: #FFF;
+  border: 1.5px solid #fff;
+  color: #fff;
 }
 
-.configRowBox, .principalFeatureRow {
+.configRowBox,
+.principalFeatureRow {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -245,43 +260,44 @@
   margin-bottom: 4rem;
 }
 
-.configRowBoxLeft, .principalFeatureRowLeft {
+.configRowBoxLeft,
+.principalFeatureRowLeft {
   flex-direction: row;
 }
 
-.configRowBoxRight, .principalFeatureRowRight {
+.configRowBoxRight,
+.principalFeatureRowRight {
   flex-direction: row-reverse;
 }
 
-.configColumnDsc, .principalFeatureDsc {
+.configColumnDsc,
+.principalFeatureDsc {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.configImages { 
+.configImages {
   height: auto;
   width: 30%;
   border-radius: 20px;
   max-width: 400px;
 }
 
-.configTitle, .principalFeatureTitle {
+.configTitle,
+.principalFeatureTitle {
   font-size: 2rem;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.configText, .principalFeatureText {
+.configText,
+.principalFeatureText {
   width: 55%;
 }
 
 .configHideBox {
   transform: scale(0);
-}
-
-.principalFeatureHide {
-  transform: scale(1);
 }
 
 .imageBoxFeature {
@@ -323,7 +339,8 @@
 }
 
 @media only screen and (max-width: 1085px) {
-  .mainBoxTraumApp, .resumeSection{
+  .mainBoxTraumApp,
+  .resumeSection {
     padding: 8rem 5rem;
   }
 
@@ -331,9 +348,10 @@
     margin-bottom: 5rem;
   }
 }
-  
+
 @media only screen and (max-width: 1000px) {
-  .mainBoxTraumApp, .resumeSection{
+  .mainBoxTraumApp,
+  .resumeSection {
     padding: 7rem 4rem;
   }
 
@@ -344,7 +362,8 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .mainBoxTraumApp, .resumeSection{
+  .mainBoxTraumApp,
+  .resumeSection {
     padding: 5rem 1.5rem;
   }
 
@@ -386,7 +405,7 @@
     align-self: flex-end;
     transform: rotateY(0deg) rotate(90deg);
   }
-  
+
   .arrowCurveLeft {
     align-self: flex-start;
     transform: rotateY(180deg) rotate(90deg);
@@ -397,18 +416,22 @@
     width: 20vw;
   }
 
-  .patientsImagesBox, .formImagesBox, .configImagesBox {
+  .patientsImagesBox,
+  .formImagesBox,
+  .configImagesBox {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
 
-  .formImagesBox, .configImagesBox {
+  .formImagesBox,
+  .configImagesBox {
     margin: 0;
   }
 
-  .formImagesBox > img, .configImagesBox > img {
+  .formImagesBox > img,
+  .configImagesBox > img {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -430,7 +453,10 @@
     margin-top: 40px;
   }
 
-  .configRowBoxLeft,  .configRowBoxRight, .principalFeatureRowRight, .principalFeatureRowLeft {
+  .configRowBoxLeft,
+  .configRowBoxRight,
+  .principalFeatureRowRight,
+  .principalFeatureRowLeft {
     flex-direction: column;
   }
 
@@ -439,7 +465,9 @@
     margin-bottom: 30px;
   }
 
-  .configText, .imageBoxFeature, .principalFeatureDsc {
+  .configText,
+  .imageBoxFeature,
+  .principalFeatureDsc {
     width: 90%;
   }
 
@@ -451,11 +479,11 @@
     margin-bottom: 4rem;
   }
 
-  .configTitle, .principalFeatureTitle {
+  .configTitle,
+  .principalFeatureTitle {
     font-size: 1.8rem;
     margin-bottom: 20px;
   }
-
 }
 
 @media only screen and (max-width: 450px) {

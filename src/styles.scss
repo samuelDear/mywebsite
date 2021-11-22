@@ -83,22 +83,6 @@ textarea {
   resize: none;
 }
 
-.segurityIc {
-  width: 40%;
-}
-
-.comunicationsIc {
-  width: 50%;
-}
-
-.movementsIc {
-  width: 70%;
-}
-
-.exchangesIc {
-  width: 55%;
-}
-
 /*Logo Jacinto Convit*/
 .JClogo {
   transition: 1s;
@@ -482,11 +466,6 @@ textarea {
   transform: rotate(-45deg);
 }
 
-.randomProjectsBoxPair {
-  margin-left: 10rem;
-  margin-right: 2.5rem;
-}
-
 .randomProjectsBoxOdd {
   margin-left: 2.5rem;
   margin-right: 10rem;
@@ -535,12 +514,6 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #fff !important;
 }
 
-.criptoIcon {
-  max-height: 150px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
 .criptoIconDisabled {
   opacity: 0.5;
 }
@@ -553,15 +526,6 @@ input:-webkit-autofill {
   transform: rotate(10deg);
 }
 
-.myself {
-  width: 82%;
-  height: auto;
-  bottom: 0;
-  left: 8%;
-  max-width: 700px;
-  position: absolute;
-}
-
 .imgVisualResult {
   height: 50vw;
 }
@@ -572,9 +536,9 @@ input:-webkit-autofill {
 }
 
 .btnVisitProject {
-  background: #DB2696;
+  background: #db2696;
   border-radius: 12px !important;
-  color: #FFF;
+  color: #fff;
   margin-top: 14px !important;
   font-size: 18px;
   min-width: 130px !important;
@@ -590,6 +554,20 @@ input:-webkit-autofill {
 
 .imgExperiment {
   border-radius: 18px;
+}
+
+.myself {
+  width: 82%;
+  height: auto;
+  bottom: 0;
+  left: 8%;
+  max-width: 700px;
+  position: absolute;
+}
+
+.randomProjectsBoxPair {
+  margin-left: 10rem;
+  margin-right: 2.5rem;
 }
 
 @media only screen and (max-width: 1224px) {
@@ -633,10 +611,6 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 950px) {
-  .randomProjectsBoxPair {
-    margin-left: 9rem;
-  }
-
   .randomProjectsBoxOdd {
     margin-right: 9rem;
   }
@@ -651,6 +625,10 @@ input:-webkit-autofill {
   .socialMedia {
     height: 30px;
     width: 30px;
+  }
+
+  .randomProjectsBoxPair {
+    margin-left: 9rem;
   }
 }
 
@@ -667,12 +645,12 @@ input:-webkit-autofill {
     padding: 6rem 1.5rem;
   }
 
-  .randomProjectsBoxPair {
-    margin-left: 5rem;
-  }
-
   .randomProjectsBoxOdd {
     margin-right: 5rem;
+  }
+
+  .randomProjectsBoxPair {
+    margin-left: 5rem;
   }
 
   .featureBox {
@@ -699,30 +677,10 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 800px) {
+  .randomProjectsBoxOdd,
   .randomProjectsBoxPair {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
-  .randomProjectsBoxOdd {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-  }
-
-  .segurityIc {
-    width: 40%;
-  }
-
-  .comunicationsIc {
-    width: 50%;
-  }
-
-  .movementsIc {
-    width: 60%;
-  }
-
-  .exchangesIc {
-    width: 50%;
   }
 }
 
@@ -800,12 +758,6 @@ input:-webkit-autofill {
   .stick {
     width: 30px;
     height: 5px;
-  }
-
-  .arrow-right {
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #fff;
   }
 
   .boxLaptopKeyboard {
