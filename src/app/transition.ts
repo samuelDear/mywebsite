@@ -15,7 +15,7 @@ export const startTx = (): void => {
 
   div.classList.add('loadScreen');
   div.classList.add('curtain');
-  div.style.backgroundImage = "url('assets/images/pat-dark.jpg')";
+  div.style.backgroundImage = "url('assets/images/pat-dark.webp')";
   div.setAttribute('id', 'waitScreen');
 
   name.innerHTML = 'Samuel Rojas';
