@@ -20,11 +20,11 @@ export class AppComponent {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('en');
 
-    const browserLang = translate.getBrowserLang();
+    const browserLang = translate.getBrowserLang() || '';
 
     translate.use(browserLang.match(/en|es/) ? browserLang : 'en');
 
-    this.i18Service.localeEvent.subscribe(locale => {
+    this.i18Service.localeEvent.subscribe((locale: string) => {
       this.translate.use(locale);
     });
 
