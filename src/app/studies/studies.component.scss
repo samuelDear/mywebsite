@@ -3,18 +3,6 @@
   flex-direction: column;
 }
 
-.slideDates {
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  margin-top: 8rem;
-  width: 15%;
-  align-items: center;
-  max-height: 70vh;
-}
-
 .studiesInfo {
   margin: 8rem 10rem 0px 10rem;
 }
@@ -107,33 +95,6 @@
 .textDate,
 .textAcademy {
   font-size: 120%;
-}
-
-.dates {
-  margin: 10px 0px;
-  font-size: 160%;
-}
-
-.datesSelected {
-  font-size: 200%;
-}
-
-.checkdate {
-  height: 30px;
-  width: 30px;
-  background: #fff;
-  margin: auto;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.checkedDate {
-  width: 15px;
-  height: 15px;
-  background: #111;
-  border-radius: 50%;
 }
 
 .dateReferences {

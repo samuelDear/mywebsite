@@ -12,16 +12,13 @@
   flex-direction: row;
 }
 
-.featureMainBoxLeft, .featureMainBoxRight {
+.featureMainBoxLeft,
+.featureMainBoxRight {
   transition: 1s;
 }
 
 .featureItem {
   width: 50%;
-}
-
-.mainFeatureText {
-  width: 100%;
 }
 
 .mainFeatureTitle {
@@ -48,7 +45,7 @@
 .criptoIconBox {
   margin: 20px;
   display: flex;
-  align-items: center; 
+  align-items: center;
   flex-direction: column;
   transition: all 0.5s ease;
   transform: scale(1);
@@ -79,7 +76,7 @@
 
 .tooltiptx {
   visibility: hidden;
-  background-color: #CCC;
+  background-color: #ccc;
   color: #333;
   text-align: center;
   border-radius: 18px;
@@ -110,7 +107,29 @@
   transform: translateX(-60vw);
 }
 
-@media only screen and (max-width : 950px) {
+.segurityIc {
+  width: 40%;
+}
+
+.comunicationsIc {
+  width: 50%;
+}
+
+.movementsIc {
+  width: 70%;
+}
+
+.exchangesIc {
+  width: 55%;
+}
+
+.criptoIcon {
+  max-height: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 950px) {
   .criptoIconBox {
     margin: 10px 20px;
     flex-grow: 0;
@@ -119,7 +138,7 @@
   }
 }
 
-@media only screen and (max-width : 800px) {
+@media only screen and (max-width: 800px) {
   .featureMainBoxRight {
     flex-direction: column;
   }
@@ -128,18 +147,35 @@
     flex-direction: column-reverse;
   }
 
-  .featureItem{
+  .featureItem {
     width: 100%;
   }
 
-  .mainFeatureLeft, .mainFeatureRight {
+  .mainFeatureLeft,
+  .mainFeatureRight {
     margin: 0px;
     margin-top: 40px;
   }
+
+  .segurityIc {
+    width: 40%;
+  }
+
+  .comunicationsIc {
+    width: 50%;
+  }
+
+  .movementsIc {
+    width: 60%;
+  }
+
+  .exchangesIc {
+    width: 50%;
+  }
 }
 
-@media only screen and (max-width : 550px) {
-  .criptoIconBox{
+@media only screen and (max-width: 550px) {
+  .criptoIconBox {
     margin: 12px 4%;
   }
 
@@ -148,8 +184,8 @@
   }
 }
 
-@media only screen and (max-width : 500px) {
-  .criptoIconBox{
+@media only screen and (max-width: 500px) {
+  .criptoIconBox {
     margin: 10px 5%;
     flex-grow: 0;
     max-width: 35%;
@@ -165,8 +201,8 @@
   }
 }
 
-@media only screen and (max-width : 370px) {
-  .criptoIconBox{
+@media only screen and (max-width: 370px) {
+  .criptoIconBox {
     margin: 10px 5%;
     flex-grow: 0;
     max-width: 40%;
