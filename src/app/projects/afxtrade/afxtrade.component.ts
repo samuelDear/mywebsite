@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
 
 import { setProjectFont } from '../../../main';
 import { Font, Project, FeatureType, ColorType } from '../../services/common';
@@ -75,8 +77,9 @@ export class AfxtradeComponent implements OnInit {
     },
   ];
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  constructor(public translate: TranslateService, private i18Service: I18Service) {
+    translate.use(i18Service.getLanguage());
+  }
 
   ngOnInit(): void {
     window.scroll(0, 0);
@@ -91,6 +94,10 @@ export class AfxtradeComponent implements OnInit {
     exchangeBox !== null && this.createObserver(exchangeBox);
 
     setProjectFont(this.families);
+
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
   }
 
   createObserver(element: HTMLElement): void {

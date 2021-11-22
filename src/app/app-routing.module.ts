@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { AfxtradeComponent } from './projects/afxtrade/afxtrade.component';
 import { TraumappComponent } from './projects/traumapp/traumapp.component';
 import { TraumappLandingComponent } from './projects/traumapp-landing/traumapp-landing.component';
 import { QuipusComponent } from './projects/quipus/quipus.component';
@@ -25,7 +24,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { path: 'ormv', loadChildren: () => import('./projects/orm/orm.module').then(m => m.OrmModule), pathMatch: 'full' },
-  { path: 'afxtrade', component: AfxtradeComponent, pathMatch: 'full' },
+  {
+    path: 'afxtrade',
+    loadChildren: () => import('./projects/afxtrade/afxtrade.module').then(m => m.AfxtradeModule),
+    pathMatch: 'full',
+  },
   { path: 'traumapp', component: TraumappComponent, pathMatch: 'full' },
   { path: 'traumappLanding', component: TraumappLandingComponent, pathMatch: 'full' },
   { path: 'quipus', component: QuipusComponent, pathMatch: 'full' },

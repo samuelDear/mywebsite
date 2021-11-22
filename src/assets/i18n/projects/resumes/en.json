@@ -12,7 +12,7 @@
     "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard."
   },
   "traumapp": {
-    "dsc": "Mobile application to manage medical consultations and medical records"
+    "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
   },
   "traumappLanding": {
     "resume": "It is a web page developed with React. With a responsive web design for any device and simple animations for a better visual experience. Created as an information page for the TraumApp application with detailed documentation, membership purchase and user dashboard."

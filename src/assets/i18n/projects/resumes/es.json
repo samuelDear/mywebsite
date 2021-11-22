@@ -12,7 +12,7 @@
     "resume": "Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario."
   },
   "traumapp": {
-    "dsc": "Aplicación móvil para administrar consultas médicas e historias clínicas"
+    "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
   },
   "traumappLanding": {
     "resume": "Es una página web desarrollada con React. Con un diseño web responsivo para cualquier dispositivo y animaciones sencillas para una mejor experiencia visual. Creada como página informativa de la aplicación TraumApp con una documentación detallada, compra de membresías y dashboard para el usuario."
