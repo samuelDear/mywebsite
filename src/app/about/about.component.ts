@@ -25,6 +25,6 @@ export class AboutComponent implements OnInit {
   }
 
   downloadCv(): void {
-    window.open(`assets/cv/SamuelRojas${this.translate.currentLang == 'es' ? 'Esp' : 'Eng'}.pdf`, '_blank');
+    window.open(`assets/cv/SamuelRojas${this.i18Service.getLanguage() == 'es' ? 'Esp' : 'Eng'}.pdf`, '_blank');
   }
 }

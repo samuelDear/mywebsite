@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ColorPaletteComponent } from './color-palette/color-palette.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { ColorPaletteComponent } from './color-palette/color-palette.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImgLoaderComponent } from './img-loader/img-loader.component';
 import { FeaturesBoxComponent } from './features-box/features-box.component';
@@ -30,6 +31,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatProgressBarModule,
     MatIconModule,
     MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     FooterComponent,
@@ -66,6 +69,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     TitleProjectsComponent,
     TypographyLettersComponent,
     StranslateDirective,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 })
 export class ComponentsModule {}

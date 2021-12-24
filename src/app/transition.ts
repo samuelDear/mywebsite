@@ -13,8 +13,7 @@ export const startTx = (): void => {
   const name = document.createElement('p');
   const hr = document.createElement('div');
 
-  div.classList.add('loadScreen');
-  div.classList.add('curtain');
+  div.classList.add('loadScreen', 'curtain');
   div.style.backgroundImage = "url('assets/images/pat-dark.webp')";
   div.setAttribute('id', 'waitScreen');
 
@@ -23,8 +22,7 @@ export const startTx = (): void => {
 
   hr.classList.add('loadingLine');
 
-  div.appendChild(name);
-  div.appendChild(hr);
+  div.append(name, hr);
 
   document.body.appendChild(div);
   div.style.width = '0%';

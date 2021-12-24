@@ -375,7 +375,7 @@ export class StudiesComponent implements OnInit, OnDestroy, AfterViewInit {
   ];
 
   // eslint-disable-next-line no-unused-vars
-  constructor(public translate: TranslateService, private i18Service: I18Service) {
+  constructor(public translate: TranslateService, public i18Service: I18Service) {
     translate.use(this.i18Service.getLanguage());
   }
 
@@ -481,31 +481,32 @@ export class StudiesComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   getMonth(month: string): string {
+    const lang = this.i18Service.getLanguage();
     switch (month) {
       case '01':
-        return this.translate.currentLang == 'es' ? 'Enero' : 'January';
+        return lang == 'es' ? 'Enero' : 'January';
       case '02':
-        return this.translate.currentLang == 'es' ? 'Febrero' : 'February';
+        return lang == 'es' ? 'Febrero' : 'February';
       case '03':
-        return this.translate.currentLang == 'es' ? 'Marzo' : 'March';
+        return lang == 'es' ? 'Marzo' : 'March';
       case '04':
-        return this.translate.currentLang == 'es' ? 'Abril' : 'April';
+        return lang == 'es' ? 'Abril' : 'April';
       case '05':
-        return this.translate.currentLang == 'es' ? 'Mayo' : 'May';
+        return lang == 'es' ? 'Mayo' : 'May';
       case '06':
-        return this.translate.currentLang == 'es' ? 'Junio' : 'June';
+        return lang == 'es' ? 'Junio' : 'June';
       case '07':
-        return this.translate.currentLang == 'es' ? 'Julio' : 'July';
+        return lang == 'es' ? 'Julio' : 'July';
       case '08':
-        return this.translate.currentLang == 'es' ? 'Agosto' : 'August';
+        return lang == 'es' ? 'Agosto' : 'August';
       case '09':
-        return this.translate.currentLang == 'es' ? 'Septiembre' : 'September';
+        return lang == 'es' ? 'Septiembre' : 'September';
       case '10':
-        return this.translate.currentLang == 'es' ? 'Octubre' : 'October';
+        return lang == 'es' ? 'Octubre' : 'October';
       case '11':
-        return this.translate.currentLang == 'es' ? 'Noviembre' : 'November';
+        return lang == 'es' ? 'Noviembre' : 'November';
       case '12':
-        return this.translate.currentLang == 'es' ? 'Diciembre' : 'December';
+        return lang == 'es' ? 'Diciembre' : 'December';
       default:
         return '';
     }

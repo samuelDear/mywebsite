@@ -7,12 +7,12 @@ export const navigationCustom = (goto: () => void): void => {
 };
 
 export const startTx = (): void => {
-  document.body.style.overflow = 'hidden';
-  document.body.style.pointerEvents = 'none';
+  const body = document.body;
+  body.style.overflow = 'hidden';
+  body.style.pointerEvents = 'none';
   const div = document.createElement('div');
 
-  div.classList.add('loadScreen');
-  div.classList.add('curtain');
+  div.classList.add('loadScreen', 'curtain');
   div.style.backgroundImage = '';
   div.style.backgroundColor = '#000';
   div.style.opacity = '1';
@@ -30,10 +30,11 @@ export const endTx = (): void => {
     waitScreen.style.width = '0%';
   }
   setTimeout(() => {
-    document.body.style.overflow = 'auto';
-    document.body.style.pointerEvents = 'auto';
+    const body = document.body;
+    body.style.overflow = 'auto';
+    body.style.pointerEvents = 'auto';
     if (waitScreen !== null) {
-      document.body.removeChild(waitScreen);
+      body.removeChild(waitScreen);
     }
   }, 1200);
 };
