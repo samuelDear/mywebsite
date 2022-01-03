@@ -1,51 +1,5 @@
 {
-  "copy": "© 2021, All rights reserved.",
   "header": {
     "aboutButton": "ABOUT ME"
-  },
-  "home": {
-    "presentation": "Hello! My name is Samuel Rojas.",
-    "description": "I'm a web and mobile developer that build responsive websites and development cross-platform Apps.",
-    "linkProject": "View Project",
-    "msgContact": "Feel free to contact me on",
-    "submsgContact": "Or you can send me an email from here!",
-    "labelName": "Name",
-    "labelEmail": "Email",
-    "labelDscEmail": "Message",
-    "btnText": "Send",
-    "requiredInput": "This field is required.",
-    "invalidEmail": "Invalid email."
-  },
-  "knowlegde": {
-    "firstDsc":"I’m very familiar using web tecnhologies like HTML5, CCS3, TypeScript and JavaScriptunder the ECMAScript standard from version 6 to version 11.",
-    "secondDsc":"I have worked on the Front-end with frameworks like Angular and React with their libraries like Material UI and Angular Material, also I have experience building responsive websites with a high-performance.",
-    "thirdDsc":"Otherwise, I’m familiar using the framework React Native for building across-platform Apps. and Also, Electron in the case of cross-platform desktop applications.",
-    "quarterDsc":"However, In the back-end I have used PHP and Java for the creation of REST API, using both SQL and NoSQL databases. Such as MySQL, PostgreSQL, MongoDB, Realm and Firebase.",
-    "fiftDsc":"Additionally, I have worked under SCRUM and Kanban methodologies with tools such as Trello, Jira, Slack and Confluence. Also, I have knowledge of visual tools like Figma, Zeplin, MarvelApp and Mockflow."
-  },
-  "about": {
-    "resume":"I'm a Venezuelan web designer and a mobile developer.<br>I really like to create useful and intuitive products with comfortable visual interfaces for everybody.",
-    "aboutLink":"Read more about me"
-  },
-  "orm": {
-    "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics."
-  },
-  "myWeb": {
-    "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
-  },
-  "afxtrade": {
-    "resume": "It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency."
-  },
-  "fjcintranet": {
-    "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard."
-  },
-  "traumapp": {
-    "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
-  },
-  "traumappLanding": {
-    "resume": "It is a web page developed with React. With a responsive web design for any device and simple animations for a better visual experience. Created as an information page for the TraumApp application with detailed documentation, membership purchase and user dashboard."
-  },
-  "quipus": {
-    "resume": "Thematic pools events where each event was unique and had different technologies such as Angular, React and Node on the backend side. Spatially designed to be visited from mobile devices with a navigability designed to entertain."
   }
 }

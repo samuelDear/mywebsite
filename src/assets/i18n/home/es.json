@@ -1,0 +1,45 @@
+{
+  "presentation": "Hola! Mi nombre es Samuel Rojas.",
+  "description": "Soy un desarrollador web y móvil que hace páginas web responsivas y desarrolla aplicaciones móviles multiplataforma.",
+  "linkProject": "Mirar Proyecto",
+  "msgContact": "Siéntete libre de enviarme un correo a",
+  "submsgContact": "O puedes enviarme un correo desde aquí!",
+  "labelName": "Nombre",
+  "labelEmail": "Correo",
+  "labelDscEmail": "Mensaje",
+  "btnText": "Enviar",
+  "requiredInput": "Este campo es obligatorio.",
+  "invalidEmail": "Correo invalido.",
+  "knowlegde": {
+    "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estándar ECMAScript desde la versión 6 hasta la versión 11.",
+    "secondDsc":"Ademas, he trabajado en el Front-end con frameworks como Angular y React con sus librería como Material UI y Angular Material. Cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
+    "thirdDsc":"Por otra parte, estoy familiarizado usando el framework React Native para crear aplicaciones móviles multiplataforma. También, Electron en el caso de aplicaciones para escritorio multiplataforma.",
+    "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java para la creación de REST API, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase.",
+    "fiftDsc":"Adicionalmente, he trabajo bajo metodologías SCRUM y Kanban con herramientas como Trello, Jira, Slack y Confluence. Ademas, tengo conocimiento en herramientas visuales como Figma, Zeplin, MarvelApp y Mockflow."
+  },
+  "about": {
+    "resume":"Soy un desarrollador web y móvil venezolano.<br>Realmente me gusta crear productos útiles e intuitivos con interfaces visuales cómodas para todos.",
+    "aboutLink":"Leer más sobre mí"
+  },
+  "orm": {
+    "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. Un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas."
+  },
+  "fjcintranet": {
+    "resume": "Es un sistema interno de página única(SPA). Creado con Angular 8 y Java Spring, para la gestión documental y de hallazgos en la Fundación Jacinto Convit. Un sitio web que cuenta con estándares internacionales y bajo el estándar ISO 9001."
+  },
+  "afxtrade": {
+    "resume": "Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda."
+  },
+  "myWeb": {
+    "resume": "Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario."
+  },
+  "traumapp": {
+    "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
+  },
+  "traumappLanding": {
+    "resume": "Es una página web desarrollada con React. Con un diseño web responsivo para cualquier dispositivo y animaciones sencillas para una mejor experiencia visual. Creada como página informativa de la aplicación TraumApp con una documentación detallada, compra de membresías y dashboard para el usuario."
+  },
+  "quipus": {
+    "resume": "Eventos de quinielas tematicas donde cada evento era unico y tenian tecnologias diferentes como Angular, React y Node del lado del backend. Espacialmente diseñado para ser visitado desde dispositivos moviles con una navegabilidad pensada para entretener."
+  }
+}

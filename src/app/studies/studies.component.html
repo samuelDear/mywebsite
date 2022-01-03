@@ -2,20 +2,20 @@
   <div class="studiesInfo flex flex-col items-center">
     <div class="stickEnd"></div>
     <div
-      class="studyDetail {{ i % 2 === 0 || i === 0 ? 'studyPair' : 'studyOdd' }}"
+      class="studyDetail {{ i % 2 === 0 ? 'studyPair' : 'studyOdd' }}"
       *ngFor="let study of studies; let i = index"
       id="{{ study.reference !== null && study.reference !== undefined ? study.reference : '' }}"
     >
-      <div class="details {{ i % 2 === 0 || i === 0 ? 'detailsPair' : '' }}">
+      <div class="details {{ i % 2 === 0 && 'detailsPair' }}">
         <div class="textdetails">
-          <span class="textTitle">{{ translate.currentLang === 'es' ? study.es.title : study.en.title }}</span>
+          <span class="textTitle">{{ i18Service.getLanguage() === 'es' ? study.es.title : study.en.title }}</span>
           <span class="textDate"
-            >{{ getMonth(study.datecreated.month) }} {{ this.translate.currentLang === 'es' ? 'de' : 'of' }}
+            >{{ getMonth(study.datecreated.month) }} {{ i18Service.getLanguage() === 'es' ? 'de' : 'of' }}
             {{ study.datecreated.year }}</span
           >
           <span class="textAcademy">{{ study.institute }}</span>
         </div>
-        <div class="currentCourse {{ i % 2 === 0 || i === 0 ? 'ballPair' : 'ballOdd' }}"></div>
+        <div class="currentCourse {{ i % 2 === 0 ? 'ballPair' : 'ballOdd' }}"></div>
       </div>
     </div>
     <div class="stickBegin"></div>

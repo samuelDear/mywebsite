@@ -1,8 +1,8 @@
 <section class="mainBox" id="home">
   <section class="presentationBox">
     <div class="presentationSonBox text-justify">
-      <h1 stranslate="home.presentation" class="presentation"></h1>
-      <p stranslate="home.description" class="descMySelf"></p>
+      <h1 stranslate="presentation" class="presentation"></h1>
+      <p stranslate="description" class="descMySelf"></p>
     </div>
   </section>
 
@@ -25,7 +25,7 @@
       >
         <h1 class="projectTitle">{{ project.name }}</h1>
         <p class="descProject text-justify leading-none" [stranslate]="project.resume"></p>
-        <span class="linkProject flex" stranslate="home.linkProject"></span>
+        <span class="linkProject flex" stranslate="linkProject"></span>
       </div>
     </div>
 
@@ -263,12 +263,12 @@
     </p>
     <div class="w-100 my-5 flex flex-col contactBox">
       <p class="msgContact">
-        <span stranslate="home.msgContact"></span>&nbsp;<span class="contactEmail">contact@samueldear.com</span>
+        <span stranslate="msgContact"></span>&nbsp;<span class="contactEmail">contact@samueldear.com</span>
       </p>
-      <p class="submsgContact" stranslate="home.submsgContact"></p>
+      <p class="submsgContact" stranslate="submsgContact"></p>
       <form class="flex flex-col contactFormBox" [formGroup]="contactForm" (submit)="onSubmit()">
         <mat-form-field class="my-1">
-          <mat-label stranslate="home.labelName" class="labelForm"></mat-label>
+          <mat-label stranslate="labelName" class="labelForm"></mat-label>
           <input
             matInput
             value=""
@@ -280,15 +280,11 @@
             formControlName="name"
           />
           <mat-error *ngIf="contactForm.controls.name.invalid && contactForm.controls.name.touched">
-            <span
-              class="matError"
-              *ngIf="contactForm.controls.name.errors?.required"
-              stranslate="home.requiredInput"
-            ></span>
+            <span class="matError" *ngIf="contactForm.controls.name.errors?.required" stranslate="requiredInput"></span>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="my-1">
-          <mat-label stranslate="home.labelEmail" class="labelForm"></mat-label>
+          <mat-label stranslate="labelEmail" class="labelForm"></mat-label>
           <input
             matInput
             value=""
@@ -303,17 +299,13 @@
             <span
               class="matError"
               *ngIf="contactForm.controls.email.errors?.required"
-              stranslate="home.requiredInput"
+              stranslate="requiredInput"
             ></span>
-            <span
-              class="matError"
-              *ngIf="contactForm.controls.email.errors?.email"
-              stranslate="home.invalidEmail"
-            ></span>
+            <span class="matError" *ngIf="contactForm.controls.email.errors?.email" stranslate="invalidEmail"></span>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="my-1">
-          <mat-label stranslate="home.labelDscEmail" class="labelForm"></mat-label>
+          <mat-label stranslate="labelDscEmail" class="labelForm"></mat-label>
           <textarea
             matInput
             class="textareaContact"
@@ -323,16 +315,12 @@
             formControlName="msg"
           ></textarea>
           <mat-error *ngIf="contactForm.controls.msg.invalid && contactForm.controls.msg.touched">
-            <span
-              class="matError"
-              *ngIf="contactForm.controls.msg.errors?.required"
-              stranslate="home.requiredInput"
-            ></span>
+            <span class="matError" *ngIf="contactForm.controls.msg.errors?.required" stranslate="requiredInput"></span>
           </mat-error>
         </mat-form-field>
         <button mat-button type="submit" class="btnSendEmail" [disabled]="!contactForm.valid">
           <mat-spinner *ngIf="isLoadingBtn" diameter="30"></mat-spinner>
-          <span stranslate="home.btnText" *ngIf="!isLoadingBtn"></span>
+          <span stranslate="btnText" *ngIf="!isLoadingBtn"></span>
         </button>
       </form>
     </div>

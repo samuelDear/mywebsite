@@ -6,6 +6,8 @@ import { navigationCustom } from '../transition';
 import { EmailService } from '../services/email/email.service';
 import { cleanFonts } from '../../main';
 import { ProjectHome, emailForm, responseEmail, ExperimentType } from '../services/common';
+import { I18Service } from '../services/i18n-service/i18n-service.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -82,8 +84,13 @@ export class HomeComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     // eslint-disable-next-line no-unused-vars
     public emailService: EmailService,
+    // eslint-disable-next-line no-unused-vars
+    public translate: TranslateService,
+    // eslint-disable-next-line no-unused-vars
+    private i18Service: I18Service,
   ) {
     window.scroll(0, 0);
+    translate.use(this.i18Service.getLanguage());
     window.addEventListener('scroll', () => this.animatePolygon(), true);
   }
 
@@ -105,6 +112,10 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.remove();
       });
     }
+
+    this.i18Service.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
 
     const expBox: HTMLElement = <HTMLElement>document.getElementById('expBox');
     if (expBox !== undefined) {
