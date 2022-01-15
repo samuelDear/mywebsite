@@ -57,14 +57,5 @@
     "aboutLink": "about me",
     "otherWork": "You can see my other works!",
     "visitProject": "Visit"
-  },
-  "afxtrade": {
-    "resume": "It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency."
-  },
-  "traumappLanding": {
-    "resume": "It is a web page developed with React. With a responsive web design for any device and simple animations for a better visual experience. Created as an information page for the TraumApp application with detailed documentation, membership purchase and user dashboard."
-  },
-  "traumapp": {
-    "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
   }
 }

@@ -42,17 +42,17 @@ export class OrmComponent implements OnInit {
     {
       code: '/FJCIntranet',
       name: 'FJC Intranet',
-      resume: 'fjcintranet.resume',
+      resume: 'fjcintranet-resume',
     },
     {
       code: '',
       name: 'My Portafolio',
-      resume: 'myWeb.resume',
+      resume: 'myWeb-resume',
     },
     {
       code: '/afxtrade',
       name: 'AFX Trade',
-      resume: 'afxtrade.resume',
+      resume: 'afxtrade-resume',
     },
   ];
 

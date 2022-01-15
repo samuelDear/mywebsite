@@ -56,14 +56,5 @@
     "aboutLink": "acerca de mí",
     "otherWork": "Puedes ver mis otros trabajos!",
     "visitProject": "Visitar"
-  },
-  "orm": {
-    "resume": "Es una página web creada con HTML5, CSS3, JS y PHP. Un sitio web responsivo con un diseño cómodo para facilitar la experiencia del usuario y de un alto rendimiento. Creado para facilitar a los colegios de Venezuela la inscripción a las Olimpiadas Recreativas de Matemáticas."
-  },
-  "traumappLanding": {
-    "resume": "Es una página web desarrollada con React. Con un diseño web responsivo para cualquier dispositivo y animaciones sencillas para una mejor experiencia visual. Creada como página informativa de la aplicación TraumApp con una documentación detallada, compra de membresías y dashboard para el usuario."
-  },
-  "myWeb": {
-    "resume": "Es un sitio web de página única(SPA). Con un alto rendimiento, un sitio web responsivo que utiliza animaciones potentes. También, usa el poder de los SVG para enriquecer la experiencia del usuario."
   }
 }

@@ -12,6 +12,7 @@ export function createTranslateLoader(http: HttpClient) {
   return new MultiTranslateHttpLoader(http, [
     { prefix: './assets/i18n/home/', suffix: '.json' },
     { prefix: './assets/i18n/common/copyright/', suffix: '.json' },
+    { prefix: './assets/i18n/common/resumes/', suffix: '.json' },
   ]);
 }
 

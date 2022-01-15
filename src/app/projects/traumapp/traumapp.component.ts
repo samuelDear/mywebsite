@@ -44,17 +44,17 @@ export class TraumappComponent implements OnInit {
     {
       code: '/ormv',
       name: 'ORM',
-      resume: 'orm.resume',
+      resume: 'orm-resume',
     },
     {
       code: '',
       name: 'My Portafolio',
-      resume: 'myWeb.resume',
+      resume: 'myWeb-resume',
     },
     {
       code: '/traumappLanding',
       name: 'TraumApp Landing',
-      resume: 'traumappLanding.resume',
+      resume: 'traumappLanding-resume',
     },
   ];
 

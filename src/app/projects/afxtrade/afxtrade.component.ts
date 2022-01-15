@@ -48,17 +48,17 @@ export class AfxtradeComponent implements OnInit {
     {
       code: '/ormv',
       name: 'ORM',
-      resume: 'orm.resume',
+      resume: 'orm-resume',
     },
     {
       code: '',
       name: 'My Portafolio',
-      resume: 'myWeb.resume',
+      resume: 'myWeb-resume',
     },
     {
       name: 'TraumApp',
       code: '/traumapp',
-      resume: 'traumapp.resume',
+      resume: 'traumapp-resume',
     },
   ];
 
