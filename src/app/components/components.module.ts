@@ -12,6 +12,7 @@ import { MoreProjectsComponent } from './more-projects/more-projects.component';
 import { ThanksReadingComponent } from './thanks-reading/thanks-reading.component';
 import { TitleProjectsComponent } from './title-projects/title-projects.component';
 import { TypographyLettersComponent } from './typographyLetters/typography-letters.component';
+
 import { StranslateDirective } from './directives/stranslate.directive';
 
 /* Material UI components */
@@ -21,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 @NgModule({
   imports: [
@@ -48,6 +50,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     TitleProjectsComponent,
     TypographyLettersComponent,
     StranslateDirective,
+    CopyrightComponent,
   ],
   exports: [
     FooterComponent,
@@ -71,6 +74,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     StranslateDirective,
     FormsModule,
     ReactiveFormsModule,
+    CopyrightComponent,
   ],
 })
 export class ComponentsModule {}

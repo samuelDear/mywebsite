@@ -20,16 +20,16 @@ export class TraumappLandingComponent implements OnInit {
     {
       code: '/afxtrade',
       name: 'AFX Trade',
-      resume: 'afxtrade.resume',
+      resume: 'afxtrade-resume',
     },
     {
       name: 'TraumApp',
       code: '/traumapp',
-      resume: 'traumapp.resume',
+      resume: 'traumapp-resume',
     },
     {
       name: 'Quipus Events',
-      resume: 'quipus.resume',
+      resume: 'quipus-resume',
       code: '/quipus',
     },
   ];

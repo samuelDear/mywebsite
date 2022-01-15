@@ -39,15 +39,5 @@
     "aboutLink": "acerca de mí",
     "otherWork": "Puedes ver mis otros trabajos!",
     "visitProject": "Visitar"
-  },
-  "quipus": {
-    "resume": "Eventos de quinielas tematicas donde cada evento era unico y tenian tecnologias diferentes como Angular, React y Node del lado del backend. Espacialmente diseñado para ser visitado desde dispositivos moviles con una navegabilidad pensada para entretener."
-  },
-  "traumapp": {
-    "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
-  },
-  "afxtrade": {
-    "resume": "Es una aplicación web creada con HTML5, CSS3, JS y PHP. Un exchange de criptomonedas Venezolano en el cual podremos trabajar con diferentes criptomonedas como BTC, USDT, PTR y más. Con una interfaz cómoda permitiendo que cualquier usuario pueda utilizarla. Ademas, con un manejo único para cada moneda."
-  },
-  "copy": "© 2021, Todos los derechos reservados."
+  }
 }

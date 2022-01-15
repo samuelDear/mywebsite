@@ -34,15 +34,5 @@
     "aboutLink": "about me",
     "otherWork": "You can see my other works!",
     "visitProject": "Visit"
-  },
-  "myWeb": {
-    "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
-  },
-  "afxtrade": {
-    "resume": "It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency."
-  },
-  "fjcintranet": {
-    "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard."
-  },
-  "copy": "© 2021, All rights reserved."
+  }
 }

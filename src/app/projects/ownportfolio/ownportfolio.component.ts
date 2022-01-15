@@ -57,17 +57,17 @@ export class OwnportfolioComponent implements OnInit {
     {
       code: '/FJCIntranet',
       name: 'FJC Intranet',
-      resume: 'fjcintranet.resume',
+      resume: 'fjcintranet-resume',
     },
     {
       code: '/ormv',
       name: 'ORM',
-      resume: 'orm.resume',
+      resume: 'orm-resume',
     },
     {
       code: '/afxtrade',
       name: 'AFX Trade',
-      resume: 'afxtrade.resume',
+      resume: 'afxtrade-resume',
     },
   ];
 

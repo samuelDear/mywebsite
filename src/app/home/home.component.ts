@@ -23,37 +23,37 @@ export class HomeComponent implements OnInit, OnDestroy {
   projects: ProjectHome[] = [
     {
       name: 'FJC Intranet',
-      resume: 'fjcintranet.resume',
+      resume: 'fjcintranet-resume',
       route: '/FJCIntranet',
     },
     {
       name: 'ORM',
-      resume: 'orm.resume',
+      resume: 'orm-resume',
       route: '/ormv',
     },
     {
       name: 'My Portfolio',
-      resume: 'myWeb.resume',
+      resume: 'myWeb-resume',
       route: '/portfolio',
     },
     {
       name: 'AFX Trade',
-      resume: 'afxtrade.resume',
+      resume: 'afxtrade-resume',
       route: '/afxtrade',
     },
     {
       name: 'TraumApp',
-      resume: 'traumapp.resume',
+      resume: 'traumapp-resume',
       route: '/traumapp',
     },
     {
       name: 'TraumApp Landing',
-      resume: 'traumappLanding.resume',
+      resume: 'traumappLanding-resume',
       route: '/traumappLanding',
     },
     {
       name: 'Quipus Events',
-      resume: 'quipus.resume',
+      resume: 'quipus-resume',
       route: '/quipus',
     },
   ];

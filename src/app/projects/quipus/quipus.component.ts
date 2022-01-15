@@ -21,17 +21,17 @@ export class QuipusComponent implements OnInit {
     {
       code: '/afxtrade',
       name: 'AFX Trade',
-      resume: 'afxtrade.resume',
+      resume: 'afxtrade-resume',
     },
     {
       name: 'TraumApp',
       code: '/traumapp',
-      resume: 'traumapp.resume',
+      resume: 'traumapp-resume',
     },
     {
       code: '/traumappLanding',
       name: 'TraumApp Landing',
-      resume: 'traumappLanding.resume',
+      resume: 'traumappLanding-resume',
     },
   ];
 

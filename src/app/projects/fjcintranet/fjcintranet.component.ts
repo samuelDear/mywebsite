@@ -44,17 +44,17 @@ export class FjcintranetComponent implements OnInit {
     {
       code: '/ormv',
       name: 'ORM',
-      resume: 'orm.resume',
+      resume: 'orm-resume',
     },
     {
       code: '',
       name: 'My Portafolio',
-      resume: 'myWeb.resume',
+      resume: 'myWeb-resume',
     },
     {
       code: '/afxtrade',
       name: 'AFX Trade',
-      resume: 'afxtrade.resume',
+      resume: 'afxtrade-resume',
     },
   ];
 

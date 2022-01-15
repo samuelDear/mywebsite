@@ -30,15 +30,5 @@
     "aboutLink": "about me",
     "otherWork": "You can see my other works!",
     "visitProject": "Visit"
-  },
-  "orm": {
-    "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics."
-  },
-  "myWeb": {
-    "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
-  },
-  "afxtrade": {
-    "resume": "It is a web application created with HTML5, CSS3, JS and PHP. A Venezuelan cryptocurrency exchange in which we can work with different cryptocurrencies such as BTC, USDT, PTR and more. With a comfortable interface allowing any user to use it. In addition, with a unique handling for each currency."
-  },
-  "copy": "© 2021, All rights reserved."
+  }
 }

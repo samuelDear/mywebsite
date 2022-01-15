@@ -52,15 +52,5 @@
     "aboutLink": "about me",
     "otherWork": "You can see my other works!",
     "visitProject": "Visit"
-  },
-  "orm": {
-    "resume": "It is a web page created with HTML5, CSS3, JS and PHP. a responsive website with a comfortable design to facilitate the user experience and high performance. Created to make it easier for Venezuelan schools to register for the Recreational Mathematics Olympics."
-  },
-  "myWeb": {
-    "resume": "A website that is a Single-page application(SPA). With a high-performance, responsive website that uses powered animations. As also, uses the creative SVG's power for enriching user experience."
-  },
-  "traumapp": {
-    "resume": "It is a multiplatform mobile application developed with React Native. It has a comfortable interface for the user and improve its daily use. Created to optimize a medical consultation and the management of patient information."
-  },
-  "copy": "© 2021, All rights reserved."
+  }
 }
