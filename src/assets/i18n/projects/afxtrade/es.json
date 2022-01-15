@@ -61,6 +61,5 @@
   },
   "traumapp": {
     "resume": "Es una aplicación móvil multiplataforma desarrollada con React Native. Cuenta con una interfaz comoda para el usuario y mejorar su uso diario. Creada para optimizar una consulta medica y el manejo de la informacion de los pacientes."
-  },
-  "copy": "© 2021, Todos los derechos reservados."
+  }
 }

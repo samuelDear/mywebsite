@@ -43,6 +43,5 @@
   },
   "fjcintranet": {
     "resume": "It is an internal single page system (SPA). Created with Angular 8 and Java Spring, for document and discovery management at the Jacinto Convit Foundation. A website that has international standards and under the ISO 9001 standard."
-  },
-  "copy": "© 2021, All rights reserved."
+  }
 }
