@@ -1,0 +1,59 @@
+.colorBox {
+  background-color: #fff;
+  margin: 18px;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  transform: scale(1);
+  flex-grow: 0;
+  max-width: 20%;
+  flex-basis: 20%;
+}
+
+.colorBox:hover {
+  transform: scale(1.2) perspective(1px);
+}
+
+.colorContent {
+  height: 100%;
+  width: 100%;
+}
+
+.colorMain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 950px) {
+  .colorBox {
+    margin: 10px 20px;
+    flex-grow: 0;
+    max-width: 40%;
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .colorBox {
+    margin: 12px 4%;
+    flex-grow: 0;
+    max-width: 35%;
+    flex-basis: 35%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .colorBox {
+    margin: 10px 10%;
+    height: 140px;
+    padding: 5px;
+    flex-grow: 0;
+    max-width: 60%;
+    flex-basis: 60%;
+  }
+}

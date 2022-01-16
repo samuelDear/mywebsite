@@ -5,6 +5,7 @@ import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
 @Component({
   selector: 'app-copyright',
   templateUrl: 'copyright.component.html',
+  styleUrls: ['./copyright.component.scss'],
 })
 export class CopyrightComponent implements OnInit {
   constructor(

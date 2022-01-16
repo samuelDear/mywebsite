@@ -128,6 +128,12 @@
     width: 100%;
     padding: 40px 55px 40px 40px;
   }
+
+  .myself {
+    position: initial;
+    margin: auto;
+    max-height: 9999vh;
+  }
 }
 
 @media only screen and (max-width: 550px) {

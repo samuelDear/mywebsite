@@ -1,0 +1,37 @@
+.randomProjectsBoxOdd {
+  margin-left: 2.5rem;
+  margin-right: 10rem;
+}
+
+.randomProjectsBoxPair {
+  margin-left: 10rem;
+  margin-right: 2.5rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .randomProjectsBoxOdd {
+    margin-right: 9rem;
+  }
+
+  .randomProjectsBoxPair {
+    margin-left: 9rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .randomProjectsBoxOdd {
+    margin-right: 5rem;
+  }
+
+  .randomProjectsBoxPair {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .randomProjectsBoxOdd,
+  .randomProjectsBoxPair {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}

@@ -23,13 +23,6 @@ select:focus {
   outline: 0;
 }
 
-.copyri {
-  display: flex;
-  justify-content: center;
-  font-family: monospace;
-  font-size: 10px;
-}
-
 .codeLine {
   font-family: monospace;
   font-size: 150%;
@@ -88,15 +81,6 @@ select:focus {
 
 textarea {
   resize: none;
-}
-
-/*Logo Jacinto Convit*/
-.JClogo {
-  transition: 1s;
-  width: 20vw;
-  min-width: 50px;
-  max-width: 100px;
-  margin: auto;
 }
 
 .imgScreen,
@@ -248,34 +232,6 @@ textarea {
   font-size: 1.25rem;
 }
 
-.rolAgencyDate {
-  font-size: 1.125rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.boxLaptopScreen {
-  width: 90%;
-  height: 90%;
-  background-color: #222;
-}
-
-.boxLaptopKeyboard {
-  width: 100%;
-  height: 50px;
-  background-color: #222;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-}
-
-.mouseTrack {
-  height: 40%;
-  width: 30%;
-  background-color: #000;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 .boxTablet {
   display: flex;
   align-items: center;
@@ -296,104 +252,9 @@ textarea {
   flex-direction: row;
 }
 
-.screenTablet {
-  width: 70%;
-}
-
-.buttonAndCameraTablet {
-  width: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.buttonTablet {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.cameraTablet {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-}
-
-.soundTablet {
-  width: 25px;
-  height: 200px;
-  border-radius: 20px;
-}
-
-.mobileBox {
-  border-radius: 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 60%;
-  margin: auto;
-  background-color: #111;
-}
-
-.cameraBoxMobile {
-  height: 5%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.screenMobile {
-  height: 95%;
-  border-radius: 30px;
-}
-
 .screenImg,
 .borderedBox {
   border-radius: 10px;
-}
-
-.soundMobile {
-  height: 10px;
-  border-radius: 5px;
-  width: 100px;
-}
-
-.cameraMobile {
-  width: 10px;
-  border-radius: 50%;
-  height: 10px;
-}
-
-.colorBox {
-  background-color: #fff;
-  margin: 20px;
-  height: 150px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  transition: all 1s ease;
-  transform: scale(1);
-  flex-grow: 0;
-  max-width: 20%;
-  flex-basis: 20%;
-}
-
-.colorBox:hover {
-  transform: scale(1.2) perspective(1px);
-}
-
-.colorContent {
-  height: 100%;
-  width: 100%;
-}
-
-.colorMain {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
 }
 
 .featureBox {
@@ -404,48 +265,6 @@ textarea {
 
 .featureBox:hover {
   transform: scale(1.05) perspective(0.5px);
-}
-
-.heart {
-  margin: 40px auto;
-  width: 100px;
-  height: 100px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg) scale(1);
-  background-color: #ff0000;
-  transition: all 1s ease;
-}
-
-.heart:hover {
-  transform: scale(1.1) perspective(1px) rotate(45deg);
-}
-
-.heart:before,
-.heart:after {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  content: '';
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #ff0000;
-  transition: all 1s ease;
-  transform: scale(1);
-}
-
-.heart:before {
-  bottom: 0px;
-  left: -50px;
-}
-
-.heart:after {
-  top: -50px;
-  right: 0px;
 }
 
 .stick {
@@ -471,11 +290,6 @@ textarea {
 .stick-bottom {
   margin-top: 7px;
   transform: rotate(-45deg);
-}
-
-.randomProjectsBoxOdd {
-  margin-left: 2.5rem;
-  margin-right: 10rem;
 }
 
 .slide {
@@ -521,10 +335,6 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #fff !important;
 }
 
-.criptoIconDisabled {
-  opacity: 0.5;
-}
-
 .imgLeft {
   transform: rotate(-10deg);
 }
@@ -542,39 +352,12 @@ input:-webkit-autofill {
   justify-content: center;
 }
 
-.btnVisitProject {
-  background: #db2696;
-  border-radius: 12px !important;
-  color: #fff;
-  margin-top: 14px !important;
-  font-size: 18px;
-  min-width: 130px !important;
-}
-
-.dscTags {
-  width: 33%;
-}
-
 .textRight {
   text-align: right;
 }
 
 .imgExperiment {
   border-radius: 18px;
-}
-
-.myself {
-  width: 82%;
-  height: auto;
-  bottom: 0;
-  left: 8%;
-  max-width: 700px;
-  position: absolute;
-}
-
-.randomProjectsBoxPair {
-  margin-left: 10rem;
-  margin-right: 2.5rem;
 }
 
 @media only screen and (max-width: 1224px) {
@@ -609,55 +392,22 @@ input:-webkit-autofill {
   .mainBoxPadding {
     padding: 7rem 4rem;
   }
-
-  .myself {
-    position: initial;
-    margin: auto;
-    max-height: 9999vh;
-  }
 }
 
 @media only screen and (max-width: 950px) {
-  .randomProjectsBoxOdd {
-    margin-right: 9rem;
-  }
-
-  .colorBox {
-    margin: 10px 20px;
-    flex-grow: 0;
-    max-width: 40%;
-    flex-basis: 40%;
-  }
-
   .socialMedia {
     height: 30px;
     width: 30px;
   }
-
-  .randomProjectsBoxPair {
-    margin-left: 9rem;
-  }
 }
 
 @media only screen and (max-width: 850px) {
-  .mobileBox {
-    width: 65%;
-  }
-
   .mainBox {
     margin: 6rem 1.5rem;
   }
 
   .mainBoxPadding {
     padding: 6rem 1.5rem;
-  }
-
-  .randomProjectsBoxOdd {
-    margin-right: 5rem;
-  }
-
-  .randomProjectsBoxPair {
-    margin-left: 5rem;
   }
 
   .featureBox {
@@ -667,10 +417,6 @@ input:-webkit-autofill {
   .dscText,
   .intro {
     font-size: 1rem;
-  }
-
-  .rolAgencyDate {
-    font-size: 1.1rem;
   }
 
   .dsc {
@@ -683,20 +429,7 @@ input:-webkit-autofill {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .randomProjectsBoxOdd,
-  .randomProjectsBoxPair {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-  }
-}
-
 @media only screen and (max-width: 750px) {
-  .mobileBox {
-    width: 40%;
-    margin: 20px auto;
-  }
-
   .boxMobile {
     height: auto;
     align-items: center;
@@ -718,17 +451,7 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 650px) {
-  .rolAgencyDate {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .textRight {
-    text-align: center;
-  }
-
-  .dscTags {
-    width: 100%;
     text-align: center;
   }
 
@@ -751,25 +474,10 @@ input:-webkit-autofill {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .mobileBox {
-    width: 52%;
-  }
-}
-
 @media only screen and (max-width: 550px) {
-  .mobileBox {
-    width: 55%;
-  }
-
   .stick {
     width: 30px;
     height: 5px;
-  }
-
-  .boxLaptopKeyboard {
-    width: 100%;
-    height: 30px;
   }
 }
 
@@ -784,72 +492,11 @@ input:-webkit-autofill {
   .imgVisualResult {
     max-height: none;
   }
-
-  .buttonTablet {
-    width: 20px;
-    height: 20px;
-  }
-
-  .soundTablet {
-    width: 15px;
-    height: 100px;
-  }
-
-  .cameraTablet {
-    width: 15px;
-    height: 15px;
-  }
-
-  .mobileBox {
-    width: 60%;
-  }
-
-  .screenTablet {
-    width: 100%;
-  }
-
-  .colorBox {
-    margin: 12px 4%;
-    flex-grow: 0;
-    max-width: 35%;
-    flex-basis: 35%;
-  }
-
-  .criptoIconBox {
-    margin: 10px 10%;
-    flex-grow: 0;
-    max-width: 30%;
-    flex-basis: 30%;
-  }
 }
 
 @media only screen and (max-width: 450px) {
-  .mobileBox {
-    width: 70%;
-  }
   .listDetails li {
     margin-bottom: 5px;
     font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .mobileBox {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .mobileBox {
-    width: 85%;
-  }
-
-  .colorBox {
-    margin: 10px 10%;
-    height: 140px;
-    padding: 5px;
-    flex-grow: 0;
-    max-width: 60%;
-    flex-basis: 60%;
   }
 }

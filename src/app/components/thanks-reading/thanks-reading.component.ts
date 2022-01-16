@@ -5,6 +5,7 @@ import { navigationCustom } from 'src/app/transition';
 @Component({
   selector: 'app-thanks-reading',
   templateUrl: './thanks-reading.component.html',
+  styleUrls: ['./thanks-reading.component.scss'],
 })
 export class ThanksReadingComponent {
   // eslint-disable-next-line
