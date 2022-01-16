@@ -1,0 +1,159 @@
+.mobileBox {
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  background-color: #111;
+}
+
+.screenTablet {
+  width: 70%;
+}
+
+.cameraTablet {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.buttonAndCameraTablet {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soundTablet {
+  width: 25px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.buttonTablet {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.boxLaptopKeyboard {
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.cameraMobile {
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+}
+
+.soundMobile {
+  height: 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.screenMobile {
+  height: 95%;
+  border-radius: 30px;
+}
+
+.cameraBoxMobile {
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mouseTrack {
+  height: 40%;
+  width: 30%;
+  background-color: #000;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.boxLaptopScreen {
+  width: 90%;
+  height: 90%;
+  background-color: #222;
+}
+
+@media only screen and (max-width: 850px) {
+  .mobileBox {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .mobileBox {
+    width: 40%;
+    margin: 20px auto;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mobileBox {
+    width: 52%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mobileBox {
+    width: 55%;
+  }
+
+  .boxLaptopKeyboard {
+    width: 100%;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mobileBox {
+    width: 60%;
+  }
+
+  .screenTablet {
+    width: 100%;
+  }
+
+  .cameraTablet {
+    width: 15px;
+    height: 15px;
+  }
+
+  .soundTablet {
+    width: 15px;
+    height: 100px;
+  }
+
+  .buttonTablet {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mobileBox {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mobileBox {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .mobileBox {
+    width: 85%;
+  }
+}
