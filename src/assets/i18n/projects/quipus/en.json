@@ -41,7 +41,9 @@
       "featureTitle4": "CMS",
       "featureDsc4": "The event goes through different stages, from when people participate until the results of the event are seen as such. That is why these stages must be managed from a CMS, as well as monitoring the results and selections.",
       "featureTitleTwitter": "Twitter Timeline",
-      "featureDscTwitter": "To keep up with the news of the event, there is a Twitter Timeline where you can see the tweets related to the event."
+      "featureDscTwitter": "To keep up with the news of the event, there is a Twitter Timeline where you can see the tweets related to the event.",
+      "featureTitle5": "development team",
+      "featureDsc5": "The development team was made up of two backends, two frontends, a QA, a SCRUM and 2 designers. This was one of the most demanding developments in terms of time, since we had to keep up with the events, therefore we had to be quick both in organizing and developing. And we always got our deliveries on time, if we had to give 150% we gave it, it was a team where we all had the same commitment."
     }
   },
   "project": {

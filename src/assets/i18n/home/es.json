@@ -12,8 +12,8 @@
   "invalidEmail": "Correo invalido.",
   "knowlegde": {
     "firstDsc":"Estoy muy familiarizado usando tecnologías web como HTML5, CSS3, TypeScript y JavaScript bajo el estándar ECMAScript desde la versión 6 hasta la versión 11.",
-    "secondDsc":"Ademas, he trabajado en el Front-end con frameworks como Angular y React con sus librería como Material UI y Angular Material. Cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
-    "thirdDsc":"Por otra parte, estoy familiarizado usando el framework React Native para crear aplicaciones móviles multiplataforma. También, Electron en el caso de aplicaciones para escritorio multiplataforma.",
+    "secondDsc":"Ademas, he trabajado en el Front-end con frameworks como Angular y React con sus librería como Material UI y Angular Material. Ademas, de librerias funcionales como axios para el manejo de peticiones y react-hook-form para las validaciones a nivel visual. Cuento con experiencia creando páginas web responsivas con un alto rendimiento.",
+    "thirdDsc":"Por otra parte, estoy familiarizado usando el framework React Native para crear aplicaciones móviles multiplataforma con librerias visuales como react-native-paper. También, Electron en el caso de aplicaciones para escritorio multiplataforma.",
     "quarterDsc":"Sin embargo, en el Back-end he usado PHP y Java para la creación de REST API, usando bases de datos tanto SQL y NoSQL. Como MySQL, PostgreSQL, MongoDB, Realm y Firebase.",
     "fiftDsc":"Adicionalmente, he trabajo bajo metodologías SCRUM y Kanban con herramientas como Trello, Jira, Slack y Confluence. Ademas, tengo conocimiento en herramientas visuales como Figma, Zeplin, MarvelApp y Mockflow."
   },

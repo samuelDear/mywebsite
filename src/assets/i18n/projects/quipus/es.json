@@ -29,9 +29,7 @@
       "featureTitle1": "Brackets",
       "featureDsc1": "Para la fase final se desarrollaron unos brackets para que la experiencia de llenado fuera más agradable. Estos brackets fueron desarrollados para soportar cualquier partido y resultado.",
       "featureTitle2": "Predictor",
-      "featureDsc2": "Para la fase de grupos, el usuario tenia que ir partido por partido llenando el resultado, esto a algunos les gusta y a otros no, es por ello que se decidió por un llenado automático el cual estaba basado en datos estadísticos para su llenado.",
-      "featureTitleTwitter": "Twitter Timeline",
-      "featureDscTwitter": "Para estar al tanto de las novedades del evento, se cuenta con Timeline de twitter donde puedes ver los tweets referentes al evento."
+      "featureDsc2": "Para la fase de grupos, el usuario tenia que ir partido por partido llenando el resultado, esto a algunos les gusta y a otros no, es por ello que se decidió por un llenado automático el cual estaba basado en datos estadísticos para su llenado."
     },
     "commonFeatures": {
       "featureTitle1": "Responsive Design",
@@ -41,7 +39,11 @@
       "featureTitle3": "Firebase",
       "featureDsc3": "Para el ingreso con Gmail se hizo por medio de Firebase para su integración.",
       "featureTitle4": "CMS",
-      "featureDsc4": "El evento pasa por diferentes etapas, desde que la gente participa hasta que se ven los resultados como tal del evento. Es por ello que estas etapas deben ser manejadas desde un CMS, así como también un monitoreo de los resultados y selecciones."
+      "featureDsc4": "El evento pasa por diferentes etapas, desde que la gente participa hasta que se ven los resultados como tal del evento. Es por ello que estas etapas deben ser manejadas desde un CMS, así como también un monitoreo de los resultados y selecciones.",
+      "featureTitleTwitter": "Twitter Timeline",
+      "featureDscTwitter": "Para estar al tanto de las novedades del evento, se cuenta con Timeline de twitter donde puedes ver los tweets referentes al evento.",
+      "featureTitle5": "Equipo de desarrollo",
+      "featureDsc5": "El equipo de desarrollo estaba conformado por dos backends, dos frontends, un QA, un SCRUM y 2 diseñadoras. Este fue uno de los desarrollos más exigentes a nivel de tiempo, ya que debíamos estar a la par que sucedían los eventos, por lo tanto debíamos ser rápidos tanto en organizarnos como desarrollando. Y siempre obtuvimos nuestras entregas a tiempo, si había que dar el 150% lo dábamos, era un equipo donde todos teníamos el mismo compromiso."
     }
   },
   "project": {
