@@ -147,6 +147,10 @@ export class QuipusComponent implements OnInit {
       title: 'quipus.commonFeatures.featureTitle4',
       dsc: 'quipus.commonFeatures.featureDsc4',
     },
+    {
+      title: 'quipus.commonFeatures.featureTitle5',
+      dsc: 'quipus.commonFeatures.featureDsc5',
+    },
   ];
 
   twitterFeature: FeatureType = {
