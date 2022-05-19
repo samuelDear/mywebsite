@@ -1,0 +1,19 @@
+{
+  "traumapp": {
+    "dsc": "Mobile application to manage medical consultations and medical records"
+  },
+  "project": {
+    "role": "Role:",
+    "agency": "Agency:",
+    "date": "Date:",
+    "introTitle": "Introduction",
+    "visualRes": "Visual Result",
+    "typoColor": "Typography - Color",
+    "features": "Features",
+    "thanks": "Thanks for Watching!",
+    "hereMore": "Here you can know more ",
+    "aboutLink": "about me",
+    "otherWork": "You can see my other works!",
+    "visitProject": "Visit"
+  }
+}

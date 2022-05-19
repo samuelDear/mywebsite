@@ -1,0 +1,19 @@
+{
+  "traumapp": {
+    "dsc": "Aplicación móvil para administrar consultas médicas e historias clínicas"
+  },
+  "project": {
+    "role": "Rol:",
+    "agency": "Empresa:",
+    "date": "Fecha:",
+    "introTitle": "Introducción",
+    "visualRes": "Resultado Visual",
+    "typoColor": "Tipografía - Color",
+    "features": "Características",
+    "thanks": "Gracias por leer!",
+    "hereMore": "Aquí puede saber más ",
+    "aboutLink": "acerca de mí",
+    "otherWork": "Puedes ver mis otros trabajos!",
+    "visitProject": "Visitar"
+  }
+}
