@@ -56,6 +56,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       resume: 'quipus-resume',
       route: '/quipus',
     },
+    {
+      name: 'TMS',
+      resume: 'tms-resume',
+      route: '/tms',
+    },
   ];
 
   experiments: ExperimentType[] = [

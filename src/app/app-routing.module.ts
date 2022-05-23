@@ -42,6 +42,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'tms',
+    loadChildren: () => import('./projects/tms/tms.module').then(m => m.TmsModule),
+    pathMatch: 'full',
+  },
+  {
     path: 'menu',
     loadChildren: () => import('./slide-menu/slide-menu.module').then(m => m.SlideMenuModule),
     pathMatch: 'full',
