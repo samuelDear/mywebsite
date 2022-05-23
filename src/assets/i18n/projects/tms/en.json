@@ -1,6 +1,20 @@
 {
-  "traumapp": {
-    "dsc": "Mobile application to manage medical consultations and medical records"
+  "tms": {
+    "role": "Frontend",
+    "dsc": "TMS for POS management",
+    "intro1": "The TMS born from the need of companies to be able to manage different points of sale, this project serves as a template for different commercial companies. Which allows visual adjustments at the request of customers.",
+    "intro2": "In this system you can manage everything related to a point of sale, such as the point of sale's business card, the cards accepted by the point of sale, updating the APKs of the points of sale and configuring each of the necessary parameters for their correct operation. As well as being able to monitor the APKs and their versions and even notify the POS of updates to their applications.",
+    "intro3": "Each TMS has a personalized color palette and also a specific font depending on the client, thus making the template for the project completely customizable.",
+    "introTech1": "For the development of the TMS template, the Angular framework and its Angular Material library were used. Also, for the styles of the screens and components, SCSS was used together with bootstrap for rapid development. It should be noted that only all the tools provided by Angular are used to make requests, to validate forms, as well as each module for lazy loading and also interceptors for handling general requests.",
+    "featureTitle1": "Audit",
+    "feature1": "To control the changes in the system, an audit module is carried out with various filters to be able to identify the changes that are made and who makes them. Allowing even to export it to analyze it from Excel.",
+    "featureTitle2": "Validations",
+    "feature2": "Each of the modules has specific fields that must meet a standard in order to be saved or edited. This includes validation of numeric, alphanumeric, text, character size, spacing, and even unique letters that cannot be typed into certain fields. Allowing you to have total control of the data that is entered.",
+    "featureTitle3": "Responsive design",
+    "feature3": "Each TMS has a high performance responsive design. Allowing to enter from any device at any time, with a comfortable design in the forms and error notification.",
+    "featureTitle4": "File Upload",
+    "feature4": "The TMS has a section to manage the APKs that are installed in each POS, as well as their versioning, you can also order these updates to be installed from the TMS with a single button.",
+    "disclaimer": "(For security reasons no other details are discussed or more images are shared as they may contain sensitive information)"
   },
   "project": {
     "role": "Role:",
@@ -8,7 +22,7 @@
     "date": "Date:",
     "introTitle": "Introduction",
     "visualRes": "Visual Result",
-    "typoColor": "Typography - Color",
+    "tech": "Technologies",
     "features": "Features",
     "thanks": "Thanks for Watching!",
     "hereMore": "Here you can know more ",

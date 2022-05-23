@@ -1,6 +1,20 @@
 {
-  "traumapp": {
-    "dsc": "Aplicación móvil para administrar consultas médicas e historias clínicas"
+  "tms": {
+    "role": "Frontend",
+    "dsc": "TMS para gestión de puntos de venta",
+    "intro1": "Los TMS nacen por la necesidad de las empresas de poder gestionar diferentes puntos venta, este proyecto sirve de plantilla para diferentes empresas comerciales. La cual permite hacer ajustes visuales a petición de los clientes.",
+    "intro2": "En este sistema puedes manejar todo lo referente a un punto de venta, como la ficha comercial del punto de venta, las tarjetas aceptadas por el punto de venta, actualizar los APKs de los puntos de venta y configurar cada uno de los parámetros necesarios para su correcto funcionamiento. Así como también, poder monitorear los APKs y sus versiones e incluso notificar a los POS de actualizaciones en sus aplicaciones.",
+    "intro3": "Cada TMS cuenta con una paleta de colores personalizada y también una tipografía especifica dependiendo del cliente, siendo así que la plantilla para el proyecto sea completamente personalizable.",
+    "introTech1": "Para el desarrollo de la plantilla del TMS se utilizo el framework Angular y su librería Angular Material. Ademas, para los estilos de las pantallas y componentes se uso SCSS junto con bootstrap para un desarrollo rápido. Cabe destacar, que se hace uso unicamente de todas las herramientas que provee Angular para realizar peticiones, para validar formularios así como también se modularizarón cada modulo para lazy loading y también interceptores para el manejo de las peticiones generales.",
+    "featureTitle1": "Auditoria",
+    "feature1": "Para controlar los cambios en el sistema se lleva un modulo de auditoria con diversos filtros para poder identificar los cambios que se realizan y quien los realiza. Permitiendo incluso exportarlo para analizarlo desde Excel.",
+    "featureTitle2": "Validaciones",
+    "feature2": "Cada uno de los módulos cuenta con campos específicos que deben cumplir un estándar para poder ser guardados o editados. Esto incluye validación de numéricos, alfanuméricos, texto, tamaño de caracteres, espaciado e incluso letras exclusivas que no pueden ser escritas en determinados campos. Permitiendoo tener un control total de los datos que se ingresan.",
+    "featureTitle3": "Responsive design",
+    "feature3": "Cada TMS cuenta con un diseño responsive de alto rendimiento. Permitiendo poder ingresar desde cualquier dispositivo en cualquier momento, con un diseño cómodo en los formularios y la notificación de errores.",
+    "featureTitle4": "Subida de Archivos",
+    "feature4": "El TMS cuenta con un apartado para gestionar los APKs que se instalan en cada POS, así como su versionado, ademas pueden mandar a instalar estas actualizaciones desde el TMS con un solo botón.",
+    "disclaimer": "(Por razones de seguridad no se habla demás detalles ni se comparten más imágenes ya que pueden contener información sensible)"
   },
   "project": {
     "role": "Rol:",
@@ -8,7 +22,7 @@
     "date": "Fecha:",
     "introTitle": "Introducción",
     "visualRes": "Resultado Visual",
-    "typoColor": "Tipografía - Color",
+    "tech": "Tecnologías",
     "features": "Características",
     "thanks": "Gracias por leer!",
     "hereMore": "Aquí puede saber más ",
