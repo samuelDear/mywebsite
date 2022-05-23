@@ -1,0 +1,115 @@
+<section class="mainBox">
+  <!-- Ficha resumen -->
+  <app-title-projects
+    projectName="TMS"
+    dsc="tms.dsc"
+    role="tms.role"
+    agency="3DLink"
+    date="11-2021 / --"
+  ></app-title-projects>
+
+  <!-- Imagenes principales -->
+  <div class="sliderImagesMainBox">
+    <div class="arrowBox arrowBoxLeft" (click)="scrollToPrincipalImg(-1)">
+      <mat-icon aria-hidden="false" aria-label="arrow">keyboard_arrow_left</mat-icon>
+    </div>
+    <div class="sliderImages" id="principalImg">
+      <img
+        id="chinchinLogin"
+        src="../../../assets/images/project-images/tms/chinchinlogin.png"
+        [ngClass]="(sliderPrincipalImg === 1 ? '' : 'opacity-0') + ' imgPrincipal '"
+        title="Chinchin Login"
+        alt="Chinchin Login"
+      />
+      <img
+        id="fpLogin"
+        src="../../../assets/images/project-images/tms/fastpaymentlogin.png"
+        [ngClass]="(sliderPrincipalImg === 2 ? '' : 'opacity-0') + ' imgPrincipal '"
+        title="Fast payment Login"
+        alt="Fast payment Login"
+      />
+      <img
+        id="bpLogin"
+        src="../../../assets/images/project-images/tms/bestpaylogin.png"
+        [ngClass]="(sliderPrincipalImg === 3 ? '' : 'opacity-0') + ' imgPrincipal '"
+        title="BestPay Login"
+        alt="BestPay Login"
+      />
+    </div>
+    <div class="arrowBox arrowBoxRight" (click)="scrollToPrincipalImg(1)">
+      <mat-icon aria-hidden="false" aria-label="arrow">keyboard_arrow_right</mat-icon>
+    </div>
+    <div class="dotBox">
+      <div [ngClass]="(sliderPrincipalImg === 1 ? 'dotActive' : '') + ' dotPosition'"></div>
+      <div [ngClass]="(sliderPrincipalImg === 2 ? 'dotActive' : '') + ' dotPosition'"></div>
+      <div [ngClass]="(sliderPrincipalImg === 3 ? 'dotActive' : '') + ' dotPosition'"></div>
+    </div>
+  </div>
+
+  <!-- Introduccion -->
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold mb-2" stranslate="project.introTitle"></h5>
+    <p class="text-justify intro mb-4" stranslate="tms.intro1"></p>
+    <p class="text-justify intro mb-4" stranslate="tms.intro2"></p>
+    <p class="text-justify intro mb-4" stranslate="tms.intro3"></p>
+  </div>
+
+  <!-- Titulo resultado visual -->
+  <h2 class="text-3xl text-center my-16 font-bold" stranslate="project.visualRes"></h2>
+
+  <!-- Imagenes secundarias -->
+  <div class="sliderImagesMainBox">
+    <div class="arrowBox arrowBoxLeft" (click)="scrollToSecundaryImg(-1)">
+      <mat-icon aria-hidden="false" aria-label="arrow">keyboard_arrow_left</mat-icon>
+    </div>
+    <div class="sliderImages" id="secundaryImg">
+      <img
+        id="chinchinRanges"
+        src="../../../assets/images/project-images/tms/chinchinRanges.png"
+        [ngClass]="(sliderSecundaryImg === 1 ? '' : 'opacity-0') + ' imgPrincipal '"
+        title="Chinchin Ranges"
+        alt="Chinchin Ranges"
+      />
+      <img
+        id="fpPos"
+        src="../../../assets/images/project-images/tms/fastpaymentPOS.png"
+        [ngClass]="(sliderSecundaryImg === 2 ? '' : 'opacity-0') + ' imgPrincipal '"
+        title="Fast payment POS"
+        alt="Fast payment POS"
+      />
+      <img
+        id="bpRanges"
+        src="../../../assets/images/project-images/tms/bestpayRanges.png"
+        [ngClass]="(sliderSecundaryImg === 3 ? '' : 'opacity-0') + ' imgPrincipal '"
+        title="BestPay Ranges"
+        alt="BestPay Ranges"
+      />
+    </div>
+    <div class="arrowBox arrowBoxRight" (click)="scrollToSecundaryImg(1)">
+      <mat-icon aria-hidden="false" aria-label="arrow">keyboard_arrow_right</mat-icon>
+    </div>
+    <div class="dotBox">
+      <div [ngClass]="(sliderSecundaryImg === 1 ? 'dotActive' : '') + ' dotPosition'"></div>
+      <div [ngClass]="(sliderSecundaryImg === 2 ? 'dotActive' : '') + ' dotPosition'"></div>
+      <div [ngClass]="(sliderSecundaryImg === 3 ? 'dotActive' : '') + ' dotPosition'"></div>
+    </div>
+  </div>
+
+  <!-- Tech -->
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold mb-2" stranslate="project.tech"></h5>
+    <p class="text-justify intro mb-4" stranslate="tms.introTech1"></p>
+  </div>
+
+  <!-- Caracteristicas -->
+  <app-features-box [features]="features"></app-features-box>
+
+  <p class="text-center intro mb-4" stranslate="tms.disclaimer"></p>
+</section>
+
+<!-- Proyectos varios -->
+<section class="mainBoxPadding">
+  <app-thanks-reading></app-thanks-reading>
+
+  <app-more-projects [projects]="ramdons"></app-more-projects>
+</section>

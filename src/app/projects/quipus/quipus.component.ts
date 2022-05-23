@@ -19,11 +19,6 @@ interface FontsArr {
 export class QuipusComponent implements OnInit {
   ramdons: Project[] = [
     {
-      code: '/afxtrade',
-      name: 'AFX Trade',
-      resume: 'afxtrade-resume',
-    },
-    {
       name: 'TraumApp',
       code: '/traumapp',
       resume: 'traumapp-resume',
@@ -32,6 +27,11 @@ export class QuipusComponent implements OnInit {
       code: '/traumappLanding',
       name: 'TraumApp Landing',
       resume: 'traumappLanding-resume',
+    },
+    {
+      code: '/tms',
+      name: 'TMS',
+      resume: 'tms-resume',
     },
   ];
 

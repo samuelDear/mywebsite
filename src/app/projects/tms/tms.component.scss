@@ -1,0 +1,88 @@
+.sliderImagesMainBox {
+  max-width: 85%;
+  position: relative;
+  margin: 60px auto 60px auto;
+}
+
+.sliderImages {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.sliderImages > img {
+  border: 1px solid #333;
+  transition: 1.5s;
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+
+.arrowBox {
+  position: absolute;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  border-radius: 9999px;
+  background-color: #2b2b2b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.arrowBox:hover {
+  opacity: 0.8;
+}
+
+.arrowBoxLeft {
+  left: -50px;
+}
+
+.arrowBoxRight {
+  right: -50px;
+}
+
+.dotBox {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dotPosition {
+  height: 10px;
+  width: 10px;
+  margin: 0px 10px;
+  transition: 0.5s;
+  border-radius: 9999px;
+  background-color: rgba(101, 101, 101, 0.5);
+}
+
+.dotActive {
+  background: #656565 !important;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .arrowBox {
+    height: 25px;
+    width: 25px;
+  }
+
+  .sliderImagesMainBox {
+    max-width: 80%;
+    margin: 40px auto 40px auto;
+  }
+
+  .arrowBoxLeft {
+    left: -30px;
+  }
+
+  .arrowBoxRight {
+    right: -30px;
+  }
+}
