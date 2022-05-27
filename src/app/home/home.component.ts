@@ -61,6 +61,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       resume: 'tms-resume',
       route: '/tms',
     },
+    {
+      name: 'SOIV',
+      resume: 'soiv-resume',
+      route: '/soiv',
+    },
   ];
 
   experiments: ExperimentType[] = [
