@@ -1,0 +1,20 @@
+{
+  "soiv": {
+    "role": "Frontend",
+    "dsc": "Sistema de operaciones Integrales de Venemergencia"
+  },
+  "project": {
+    "role": "Rol:",
+    "agency": "Empresa:",
+    "date": "Fecha:",
+    "introTitle": "Introducción",
+    "visualRes": "Resultado Visual",
+    "develop": "Desarrollo",
+    "features": "Características",
+    "thanks": "Gracias por leer!",
+    "hereMore": "Aquí puede saber más ",
+    "aboutLink": "acerca de mí",
+    "otherWork": "Puedes ver mis otros trabajos!",
+    "visitProject": "Visitar"
+  }
+}

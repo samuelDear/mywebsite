@@ -1,0 +1,20 @@
+{
+  "soiv": {
+    "role": "Frontend",
+    "dsc": "Comprehensive Venemergencia Operations System"
+  },
+  "project": {
+    "role": "Role:",
+    "agency": "Agency:",
+    "date": "Date:",
+    "introTitle": "Introduction",
+    "visualRes": "Visual Result",
+    "develop": "Development",
+    "features": "Features",
+    "thanks": "Thanks for Watching!",
+    "hereMore": "Here you can know more ",
+    "aboutLink": "about me",
+    "otherWork": "You can see my other works!",
+    "visitProject": "Visit"
+  }
+}
