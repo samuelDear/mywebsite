@@ -1,0 +1,12 @@
+.showLogo {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.soivLogo {
+  transition: 1s;
+  width: 20vw;
+  min-width: 10px;
+  max-width: 200px;
+  margin: auto;
+}
