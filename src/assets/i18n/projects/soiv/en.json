@@ -1,0 +1,36 @@
+{
+  "soiv": {
+    "role": "Frontend",
+    "dsc": "Comprehensive Venemergencia Operations System",
+    "intro1": "Venemergencia is a comprehensive services company offered to companies or individuals specialized in the health area. Providing online medical guidance services, home health care, drug delivery through delivery and prescription and many other services related to the health area and other areas.",
+    "intro2": "S.O.I.V is the system used to manage each of the services provided by Venemergencia. Which allows different types of users (Operators, Doctors, Coordinators) to interact in the process of providing a service to a client, each type of user having a personalized flow to streamline the steps of the process. Having a system of permissions and roles to make its use more comfortable. Also. Making use of connection with different internal APIs for receiving calls, locations and even warehouses by locations with their own inventory given by Profit.",
+    "develop1": "For the development of the frontend side, React was used, together with vitejs, Chakra UI and axios for handling requests. On the backend side, fastapi and swagger were used for the API documentation.",
+    "develop2": "It should be noted that a SCRUM methodology was used at the beginning of development and as development progressed it was changed to kanban because during development new requirements were always entering and development under SCRUM was complicated.",
+    "develop3": "At the front level, different components were standardized for a more agile development, as well as different APIs, that of the own system, locations, management of telephone calls, inventory discount in warehouse by headquarters and Opentok for downloading video calls.",
+    "feature1title": "Responsive Design",
+    "feature1": "It has a responsive design for proper handling on different platforms. Because many of the services provided are by ambulance, crew members must be able to control everything from a mobile device.",
+    "feature2title": "Multiple APIs",
+    "feature2": "As it is an internal process system, it must connect to different APIs for complete operation. These requests were managed with the axios library.",
+    "feature3title": "Reduced HTTP",
+    "feature3": "In order for the system to be more efficient and faster when dealing with a health application, the requests made to the backend were reduced by condensing and making robust endpoints for better performance.",
+    "feature4title": "System of privileges and roles",
+    "feature4": "For each type of user to work in the system, a system of roles and permissions was designed which allows users depending on their permissions to access and perform specific actions. This to have greater control over the changes that certain users can make.",
+    "feature5title": "Websockets",
+    "feature5": "Websockets were implemented for the section on calls with doctors, since when the service is requested, the response time must be immediate."
+  },
+  "project": {
+    "role": "Role:",
+    "agency": "Agency:",
+    "date": "Date:",
+    "introTitle": "Introduction",
+    "visualRes": "Visual Result",
+    "typoColor": "Typography - Color",
+    "develop": "Development",
+    "features": "Features",
+    "thanks": "Thanks for Watching!",
+    "hereMore": "Here you can know more ",
+    "aboutLink": "about me",
+    "otherWork": "You can see my other works!",
+    "visitProject": "Visit"
+  }
+}

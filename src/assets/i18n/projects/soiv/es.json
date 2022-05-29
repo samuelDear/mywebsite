@@ -1,0 +1,36 @@
+{
+  "soiv": {
+    "role": "Frontend",
+    "dsc": "Sistema de operaciones Integrales de Venemergencia",
+    "intro1": "Venemergencia son una empresa de servicios integrales ofrecidas a empresas o personas naturales especializada en el área de salud. Prestando servicios de orientación médica online, atención médica domiciliaria, entrega de medicamentos a través de deliverys y con receta médica y muchos otros servicios relacionados con el área de la salud y otras áreas.",
+    "intro2": "S.O.I.V es el sistema utilizado para gestionar cada uno de los servicios prestados por Venemergencia. El cual permite que diferentes tipos de usuarios (Operadores, Médicos, Coordinadores) puedan interactuar en el proceso de prestar un servicio a un cliente, teniendo cada tipo de usuario un flujo personalizado para agilizar los pasos del proceso. Contando con un sistema de permisos y roles para que sea más cómodo su uso. Además. Haciendo uso de conexión con diferentes APIs internas para la recepción de llamadas, localizaciones e incluso almacenes por sedes con su propio inventario dado por Profit.",
+    "develop1": "Para el desarrollo del lado del frontend se utilizó React, junto con vitejs, Chakra UI y axios para el manejo de peticiones. Del lado del backend, se utilizó fastapi y swagger para la documentación de la API.",
+    "develop2": "Cabe destacar que se utilizó al inicio de desarrollo una metodología SCRUM y conforme fue avanzando el desarrollo se cambió a kanban debido a que durante el desarrollo siempre iban ingresando requerimientos nuevos y se complicaba el desarrollo bajo SCRUM.",
+    "develop3": "A nivel de front se estandarizaron diferentes componentes para un desarrollo más ágil, así como también se consumen diferentes APIs, el del sistema propio, locaciones, gestión de llamadas telefónicos, descuento de inventario en almacén por sede y Opentok para la descarga de las videollamadas.",
+    "feature1title": "Responsive Design",
+    "feature1": "Cuenta con un diseño responsive para un correcto manejo en diferentes plataformas. Debido a que muchos de los servicios que se prestan son en ambulancia, los tripulantes deben poder controlar todo desde un dispositivo móvil.",
+    "feature2title": "Multiples APIs",
+    "feature2": "Al ser un sistema de procesos internos, debe conectar con diferentes APIs para un funcionamiento completo, estas peticiones fueron gestionadas con la librería axios.",
+    "feature3title": "HTTP Reducidas",
+    "feature3": "Para que el sistema fuera más eficaz y rápido al tratarse sobre una aplicación de salud, se redujeron las peticiones que se realizaban al backend condensando y haciendo endpoints robustos para un mejor funcionamiento.",
+    "feature4title": "Sistema de privilegios y roles",
+    "feature4": "Para que cada tipo de usuario trabajara en el sistema, se diseño un sistema de roles y permisos el cual permite a los usuarios dependiendo de sus permisos acceder y realizar acciones especificas. Esto para tener un mayor control en los cambios que puedan realizar ciertos usuarios.",
+    "feature5title": "Websockets",
+    "feature5": "Se implementaron websockets para el apartado de las llamadas con los doctores, ya que cuando se solicita el servicio, el tiempo de respuesta debe ser inmediato."
+  },
+  "project": {
+    "role": "Rol:",
+    "agency": "Empresa:",
+    "date": "Fecha:",
+    "introTitle": "Introducción",
+    "visualRes": "Resultado Visual",
+    "typoColor": "Tipografía - Color",
+    "develop": "Desarrollo",
+    "features": "Características",
+    "thanks": "Gracias por leer!",
+    "hereMore": "Aquí puede saber más ",
+    "aboutLink": "acerca de mí",
+    "otherWork": "Puedes ver mis otros trabajos!",
+    "visitProject": "Visitar"
+  }
+}

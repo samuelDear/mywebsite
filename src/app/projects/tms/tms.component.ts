@@ -32,11 +32,6 @@ export class TmsComponent implements OnInit {
 
   ramdons: Project[] = [
     {
-      name: 'TraumApp',
-      code: '/traumapp',
-      resume: 'traumapp-resume',
-    },
-    {
       code: '/traumappLanding',
       name: 'TraumApp Landing',
       resume: 'traumappLanding-resume',
@@ -45,6 +40,11 @@ export class TmsComponent implements OnInit {
       name: 'Quipus Events',
       resume: 'quipus-resume',
       code: '/quipus',
+    },
+    {
+      name: 'SOIV',
+      resume: 'soiv-resume',
+      code: '/soiv',
     },
   ];
 

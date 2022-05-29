@@ -47,6 +47,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'soiv',
+    loadChildren: () => import('./projects/soiv/soiv.module').then(m => m.SoivModule),
+    pathMatch: 'full',
+  },
+  {
     path: 'menu',
     loadChildren: () => import('./slide-menu/slide-menu.module').then(m => m.SlideMenuModule),
     pathMatch: 'full',
