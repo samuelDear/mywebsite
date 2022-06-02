@@ -52,6 +52,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'traumappWeb',
+    loadChildren: () => import('./projects/traumapp-web/traumapp-web.module').then(m => m.TraumappWebModule),
+    pathMatch: 'full',
+  },
+  {
     path: 'menu',
     loadChildren: () => import('./slide-menu/slide-menu.module').then(m => m.SlideMenuModule),
     pathMatch: 'full',
