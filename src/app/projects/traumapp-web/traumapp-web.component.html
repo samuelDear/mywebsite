@@ -1,12 +1,226 @@
-<section class="mainBoxPadding backgroundIntro">
+<section class="mainBoxPadding">
   <!-- Ficha resumen -->
   <app-title-projects
     projectName="TraumApp Web"
-    dsc="traumappLanding.dsc"
-    role="traumappLanding.role"
+    dsc="traumappWeb.dsc"
+    role="traumappWeb.role"
     agency="DearSoft Studios"
-    date="06-2022"
+    date="05-2022"
     buttonType="otherProject"
     projectLink="https://traumapp.com"
   ></app-title-projects>
+
+  <!-- Imagen principal del proyecto -->
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/principalImgTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/principalImgTraumApp.png'
+      "
+      title="Home de TraumApp"
+      alt="Home de TraumApp"
+      id="homeTraumApp"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
 </section>
+
+<!-- Introduccion -->
+<section class="mainBoxPadding introPatientBox paddingTop" id="introPatientSection">
+  <!-- Introduccion -->
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold mb-2" stranslate="project.introTitle"></h5>
+    <p class="text-justify intro mb-4" stranslate="tms.intro1"></p>
+    <p class="text-justify intro mb-4" stranslate="tms.intro2"></p>
+    <p class="text-justify intro mb-4" stranslate="tms.intro3"></p>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/patientMainTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/patientMainTraumApp.png'
+      "
+      title="Listado de pacientes"
+      alt="Listado de pacientes"
+      id="patientList"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/registerPatientTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/registerPatientTraumApp.png'
+      "
+      title="Registro de pacientes"
+      alt="Registro de pacientes"
+      id="patientRegister"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/patientInfoTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/patientInfoTraumApp.png'
+      "
+      title="Información del paciente"
+      alt="Información del paciente"
+      id="patientInfo"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+</section>
+
+<section class="mainBoxPadding patientCalendarBox paddingTop" id="calendarIntroSection">
+  <!-- Paciente -->
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold mb-2" stranslate="project.patientTitle"></h5>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/calendarMainTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/calendarMainTraumApp.png'
+      "
+      title="Vista general del Calendario de citas"
+      alt="Vista general del Calendario de citas"
+      id="calendarMainView"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/calendarCreateTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/calendarCreateTraumApp.png'
+      "
+      title="Creación de cita"
+      alt="Creación de cita"
+      id="createDate"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/calendarInfoTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/calendarInfoTraumApp.png'
+      "
+      title="Información de cita"
+      alt="Información de cita"
+      id="dateInfo"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+</section>
+
+<section class="mainBoxPadding calendarConfigBox paddingTop" id="calendarIntroSection">
+  <!-- Calendario -->
+  <div class="boxProject border-2 p-4">
+    <h5 class="text-center text-3xl font-bold mb-2" stranslate="project.calendarTitle"></h5>
+  </div>
+
+  <div class="my-16 flex justify-center borderedBox">
+    <app-img-loader
+      [src]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/configMainDarkTraumApp.png'
+          : '../../../assets/images/project-images/traumapp-web/light/configMainTraumApp.png'
+      "
+      title="Menu de configuración"
+      alt="Menu de configuración"
+      id="menuConfig"
+      classes="borderedBox"
+      height="400px"
+      class="w-full"
+    ></app-img-loader>
+  </div>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-image-screen
+      [urlimg]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/contactTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/contactTraumApp.png'
+      "
+      title="Contacto"
+      alt="Contacto"
+      type="phone"
+      id="contactScreen"
+    ></app-image-screen>
+
+    <app-image-screen
+      [urlimg]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/userEditTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/userEditTraumApp.png'
+      "
+      title="Edición información del usuario"
+      alt="Edición información del usuario"
+      type="phone"
+      id="editUserData"
+    ></app-image-screen>
+  </div>
+
+  <div class="boxMobile mt-16 justify-around">
+    <app-image-screen
+      [urlimg]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/medicinesTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/medicinesTraumApp.png'
+      "
+      title="Vista de medicamentos"
+      alt="Vista de medicamentos"
+      type="phone"
+      id="medicineView"
+    ></app-image-screen>
+
+    <app-image-screen
+      [urlimg]="
+        isDarkMode
+          ? '../../../assets/images/project-images/traumapp-web/dark/registerModeTraumAppDark.png'
+          : '../../../assets/images/project-images/traumapp-web/light/registerModeTraumApp.png'
+      "
+      title="Home de Modo Registro"
+      alt="Home de Modo Registro"
+      type="phone"
+      id="homeRegisterMode"
+    ></app-image-screen>
+  </div>
+</section>
+
+<div
+  [ngClass]="'darkModeButton ' + (isDarkMode ? 'backgroundDarkMode' : 'backgroundLightMode')"
+  (click)="setDarksMode()"
+>
+  <mat-icon *ngIf="!isDarkMode" aria-hidden="false" aria-label="arrow">light_mode</mat-icon>
+  <mat-icon *ngIf="isDarkMode" aria-hidden="false" aria-label="arrow">dark_mode</mat-icon>
+</div>

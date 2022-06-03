@@ -8,6 +8,8 @@ import { I18Service } from 'src/app/services/i18n-service/i18n-service.service';
   styleUrls: ['./traumapp-web.component.scss'],
 })
 export class TraumappWebComponent implements OnInit {
+  isDarkMode = true;
+
   constructor(public translate: TranslateService, private i18Service: I18Service) {
     window.scroll(0, 0);
     translate.use(i18Service.getLanguage());
@@ -17,5 +19,9 @@ export class TraumappWebComponent implements OnInit {
     this.i18Service.localeEvent.subscribe(locale => {
       this.translate.use(locale);
     });
+  }
+
+  setDarksMode(): void {
+    this.isDarkMode = !this.isDarkMode;
   }
 }

@@ -1,0 +1,39 @@
+.introPatientBox {
+  background: linear-gradient(180deg, #111 50%, #BF4FF0);
+}
+
+.patientCalendarBox {
+  background: linear-gradient(180deg, #BF4FF0 50%, #2A4D75);
+}
+
+.calendarConfigBox {
+  background: linear-gradient(180deg, #2A4D75 50%, #2C023E);
+}
+
+.paddingTop {
+  padding-top: 0px !important;
+}
+
+.darkModeButton {
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  padding: 15px;
+  border-radius: 9999px;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.6s;
+}
+
+.backgroundLightMode {
+  background: #eee;
+  color: #111;
+  border: 1.5px solid #fff;
+}
+
+.backgroundDarkMode {
+  background: #333;
+  border: 1.5px solid #fff;
+  color: #fff;
+}

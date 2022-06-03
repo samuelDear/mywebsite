@@ -1,7 +1,6 @@
 {
-  "traumappLanding": {
-    "resume": "It is a web page developed with React. With a responsive web design for any device and simple animations for a better visual experience. Created as an information page for the TraumApp application with detailed documentation, membership purchase and user dashboard.",
-    "dsc": "Landing page for TraumApp application and membership acquisition",
+  "traumappWeb": {
+    "dsc": "System for administration of medical consultations",
     "role": "Creator/Fullstack"
   },
   "project": {
@@ -9,6 +8,8 @@
     "agency": "Agency:",
     "date": "Date:",
     "introTitle": "Introduction",
+    "patientTitle": "Patient",
+    "calendarTitle": "Calendar",
     "visualRes": "Visual Result",
     "typoColor": "Typography - Color",
     "features": "Features",
