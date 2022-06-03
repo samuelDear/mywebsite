@@ -54,11 +54,6 @@ export class SoivComponent implements OnInit {
 
   ramdons: Project[] = [
     {
-      code: '/traumappLanding',
-      name: 'TraumApp Landing',
-      resume: 'traumappLanding-resume',
-    },
-    {
       name: 'Quipus Events',
       resume: 'quipus-resume',
       code: '/quipus',
@@ -67,6 +62,11 @@ export class SoivComponent implements OnInit {
       code: '/tms',
       name: 'TMS',
       resume: 'tms-resume',
+    },
+    {
+      code: '/traumappWeb',
+      name: 'TraumApp Web',
+      resume: 'traumappWeb-resume',
     },
   ];
 

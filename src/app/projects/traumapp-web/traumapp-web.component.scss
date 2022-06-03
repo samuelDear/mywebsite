@@ -10,6 +10,24 @@
   background: linear-gradient(180deg, #2A4D75 50%, #2C023E);
 }
 
+.configFormBox {
+  background: linear-gradient(180deg, #2C023E 50%, #51136C);
+}
+
+.formFeatureBox {
+  background: linear-gradient(180deg, #51136C 50%, #111);
+}
+
+.btnVisitProject {
+  background: #D168FF;
+  border-radius: 16px;
+  color: #FFF;
+  font-size: 18px;
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .paddingTop {
   padding-top: 0px !important;
 }
@@ -36,4 +54,96 @@
   background: #333;
   border: 1.5px solid #fff;
   color: #fff;
+}
+
+.featureMainBoxLeft, .featureMainBoxRight {
+  display: flex;
+  flex-direction: row;
+}
+
+.featureMainBoxLeft,
+.featureMainBoxRight {
+  transition: 1s;
+}
+
+.featureItem {
+  width: 50%;
+}
+
+.mainFeatureLeft {
+  margin-right: 40px;
+}
+
+.mainFeatureRight {
+  margin-left: 40px;
+}
+
+.mainFeatureTitle {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mainFeatureDsc {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.performanceIc {
+  width: 60%;
+}
+
+.moduleIc {
+  width: 200px;
+}
+
+.darkModeIc {
+  max-width: 300px;
+}
+
+.featureMainBox {
+  overflow-x: hidden;
+}
+
+.featureShowRight {
+  opacity: 0;
+  transform: translateX(60vw);
+}
+
+.featureShowLeft {
+  opacity: 0;
+  transform: translateX(-60vw);
+}
+
+@media only screen and (max-width: 800px) {
+  .featureMainBoxRight {
+    flex-direction: column;
+  }
+
+  .featureMainBoxLeft {
+    flex-direction: column-reverse;
+  }
+
+  .featureItem {
+    width: 100%;
+  }
+
+  .mainFeatureLeft,
+  .mainFeatureRight {
+    margin: 0px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .mainFeatureDsc {
+    font-size: 18px;
+  }
+
+  .mainFeatureTitle {
+    font-size: 24px;
+  }
 }

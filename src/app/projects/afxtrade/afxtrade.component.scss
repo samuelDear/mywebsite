@@ -2,12 +2,7 @@
   overflow-x: hidden;
 }
 
-.featureMainBoxRight {
-  display: flex;
-  flex-direction: row;
-}
-
-.featureMainBoxLeft {
+.featureMainBoxRight, .featureMainBoxLeft {
   display: flex;
   flex-direction: row;
 }
