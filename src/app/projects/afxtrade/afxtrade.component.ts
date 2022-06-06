@@ -42,6 +42,10 @@ export class AfxtradeComponent implements OnInit {
       title: 'afxtrade.featuretitle6',
       dsc: 'afxtrade.feature6',
     },
+    /*{
+      title: 'afxtrade.featuretitle7',
+      dsc: 'afxtrade.feature7',
+    },*/
   ];
 
   ramdons: Project[] = [
