@@ -1,4 +1,4 @@
-export interface emailForm {
+export interface EmailForm {
   name: string;
   email: string;
   dsc: string;

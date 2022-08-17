@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators, FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { navigationCustom } from '../transition';
 import { EmailService } from '../services/email/email.service';
 import { cleanFonts } from '../../main';
-import { ProjectHome, emailForm, responseEmail, ExperimentType } from '../services/common';
+import { ProjectHome, EmailForm, responseEmail, ExperimentType } from '../services/common';
 import { I18Service } from '../services/i18n-service/i18n-service.service';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -86,17 +86,29 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
   ];
 
-  contactForm = this.formBuilder.group({
-    name: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email]],
-    msg: ['', Validators.required],
+  contactForm: FormGroup = new FormGroup({
+    name: new FormControl(this.name, Validators.required),
+    email: new FormControl(this.email, [Validators.required, Validators.email]),
+    msg: new FormControl(this.msg, Validators.required),
   });
+
+  get name() {
+    return !this.contactForm ? '' : this.contactForm.get('name');
+  }
+
+  get email() {
+    return !this.contactForm ? '' : this.contactForm.get('email');
+  }
+
+  get msg() {
+    return !this.contactForm ? '' : this.contactForm.get('msg');
+  }
 
   constructor(
     // eslint-disable-next-line no-unused-vars
     private router: Router,
     // eslint-disable-next-line no-unused-vars
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     // eslint-disable-next-line no-unused-vars
     public emailService: EmailService,
     // eslint-disable-next-line no-unused-vars
@@ -229,7 +241,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (this.contactForm.valid && !this.emailSended && !this.isLoadingBtn) {
       this.isLoadingBtn = true;
       const values = this.contactForm.value;
-      const params: emailForm = {
+
+      const params: EmailForm = {
         name: values.name,
         email: values.email,
         dsc: values.msg,
