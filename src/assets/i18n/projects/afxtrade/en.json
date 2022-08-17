@@ -37,7 +37,9 @@
     "featuretitle5": "Unique integrations",
     "feature5": "As explained in the integrations section, each cryptocurrency was integrated in a unique way, no global libraries or global nodes were used for cryptocurrencies, but each one is treated individually. As with transaction processes such as Mobile Payment.",
     "featuretitle6": "CRON's creation",
-    "feature6": "To maintain a clean database and to validate movements and exchanges. Different processes were created to validate incoming transactions, expired wallet addresses, incomplete transactions, and many more. They are all parts of different CRONs that run for a certain time."
+    "feature6": "To maintain a clean database and to validate movements and exchanges. Different processes were created to validate incoming transactions, expired wallet addresses, incomplete transactions, and many more. They are all parts of different CRONs that run for a certain time.",
+    "featuretitle7": "AFX Pay",
+    "feature7": "In addition to having a CMS to control the content, users can also access it through a mobile application launched for Android with more intuitive features than those found on the web, to make it more everyday and easier to use. when making payments or transfers."
   },
   "project": {
     "role": "Role:",

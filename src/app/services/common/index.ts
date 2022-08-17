@@ -1,4 +1,4 @@
-import { emailForm, responseEmail } from './email';
+import { EmailForm, responseEmail } from './email';
 import { Font } from './font';
 import { Project } from './project';
 import { ProjectHome } from './projectHome';
@@ -9,7 +9,7 @@ import { ColorType } from './colors';
 import { ExperimentType } from './experiments';
 
 export {
-  emailForm,
+  EmailForm,
   responseEmail,
   Font,
   Project,

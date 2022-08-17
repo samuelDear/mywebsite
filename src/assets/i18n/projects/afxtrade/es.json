@@ -37,7 +37,9 @@
     "featuretitle5": "Integraciones únicas",
     "feature5": "Como se ha explicado en la sección de integraciones, cada criptomoneda fue integrada de manera única, no se utilizaron librerías globales o nodos globales para las criptomonedas, sino que cada una es tratada de manera individual. Al igual con procesos de transacciones como Pago Móvil.",
     "featuretitle6": "Creación de CRON",
-    "feature6": "Para mantener una base de datos limpia y hacer validaciones de movimientos e intercambios. Se crearon diferentes procesos para validar transacciones entrantes, direcciones de wallets expiradas, transacciones incompletas y muchos más. Todos forman partes de distintos CRONs que se ejecutan durante un tiempo determinado."
+    "feature6": "Para mantener una base de datos limpia y hacer validaciones de movimientos e intercambios. Se crearon diferentes procesos para validar transacciones entrantes, direcciones de wallets expiradas, transacciones incompletas y muchos más. Todos forman partes de distintos CRONs que se ejecutan durante un tiempo determinado.",
+    "featuretitle7": "AFX Pay",
+    "feature7": "Además de contar con un CMS para controlar el contenido, los usuarios también pueden acceder a través de una aplicación móvil lanzada para Android con funcionalidades más intuitivas que las que se encuentran en la web, para hacer de ella un uso más cotidiano y sencillo a la hora de realizar pagos o transferencias."
   },
   "project": {
     "role": "Rol:",
