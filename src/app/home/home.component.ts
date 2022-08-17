@@ -84,6 +84,11 @@ export class HomeComponent implements OnInit, OnDestroy {
       img: 'assets/images/experiments/traumappLoader.png',
       url: 'https://samueldear.github.io/traumapp-loader/',
     },
+    {
+      name: 'Movie App With React and NodeJs + ExpressJs',
+      img: 'assets/images/experiments/movieApp.png',
+      url: 'https://samueldear.github.io/exp-movie-frontend/#/',
+    },
   ];
 
   contactForm: FormGroup = new FormGroup({
@@ -118,7 +123,12 @@ export class HomeComponent implements OnInit, OnDestroy {
   ) {
     window.scroll(0, 0);
     translate.use(this.i18Service.getLanguage());
-    window.addEventListener('scroll', () => this.animatePolygon(), true);
+    window.addEventListener('scroll', () => this.actionsOnScroll(), true);
+  }
+
+  actionsOnScroll(): void {
+    this.animatePolygon();
+    this.arrowExperiment();
   }
 
   ngOnInit(): void {
@@ -144,6 +154,14 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.translate.use(locale);
     });
 
+    this.arrowExperiment();
+  }
+
+  ngOnDestroy(): void {
+    window.removeEventListener('scroll', () => this.actionsOnScroll(), true);
+  }
+
+  arrowExperiment = (): void => {
     const expBox: HTMLElement = <HTMLElement>document.getElementById('expBox');
     if (expBox !== undefined) {
       setTimeout(() => {
@@ -160,11 +178,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         }
       }, 500);
     }
-  }
-
-  ngOnDestroy(): void {
-    window.removeEventListener('scroll', () => this.animatePolygon(), true);
-  }
+  };
 
   animatePolygon = (): void => {
     const personalIcon = document.getElementById('personalIcon');
