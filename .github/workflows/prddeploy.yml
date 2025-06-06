@@ -1,33 +1,45 @@
-name: Portfolio CI
+name: Deploy - My Portafolio
 
+# Controls when the workflow will run
 on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  prepare:
-    name: Portfolio Deploy
+  build:
+    name: Build & Deploy App
     runs-on: ubuntu-latest
+
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Get latest code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: 18
       - name: Build Project
         run: |
-          npm i -g @angular/cli
-          npm install
-          ng build
+          npm install --force
+          npm run build
       - name: List output files
-        run: find dist/mywebsite/ -print
+        run: find dist/ -print
 
-      - name: Upload Build
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      - name: Deploy App
+        uses: jakejarvis/s3-sync-action@master
         with:
-          server: ${{ secrets.ftp_server }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          local-dir: ./dist/mywebsite/
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET }}
+          SOURCE_DIR: 'dist'
+          AWS_REGION: 'us-east-1'
