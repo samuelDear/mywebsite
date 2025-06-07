@@ -121,6 +121,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     // eslint-disable-next-line no-unused-vars
     private i18Service: I18Service,
   ) {
+    console.log('HOLAAA');
     window.scroll(0, 0);
     translate.use(this.i18Service.getLanguage());
     window.addEventListener('scroll', () => this.actionsOnScroll(), true);
